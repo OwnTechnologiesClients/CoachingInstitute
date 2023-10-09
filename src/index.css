@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+li:hover{
+    cursor: pointer;
+}
+.navbar{
+    background: #202C45;
+}

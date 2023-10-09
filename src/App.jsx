@@ -7,6 +7,8 @@ import './App.scss'
 import { Details, Courses, PopularVideosCard } from './components/Card';
 import ss2 from './assets/ss2.png'
 import ss3 from './assets/ss3.png'
+import telephone from './assets/telephone.png'
+import clock from './assets/clock.png'
 import courseImg from './assets/course.png'
 import videoImg from './assets/video.png'
 
@@ -41,17 +43,22 @@ function App() {
         <div className="contact d-flex justify-content-end ms-md-0 pe-md-5 ms-4  col-md-6">
 
           <div className="call p-3 d-flex align-items-center">
-            <ic.TelephoneFill className='fs-1 m-2 p-1  text-white bg-dark rounded' />
+            {/* <ic.TelephoneFill className='fs-1 m-2 p-1  text-white bg-dark rounded' /> */}
+            <div className='m-2  text-white '  >
+              <img src={telephone} class="img-responsive" width="40vw" height="40vw " />
+            </div>
             <div className="mt-md-3">
-              <span className='text-secondary'>CALL US TODAY</span>
+              <span className='text-color ' >CALL US TODAY</span>
               <p>+91 9999988877</p>
             </div>
           </div>
 
           <div className="available-time p-3 me-5 d-flex align-items-center">
-            <ic.Clock className='fs-1 m-2 p-1 fw-bold' />
+            {/* <ic.Clock className='fs-1 m-2 p-1 fw-bold' /> */}
+            <img src={clock} class="img-responsive" width="40vw" height="40vw" className='me-2' />
+
             <div className="mt-md-3">
-              <span className='text-secondary'>WE ARE OPEN</span>
+              <span className='text-color'>WE ARE OPEN</span>
               <p>Mon-Fri 8:00-16:00</p>
             </div>
           </div>
@@ -180,7 +187,7 @@ function App() {
           <div className="col-md-3">
             <img src={logo} height={"100px"} alt="LOGO" />
             <p className="mx-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam quisquam beatae sunt reprehenderit delectus ipsam libero tenetur, magni saepe, debitis 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam quisquam beatae sunt reprehenderit delectus ipsam libero tenetur, magni saepe, debitis
             </p>
             <div className="d-flex col-md-6 mx-2">
               <ic.Facebook className='fs-2 blue ms-2 me-3 footer-icon' />

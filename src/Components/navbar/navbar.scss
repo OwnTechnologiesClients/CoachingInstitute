@@ -1,0 +1,41 @@
+$theme-color: #202C45;
+$nav-bg: #24497c;
+$blue: #2D8EFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vw;
+    background-color: $theme-color;
+    color: #fff;
+    border-bottom: 5px solid $blue;
+
+    .menu {
+        display: flex;
+
+        .menu-item {
+            background-color: $nav-bg;
+            padding: .4rem 1.2rem;
+            margin: 0.7rem .5rem;
+            border-radius: 3.8rem;
+
+            &:hover {
+                background: #fff !important;
+                color: #202C45;
+            }
+        }
+    }
+
+    .active {
+        background: #fff !important;
+        color: #202C45;
+    }
+
+    .new-batch {
+        padding: 1rem;
+        background: $blue;
+        font-family: 'Poppins';
+    }
+}

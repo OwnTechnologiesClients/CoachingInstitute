@@ -1,0 +1,102 @@
+$blue: #2D8EFF;
+$theme-color: #202C45;
+$light-text: #AAA8A8;
+$text: #646262;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300&display=swap');
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $theme-color;
+    padding:5vw 6vw;
+    color: #fff;
+
+    .detail {
+        width: 20vw;
+        &>img{
+            margin-left: -1vw;
+        }
+        .message {
+            font-family: 'Poppins';
+            line-height: 1.1vw;
+
+        }
+        .footer-icons {
+            img{
+                background-color: $blue;
+                margin: 1vw .4vw;
+                padding: 5px;
+                border-radius: 12px;
+            }
+        }
+    }
+    .courses{
+        margin-top: 1vw;
+        h4{
+            font-family: 'Poppins';
+            font-weight: 700;
+            margin: 1vw 0;
+        }
+        li{
+            font-family: 'Poppins';
+
+        }
+
+
+    }
+
+    .links{
+        margin-top: 1vw;
+        h4{
+            font-family: 'Poppins';
+            font-weight: 700;
+            margin: 1vw 0;
+        }
+        img{
+            width: 1vw;
+            margin-right: .4vw;
+        }
+        a{
+            font-family: 'Poppins';
+
+        }
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            background-color: #fff;
+            width: 3vw;
+            height: 3vw;
+            padding: .4vw;
+            border-radius: 10vw;
+            margin-right: 1vw;
+        }
+        background-color: $blue;
+        margin: 2vw;
+        width: 20vw;
+    }
+}
+.bottom-footer{
+    background-color: #243C58;
+    padding: 1vw 6vw;
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    .bottom{
+        display: flex;
+        align-items: center;
+        li{
+            margin:0 .3vw;
+        }
+    }
+    a{
+        img{
+            background-color: $blue;
+            border-radius: 1vw;
+        }
+    }
+}

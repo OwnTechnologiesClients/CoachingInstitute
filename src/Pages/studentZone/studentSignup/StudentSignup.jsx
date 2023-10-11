@@ -1,14 +1,12 @@
 import React from 'react'
 
-import './StudentDetail.scss';
+import './StudentSignup.scss';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 
 
-// src/Pages/studentZone/studentDetail/StudentDetail.scss
 
-
-const StudentDetail = () => {
+const StudentSignup = () => {
     const [firstname, setFirstname] = useState("");
     const [emailAddress, setEmailAddress] = useState("");
     const [contactNumber, setContactNumber] = useState("");
@@ -92,4 +90,4 @@ const StudentDetail = () => {
     )
 }
 
-export default StudentDetail
+export default StudentSignup

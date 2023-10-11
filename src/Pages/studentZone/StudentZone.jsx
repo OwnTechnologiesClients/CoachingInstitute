@@ -2,22 +2,22 @@ import React from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import HeroSection from '../Home/HeroSection';
 import RegistrationSection from '../Home/RegistrationSection'
-import StudentDetail from './studentDetail/StudentDetail';
+import StudentSignup from './studentSignup/StudentSignup';
 
 
 
-const StudentLogin = () => {
+const StudentZone = () => {
   return (
     <div>
       
       <Navbar />
       <HeroSection />
       <RegistrationSection />
-      <StudentDetail/>
+      <StudentSignup/>
 
     </div>
 
   )
 }
 
-export default StudentLogin
+export default StudentZone

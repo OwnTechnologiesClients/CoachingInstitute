@@ -1,0 +1,36 @@
+.course-page{
+    .hero-section {
+        position: relative;
+
+        .heroimage {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .detail {
+            font-family: 'Poppins';
+            position: absolute;
+            top: 17vw;
+            left: 6vw;
+            color: #fff;
+
+            h1 {
+                font-size: 8vh;
+                background-color: #363345;
+                padding: 1vw;
+                border-right: 5px solid $blue;
+                font-weight: 500;
+            }
+
+            h2 {
+                background-color: #363345;
+                margin: 5px 0;
+                padding: .5vw;
+                font-size: 4vh;
+                right: 0;
+                font-weight: 500;
+            }
+        }
+    } 
+}

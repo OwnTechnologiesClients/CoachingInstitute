@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Registration.scss'
 
 const RegistrationSection = () => {
     const [inputType, setInputType] = useState('text');

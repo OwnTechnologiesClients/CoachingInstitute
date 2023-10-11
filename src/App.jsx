@@ -1,17 +1,19 @@
 import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Home from './Pages/Home/Home';
-import Courses from './Pages/Courses/Courses';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/home/Home';
+import Form from './pages/form/Form';
 
 function App() {
   return (
     <div className='app'>
+
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/courses' element={<Courses/>} />
+          <Route path='/' element={<Home />} />
+          <Route path='/form' element={<Form />} />
         </Routes>
       </BrowserRouter>
+
     </div>
   )
 }

@@ -1,0 +1,28 @@
+$theme-color: #202C45;
+
+.statistics{
+    display: flex;
+    background-color:$theme-color;
+    justify-content: space-between;
+    color: #fff;
+    padding: 5vw 6vw;
+    .st-card{
+        display: flex;
+        img{
+            margin:0 1vw;
+            width: 3.5vw;
+        }
+        .stats{
+            font-family: 'Poppins';
+            h1{
+                font-weight: 700;
+                font-size: 1.7vw;
+                padding-bottom: 5px;
+            }
+            p{
+                font-weight: 400;
+                letter-spacing: .7px;
+            }
+        }
+    }
+}

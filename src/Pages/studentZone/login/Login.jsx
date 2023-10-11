@@ -2,6 +2,10 @@ import React from 'react'
 import { useState } from "react";
 import './Login.scss';
 import { useNavigate } from "react-router-dom"
+import { Header1, Header2 } from '../../../components/header/Header';
+import Navbar from '../../../Components/navbar/Navbar';
+import HeroSection from '../../../components/heroSection/HeroSection';
+import Footer from '../../../Components/footer/Footer';
 
 
 
@@ -21,6 +25,11 @@ const Login = () => {
 
     return (
         <div>
+            <Header1/>
+            <Header2/>
+            <Navbar/>
+            <HeroSection/>
+
 
 
             <div className='student-login-section'>
@@ -65,8 +74,9 @@ const Login = () => {
 
 
             </div>
-
+            <Footer/>
         </div>
+        
     )
 }
 

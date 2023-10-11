@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Form from './Pages/form/Form';
 import StudentSignup from './Pages/studentZone/studentSignup/StudentSignup';
 import Login from './Pages/studentZone/login/Login';
+import History from './Pages/studentZone/history/History';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/form' element={<Form />} />
           <Route path='/student-login' element={<Login />} />
           <Route path='/student-signup' element={<StudentSignup />} />
+          <Route path='/history' element={<History />} />
         </Routes>
       </BrowserRouter>
 

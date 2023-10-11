@@ -1,7 +1,6 @@
 import React from 'react'
 import heroImage from '../../assets/bg4.png'
 
-
 const HeroSection = () => {
     return (
         <div className="hero-section">

@@ -61,6 +61,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            
             <Navbar />
 
             <HeroSection />

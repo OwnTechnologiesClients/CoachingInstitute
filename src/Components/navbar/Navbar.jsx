@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/" onClick={() => handleItemClick('Home')}>Home</Link>
           </div>
           <div className={`menu-item ${activeItem === 'Courses' ? 'active' : ''}`}>
-            <Link to="courses" onClick={() => handleItemClick('Courses')}>
+            <Link to="/courses" onClick={() => handleItemClick('Courses')}>
               Courses <img src={darrow} alt="" />
               <div className="dropdown">
                 <div className="dropdown-content">

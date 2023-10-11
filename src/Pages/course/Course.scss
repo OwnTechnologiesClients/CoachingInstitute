@@ -1,0 +1,96 @@
+$theme-color: #202C45;
+$text-color: #363345;
+$blue: #2D8EFF;
+$light-bg: #EEE;
+$light-text: #989696;
+
+.course-page {
+
+    .detail {
+        left: 6vw;
+        right: unset;
+
+        h2 {
+            position: absolute;
+            right: 0;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    .course-page-section {
+        display: flex;
+        padding: 0 3vw;
+
+        .course-page-left-nav {
+            padding: 3vw;
+
+            h2 {
+                margin-top: 2vw;
+                font-weight: 400;
+                font-size: 1.7vw;
+                color: $blue;
+
+                span {
+                    color: $text-color;
+                }
+            }
+
+
+            .opening-hours-list {
+                h2 {
+                    padding: 1vw 0;
+                }
+
+                .timings {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 17vw;
+                    padding: .5vw 0;
+                    color: #707070;
+                    border-bottom: 2px solid $light-bg;
+
+                }
+            }
+
+            .form-fields {
+                display: flex;
+                flex-direction: column;
+
+                input,
+                textarea {
+                    background-color: $light-bg;
+                    outline: none;
+                    border: none;
+                    padding: 1vw;
+                    width: 17vw;
+                    font-size: 1vw;
+                    margin: 1vw 0;
+                    resize: none;
+                }
+
+                button {
+                    width: 8vw;
+                    height: 2vw;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+
+    .course-idea {
+        padding: 1vw 3vw;
+
+        h2 {
+            font-weight: 400;
+            color: #363345;
+            font-size: 1.7vw;
+        }
+    }
+
+}

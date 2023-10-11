@@ -9,6 +9,7 @@ import WelcomeSection from '../../components/welcomeSection/WelcomeSection';
 import VideoSection from '../../components/videoSection/VideoSection'
 import StatisticsSection from '../../components/statistics/StatisticsSection';
 import { Header1, Header2 } from '../../components/header/Header';
+import heroImage from '../../assets/bg4.png'
 
 const Home = () => {
 
@@ -21,7 +22,7 @@ const Home = () => {
             
             <Navbar />
 
-            <HeroSection />
+            <HeroSection imgSrc={heroImage} hd1={"BEST EDUCATION"} hd2={"FOR YOUR BETTER FUTURE"}/>
 
             <RegistrationSection />
 

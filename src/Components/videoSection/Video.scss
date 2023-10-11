@@ -2,9 +2,9 @@ $blue: #2D8EFF;
 $theme-color: #202C45;
 $light-text: #AAA8A8;
 $text: #646262;
-.course-section {
+
+.videos-section {
     background-color: #F7F7F7;
-    ;
     padding: 6vw;
 
     .top-heading {
@@ -33,19 +33,10 @@ $text: #646262;
         display: flex;
         justify-content: space-between;
 
-        .course-card {
+        .video-card {
             background: #fff;
             position: relative;
             width: 19vw;
-
-            .price {
-                position: absolute;
-                right: 0;
-                color: white;
-                background: rgba(0, 0, 0, 0.6);
-                padding: 5px 9px;
-                border-left: 4px solid $blue;
-            }
 
             img {
                 width: 19vw;

@@ -1,5 +1,6 @@
 import React from 'react'
 import heroImage from '../../assets/bg4.png'
+import './Hero.scss'
 
 const HeroSection = () => {
     return (

@@ -1,11 +1,12 @@
 import React from 'react'
-import videoImg from './assets/video.png'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home/Home';
-import Form from './Pages/form/Form';
-import StudentSignup from './Pages/studentZone/studentSignup/StudentSignup';
-import Login from './Pages/studentZone/login/Login';
-import History from './Pages/studentZone/history/History';
+import Home from './pages/home/Home';
+import Form from './pages/form/Form';
+import StudentSignup from './pages/studentZone/studentSignup/StudentSignup';
+import Login from './pages/studentZone/login/Login';
+import History from './pages/studentZone/history/History';
+import Course from './pages/course/Course';
+import TestSeries from './pages/testSeries/TestSeries';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/courses' element={<Course />} />
+          <Route path='/testseries' element={<TestSeries />} />
           <Route path='/form' element={<Form />} />
           <Route path='/student-login' element={<Login />} />
           <Route path='/student-signup' element={<StudentSignup />} />

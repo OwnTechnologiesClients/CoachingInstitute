@@ -1,18 +1,17 @@
 import React from 'react'
-import './Course.scss';
-import { Header1, Header2 } from '../../components/header/Header'
 import Navbar from '../../Components/navbar/Navbar'
-import Footer from '../../Components/footer/Footer'
+import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
 import bg3 from '../../assets/bg3.png'
+import './TestSeries.scss';
+import CourseLinks from '../../components/courseLinks/CourseLinks'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
-import CourseTable from '../../components/courseTable/CourseTable';
-import CourseLinks from '../../components/courseLinks/CourseLinks';
+import CourseTable from '../../components/courseTable/CourseTable'
 
-const Course = () => {
+const TestSeries = () => {
     return (
-        <div className="course-page">
+        <div className='test-series-page'>
 
             <Header1 />
             <Header2 />
@@ -20,26 +19,25 @@ const Course = () => {
 
             <HeroSection
                 imgSrc={bg3}
-                hd1={"OFFLINE/ONLINE COURSES"}
+                hd1={"TEST SERIES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             />
-
-            <div className="course-page-section">
+            <div className="test-series-section">
                 <CourseLinks />
-                <div className="course-page-right-nav">
-                    <CourseDetail imgSrc={courseDetailImg} heading1={"Chemical Science Coaching"} />
+                <div className="test-series-section-right-nav">
+                    <CourseDetail  imgSrc={courseDetailImg} heading1={"Chemical Science Study Material"} />
+
                     <div className="course-idea">
                         <h2>CourseIdea</h2>
                         <CourseTable mode={"Offline Dashboard"} />
                         <CourseTable mode={"Online Dashboard"} />
                     </div>
+
                 </div>
+
             </div>
-
-            <Footer />
-
         </div>
     )
 }
 
-export default Course
+export default TestSeries

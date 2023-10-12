@@ -19,6 +19,8 @@ $blue: #2D8EFF;
         padding: 1vw 3vw;
         border-bottom: 1px solid #707070;
         span{
+            font-size: 1.1vw;
+
             &:first-child{
                 width: 17vw;
             }
@@ -48,6 +50,7 @@ $blue: #2D8EFF;
         span{
             margin: auto 0;
             width: 10%;
+            font-size: 1.1vw;
             &:first-child{
                 width: 17vw;
             }
@@ -67,6 +70,8 @@ $blue: #2D8EFF;
         button{
             padding: .4vw;
             border: none;
+            font-size: .9vw;
+
             background-color: $btn-bg;
             color: #fff;
             font-weight: 700;

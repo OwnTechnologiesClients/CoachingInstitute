@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState,useEffect } from 'react';
+import { Link,useLocation } from 'react-router-dom';
 import './navbar.scss';
 import darrow from '../../assets/down-arrow.png';
 
 const Navbar = () => {
+  const location = useLocation();
   const [activeItem, setActiveItem] = useState('Home');
 
+  useEffect(() => {
+    const pathname = location.pathname.split('/')[1]; // Get the first part of the path
+    setActiveItem(pathname || 'Home');
+  }, [location]);
+
   const handleItemClick = (itemName) => {
+
     setActiveItem(itemName);
   };
 
@@ -17,7 +24,7 @@ const Navbar = () => {
           <div className={`menu-item ${activeItem === 'Home' ? 'active' : ''}`}>
             <Link to="/" onClick={() => handleItemClick('Home')}>Home</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'Courses' ? 'active' : ''}`}>
+          <div className={`menu-item ${activeItem === 'courses' ? 'active' : ''}`}>
             <Link to="/courses" onClick={() => handleItemClick('Courses')}>
               Courses <img src={darrow} alt="" />
               <div className="dropdown">
@@ -29,26 +36,26 @@ const Navbar = () => {
               </div>
             </Link>
           </div>
-          <div className={`menu-item ${activeItem === 'Videos' ? 'active' : ''}`}>
-            <Link to="/videos" onClick={() => handleItemClick('Videos')}>Videos</Link>
+          <div className={`menu-item ${activeItem === 'videos' ? 'active' : ''}`}>
+            <Link to="/videos" onClick={() => handleItemClick('videos')}>Videos</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'Contact' ? 'active' : ''}`}>
-            <Link to="/contact" onClick={() => handleItemClick('Contact')}>Contact Us</Link>
+          <div className={`menu-item ${activeItem === 'contact' ? 'active' : ''}`}>
+            <Link to="/contact" onClick={() => handleItemClick('contact')}>Contact Us</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'About' ? 'active' : ''}`}>
-            <Link to="/about" onClick={() => handleItemClick('About')}>About Us</Link>
+          <div className={`menu-item ${activeItem === 'about' ? 'active' : ''}`}>
+            <Link to="/about" onClick={() => handleItemClick('about')}>About Us</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'TestSeries' ? 'active' : ''}`}>
-            <Link to="/testseries" onClick={() => handleItemClick('TestSeries')}>Test Series</Link>
+          <div className={`menu-item ${activeItem === 'testseries' ? 'active' : ''}`}>
+            <Link to="/testseries" onClick={() => handleItemClick('testseries')}>Test Series</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'StudyMaterial' ? 'active' : ''}`}>
-            <Link to="/studymaterial" onClick={() => handleItemClick('StudyMaterial')}>Study Material</Link>
+          <div className={`menu-item ${activeItem === 'studymaterial' ? 'active' : ''}`}>
+            <Link to="/studymaterial" onClick={() => handleItemClick('studymaterial')}>Study Material</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'StudentLogin' ? 'active' : ''}`}>
-            <Link to="/studentlogin" onClick={() => handleItemClick('StudentLogin')}>Student Login</Link>
+          <div className={`menu-item ${activeItem === 'student-login' ? 'active' : ''}`}>
+            <Link to="/student-login" onClick={() => handleItemClick('student-login')}>Student Login</Link>
           </div>
-          <div className={`menu-item ${activeItem === 'Blog' ? 'active' : ''}`}>
-            <Link to="/blog" onClick={() => handleItemClick('Blog')}>Blog</Link>
+          <div className={`menu-item ${activeItem === 'blog' ? 'active' : ''}`}>
+            <Link to="/blog" onClick={() => handleItemClick('blog')}>Blog</Link>
           </div>
         </div>
       </div>

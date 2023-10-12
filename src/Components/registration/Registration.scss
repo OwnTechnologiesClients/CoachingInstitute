@@ -11,7 +11,7 @@ $text: #646262;
     h1 {
         color: #fff;
         font-weight: 400;
-
+        font-size: 2vw;
         span {
             color: $blue;
         }
@@ -23,10 +23,11 @@ $text: #646262;
         display: flex;
         justify-content: space-between;
     }
-
+    
     button,
     input,
     select {
+        font-size: 1vw;
         padding: .7vw 1vw;
         width: 15vw;
         height: 3vw;

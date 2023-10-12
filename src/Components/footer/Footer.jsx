@@ -7,7 +7,7 @@ import checkbox from '../../assets/icons/checkbox.png'
 import down from '../../assets/icons/down.png'
 import call from '../../assets/call.png'
 import { Link } from 'react-router-dom'
-import './footer.scss'
+import './Footer.scss'
 
 const Footer = () => {
   return (

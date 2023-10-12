@@ -1,0 +1,37 @@
+$blue: #2D8EFF;
+$theme-color: #202C45;
+$light-text: #AAA8A8;
+$text: #646262;
+
+.video-card {
+    background: #fff;
+    position: relative;
+    width: 19vw;
+
+    img {
+        width: 19vw;
+    }
+
+    div {
+        padding: 1vw;
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.3vw;
+            padding: .7vw 0;
+        }
+
+        p {
+            font-size: 1.1vw;
+            color: #9A9696;
+        }
+    }
+
+    button {
+        background: $theme-color;
+        color: #fff;
+        padding: .4vw .6vw;
+        font-size: .8vw;
+        margin: 1vw;
+    }
+}

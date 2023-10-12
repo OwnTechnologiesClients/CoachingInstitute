@@ -1,8 +1,14 @@
-import React from 'react'
-import CoursePageList from '../../components/coursePageList/CoursePageList'
-import './CourseLinks.scss'
+import React, { useState } from 'react';
+import CoursePageList from '../../components/coursePageList/CoursePageList';
+import './CourseLinks.scss';
 
 const CourseLinks = () => {
+    const [activeLink, setActiveLink] = useState('Link1');
+
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
+    };
+
     return (
         <div className="course-page-left-nav">
             <CoursePageList
@@ -10,21 +16,27 @@ const CourseLinks = () => {
                 hd2={"List"}
                 link1={"Chemical Science Coaching"}
                 link2={"GATE Chemistry Coaching"}
-                link3={"GATE Chemistry Coaching"}
+                link3={"UPSC Chemistry Coaching"}
+                activeLink={activeLink}
+                onLinkClick={handleLinkClick}
             />
             <CoursePageList
                 hd1={"Study"}
                 hd2={"Material"}
-                link1={"Chemical Science Coaching"}
-                link2={"GATE Chemistry Coaching"}
-                link3={"GATE Chemistry Coaching"}
+                link1={"Chemical Science Study Material"}
+                link2={"GATE Chemistry Study Material"}
+                link3={"UPSC Chemistry Study Material"}
+                activeLink={activeLink}
+                onLinkClick={handleLinkClick}
             />
             <CoursePageList
                 hd1={"Test"}
                 hd2={"Series"}
-                link1={"Chemical Science Study Material"}
-                link2={"GATE Chemistry Study Material"}
-                link3={"GATE Chemistry Study Material"}
+                link1={"Chemical Science Test Series"}
+                link2={"GATE Chemistry Test Series"}
+                link3={"UPSC Chemistry Test Series"}
+                activeLink={activeLink}
+                onLinkClick={handleLinkClick}
             />
 
             <div className="opening-hours-list">

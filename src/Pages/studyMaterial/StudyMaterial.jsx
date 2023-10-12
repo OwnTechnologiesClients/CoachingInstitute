@@ -3,11 +3,12 @@ import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
 import bg3 from '../../assets/bg3.png'
-import './StudyMaterial.scss';
 import CourseLinks from '../../components/courseLinks/CourseLinks'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable'
+import Footer from '../../components/footer/Footer'
+import './StudyMaterial.scss';
 
 const StudyMaterial = () => {
     return (
@@ -19,7 +20,7 @@ const StudyMaterial = () => {
 
             <HeroSection
                 imgSrc={bg3}
-                hd1={"Study Material"}
+                hd1={"STUDY MATERIAL"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             />
             <div className="study-material-section">
@@ -36,6 +37,7 @@ const StudyMaterial = () => {
                 </div>
 
             </div>
+            <Footer/>
         </div>
     )
 }

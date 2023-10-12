@@ -4,11 +4,15 @@ $blue: #2D8EFF;
 $light-bg: #EEE;
 $light-text: #989696;
 
-.course-page {
-
+.test-series-page {
     .detail {
         left: 6vw;
         right: unset;
+
+        h1{
+            width: 43vw;
+            text-align: end;
+        }
 
         h2 {
             position: absolute;
@@ -20,7 +24,7 @@ $light-text: #989696;
         }
     }
 
-    .course-page-section {
+    .test-series-section{
         display: flex;
         padding: 0 3vw;
 
@@ -35,5 +39,4 @@ $light-text: #989696;
             font-size: 1.7vw;
         }
     }
-
 }

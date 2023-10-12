@@ -31,6 +31,7 @@ $light-text: #989696;
             padding: .5vw 0;
             color: #707070;
             border-bottom: 2px solid $light-bg;
+            font-size: 1.05vw;
 
         }
     }
@@ -46,7 +47,7 @@ $light-text: #989696;
             border: none;
             padding: 1vw;
             width: 17vw;
-            font-size: 1vw;
+            font-size: 1.1vw;
             margin: 1vw 0;
             resize: none;
         }
@@ -56,6 +57,7 @@ $light-text: #989696;
             height: 2vw;
             border: none;
             outline: none;
+            font-size: 1vw;
             color: #fff;
             background-color: $theme-color;
         }

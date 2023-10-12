@@ -8,6 +8,7 @@ import CourseLinks from '../../components/courseLinks/CourseLinks'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable'
+import Footer from '../../components/footer/Footer'
 
 const TestSeries = () => {
     return (
@@ -36,6 +37,7 @@ const TestSeries = () => {
                 </div>
 
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import logo from '../../assets/logo.png'
 import phoneIcon from '../../assets/phoneIcon.png'
 import clockIcon from '../../assets/clockIcon.png'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header1 = () => {
     return (
@@ -13,7 +14,7 @@ const Header1 = () => {
             <div className='top-links'>
                 <span>FAQ |</span>
                 <span>Help Desk |</span>
-                <span>Login</span>
+                <span><Link to='/student-login'>Login</Link></span>
             </div>
             <div className="top-icons">
                 <img src={fbicon} width={"17vw"} alt="" />

@@ -17,9 +17,13 @@ nav {
 
         .menu-item {
             background-color: $nav-bg;
-            padding: .4rem 1.2rem;
-            margin: 0.7rem .5rem;
+            padding: .4vw 1.2vw;
+            margin: 0.7vw .5vw;
             border-radius: 3.8rem;
+            a{
+                font-size: 1.1vw;
+                font-weight: 400;
+            }
 
             &:hover {
                 background: #fff !important;
@@ -70,6 +74,8 @@ nav {
     .new-batch {
         padding: 1rem;
         background: $blue;
+        font-size: 1.1vw;
         font-family: 'Poppins';
     }
+
 }

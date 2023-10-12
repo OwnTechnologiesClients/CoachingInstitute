@@ -16,18 +16,20 @@ $text: #646262;
         width: 20vw;
         &>img{
             margin-left: -1vw;
+            width: 18vw;
         }
         .message {
             font-family: 'Poppins';
-            line-height: 1.1vw;
-
+            line-height: 1.2vw;
+            font-size: 1vw;
         }
         .footer-icons {
             img{
                 background-color: $blue;
                 margin: 1vw .4vw;
-                padding: 5px;
+                padding: .3vw;
                 border-radius: 12px;
+                width: 2vw;
             }
         }
     }
@@ -37,10 +39,11 @@ $text: #646262;
             font-family: 'Poppins';
             font-weight: 700;
             margin: 1vw 0;
+            font-size: 1.1vw;
         }
         li{
             font-family: 'Poppins';
-
+            font-size: 1vw;
         }
 
 
@@ -52,20 +55,23 @@ $text: #646262;
             font-family: 'Poppins';
             font-weight: 700;
             margin: 1vw 0;
+            font-size: 1.1vw;
         }
         img{
             width: 1vw;
+            font-size: 1vw;
             margin-right: .4vw;
         }
         a{
             font-family: 'Poppins';
-
+            font-size: 1vw;
         }
     }
     .box{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1vw;
         img{
             background-color: #fff;
             width: 3vw;
@@ -77,6 +83,7 @@ $text: #646262;
         background-color: $blue;
         margin: 2vw;
         width: 20vw;
+        height: 10vw;
     }
 }
 .bottom-footer{
@@ -91,12 +98,14 @@ $text: #646262;
         align-items: center;
         li{
             margin:0 .3vw;
+            font-size: 1vw;
         }
     }
     a{
         img{
             background-color: $blue;
             border-radius: 1vw;
+            width: 1.4vw;
         }
     }
 }

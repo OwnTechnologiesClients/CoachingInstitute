@@ -5,7 +5,7 @@ $text: #646262;
 
 
 .welcome-section {
-    padding: 12vh;
+    padding: 6vw;
     display: flex;
 
     .message {
@@ -71,5 +71,62 @@ $text: #646262;
                 }
             }
         }
+    }
+
+    @media screen and (max-width:"480px") {
+        flex-direction: column;
+
+        .message {
+            width: unset;
+
+            h1,
+            p {
+                font-size: 2rem;
+
+            }
+
+            h3 {
+                font-size: 1.1rem;
+                padding-top: 1rem;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+                padding: 1rem 0;
+            }
+
+            button {
+                padding: .6vw .8vw;
+                font-size: 1.3rem;
+                margin: 1rem 0;
+            }
+        }
+
+        .cards {
+            width: unset;
+            margin: 0 auto;
+            flex-direction: column;
+
+            .welcome-card {
+                padding: 1rem 0;
+
+                img {
+                    width: unset;
+                }
+
+                div {
+                    h2 {
+                        padding: .5rem 0;
+                        font-size: 1.3rem;
+                    }
+
+                    p {
+                        color: #9A9696;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
     }
 }

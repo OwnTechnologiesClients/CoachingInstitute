@@ -12,15 +12,24 @@ nav {
     color: #fff;
     border-bottom: 5px solid $blue;
 
+    .menu-icon {
+        display: none;
+    }
+
     .menu {
         display: flex;
+
+
 
         .menu-item {
             background-color: $nav-bg;
             padding: .4vw 1.2vw;
             margin: 0.7vw .5vw;
             border-radius: 3.8rem;
-            a{
+            display: flex;
+            align-items: center;
+
+            a {
                 font-size: 1.1vw;
                 font-weight: 400;
             }
@@ -72,10 +81,85 @@ nav {
     }
 
     .new-batch {
+        margin-left: 3vw;
         padding: 1rem;
         background: $blue;
         font-size: 1.1vw;
         font-family: 'Poppins';
     }
 
+    @media screen and (max-width:"480px") {
+
+        padding: 0 6vw;
+        flex-direction: column;
+
+        .menu-icon {
+            display: block;
+        }
+
+        .menu {
+            flex-direction: column;
+            display: none;
+
+            &.open {
+                display: flex;
+            }
+
+            .menu-item {
+                padding: .7rem 1.2rem;
+                margin: 0.3rem 0;
+                border-radius: 3.8rem;
+
+                a {
+                    font-size: 1.1rem;
+                }
+
+            }
+        }
+
+        .dropdown {
+            position: relative;
+
+            .dropdown-label {
+                cursor: pointer;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                min-width: 160px;
+
+                a {
+                    color: #333;
+                    padding: 12px;
+                    display: block;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #f9f9f9;
+                    }
+                }
+            }
+
+            &:hover .dropdown-content {
+                display: block;
+            }
+        }
+
+        .new-batch {
+            padding: 1rem;
+            background: $blue;
+            font-size: 1.1rem;
+            font-family: 'Poppins';
+            margin-left: 0;
+
+        }
+
+
+    }
 }

@@ -9,6 +9,7 @@ import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable'
 import Footer from '../../components/footer/Footer'
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
 const TestSeries = () => {
     return (
@@ -24,9 +25,9 @@ const TestSeries = () => {
                 hd2={"FOR YOUR BETTER FUTURE"}
             />
             <div className="test-series-section">
-                <CourseLinks />
+                <CourseLinks defaultLink={'Chemical Science Test Series'}/>
                 <div className="test-series-section-right-nav">
-                    <CourseDetail  imgSrc={courseDetailImg} heading1={"Chemical Science Study Material"} />
+                    <CourseDetail imgSrc={courseDetailImg} heading1={"Chemical Science Study Material"} />
 
                     <div className="course-idea">
                         <h2>CourseIdea</h2>
@@ -37,7 +38,8 @@ const TestSeries = () => {
                 </div>
 
             </div>
-            <Footer/>
+            <WhatsappIcon />
+            <Footer />
         </div>
     )
 }

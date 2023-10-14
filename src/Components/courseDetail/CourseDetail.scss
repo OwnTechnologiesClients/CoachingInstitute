@@ -22,4 +22,17 @@
             padding: .8vw 0;
         }
     }
+
+    @media screen and (max-width:"480px") {
+        .content{
+            h2 {
+                margin: 1.4rem 0;
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1.1rem;
+                padding: .8rem 0;
+            }
+        }
+    }
 }

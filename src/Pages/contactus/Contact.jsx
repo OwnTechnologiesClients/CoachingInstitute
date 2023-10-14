@@ -8,6 +8,7 @@ import Footer from '../../components/footer/Footer'
 import locationIcon from '../../assets/icons/location.png'
 import callIcon from '../../assets/icons/call.png'
 import mailIcon from '../../assets/icons/mail.png'
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
 const Contact = () => {
     return (
@@ -61,8 +62,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            
-
+            <WhatsappIcon/>
             <Footer />
 
         </div>

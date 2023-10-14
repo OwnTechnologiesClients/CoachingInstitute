@@ -12,6 +12,7 @@ $text: #646262;
         color: #fff;
         font-weight: 400;
         font-size: 2vw;
+
         span {
             color: $blue;
         }
@@ -22,8 +23,9 @@ $text: #646262;
         padding: 1vw 0;
         display: flex;
         justify-content: space-between;
+
     }
-    
+
     button,
     input,
     select {
@@ -36,6 +38,28 @@ $text: #646262;
     button {
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        margin: -5px;
+        padding: 2rem;
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        form {
+            flex-direction: column;
+        }
+
+        button,
+        input,
+        select {
+            font-size: unset;
+            padding: .7vw 1vw;
+            width: unset;
+            height: 2.7rem;
+            margin: 2vw 0;
         }
     }
 }

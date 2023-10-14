@@ -6,6 +6,7 @@ import bg5 from '../../assets/bg5.png'
 import './About.scss';
 import Footer from '../../components/footer/Footer'
 import WelcomeSection from '../../components/welcomeSection/WelcomeSection'
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
 const About = () => {
     return (
@@ -45,11 +46,11 @@ const About = () => {
                     <p>At ASAP Chemtime, we believe in creating a student-centric learning environment where students can learn at their own pace and receive individual attention from experienced faculty members. We are committed to providing the best education, rigorous practice sessions, and excellent study material to help students succeed in these exams.</p><br />
 
                     <p>Our motto at ASAP Chemtime is “Empowering your dreams.” We believe that every student has the potential to achieve great things, and we are committed to empowering them with the knowledge and skills required to turn their dreams into reality.</p><br />
-                    
+
                     <p>Join us at ASAP Chemtime and take the first step towards a successful career in Chemistry and Mathematics. We are committed to helping you achieve your goals and empowering your dreams.</p>
                 </div>
             </div>
-
+            <WhatsappIcon />
             <Footer />
 
         </div>

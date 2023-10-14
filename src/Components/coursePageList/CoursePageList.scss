@@ -24,9 +24,30 @@ $light-bg: #EEE;
             background-color: $theme-color;
             border-right: 0.3vw solid $blue;
             width: 17.3vw;
+
             a {
                 color: #fff;
             }
         }
+    }
+
+    @media screen and (max-width:480px) {
+        .course-links {
+
+            .course-link {
+                font-size: 1rem;
+                padding: .8rem;
+                margin: 0.6rem 0;
+                width: unset;
+            }
+
+            .active {
+                border-right: 1vw solid $blue;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
     }
 }

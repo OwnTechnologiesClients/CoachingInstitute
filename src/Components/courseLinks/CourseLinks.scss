@@ -62,4 +62,47 @@ $light-text: #989696;
             background-color: $theme-color;
         }
     }
+
+    @media screen and (max-width:"480px") {
+        order: 3;
+        padding: 3vw;
+
+        h2 {
+            margin-top: 2vw;
+            font-size: 1.7rem;
+        }
+
+
+        .opening-hours-list {
+            h2 {
+                padding: 1rem 0;
+            }
+
+            .timings {
+                width: unset;
+                padding: .5rem 0;
+                border-bottom: 2px solid $light-bg;
+                font-size: 1.25rem;
+            }
+        }
+
+        .form-fields {
+
+            input,
+            textarea {
+                padding: 1rem;
+                width: unset;
+                font-size: 1.1rem;
+                margin: 1rem 0;
+                resize: none;
+            }
+
+            button {
+                width: 50%;
+                height: 2rem;
+                font-size: 1rem;
+            }
+        }
+
+    }
 }

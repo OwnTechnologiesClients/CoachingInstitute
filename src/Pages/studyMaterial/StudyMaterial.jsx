@@ -9,6 +9,7 @@ import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable'
 import Footer from '../../components/footer/Footer'
 import './StudyMaterial.scss';
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
 const StudyMaterial = () => {
     return (
@@ -24,7 +25,7 @@ const StudyMaterial = () => {
                 hd2={"FOR YOUR BETTER FUTURE"}
             />
             <div className="study-material-section">
-                <CourseLinks />
+                <CourseLinks defaultLink={'Chemical Science Study Material'}/>
                 <div className="study-material-section-right-nav">
                     <CourseDetail  imgSrc={courseDetailImg} heading1={"Chemical Science Study Material"} />
 
@@ -37,6 +38,7 @@ const StudyMaterial = () => {
                 </div>
 
             </div>
+            <WhatsappIcon/>
             <Footer/>
         </div>
     )

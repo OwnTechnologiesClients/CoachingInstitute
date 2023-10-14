@@ -19,4 +19,14 @@ $blue: #2D8EFF;
         line-height: 1.4vw;
         padding-bottom: 6vw;
     }
+    @media screen and (max-width:480px) {
+        h2{
+            font-size: 1.7rem;
+            padding: 1rem 0;
+        }
+        .description{
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+        }
+    }
 }

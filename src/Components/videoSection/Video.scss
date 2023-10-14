@@ -31,8 +31,28 @@ $text: #646262;
 
     .cards {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-between;       
+    }
+    
+    @media screen and (max-width:"480px") {
+            padding: 6vw;
+            .top-heading {
+                padding-bottom: 2vw;
+        
+                h1 {
+                    font-size: 1.7rem;
+                }
+        
+                button {
+                    padding: .6vw .8vw;
+                    font-size: 1rem;
+                }
+            }
+        
+            .cards {
+                flex-direction: column;                
+            }
+        
         
     }
 }

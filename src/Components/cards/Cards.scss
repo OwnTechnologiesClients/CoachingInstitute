@@ -34,4 +34,31 @@ $text: #646262;
         font-size: .8vw;
         margin: 1vw;
     }
+    @media screen and (max-width:"480px") {
+            width: unset;
+            margin: 1rem 0;
+        
+            img {
+                width: 88vw;
+            }
+        
+            div {
+        
+                h2 {
+                    font-size: 1.3rem;
+                    padding: .7rem 0;
+                }
+        
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        
+            button {
+                padding: .4rem .6rem;
+                font-size: 1.1rem;
+                margin: 1rem 1vw;
+            }
+        
+    }
 }

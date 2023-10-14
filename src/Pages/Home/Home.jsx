@@ -10,6 +10,7 @@ import VideoSection from '../../components/videoSection/VideoSection'
 import StatisticsSection from '../../components/statistics/StatisticsSection';
 import { Header1, Header2 } from '../../components/header/Header';
 import heroImage from '../../assets/bg4.png'
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 
 const Home = () => {
 
@@ -33,7 +34,7 @@ const Home = () => {
             <StatisticsSection />
 
             <VideoSection />
-
+            <WhatsappIcon/>
             <Footer />
         </div>
     )

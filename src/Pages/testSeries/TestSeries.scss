@@ -39,4 +39,9 @@ $light-text: #989696;
             font-size: 1.7vw;
         }
     }
+    @media screen and (max-width:480px) {
+        .test-series-section{
+            flex-direction: column;
+        }
+    }
 }

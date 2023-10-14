@@ -96,4 +96,85 @@ $theme-color: #202C45;
             font-size: 1vw;
         }
     }
+    @media screen and (max-width:480px) {
+        
+           flex-direction: column;
+        
+            .contact-cards {
+                .card {
+                    width: unset;
+                    padding: 1rem;
+                    margin: 3rem 0;
+                    background-color: $light-bg;
+        
+                    img {
+                        padding-right: 1rem;
+                        width: 4rem;
+                        height: 4rem;
+                    }
+        
+                    div {
+        
+                        h2 {
+                            font-size: 1.2rem;
+                            margin-top: .3vw;
+                        }
+        
+                        p {
+                            color: $text-light;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        
+            .contact-form {
+                padding: 2.5vw 0 2.5vw 4vw;
+        
+                h2 {
+                    font-size: 1.7rem;
+                }
+        
+                p {
+                    font-size: 1rem;
+                    margin: 1rem 0;
+                }
+        
+        
+                input::-webkit-input-placeholder,
+                textarea::-webkit-input-placeholder {
+                    font-size: 1.1rem;
+                    color: $light;
+                }
+        
+                input,
+                textarea {
+                    margin: 1vw 0;
+                    height: 3rem;
+                    padding: 0 2vw;
+                    font-size: 1.1vw;
+                    color: $light;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+        
+                textarea {
+                    height: 8rem;
+                    font-size: 1.1vw;
+                    padding: 1vw 2vw;
+                    resize: none;
+                }
+        
+                button{
+                    border: none;
+                    color: #fff;
+                    background-color: $theme-color;
+                    width: 50%;
+                    height: 2.3rem;
+                    font-size: 1rem;
+                }
+            }
+        
+    }
 }

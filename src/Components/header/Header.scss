@@ -15,7 +15,6 @@ $text: #646262;
 
         span {
             margin: 0 .5vw;
-            font-size: 1.1vw;
 
             &:hover {
                 cursor: pointer;
@@ -26,9 +25,8 @@ $text: #646262;
 
     .top-icons {
         img {
-            margin: 0 .7vw;
+            margin: 0 7px;
             margin-top: .2vw;
-            width: 1.1vw;
             &:hover {
                 cursor: pointer;
             }

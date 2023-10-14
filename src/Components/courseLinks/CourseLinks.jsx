@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import CoursePageList from '../../components/coursePageList/CoursePageList';
 import './CourseLinks.scss';
 
-const CourseLinks = () => {
-    const [activeLink, setActiveLink] = useState('Link1');
+const CourseLinks = ({defaultLink}) => {
+
+    const [activeLink, setActiveLink] = useState(defaultLink);
 
     const handleLinkClick = (link) => {
         setActiveLink(link);

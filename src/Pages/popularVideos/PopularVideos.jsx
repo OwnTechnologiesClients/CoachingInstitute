@@ -7,6 +7,7 @@ import './PopularVideos.scss';
 import Videoimg from '../../assets/video.png'
 import { VideoCard } from '../../components/cards/Cards'
 import Footer from '../../components/footer/Footer'
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
 const PopularVideos = () => {
     return (
@@ -25,15 +26,15 @@ const PopularVideos = () => {
             <div className="popular-videos-section">
                 <h2><span>POPULAR</span> VIDEOS</h2>
                 <div className="video-cards">
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12].map((item, index) => {
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, index) => {
                         return (
                             <VideoCard key={index} imgSrc={Videoimg} />
                         )
                     })}
                 </div>
             </div>
-
-            <Footer/>
+            <WhatsappIcon />
+            <Footer />
 
         </div>
     )

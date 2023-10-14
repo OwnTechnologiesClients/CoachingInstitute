@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from "react";
 import './Login.scss';
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Header1, Header2 } from '../../../components/header/Header';
 import Navbar from '../../../Components/navbar/Navbar';
 import HeroSection from '../../../components/heroSection/HeroSection';
 import Footer from '../../../Components/footer/Footer';
+import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
 
 
 
@@ -15,7 +16,7 @@ const Login = () => {
 
     const navigateToContacts = () => {
         // 👇️ navigate to /contacts
-        navigate('/select-course');
+        navigate('/courses');
     };
 
     const [userId, setUserId] = useState("");
@@ -28,9 +29,6 @@ const Login = () => {
             <Header1/>
             <Header2/>
             <Navbar/>
-            <HeroSection/>
-
-
 
             <div className='student-login-section'>
 
@@ -66,7 +64,7 @@ const Login = () => {
                         </div>
 
                         <div className='already-member'>
-                            <p1>Already Memeber? Sign In</p1>
+                            <p1>Don't have Account? <Link to="/student-signup">Sign Up</Link></p1>
                         </div>
 
                     </div>
@@ -74,6 +72,7 @@ const Login = () => {
 
 
             </div>
+            <WhatsappIcon/>
             <Footer/>
         </div>
         

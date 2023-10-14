@@ -9,6 +9,7 @@ import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable';
 import CourseLinks from '../../components/courseLinks/CourseLinks';
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 
 const Course = () => {
     return (
@@ -25,7 +26,7 @@ const Course = () => {
             />
 
             <div className="course-page-section">
-                <CourseLinks />
+                <CourseLinks defaultLink={'Chemical Science Coaching'}/>
                 <div className="course-page-right-nav">
                     <CourseDetail imgSrc={courseDetailImg} heading1={"Chemical Science Coaching"} />
                     <div className="course-idea">
@@ -35,7 +36,7 @@ const Course = () => {
                     </div>
                 </div>
             </div>
-
+            <WhatsappIcon />
             <Footer />
 
         </div>

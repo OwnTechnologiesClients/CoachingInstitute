@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom"
 import logo from '../../assets/logo.png';
 import teacher from '../../assets/teacher1.png';
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 
 
 function Form() {
@@ -19,7 +20,7 @@ function Form() {
     const navigate = useNavigate();
 
     const navigateToContacts = () => {
-        navigate('/test-subjects');
+        navigate('/testseries');
     };
 
     return (
@@ -701,7 +702,7 @@ function Form() {
                 <button class="button" onClick={navigateToContacts}>Pay Now</button>
 
             </div>
-
+<WhatsappIcon/>
         </div>
 
     )

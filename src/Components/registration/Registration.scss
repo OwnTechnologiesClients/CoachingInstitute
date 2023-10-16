@@ -36,6 +36,9 @@ $text: #646262;
     }
 
     button {
+        outline: none;
+        border: none;
+        border-left: .3vw solid $blue;
         &:hover {
             cursor: pointer;
         }

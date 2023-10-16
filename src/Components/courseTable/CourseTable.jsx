@@ -1,6 +1,11 @@
 import React from 'react'
 import './CourseTable.scss'
+import { useNavigate } from 'react-router-dom'
 const CourseTable = ({ mode }) => {
+    const navigate = useNavigate();
+    const handleEnroll = ()=>{
+        navigate('/student-login');
+    }
     return (
         <div className='course-table'>
             <div className="dashboard">
@@ -17,28 +22,28 @@ const CourseTable = ({ mode }) => {
                     <span>45 minutes</span>
                     <span>3 years</span>
                     <span>₹299</span>
-                    <button>Enroll Now</button>
+                    <button onClick={handleEnroll}>Enroll Now</button>
                 </div>
                 <div className="child-row">
                     <span>NET Chemical Science</span>
                     <span>45 minutes</span>
                     <span>2 years</span>
                     <span>₹299</span>
-                    <button>Enroll Now</button>
+                    <button onClick={handleEnroll}>Enroll Now</button>
                 </div>
                 <div className="child-row">
                     <span>NET Chemical Science</span>
                     <span>1 Hour</span>
                     <span>4 years</span>
                     <span>₹299</span>
-                    <button>Enroll Now</button>
+                    <button onClick={handleEnroll}>Enroll Now</button>
                 </div>
                 <div className="child-row">
                     <span>NET Chemical Science</span>
                     <span>30 minutes</span>
                     <span>5 years</span>
                     <span>₹299</span>
-                    <button>Enroll Now</button>
+                    <button onClick={handleEnroll}>Enroll Now</button>
                 </div>
             </div>
         </div>

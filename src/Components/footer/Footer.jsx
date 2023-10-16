@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../assets/logo.png'
 import fbicon from '../../assets/icons/facebook.png'
 import yticon from '../../assets/icons/youtube.png'
-import igicon from '../../assets/icons/instagram.png'
+import igicon from '../../assets/icons/igfigmaicon.png'
 import checkbox from '../../assets/icons/checkbox.png'
 import down from '../../assets/icons/down.png'
 import call from '../../assets/call.png'
@@ -20,8 +20,8 @@ const Footer = () => {
         </div>
         <div className="footer-icons">
           <img src={fbicon} width={"25vw"} alt="" />
-          <img src={yticon} width={"25vw"} alt="" />
           <img src={igicon} width={"25vw"} alt="" />
+          <img src={yticon} width={"25vw"} alt="" />
         </div>
       </div>
       <div className="courses">
@@ -47,23 +47,23 @@ const Footer = () => {
 
         <div className="link">
           <img src={checkbox} alt="" />
-          <Link to="#">About us</Link>
+          <Link to="/about">About us</Link>
         </div>
         <div className="link">
           <img src={checkbox} alt="" />
-          <Link to="#">Videos</Link>
+          <Link to="videos">Videos</Link>
         </div>
         <div className="link">
           <img src={checkbox} alt="" />
-          <Link to="#">Blog</Link>
+          <Link to="blog">Blog</Link>
         </div>
         <div className="link">
           <img src={checkbox} alt="" />
-          <Link to="#">Students</Link>
+          <Link to="/student-login">Students</Link>
         </div>
         <div className="link">
           <img src={checkbox} alt="" />
-          <Link to="#">Content</Link>
+          <Link to="/courses">Courses</Link>
         </div>
       </div>
       <div className="box">

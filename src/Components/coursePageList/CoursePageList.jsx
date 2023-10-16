@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './CoursePageList.scss';
 
-const CoursePageList = ({ hd1, hd2, link1, link2, link3, activeLink, onLinkClick }) => {
+const CoursePageList = ({ hd1, hd2, link1, link2, link3, activeLink, onLinkClick,url1 }) => {
     return (
         <div className="course-list">
             <h2>
-                {hd1} <span>{hd2}</span>
+                {hd1} <span className='under-bar'>{hd2}</span>
             </h2>
             <div className="course-links">
                 <div className={`course-link ${activeLink === link1 ? 'active' : ''}`}>
-                    <Link to="#" onClick={() => onLinkClick(link1)}>
+                    <Link to={url1} onClick={() => onLinkClick(link1)}>
                         {link1}
                     </Link>
                 </div>

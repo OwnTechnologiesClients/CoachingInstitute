@@ -49,7 +49,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact-form">
-                    <h2>Interested in discussing?</h2>
+                    <h2 className='under-bar'>Interested in discussing?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum enim dolorem. Praesentium quaerat nesciunt voluptatem sit odio dolorum, aliquid expedita veniam sapiente earum natus</p>
 
                     <div className="form-fields">

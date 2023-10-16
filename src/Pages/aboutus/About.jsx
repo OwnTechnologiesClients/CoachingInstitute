@@ -25,7 +25,7 @@ const About = () => {
             <WelcomeSection />
 
             <div className="who-we-are">
-                <h2><span>WHO</span> WE ARE</h2>
+                <h2 className='under-bar'><span>WHO</span> WE ARE</h2>
                 <div className="description">
                     <p>Welcome to ASAP Chemtime, a premier educational institute that provides high-quality coaching classes for competitive exams in Chemistry and Mathematics. Our institute is committed to providing the best education to students and helping them achieve their goals.</p><br />
                     <p>Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics. We aim to provide high-quality education that empowers students to achieve their full potential and build successful careers in their chosen fields.</p><br />

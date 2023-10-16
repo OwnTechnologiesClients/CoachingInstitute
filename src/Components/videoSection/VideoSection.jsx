@@ -8,7 +8,7 @@ const VideoSection = () => {
         <div className="videos-section">
             <div className='top-heading'>
                 <h1>
-                    POPULAR <span>VIDEOS</span>
+                    POPULAR <span className='under-bar'>VIDEOS</span>
                 </h1>
                 <button>
                     View All

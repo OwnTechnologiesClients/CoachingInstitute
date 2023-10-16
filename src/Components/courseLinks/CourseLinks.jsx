@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CoursePageList from '../../components/coursePageList/CoursePageList';
 import './CourseLinks.scss';
 
-const CourseLinks = ({defaultLink}) => {
-
-    const [activeLink, setActiveLink] = useState(defaultLink);
-
-    const handleLinkClick = (link) => {
-        setActiveLink(link);
-    };
+const CourseLinks = ({activeLink,handleLinkClick}) => {    
 
     return (
         <div className="course-page-left-nav">
@@ -20,6 +14,7 @@ const CourseLinks = ({defaultLink}) => {
                 link3={"UPSC Chemistry Coaching"}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
+                url1={'/courses'}
             />
             <CoursePageList
                 hd1={"Study"}
@@ -29,6 +24,8 @@ const CourseLinks = ({defaultLink}) => {
                 link3={"UPSC Chemistry Study Material"}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
+                url1={'/studymaterial'}
+
             />
             <CoursePageList
                 hd1={"Test"}
@@ -38,10 +35,12 @@ const CourseLinks = ({defaultLink}) => {
                 link3={"UPSC Chemistry Test Series"}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
+                url1={'/testseries'}
+
             />
 
             <div className="opening-hours-list">
-                <h2>Opening <span>Hours</span></h2>
+                <h2>Opening <span className='under-bar'>Hours</span></h2>
                 <div className="timings">
                     <span>Monday :</span>
                     <span>6:00 am - 8:00 pm</span>
@@ -74,7 +73,7 @@ const CourseLinks = ({defaultLink}) => {
             </div>
 
             <div className="contact-form">
-                <h2>Quick <span>Contact</span></h2>
+                <h2>Quick <span className='under-bar'>Contact</span></h2>
                 <div className="form-fields">
                     <input type="email" name="contact-email" id="contact-email" placeholder='Enter Email' />
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Enter Message'></textarea>

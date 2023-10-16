@@ -40,6 +40,11 @@ nav {
             }
         }
     }
+    .courses{
+        &:hover .dropdown-content {
+            display: block;
+        }
+    }
 
     .active {
         background: #fff !important;
@@ -56,12 +61,12 @@ nav {
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 100%;
-            left: 0;
+            top: 1.05vw;
+            left: -1vw;
             background-color: #fff;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            min-width: 160px;
+            min-width: 15vw;
 
             a {
                 color: #333;
@@ -75,9 +80,7 @@ nav {
             }
         }
 
-        &:hover .dropdown-content {
-            display: block;
-        }
+        
     }
 
     .new-batch {
@@ -125,7 +128,7 @@ nav {
             }
 
             .dropdown-content {
-                display: none;
+                display: block;
                 position: absolute;
                 top: 100%;
                 left: 0;
@@ -146,9 +149,7 @@ nav {
                 }
             }
 
-            &:hover .dropdown-content {
-                display: block;
-            }
+           
         }
 
         .new-batch {

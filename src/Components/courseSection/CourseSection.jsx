@@ -8,7 +8,7 @@ const CourseSection = () => {
         <div className="course-section">
             <div className='top-heading'>
                 <h1>
-                    OUR <span>COURSES</span>
+                    OUR <span className='under-bar'>COURSES</span>
                 </h1>
                 <button>
                     View All

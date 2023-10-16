@@ -4,12 +4,13 @@ import './WhatsappIcon.scss'
 const WhatsappIcon = () => {
   return (
     <div className="whatsapp-icon">
-      <img
-        href="https://wa.me/your-whatsapp-number"
+      <a
+        href="https://wa.me/+919999888777"
         target="_blank"
-        rel="noopener noreferrer"
-        src={waicon} alt=""
-      />
+      ><img
+          src={waicon} alt=""
+        />
+      </a>
     </div>
   )
 }

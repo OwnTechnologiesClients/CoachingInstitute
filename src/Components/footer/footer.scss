@@ -22,17 +22,18 @@ $text: #646262;
 
         .message {
             font-family: 'Poppins';
-            line-height: 1.2vw;
-            font-size: 1vw;
+            line-height: 1.5vw;
+            font-size: 1.1vw;
         }
 
         .footer-icons {
+            
             img {
                 background-color: $blue;
                 margin: 1vw .4vw;
-                padding: .3vw;
-                border-radius: 12px;
-                width: 2vw;
+                padding: .4vw;
+                border-radius: 50%;
+                width: 2.2vw;
             }
         }
     }
@@ -44,13 +45,14 @@ $text: #646262;
             font-family: 'Poppins';
             font-weight: 700;
             margin: 1vw 0;
-            font-size: 1.1vw;
+            letter-spacing: .1vw;
+            font-size: 1.3vw;
         }
 
         li {
             font-family: 'Poppins';
-            font-size: 1vw;
-            padding: .15vw;
+            font-size: 1.1vw;
+            padding: .5vw 0;
         }
 
 
@@ -63,19 +65,20 @@ $text: #646262;
             font-family: 'Poppins';
             font-weight: 700;
             margin: 1vw 0;
-            font-size: 1.1vw;
+            letter-spacing: .1vw;
+            font-size: 1.3vw;
         }
 
         img {
-            width: 1vw;
-            font-size: 1vw;
+            width: 1.1vw;
+            font-size: 1.1vw;
             margin-right: .4vw;
         }
 
         a {
             font-family: 'Poppins';
-                line-height: 1.9em;
-            font-size: 1vw;
+            line-height: 2.5rem;
+            font-size: 1.2vw;
         }
     }
 
@@ -83,7 +86,7 @@ $text: #646262;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1vw;
+        font-size: 1.1vw;
         background-color: $blue;
         margin: 2vw;
         width: 20vw;
@@ -96,6 +99,14 @@ $text: #646262;
             padding: .4vw;
             border-radius: 10vw;
             margin-right: 1vw;
+        }
+
+        .h1 {
+            margin-bottom: .5vw;
+            font-size: 1.1vw;
+        }
+        .h2{
+            font-size: 1.3vw;
         }
     }
 
@@ -207,25 +218,25 @@ $text: #646262;
             width: 1.4vw;
         }
     }
+
     @media screen and (max-width:"480px") {
-            padding: .7rem 4vw;
-            
-            .bottom {
-        
-                li {
-                    margin: 0 .3rem;
-                    font-size: 1rem;
-                }
+        padding: .7rem 4vw;
+
+        .bottom {
+
+            li {
+                margin: 0 .3rem;
+                font-size: 1rem;
             }
-        
-            a {
-                img {
-                    background-color: $blue;
-                    border-radius: 1rem;
-                    width: 1.4rem;
-                }
+        }
+
+        a {
+            img {
+                background-color: $blue;
+                border-radius: 1rem;
+                width: 1.4rem;
             }
-        
+        }
+
     }
 }
-

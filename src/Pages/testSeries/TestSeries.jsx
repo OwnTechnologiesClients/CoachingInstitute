@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
@@ -12,6 +12,12 @@ import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
 const TestSeries = () => {
+    const [activeLink, setActiveLink] = useState('Chemical Science Test Series');
+
+    const handleLinkClick = (link) => {
+        
+        setActiveLink(link);
+    };
     return (
         <div className='test-series-page'>
 
@@ -25,9 +31,9 @@ const TestSeries = () => {
                 hd2={"FOR YOUR BETTER FUTURE"}
             />
             <div className="test-series-section">
-                <CourseLinks defaultLink={'Chemical Science Test Series'}/>
+            <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick}/>
                 <div className="test-series-section-right-nav">
-                    <CourseDetail imgSrc={courseDetailImg} heading1={"Chemical Science Study Material"} />
+                    <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} />
 
                     <div className="course-idea">
                         <h2>CourseIdea</h2>

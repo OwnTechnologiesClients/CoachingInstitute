@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './navbar.scss';
 import darrow from '../../assets/down-arrow.png';
 import hamburger from '../../assets/icons/hamburger.png';
+import rightarrow from '../../assets/icons/rightarrow.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -29,7 +30,7 @@ const Navbar = () => {
 
 
   return (
-    <nav>
+    <nav id='navbar'>
       <div className="menu-icon" onClick={toggleMenu}>
         <img src={hamburger} alt="" />
       </div>
@@ -37,14 +38,14 @@ const Navbar = () => {
         <div className={`menu-item ${activeItem === 'Home' ? 'active' : ''}`}>
           <Link to="/" onClick={() => handleItemClick('Home')}>Home</Link>
         </div>
-        <div className={`menu-item ${activeItem === 'courses' ? 'active' : ''}`}>
+        <div className={`menu-item courses ${activeItem === 'courses' ? 'active' : ''}`}>
           <Link to="/courses" onClick={() => handleItemClick('Courses')}>
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="#">Course 1</Link>
-                <Link to="#">Course 2</Link>
-                <Link to="#">Course 3</Link>
+                <Link to="#">Course 1 <img style={{paddingLeft:"1vw"}} src={rightarrow} /> </Link>
+                <Link to="#">Course 2 <img style={{paddingLeft:"1vw"}} src={rightarrow} /> </Link>
+                <Link to="#">Course 3 <img style={{paddingLeft:"1vw"}} src={rightarrow} /> </Link>
               </div>
             </div>
           </Link>

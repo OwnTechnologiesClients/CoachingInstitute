@@ -1,12 +1,11 @@
-import React from 'react'
-
+import React,{useEffect} from 'react'
+import axios from 'axios';
 import './StudentSignup.scss';
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"
-
-
+import { useNavigate } from 'react-router-dom';
 
 const StudentSignup = () => {
+
     const [firstname, setFirstname] = useState("");
     const [emailAddress, setEmailAddress] = useState("");
     const [contactNumber, setContactNumber] = useState("");
@@ -15,11 +14,44 @@ const StudentSignup = () => {
     const [address, setAddress] = useState("");
 
     const navigate = useNavigate();
+    const handleSignup = async (e) => {
+        e.preventDefault();
+        const data = {
+            studentname: firstname,
+            email: emailAddress,
+            fathername
 
-    const navigateToContacts = () => {
-        navigate('/test-subjects');
-    };
+        }
+        try {
 
+            const response = await
+                axios({
+                    method: 'post',
+                    url: 'https://backend-k.onrender.com/api/student/signup',
+                    data: {
+                        studentname: firstname,
+                        email: emailAddress,
+                        fathername:"fathername",
+                        dateofbirth:'01/10/2001',
+                        contactnumber: contactNumber,
+                        city: city,
+                        state:"state",
+                        pincode: pincode,
+                        address: address,
+                    },
+                });
+            console.log(response.data);
+
+        } catch (error) {
+            console.error('Error sending data:', error);
+        }
+    }
+    useEffect(() => {
+      if(localStorage.getItem('token')){
+        navigate('/')
+      }
+    }, [])
+    
     return (
         <div className='student-detail-parent'>
 
@@ -72,11 +104,10 @@ const StudentSignup = () => {
 
 
                     <div className='signup-button'>
-                        <button class="button" onClick={navigateToContacts}>Sign Up</button>
+                        <button classButton="button" onClick={handleSignup}>Sign Up</button>
 
 
                     </div>
-
 
                     <p>Already Memeber? Sign In</p>
 

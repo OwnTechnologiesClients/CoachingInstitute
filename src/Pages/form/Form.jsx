@@ -5,11 +5,54 @@ import { useNavigate } from "react-router-dom"
 import logo from '../../assets/logo.png';
 import teacher from '../../assets/teacher1.png';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
-
+import useRazorpay from "react-razorpay";
 
 function Form() {
     const [name, setName] = useState("");
+    const [amount, setAmount] = useState(1000);
     const [selectedOption, setSelectedOption] = useState("Male")
+
+    const [Razorpay] = useRazorpay();
+
+    //Function to handle razorpay
+    const handlePayment = async (params) => {
+
+        const options = {
+            key: "rzp_test_XIQpLJB0JJOCKa",
+            key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
+            amount: amount * 100,
+            currency: "INR",
+            name: "ChemTime",
+            description: "Course",
+            handler: function (response) {
+                alert(response.razorpay_payment_id);
+            },
+            prefill: {
+                name: "pawan",
+                email: "youremail@example.com",
+                contact: "9999999999",
+            },
+            notes: {
+                address: "Razorpay Corporate Office",
+            },
+            theme: {
+                color: "#3399cc",
+            },
+        };
+        var pay = new window.Razorpay(options);
+        pay.open();
+
+        // rzp1.on("payment.failed", function (response) {
+        //     alert(response.error.code);
+        //     alert(response.error.description);
+        //     alert(response.error.source);
+        //     alert(response.error.step);
+        //     alert(response.error.reason);
+        //     alert(response.error.metadata.order_id);
+        //     alert(response.error.metadata.payment_id);
+        // });
+
+    };
 
     // Function to handle the change in radio button selection
     function onValueChange(event) {
@@ -698,11 +741,11 @@ function Form() {
 
 
             <div className='sf-paynow'>
-                <button class="button" onClick={navigateToContacts}>Print As PDF</button>
-                <button class="button" onClick={navigateToContacts}>Pay Now</button>
+                <button className="button" onClick={navigateToContacts}>Print As PDF</button>
+                <button className="button" onClick={handlePayment}>Pay Now</button>
 
             </div>
-<WhatsappIcon/>
+            <WhatsappIcon />
         </div>
 
     )

@@ -17,9 +17,9 @@ const Header1 = () => {
                 <span><Link to='/student-login'>Login</Link></span>
             </div>
             <div className="top-icons">
-                <img src={fbicon} width={"17vw"} alt="" />
-                <img src={yticon} width={"17vw"} alt="" />
-                <img src={igicon} width={"17vw"} alt="" />
+                <a href="https://facebook.com"><img src={fbicon} width={"17vw"} alt="" /></a>
+                <a href="https://youtube.com"><img src={yticon} width={"17vw"} alt="" /></a>
+                <a href="https://instagram.com"><img src={igicon} width={"17vw"} alt="" /></a>
             </div>
         </div>
     )
@@ -32,7 +32,7 @@ const Header2 = () => {
             </div>
             <div className="contact">
                 <div className="call">
-                    <img src={phoneIcon} alt="" />
+                    <a href="9999888777"><img src={phoneIcon} alt="" /></a>
                     <div>
                         <p className='h1'>CALL US TODAY</p>
                         <p className='h2'>+91 9999888777</p>

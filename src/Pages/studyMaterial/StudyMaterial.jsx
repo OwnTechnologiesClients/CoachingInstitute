@@ -8,8 +8,9 @@ import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable'
 import Footer from '../../components/footer/Footer'
-import './StudyMaterial.scss';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
+import './StudyMaterial.scss';
+import studyMaterialData from './Studymaterial.json'
 
 const StudyMaterial = () => {
     const [activeLink, setActiveLink] = useState('Chemical Science Study Material');
@@ -33,7 +34,7 @@ const StudyMaterial = () => {
             <div className="study-material-section">
                 <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick}/>
                 <div className="study-material-section-right-nav">
-                    <CourseDetail  imgSrc={courseDetailImg} heading1={activeLink} />
+                    <CourseDetail  imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData}/>
 
                     <div className="course-idea">
                         <h2>CourseIdea</h2>

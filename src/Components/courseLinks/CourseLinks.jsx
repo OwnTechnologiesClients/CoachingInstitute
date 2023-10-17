@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import CoursePageList from '../../components/coursePageList/CoursePageList';
+import emailjs from '@emailjs/browser';
 import './CourseLinks.scss';
 
-const CourseLinks = ({activeLink,handleLinkClick}) => {    
+const CourseLinks = ({ activeLink, handleLinkClick }) => {
+    const form = useRef();
+    const handleMessage = (e) => {
+        e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
+        if (form !== null) {
+            emailjs.sendForm('service_k99s57e', 'template_2a0tus6REMOVE_THIS', form.current, '7EjtnFEz-7ax6QsuK')
+                .then((result) => {
+                    console.log(result)
+                }, (error) => {
+                    console.log(error)
+                });
+            form.current.reset();
+        }
+    }
     return (
         <div className="course-page-left-nav">
             <CoursePageList
@@ -74,11 +88,11 @@ const CourseLinks = ({activeLink,handleLinkClick}) => {
 
             <div className="contact-form">
                 <h2>Quick <span className='under-bar'>Contact</span></h2>
-                <div className="form-fields">
-                    <input type="email" name="contact-email" id="contact-email" placeholder='Enter Email' />
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder='Enter Message'></textarea>
-                    <button type="submit">Send Message</button>
-                </div>
+                <form className="form-fields" ref={form} onSubmit={handleMessage}>
+                    <input type="email" name="email" id="contact-email" placeholder='Enter Email' required />
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder='Enter Message' required></textarea>
+                    <button type="submit" >Send Message</button>
+                </form>
             </div>
         </div>
     )

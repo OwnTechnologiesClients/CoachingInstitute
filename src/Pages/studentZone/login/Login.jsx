@@ -1,34 +1,52 @@
 import React from 'react'
 import { useState } from "react";
 import './Login.scss';
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Header1, Header2 } from '../../../components/header/Header';
 import Navbar from '../../../Components/navbar/Navbar';
-import HeroSection from '../../../components/heroSection/HeroSection';
 import Footer from '../../../Components/footer/Footer';
 import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
+import axios from 'axios';
 
 
 
 
 const Login = () => {
-    const navigate = useNavigate();
-
-    const navigateToContacts = () => {
-        // 👇️ navigate to /contacts
-        navigate('/courses');
-    };
 
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
 
+    const handleLogin = async () => {
 
+        try {
+
+            const response = await
+                axios({
+                    method: 'post',
+                    url: 'https://backend-k.onrender.com/api/student/login',
+                    data: {
+                        email: 'vipul1243@gmail.com',
+                        dateofbirth: '01/09/2001'
+                    },
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem("token")}`
+                    }
+                });
+            console.log(response.data);
+            if (response.data.success) {
+                localStorage.setItem('token', response.data.data);
+            }
+        } catch (error) {
+            console.error('Error sending data:', error);
+            // Handle error, maybe show an error message to the user
+        }
+    }
 
     return (
         <div>
-            <Header1/>
-            <Header2/>
-            <Navbar/>
+            <Header1 />
+            <Header2 />
+            <Navbar />
 
             <div className='student-login-section'>
 
@@ -60,7 +78,7 @@ const Login = () => {
 
 
                         <div className='login-button'>
-                            <button class="button" onClick={navigateToContacts}>Login</button>
+                            <button className="button" onClick={handleLogin}>Login</button>
                         </div>
 
                         <div className='already-member'>
@@ -72,10 +90,10 @@ const Login = () => {
 
 
             </div>
-            <WhatsappIcon/>
-            <Footer/>
+            <WhatsappIcon />
+            <Footer />
         </div>
-        
+
     )
 }
 

@@ -10,7 +10,7 @@ import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable';
 import CourseLinks from '../../components/courseLinks/CourseLinks';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
-
+import courseData from './Course.json'
 const Course = () => {
     const [activeLink, setActiveLink] = useState('Chemical Science Coaching');
 
@@ -37,7 +37,7 @@ const Course = () => {
                 handleLinkClick={handleLinkClick} 
                 />
                 <div className="course-page-right-nav">
-                    <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} />
+                    <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={courseData}/>
                     <div className="course-idea">
                         <h2 className='under-bar'>CoursesIdea</h2>
                         <CourseTable mode={"Offline Dashboard"} />

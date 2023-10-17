@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
@@ -9,8 +9,20 @@ import locationIcon from '../../assets/icons/location.png'
 import callIcon from '../../assets/icons/call.png'
 import mailIcon from '../../assets/icons/mail.png'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
-
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+    const form = useRef();
+    const handleSubmit = (e)=>{
+        e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+        emailjs.sendForm('service_k99s57e', 'template_licqapsREMOVE_THIS', form.current, '7EjtnFEz-7ax6QsuK')
+          .then((result) => {
+              console.log(result)
+          }, (error) => {
+            console.log(error)
+        });
+        form.current.reset();
+    }
     return (
         <div className='study-material-page'>
 
@@ -52,13 +64,13 @@ const Contact = () => {
                     <h2 className='under-bar'>Interested in discussing?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum enim dolorem. Praesentium quaerat nesciunt voluptatem sit odio dolorum, aliquid expedita veniam sapiente earum natus</p>
 
-                    <div className="form-fields">
-                        <input name='name' placeholder='Enter Name'/>
-                        <input type="email" name="email" id="email" placeholder='Enter Email' />
-                        <input type="number" name="contactnumber" id="contactnumber" placeholder='Enter Contact Number' />
-                        <textarea name="message" rows="10" placeholder='Enter Message'></textarea>
+                    <form className="form-fields" ref={form} onClick={handleSubmit} >
+                        <input name='name' placeholder='Enter Name' required/>
+                        <input type="email" name="email" id="email" placeholder='Enter Email' required/>
+                        <input type="number" name="contactnumber" id="contactnumber" placeholder='Enter Contact Number' required/>
+                        <textarea name="message" rows="10" placeholder='Enter Message' required></textarea>
                         <button type="submit">Send Message</button>
-                    </div>
+                    </form>
                 </div>
             </div>
 

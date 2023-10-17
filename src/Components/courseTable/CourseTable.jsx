@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const CourseTable = ({ mode }) => {
     const navigate = useNavigate();
     const handleEnroll = ()=>{
-        navigate('/student-login');
+        navigate('/form');
     }
     return (
         <div className='course-table'>

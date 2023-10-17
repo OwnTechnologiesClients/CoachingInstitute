@@ -27,10 +27,10 @@ const CourseCard = ({ imgSrc }) => {
         </div>
     )
 }
-const VideoCard = ({ imgSrc }) => {
+const VideoCard = ({ imgSrc,hrefLink }) => {
     return (
         <div className='video-card'>
-            <img src={imgSrc} alt="" />
+            <a href={hrefLink} target='_blank'><img src={imgSrc} alt="" /></a>
             <div >
                 <h2 className='under-bar'>CSIR-NET/JRF</h2>
                 <p>We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future</p>

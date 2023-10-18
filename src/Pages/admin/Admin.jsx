@@ -1,19 +1,18 @@
 import React from 'react'
 import { useState } from "react";
-import './Login.scss';
-import { Link, useNavigate } from "react-router-dom"
-import { Header1, Header2 } from '../../../components/header/Header';
-import Navbar from '../../../Components/navbar/Navbar';
-import Footer from '../../../Components/footer/Footer';
-import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
+import './Admin.scss';
+import { Header1, Header2 } from '../../components/header/Header';
+import Navbar from '../../Components/navbar/Navbar';
+import Footer from '../../Components/footer/Footer';
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const Login = () => {
-const navigate = useNavigate();
+const Admin = () => {
+
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
 
@@ -50,9 +49,6 @@ const navigate = useNavigate();
             draggable: false,
             progress: undefined,
         });
-       setTimeout(() => {
-        navigate('/');
-       }, 2000);
     }
 
     return (
@@ -65,7 +61,7 @@ const navigate = useNavigate();
 
                 <div className='student-login-square'>
                     <div className='student-login-square-header'>
-                        <h2>Login</h2>
+                        <h2>Admin Login</h2>
                     </div>
                     <div className='student-login-card-parent'>
                         {/* <h2>BECOME A MEMBER</h2> */}
@@ -94,10 +90,6 @@ const navigate = useNavigate();
                             <button className="button" onClick={handleLogin}>Login</button>
                         </div>
 
-                        <div className='already-member'>
-                            <p className='signupnow'>Don't have Account? <Link to="/student-signup">Sign Up</Link></p>
-                        </div>
-
                     </div>
                 </div>
 
@@ -111,4 +103,4 @@ const navigate = useNavigate();
     )
 }
 
-export default Login
+export default Admin

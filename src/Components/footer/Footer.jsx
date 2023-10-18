@@ -13,77 +13,77 @@ const Footer = () => {
   return (
     <div>
       <div className='footer'>
-      <div className="detail">
-        <img src={logo} alt="" />
-        <div className="message">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque maxime, perferendis enim quia, officia quibusdam optio amet cupiditate natus consequuntur dolores fuga ipsum.
+        <div className="detail">
+          <img src={logo} alt="" />
+          <div className="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque maxime, perferendis enim quia, officia quibusdam optio amet cupiditate natus consequuntur dolores fuga ipsum.
+          </div>
+          <div className="footer-icons">
+            <img src={fbicon} width={"25vw"} alt="" />
+            <img src={igicon} width={"25vw"} alt="" />
+            <img src={yticon} width={"25vw"} alt="" />
+          </div>
         </div>
-        <div className="footer-icons">
-          <img src={fbicon} width={"25vw"} alt="" />
-          <img src={igicon} width={"25vw"} alt="" />
-          <img src={yticon} width={"25vw"} alt="" />
+        <div className="courses">
+          <h4>Courses</h4>
+          <Link to="#">
+            <li>HTML & CSS</li>
+          </Link>
+          <Link to="#">
+            <li>Java</li>
+          </Link>
+          <Link to="#">
+            <li>Python</li>
+          </Link>
+          <Link to="#">
+            <li>Power Point</li>
+          </Link>
+          <Link to="#">
+            <li>MS-Office</li>
+          </Link>
         </div>
-      </div>
-      <div className="courses">
-        <h4>Courses</h4>
-        <Link to="#">
-          <li>HTML & CSS</li>
-        </Link>
-        <Link to="#">
-          <li>Java</li>
-        </Link>
-        <Link to="#">
-          <li>Python</li>
-        </Link>
-        <Link to="#">
-          <li>Power Point</li>
-        </Link>
-        <Link to="#">
-          <li>MS-Office</li>
-        </Link>
-      </div>
-      <div className="links ">
-        <h4>Useful Links</h4>
+        <div className="links ">
+          <h4>Useful Links</h4>
 
-        <div className="link">
-          <img src={checkbox} alt="" />
-          <Link to="/about">About us</Link>
+          <div className="link">
+            <img src={checkbox} alt="" />
+            <Link to="/about">About us</Link>
+          </div>
+          <div className="link">
+            <img src={checkbox} alt="" />
+            <Link to="videos">Videos</Link>
+          </div>
+          <div className="link">
+            <img src={checkbox} alt="" />
+            <Link to="blog">Blog</Link>
+          </div>
+          <div className="link">
+            <img src={checkbox} alt="" />
+            <Link to="/student-login">Students</Link>
+          </div>
+          <div className="link">
+            <img src={checkbox} alt="" />
+            <Link to="/courses">Courses</Link>
+          </div>
         </div>
-        <div className="link">
-          <img src={checkbox} alt="" />
-          <Link to="videos">Videos</Link>
-        </div>
-        <div className="link">
-          <img src={checkbox} alt="" />
-          <Link to="blog">Blog</Link>
-        </div>
-        <div className="link">
-          <img src={checkbox} alt="" />
-          <Link to="/student-login">Students</Link>
-        </div>
-        <div className="link">
-          <img src={checkbox} alt="" />
-          <Link to="/courses">Courses</Link>
+        <div className="box">
+          <img src={call} alt="" />
+          <div>
+            <p className='h1'>For More Details</p>
+            <p className='h2'>+91 9999888777</p>
+          </div>
         </div>
       </div>
-      <div className="box">
-        <img src={call} alt="" />
+      <div className='bottom-footer' >
+        <div className='bottom'>
+          <li><Link to='/courses'>Popular Courses |</Link></li>
+          <li><Link to='/contact'>Help Desk |</Link></li>
+          <li><Link to='/student-login'>Login</Link></li>
+        </div>
         <div>
-          <p className='h1'>For More Details</p>
-          <p className='h2'>+91 9999888777</p>
+          <a href="#navbar"><img src={down} alt="" /></a>
         </div>
       </div>
-    </div>
-    <div className='bottom-footer' >
-    <div className='bottom'>
-      <li>FAQ |</li>
-      <li>Help Desk |</li>
-      <li>Login</li>
-    </div>
-    <div>
-      <a href="#navbar"><img src={down} alt="" /></a>
-    </div> 
-   </div>
     </div>
   )
 }

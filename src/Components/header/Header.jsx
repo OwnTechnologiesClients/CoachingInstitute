@@ -9,11 +9,12 @@ import './Header.scss'
 import { Link } from 'react-router-dom'
 
 const Header1 = () => {
+   
     return (
         <div className="top-bar">
             <div className='top-links'>
-                <span>FAQ |</span>
-                <span>Help Desk |</span>
+                <span><Link to='/courses'>Popular Courses &nbsp;&nbsp;|</Link></span>
+                <span><Link to='/contact'>Help Desk &nbsp;&nbsp;|</Link></span>
                 <span><Link to='/student-login'>Login</Link></span>
             </div>
             <div className="top-icons">

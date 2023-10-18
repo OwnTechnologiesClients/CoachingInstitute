@@ -21,12 +21,18 @@ $text: #646262;
                 color: #c2deff;
             }
         }
+
+        @media screen and (max-width:"480px") {
+            font-size: .7rem;
+
+        }
     }
 
     .top-icons {
         img {
             margin: 0 7px;
             margin-top: .2vw;
+
             &:hover {
                 cursor: pointer;
             }

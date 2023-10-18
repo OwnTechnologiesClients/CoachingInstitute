@@ -10,6 +10,7 @@ import TestSeries from './pages/testSeries/TestSeries';
 import StudyMaterial from './pages/studyMaterial/StudyMaterial';
 import PopularVideos from './pages/popularVideos/PopularVideos';
 import About from './pages/aboutus/About';
+import Admin from './pages/admin/Admin';
 import Contact from './pages/contactus/Contact';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/student-login' element={<Login />} />
           <Route path='/student-signup' element={<StudentSignup />} />
           <Route path='/history' element={<History />} />
+          <Route path='/admin' element={<Admin/>} />
         </Routes>
       </BrowserRouter>
 

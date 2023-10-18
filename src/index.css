@@ -24,3 +24,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: .7vw;
 }
 
+button:hover{
+  cursor: pointer;
+}
+

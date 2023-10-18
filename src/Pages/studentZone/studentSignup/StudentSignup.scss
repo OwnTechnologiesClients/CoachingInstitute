@@ -48,7 +48,19 @@
         border: 2px #B9BAC8;
         margin-top: 1vw;
     }
-
+    
+    .img-button{
+        width: 22vw;
+        height: 2.7vw;
+        padding-left: 1vw;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 2px #B9BAC8;
+        color: #999a99;
+        text-align: start;
+        margin-top: 1vw;
+        background-color: #fff;
+    }
     input,
     input::placeholder {
         font-size: 0.8vw;
@@ -82,13 +94,16 @@
 
     .signup-button {
         margin-bottom: 4vw;
-        margin-top: 3vw;
         justify-content: center;
         display: flex;
+    }
+    input::file-selector-button {
+        display: none;
     }
 
     .signup-button button {
         width: 15vw;
+        margin-top: 1.5vw;
         font-weight: 900;
         font-size: 0.9vw;
         color: white;

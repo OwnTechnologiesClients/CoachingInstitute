@@ -1,13 +1,23 @@
 import React, { useRef } from 'react';
 import CoursePageList from '../../components/coursePageList/CoursePageList';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './CourseLinks.scss';
 
 const CourseLinks = ({ activeLink, handleLinkClick }) => {
     const form = useRef();
     const handleMessage = (e) => {
         e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
+        toast.success('We will contact you soon', {
+            position: 'bottom-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+        });
         if (form !== null) {
             emailjs.sendForm('service_k99s57e', 'template_2a0tus6REMOVE_THIS', form.current, '7EjtnFEz-7ax6QsuK')
                 .then((result) => {
@@ -92,6 +102,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                     <input type="email" name="email" id="contact-email" placeholder='Enter Email' required />
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Enter Message' required></textarea>
                     <button type="submit" >Send Message</button>
+                    <ToastContainer closeButton={false}/>
                 </form>
             </div>
         </div>

@@ -43,12 +43,17 @@ const Navbar = () => {
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="#">Course 1 <img style={{paddingLeft:"1vw"}} src={rightarrow} /> </Link>
-                <Link to="#">Course 2 <img style={{paddingLeft:"1vw"}} src={rightarrow} /> </Link>
-                <Link to="#">Course 3 <img style={{paddingLeft:"1vw"}} src={rightarrow} /> </Link>
+                <Link to="#">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="#">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
               </div>
             </div>
           </Link>
+        </div>
+        <div className={`menu-item ${activeItem === 'testseries' ? 'active' : ''}`}>
+          <Link to="/testseries" onClick={() => handleItemClick('testseries')}>Test Series</Link>
+        </div>
+        <div className={`menu-item ${activeItem === 'studymaterial' ? 'active' : ''}`}>
+          <Link to="/studymaterial" onClick={() => handleItemClick('studymaterial')}>Study Material</Link>
         </div>
         <div className={`menu-item ${activeItem === 'videos' ? 'active' : ''}`}>
           <Link to="/videos" onClick={() => handleItemClick('videos')}>Videos</Link>
@@ -59,19 +64,13 @@ const Navbar = () => {
         <div className={`menu-item ${activeItem === 'about' ? 'active' : ''}`}>
           <Link to="/about" onClick={() => handleItemClick('about')}>About Us</Link>
         </div>
-        <div className={`menu-item ${activeItem === 'testseries' ? 'active' : ''}`}>
-          <Link to="/testseries" onClick={() => handleItemClick('testseries')}>Test Series</Link>
-        </div>
-        <div className={`menu-item ${activeItem === 'studymaterial' ? 'active' : ''}`}>
-          <Link to="/studymaterial" onClick={() => handleItemClick('studymaterial')}>Study Material</Link>
-        </div>
         <div className={`menu-item ${activeItem === 'student-login' ? 'active' : ''}`}>
           <Link to="/student-login" onClick={() => handleItemClick('student-login')}>Student Login</Link>
         </div>
         <div className={`menu-item ${activeItem === 'blog' ? 'active' : ''}`}>
           <Link to="/blog" onClick={() => handleItemClick('blog')}>Blog</Link>
         </div>
-          <div className="new-batch">NEW BATCH</div>
+        <div className="new-batch"><Link to='/courses'>NEW BATCH</Link></div>
       </div>
     </nav>
   );

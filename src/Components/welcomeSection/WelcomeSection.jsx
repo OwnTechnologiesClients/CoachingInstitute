@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const WelcomeSection = () => {
     const navigate = useNavigate();
     const navigateTo = () => {
-        navigate('/courses')
+        navigate('/about')
     }
     return (
         <div className="welcome-section">

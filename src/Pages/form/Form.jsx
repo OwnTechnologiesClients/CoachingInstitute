@@ -6,6 +6,8 @@ import teacher from '../../assets/teacher1.png';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useRazorpay from "react-razorpay";
+import axios from 'axios';
 
 function Form() {
     const [formData, setFormData] = useState({
@@ -13,7 +15,7 @@ function Form() {
         courseduration: "",
         session: "",
         coursetype: "",
-        nameofexamination: "",
+        coursename: "",
         subject: "",
         studentname: "",
         dateofbirth: "",
@@ -53,9 +55,7 @@ function Form() {
         postgraduationcollege: "",
         postgraduationuniversity: ""
     })
-    // const [gender,setGender] = useState('')
-    // const [mode,setMode] = useState('')
-    // const [amount, setAmount] = useState(1000);
+
 
     const handleChange = (event) => {
         setFormData({
@@ -87,140 +87,57 @@ function Form() {
             }));
         }
     };
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData);
-    };
-    // const handleDuration = (e) => {
-    //     const { value } = e.target;
-    //     formData.courseduration
-    //   };
-    // const handleGender = (e) => {
-    //     const { value } = e.target;
-    //     setGender(value);
-    //   };
-    // const handleMode = (e) => {
-    //     const { value } = e.target;
-    //     setMode(value);
-    // }
 
 
-    const handleFormSubmit = async () => {
-
-        toast.success('Form Submitted Successful', {
-            position: 'bottom-right',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: false,
-            draggable: false,
-            progress: undefined,
-        });
-
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+console.log("first")
         try {
 
             const response = await
                 axios({
                     method: 'post',
                     url: 'https://backend-k.onrender.com/api/student/registration-form',
-                    data: {
-                        registrationnumber: registrationnumber,
-                        courseduration: courseduration,
-                        session: session,
-                        coursetype: coursetype,
-                        nameofexamination: nameofexamination,
-                        subject: subject,
-                        name: studentname,
-                        dateofbirth: dateofbirth,
-                        category: category,
-                        gender: gender,
-                        fathername: fathername,
-                        fatheroccupation: fatheroccupation,
-                        designation: designation,
-                        address: address,
-                        state: state,
-                        pincode: pincode,
-                        phonenumber: phonenumber,
-                        mobilenumber: mobilenumber,
-                        email: email,
-                        modeofpayment: modeofpayment,
-                        knowaboutus: knowaboutus,
-                        date: date,
-                        place: place,
-                        xyearpassing: xyearpassing,
-                        xcgpa: xcgpa,
-                        xdivision: xdivision,
-                        xcollege: xcollege,
-                        xuniversity: xuniversity,
-                        xiiyearpassing: xiiyearpassing,
-                        xiicgpa: xiicgpa,
-                        xiidivision: xiidivision,
-                        xiicollege: xiicollege,
-                        xiiuniversity: xiiuniversity,
-                        graduationyearpassing: graduationyearpassing,
-                        graduationcgpa: graduationcgpa,
-                        graduationdivision: graduationdivision,
-                        graduationcollege: graduationcollege,
-                        graduationuniversity: graduationuniversity,
-                        postgraduationyearpassing: postgraduationyearpassing,
-                        postgraduationcgpa: postgraduationcgpa,
-                        postgraduationdivision: postgraduationdivision,
-                        postgraduationcollege: postgraduationcollege,
-                        postgraduationuniversity: postgraduationuniversity,
-                    },
+
+                    data: formData,
                     headers: {
                         authorization: `Bearer ${localStorage.getItem("token")}`
                     }
                 });
             console.log(response.data);
+
             if (response.data.success) {
-                localStorage.setItem('token', response.data.data);
+                toast.success('Saved Successful', {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
             }
+            else {
+                toast.warn(response.data.message, {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
+            }
+
         } catch (error) {
             console.error('Error sending data:', error);
             // Handle error, maybe show an error message to the user
         }
-        handlePayment();
     }
 
     //Function to handle razorpay
     const handlePayment = async (params) => {
-
-        const options = {
-            key: "rzp_test_XIQpLJB0JJOCKa",
-            key_secret: "VTKjL1ldgDB6F1ir9kE5AdFw",
-            amount: amount * 100,
-            currency: "INR",
-            name: "ChemTime",
-            description: "Course",
-            handler: function (response) {
-                alert(response.razorpay_payment_id);
-                alert(response.razorpay_signature);
-            },
-            prefill: {
-                name: "pawan",
-                email: "youremail@example.com",
-                contact: "9999999999",
-            },
-            notes: {
-                address: "Razorpay Corporate Office",
-            },
-            theme: {
-                color: "#3399cc",
-            },
-        };
-        var pay = new window.Razorpay(options);
-        pay.open();
-
     };
-
-    // Function to handle the change in radio button selection
-    function onValueChange(event) {
-        // Updating the state with the selected radio button's value
-        setSelectedOption(event.target.value)
-    }
-
-
 
     return (
 
@@ -394,8 +311,8 @@ function Form() {
 
                     <input
                         type="text"
-                        name='nameofexamination'
-                        value={formData.nameofexamination}
+                        name='coursename'
+                        value={formData.coursename}
                         onChange={handleChange} />
                 </div>
 
@@ -461,6 +378,7 @@ function Form() {
 
                     <span>Male</span>
                     <input
+                        name='gender'
                         type="radio"
                         value="Male"
                         // Checking this radio button if the selected option is "Male"
@@ -471,8 +389,9 @@ function Form() {
                 <label>
                     <span>Female</span>
                     <input
+                        name='gender'
                         type="radio"
-                        value="Male"
+                        value="Female"
                         // Checking this radio button if the selected option is "Male"
                         // checked={selectedOption === "Female"}
                         onChange={handleChange} />
@@ -859,7 +778,7 @@ function Form() {
 
                         <span>Online</span>
                         <input
-                        name='modeofpayment'
+                            name='modeofpayment'
                             type="radio"
                             value="Online"
                             // Checking this radio button if the selected option is "Male"
@@ -871,7 +790,7 @@ function Form() {
                     <label>
                         <span>Offline</span>
                         <input
-                        name='modeofpayment'
+                            name='modeofpayment'
                             type="radio"
                             value="Offline"
                             // Checking this radio button if the selected option is "Female"
@@ -945,7 +864,8 @@ function Form() {
 
             <div className='sf-paynow'>
                 <button className="button" onClick={() => print()}>Print As PDF</button>
-                <button className="button" onClick={handleSubmit}>Pay Now</button>
+                <button className="button" onClick={handleSubmit}>Save</button>
+                <button className="button" onClick={handlePayment}>Pay Now</button>
 
             </div>
             <ToastContainer closeButton={false} />

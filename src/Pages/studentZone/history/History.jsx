@@ -1,13 +1,23 @@
 import React from 'react'
 import "./History.scss"
 import courseImg from '../../../assets/course-img.png'
-
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 const History = () => {
+    const navigate = useNavigate();
+    const handleLogout = ()=>{
+        window.localStorage.clear();
+        navigate('/student-login');
+    }
+    
+    axios.get('https://backend-k.onrender.com/api/student/history')
+    .then((response)=>console.log(response.data))
     return (
         <div>
             <div className='ph-appbar'>
                 <h2>Purchased History</h2>
+                <button onClick={handleLogout}>Logout</button>
             </div>
 
             <div className='ph-course-parent'>

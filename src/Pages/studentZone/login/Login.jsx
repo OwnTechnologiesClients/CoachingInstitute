@@ -13,21 +13,21 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
-const navigate = useNavigate();
+    const navigate = useNavigate();
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
 
     const handleLogin = async () => {
 
         try {
-
+            console.log(userId, password)
             const response = await
                 axios({
                     method: 'post',
                     url: 'https://backend-k.onrender.com/api/student/login',
                     data: {
-                        email: 'vipul1243@gmail.com',
-                        dateofbirth: '01/09/2001'
+                        email: userId,
+                        dateofbirth: password
                     },
                     headers: {
                         authorization: `Bearer ${localStorage.getItem("token")}`
@@ -36,23 +36,35 @@ const navigate = useNavigate();
             console.log(response.data);
             if (response.data.success) {
                 localStorage.setItem('token', response.data.data);
+                toast.success('Login successful', {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
+                setTimeout(() => {
+                    navigate('/');
+                }, 2000);
+            }
+            else {
+                toast.warn(response.data.message, {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
             }
         } catch (error) {
             console.error('Error sending data:', error);
             // Handle error, maybe show an error message to the user
         }
-        toast.success('Login successful', {
-            position: 'bottom-right',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: false,
-            draggable: false,
-            progress: undefined,
-        });
-       setTimeout(() => {
-        navigate('/');
-       }, 2000);
+
     }
 
     return (
@@ -76,17 +88,19 @@ const navigate = useNavigate();
                             <input type="text" className="form-control" name="title"
                                 value={userId}
                                 onChange={(e) => { setUserId(e.target.value) }}
-                                placeholder="" />
+                                placeholder="Enter Email"
+                                required />
                         </div>
 
                         <div className='student-login-userid-section'>
-                            <p>Password</p>
+                            <p>DOB</p>
 
                             {/* ------------ Password Input textfield -------------------- */}
-                            <input type="text" className="form-control" name="title"
+                            <input type="date" className="form-control" name="dateofbirth"
                                 value={password}
                                 onChange={(e) => { setPassword(e.target.value) }}
-                                placeholder="" />
+                                placeholder="DD/MM/YYYY"
+                                required />
                         </div>
 
 
@@ -105,7 +119,7 @@ const navigate = useNavigate();
             </div>
             <WhatsappIcon />
             <Footer />
-            <ToastContainer closeButton={false}/>
+            <ToastContainer closeButton={false} />
         </div>
 
     )

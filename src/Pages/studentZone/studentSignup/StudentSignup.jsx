@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import './StudentSignup.scss';
+import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Header1, Header2 } from '../../../components/header/Header';
 import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
@@ -10,87 +11,80 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const StudentSignup = () => {
-
-    // const fileInputRef = useRef(null);
-
-    const formSignupRef = useRef();
+    const [img, setImg] = useState("");
+    const [firstname, setFirstname] = useState("");
+    const [emailAddress, setEmailAddress] = useState("");
+    const [contactNumber, setContactNumber] = useState("");
+    const [city, setCity] = useState("");
+    const [pincode, setPincode] = useState("");
+    const [address, setAddress] = useState("");
+    const [mage, setMage] = useState();
+    const [stat, setStat] = useState();
+    const [fathername, setFatherName] = useState();
+    const [date, setDate] = useState();
 
     const navigate = useNavigate();
-    const handleSignup = async (e) => {
+
+    const onInputChange = async (e) => {
+        console.log(e.target.files[0]);
+        setMage(e.target.files[0]);
+    }
+
+    const submitImage = async (e) => {
         e.preventDefault();
-
-        const formData = new FormData(formSignupRef.current);
-        const formObject = {};
-
-        //converting formData to object
-        formData.forEach((value, key) => {
-            // Use 'set' to handle multiple values for the same key (e.g., checkboxes)
-            formObject[key] = formObject[key] ? [...formObject[key], value] : value;
-        });
-
-        console.log('Form Data:', formObject);
-
-        formObject['fathername'] = 'fathernamed';
-        formObject['state'] = 'stated';
-
-        try {
-
-            const response = await
-                axios({
-                    method: 'post',
-                    url: 'https://backend-k.onrender.com/api/student/register',
-                    data: formObject,
-                });
-            console.log(response.data);
-
-            if (response.data.success) {
-                localStorage.setItem('token', response.data.data);
-                toast.success('Registration Successful', {
-                    position: 'bottom-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: false,
-                    draggable: false,
-                    progress: undefined,
-                });
-                setTimeout(() => {
-                    navigate('/student-login');
-                }, 2000);
+        const formData = new FormData();
+        formData.append("myFile", mage);
+        formData.append("studentname", firstname);
+        formData.append("email", emailAddress);
+        formData.append("fathername", fathername);
+        formData.append("dateofbirth", date);
+        formData.append("contactnumber", contactNumber);
+        formData.append("city", city);
+        formData.append("state", stat);
+        formData.append("pincode", pincode);
+        formData.append("address", address);
+        console.log(formData)
+        const result = await axios.post(
+            "http://localhost:5000/api/student/register",
+            formData,
+            {
+                headers: { "Content-Type": "multipart/form-data" }
             }
-            else {
-                toast.warn(response.data.message, {
-                    position: 'bottom-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: false,
-                    draggable: false,
-                    progress: undefined,
-                });
-            }
-
-        } catch (error) {
-            console.error('Error sending data:', error);
+        )
+        console.log(result.data.data)
+        console.log(result);
+        if (result.data.success) {
+            setImg(result.data.data.myfilename)
         }
+        console.log(img)
 
+        if (result.data.success) {
+           
+            toast.success('Registration Successful', {
+                position: 'bottom-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+            });
+            setTimeout(() => {
+                navigate('/student-login');
+            }, 2000);
+        }
+        else {
+            toast.warn(result.data.message, {
+                position: 'bottom-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+            });
+        }
     }
-
-    const handleButtonClick = (e) => {
-        e.preventDefault();
-        // Trigger the click event on the file input element
-        fileInputRef.current.click();
-    };
-
-
-    const handleFileChange = (e) => {
-        e.preventDefault();
-        const selectedFile = e.target.files[0];
-        console.log('Selected File:', selectedFile);
-    }
-
-
-
     useEffect(() => {
         if (localStorage.getItem('token')) {
             navigate('/')
@@ -103,86 +97,99 @@ const StudentSignup = () => {
             <Header2 />
             <Navbar />
 
+
             <div className='student-detail-parent'>
+                <img src={img}></img>
+
+
+
+
                 <div className='query-square'>
                     <div className='square-header'>
                         <h2>Student Details</h2>
                     </div>
-                    <form className='query-card-parent' ref={formSignupRef}>
+                    <div className='query-card-parent'>
 
                         {/* ------------ First name Input textfield -------------------- */}
-                        <input type="text" className="form-control" name="studentname"
+                        <input type="text" className="form-control" name="title"
                             value={firstname}
                             onChange={(e) => { setFirstname(e.target.value) }}
-                            placeholder="First Name" required />
+                            placeholder="First Name" />
 
 
                         {/* ------------ emailAddress Input textfield -------------------- */}
-                        <input type="text" className="form-control" name="email"
+                        <input type="text" className="form-control" name="title"
                             value={emailAddress}
                             onChange={(e) => { setEmailAddress(e.target.value) }}
-                            placeholder="Email Address" required />
+                            placeholder="Email Address" />
+
+                        {/* ------------ Father Name Input textfield -------------------- */}
+                        <input type="text" className="form-control" name="title"
+                            value={fathername}
+                            onChange={(e) => { setFatherName(e.target.value) }}
+                            placeholder="Father Name" />
+
+                        {/* ------------ emailAddress Input textfield -------------------- */}
+                        <input type="date" className="form-control" name="dob"
+                            value={date}
+                            onChange={(e) => { setDate(e.target.value) }}
+                            placeholder="Date of Birth" />
 
 
                         {/* ------------ contact Number Input textfield -------------------- */}
-                        <input type="text" className="form-control" name="contactnumber"
+                        <input type="text" className="form-control" name="title"
                             value={contactNumber}
-                            maxLength='10'
                             onChange={(e) => { setContactNumber(e.target.value) }}
-                            placeholder="Contact Number" required />
+                            placeholder="Contact Number" />
 
                         {/* ------------ City Input textfield -------------------- */}
-                        <input type="text" className="form-control" name="city"
+                        <input type="text" className="form-control" name="title"
                             value={city}
                             onChange={(e) => { setCity(e.target.value) }}
-                            placeholder="Enter City" required />
+                            placeholder="Enter City" />
 
-                        {/* ------------ City Input textfield -------------------- */}
-                        <input type="date" className="form-control" name="dateofbirth"
-                            value={dob}
-                            onChange={(e) => { setDOB(e.target.value) }}
-                            placeholder="Enter Date of Birth : yyyy-mm-dd" required />
+                        {/* ------------ State Input textfield -------------------- */}
+                        <input type="text" className="form-control" name="title"
+                            value={stat}
+                            onChange={(e) => { setStat(e.target.value) }}
+                            placeholder="Enter State" />
 
                         {/* ------------ Pincode Input textfield -------------------- */}
-                        <input type="text" className="form-control" name="pincode"
+                        <input type="text" className="form-control" name="title"
                             value={pincode}
                             onChange={(e) => { setPincode(e.target.value) }}
-                            placeholder="Enter Pincode" required />
+                            placeholder="Enter Pincode" />
 
                         {/* ------------ Address Input textfield -------------------- */}
-                        <input type="text" className="form-control" name="address"
+                        <input type="text" className="form-control" name="title"
                             value={address}
                             onChange={(e) => { setAddress(e.target.value) }}
-                            placeholder="Enter Address" required />
+                            placeholder="Enter Address" />
 
-                        {/* ------------ Upload Image Button -------------------- */}
-                        {/* Button to trigger file input click */}
-                        <button
-                            className="form-control img-button"
-                            onClick={handleButtonClick}
-                        >
-                            Upload Image
-                        </button>
-
-                        {/* Hidden file input */}
-                        <input
-                            name='profileimage'
-                            type="file"
-                            id="getfile"
-                            ref={fileInputRef}
-                            onChange={handleFileChange}
+                        <input className="form-control" type="file" id="myFile" name="myFile"
+                            onChange={onInputChange}
                         />
 
+
+
                         <div className='signup-button'>
-                            <button className="button" onClick={handleSignup}>Sign Up</button>
+
+                            <button classButton="button" onClick={submitImage}>Sign Up</button>
+
+
                         </div>
+
+
 
                         <p>Already Memeber? Sign In</p>
 
-                    </form>
-                </div>
-            </div>
 
+
+                    </div>
+                </div>
+
+
+            </div>
             <WhatsappIcon />
             <Footer />
             <ToastContainer closeButton={false} />

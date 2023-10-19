@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from "react";
 import './Login.scss';
 import { Link, useNavigate } from "react-router-dom"
@@ -46,7 +46,7 @@ const Login = () => {
                     progress: undefined,
                 });
                 setTimeout(() => {
-                    navigate('/');
+                    navigate('/history');
                 }, 2000);
             }
             else {
@@ -67,6 +67,12 @@ const Login = () => {
 
     }
 
+    useEffect(() => {
+        if(localStorage.getItem('token')){
+          navigate('/')
+        }
+      }, [])
+
     return (
         <div>
             <Header1 />
@@ -82,7 +88,7 @@ const Login = () => {
                     <div className='student-login-card-parent'>
                         {/* <h2>BECOME A MEMBER</h2> */}
                         <div className='student-login-userid-section'>
-                            <p>User ID</p>
+                            <p>Email ID</p>
 
                             {/* ------------ User Id Input textfield -------------------- */}
                             <input type="text" className="form-control" name="title"

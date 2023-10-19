@@ -8,14 +8,22 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useRazorpay from "react-razorpay";
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 function Form() {
+    const { currentUser } = useSelector((state) => state.users);
+    const { coursename, courseduration, price } = currentUser;
+
+    let regNo = Math.round(Date.now())
+    regNo = regNo.toString();
+    regNo = regNo.substring(4, 9);
+
     const [formData, setFormData] = useState({
-        registrationnumber: "",
-        courseduration: "",
-        session: "",
+        registrationnumber: regNo,
+        courseduration: courseduration,
+        session: "2023-24",
         coursetype: "",
-        coursename: "",
+        coursename: coursename,
         subject: "",
         studentname: "",
         dateofbirth: "",
@@ -56,8 +64,11 @@ function Form() {
         postgraduationuniversity: ""
     })
 
+    //login ke time jo jo chize thi vo bhi prefilled
 
+    const [Razorpay] = useRazorpay();
     const handleChange = (event) => {
+        event.preventDefault();
         setFormData({
             ...formData,
             [event.target.name]: event.target.value
@@ -91,13 +102,13 @@ function Form() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-console.log("first")
+        console.log("first")
         try {
 
             const response = await
                 axios({
                     method: 'post',
-                    url: 'https://backend-k.onrender.com/api/student/registration-form',
+                    url: 'http://localhost:5000/api/student/registration-form',
 
                     data: formData,
                     headers: {
@@ -136,7 +147,88 @@ console.log("first")
     }
 
     //Function to handle razorpay
-    const handlePayment = async (params) => {
+    const handlePayment = async (e) => {
+        e.preventDefault()
+        const response = await
+            axios({
+                method: 'post',
+                url: 'http://localhost:5000/api/payment/createOrder',
+                data: {
+                    amount: price*100,
+                    currency: 'INR',
+                    receipt: "abcd",
+                    notes: {
+                        description: "best course",
+                        language: "DSA",
+                        access: "lifetime"
+                    }
+                },
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem("token")}`
+                }
+            });
+        console.log(response)
+        const options = {
+            key: "rzp_test_XIQpLJB0JJOCKa",
+            // key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
+            amount: response.data.amount,
+            currency: "INR",
+            name: "ChemTime",
+            description: coursename,
+            order_id: response.data.id,
+            handler: async function (response) {
+                console.log(response)
+                const res = await
+                    axios({
+                        method: 'post',
+                        url: 'http://localhost:5000/api/payment/verifyOrder',
+                        data: {
+                            order_id: response.razorpay_order_id,
+                            payment_id: response.razorpay_payment_id
+                        },
+                        headers: {
+                            xrazorpaysignature: response.razorpay_signature
+                        }
+                    });
+
+                console.log(res);
+                alert("This step of Payment Succeeded");
+                if (res.data.success) {
+                    const result = await
+                        axios({
+                            method: 'post',
+                            url: 'http://localhost:5000/api/student/get-registration-form',
+                            data: {
+                                ...formData,
+                                payment: true
+                            }
+                        });
+                    // console.log(result)
+                }
+            },
+            prefill: {
+                name: "ChemTime",
+                email: "youremail@example.com",
+                contact: "9999999999",
+            },
+            notes: {
+                address: "Razorpay Corporate Office",
+            },
+            theme: {
+                color: "#3399cc",
+            },
+        };
+        var pay = new Razorpay(options);
+        pay.open();
+
+        console.log(pay);
+
+        razorpayObject.on('payment.failed', function (response) {
+            console.log(response);
+            alert("This step of Payment Failed");
+        });
+
+
     };
 
     return (
@@ -163,7 +255,7 @@ console.log("first")
                             type="text"
                             name='registrationnumber'
                             value={formData.registrationnumber}
-                            onChange={handleChange} />
+                             />
                     </div>
                     <img src={teacher} />
 
@@ -189,8 +281,8 @@ console.log("first")
                             name='courseduration'
                             type="radio"
                             value="6 Month"
-                            // checked={selectedOption === "6 Month"}
-                            onChange={handleChange} />
+                            checked={formData.courseduration === "6 Month"}
+                             />
                     </label>
 
 
@@ -200,8 +292,8 @@ console.log("first")
                             name='courseduration'
                             type="radio"
                             value="1 Year"
-                            // checked={selectedOption === "1 Year"}
-                            onChange={handleChange} />
+                            checked={formData.courseduration === "1 Year"}
+                             />
                     </label>
 
 
@@ -212,8 +304,8 @@ console.log("first")
                             name='courseduration'
                             type="radio"
                             value="2 Year"
-                            // checked={selectedOption === "2 Year"}
-                            onChange={handleChange} />
+                            checked={formData.courseduration === "2 Year"}
+                             />
                     </label>
 
                 </div>
@@ -353,7 +445,7 @@ console.log("first")
                     <p>Date Of Birth (DD/MM/YY): </p>
 
                     <input
-                        type="text"
+                        type="date"
                         name='dateofbirth'
                         value={formData.dateofbirth}
                         onChange={handleChange} />
@@ -532,26 +624,26 @@ console.log("first")
 
             <div className='sf-result-heading-parent'>
                 <div className='sf-result-heading'>
-                    <p1>Examination</p1>
+                    <p>Examination</p>
 
                 </div>
                 <div>
-                    <p1>Year of Passing</p1>
+                    <p>Year of Passing</p>
                 </div>
 
                 <div>
-                    <p1>% C.G.P.A</p1>
+                    <p>% C.G.P.A</p>
                 </div>
 
                 <div>
-                    <p1>Division</p1>
+                    <p>Division</p>
                 </div>
 
                 <div>
-                    <p1>College</p1>
+                    <p>College</p>
                 </div>
                 <div>
-                    <p1>University/Institution</p1>
+                    <p>University/Institution</p>
                 </div>
 
 
@@ -563,7 +655,7 @@ console.log("first")
 
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>X</p1>
+                    <p>X</p>
                 </div>
                 <div>
                     <input
@@ -613,7 +705,7 @@ console.log("first")
             {/* ///---------- result XI --------------------- */}
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>XII</p1>
+                    <p>XII</p>
                 </div>
                 <div>
                     <input
@@ -664,7 +756,7 @@ console.log("first")
             {/* ///---------- result Graduation --------------------- */}
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>Graduation</p1>
+                    <p>Graduation</p>
                 </div>
                 <div>
                     <input
@@ -715,7 +807,7 @@ console.log("first")
             {/* ///---------- result Post Graduation --------------------- */}
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>Post Graduation</p1>
+                    <p>Post Graduation</p>
                 </div>
                 <div>
                     <input
@@ -822,13 +914,13 @@ console.log("first")
 
             {/*---------------------- Registration Procedure  ---------------------- */}
             <div className='sf-registration-procedure'>
-                <p1>Registration Procedure:- </p1>
+                <p>Registration Procedure:- </p>
                 <p>Send your duly signed application form with one photograph and original copy of Online/Cash Deposit Slip/Transaction Slip drawn in favour of “ASAP CHEM TIME Pvt. Ltd.” payable at New Delhi, to Head. Office only as mentioned in the top right corner of this form. Students are required to mention their Name, Course and Subject on the back side of Demand Draft.</p>
             </div>
 
             {/*---------------------- DECLARATION  ---------------------- */}
             <div className='sf-declaration'>
-                <p1>DECLARATION</p1>
+                <p>DECLARATION</p>
                 <p>I have no objection for my result being published by the ASAP CHEM TIME Pvt. Ltd. if I succeed in the entrance examinations. For disciplinary action, the decision of the managing body of the Institute will be final. Any request for refund/interchange of material will not be entertained. The study material supplied to the student is our copyright and is meant for the use of student himself/herself only.
                     All disputes are subject to Delhi Jurisdiction only.</p><br></br>
                 <p>I have read the declaration mention above and information given are true to the best of my knowledge.</p>

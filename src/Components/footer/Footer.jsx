@@ -51,11 +51,11 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="videos">Videos</Link>
+            <Link to="/videos">Videos</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="blog">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />

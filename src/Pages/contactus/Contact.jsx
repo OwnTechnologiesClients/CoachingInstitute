@@ -36,7 +36,7 @@ const Contact = () => {
         const response = await
         axios({
             method: 'post',
-            url: 'https://backend-k.onrender.com/api/student/contact',
+            url: 'https://localhost:5000/api/student/discussing',
             data: formObject,
             headers: {
                 authorization: `Bearer ${localStorage.getItem("token")}`

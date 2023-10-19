@@ -187,7 +187,7 @@
     margin-right: 2vw;
 }
 
-.sf-date-of-birth input[type=text] {
+.sf-date-of-birth input[type=date] ,.sf-date-of-birth input[type=text]{
     width: 20vw;
     box-sizing: border-box;
     border: none;
@@ -231,7 +231,7 @@
     display: flex;
     margin-top: 2vw;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .sf-result-heading {

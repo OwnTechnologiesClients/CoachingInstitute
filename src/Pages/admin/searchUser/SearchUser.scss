@@ -1,0 +1,47 @@
+.search-user {
+    width: 100%;
+    border-top: 4px;
+
+    .heading {
+        background-color: #2D8EFF;
+        padding: .5vw 6vw;
+        color: #fff;
+
+        h1 {
+            font-family: 'Poppins';
+            font-weight: 700;
+        }
+    }
+
+    .form-fields {
+        .row {
+            display: flex;
+        }
+
+        .row>div {
+            display: flex;
+            flex-direction: column;
+            padding: 1vw;
+        }
+
+        label {
+            padding: .5vw 0;
+            font-family: 'Poppins';
+            font-size: 1.3vw;
+        }
+
+        input,
+        select {
+            font-family: 'Poppins';
+            font-size: 1vw;
+            width: 30vw;
+            height: 3vw;
+            border: none;
+            border-radius: .2vw;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        
+    }
+}

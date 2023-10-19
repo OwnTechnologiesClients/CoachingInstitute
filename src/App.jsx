@@ -12,6 +12,7 @@ import PopularVideos from './pages/popularVideos/PopularVideos';
 import About from './pages/aboutus/About';
 import Admin from './pages/admin/Admin';
 import Contact from './pages/contactus/Contact';
+import SearchUser from './pages/admin/searchUser/SearchUser';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/student-signup' element={<StudentSignup />} />
           <Route path='/history' element={<History />} />
           <Route path='/admin' element={<Admin/>} />
+          <Route path='/searchuser' element={<SearchUser/>} />
         </Routes>
       </BrowserRouter>
 

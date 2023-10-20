@@ -40,7 +40,7 @@ const StudentSignup = () => {
         formData.append("dateofbirth", date);
         formData.append("contactnumber", contactNumber);
         formData.append("city", city);
-        formData.append("state", stat);
+        formData.append("stat", stat);
         formData.append("pincode", pincode);
         formData.append("address", address);
         console.log(formData)

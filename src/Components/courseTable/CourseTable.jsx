@@ -2,6 +2,7 @@ import React from 'react'
 import './CourseTable.scss'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux";
+import axios from 'axios';
 import { SetCurrentUser } from "../../redux/userSlice";
 
 const CourseTable = ({ mode }) => {
@@ -9,17 +10,36 @@ const CourseTable = ({ mode }) => {
 
     const navigate = useNavigate();
 
-    const handleEnroll = (courseItem) => {
+    const handleEnroll = async (courseItem) => {
         if (!localStorage.getItem('token')) {
             navigate('/student-login')
         }
+
+        const response = await
+            axios({
+                method: 'get',
+                url: 'http://localhost:5000/api/student/get-current-user',
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem("token")}`
+                }
+            });
+            console.log(response.data.data);
+        const { studentname, contactnumber } = response.data.data;
+
         const courseData = {}
         courseData['coursename'] = courseItem[0];
         courseData['courseduration'] = courseItem[2];
         courseData['price'] = courseItem[3];
 
-        dispatch(SetCurrentUser(courseData));
-        navigate('/form');
+        if (localStorage.getItem('token')) {
+            courseData['studentname'] = studentname;
+            courseData['contactnumber'] = contactnumber;
+            dispatch(SetCurrentUser(courseData));
+            navigate('/form')
+        }
+        else {
+            navigate('/student-login')
+        }
     }
     const tableFields = [
         [

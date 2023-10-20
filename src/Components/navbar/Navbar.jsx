@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './navbar.scss';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import darrow from '../../assets/down-arrow.png';
 import hamburger from '../../assets/icons/hamburger.png';
 import rightarrow from '../../assets/icons/rightarrow.png';
+import './navbar.scss';
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [activeItem, setActiveItem] = useState('Home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,10 @@ const Navbar = () => {
   }, [location]);
 
   const handleItemClick = (itemName) => {
+    if(itemName==='Logout'){
+      window.localStorage.clear();
+      navigate('/student-login')
+    }
     setActiveItem(itemName);
     closeMenu(); // Close the menu when an item is clicked
   };
@@ -84,9 +89,9 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link to="/student-login" onClick={() => handleItemClick('student-login')}>
+        <Link to="/student-login" onClick={() => handleItemClick(!localStorage.getItem('token')?'Student Login':'Logout')}>
           <div className={`menu-item ${activeItem === 'student-login' ? 'active' : ''}`}>
-            Student Login
+            {!localStorage.getItem('token')?'Student Login':'Logout'}
           </div>
         </Link>
         <Link to="/blog" onClick={() => handleItemClick('blog')}>

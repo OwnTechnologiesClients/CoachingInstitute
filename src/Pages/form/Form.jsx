@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Form.scss';
 import { useState } from 'react';
 import logo from '../../assets/logo.png';
@@ -8,15 +8,25 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useRazorpay from "react-razorpay";
 import axios from 'axios';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { SetHistory } from '../../redux/userSlice';
 
 function Form() {
+    const navigate = useNavigate();
     const { currentUser } = useSelector((state) => state.users);
-    const { coursename, courseduration, price } = currentUser;
+    const { coursename, courseduration, price, studentname, contactnumber } = currentUser;
+    const [file, setFile] = useState("")
+    const dispatch = useDispatch();
 
     let regNo = Math.round(Date.now())
     regNo = regNo.toString();
     regNo = regNo.substring(4, 9);
+
+    var DateFormSubmitted = "";
+    var d = new Date();
+    DateFormSubmitted += d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+    //    " "+ d.getHours()+":"+d.getMinutes()+":"+ d.getSeconds()
 
     const [formData, setFormData] = useState({
         registrationnumber: regNo,
@@ -25,7 +35,7 @@ function Form() {
         coursetype: "",
         coursename: coursename,
         subject: "",
-        studentname: "",
+        studentname: studentname,
         dateofbirth: "",
         category: "",
         gender: "",
@@ -36,12 +46,13 @@ function Form() {
         state: "",
         pincode: "",
         phonenumber: "",
-        mobilenumber: "",
+        mobilenumber: contactnumber,
         email: "",
         modeofpayment: "",
         knowaboutus: "",
-        date: "",
+        date: DateFormSubmitted,
         place: "",
+        price: price,
         xyearpassing: "",
         xcgpa: "",
         xdivision: "",
@@ -67,6 +78,7 @@ function Form() {
     //login ke time jo jo chize thi vo bhi prefilled
 
     const [Razorpay] = useRazorpay();
+
     const handleChange = (event) => {
         event.preventDefault();
         setFormData({
@@ -154,7 +166,7 @@ function Form() {
                 method: 'post',
                 url: 'http://localhost:5000/api/payment/createOrder',
                 data: {
-                    amount: price*100,
+                    amount: price * 100,
                     currency: 'INR',
                     receipt: "abcd",
                     notes: {
@@ -192,18 +204,36 @@ function Form() {
                     });
 
                 console.log(res);
-                alert("This step of Payment Succeeded");
+
+
+
                 if (res.data.success) {
                     const result = await
                         axios({
                             method: 'post',
                             url: 'http://localhost:5000/api/student/get-registration-form',
                             data: {
-                                ...formData,
+                                registrationNo: regNo,
+                                contact: contactnumber,
                                 payment: true
                             }
                         });
-                    // console.log(result)
+                    toast.success('Payment Successful', {
+                        position: 'bottom-right',
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: false,
+                        pauseOnHover: false,
+                        draggable: false,
+                        progress: undefined,
+                    });
+                    
+                    console.log(result.data)
+
+                    dispatch(SetHistory(result.data.data));
+                    setTimeout(() => {
+                        navigate('/history');
+                    }, 2000);
                 }
             },
             prefill: {
@@ -231,6 +261,13 @@ function Form() {
 
     };
 
+    const handleProfilePic = (e) => {
+        setFile(URL.createObjectURL(e.target.files[0]))
+    }
+
+
+
+
     return (
 
         <form>
@@ -255,9 +292,12 @@ function Form() {
                             type="text"
                             name='registrationnumber'
                             value={formData.registrationnumber}
-                             />
+                        />
                     </div>
-                    <img src={teacher} />
+                    <div className='form-profilepic'>
+                        <img src={file} />
+                        <input type="file" name="profilepic" className="" onChange={handleProfilePic} />
+                    </div>
 
                 </div>
 
@@ -282,7 +322,7 @@ function Form() {
                             type="radio"
                             value="6 Month"
                             checked={formData.courseduration === "6 Month"}
-                             />
+                        />
                     </label>
 
 
@@ -293,7 +333,7 @@ function Form() {
                             type="radio"
                             value="1 Year"
                             checked={formData.courseduration === "1 Year"}
-                             />
+                        />
                     </label>
 
 
@@ -305,7 +345,7 @@ function Form() {
                             type="radio"
                             value="2 Year"
                             checked={formData.courseduration === "2 Year"}
-                             />
+                        />
                     </label>
 
                 </div>
@@ -431,8 +471,7 @@ function Form() {
                     <input
                         type="text"
                         name='studentname'
-                        value={formData.studentname}
-                        onChange={handleChange} />
+                        value={formData.studentname}/>
                 </div>
             </div>
 
@@ -581,7 +620,7 @@ function Form() {
                     <input
                         type="text"
                         name='phonenumber'
-                        value={formData.phonenumber}
+                        value={formData.phonenumber} 
                         onChange={handleChange} />
                 </div>
 
@@ -599,9 +638,9 @@ function Form() {
                     <input
                         type="text"
                         name='mobilenumber'
-                        value={formData.mobilenumber}
-                        onChange={handleChange} />
+                        value={formData.mobilenumber} />
                 </div>
+
 
                 <div className='sf-name-of-subject'>
                     <p>Email: </p>
@@ -616,8 +655,17 @@ function Form() {
 
             </div>
 
+            <div className='sf-name-of-examination'>
 
+                <div className='sf-name-of-examination'>
+                    <p>Amount: </p>
 
+                    <input
+                        type="text"
+                        name='price'
+                        value={formData.price} />
+                </div>
+            </div>
 
 
             <div className='sf-result-border'></div>
@@ -936,8 +984,7 @@ function Form() {
                     <input
                         type="text"
                         name='date'
-                        value={formData.date}
-                        onChange={handleChange} />
+                        value={formData.date} />
                 </div>
 
                 <div className='sf-name-of-subject'>

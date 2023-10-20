@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Form.scss';
 import { useState } from 'react';
 import logo from '../../assets/logo.png';
-import teacher from '../../assets/teacher1.png';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,14 +14,22 @@ import { SetHistory } from '../../redux/userSlice';
 function Form() {
     const navigate = useNavigate();
     const { currentUser } = useSelector((state) => state.users);
-    const { coursename, courseduration, price, studentname, contactnumber } = currentUser;
     const [file, setFile] = useState("")
+    const { coursename, courseduration, price, studentname, contactnumber } = currentUser;
+
     const dispatch = useDispatch();
 
+    const handlePrint = (e)=>{
+        e.preventDefault();
+        print();
+    }
+
+    //registration number generation
     let regNo = Math.round(Date.now())
     regNo = regNo.toString();
     regNo = regNo.substring(4, 9);
 
+    // current date generator
     var DateFormSubmitted = "";
     var d = new Date();
     DateFormSubmitted += d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
@@ -81,36 +88,14 @@ function Form() {
 
     const handleChange = (event) => {
         event.preventDefault();
-        setFormData({
-            ...formData,
-            [event.target.name]: event.target.value
-        })
-        if (event.target.name === 'coursetype') {
-            setFormData((prevData) => ({
-                ...prevData,
-                [event.target.name]: event.target.value
-            }));
-        }
-        if (event.target.name === 'gender') {
-            setFormData((prevData) => ({
-                ...prevData,
-                [event.target.name]: event.target.value
-            }));
-        }
-        if (event.target.name === 'courseduration') {
-            setFormData((prevData) => ({
-                ...prevData,
-                [event.target.name]: event.target.value
-            }));
-        }
-        if (event.target.name === 'modeofpayment') {
-            setFormData((prevData) => ({
-                ...prevData,
-                [event.target.name]: event.target.value
-            }));
-        }
-    };
-
+        const { name, value } = event.target;
+      
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: value,
+        }));
+        console.log(formData.gender)
+      };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -265,12 +250,9 @@ function Form() {
         setFile(URL.createObjectURL(e.target.files[0]))
     }
 
-
-
-
     return (
 
-        <form>
+        <form className='form-pay'>
             <div className='sf-header-parent'>
                 <div className='sf-header'>
                     <img src={logo} />
@@ -339,12 +321,12 @@ function Form() {
 
                     <label>
 
-                        <span>2 Year</span>
+                        <span>2 Years</span>
                         <input
                             name='courseduration'
                             type="radio"
-                            value="2 Year"
-                            checked={formData.courseduration === "2 Year"}
+                            value="2 Years"
+                            checked={formData.courseduration === "2 Years"}
                         />
                     </label>
 
@@ -1002,7 +984,7 @@ function Form() {
 
 
             <div className='sf-paynow'>
-                <button className="button" onClick={() => print()}>Print As PDF</button>
+                <button className="button" onClick={handlePrint}>Print As PDF</button>
                 <button className="button" onClick={handleSubmit}>Save</button>
                 <button className="button" onClick={handlePayment}>Pay Now</button>
 

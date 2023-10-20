@@ -9,22 +9,21 @@ import { VideoCard } from '../../components/cards/Cards'
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 
-const videoCardLinks = [
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-    "https://youtube.com",
-]
-
 const PopularVideos = () => {
+    let videoLinks = [
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R"
+    ]
     return (
         <div className='study-material-page'>
 
@@ -41,11 +40,9 @@ const PopularVideos = () => {
             <div className="popular-videos-section">
                 <h2 className='under-bar'><span>POPULAR</span> VIDEOS</h2>
                 <div className="video-cards">
-                    {videoCardLinks.map((item, index) => {
-                        return (
-                            <VideoCard key={index} imgSrc={Videoimg} hrefLink={item}/>
-                        )
-                    })}
+                {videoLinks.map((link,index)=>{
+                   return <VideoCard key={index} videourl={link}/>
+                })}
                 </div>
             </div>
             <WhatsappIcon />

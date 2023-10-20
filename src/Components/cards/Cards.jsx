@@ -69,15 +69,12 @@ const CourseCard = ({ imgSrc }) => {
         </div>
     )
 }
-const VideoCard = ({ imgSrc, hrefLink }) => {
+
+const VideoCard = ({ videourl }) => {
+    console.log(videourl)
     return (
         <div className='video-card'>
-            <a href={hrefLink} target='_blank'><img src={imgSrc} alt="" /></a>
-            <div >
-                <h2 className='under-bar'>CSIR-NET/JRF</h2>
-                <p>We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future</p>
-            </div>
-            <button>WATCH NOW</button>
+            <iframe  src={videourl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     )
 }

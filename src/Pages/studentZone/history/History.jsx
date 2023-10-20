@@ -3,16 +3,16 @@ import "./History.scss"
 import courseImg from '../../../assets/course-img.png'
 import { Header1, Header2 } from '../../../components/header/Header'
 import Navbar from '../../../components/navbar/Navbar'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const History = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [history,setHistory] = useState([])
-    const handleLogout = () => {
-        window.localStorage.clear();
-        navigate('/student-login');
-    }
+    // const handleLogout = () => {
+    //     window.localStorage.clear();
+    //     navigate('/student-login');
+    // }
 
     const getData = async () => {
         const response = await
@@ -51,7 +51,7 @@ const History = () => {
             <Navbar />
             <div className='ph-appbar'>
                 <h2>Purchased History</h2>
-                <button onClick={handleLogout}>Logout</button>
+                {/* <button onClick={handleLogout}>Logout</button> */}
             </div>
 
             {history.map((item, index) => {

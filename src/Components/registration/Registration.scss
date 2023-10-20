@@ -26,6 +26,21 @@ $text: #646262;
 
     }
 
+    input[type=date],input[type=date]:focus{
+        width: 15vw;
+        height: unset;
+        padding-left: unset;
+        box-sizing: border-box;
+        border-radius: unset;
+        color: $theme-color;
+        border: unset;
+        margin-top: unset;
+        margin-left: unset;
+        padding: .7vw 1vw;
+        height: 3vw;
+        outline: none;
+    }
+
     button,
     input,
     select {
@@ -34,6 +49,7 @@ $text: #646262;
         width: 15vw;
         height: 3vw;
     }
+    
 
     button {
         outline: none;

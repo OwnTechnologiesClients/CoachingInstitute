@@ -11,8 +11,16 @@ const VideoSection = () => {
         navigate('/videos')
     }
 
+    let videoLinks = [
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
+        "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
+        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R"
+    ]
+
     return (
         <div className="videos-section">
+            
             <div className='top-heading'>
                 <h1>
                     POPULAR <span className='under-bar'>VIDEOS</span>
@@ -21,11 +29,13 @@ const VideoSection = () => {
                     View All
                 </button>
             </div>
+
             <div className="cards">
-                <VideoCard imgSrc={Videoimg} />
-                <VideoCard imgSrc={Videoimg} />
-                <VideoCard imgSrc={Videoimg} />
-                <VideoCard imgSrc={Videoimg} />
+
+                {videoLinks.map((link,index)=>{
+                   return <VideoCard key={index} videourl={link}/>
+                })}
+
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import './StudentSignup.scss';
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Header1, Header2 } from '../../../components/header/Header';
 import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
 import Navbar from '../../../Components/navbar/Navbar';
@@ -19,9 +19,9 @@ const StudentSignup = () => {
     const [pincode, setPincode] = useState("");
     const [address, setAddress] = useState("");
     const [mage, setMage] = useState();
-    const [stat, setStat] = useState();
-    const [fathername, setFatherName] = useState();
-    const [date, setDate] = useState();
+    const [stat, setStat] = useState("");
+    const [fathername, setFatherName] = useState("");
+    const [date, setDate] = useState("");
 
     const navigate = useNavigate();
 
@@ -30,7 +30,7 @@ const StudentSignup = () => {
         setMage(e.target.files[0]);
     }
 
-    const submitImage = async (e) => {
+    const handleSignup = async (e) => {
         e.preventDefault();
         const formData = new FormData();
         formData.append("myFile", mage);
@@ -40,7 +40,7 @@ const StudentSignup = () => {
         formData.append("dateofbirth", date);
         formData.append("contactnumber", contactNumber);
         formData.append("city", city);
-        formData.append("stat", stat);
+        formData.append("state", stat);
         formData.append("pincode", pincode);
         formData.append("address", address);
         console.log(formData)
@@ -174,22 +174,17 @@ const StudentSignup = () => {
 
                         <div className='signup-button'>
 
-                            <button classButton="button" onClick={submitImage}>Sign Up</button>
-
+                            <button classButton="button" onClick={handleSignup}>Sign Up</button>
 
                         </div>
 
-
-
-                        <p>Already Memeber? Sign In</p>
-
-
+                        <p>Already Memeber? <Link to='/student-login'>Sign In</Link></p>
 
                     </div>
                 </div>
 
-
             </div>
+
             <WhatsappIcon />
             <Footer />
             <ToastContainer closeButton={false} />

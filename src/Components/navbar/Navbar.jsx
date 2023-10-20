@@ -94,7 +94,7 @@ const Navbar = () => {
             {!localStorage.getItem('token')?'Student Login':'Logout'}
           </div>
         </Link>
-        <Link to="/blog" onClick={() => handleItemClick('blog')}>
+        <Link to="https://blog.chemtime.co.in/" onClick={() => handleItemClick('blog')}>
           <div className={`menu-item ${activeItem === 'blog' ? 'active' : ''}`}>
             Blog
           </div>

@@ -12,6 +12,7 @@ import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios'
 
 const Contact = () => {
     // const form = useRef();
@@ -33,49 +34,67 @@ const Contact = () => {
         // console.log('Form Data:', formObject);
 
         //sending data to backend
-        const response = await
-        axios({
-            method: 'post',
-            url: 'https://localhost:5000/api/student/discussing',
-            data: formObject,
-            headers: {
-                authorization: `Bearer ${localStorage.getItem("token")}`
-            }
-        });
+        // const response = await
+        // axios({
+        //     method: 'post',
+        //     url: 'https://localhost:5000/api/student/discussing',
+        //     data: formObject,
+        //     headers: {
+        //         authorization: `Bearer ${localStorage.getItem("token")}`
+        //     }
+        // });
 
         //sending email
-        emailjs.sendForm('service_k99s57e', 'template_licqaps', form.current, '7EjtnFEz-7ax6QsuK')
+        emailjs.sendForm('service_k99s57e', 'template_licqaps', formRef.current, '7EjtnFEz-7ax6QsuK')
             .then((result) => {
                 console.log(result)
+                toast.success('We will contact you soon', {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
             }, (error) => {
                 console.log(error)
+                toast.warn(response.data.message, {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
             });
 
         // toast on successful sending
-        if(response.data.success){
+        // if(response.data.success){
 
-            toast.success('We will contact you soon', {
-                position: 'bottom-right',
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: false,
-                draggable: false,
-                progress: undefined,
-            });
-        }
-        else{
-            toast.warn(response.data.message, {
-                position: 'bottom-right',
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: false,
-                draggable: false,
-                progress: undefined,
-            });
-        }
-        form.current.reset();
+        //     toast.success('We will contact you soon', {
+        //         position: 'bottom-right',
+        //         autoClose: 2000,
+        //         hideProgressBar: false,
+        //         closeOnClick: false,
+        //         pauseOnHover: false,
+        //         draggable: false,
+        //         progress: undefined,
+        //     });
+        // }
+        // else{
+        //     toast.warn(response.data.message, {
+        //         position: 'bottom-right',
+        //         autoClose: 2000,
+        //         hideProgressBar: false,
+        //         closeOnClick: false,
+        //         pauseOnHover: false,
+        //         draggable: false,
+        //         progress: undefined,
+        //     });
+        // }
+        formRef.current.reset();
 
     }
     return (

@@ -1,34 +1,243 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Form.scss';
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom"
 import logo from '../../assets/logo.png';
 import teacher from '../../assets/teacher1.png';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import useRazorpay from "react-razorpay";
+import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { SetHistory } from '../../redux/userSlice';
 
 function Form() {
-    const [name, setName] = useState("");
-    const [amount, setAmount] = useState(1000);
-    const [selectedOption, setSelectedOption] = useState("Male")
+    const navigate = useNavigate();
+    const { currentUser } = useSelector((state) => state.users);
+    const { coursename, courseduration, price, studentname, contactnumber } = currentUser;
+    const [file, setFile] = useState("")
+    const dispatch = useDispatch();
+
+    let regNo = Math.round(Date.now())
+    regNo = regNo.toString();
+    regNo = regNo.substring(4, 9);
+
+    var DateFormSubmitted = "";
+    var d = new Date();
+    DateFormSubmitted += d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+    //    " "+ d.getHours()+":"+d.getMinutes()+":"+ d.getSeconds()
+
+    const [formData, setFormData] = useState({
+        registrationnumber: regNo,
+        courseduration: courseduration,
+        session: "2023-24",
+        coursetype: "",
+        coursename: coursename,
+        subject: "",
+        studentname: studentname,
+        dateofbirth: "",
+        category: "",
+        gender: "",
+        fathername: "",
+        fatheroccupation: "",
+        designation: "",
+        address: "",
+        state: "",
+        pincode: "",
+        phonenumber: "",
+        mobilenumber: contactnumber,
+        email: "",
+        modeofpayment: "",
+        knowaboutus: "",
+        date: DateFormSubmitted,
+        place: "",
+        price: price,
+        xyearpassing: "",
+        xcgpa: "",
+        xdivision: "",
+        xcollege: "",
+        xuniversity: "",
+        xiiyearpassing: "",
+        xiicgpa: "",
+        xiidivision: "",
+        xiicollege: "",
+        xiiuniversity: "",
+        graduationyearpassing: "",
+        graduationcgpa: "",
+        graduationdivision: "",
+        graduationcollege: "",
+        graduationuniversity: "",
+        postgraduationyearpassing: "",
+        postgraduationcgpa: "",
+        postgraduationdivision: "",
+        postgraduationcollege: "",
+        postgraduationuniversity: ""
+    })
+
+    //login ke time jo jo chize thi vo bhi prefilled
 
     const [Razorpay] = useRazorpay();
 
-    //Function to handle razorpay
-    const handlePayment = async (params) => {
+    const handleChange = (event) => {
+        event.preventDefault();
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value
+        })
+        if (event.target.name === 'coursetype') {
+            setFormData((prevData) => ({
+                ...prevData,
+                [event.target.name]: event.target.value
+            }));
+        }
+        if (event.target.name === 'gender') {
+            setFormData((prevData) => ({
+                ...prevData,
+                [event.target.name]: event.target.value
+            }));
+        }
+        if (event.target.name === 'courseduration') {
+            setFormData((prevData) => ({
+                ...prevData,
+                [event.target.name]: event.target.value
+            }));
+        }
+        if (event.target.name === 'modeofpayment') {
+            setFormData((prevData) => ({
+                ...prevData,
+                [event.target.name]: event.target.value
+            }));
+        }
+    };
 
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log("first")
+        try {
+
+            const response = await
+                axios({
+                    method: 'post',
+                    url: 'http://localhost:5000/api/student/registration-form',
+
+                    data: formData,
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem("token")}`
+                    }
+                });
+            console.log(response.data);
+
+            if (response.data.success) {
+                toast.success('Saved Successful', {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
+            }
+            else {
+                toast.warn(response.data.message, {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
+            }
+
+        } catch (error) {
+            console.error('Error sending data:', error);
+            // Handle error, maybe show an error message to the user
+        }
+    }
+
+    //Function to handle razorpay
+    const handlePayment = async (e) => {
+        e.preventDefault()
+        const response = await
+            axios({
+                method: 'post',
+                url: 'http://localhost:5000/api/payment/createOrder',
+                data: {
+                    amount: price * 100,
+                    currency: 'INR',
+                    receipt: "abcd",
+                    notes: {
+                        description: "best course",
+                        language: "DSA",
+                        access: "lifetime"
+                    }
+                },
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem("token")}`
+                }
+            });
+        console.log(response)
         const options = {
             key: "rzp_test_XIQpLJB0JJOCKa",
-            key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
-            amount: amount * 100,
+            // key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
+            amount: response.data.amount,
             currency: "INR",
             name: "ChemTime",
-            description: "Course",
-            handler: function (response) {
-                alert(response.razorpay_payment_id);
+            description: coursename,
+            order_id: response.data.id,
+            handler: async function (response) {
+                console.log(response)
+                const res = await
+                    axios({
+                        method: 'post',
+                        url: 'http://localhost:5000/api/payment/verifyOrder',
+                        data: {
+                            order_id: response.razorpay_order_id,
+                            payment_id: response.razorpay_payment_id
+                        },
+                        headers: {
+                            xrazorpaysignature: response.razorpay_signature
+                        }
+                    });
+
+                console.log(res);
+
+
+
+                if (res.data.success) {
+                    const result = await
+                        axios({
+                            method: 'post',
+                            url: 'http://localhost:5000/api/student/get-registration-form',
+                            data: {
+                                registrationNo: regNo,
+                                contact: contactnumber,
+                                payment: true
+                            }
+                        });
+                    toast.success('Payment Successful', {
+                        position: 'bottom-right',
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: false,
+                        pauseOnHover: false,
+                        draggable: false,
+                        progress: undefined,
+                    });
+                    
+                    console.log(result.data)
+
+                    dispatch(SetHistory(result.data.data));
+                    setTimeout(() => {
+                        navigate('/history');
+                    }, 2000);
+                }
             },
             prefill: {
-                name: "pawan",
+                name: "ChemTime",
                 email: "youremail@example.com",
                 contact: "9999999999",
             },
@@ -39,36 +248,29 @@ function Form() {
                 color: "#3399cc",
             },
         };
-        var pay = new window.Razorpay(options);
+        var pay = new Razorpay(options);
         pay.open();
 
-        // rzp1.on("payment.failed", function (response) {
-        //     alert(response.error.code);
-        //     alert(response.error.description);
-        //     alert(response.error.source);
-        //     alert(response.error.step);
-        //     alert(response.error.reason);
-        //     alert(response.error.metadata.order_id);
-        //     alert(response.error.metadata.payment_id);
-        // });
+        console.log(pay);
+
+        razorpayObject.on('payment.failed', function (response) {
+            console.log(response);
+            alert("This step of Payment Failed");
+        });
+
 
     };
 
-    // Function to handle the change in radio button selection
-    function onValueChange(event) {
-        // Updating the state with the selected radio button's value
-        setSelectedOption(event.target.value)
+    const handleProfilePic = (e) => {
+        setFile(URL.createObjectURL(e.target.files[0]))
     }
 
-    const navigate = useNavigate();
 
-    const navigateToContacts = () => {
-        navigate('/testseries');
-    };
+
 
     return (
 
-        <div>
+        <form>
             <div className='sf-header-parent'>
                 <div className='sf-header'>
                     <img src={logo} />
@@ -88,10 +290,14 @@ function Form() {
 
                         <input
                             type="text"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)} />
+                            name='registrationnumber'
+                            value={formData.registrationnumber}
+                        />
                     </div>
-                    <img src={teacher} />
+                    <div className='form-profilepic'>
+                        <img src={file} />
+                        <input type="file" name="profilepic" className="" onChange={handleProfilePic} />
+                    </div>
 
                 </div>
 
@@ -112,21 +318,22 @@ function Form() {
 
                         <span>6 Month</span>
                         <input
+                            name='courseduration'
                             type="radio"
-                            value="Male"
-                            checked={selectedOption === "Male"}
-                            onChange={onValueChange} />
+                            value="6 Month"
+                            checked={formData.courseduration === "6 Month"}
+                        />
                     </label>
 
 
                     <label>
                         <span>1 Year</span>
                         <input
+                            name='courseduration'
                             type="radio"
-                            value="Female"
-                            // Checking this radio button if the selected option is "Female"
-                            checked={selectedOption === "Female"}
-                            onChange={onValueChange} />
+                            value="1 Year"
+                            checked={formData.courseduration === "1 Year"}
+                        />
                     </label>
 
 
@@ -134,11 +341,11 @@ function Form() {
 
                         <span>2 Year</span>
                         <input
+                            name='courseduration'
                             type="radio"
-                            value="Other"
-                            // Checking this radio button if the selected option is "Other"
-                            checked={selectedOption === "Other"}
-                            onChange={onValueChange} />
+                            value="2 Year"
+                            checked={formData.courseduration === "2 Year"}
+                        />
                     </label>
 
                 </div>
@@ -149,8 +356,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='session'
+                        value={formData.session}
+                        onChange={handleChange} />
                 </div>
 
             </div>
@@ -168,52 +376,57 @@ function Form() {
 
                         <span>Demo</span>
                         <input
+                            name='coursetype'
                             type="radio"
-                            value="Male"
+                            value="Demo"
                             // Checking this radio button if the selected option is "Male"
-                            checked={selectedOption === "Male"}
-                            onChange={onValueChange} />
+                            // checked={selectedOption === "Demo"}
+                            onChange={handleChange} />
                     </label>
 
 
                     <label>
-                        <span>Ragular</span>
+                        <span>Regular</span>
                         <input
+                            name='coursetype'
                             type="radio"
-                            value="Female"
+                            value="Regular"
                             // Checking this radio button if the selected option is "Female"
-                            checked={selectedOption === "Female"}
-                            onChange={onValueChange} />
+                            // checked={selectedOption === "Regular"}
+                            onChange={handleChange} />
                     </label>
 
 
                     <label>
                         <span>Weekend</span>
                         <input
+                            name='coursetype'
                             type="radio"
-                            value="Other"
+                            value="Weekend"
                             // Checking this radio button if the selected option is "Other"
-                            checked={selectedOption === "Other"}
-                            onChange={onValueChange} />
+                            // checked={selectedOption === "Weekend"}
+                            onChange={handleChange} />
                     </label>
 
                     <label>
                         <span>Correspondance</span>
                         <input
+                            name='coursetype'
                             type="radio"
-                            value="Other"
-                            checked={selectedOption === "Other"}
-                            onChange={onValueChange} />
+                            value="correspondance"
+                            // checked={selectedOption === "correspondance"}
+                            onChange={handleChange} />
                     </label>
 
                     <label>
                         <span>Test Series</span>
                         <input
+                            name='coursetype'
                             type="radio"
-                            value="Other"
+                            value="Test Series"
                             // Checking this radio button if the selected option is "Other"
-                            checked={selectedOption === "Other"}
-                            onChange={onValueChange} />
+                            // checked={selectedOption === "Test Series"}
+                            onChange={handleChange} />
                     </label>
 
                 </div>
@@ -230,8 +443,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='coursename'
+                        value={formData.coursename}
+                        onChange={handleChange} />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -239,8 +453,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='subject'
+                        value={formData.subject}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -255,8 +470,8 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='studentname'
+                        value={formData.studentname}/>
                 </div>
             </div>
 
@@ -269,9 +484,10 @@ function Form() {
                     <p>Date Of Birth (DD/MM/YY): </p>
 
                     <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        type="date"
+                        name='dateofbirth'
+                        value={formData.dateofbirth}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -280,8 +496,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='category'
+                        value={formData.category}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -292,21 +509,23 @@ function Form() {
 
                     <span>Male</span>
                     <input
+                        name='gender'
                         type="radio"
                         value="Male"
                         // Checking this radio button if the selected option is "Male"
-                        checked={selectedOption === "Male"}
-                        onChange={onValueChange} />
+                        // checked={selectedOption === "Male"}
+                        onChange={handleChange} />
                 </label>
 
                 <label>
                     <span>Female</span>
                     <input
+                        name='gender'
                         type="radio"
-                        value="Male"
+                        value="Female"
                         // Checking this radio button if the selected option is "Male"
-                        checked={selectedOption === "Female"}
-                        onChange={onValueChange} />
+                        // checked={selectedOption === "Female"}
+                        onChange={handleChange} />
                 </label>
             </div>
 
@@ -320,8 +539,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='fathername'
+                        value={formData.fathername}
+                        onChange={handleChange} />
                 </div>
             </div>
 
@@ -335,8 +555,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='fatheroccupation'
+                        value={formData.fatheroccupation}
+                        onChange={handleChange} />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -344,8 +565,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='designation'
+                        value={formData.designation}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -360,8 +582,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='address'
+                        value={formData.address}
+                        onChange={handleChange} />
                 </div>
             </div>
 
@@ -375,8 +598,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='state'
+                        value={formData.state}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -385,8 +609,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='pincode'
+                        value={formData.pincode}
+                        onChange={handleChange} />
                 </div>
 
                 <div className='sf-date-of-birth'>
@@ -394,8 +619,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='phonenumber'
+                        value={formData.phonenumber} 
+                        onChange={handleChange} />
                 </div>
 
 
@@ -411,50 +637,61 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='mobilenumber'
+                        value={formData.mobilenumber} />
                 </div>
+
 
                 <div className='sf-name-of-subject'>
                     <p>Email: </p>
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='email'
+                        value={formData.email}
+                        onChange={handleChange} />
                 </div>
 
 
             </div>
 
+            <div className='sf-name-of-examination'>
 
+                <div className='sf-name-of-examination'>
+                    <p>Amount: </p>
 
+                    <input
+                        type="text"
+                        name='price'
+                        value={formData.price} />
+                </div>
+            </div>
 
 
             <div className='sf-result-border'></div>
 
             <div className='sf-result-heading-parent'>
                 <div className='sf-result-heading'>
-                    <p1>Examination</p1>
+                    <p>Examination</p>
 
                 </div>
                 <div>
-                    <p1>Year of Passing</p1>
+                    <p>Year of Passing</p>
                 </div>
 
                 <div>
-                    <p1>% C.G.P.A</p1>
+                    <p>% C.G.P.A</p>
                 </div>
 
                 <div>
-                    <p1>Division</p1>
+                    <p>Division</p>
                 </div>
 
                 <div>
-                    <p1>College</p1>
+                    <p>College</p>
                 </div>
                 <div>
-                    <p1>University/Institution</p1>
+                    <p>University/Institution</p>
                 </div>
 
 
@@ -466,41 +703,46 @@ function Form() {
 
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>X</p1>
+                    <p>X</p>
                 </div>
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
-                </div>
-
-                <div>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xyearpassing'
+                        value={formData.xyearpassing}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xcgpa'
+                        value={formData.xcgpa}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xdivision'
+                        value={formData.xdivision}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xcollege'
+                        value={formData.xcollege}
+                        onChange={handleChange} />
+                </div>
+
+                <div>
+                    <input
+                        type="text"
+                        name='xuniversity'
+                        value={formData.xuniversity}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -511,41 +753,46 @@ function Form() {
             {/* ///---------- result XI --------------------- */}
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>XI</p1>
+                    <p>XII</p>
                 </div>
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
-                </div>
-
-                <div>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xiiyearpassing'
+                        value={formData.xiiyearpassing}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xiicgpa'
+                        value={formData.xiicgpa}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xiidivision'
+                        value={formData.xiidivision}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='xiicollege'
+                        value={formData.xiicollege}
+                        onChange={handleChange} />
+                </div>
+
+                <div>
+                    <input
+                        type="text"
+                        name='xiiuniversity'
+                        value={formData.xiiuniversity}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -557,41 +804,46 @@ function Form() {
             {/* ///---------- result Graduation --------------------- */}
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>Graduation</p1>
+                    <p>Graduation</p>
                 </div>
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
-                </div>
-
-                <div>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='graduationyearpassing'
+                        value={formData.graduationyearpassing}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='graduationcgpa'
+                        value={formData.graduationcgpa}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='graduationdivision'
+                        value={formData.graduationdivision}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='graduationcollege'
+                        value={formData.graduationcollege}
+                        onChange={handleChange} />
+                </div>
+
+                <div>
+                    <input
+                        type="text"
+                        name='graduationuniversity'
+                        value={formData.graduationuniversity}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -603,41 +855,46 @@ function Form() {
             {/* ///---------- result Post Graduation --------------------- */}
             <div className='sf-result-fields'>
                 <div className='sf-marking'>
-                    <p1>Post Graduation</p1>
+                    <p>Post Graduation</p>
                 </div>
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
-                </div>
-
-                <div>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='postgraduationyearpassing'
+                        value={formData.postgraduationyearpassing}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='postgraduationcgpa'
+                        value={formData.postgraduationcgpa}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='postgraduationdivision'
+                        value={formData.postgraduationdivision}
+                        onChange={handleChange} />
                 </div>
 
                 <div>
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='postgraduationcollege'
+                        value={formData.postgraduationcollege}
+                        onChange={handleChange} />
+                </div>
+
+                <div>
+                    <input
+                        type="text"
+                        name='postgraduationuniversity'
+                        value={formData.postgraduationuniversity}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -661,22 +918,24 @@ function Form() {
 
                         <span>Online</span>
                         <input
+                            name='modeofpayment'
                             type="radio"
-                            value="Male"
+                            value="Online"
                             // Checking this radio button if the selected option is "Male"
-                            checked={selectedOption === "Male"}
-                            onChange={onValueChange} />
+                            // checked={selectedOption === "Male"}
+                            onChange={handleChange} />
                     </label>
 
 
                     <label>
                         <span>Offline</span>
                         <input
+                            name='modeofpayment'
                             type="radio"
-                            value="Female"
+                            value="Offline"
                             // Checking this radio button if the selected option is "Female"
-                            checked={selectedOption === "Female"}
-                            onChange={onValueChange} />
+                            // checked={selectedOption === "Female"}
+                            onChange={handleChange} />
                     </label>
 
                 </div>
@@ -693,8 +952,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='knowaboutus'
+                        value={formData.knowaboutus}
+                        onChange={handleChange} />
                 </div>
             </div>
 
@@ -702,13 +962,13 @@ function Form() {
 
             {/*---------------------- Registration Procedure  ---------------------- */}
             <div className='sf-registration-procedure'>
-                <p1>Registration Procedure:- </p1>
+                <p>Registration Procedure:- </p>
                 <p>Send your duly signed application form with one photograph and original copy of Online/Cash Deposit Slip/Transaction Slip drawn in favour of “ASAP CHEM TIME Pvt. Ltd.” payable at New Delhi, to Head. Office only as mentioned in the top right corner of this form. Students are required to mention their Name, Course and Subject on the back side of Demand Draft.</p>
             </div>
 
             {/*---------------------- DECLARATION  ---------------------- */}
             <div className='sf-declaration'>
-                <p1>DECLARATION</p1>
+                <p>DECLARATION</p>
                 <p>I have no objection for my result being published by the ASAP CHEM TIME Pvt. Ltd. if I succeed in the entrance examinations. For disciplinary action, the decision of the managing body of the Institute will be final. Any request for refund/interchange of material will not be entertained. The study material supplied to the student is our copyright and is meant for the use of student himself/herself only.
                     All disputes are subject to Delhi Jurisdiction only.</p><br></br>
                 <p>I have read the declaration mention above and information given are true to the best of my knowledge.</p>
@@ -723,8 +983,8 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='date'
+                        value={formData.date} />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -732,8 +992,9 @@ function Form() {
 
                     <input
                         type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)} />
+                        name='place'
+                        value={formData.place}
+                        onChange={handleChange} />
                 </div>
 
 
@@ -741,12 +1002,14 @@ function Form() {
 
 
             <div className='sf-paynow'>
-                <button className="button" onClick={navigateToContacts}>Print As PDF</button>
+                <button className="button" onClick={() => print()}>Print As PDF</button>
+                <button className="button" onClick={handleSubmit}>Save</button>
                 <button className="button" onClick={handlePayment}>Pay Now</button>
 
             </div>
+            <ToastContainer closeButton={false} />
             <WhatsappIcon />
-        </div>
+        </form>
 
     )
 }

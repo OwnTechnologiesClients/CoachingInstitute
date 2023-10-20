@@ -4,8 +4,8 @@
     display: flex;
 
     .query-square {
-        width: 27vw;
-        height: 40vw;
+        width: 30vw;
+        height: 55vw;
         background: #eaeaea;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-left: 2vw;
@@ -38,10 +38,17 @@
 
 
     }
+    input[type=date]{
+        margin: 0;
+        margin-top: 1vw;
+        width: 26vw;
+        padding-left: 1vw;
+        border: 2px #B9BAC8;
+    }
 
-    input[type=text] {
-        width: 22vw;
-        height: 2.7vw;
+    input{
+        width: 26vw;
+        height: 3vw;
         padding-left: 1vw;
         box-sizing: border-box;
         border-radius: 4px;
@@ -49,6 +56,20 @@
         margin-top: 1vw;
     }
 
+    
+    
+    .img-button{
+        width: 26vw;
+        height: 3vw;
+        padding-left: 1vw;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 2px #B9BAC8;
+        color: #999a99;
+        text-align: start;
+        margin-top: 1vw;
+        background-color: #fff;
+    }
     input,
     input::placeholder {
         font-size: 0.8vw;
@@ -82,13 +103,16 @@
 
     .signup-button {
         margin-bottom: 4vw;
-        margin-top: 3vw;
         justify-content: center;
         display: flex;
+    }
+    input::file-selector-button {
+        display: none;
     }
 
     .signup-button button {
         width: 15vw;
+        margin-top: 1.5vw;
         font-weight: 900;
         font-size: 0.9vw;
         color: white;

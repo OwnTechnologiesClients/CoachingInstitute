@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
 import { useState } from "react";
-import './Login.scss';
+import './Admin.scss';
 import { Link, useNavigate } from "react-router-dom"
-import { Header1, Header2 } from '../../../components/header/Header';
-import Navbar from '../../../Components/navbar/Navbar';
-import Footer from '../../../Components/footer/Footer';
-import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
+import { Header1, Header2 } from '../../components/header/Header';
+import Navbar from '../../Components/navbar/Navbar';
+import Footer from '../../Components/footer/Footer';
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const Login = () => {
+const Admin = () => {
     const navigate = useNavigate();
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
@@ -24,7 +24,7 @@ const Login = () => {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'http://localhost:5000/api/student/login',
+                    url: 'https://backend-k.onrender.com/api/student/login',
                     data: {
                         email: userId,
                         dateofbirth: password
@@ -46,7 +46,7 @@ const Login = () => {
                     progress: undefined,
                 });
                 setTimeout(() => {
-                    navigate('/history');
+                    navigate('/searchuser');
                 }, 2000);
             }
             else {
@@ -66,13 +66,11 @@ const Login = () => {
         }
 
     }
-
     useEffect(() => {
         if(localStorage.getItem('token')){
-          navigate('/')
+          navigate('/searchuser')
         }
       }, [])
-
     return (
         <div>
             <Header1 />
@@ -83,12 +81,12 @@ const Login = () => {
 
                 <div className='student-login-square'>
                     <div className='student-login-square-header'>
-                        <h2>Login</h2>
+                        <h2>Admin Login</h2>
                     </div>
                     <div className='student-login-card-parent'>
                         {/* <h2>BECOME A MEMBER</h2> */}
                         <div className='student-login-userid-section'>
-                            <p>Email ID</p>
+                            <p>User ID</p>
 
                             {/* ------------ User Id Input textfield -------------------- */}
                             <input type="text" className="form-control" name="title"
@@ -114,10 +112,6 @@ const Login = () => {
                             <button className="button" onClick={handleLogin}>Login</button>
                         </div>
 
-                        <div className='already-member'>
-                            <p className='signupnow'>Don't have Account? <Link to="/student-signup">Sign Up</Link></p>
-                        </div>
-
                     </div>
                 </div>
 
@@ -131,4 +125,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Admin

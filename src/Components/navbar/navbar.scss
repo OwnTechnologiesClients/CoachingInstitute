@@ -21,26 +21,29 @@ nav {
 
 
 
-        .menu-item {
-            background-color: $nav-bg;
-            padding: .4vw 1.2vw;
-            margin: 0.7vw .5vw;
-            border-radius: 3.8rem;
-            display: flex;
-            align-items: center;
-
-            a {
+        a {
+            .menu-item {
+                background-color: $nav-bg;
+                padding: .6vw 1.3vw;
+                margin: 0.7vw .5vw;
+                border-radius: 3.8rem;
+                display: flex;
+                align-items: center;
                 font-size: 1.1vw;
                 font-weight: 400;
             }
 
-            &:hover {
-                background: #fff !important;
-                color: #202C45;
+
+            &:hover .menu-item{
+                
+                    background: #fff !important;
+                    color: #202C45;
+                
             }
         }
     }
-    .courses{
+
+    .courses {
         &:hover .dropdown-content {
             display: block;
         }
@@ -61,8 +64,8 @@ nav {
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 1.05vw;
-            left: -1vw;
+            top: 2.1vw;
+            left: -6.35vw;
             background-color: #fff;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -80,12 +83,12 @@ nav {
             }
         }
 
-        
+
     }
 
     .new-batch {
         margin-left: 3vw;
-        padding: 1rem;
+        padding: 1.15vw;
         background: $blue;
         font-size: 1.1vw;
         font-family: 'Poppins';
@@ -149,7 +152,7 @@ nav {
                 }
             }
 
-           
+
         }
 
         .new-batch {

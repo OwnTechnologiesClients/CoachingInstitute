@@ -16,6 +16,15 @@
     width: 15vw;
 }
 
+.form-profilepic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        margin: 1vw 0;
+    }
+}
+
 .sf-contact-details {
     position: relative;
     top: 23%;
@@ -187,6 +196,7 @@
     margin-right: 2vw;
 }
 
+.sf-date-of-birth input[type=date],
 .sf-date-of-birth input[type=text] {
     width: 20vw;
     box-sizing: border-box;
@@ -207,7 +217,7 @@
     font-size: 1.2vw;
     font-family: 'Aril', sans-serif;
     text-align: right;
-    
+
 }
 
 
@@ -231,7 +241,7 @@
     display: flex;
     margin-top: 2vw;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .sf-result-heading {
@@ -250,13 +260,14 @@
 
 
 
-.sf-result-border{
+.sf-result-border {
     width: 100%;
     height: 0.1vw;
     margin-top: 2vw;
     background: #ccc;
 }
-.sf-result-border-2{
+
+.sf-result-border-2 {
     width: 100%;
     height: 0.1vw;
     margin-top: 1vw;
@@ -265,26 +276,28 @@
 
 
 
-.sf-marking{
+.sf-marking {
     width: 15%;
     justify-content: center;
     display: flex;
     position: relative;
 
 }
+
 .sf-marking p1 {
     font-size: 0.8vw;
     font-family: 'Poppins';
     font-weight: 900;
-    
+
 }
-.sf-result-fields{
+
+.sf-result-fields {
     margin-right: 6vw;
     display: flex;
     margin-top: 1vw;
     margin-bottom: 1vw;
     justify-content: space-between;
-    
+
 }
 
 .sf-result-fields input[type=text] {
@@ -294,7 +307,7 @@
     border-bottom: 0.1vw solid black;
     font-weight: 900;
     font-size: 1.1vw;
-    
+
 }
 
 
@@ -323,25 +336,27 @@
     font-size: 1.1vw;
 }
 
-.sf-registration-procedure{
+.sf-registration-procedure {
     margin-top: 3vw;
     margin-right: 4vw;
     margin-left: 4vw;
 }
-.sf-registration-procedure p1{
+
+.sf-registration-procedure p1 {
     margin-top: 5vw;
     font-size: 1.2vw;
     font-family: 'Aril', sans-serif;
-   
-    font-weight: 900;  
+
+    font-weight: 900;
 }
-.sf-registration-procedure p{
+
+.sf-registration-procedure p {
     font-size: 1.2vw;
-    font-family: 'Aril', sans-serif;   
+    font-family: 'Aril', sans-serif;
 }
 
 
-.sf-declaration{
+.sf-declaration {
     margin-top: 3vw;
     margin-right: 4vw;
     margin-left: 4vw;
@@ -349,15 +364,17 @@
     align-items: center;
 
 }
-.sf-declaration p1{
+
+.sf-declaration p1 {
     margin-top: 5vw;
     font-size: 1.2vw;
     font-family: 'Aril', sans-serif;
-    font-weight: 900;  
+    font-weight: 900;
 }
-.sf-declaration p{
+
+.sf-declaration p {
     font-size: 1.2vw;
-    font-family: 'Aril', sans-serif;   
+    font-family: 'Aril', sans-serif;
 }
 
 
@@ -387,12 +404,12 @@
     font-size: 1.1vw;
 }
 
-.sf-paynow{
+.sf-paynow {
     display: flex;
     justify-content: center;
     margin-bottom: 4vw;
     margin-top: 3vw;
-    
+
 }
 
 .sf-paynow button {

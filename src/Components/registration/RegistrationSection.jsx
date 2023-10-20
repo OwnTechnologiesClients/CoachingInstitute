@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react'
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Registration.scss'
 
 const RegistrationSection = () => {
@@ -9,6 +11,7 @@ const RegistrationSection = () => {
     const course = useRef();
     const number = useRef();
     const dateofbirth = useRef();
+    const form = useRef();
 
     //date of birth input functions
     const handleFocus = () => {
@@ -22,17 +25,25 @@ const RegistrationSection = () => {
     //Function to handle and send details to backend
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        toast.success('Registration successfully!', {
+            position: 'bottom-right',
+            autoClose: 2000, // 3 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         try {
 
             const response = await
                 axios({
                     method: 'post',
-                    url: 'https://backend-k.onrender.com/api/student/register',
+                    url: 'https://backend-k.onrender.com/api/student/free-registration',
                     data: {
                         email: email.current.value,
-                        course: course.current.value,
-                        number: number.current.value,
+                        coursename: course.current.value,
+                        phonenumber: number.current.value,
                         dateofbirth: dateofbirth.current.value,
                     },
                     headers: {
@@ -40,6 +51,7 @@ const RegistrationSection = () => {
                     }
                 });
             console.log(response);
+            form.current.reset();
             
         } catch (error) {
             console.error('Error sending data:', error);
@@ -49,7 +61,7 @@ const RegistrationSection = () => {
     return (
         <div className="registration">
             <h1>Get A Free <span>Registration</span>! </h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} ref={form}>
                 <input ref={email} type="email" name="email" id="email" placeholder='Enter Email' />
                 <select ref={course} name="course" id="course">
                     <option value="Select" disabled selected>Select Course</option>
@@ -64,6 +76,7 @@ const RegistrationSection = () => {
                     onBlur={handleBlur} />
                 <button type="submit" id='submit'>Submit Now</button>
             </form>
+            <ToastContainer closeButton={false}/>
         </div>
     )
 }

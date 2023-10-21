@@ -59,7 +59,7 @@ const StudentSignup = () => {
         console.log(img)
 
         if (result.data.success) {
-           
+
             toast.success('Registration Successful', {
                 position: 'bottom-right',
                 autoClose: 2000,

@@ -8,7 +8,7 @@ import axios from 'axios'
 
 const History = () => {
     // const navigate = useNavigate();
-    const [history,setHistory] = useState([])
+    const [history, setHistory] = useState([])
     // const handleLogout = () => {
     //     window.localStorage.clear();
     //     navigate('/student-login');
@@ -23,25 +23,25 @@ const History = () => {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
-            // console.log(response.data.data)
+        // console.log(response.data.data)
 
         const Data = await
             axios({
                 method: 'post',
                 url: 'http://localhost:5000/api/student/get-history-data',
-                data:response.data.data,
+                data: response.data.data,
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
 
-            setHistory(Data.data.data)
+        setHistory(Data.data.data)
     }
 
     useEffect(() => {
         getData();
     }, [])
-    
+
 
     return (
         <div>
@@ -55,7 +55,7 @@ const History = () => {
             </div>
 
             {history.map((item, index) => {
-                const { coursename, date, coursetype, price ,modeofpayment} = item;
+                const { coursename, date, coursetype, price, modeofpayment } = item;
 
                 return (
                     <div key={index} className='ph-course-parent'>

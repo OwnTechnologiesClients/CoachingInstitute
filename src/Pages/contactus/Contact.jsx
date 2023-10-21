@@ -116,27 +116,27 @@ const Contact = () => {
                         <img src={locationIcon} alt="" />
                         <div>
                             <h2>OUR OFFICE LOCATION</h2>
-                            <p>#405, Lan Streen, Los Vegas, USA</p>
+                            <p>28 B/7/1, Lalitaksh Singh Lakra Marg, Jia Sarai, Hauz Khas, New Delhi, Delhi 110016</p>
                         </div>
                     </div>
                     <div className="card">
                         <img src={callIcon} alt="" />
                         <div>
                             <h2>OUR CONTACT NUMBER</h2>
-                            <p>+91 9999888777</p>
+                            <p>+91 8595764714 / 7011767872</p>
                         </div>
                     </div>
                     <div className="card">
                         <img src={mailIcon} alt="" />
                         <div>
                             <h2>OUR CONTACT EMAIL</h2>
-                            <p>support@chemtime.com</p>
+                            <p>chemtimeinstitute@gmail.com</p>
                         </div>
                     </div>
                 </div>
                 <div className="contact-form">
                     <h2 className='under-bar'>Interested in discussing?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum enim dolorem. Praesentium quaerat nesciunt voluptatem sit odio dolorum, aliquid expedita veniam sapiente earum natus</p>
+                    <p>Have questions or need assistance? Contact us today. We're here to help and eager to hear from you. Your feedback and inquiries are valuable to us. We look forward to connecting with you!</p>
 
                     <form className="form-fields" ref={formRef} onSubmit={handleSubmit} >
                         <input name='name' placeholder='Enter Name' required />

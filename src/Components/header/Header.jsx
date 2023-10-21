@@ -36,7 +36,7 @@ const Header2 = () => {
                     <a href="9999888777"><img src={phoneIcon} alt="" /></a>
                     <div>
                         <p className='h1'>CALL US TODAY</p>
-                        <p className='h2'>+91 9999888777</p>
+                        <p className='h2'>+91 8595764714 / 7011767872</p>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ const Header2 = () => {
                     <img src={clockIcon} alt="" />
                     <div>
                         <p className='h1'>WE ARE OPEN</p>
-                        <p className='h2'>Mon-Fri 8:00-16:00</p>
+                        <p className='h2'>Mon-Fri 8:00AM-10:00PM</p>
                     </div>
                 </div>
             </div>

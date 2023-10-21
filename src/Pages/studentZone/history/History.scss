@@ -74,3 +74,14 @@ $nav-bg: #24497c;
         margin-top: 1vw;
     }
 }
+
+.pdfLogo {
+    display: flex;
+    align-items: center;
+}
+
+.pdfLogo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+

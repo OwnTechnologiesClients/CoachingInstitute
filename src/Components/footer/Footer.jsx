@@ -16,39 +16,31 @@ const Footer = () => {
         <div className="detail">
           <img src={logo} alt="" />
           <div className="message">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque maxime, perferendis enim quia, officia quibusdam optio amet cupiditate natus consequuntur dolores fuga ipsum.
+            Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics.
           </div>
           <div className="footer-icons">
-            <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'>
-              <img src={fbicon} width={"25vw"} alt="" />
-            </a>
-
-            <a href="https://www.instagram.com/asapchemtime?igshid=YmMyMTA2M2Y%3D" target='_blank'>
-              <img src={igicon} width={"25vw"} alt="" />
-            </a>
-
-            <a href="https://www.youtube.com/@ASAPCHEMTIME" target='_blank'>
-              <img src={yticon} width={"25vw"} alt="" />
-            </a>
+            <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'><img src={fbicon} width={"25vw"} alt="" /></a>
+            <a href="https://www.youtube.com/@ASAPCHEMTIME" target='_blank'><img src={yticon} width={"25vw"} alt="" /></a>
+            <a href="https://www.instagram.com/asapchemtime?igshid=YmMyMTA2M2Y%3D" target='_blank'><img src={igicon} width={"25vw"} alt="" /></a>
 
           </div>
         </div>
         <div className="courses">
           <h4>Courses</h4>
           <Link to="#">
-            <li>HTML & CSS</li>
+            <li>CSIR-NET/JRF</li>
           </Link>
           <Link to="#">
-            <li>Java</li>
+            <li>GATE</li>
           </Link>
           <Link to="#">
-            <li>Python</li>
+            <li>IIT-JAM</li>
           </Link>
           <Link to="#">
-            <li>Power Point</li>
+            <li>CUET(PG)</li>
           </Link>
           <Link to="#">
-            <li>MS-Office</li>
+            <li>TEST SERIES</li>
           </Link>
         </div>
         <div className="links ">
@@ -79,7 +71,7 @@ const Footer = () => {
           <img src={call} alt="" />
           <div>
             <p className='h1'>For More Details</p>
-            <p className='h2'>+91 9999888777</p>
+            <p className='h2'>+91 8595764714 <br></br>+91 7011767872</p>
           </div>
         </div>
       </div>

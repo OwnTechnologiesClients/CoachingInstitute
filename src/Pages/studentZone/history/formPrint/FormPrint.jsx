@@ -1,255 +1,17 @@
 import React from 'react'
-import './Form.scss';
-import { useState } from 'react';
-import logo from '../../assets/logo.png';
-import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
-import { ToastContainer, toast } from 'react-toastify';
+import './FormPrint.scss';
+import logo from '../../../../assets/logo.png';
 import 'react-toastify/dist/ReactToastify.css';
-import useRazorpay from "react-razorpay";
-import axios from 'axios';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 function Form() {
 
-    const [payButton, setPayButton] = useState(false);
-    const [payDone, setPayDone] = useState(false);
     const { currentUser } = useSelector((state) => state.users);
-    const [file, setFile] = useState("")
-    const { coursename, courseduration, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername } = currentUser;
-    console.log(currentUser)
-
+    
     const handlePrint = (e) => {
         e.preventDefault();
         print();
-    }
-
-    //registration number generation
-    let regNo = Math.round(Date.now())
-    regNo = regNo.toString();
-    regNo = regNo.substring(4, 9);
-
-    // current date generator
-    var DateFormSubmitted = "";
-    var d = new Date();
-    DateFormSubmitted += d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
-    //    " "+ d.getHours()+":"+d.getMinutes()+":"+ d.getSeconds()
-
-    const [formData, setFormData] = useState({
-        registrationnumber: regNo,
-        courseduration: courseduration,
-        session: "2023-24",
-        coursetype: "",
-        coursename: coursename,
-        subject: "",
-        studentname: studentname,
-        dateofbirth: dateofbirth,
-        category: "",
-        gender: "",
-        fathername: fathername,
-        fatheroccupation: "",
-        designation: "",
-        address: address,
-        state: state,
-        pincode: pincode,
-        phonenumber: "",
-        mobilenumber: contactnumber,
-        email: "",
-        modeofpayment: "",
-        knowaboutus: "",
-        date: DateFormSubmitted,
-        place: city,
-        price: price,
-        xyearpassing: "",
-        xcgpa: "",
-        xdivision: "",
-        xcollege: "",
-        xuniversity: "",
-        xiiyearpassing: "",
-        xiicgpa: "",
-        xiidivision: "",
-        xiicollege: "",
-        xiiuniversity: "",
-        graduationyearpassing: "",
-        graduationcgpa: "",
-        graduationdivision: "",
-        graduationcollege: "",
-        graduationuniversity: "",
-        postgraduationyearpassing: "",
-        postgraduationcgpa: "",
-        postgraduationdivision: "",
-        postgraduationcollege: "",
-        postgraduationuniversity: ""
-    })
-
-    //login ke time jo jo chize thi vo bhi prefilled
-
-    const [Razorpay] = useRazorpay();
-
-    const handleChange = (event) => {
-        event.preventDefault();
-        const { name, value } = event.target;
-
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
-        console.log(formData.gender)
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        // console.log("first")
-        try {
-
-            const response = await
-                axios({
-                    method: 'post',
-                    url: 'http://localhost:5000/api/student/registration-form',
-
-                    data: formData,
-                    headers: {
-                        authorization: `Bearer ${localStorage.getItem("token")}`
-                    }
-                });
-            // console.log(response.data);
-
-            if (response.data.success) {
-                setPayButton(true);
-                toast.success('Saved Successful', {
-                    position: 'bottom-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: false,
-                    draggable: false,
-                    progress: undefined,
-                });
-            }
-            else {
-                toast.warn("Please Fill All details", {
-                    position: 'bottom-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: false,
-                    draggable: false,
-                    progress: undefined,
-                });
-            }
-
-        } catch (error) {
-            console.error('Error sending data:', error);
-            // Handle error, maybe show an error message to the user
-        }
-    }
-
-    //Function to handle razorpay
-    const handlePayment = async (e) => {
-        e.preventDefault()
-        const response = await
-            axios({
-                method: 'post',
-                url: 'http://localhost:5000/api/payment/createOrder',
-                data: {
-                    amount: price * 100,
-                    currency: 'INR',
-                    receipt: "abcd",
-                    notes: {
-                        description: "best course",
-                        language: "DSA",
-                        access: "lifetime"
-                    }
-                },
-                headers: {
-                    authorization: `Bearer ${localStorage.getItem("token")}`
-                }
-            });
-        // console.log(response)
-        const options = {
-            key: "rzp_test_XIQpLJB0JJOCKa",
-            // key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
-            amount: response.data.amount,
-            currency: "INR",
-            name: "ChemTime",
-            description: coursename,
-            order_id: response.data.id,
-            handler: async function (response) {
-                console.log(response)
-                const res = await
-                    axios({
-                        method: 'post',
-                        url: 'http://localhost:5000/api/payment/verifyOrder',
-                        data: {
-                            order_id: response.razorpay_order_id,
-                            payment_id: response.razorpay_payment_id
-                        },
-                        headers: {
-                            xrazorpaysignature: response.razorpay_signature
-                        }
-                    });
-
-                // console.log(res);
-
-
-
-                if (res.data.success) {
-                    const result = await
-                        axios({
-                            method: 'post',
-                            url: 'http://localhost:5000/api/student/get-registration-form',
-                            data: {
-                                registrationNo: regNo,
-                                contact: contactnumber,
-                                payment: true
-                            }
-                        });
-                    toast.success('Payment Successful', {
-                        position: 'bottom-right',
-                        autoClose: 2000,
-                        hideProgressBar: false,
-                        closeOnClick: false,
-                        pauseOnHover: false,
-                        draggable: false,
-                        progress: undefined,
-                    });
-
-                    setPayDone(true)
-
-                    // console.log(result.data)
-
-                    // setTimeout(() => {
-                    //     navigate('/history');
-                    // }, 2000);
-                }
-            },
-            prefill: {
-                name: "ChemTime",
-                email: "youremail@example.com",
-                contact: "9999999999",
-            },
-            notes: {
-                address: "Razorpay Corporate Office",
-            },
-            theme: {
-                color: "#3399cc",
-            },
-        };
-        var pay = new Razorpay(options);
-        pay.open();
-
-        // console.log(pay);
-
-        razorpayObject.on('payment.failed', function (response) {
-            // console.log(response);
-            alert("This step of Payment Failed");
-        });
-
-
-    };
-
-    const handleProfilePic = (e) => {
-        setFile(URL.createObjectURL(e.target.files[0]))
     }
 
     return (
@@ -275,12 +37,11 @@ function Form() {
                         <input
                             type="text"
                             name='registrationnumber'
-                            value={formData.registrationnumber}
+                            value={currentUser.registrationnumber}
                         />
                     </div>
                     <div className='form-profilepic'>
-                        <img src={file} />
-                        <input type="file" name="profilepic" className="" onChange={handleProfilePic} />
+                        <img src=""/>
                     </div>
 
                 </div>
@@ -305,7 +66,7 @@ function Form() {
                             name='courseduration'
                             type="radio"
                             value="6 Month"
-                            checked={formData.courseduration === "6 Month"}
+                            checked={currentUser.courseduration === "6 Month"}
                         />
                     </label>
 
@@ -316,7 +77,7 @@ function Form() {
                             name='courseduration'
                             type="radio"
                             value="1 Year"
-                            checked={formData.courseduration === "1 Year"}
+                            checked={currentUser.courseduration === "1 Year"}
                         />
                     </label>
 
@@ -328,7 +89,7 @@ function Form() {
                             name='courseduration'
                             type="radio"
                             value="2 Years"
-                            checked={formData.courseduration === "2 Years"}
+                            checked={currentUser.courseduration === "2 Years"}
                         />
                     </label>
 
@@ -341,8 +102,8 @@ function Form() {
                     <input
                         type="text"
                         name='session'
-                        value={formData.session}
-                        onChange={handleChange} />
+                        value={currentUser.session}
+                        />
                 </div>
 
             </div>
@@ -355,11 +116,7 @@ function Form() {
             <div className='sf-course-section'>
 
                 <div className='sf-course-radio-button-form'>
-                    <label>
 
-                        <span>Mode of Study: </span>
-
-                    </label>
                     <label>
 
                         <span>Demo</span>
@@ -368,8 +125,8 @@ function Form() {
                             type="radio"
                             value="Demo"
                             // Checking this radio button if the selected option is "Male"
-                            // checked={selectedOption === "Demo"}
-                            onChange={handleChange} />
+                            checked={currentUser.coursetype === "Demo"}
+                            />
                     </label>
 
 
@@ -380,8 +137,8 @@ function Form() {
                             type="radio"
                             value="Regular"
                             // Checking this radio button if the selected option is "Female"
-                            // checked={selectedOption === "Regular"}
-                            onChange={handleChange} />
+                            checked={currentUser.coursetype === "Regular"}
+                            />
                     </label>
 
 
@@ -392,8 +149,8 @@ function Form() {
                             type="radio"
                             value="Weekend"
                             // Checking this radio button if the selected option is "Other"
-                            // checked={selectedOption === "Weekend"}
-                            onChange={handleChange} />
+                            checked={currentUser.coursetype === "Weekend"}
+                            />
                     </label>
 
                     <label>
@@ -402,8 +159,8 @@ function Form() {
                             name='coursetype'
                             type="radio"
                             value="correspondance"
-                            // checked={selectedOption === "correspondance"}
-                            onChange={handleChange} />
+                            checked={currentUser.coursetype === "correspondance"}
+                            />
                     </label>
 
                     <label>
@@ -413,8 +170,8 @@ function Form() {
                             type="radio"
                             value="Test Series"
                             // Checking this radio button if the selected option is "Other"
-                            // checked={selectedOption === "Test Series"}
-                            onChange={handleChange} />
+                            checked={currentUser.coursetype === "Test Series"}
+                            />
                     </label>
 
                 </div>
@@ -432,8 +189,8 @@ function Form() {
                     <input
                         type="text"
                         name='coursename'
-                        value={formData.coursename}
-                        onChange={handleChange} />
+                        value={currentUser.coursename}
+                        />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -442,8 +199,8 @@ function Form() {
                     <input
                         type="text"
                         name='subject'
-                        value={formData.subject}
-                        onChange={handleChange} />
+                        value={currentUser.subject}
+                        />
                 </div>
 
 
@@ -459,7 +216,7 @@ function Form() {
                     <input
                         type="text"
                         name='studentname'
-                        value={formData.studentname} />
+                        value={currentUser.studentname} />
                 </div>
             </div>
 
@@ -474,7 +231,7 @@ function Form() {
                     <input
                         type="date"
                         name='dateofbirth'
-                        value={formData.dateofbirth} />
+                        value={currentUser.dateofbirth} />
                 </div>
 
 
@@ -484,8 +241,8 @@ function Form() {
                     <input
                         type="text"
                         name='category'
-                        value={formData.category}
-                        onChange={handleChange} />
+                        value={currentUser.category}
+                        />
                 </div>
 
 
@@ -500,8 +257,8 @@ function Form() {
                         type="radio"
                         value="Male"
                         // Checking this radio button if the selected option is "Male"
-                        // checked={selectedOption === "Male"}
-                        onChange={handleChange} />
+                        checked={currentUser.gender === "Male"}
+                        />
                 </label>
 
                 <label>
@@ -511,8 +268,8 @@ function Form() {
                         type="radio"
                         value="Female"
                         // Checking this radio button if the selected option is "Male"
-                        // checked={selectedOption === "Female"}
-                        onChange={handleChange} />
+                        checked={currentUser.gender === "Female"}
+                        />
                 </label>
             </div>
 
@@ -527,7 +284,7 @@ function Form() {
                     <input
                         type="text"
                         name='fathername'
-                        value={formData.fathername} />
+                        value={currentUser.fathername} />
                 </div>
             </div>
 
@@ -542,8 +299,8 @@ function Form() {
                     <input
                         type="text"
                         name='fatheroccupation'
-                        value={formData.fatheroccupation}
-                        onChange={handleChange} />
+                        value={currentUser.fatheroccupation}
+                        />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -552,8 +309,8 @@ function Form() {
                     <input
                         type="text"
                         name='designation'
-                        value={formData.designation}
-                        onChange={handleChange} />
+                        value={currentUser.designation}
+                        />
                 </div>
 
 
@@ -569,7 +326,7 @@ function Form() {
                     <input
                         type="text"
                         name='address'
-                        value={formData.address} />
+                        value={currentUser.address} />
                 </div>
             </div>
 
@@ -584,7 +341,7 @@ function Form() {
                     <input
                         type="text"
                         name='state'
-                        value={formData.state} />
+                        value={currentUser.state} />
                 </div>
 
 
@@ -594,7 +351,7 @@ function Form() {
                     <input
                         type="text"
                         name='pincode'
-                        value={formData.pincode} />
+                        value={currentUser.pincode} />
                 </div>
 
                 <div className='sf-date-of-birth'>
@@ -603,8 +360,8 @@ function Form() {
                     <input
                         type="text"
                         name='phonenumber'
-                        value={formData.phonenumber}
-                        onChange={handleChange} />
+                        value={currentUser.phonenumber}
+                        />
                 </div>
 
 
@@ -621,7 +378,7 @@ function Form() {
                     <input
                         type="text"
                         name='mobilenumber'
-                        value={formData.mobilenumber} />
+                        value={currentUser.mobilenumber} />
                 </div>
 
 
@@ -631,8 +388,8 @@ function Form() {
                     <input
                         type="text"
                         name='email'
-                        value={formData.email}
-                        onChange={handleChange} />
+                        value={currentUser.email}
+                        />
                 </div>
 
 
@@ -646,7 +403,7 @@ function Form() {
                     <input
                         type="text"
                         name='price'
-                        value={formData.price} />
+                        value={currentUser.price} />
                 </div>
             </div>
 
@@ -692,40 +449,40 @@ function Form() {
                     <input
                         type="text"
                         name='xyearpassing'
-                        value={formData.xyearpassing}
-                        onChange={handleChange} />
+                        value={currentUser.xyearpassing}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xcgpa'
-                        value={formData.xcgpa}
-                        onChange={handleChange} />
+                        value={currentUser.xcgpa}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xdivision'
-                        value={formData.xdivision}
-                        onChange={handleChange} />
+                        value={currentUser.xdivision}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xcollege'
-                        value={formData.xcollege}
-                        onChange={handleChange} />
+                        value={currentUser.xcollege}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xuniversity'
-                        value={formData.xuniversity}
-                        onChange={handleChange} />
+                        value={currentUser.xuniversity}
+                        />
                 </div>
 
 
@@ -742,40 +499,40 @@ function Form() {
                     <input
                         type="text"
                         name='xiiyearpassing'
-                        value={formData.xiiyearpassing}
-                        onChange={handleChange} />
+                        value={currentUser.xiiyearpassing}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xiicgpa'
-                        value={formData.xiicgpa}
-                        onChange={handleChange} />
+                        value={currentUser.xiicgpa}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xiidivision'
-                        value={formData.xiidivision}
-                        onChange={handleChange} />
+                        value={currentUser.xiidivision}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xiicollege'
-                        value={formData.xiicollege}
-                        onChange={handleChange} />
+                        value={currentUser.xiicollege}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='xiiuniversity'
-                        value={formData.xiiuniversity}
-                        onChange={handleChange} />
+                        value={currentUser.xiiuniversity}
+                        />
                 </div>
 
 
@@ -793,40 +550,40 @@ function Form() {
                     <input
                         type="text"
                         name='graduationyearpassing'
-                        value={formData.graduationyearpassing}
-                        onChange={handleChange} />
+                        value={currentUser.graduationyearpassing}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='graduationcgpa'
-                        value={formData.graduationcgpa}
-                        onChange={handleChange} />
+                        value={currentUser.graduationcgpa}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='graduationdivision'
-                        value={formData.graduationdivision}
-                        onChange={handleChange} />
+                        value={currentUser.graduationdivision}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='graduationcollege'
-                        value={formData.graduationcollege}
-                        onChange={handleChange} />
+                        value={currentUser.graduationcollege}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='graduationuniversity'
-                        value={formData.graduationuniversity}
-                        onChange={handleChange} />
+                        value={currentUser.graduationuniversity}
+                        />
                 </div>
 
 
@@ -844,40 +601,39 @@ function Form() {
                     <input
                         type="text"
                         name='postgraduationyearpassing'
-                        value={formData.postgraduationyearpassing}
-                        onChange={handleChange} />
+                        value={currentUser.postgraduationyearpassing}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='postgraduationcgpa'
-                        value={formData.postgraduationcgpa}
-                        onChange={handleChange} />
+                        value={currentUser.postgraduationcgpa}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='postgraduationdivision'
-                        value={formData.postgraduationdivision}
-                        onChange={handleChange} />
+                        value={currentUser.postgraduationdivision}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='postgraduationcollege'
-                        value={formData.postgraduationcollege}
-                        onChange={handleChange} />
+                        value={currentUser.postgraduationcollege}
+                        />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='postgraduationuniversity'
-                        value={formData.postgraduationuniversity}
-                        onChange={handleChange} />
+                        value={currentUser.postgraduationuniversity}/>
                 </div>
 
 
@@ -905,8 +661,8 @@ function Form() {
                             type="radio"
                             value="Online"
                             // Checking this radio button if the selected option is "Male"
-                            // checked={selectedOption === "Male"}
-                            onChange={handleChange} />
+                            checked={currentUser.modeofpayment === "Online"}
+                            />
                     </label>
 
 
@@ -917,8 +673,8 @@ function Form() {
                             type="radio"
                             value="Offline"
                             // Checking this radio button if the selected option is "Female"
-                            // checked={selectedOption === "Female"}
-                            onChange={handleChange} />
+                            checked={currentUser.modeofpayment === "Offline"}
+                             />
                     </label>
 
                 </div>
@@ -936,8 +692,7 @@ function Form() {
                     <input
                         type="text"
                         name='knowaboutus'
-                        value={formData.knowaboutus}
-                        onChange={handleChange} />
+                        value={currentUser.knowaboutus}/>
                 </div>
             </div>
 
@@ -967,7 +722,7 @@ function Form() {
                     <input
                         type="text"
                         name='date'
-                        value={formData.date} />
+                        value={currentUser.date} />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -976,25 +731,17 @@ function Form() {
                     <input
                         type="text"
                         name='place'
-                        value={formData.place} />
+                        value={currentUser.place}/>
                 </div>
 
 
             </div>
 
-            {
-                !payDone ?
-                    <div className='sf-paynow'>
-                        <button className="button" disabled={!payButton} onClick={handlePrint}>Print As PDF</button>
-                        <button className="button" onClick={handleSubmit}>Save</button>
-                        <button className="button" disabled={!payButton} onClick={handlePayment}>Pay Now</button>
-
-                    </div>
-                    : <div>
+            <div>
                         <div className='after-payment-bar'>
                             <div className="d1">Registration Status :</div>
                             <div className="d2">
-                                Payment Amount : {formData.price}
+                                Payment Amount : {currentUser.price}
                             </div>
                             <div className='d3'>
                                 Successful
@@ -1005,9 +752,7 @@ function Form() {
                             <Link className='button-home' to="/">Home</Link>
                         </div>
                     </div>
-            }
-            <ToastContainer closeButton={false} />
-            <WhatsappIcon />
+            
         </form>
 
     )

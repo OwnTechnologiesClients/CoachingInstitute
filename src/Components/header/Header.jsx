@@ -9,7 +9,7 @@ import './Header.scss'
 import { Link } from 'react-router-dom'
 
 const Header1 = () => {
-   
+
     return (
         <div className="top-bar">
             <div className='top-links'>

@@ -19,9 +19,18 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, doloremque maxime, perferendis enim quia, officia quibusdam optio amet cupiditate natus consequuntur dolores fuga ipsum.
           </div>
           <div className="footer-icons">
-            <img src={fbicon} width={"25vw"} alt="" />
-            <img src={igicon} width={"25vw"} alt="" />
-            <img src={yticon} width={"25vw"} alt="" />
+            <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'>
+              <img src={fbicon} width={"25vw"} alt="" />
+            </a>
+
+            <a href="https://www.instagram.com/asapchemtime?igshid=YmMyMTA2M2Y%3D" target='_blank'>
+              <img src={igicon} width={"25vw"} alt="" />
+            </a>
+
+            <a href="https://www.youtube.com/@ASAPCHEMTIME" target='_blank'>
+              <img src={yticon} width={"25vw"} alt="" />
+            </a>
+
           </div>
         </div>
         <div className="courses">

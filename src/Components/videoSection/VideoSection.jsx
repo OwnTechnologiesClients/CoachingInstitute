@@ -15,7 +15,6 @@ const VideoSection = () => {
         "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
         "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R",
         "https://www.youtube.com/embed/4jjc6yb7af8?si=DYNPueT5B7zjva8Z",
-        "https://www.youtube.com/embed/vi7mVuQ8-BA?si=cuPpJmw_5UMeQJ3R"
     ]
 
     return (

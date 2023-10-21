@@ -12,7 +12,9 @@ import { useNavigate } from 'react-router-dom';
 import { SetHistory } from '../../redux/userSlice';
 
 function Form() {
+
     const navigate = useNavigate();
+    const [payButton,setPayButton] =  useState(false);
     const { currentUser } = useSelector((state) => state.users);
     const [file, setFile] = useState("")
     const { coursename, courseduration, price, studentname, contactnumber } = currentUser;
@@ -94,12 +96,12 @@ function Form() {
           ...prevData,
           [name]: value,
         }));
-        console.log(formData.gender)
+        // console.log(formData.gender)
       };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("first")
+        // console.log("first")
         try {
 
             const response = await
@@ -112,9 +114,10 @@ function Form() {
                         authorization: `Bearer ${localStorage.getItem("token")}`
                     }
                 });
-            console.log(response.data);
+            // console.log(response.data);
 
             if (response.data.success) {
+                setPayButton(true);
                 toast.success('Saved Successful', {
                     position: 'bottom-right',
                     autoClose: 2000,
@@ -126,7 +129,7 @@ function Form() {
                 });
             }
             else {
-                toast.warn(response.data.message, {
+                toast.warn("Please Fill All details", {
                     position: 'bottom-right',
                     autoClose: 2000,
                     hideProgressBar: false,
@@ -164,7 +167,7 @@ function Form() {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
-        console.log(response)
+        // console.log(response)
         const options = {
             key: "rzp_test_XIQpLJB0JJOCKa",
             // key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
@@ -188,7 +191,7 @@ function Form() {
                         }
                     });
 
-                console.log(res);
+                // console.log(res);
 
 
 
@@ -213,7 +216,7 @@ function Form() {
                         progress: undefined,
                     });
                     
-                    console.log(result.data)
+                    // console.log(result.data)
 
                     dispatch(SetHistory(result.data.data));
                     setTimeout(() => {
@@ -236,10 +239,10 @@ function Form() {
         var pay = new Razorpay(options);
         pay.open();
 
-        console.log(pay);
+        // console.log(pay);
 
         razorpayObject.on('payment.failed', function (response) {
-            console.log(response);
+            // console.log(response);
             alert("This step of Payment Failed");
         });
 
@@ -985,8 +988,8 @@ function Form() {
 
             <div className='sf-paynow'>
                 <button className="button" onClick={handlePrint}>Print As PDF</button>
-                <button className="button" onClick={handleSubmit}>Save</button>
-                <button className="button" onClick={handlePayment}>Pay Now</button>
+                <button className="button"  onClick={handleSubmit}>Save</button>
+                <button className="button" disabled={!payButton} onClick={handlePayment}>Pay Now</button>
 
             </div>
             <ToastContainer closeButton={false} />

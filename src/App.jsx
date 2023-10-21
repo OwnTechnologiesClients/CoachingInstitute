@@ -13,6 +13,7 @@ import About from './pages/aboutus/About';
 import Admin from './pages/admin/Admin';
 import Contact from './pages/contactus/Contact';
 import SearchUser from './pages/admin/searchUser/SearchUser';
+import FormPrint from './pages/studentZone/history/formPrint/FormPrint'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/history' element={<History />} />
           <Route path='/admin' element={<Admin/>} />
           <Route path='/searchuser' element={<SearchUser/>} />
+          <Route path='/form-print' element={<FormPrint/>} />
         </Routes>
       </BrowserRouter>
 

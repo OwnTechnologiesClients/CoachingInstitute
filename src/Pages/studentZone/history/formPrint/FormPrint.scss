@@ -1,4 +1,4 @@
-.form-pay {
+.form-pay-printing {
 
     .sf-header-parent {
         width: 100%;
@@ -435,19 +435,18 @@
         display: flex;
         justify-content: space-between;
         background-color: #E9F7E7;
+        padding: 2vw;
         margin: 2vw 0;
-        padding:2vw 8vw;
         align-items: center;
         font-family: Poppins;
 
         .d1,
         .d2 {
-            font-size: 1.15vw;
+            font-size: 1rem;
         }
 
         .d3 {
-            font-size: 1.7vw;
-            font-weight: 700;
+            font-size: 2rem;
         }
     }
 
@@ -471,10 +470,5 @@
             width: 9vw;
             margin-left: 4vw;
         }
-        
-    }
-    .disabled-btn{
-        filter:brightness(0.7);
-        
     }
 }

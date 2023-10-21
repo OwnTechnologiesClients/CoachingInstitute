@@ -40,8 +40,23 @@
             border-radius: .2vw;
             background-color: #fff;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding-left: 1vw;
         }
 
-        
+        .search-user-button button{
+            width: 19vw;
+            height: 2.8vw;
+            font-size: 1.2vw;
+            background-color: #2F4E71;
+            color: #fff;
+            margin: 1vw;
+            margin-top: 5vw;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: .2vw;
+            border: none;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+
     }
 }

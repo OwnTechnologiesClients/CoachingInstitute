@@ -34,7 +34,7 @@ const SearchUser = () => {
                 <div className="row">
                     <div>
                         <label htmlFor="course">Course Name</label>
-                        <select name="course" id="course">
+                        <select name="course" id="course" required>
                             <option value="DCA">Diploma in Computer Application (DCA)</option>
                             <option value="DCA">Diploma in Computer Application (DCA)</option>
                         </select>
@@ -56,10 +56,16 @@ const SearchUser = () => {
 
                     <div>
                         <label htmlFor="phoneNo">Phone Number</label>
-                        <input type="number" maxLength='10' name="phoneNo" id="phoneNo" />
+                        <input type="number" maxLength={10} name="phoneNo" id="phoneNo" required/>
                     </div>
                 </div>
+
+                <div className="search-user-button">
+                    <button >Continue</button>
+                </div>
             </div>
+
+
         </div>
     )
 }

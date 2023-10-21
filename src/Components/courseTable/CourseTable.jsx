@@ -23,8 +23,8 @@ const CourseTable = ({ mode }) => {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
-            console.log(response.data.data);
-        const { studentname, contactnumber } = response.data.data;
+        console.log(response.data.data);
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
@@ -34,6 +34,13 @@ const CourseTable = ({ mode }) => {
         if (localStorage.getItem('token')) {
             courseData['studentname'] = studentname;
             courseData['contactnumber'] = contactnumber;
+            courseData['dateofbirth'] = dateofbirth;
+            courseData['email'] = email;
+            courseData['city'] = city;
+            courseData['state'] = state;
+            courseData['pincode'] = pincode;
+            courseData['address'] = address;
+            courseData['fathername'] = fathername;
             dispatch(SetCurrentUser(courseData));
             navigate('/form')
         }
@@ -67,6 +74,7 @@ const CourseTable = ({ mode }) => {
             999
         ],
     ]
+
     return (
         <div className='course-table'>
             <div className="dashboard">

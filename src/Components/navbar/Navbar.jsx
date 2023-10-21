@@ -18,8 +18,7 @@ const Navbar = () => {
 
   const handleItemClick = (itemName) => {
     if(itemName==='Logout'){
-      window.localStorage.clear();
-      navigate('/student-login')
+      navigate('/history')
     }
     setActiveItem(itemName);
     closeMenu(); // Close the menu when an item is clicked
@@ -89,9 +88,9 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link to="/student-login" onClick={() => handleItemClick(!localStorage.getItem('token')?'Student Login':'Logout')}>
+        <Link to={`${localStorage.getItem('token')?'/history':"/student-login"}`} onClick={() => handleItemClick('Student Login')}>
           <div className={`menu-item ${activeItem === 'student-login' ? 'active' : ''}`}>
-            {!localStorage.getItem('token')?'Student Login':'Logout'}
+            Student Login
           </div>
         </Link>
         <Link to="https://blog.chemtime.co.in/" onClick={() => handleItemClick('blog')}>

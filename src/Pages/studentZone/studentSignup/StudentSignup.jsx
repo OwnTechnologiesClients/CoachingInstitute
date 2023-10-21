@@ -51,8 +51,8 @@ const StudentSignup = () => {
                 headers: { "Content-Type": "multipart/form-data" }
             }
         )
-        console.log(result.data.data)
-        console.log(result);
+        // console.log(result.data.data)
+        // console.log(result);
         if (result.data.success) {
             setImg(result.data.data.myfilename)
         }
@@ -100,9 +100,6 @@ const StudentSignup = () => {
 
             <div className='student-detail-parent'>
                 <img src={img}></img>
-
-
-
 
                 <div className='query-square'>
                     <div className='square-header'>
@@ -165,6 +162,14 @@ const StudentSignup = () => {
                             value={address}
                             onChange={(e) => { setAddress(e.target.value) }}
                             placeholder="Enter Address" />
+
+                        {/* ------------ Upload image Input textfield -------------------- */}
+                        <button
+                            className="form-control img-button"
+                            onClick={() => document.getElementById("myFile").click()}
+                        >
+                            Upload Image
+                        </button>
 
                         <input className="form-control" type="file" id="myFile" name="myFile"
                             onChange={onInputChange}

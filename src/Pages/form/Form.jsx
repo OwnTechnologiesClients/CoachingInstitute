@@ -12,15 +12,27 @@ import { Link } from 'react-router-dom';
 
 function Form() {
 
-    const [payButton, setPayButton] = useState(false);
-    const [payDone, setPayDone] = useState(false);
+    const [isFormSaved, setisFormSaved] = useState(false);
+    const [isPayDone, setisPayDone] = useState(false);
     const { currentUser } = useSelector((state) => state.users);
     const [file, setFile] = useState("")
-    const { coursename, courseduration, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername } = currentUser;
+    const { coursename, courseduration,email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername } = currentUser;
     console.log(currentUser)
 
     const handlePrint = (e) => {
         e.preventDefault();
+        if(!isFormSaved){
+            toast.warn('Please Save Form First', {
+                position: 'bottom-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+            });
+            return
+        }
         print();
     }
 
@@ -54,7 +66,7 @@ function Form() {
         pincode: pincode,
         phonenumber: "",
         mobilenumber: contactnumber,
-        email: "",
+        email:email,
         modeofpayment: "",
         knowaboutus: "",
         date: DateFormSubmitted,
@@ -115,7 +127,7 @@ function Form() {
             // console.log(response.data);
 
             if (response.data.success) {
-                setPayButton(true);
+                setisFormSaved(true);
                 toast.success('Saved Successful', {
                     position: 'bottom-right',
                     autoClose: 2000,
@@ -127,7 +139,7 @@ function Form() {
                 });
             }
             else {
-                toast.warn("Please Fill All details", {
+                toast.warn(response.data.message, {
                     position: 'bottom-right',
                     autoClose: 2000,
                     hideProgressBar: false,
@@ -147,6 +159,19 @@ function Form() {
     //Function to handle razorpay
     const handlePayment = async (e) => {
         e.preventDefault()
+
+        if(!isFormSaved){
+            toast.warn('Please Save Form First', {
+                position: 'bottom-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+            });
+            return
+        }
         const response = await
             axios({
                 method: 'post',
@@ -214,7 +239,7 @@ function Form() {
                         progress: undefined,
                     });
 
-                    setPayDone(true)
+                    setisPayDone(true)
 
                     // console.log(result.data)
 
@@ -631,8 +656,7 @@ function Form() {
                     <input
                         type="text"
                         name='email'
-                        value={formData.email}
-                        onChange={handleChange} />
+                        value={formData.email} />
                 </div>
 
 
@@ -983,11 +1007,11 @@ function Form() {
             </div>
 
             {
-                !payDone ?
+                !isPayDone ?
                     <div className='sf-paynow'>
-                        <button className="button" disabled={!payButton} onClick={handlePrint}>Print As PDF</button>
+                        <button className={`button ${!isFormSaved?'disabled-btn':''}`}  onClick={handlePrint}>Print As PDF</button>
                         <button className="button" onClick={handleSubmit}>Save</button>
-                        <button className="button" disabled={!payButton} onClick={handlePayment}>Pay Now</button>
+                        <button className={`button ${!isFormSaved?'disabled-btn':''}`}  onClick={handlePayment}>Pay Now</button>
 
                     </div>
                     : <div>

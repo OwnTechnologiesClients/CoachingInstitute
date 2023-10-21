@@ -20,6 +20,10 @@ const History = () => {
         dispatch(SetCurrentUser(item));
         navigate('/form-print')
     }
+    const handleLogout = ()=>{
+        window.localStorage.clear();
+        navigate('/student-login');
+    }
 
     const getData = async () => {
 
@@ -47,6 +51,9 @@ const History = () => {
     }
 
     useEffect(() => {
+        if(!localStorage.getItem('token')){
+            navigate('/student-login')
+        }
         getData();
     }, [])
 
@@ -59,6 +66,7 @@ const History = () => {
             <Navbar />
             <div className='ph-appbar'>
                 <h2>Purchased History</h2>
+                <button onClick={handleLogout}>Logout</button>
             </div>
 
             {history.map((item, index) => {

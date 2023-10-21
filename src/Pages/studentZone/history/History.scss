@@ -18,20 +18,20 @@ $nav-bg: #24497c;
         margin-left: 2vw;
     }
 
-    // button {
-    //     background-color: $nav-bg;
-    //     padding: .6vw 1.3vw;
-    //     margin: 0.7vw .5vw;
-    //     border-radius: 3.8rem;
-    //     display: flex;
-    //     align-items: center;
-    //     font-size: 1.1vw;
-    //     font-weight: 400;
-    //     color: #fff;
-    //     position: absolute;
-    //     right: 1vw;
-    //     border: none;
-    // }
+    button {
+        background-color: $nav-bg;
+        padding: .6vw 1.3vw;
+        margin: 0.7vw .5vw;
+        border-radius: 3.8rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: #fff;
+        position: absolute;
+        right: 1vw;
+        border: none;
+    }
 }
 
 .ph-course-parent {

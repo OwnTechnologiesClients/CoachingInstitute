@@ -16,7 +16,7 @@ function Form() {
 
     return (
 
-        <form className='form-pay'>
+        <form className='form-pay-printing'>
             <div className='sf-header-parent'>
                 <div className='sf-header'>
                     <img src={logo} />

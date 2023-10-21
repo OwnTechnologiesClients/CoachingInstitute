@@ -24,7 +24,7 @@ const CourseTable = ({ mode }) => {
                 }
             });
         console.log(response.data.data);
-        const { studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername } = response.data.data;
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
@@ -35,6 +35,7 @@ const CourseTable = ({ mode }) => {
             courseData['studentname'] = studentname;
             courseData['contactnumber'] = contactnumber;
             courseData['dateofbirth'] = dateofbirth;
+            courseData['email'] = email;
             courseData['city'] = city;
             courseData['state'] = state;
             courseData['pincode'] = pincode;

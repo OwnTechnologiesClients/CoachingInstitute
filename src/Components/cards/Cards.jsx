@@ -3,7 +3,7 @@ import './Cards.scss'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import queryString from 'query-string';
-const WelcomeCard = ({ imgSrc }) => {
+const WelcomeCard = ({ imgSrc,title,description }) => {
 
     // function extractVideoId(url) {
     //     // Regular expression to match YouTube video ID in various URL formats
@@ -44,8 +44,8 @@ const WelcomeCard = ({ imgSrc }) => {
         <div className='welcome-card'>
             <img src={imgSrc} alt="" />
             <div >
-                <h2 className='under-bar'>EXPERIENCE YOURSELF</h2>
-                <p>We care for children, protect their welfare, and prepare them for the future</p>
+                <h2 className='under-bar'>{title}</h2>
+                <p>{description}</p>
             </div>
         </div>
     )

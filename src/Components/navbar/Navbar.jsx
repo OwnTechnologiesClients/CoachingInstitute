@@ -52,8 +52,8 @@ const Navbar = () => {
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="#">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
-                <Link to="#">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="/courses">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="/courses">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
               </div>
             </div>
           </div>

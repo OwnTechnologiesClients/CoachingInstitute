@@ -9,8 +9,8 @@ const HeroSection = ({imgSrc,hd1,hd2}) => {
             <div className='detail'>
                 <h1>{hd1}</h1>
                 <h2>{hd2}</h2>
-                <p>We provide always our best service of our clients always </p>
-                <p>Try to client's trust satisfaction</p>
+                <p>Our institute is committed to providing the best education to students</p>
+                <p>and helping them achieve their goals</p>
             </div>
         </div>
     )

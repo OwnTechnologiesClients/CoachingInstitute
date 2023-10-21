@@ -19,7 +19,7 @@ function Form() {
 
     const dispatch = useDispatch();
 
-    const handlePrint = (e)=>{
+    const handlePrint = (e) => {
         e.preventDefault();
         print();
     }
@@ -89,13 +89,13 @@ function Form() {
     const handleChange = (event) => {
         event.preventDefault();
         const { name, value } = event.target;
-      
+
         setFormData((prevData) => ({
-          ...prevData,
-          [name]: value,
+            ...prevData,
+            [name]: value,
         }));
         console.log(formData.gender)
-      };
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -212,7 +212,7 @@ function Form() {
                         draggable: false,
                         progress: undefined,
                     });
-                    
+
                     console.log(result.data)
 
                     dispatch(SetHistory(result.data.data));
@@ -453,7 +453,7 @@ function Form() {
                     <input
                         type="text"
                         name='studentname'
-                        value={formData.studentname}/>
+                        value={formData.studentname} />
                 </div>
             </div>
 
@@ -602,7 +602,7 @@ function Form() {
                     <input
                         type="text"
                         name='phonenumber'
-                        value={formData.phonenumber} 
+                        value={formData.phonenumber}
                         onChange={handleChange} />
                 </div>
 

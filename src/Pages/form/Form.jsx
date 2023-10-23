@@ -13,9 +13,8 @@ import { Link } from 'react-router-dom';
 function Form() {
 
     const [isFormSaved, setisFormSaved] = useState(false);
-    const [isPayDone, setisPayDone] = useState(true);
+    const [isPayDone, setisPayDone] = useState(false);
     const { currentUser } = useSelector((state) => state.users);
-    const [file, setFile] = useState("")
     const { coursename, courseduration, email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername, filename } = currentUser;
     console.log(currentUser)
 
@@ -273,9 +272,7 @@ function Form() {
 
     };
 
-    const handleProfilePic = (e) => {
-        setFile(URL.createObjectURL(e.target.files[0]))
-    }
+    
 
     return (
 

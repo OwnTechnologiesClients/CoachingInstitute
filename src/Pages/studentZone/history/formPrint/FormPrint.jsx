@@ -1,19 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './FormPrint.scss';
 import logo from '../../../../assets/logo.png';
 import 'react-toastify/dist/ReactToastify.css';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-
-function Form() {
+import axios from 'axios';
+function FormPrint() {
 
     const { currentUser } = useSelector((state) => state.users);
-    
+    const [imagefilename, setImageFileName] = useState(null);
     const handlePrint = (e) => {
         e.preventDefault();
         print();
     }
+    
+    const getImage = async ()=>{
+        const response = await
+        axios({
+            method: 'get',
+            url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
+            headers: {
+                authorization: `Bearer ${localStorage.getItem("token")}`
+            }
+        });
+        setImageFileName(response.data.data.myfilename)
+    }
 
+    useEffect(() => {
+        getImage()
+    }, [])
     return (
 
         <form className='form-pay-printing'>
@@ -41,7 +56,7 @@ function Form() {
                         />
                     </div>
                     <div className='form-profilepic'>
-                        <img src=""/>
+                        <img src={`https://chemtime-backend.onrender.com/public/${imagefilename}`}  />
                     </div>
 
                 </div>
@@ -103,7 +118,7 @@ function Form() {
                         type="text"
                         name='session'
                         value={currentUser.session}
-                        />
+                    />
                 </div>
 
             </div>
@@ -126,7 +141,7 @@ function Form() {
                             value="Demo"
                             // Checking this radio button if the selected option is "Male"
                             checked={currentUser.coursetype === "Demo"}
-                            />
+                        />
                     </label>
 
 
@@ -138,7 +153,7 @@ function Form() {
                             value="Regular"
                             // Checking this radio button if the selected option is "Female"
                             checked={currentUser.coursetype === "Regular"}
-                            />
+                        />
                     </label>
 
 
@@ -150,7 +165,7 @@ function Form() {
                             value="Weekend"
                             // Checking this radio button if the selected option is "Other"
                             checked={currentUser.coursetype === "Weekend"}
-                            />
+                        />
                     </label>
 
                     <label>
@@ -160,7 +175,7 @@ function Form() {
                             type="radio"
                             value="correspondance"
                             checked={currentUser.coursetype === "correspondance"}
-                            />
+                        />
                     </label>
 
                     <label>
@@ -171,7 +186,7 @@ function Form() {
                             value="Test Series"
                             // Checking this radio button if the selected option is "Other"
                             checked={currentUser.coursetype === "Test Series"}
-                            />
+                        />
                     </label>
 
                 </div>
@@ -190,7 +205,7 @@ function Form() {
                         type="text"
                         name='coursename'
                         value={currentUser.coursename}
-                        />
+                    />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -200,7 +215,7 @@ function Form() {
                         type="text"
                         name='subject'
                         value={currentUser.subject}
-                        />
+                    />
                 </div>
 
 
@@ -242,7 +257,7 @@ function Form() {
                         type="text"
                         name='category'
                         value={currentUser.category}
-                        />
+                    />
                 </div>
 
 
@@ -258,7 +273,7 @@ function Form() {
                         value="Male"
                         // Checking this radio button if the selected option is "Male"
                         checked={currentUser.gender === "Male"}
-                        />
+                    />
                 </label>
 
                 <label>
@@ -269,7 +284,7 @@ function Form() {
                         value="Female"
                         // Checking this radio button if the selected option is "Male"
                         checked={currentUser.gender === "Female"}
-                        />
+                    />
                 </label>
             </div>
 
@@ -300,7 +315,7 @@ function Form() {
                         type="text"
                         name='fatheroccupation'
                         value={currentUser.fatheroccupation}
-                        />
+                    />
                 </div>
 
                 <div className='sf-name-of-subject'>
@@ -310,7 +325,7 @@ function Form() {
                         type="text"
                         name='designation'
                         value={currentUser.designation}
-                        />
+                    />
                 </div>
 
 
@@ -361,7 +376,7 @@ function Form() {
                         type="text"
                         name='phonenumber'
                         value={currentUser.phonenumber}
-                        />
+                    />
                 </div>
 
 
@@ -389,7 +404,7 @@ function Form() {
                         type="text"
                         name='email'
                         value={currentUser.email}
-                        />
+                    />
                 </div>
 
 
@@ -450,7 +465,7 @@ function Form() {
                         type="text"
                         name='xyearpassing'
                         value={currentUser.xyearpassing}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -458,7 +473,7 @@ function Form() {
                         type="text"
                         name='xcgpa'
                         value={currentUser.xcgpa}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -466,7 +481,7 @@ function Form() {
                         type="text"
                         name='xdivision'
                         value={currentUser.xdivision}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -474,7 +489,7 @@ function Form() {
                         type="text"
                         name='xcollege'
                         value={currentUser.xcollege}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -482,7 +497,7 @@ function Form() {
                         type="text"
                         name='xuniversity'
                         value={currentUser.xuniversity}
-                        />
+                    />
                 </div>
 
 
@@ -500,7 +515,7 @@ function Form() {
                         type="text"
                         name='xiiyearpassing'
                         value={currentUser.xiiyearpassing}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -508,7 +523,7 @@ function Form() {
                         type="text"
                         name='xiicgpa'
                         value={currentUser.xiicgpa}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -516,7 +531,7 @@ function Form() {
                         type="text"
                         name='xiidivision'
                         value={currentUser.xiidivision}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -524,7 +539,7 @@ function Form() {
                         type="text"
                         name='xiicollege'
                         value={currentUser.xiicollege}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -532,7 +547,7 @@ function Form() {
                         type="text"
                         name='xiiuniversity'
                         value={currentUser.xiiuniversity}
-                        />
+                    />
                 </div>
 
 
@@ -551,7 +566,7 @@ function Form() {
                         type="text"
                         name='graduationyearpassing'
                         value={currentUser.graduationyearpassing}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -559,7 +574,7 @@ function Form() {
                         type="text"
                         name='graduationcgpa'
                         value={currentUser.graduationcgpa}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -567,7 +582,7 @@ function Form() {
                         type="text"
                         name='graduationdivision'
                         value={currentUser.graduationdivision}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -575,7 +590,7 @@ function Form() {
                         type="text"
                         name='graduationcollege'
                         value={currentUser.graduationcollege}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -583,7 +598,7 @@ function Form() {
                         type="text"
                         name='graduationuniversity'
                         value={currentUser.graduationuniversity}
-                        />
+                    />
                 </div>
 
 
@@ -602,7 +617,7 @@ function Form() {
                         type="text"
                         name='postgraduationyearpassing'
                         value={currentUser.postgraduationyearpassing}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -610,7 +625,7 @@ function Form() {
                         type="text"
                         name='postgraduationcgpa'
                         value={currentUser.postgraduationcgpa}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -618,7 +633,7 @@ function Form() {
                         type="text"
                         name='postgraduationdivision'
                         value={currentUser.postgraduationdivision}
-                        />
+                    />
                 </div>
 
                 <div>
@@ -626,14 +641,14 @@ function Form() {
                         type="text"
                         name='postgraduationcollege'
                         value={currentUser.postgraduationcollege}
-                        />
+                    />
                 </div>
 
                 <div>
                     <input
                         type="text"
                         name='postgraduationuniversity'
-                        value={currentUser.postgraduationuniversity}/>
+                        value={currentUser.postgraduationuniversity} />
                 </div>
 
 
@@ -662,7 +677,7 @@ function Form() {
                             value="Online"
                             // Checking this radio button if the selected option is "Male"
                             checked={currentUser.modeofpayment === "Online"}
-                            />
+                        />
                     </label>
 
 
@@ -674,7 +689,7 @@ function Form() {
                             value="Offline"
                             // Checking this radio button if the selected option is "Female"
                             checked={currentUser.modeofpayment === "Offline"}
-                             />
+                        />
                     </label>
 
                 </div>
@@ -692,7 +707,7 @@ function Form() {
                     <input
                         type="text"
                         name='knowaboutus'
-                        value={currentUser.knowaboutus}/>
+                        value={currentUser.knowaboutus} />
                 </div>
             </div>
 
@@ -731,32 +746,32 @@ function Form() {
                     <input
                         type="text"
                         name='place'
-                        value={currentUser.place}/>
+                        value={currentUser.place} />
                 </div>
 
 
             </div>
 
             <div>
-            <div className='after-payment-bar'>
-                            <div className="d2">
-                                Payment Amount : ₹ {currentUser.price}
-                            </div>
-                            <div className="d1">Registration Status :{' '}
-                                <span className='d3'>
-                                    Successful
-                                </span>
-                            </div>
-                        </div>
-                        <div className='download-as-pdf'>
-                            <button className='button' onClick={handlePrint}>Download As PDF</button>
-                            <Link className='button-home' to="/">Home</Link>
-                        </div>
+                <div className='after-payment-bar'>
+                    <div className="d2">
+                        Payment Amount : ₹ {currentUser.price}
                     </div>
-            
+                    <div className="d1">Registration Status :{' '}
+                        <span className='d3'>
+                            Successful
+                        </span>
+                    </div>
+                </div>
+                <div className='download-as-pdf'>
+                    <button className='button' onClick={handlePrint}>Download As PDF</button>
+                    <Link className='button-home' to="/">Home</Link>
+                </div>
+            </div>
+
         </form>
 
     )
 }
 
-export default Form
+export default FormPrint

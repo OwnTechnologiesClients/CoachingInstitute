@@ -47,12 +47,13 @@ $text: #646262;
     }
 
     .cards {
-        width: 60vw;
+        width: 70vw;
         margin: 0 auto;
         display: flex;
 
         .welcome-card {
             padding: 0 2.45vw;
+            width: 21vw;
 
             img {
                 width: 17vw;
@@ -70,6 +71,23 @@ $text: #646262;
                     font-size: 1vw;
                 }
             }
+        }
+    }
+
+    .notification-panel{
+        h2{
+            margin: 0 1vw;
+            font-weight: 400;
+            span{
+                color: $blue;
+            }
+        }
+        marquee{
+            padding: 1vw;
+        }
+        li{
+            padding: 1vw 0;
+            font-size: 1.2vw;
         }
     }
 
@@ -125,6 +143,18 @@ $text: #646262;
                         font-size: 1rem;
                     }
                 }
+            }
+        }
+        .notification-panel{
+            h2{
+                margin: 0 1rem;
+            }
+            marquee{
+                padding: 1rem;
+            }
+            li{
+                padding: 1rem 0;
+                font-size: 1rem;
             }
         }
 

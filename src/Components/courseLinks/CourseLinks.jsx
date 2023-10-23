@@ -28,14 +28,31 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
             form.current.reset();
         }
     }
+
+    const links = [
+        [
+            "Chemical Science Coaching",
+            "GATE Chemistry Coaching",
+            "UPSC Chemistry Coaching",
+            "CSIR-NET/JRF"
+        ],
+        [
+            "Chemical Science Study Material",
+            "GATE Chemistry Study Material",
+            "UPSC Chemistry Study Material"
+        ],
+        [
+            "Chemical Science Test Series",
+            "GATE Chemistry Test Series",
+            "UPSC Chemistry Test Series"
+        ]
+    ]
     return (
         <div className="course-page-left-nav">
             <CoursePageList
                 hd1={"Courses"}
                 hd2={"List"}
-                link1={"Chemical Science Coaching"}
-                link2={"GATE Chemistry Coaching"}
-                link3={"UPSC Chemistry Coaching"}
+                links={links[0]}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
                 url1={'/courses'}
@@ -43,9 +60,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
             <CoursePageList
                 hd1={"Study"}
                 hd2={"Material"}
-                link1={"Chemical Science Study Material"}
-                link2={"GATE Chemistry Study Material"}
-                link3={"UPSC Chemistry Study Material"}
+                links={links[1]}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
                 url1={'/studymaterial'}
@@ -54,9 +69,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
             <CoursePageList
                 hd1={"Test"}
                 hd2={"Series"}
-                link1={"Chemical Science Test Series"}
-                link2={"GATE Chemistry Test Series"}
-                link3={"UPSC Chemistry Test Series"}
+                links={links[2]}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
                 url1={'/testseries'}
@@ -102,7 +115,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                     <input type="email" name="email" id="contact-email" placeholder='Enter Email' required />
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Enter Message' required></textarea>
                     <button type="submit" >Send Message</button>
-                    <ToastContainer closeButton={false}/>
+                    <ToastContainer closeButton={false} />
                 </form>
             </div>
         </div>

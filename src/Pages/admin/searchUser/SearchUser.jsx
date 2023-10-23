@@ -1,26 +1,54 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import axios from 'axios';
 import './SearchUser.scss'
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import courseImg from '../../../assets/course-img.png'
+import pdficon from '../../../assets/icons/pdf.png'
+
 const SearchUser = () => {
+
+    const uniqueId = useRef();
+    const idNumber = useRef();
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    const [fetchedData, setFetchedData] = useState([]);
 
     const getDetails = async (e) => {
         e.preventDefault();
 
+        let CN = "";
+        let RN = "";
+
+        if (uniqueId.current.value === "phonenumber") {
+            CN = idNumber.current.value;
+        }
+        else {
+            RN = idNumber.current.value;
+        }
         const response = await
             axios({
                 method: 'post',
-                url: 'https://backend-k.onrender.com/api/student/login',
+                url: 'https://chemtime-backend.onrender.com/api/admin/get-adminpage-details',
                 data: {
-                    email: userId,
-                    dateofbirth: password
+                    contactnumber: CN,
+                    registrationnumber: RN
                 },
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
 
-        console.log(response)
+        setFetchedData(response.data.data)
 
+    }
+
+    const handlePrint = (e, item) => {
+        e.preventDefault();
+
+        dispatch(SetCurrentUser(item));
+        navigate('/form-print')
     }
 
     return (
@@ -32,37 +60,44 @@ const SearchUser = () => {
 
             <div className="form-fields">
                 <div className="row">
+
                     <div>
-                        <label htmlFor="course">Course Name</label>
-                        <select name="course" id="course" required>
-                            <option value="DCA">Diploma in Computer Application (DCA)</option>
-                            <option value="DCA">Diploma in Computer Application (DCA)</option>
+                        <label htmlFor="course">Choose unique Id</label>
+                        <select ref={uniqueId} name="course" id="course" required>
+                            <option value="registrationnumber">Registration ID</option>
+                            <option value="phonenumber">Phone Number</option>
                         </select>
                     </div>
 
                     <div>
-                        <label htmlFor="regNo">Registration ID</label>
-                        <input type="number" name="regNo" id="regNo" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div>
-                        <label htmlFor="subject">Subject</label>
-                        <select name="subject" id="subject">
-                            <option value="FOC">Fundamentals of Computer</option>
-                            <option value="FOC">Fundamentals of Computer</option>
-                        </select>
+                        <label htmlFor="uniqueId">Enter unique Id</label>
+                        <input ref={idNumber} type="text" name="uniqueId" id="uniqueId" required />
                     </div>
 
-                    <div>
-                        <label htmlFor="phoneNo">Phone Number</label>
-                        <input type="number" maxLength={10} name="phoneNo" id="phoneNo" required/>
-                    </div>
                 </div>
 
                 <div className="search-user-button">
-                    <button >Continue</button>
+                    <button onClick={getDetails}>Continue</button>
                 </div>
+                {fetchedData.map((item, index) => {
+                    const { coursename, date, coursetype, price, modeofpayment } = item;
+    
+                    return (
+                        <div key={index} className='ph-course-parent'>
+                            <img src={courseImg} alt="" />
+                            <div className='ph-course-detail'>
+                                <h3>{coursename}</h3>
+                                <p>Type: {coursetype}</p>
+                                <p>Amount: {price}</p>
+                                <p>Payment: {modeofpayment}</p>
+                                <p>Date: {date}</p>
+                            </div>
+                            <div className='pdfLogo'>
+                                <img src={pdficon} onClick={(e) => handlePrint(e, item)} height={35} alt="" />
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
 
 

@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import axios from 'axios';
 import { SetCurrentUser } from "../../redux/userSlice";
 
-const CourseTable = ({ mode }) => {
+const CourseTable = ({ mode ,tableFields}) => {
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
@@ -18,13 +18,13 @@ const CourseTable = ({ mode }) => {
         const response = await
             axios({
                 method: 'get',
-                url: 'http://localhost:5000/api/student/get-current-user',
+                url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
         console.log(response.data.data);
-        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername } = response.data.data;
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername,myfilename } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
@@ -41,6 +41,7 @@ const CourseTable = ({ mode }) => {
             courseData['pincode'] = pincode;
             courseData['address'] = address;
             courseData['fathername'] = fathername;
+            courseData['filename'] = myfilename;
             dispatch(SetCurrentUser(courseData));
             navigate('/form')
         }
@@ -48,32 +49,7 @@ const CourseTable = ({ mode }) => {
             navigate('/student-login')
         }
     }
-    const tableFields = [
-        [
-            "NET Chemical Science",
-            "45 minutes",
-            "1 Year",
-            399
-        ],
-        [
-            "Gate Chemical Science",
-            "45 minutes",
-            "2 Years",
-            2499
-        ],
-        [
-            "UPSC Chemical Science",
-            "45 minutes",
-            "6 Month",
-            699
-        ],
-        [
-            "SSC Chemical Science",
-            "45 minutes",
-            "1 Year",
-            999
-        ],
-    ]
+    
 
     return (
         <div className='course-table'>

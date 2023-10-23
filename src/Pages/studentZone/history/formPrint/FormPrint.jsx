@@ -738,13 +738,14 @@ function Form() {
             </div>
 
             <div>
-                        <div className='after-payment-bar'>
-                            <div className="d1">Registration Status :</div>
+            <div className='after-payment-bar'>
                             <div className="d2">
-                                Payment Amount : {currentUser.price}
+                                Payment Amount : ₹ {currentUser.price}
                             </div>
-                            <div className='d3'>
-                                Successful
+                            <div className="d1">Registration Status :{' '}
+                                <span className='d3'>
+                                    Successful
+                                </span>
                             </div>
                         </div>
                         <div className='download-as-pdf'>

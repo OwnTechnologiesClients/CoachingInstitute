@@ -8,8 +8,8 @@ const CourseDetail = ({ imgSrc, heading1, detailData}) => {
             </div>
             <div className="content">
                 <h2>{heading1}</h2>
-                {detailData[heading1].map((item)=>{
-                    return <p>{item}</p>
+                {detailData[heading1].map((item,index)=>{
+                    return <p key={index} >{item}</p>
                 })}
             </div>
         </div>

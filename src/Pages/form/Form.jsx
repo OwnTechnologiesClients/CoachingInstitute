@@ -13,15 +13,15 @@ import { Link } from 'react-router-dom';
 function Form() {
 
     const [isFormSaved, setisFormSaved] = useState(false);
-    const [isPayDone, setisPayDone] = useState(false);
+    const [isPayDone, setisPayDone] = useState(true);
     const { currentUser } = useSelector((state) => state.users);
     const [file, setFile] = useState("")
-    const { coursename, courseduration,email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername } = currentUser;
+    const { coursename, courseduration, email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername, filename } = currentUser;
     console.log(currentUser)
 
     const handlePrint = (e) => {
         e.preventDefault();
-        if(!isFormSaved){
+        if (!isFormSaved) {
             toast.warn('Please Save Form First', {
                 position: 'bottom-right',
                 autoClose: 2000,
@@ -66,7 +66,7 @@ function Form() {
         pincode: pincode,
         phonenumber: "",
         mobilenumber: contactnumber,
-        email:email,
+        email: email,
         modeofpayment: "",
         knowaboutus: "",
         date: DateFormSubmitted,
@@ -117,7 +117,7 @@ function Form() {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'http://localhost:5000/api/student/registration-form',
+                    url: 'https://chemtime-backend.onrender.com/api/student/registration-form',
 
                     data: formData,
                     headers: {
@@ -139,7 +139,7 @@ function Form() {
                 });
             }
             else {
-                toast.warn(response.data.message, {
+                toast.warn("Please enter all details", {
                     position: 'bottom-right',
                     autoClose: 2000,
                     hideProgressBar: false,
@@ -160,7 +160,7 @@ function Form() {
     const handlePayment = async (e) => {
         e.preventDefault()
 
-        if(!isFormSaved){
+        if (!isFormSaved) {
             toast.warn('Please Save Form First', {
                 position: 'bottom-right',
                 autoClose: 2000,
@@ -175,7 +175,7 @@ function Form() {
         const response = await
             axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/payment/createOrder',
+                url: 'https://chemtime-backend.onrender.com/api/payment/createOrder',
                 data: {
                     amount: price * 100,
                     currency: 'INR',
@@ -204,7 +204,7 @@ function Form() {
                 const res = await
                     axios({
                         method: 'post',
-                        url: 'http://localhost:5000/api/payment/verifyOrder',
+                        url: 'https://chemtime-backend.onrender.com/api/payment/verifyOrder',
                         data: {
                             order_id: response.razorpay_order_id,
                             payment_id: response.razorpay_payment_id
@@ -222,7 +222,7 @@ function Form() {
                     const result = await
                         axios({
                             method: 'post',
-                            url: 'http://localhost:5000/api/student/get-registration-form',
+                            url: 'https://chemtime-backend.onrender.com/api/student/get-registration-form',
                             data: {
                                 registrationNo: regNo,
                                 contact: contactnumber,
@@ -304,8 +304,7 @@ function Form() {
                         />
                     </div>
                     <div className='form-profilepic'>
-                        <img src={file} />
-                        <input type="file" name="profilepic" className="" onChange={handleProfilePic} />
+                        <img src={`https://chemtime-backend.onrender.com/public/${filename}`} />
                     </div>
 
                 </div>
@@ -468,7 +467,7 @@ function Form() {
                         type="text"
                         name='subject'
                         value={formData.subject}
-                        onChange={handleChange} />
+                        onChange={handleChange} required />
                 </div>
 
 
@@ -1009,19 +1008,20 @@ function Form() {
             {
                 !isPayDone ?
                     <div className='sf-paynow'>
-                        <button className={`button ${!isFormSaved?'disabled-btn':''}`}  onClick={handlePrint}>Print As PDF</button>
+                        <button className={`button ${!isFormSaved ? 'disabled-btn' : ''}`} onClick={handlePrint}>Print As PDF</button>
                         <button className="button" onClick={handleSubmit}>Save</button>
-                        <button className={`button ${!isFormSaved?'disabled-btn':''}`}  onClick={handlePayment}>Pay Now</button>
+                        <button className={`button ${!isFormSaved ? 'disabled-btn' : ''}`} onClick={handlePayment}>Pay Now</button>
 
                     </div>
                     : <div>
                         <div className='after-payment-bar'>
-                            <div className="d1">Registration Status :</div>
                             <div className="d2">
-                                Payment Amount : {formData.price}
+                                Payment Amount : ₹ {formData.price}
                             </div>
-                            <div className='d3'>
-                                Successful
+                            <div className="d1">Registration Status :{' '}
+                                <span className='d3'>
+                                    Successful
+                                </span>
                             </div>
                         </div>
                         <div className='download-as-pdf'>

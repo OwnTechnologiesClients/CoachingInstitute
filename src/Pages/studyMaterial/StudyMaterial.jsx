@@ -19,6 +19,33 @@ const StudyMaterial = () => {
         
         setActiveLink(link);
     };
+
+    const tableFields = [
+        [
+            "NET Chemical Science",
+            "45 minutes",
+            "1 Year",
+            399
+        ],
+        [
+            "Gate Chemical Science",
+            "45 minutes",
+            "2 Years",
+            2499
+        ],
+        [
+            "UPSC Chemical Science",
+            "45 minutes",
+            "6 Month",
+            699
+        ],
+        [
+            "SSC Chemical Science",
+            "45 minutes",
+            "1 Year",
+            999
+        ],
+    ]
     return (
         <div className='study-material-page'>
 
@@ -38,8 +65,8 @@ const StudyMaterial = () => {
 
                     <div className="course-idea">
                         <h2>CourseIdea</h2>
-                        <CourseTable mode={"Offline Dashboard"} />
-                        <CourseTable mode={"Online Dashboard"} />
+                        <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
+                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/>
                     </div>
 
                 </div>

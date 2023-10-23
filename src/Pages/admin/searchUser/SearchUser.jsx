@@ -1,25 +1,40 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import axios from 'axios';
 import './SearchUser.scss'
+
 const SearchUser = () => {
+
+    const uniqueId = useRef();
+    const idNumber = useRef();
+
+    const [fetchedData, setFetchedData] = useState([]);
 
     const getDetails = async (e) => {
         e.preventDefault();
 
+        let CN = "";
+        let RN = "";
+
+        if (uniqueId.current.value === "phonenumber") {
+            CN = idNumber.current.value;
+        }
+        else {
+            RN = idNumber.current.value;
+        }
         const response = await
             axios({
                 method: 'post',
-                url: 'https://backend-k.onrender.com/api/student/login',
+                url: 'http://localhost:5000/api/admin/get-adminpage-details',
                 data: {
-                    email: userId,
-                    dateofbirth: password
+                    contactnumber: CN,
+                    registrationnumber: RN
                 },
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
 
-        console.log(response)
+        setFetchedData(response.data.data)
 
     }
 
@@ -32,36 +47,29 @@ const SearchUser = () => {
 
             <div className="form-fields">
                 <div className="row">
+
                     <div>
-                        <label htmlFor="course">Course Name</label>
-                        <select name="course" id="course" required>
-                            <option value="DCA">Diploma in Computer Application (DCA)</option>
-                            <option value="DCA">Diploma in Computer Application (DCA)</option>
+                        <label htmlFor="course">Choose unique Id</label>
+                        <select ref={uniqueId} name="course" id="course" required>
+                            <option value="registrationnumber">Registration ID</option>
+                            <option value="phonenumber">Phone Number</option>
                         </select>
                     </div>
 
                     <div>
-                        <label htmlFor="regNo">Registration ID</label>
-                        <input type="number" name="regNo" id="regNo" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div>
-                        <label htmlFor="subject">Subject</label>
-                        <select name="subject" id="subject">
-                            <option value="FOC">Fundamentals of Computer</option>
-                            <option value="FOC">Fundamentals of Computer</option>
-                        </select>
+                        <label htmlFor="uniqueId">Enter unique Id</label>
+                        <input ref={idNumber} type="text" name="uniqueId" id="uniqueId" required />
                     </div>
 
                     <div>
-                        <label htmlFor="phoneNo">Phone Number</label>
-                        <input type="number" maxLength={10} name="phoneNo" id="phoneNo" required/>
+                        {fetchedData.map((item, index) => {
+                            return <h1 key={index}>{item.coursename}</h1>
+                        })}
                     </div>
                 </div>
 
                 <div className="search-user-button">
-                    <button >Continue</button>
+                    <button onClick={getDetails}>Continue</button>
                 </div>
             </div>
 

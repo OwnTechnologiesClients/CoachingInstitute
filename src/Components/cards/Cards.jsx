@@ -3,7 +3,10 @@ import './Cards.scss'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import queryString from 'query-string';
-const WelcomeCard = ({ imgSrc,title,description }) => {
+import { useDispatch } from 'react-redux';
+import { SetActiveCourse } from '../../redux/userSlice'
+
+const WelcomeCard = ({ imgSrc, title, description }) => {
 
     // function extractVideoId(url) {
     //     // Regular expression to match YouTube video ID in various URL formats
@@ -20,26 +23,26 @@ const WelcomeCard = ({ imgSrc,title,description }) => {
     //     try {
     //       // Make a request to the get_video_info endpoint
     //       const response = await axios.get(`http://youtube.com/get_video_info?video_id=${videoId}`);
-          
+
     //       // Extract the information from the response
     //       const videoInfo = queryString.parse(response.data);
-      
+
     //       // Extract title and description
     //       const title = videoInfo.title;
     //       const description = videoInfo.description;
-      
+
     //       console.log('Title:', title);
     //       console.log('Description:', description);
-      
+
     //     } catch (error) {
     //       console.error('Error:', error.message);
     //     }
     //   }
-      
+
     //   // Example usage
     //   const videoid = extractVideoId('https://www.youtube.com/watch?v=hztH6aLRaiY')
     //   console.log(getVideoInfo(videoid));
-    
+
     return (
         <div className='welcome-card'>
             <img src={imgSrc} alt="" />
@@ -50,22 +53,25 @@ const WelcomeCard = ({ imgSrc,title,description }) => {
         </div>
     )
 }
-const CourseCard = ({ imgSrc }) => {
+const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
+
     const navigate = useNavigate()
-    const navigateTo = () => {
+    const dispatch = useDispatch();
+    const navigateTo = (homeCourseHeading) => {
+        dispatch(SetActiveCourse(homeCourseHeading))
         navigate('/courses')
     }
     return (
         <div className='course-card'>
             <div className="price">
-                ₹299
+                ₹{price}
             </div>
             <img src={imgSrc} alt="" />
             <div >
-                <h2 className='under-bar'>CSIR-NET/JRF</h2>
-                <p>We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future</p>
+                <h2 className='under-bar'>{homeCourseHeading}</h2>
+                <p>{homeCourseDetail}</p>
             </div>
-            <button onClick={navigateTo}>VIEW DETAILS</button>
+            <button onClick={() => navigateTo(homeCourseHeading)}>VIEW DETAILS</button>
         </div>
     )
 }
@@ -74,7 +80,7 @@ const VideoCard = ({ videourl }) => {
     console.log(videourl)
     return (
         <div className='video-card'>
-            <iframe  src={videourl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;"  allowfullscreen></iframe>
+            <iframe src={videourl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen></iframe>
         </div>
     )
 }

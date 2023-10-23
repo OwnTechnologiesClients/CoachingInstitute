@@ -82,37 +82,32 @@ $blue: #2D8EFF;
 
     @media screen and (max-width:"480px") {
             margin: 1.5vw 0;
-            border: 1px solid #707070;
         
             h1 {
-                padding: 1.1vw 3vw;
-                font-weight: 400;
-                font-size: 1.3vw;
-                color: #fff;
-                background-color: $blue;
+                padding: .4rem .5rem;
+                font-size: 1rem;
             }
             .parent-row{
-                display: flex;
-                font-weight: 700;
-                padding: 1vw 3vw;
+                padding: .3rem .5rem;
+                font-size: 1rem;
                 border-bottom: 1px solid #707070;
                 span{
-                    font-size: 1.1vw;
+                    font-size: .5rem;
         
                     &:first-child{
-                        width: 17vw;
+                        width: 19vw;
                     }
                     &:nth-child(2){
-                        width: 10vw;
+                        width: 15vw;
                     }
                     &:nth-child(3){
-                        width: 12vw;
+                        width: 20vw;
                     }
                     &:nth-child(4){
-                        width: 7vw;
+                        width: 12vw;
                     }
                     &:nth-child(5){
-                        width: 12vw;
+                        width: 10vw;
                     }
         
                 }
@@ -126,29 +121,29 @@ $blue: #2D8EFF;
                 }
                 
                 span{
-                    margin: auto 0;
                     width: 10%;
-                    font-size: 1.1vw;
+                    font-size: .5rem;
                     &:first-child{
-                        width: 17vw;
+                        width: 19vw;
                     }
                     &:nth-child(2){
-                        width: 10vw;
+                        width: 15vw;
                     }
                     &:nth-child(3){
-                        width: 12vw;
+                        width: 20vw;
                     }
                     &:nth-child(4){
-                        width: 7vw;
+                        width: 12vw;
                     }
                     &:nth-child(5){
-                        width: 12vw;
+                        width: 10vw;
                     }
                 }
                 button{
-                    padding: .4vw;
-                    border: none;
-                    font-size: .9vw;
+                    font-size: .4rem;
+                    height: .9rem;
+                    margin: auto 0;
+                    width: 2.5rem;
                 }
             }
         

@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import axios from 'axios';
 import { SetCurrentUser } from "../../redux/userSlice";
 
-const CourseTable = ({ mode }) => {
+const CourseTable = ({ mode ,tableFields}) => {
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
@@ -48,32 +48,7 @@ const CourseTable = ({ mode }) => {
             navigate('/student-login')
         }
     }
-    const tableFields = [
-        [
-            "NET Chemical Science",
-            "45 minutes",
-            "1 Year",
-            399
-        ],
-        [
-            "Gate Chemical Science",
-            "45 minutes",
-            "2 Years",
-            2499
-        ],
-        [
-            "UPSC Chemical Science",
-            "45 minutes",
-            "6 Month",
-            699
-        ],
-        [
-            "SSC Chemical Science",
-            "45 minutes",
-            "1 Year",
-            999
-        ],
-    ]
+    
 
     return (
         <div className='course-table'>

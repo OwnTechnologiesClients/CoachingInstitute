@@ -18,13 +18,13 @@ const CourseTable = ({ mode ,tableFields}) => {
         const response = await
             axios({
                 method: 'get',
-                url: 'http://localhost:5000/api/student/get-current-user',
+                url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
         console.log(response.data.data);
-        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername } = response.data.data;
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername,myfilename } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
@@ -41,6 +41,7 @@ const CourseTable = ({ mode ,tableFields}) => {
             courseData['pincode'] = pincode;
             courseData['address'] = address;
             courseData['fathername'] = fathername;
+            courseData['filename'] = myfilename;
             dispatch(SetCurrentUser(courseData));
             navigate('/form')
         }

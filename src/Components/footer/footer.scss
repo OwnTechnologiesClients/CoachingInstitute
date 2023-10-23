@@ -19,7 +19,7 @@ $text: #646262;
     .detail {
         width: 20vw;
 
-        &>img {
+        &>a {
             margin-left: -1vw;
             width: 18vw;
         }
@@ -122,7 +122,7 @@ $text: #646262;
         .detail {
             width: unset;
 
-            &>img {
+            &>a {
                 margin-left: -1rem;
                 width: unset;
             }

@@ -30,7 +30,7 @@ const History = () => {
         const response = await
             axios({
                 method: 'get',
-                url: 'http://localhost:5000/api/student/get-current-user',
+                url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -40,7 +40,7 @@ const History = () => {
         const Data = await
             axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/student/get-history-data',
+                url: 'https://chemtime-backend.onrender.com/api/student/get-history-data',
                 data: response.data.data,
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
@@ -69,25 +69,27 @@ const History = () => {
                 <button onClick={handleLogout}>Logout</button>
             </div>
 
-            {history.map((item, index) => {
-                const { coursename, date, coursetype, price, modeofpayment } = item;
-
-                return (
-                    <div key={index} className='ph-course-parent'>
-                        <img src={courseImg} alt="" />
-                        <div className='ph-course-detail'>
-                            <h3>{coursename}</h3>
-                            <p>Type: {coursetype}</p>
-                            <p>Amount: {price}</p>
-                            <p>Payment: {modeofpayment}</p>
-                            <p>Date: {date}</p>
+            {
+                history.length===0?<h2 style={{padding:"4rem"}}>You have not purchased any course</h2>: (history.map((item, index) => {
+                    const { coursename, date, coursetype, price, modeofpayment } = item;
+    
+                    return (
+                        <div key={index} className='ph-course-parent'>
+                            <img src={courseImg} alt="" />
+                            <div className='ph-course-detail'>
+                                <h3>{coursename}</h3>
+                                <p>Type: {coursetype}</p>
+                                <p>Amount: {price}</p>
+                                <p>Payment: {modeofpayment}</p>
+                                <p>Date: {date}</p>
+                            </div>
+                            <div className='pdfLogo'>
+                                <img src={pdficon} onClick={(e) => handlePrint(e, item)} height={35} alt="" />
+                            </div>
                         </div>
-                        <div className='pdfLogo'>
-                            <img src={pdficon} onClick={(e) => handlePrint(e, item)} height={35} alt="" />
-                        </div>
-                    </div>
-                )
-            })}
+                    )
+                }))
+            }
 
         </div>
 

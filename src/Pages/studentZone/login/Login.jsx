@@ -24,7 +24,7 @@ const Login = () => {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'http://localhost:5000/api/student/login',
+                    url: 'https://chemtime-backend.onrender.com/api/student/login',
                     data: {
                         email: userId,
                         dateofbirth: password
@@ -50,7 +50,7 @@ const Login = () => {
                 }, 2000);
             }
             else {
-                toast.warn(response.data.message, {
+                toast.warn("Enter correct details", {
                     position: 'bottom-right',
                     autoClose: 2000,
                     hideProgressBar: false,

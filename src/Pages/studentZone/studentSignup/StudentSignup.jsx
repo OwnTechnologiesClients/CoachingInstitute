@@ -45,7 +45,7 @@ const StudentSignup = () => {
         formData.append("address", address);
         console.log(formData)
         const result = await axios.post(
-            "http://localhost:5000/api/student/register",
+            "https://chemtime-backend.onrender.com/api/student/register",
             formData,
             {
                 headers: { "Content-Type": "multipart/form-data" }
@@ -74,7 +74,7 @@ const StudentSignup = () => {
             }, 2000);
         }
         else {
-            toast.warn(result.data.message, {
+            toast.warn("Please fill all details", {
                 position: 'bottom-right',
                 autoClose: 2000,
                 hideProgressBar: false,

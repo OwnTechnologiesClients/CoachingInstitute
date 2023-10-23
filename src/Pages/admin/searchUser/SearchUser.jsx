@@ -1,11 +1,17 @@
 import React, { useRef, useState } from 'react'
 import axios from 'axios';
 import './SearchUser.scss'
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import courseImg from '../../../assets/course-img.png'
+import pdficon from '../../../assets/icons/pdf.png'
 
 const SearchUser = () => {
 
     const uniqueId = useRef();
     const idNumber = useRef();
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const [fetchedData, setFetchedData] = useState([]);
 
@@ -24,7 +30,7 @@ const SearchUser = () => {
         const response = await
             axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/admin/get-adminpage-details',
+                url: 'https://chemtime-backend.onrender.com/api/admin/get-adminpage-details',
                 data: {
                     contactnumber: CN,
                     registrationnumber: RN
@@ -36,6 +42,13 @@ const SearchUser = () => {
 
         setFetchedData(response.data.data)
 
+    }
+
+    const handlePrint = (e, item) => {
+        e.preventDefault();
+
+        dispatch(SetCurrentUser(item));
+        navigate('/form-print')
     }
 
     return (
@@ -61,16 +74,30 @@ const SearchUser = () => {
                         <input ref={idNumber} type="text" name="uniqueId" id="uniqueId" required />
                     </div>
 
-                    <div>
-                        {fetchedData.map((item, index) => {
-                            return <h1 key={index}>{item.coursename}</h1>
-                        })}
-                    </div>
                 </div>
 
                 <div className="search-user-button">
                     <button onClick={getDetails}>Continue</button>
                 </div>
+                {fetchedData.map((item, index) => {
+                    const { coursename, date, coursetype, price, modeofpayment } = item;
+    
+                    return (
+                        <div key={index} className='ph-course-parent'>
+                            <img src={courseImg} alt="" />
+                            <div className='ph-course-detail'>
+                                <h3>{coursename}</h3>
+                                <p>Type: {coursetype}</p>
+                                <p>Amount: {price}</p>
+                                <p>Payment: {modeofpayment}</p>
+                                <p>Date: {date}</p>
+                            </div>
+                            <div className='pdfLogo'>
+                                <img src={pdficon} onClick={(e) => handlePrint(e, item)} height={35} alt="" />
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
 
 

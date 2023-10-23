@@ -20,20 +20,16 @@ const Admin = () => {
     const handleLogin = async () => {
 
         try {
-            console.log(userId, password)
             const response = await
                 axios({
                     method: 'post',
-                    url: 'https://backend-k.onrender.com/api/student/login',
+                    url: 'https://chemtime-backend.onrender.com/api/admin/get-details',
                     data: {
                         email: userId,
-                        dateofbirth: password
-                    },
-                    headers: {
-                        authorization: `Bearer ${localStorage.getItem("token")}`
+                        password: password
                     }
                 });
-            console.log(response.data);
+            console.log(response);
             if (response.data.success) {
                 localStorage.setItem('token', response.data.data);
                 toast.success('Login successful', {
@@ -50,7 +46,7 @@ const Admin = () => {
                 }, 2000);
             }
             else {
-                toast.warn(response.data.message, {
+                toast.warn("Enter correct details", {
                     position: 'bottom-right',
                     autoClose: 2000,
                     hideProgressBar: false,
@@ -66,11 +62,7 @@ const Admin = () => {
         }
 
     }
-    useEffect(() => {
-        if(localStorage.getItem('token')){
-          navigate('/searchuser')
-        }
-      }, [])
+    
     return (
         <div>
             <Header1 />
@@ -97,13 +89,13 @@ const Admin = () => {
                         </div>
 
                         <div className='student-login-userid-section'>
-                            <p>DOB</p>
+                            <p>Password</p>
 
                             {/* ------------ Password Input textfield -------------------- */}
-                            <input type="date" className="form-control" name="dateofbirth"
+                            <input type="text" className="form-control" name="dateofbirth"
                                 value={password}
                                 onChange={(e) => { setPassword(e.target.value) }}
-                                placeholder="DD/MM/YYYY"
+                                placeholder="Enter Password"
                                 required />
                         </div>
 

@@ -29,7 +29,7 @@ const Header2 = () => {
     return (
         <div className="top-contact">
             <div className="logo">
-                <img src={logo} alt="" />
+                <Link to="/" ><img src={logo} alt="" /></Link>
             </div>
             <div className="contact">
                 <div className="call">

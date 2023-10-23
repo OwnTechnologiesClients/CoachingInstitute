@@ -14,7 +14,7 @@ const Footer = () => {
     <div>
       <div className='footer'>
         <div className="detail">
-          <img src={logo} alt="" />
+          <Link to="/" ><img src={logo} alt="" /></Link>
           <div className="message">
             Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics.
           </div>
@@ -80,6 +80,9 @@ const Footer = () => {
           <li><Link to='/courses'>Popular Courses |</Link></li>
           <li><Link to='/contact'>Help Desk |</Link></li>
           <li><Link to='/student-login'>Login</Link></li>
+        </div>
+        <div>
+          <p style={{marginLeft:"-6rem"}}>© 2023 All Rights Reserved. Created with ❤️ by OwnTechnologies</p>
         </div>
         <div>
           <a href="#navbar"><img src={down} alt="" /></a>

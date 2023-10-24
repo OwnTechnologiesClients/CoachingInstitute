@@ -222,6 +222,11 @@ $text: #646262;
             width: 1.4vw;
         }
     }
+    .rights{
+        a{
+            color: $blue;
+        }
+    }
 
     @media screen and (max-width:"480px") {
         padding: .7rem 4vw;

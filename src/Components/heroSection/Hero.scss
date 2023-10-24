@@ -6,6 +6,7 @@ $text: #646262;
 
 .hero-section {
     position: relative;
+    z-index: -1;
 
     .swiper-slide img {
         width: 100%;
@@ -25,7 +26,7 @@ $text: #646262;
     .detail {
         font-family: 'Poppins';
         position: absolute;
-        z-index: 1000;
+        z-index: 100;
         top: 17vw;
         right: 6vw;
         color: #fff;

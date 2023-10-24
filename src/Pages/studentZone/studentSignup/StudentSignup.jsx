@@ -9,8 +9,10 @@ import Navbar from '../../../Components/navbar/Navbar';
 import Footer from '../../../Components/footer/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loader from '../../../components/loaderSpinner/Loader';
 
 const StudentSignup = () => {
+    const [loader, setLoader] = useState(false);
     const [img, setImg] = useState("");
     const [firstname, setFirstname] = useState("");
     const [emailAddress, setEmailAddress] = useState("");
@@ -32,6 +34,7 @@ const StudentSignup = () => {
 
     const handleSignup = async (e) => {
         e.preventDefault();
+        setLoader(true)
         const formData = new FormData();
         formData.append("myFile", mage);
         formData.append("studentname", firstname);
@@ -84,6 +87,7 @@ const StudentSignup = () => {
                 progress: undefined,
             });
         }
+        setLoader(false)
     }
     useEffect(() => {
         if (localStorage.getItem('token')) {
@@ -102,6 +106,8 @@ const StudentSignup = () => {
                 <img src={img}></img>
 
                 <div className='query-square'>
+                    {loader ? <Loader /> : ""}
+
                     <div className='square-header'>
                         <h2>Student Details</h2>
                     </div>

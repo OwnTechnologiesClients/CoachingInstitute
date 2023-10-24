@@ -16,6 +16,21 @@
         align-items: center;
         justify-content: center;
         position: relative;
+
+        .loader-spinner {
+            position: absolute;
+            background-color: #fff;
+            width: inherit;
+            height: inherit;
+            z-index: 1000;
+            opacity: 0.3;
+
+            svg {
+                position: absolute;
+                top: 45%;
+                left: 45%;
+            }
+        }
     }
 
     .student-login-square-header {
@@ -141,7 +156,7 @@
     }
 
     .already-member {
-        
+
         display: flex;
         justify-content: center;
         margin-top: -3vw;

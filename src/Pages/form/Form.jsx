@@ -13,9 +13,8 @@ import { Link } from 'react-router-dom';
 function Form() {
 
     const [isFormSaved, setisFormSaved] = useState(false);
-    const [isPayDone, setisPayDone] = useState(true);
+    const [isPayDone, setisPayDone] = useState(false);
     const { currentUser } = useSelector((state) => state.users);
-    const [file, setFile] = useState("")
     const { coursename, courseduration, email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername, filename } = currentUser;
     console.log(currentUser)
 
@@ -270,19 +269,16 @@ function Form() {
             alert("This step of Payment Failed");
         });
 
-
     };
 
-    const handleProfilePic = (e) => {
-        setFile(URL.createObjectURL(e.target.files[0]))
-    }
+    
 
     return (
 
         <form className='form-pay'>
             <div className='sf-header-parent'>
                 <div className='sf-header'>
-                    <img src={logo} />
+                    <Link to="/"><img src={logo} /></Link>
                 </div>
                 <div className='sf-contact-details' >
                     <p>Reg, Orice: 28-B/71- Jia Sara (Hauz Khas) Near IT Delhi - 110016</p>

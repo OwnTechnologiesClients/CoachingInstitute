@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { Header1, Header2 } from '../../../components/header/Header';
 import Navbar from '../../../Components/navbar/Navbar';
 import Footer from '../../../Components/footer/Footer';
+import Loader from '../../../components/loaderSpinner/Loader'
 import WhatsappIcon from '../../../components/whatsappIcon/WhatsappIcon';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,11 +15,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const navigate = useNavigate();
+    const [loader, setLoader] = useState(false);
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
 
     const handleLogin = async () => {
-
+        setLoader(true)
         try {
             console.log(userId, password)
             const response = await
@@ -64,24 +66,26 @@ const Login = () => {
             console.error('Error sending data:', error);
             // Handle error, maybe show an error message to the user
         }
+        setLoader(false)
 
     }
 
     useEffect(() => {
-        if(localStorage.getItem('token')){
-          navigate('/')
+        if (localStorage.getItem('token')) {
+            navigate('/')
         }
-      }, [])
+    }, [])
 
     return (
         <div>
             <Header1 />
             <Header2 />
             <Navbar />
-
             <div className='student-login-section'>
 
+
                 <div className='student-login-square'>
+                    {loader ? <Loader /> : ""}
                     <div className='student-login-square-header'>
                         <h2>Login</h2>
                     </div>
@@ -120,7 +124,6 @@ const Login = () => {
 
                     </div>
                 </div>
-
 
             </div>
             <WhatsappIcon />

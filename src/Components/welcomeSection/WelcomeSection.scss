@@ -5,11 +5,11 @@ $text: #646262;
 
 
 .welcome-section {
-    padding: 6vw;
+    padding: 4vw 6vw;
     display: flex;
 
     .message {
-        width: 20vw;
+        width: 40vw;
 
         h1 {
             font-weight: 400;
@@ -48,14 +48,15 @@ $text: #646262;
 
     .cards {
         width: 60vw;
-        margin: 0 auto;
+        margin: 2vw auto;
         display: flex;
+        justify-content: space-between;
 
         .welcome-card {
-            padding: 0 2.45vw;
+            width: 18vw;
 
             img {
-                width: 17vw;
+                width: 18vw;
             }
 
             div {
@@ -71,6 +72,33 @@ $text: #646262;
                 }
             }
         }
+    }
+
+    .notification-panel{
+        width: 25vw;
+        margin-left: 2vw;
+        text-align: center;
+        border: 2px solid #707070;
+       h2{
+        background-color: #202C45;
+        color: #fff;
+        padding: 1vw;
+       }
+       .notification{
+        background-color: #f7f7f7;
+        padding: 1vw;
+        border-top: 1px solid #202C45;
+        border-bottom: 1px solid #202C45;
+        a{
+            display: flex;
+            align-items: center;
+            .content{
+                margin-left: 1vw;
+                color: #0C48EA;
+                font-family: Poppins;
+            }
+        }
+       }
     }
 
     @media screen and (max-width:"480px") {
@@ -125,6 +153,18 @@ $text: #646262;
                         font-size: 1rem;
                     }
                 }
+            }
+        }
+        .notification-panel{
+            h2{
+                margin: 0 1rem;
+            }
+            marquee{
+                padding: 1rem;
+            }
+            li{
+                padding: 1rem 0;
+                font-size: 1rem;
             }
         }
 

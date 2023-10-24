@@ -6,7 +6,7 @@ import Navbar from '../../../components/navbar/Navbar'
 import axios from 'axios'
 import pdficon from '../../../assets/icons/pdf.png'
 import { useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { SetCurrentUser } from '../../../redux/userSlice'
 
 const History = () => {
@@ -66,11 +66,14 @@ const History = () => {
             <Navbar />
             <div className='ph-appbar'>
                 <h2>Purchased History</h2>
+                <div>
+                <Link to="/courses"><button >Enroll Course</button></Link>
                 <button onClick={handleLogout}>Logout</button>
+                </div>
             </div>
 
             {
-                history.length===0?<h2 style={{padding:"4rem"}}>You have not purchased any course</h2>: (history.map((item, index) => {
+                history.length===0?<h2 className='no-course-message'>You have not purchased any course</h2>: (history.map((item, index) => {
                     const { coursename, date, coursetype, price, modeofpayment } = item;
     
                     return (

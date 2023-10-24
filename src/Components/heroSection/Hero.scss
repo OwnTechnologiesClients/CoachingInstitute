@@ -6,16 +6,27 @@ $text: #646262;
 
 .hero-section {
     position: relative;
+    z-index: -1;
 
-    .heroimage {
+    .swiper-slide img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
 
+    .swiper-pagination-bullets {
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
     .detail {
         font-family: 'Poppins';
         position: absolute;
+        z-index: 100;
         top: 17vw;
         right: 6vw;
         color: #fff;
@@ -45,4 +56,4 @@ $text: #646262;
             text-align: end;
         }
     }
-}  
+}

@@ -82,8 +82,8 @@ const Footer = () => {
           <li><Link to='/student-login'>Login</Link></li>
         </div>
         <div>
-          <p style={{marginLeft:"-6rem"}}>© 2023 All Rights Reserved. Created with ❤️ by OwnTechnologies</p>
-        </div>
+          <p style={{marginLeft:"-6rem"}}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.com/">OwnTechnologies</a></p>
+        </div>  
         <div>
           <a href="#navbar"><img src={down} alt="" /></a>
         </div>

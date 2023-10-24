@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import courseImg from '../../../assets/course-img.png'
 import pdficon from '../../../assets/icons/pdf.png'
+import {Header1,Header2} from '../../../components/header/Header'
+import Navbar from '../../../components/navbar/Navbar'
 
 const SearchUser = () => {
 
@@ -53,9 +55,11 @@ const SearchUser = () => {
 
     return (
         <div className="search-user">
-
-            <div className="heading">
-                <h1>Check Student Form</h1>
+            <Header1/>
+            <Header2/>
+            <Navbar/>
+            <div className='ph-appbar'>
+                <h2>Check Student Form</h2>
             </div>
 
             <div className="form-fields">
@@ -81,7 +85,7 @@ const SearchUser = () => {
                 </div>
                 {fetchedData.map((item, index) => {
                     const { coursename, date, coursetype, price, modeofpayment } = item;
-    
+
                     return (
                         <div key={index} className='ph-course-parent'>
                             <img src={courseImg} alt="" />

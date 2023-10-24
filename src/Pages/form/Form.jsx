@@ -269,7 +269,6 @@ function Form() {
             alert("This step of Payment Failed");
         });
 
-
     };
 
     
@@ -279,7 +278,7 @@ function Form() {
         <form className='form-pay'>
             <div className='sf-header-parent'>
                 <div className='sf-header'>
-                    <img src={logo} />
+                    <Link to="/"><img src={logo} /></Link>
                 </div>
                 <div className='sf-contact-details' >
                     <p>Reg, Orice: 28-B/71- Jia Sara (Hauz Khas) Near IT Delhi - 110016</p>

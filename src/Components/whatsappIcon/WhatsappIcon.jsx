@@ -5,7 +5,7 @@ const WhatsappIcon = () => {
   return (
     <div className="whatsapp-icon">
       <a
-        href="https://wa.me/+919999888777"
+        href="https://wa.me/+918595764714?text="
         target="_blank"
       ><img
           src={waicon} alt=""

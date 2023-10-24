@@ -17,6 +17,11 @@ $nav-bg: #24497c;
         top: 30%;
         margin-left: 2vw;
     }
+    div{
+        display: flex;
+        position: absolute;
+        right: 1vw;
+    }
 
     button {
         background-color: $nav-bg;
@@ -28,9 +33,30 @@ $nav-bg: #24497c;
         font-size: 1.1vw;
         font-weight: 400;
         color: #fff;
-        position: absolute;
-        right: 1vw;
+        
         border: none;
+    }
+
+    @media screen and (max-width:480px) {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        h2{
+        font-size: 1rem;
+            top: unset;
+        }
+        button{
+            font-size: .7rem;
+            padding: .2rem .5rem;
+        }
+    }
+}
+
+
+.no-course-message{
+    padding: 4rem;
+    @media screen and (max-width:480px) {
+        font-size: 1rem;
     }
 }
 
@@ -73,6 +99,8 @@ $nav-bg: #24497c;
     .ph-course-name {
         margin-top: 1vw;
     }
+
+    
 }
 
 .pdfLogo {

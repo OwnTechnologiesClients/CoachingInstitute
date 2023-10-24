@@ -1,15 +1,34 @@
 .search-user {
     width: 100%;
     border-top: 4px;
-
-    .heading {
+    .ph-appbar {
+        width: 100%;
+        height: 4vw;
+        border-top: 4px;
         background-color: #2D8EFF;
-        padding: .5vw 6vw;
-        color: #fff;
-
-        h1 {
-            font-family: 'Poppins';
-            font-weight: 700;
+        position: relative;
+        display: flex;
+    
+        h2 {
+            font-size: 1.4vw;
+            color: white;
+            font-family: Arial;
+            font-weight: 400;
+            position: absolute;
+            top: 30%;
+            margin-left: 2vw;
+        }
+        
+    
+        @media screen and (max-width:480px) {
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            h2{
+            font-size: 1rem;
+                top: unset;
+            }
+            
         }
     }
 

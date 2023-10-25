@@ -1,23 +1,45 @@
 $blue: #2D8EFF;
-$light-bg:#eee;
+$light-bg: #eee;
+
 .popular-videos-section {
     padding: 6vw;
+
     h2 {
-        span{
+        span {
             color: $blue;
         }
+
         font-weight: 400;
         font-size: 1.7vw;
         color: #363345;
         padding: 1vw 0;
     }
-    .video-cards{
+
+    .video-cards {
         display: flex;
         justify-content: space-between;
-        flex-wrap:wrap;
-        .video-card{
-            background-color: $light-bg;
+        flex-wrap: wrap;
+
+        .video-card {
             margin: 1vw 0;
         }
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .study-material-page{
+
+        .detail {
+            width: 70vw;
+            
+            h1 {
+                width: unset;
+                font-size: 1.7rem;
+                text-align: start;
+            }
+        }
+
     }
 }

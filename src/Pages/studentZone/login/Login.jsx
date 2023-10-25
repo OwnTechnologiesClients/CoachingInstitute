@@ -90,7 +90,6 @@ const Login = () => {
                         <h2>Login</h2>
                     </div>
                     <div className='student-login-card-parent'>
-                        {/* <h2>BECOME A MEMBER</h2> */}
                         <div className='student-login-userid-section'>
                             <p>Email ID</p>
 

@@ -5,17 +5,11 @@ import img2 from '../../assets/course.png'
 import img3 from '../../assets/course.png'
 import img4 from '../../assets/course.png'
 import { CourseCard} from '../cards/Cards';
-import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 const CourseSection = () => {
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
 
-    const navigateTo = () => {
-        dispatch(SetActiveCourse())
-        navigate('/courses')
-    }
+   
 
     const courseCardDetails = [
         {
@@ -49,8 +43,8 @@ const CourseSection = () => {
                 <h1>
                     OUR <span className='under-bar'>COURSES</span>
                 </h1>
-                <button onClick={navigateTo}>
-                    View All
+                <button>
+                   <Link to='/courses'> View All</Link>
                 </button>
             </div>
             <div className="cards">

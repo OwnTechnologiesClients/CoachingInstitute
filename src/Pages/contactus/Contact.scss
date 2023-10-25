@@ -109,20 +109,20 @@ $theme-color: #202C45;
         
                     img {
                         padding-right: 1rem;
-                        width: 4rem;
-                        height: 4rem;
+                        width: 3rem;
+                        height: 3rem;
                     }
         
                     div {
         
                         h2 {
-                            font-size: 1.2rem;
+                            font-size: 1.1rem;
                             margin-top: .3vw;
                         }
         
                         p {
                             color: $text-light;
-                            font-size: 1rem;
+                            font-size: .9rem;
                         }
                     }
                 }
@@ -132,18 +132,18 @@ $theme-color: #202C45;
                 padding: 2.5vw 0 2.5vw 4vw;
         
                 h2 {
-                    font-size: 1.7rem;
+                    font-size: 1.3rem;
                 }
         
                 p {
-                    font-size: 1rem;
+                    font-size: .9rem;
                     margin: 1rem 0;
                 }
         
         
                 input::-webkit-input-placeholder,
                 textarea::-webkit-input-placeholder {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     color: $light;
                 }
         
@@ -152,7 +152,7 @@ $theme-color: #202C45;
                     margin: 1vw 0;
                     height: 3rem;
                     padding: 0 2vw;
-                    font-size: 1.1vw;
+                    font-size: 1rem;
                     color: $light;
                     &:focus{
                         outline: none;
@@ -161,7 +161,7 @@ $theme-color: #202C45;
         
                 textarea {
                     height: 8rem;
-                    font-size: 1.1vw;
+                    font-size: 1rem;
                     padding: 1vw 2vw;
                     resize: none;
                 }

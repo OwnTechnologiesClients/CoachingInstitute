@@ -115,7 +115,7 @@ const WelcomeSection = () => {
         <div className="welcome-section">
             <div>
                 <div className="message">
-                    <h1>WELCOME TO OUR</h1>
+                    <h1>WELCOME TO OUR </h1>
                     <p className='under-bar'>COACHING CENTER</p>
                     <h3>Welcome to ASAP Chemtime, a premier educational institute that provides high-quality coaching classes for competitive exams in Chemistry and Mathematics</h3>
                     <h4>Our institute is committed to providing the best education to students and helping them achieve their goals.</h4>
@@ -132,7 +132,7 @@ const WelcomeSection = () => {
 
                 <h2 >NEWS & UPDATES</h2>
 
-                <marquee direction="up" scrollamount="2"  height="650">
+                <marquee direction="up" scrollamount="2"  >
 
                     {
                         notifications.map((item, index) => {

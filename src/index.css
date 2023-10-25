@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,8 +6,9 @@
   list-style: none;
   font-family: Arial;
   color: inherit;
-  
+
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -22,7 +23,7 @@ input[type=number] {
 
 
 
-.under-bar::after{
+.under-bar::after {
   content: "";
   height: .2vw;
   background-color: #2D8EFF;
@@ -31,7 +32,14 @@ input[type=number] {
   margin-top: .7vw;
 }
 
-button:hover{
-  cursor: pointer;
+@media screen and (max-width:600px) {
+  .under-bar::after {
+    height: .2rem;
+    width: 20vw;
+  }
+
 }
 
+button:hover {
+  cursor: pointer;
+}

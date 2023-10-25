@@ -1,6 +1,14 @@
-.video-card{
-    iframe{
+.video-card {
+    iframe {
         width: 25vw;
         height: 15vw;
+    }
+
+    @media screen and (max-width:600px) {
+        iframe {
+            margin-top: 1rem;
+            width: 85vw;
+            height: 50vw;
+        }
     }
 }

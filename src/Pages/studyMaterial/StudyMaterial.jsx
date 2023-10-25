@@ -64,7 +64,7 @@ const StudyMaterial = () => {
                     <CourseDetail  imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData}/>
 
                     <div className="course-idea">
-                        <h2>CourseIdea</h2>
+                        <h2 className='under-bar'>CourseIdea</h2>
                         <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
                         <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/>
                     </div>

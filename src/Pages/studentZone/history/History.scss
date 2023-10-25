@@ -62,9 +62,44 @@ $nav-bg: #24497c;
 
 .ph-course-parent {
     margin-left: 4vw;
-    margin-top: 2vw;
+    margin-top: 1.5rem;
     display: flex;
-
+    @media screen and (max-width:480px) {
+        img{
+            width: 30vw;
+        }
+        .pdfLogo img{
+            width: 30px;
+        }
+        .ph-course-detail {
+        
+            h3 {
+                font-size: 1rem;
+            }
+        
+            p {
+                font-size: .8rem;
+                margin-top: 0.6vw;
+                color: #8C9099;
+                font-family: Arial;
+                font-weight: 400;
+                margin-left: 2vw;
+            }
+        
+            p2 {
+                font-size: 1.2vw;
+                color: #8C9099;
+                font-family: Arial;
+                font-weight: 700;
+                margin-left: 2vw;
+                margin-top: 1vw;
+            }
+        
+            .ph-course-name {
+                margin-top: 1vw;
+            }            
+        }
+    }
 }
 
 .ph-course-detail {

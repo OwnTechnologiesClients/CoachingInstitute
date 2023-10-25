@@ -35,22 +35,31 @@ $light-text: #989696;
             font-size: 1.7vw;
         }
     }
-@media screen and (max-width:"480px") {
-    
+
+    @media screen and (max-width:"480px") {
+        .detail {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
         .course-page-section {
             flex-direction: column;
             padding: 0 vw;
-    
+
         }
-    
+
         .course-idea {
             padding: 1vw 3vw;
-    
+
+
+
             h2 {
-                font-size: 1.7rem;
+                font-size: 1.3rem;
+                margin: 1rem 0;
             }
         }
-    
-    
-}
+
+
+    }
 }

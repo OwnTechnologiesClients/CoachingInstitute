@@ -56,4 +56,43 @@ $text: #646262;
             text-align: end;
         }
     }
+
+    @media screen and (max-width:"480px") {
+
+        .swiper-slide img {
+            width: 200vw;
+            height: 60vh;
+            object-fit:fill;
+            overflow: hidden;
+        }
+
+
+        .detail {
+            top: 40vw;
+            left: 6vw;
+            color: #fff;
+            justify-content: end;
+
+            h1 {
+                font-size: 2rem;
+                background-color: #363345;
+                border-left: .4rem solid $blue;
+            }
+
+            h2 {
+                padding: 1vw;
+                padding-left: 3vw;
+                font-size: 1rem;
+                width: 70vw;
+                font-weight: 500;
+                text-align: start;
+            }
+
+            p {
+                font-size: 2.3vw;
+                text-align: start;
+            }
+        }
+
+    }
 }

@@ -24,7 +24,7 @@ nav {
         a {
             .menu-item {
                 background-color: $nav-bg;
-                padding: .6vw 1.3vw;
+                padding: .6vw 1.1vw;
                 margin: 0.7vw .5vw;
                 border-radius: 3.8rem;
                 display: flex;
@@ -113,10 +113,10 @@ nav {
 
             a {
                 margin: .2rem 0;
-                border-radius: 3.8rem;
                 
                 .menu-item {
-                    
+                    border-radius: 1rem;
+
                     padding: .7rem 1.2rem;
                     font-size: 1.1rem;
                 }
@@ -124,8 +124,8 @@ nav {
             }
         }
 
-        .courses{
-            padding-bottom: 7rem;
+        .courses {
+            padding-bottom: 5.5rem;
         }
 
         .dropdown {
@@ -133,19 +133,20 @@ nav {
             z-index: 1000;
 
             .dropdown-content {
+                border-radius: 1rem;
                 display: block;
                 position: absolute;
-                top: 2rem;
-                left: -5rem;
+                top: 1.6rem;
+                left: -6.2rem;
                 background-color: #fff;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                min-width: 160px;
+                min-width: 87vw;
 
                 a {
                     color: #333;
-                    padding: unset;
-                    display: block;
-                    text-decoration: none;
+                    padding: .5rem 1rem;
+                    display: flex;
+
 
                     &:hover {
                         background-color: #f9f9f9;

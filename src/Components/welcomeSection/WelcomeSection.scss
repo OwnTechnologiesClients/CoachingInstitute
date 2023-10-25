@@ -74,58 +74,67 @@ $text: #646262;
         }
     }
 
-    .notification-panel{
+    .notification-panel {
         width: 25vw;
         margin-left: 2vw;
         text-align: center;
         border: 2px solid #707070;
-       h2{
-        background-color: #202C45;
-        color: #fff;
-        padding: 1vw;
-       }
-       .notification{
-        background-color: #f7f7f7;
-        padding: 1vw;
-        border-top: 1px solid #202C45;
-        border-bottom: 1px solid #202C45;
-        a{
-            display: flex;
-            align-items: center;
-            .content{
-                margin-left: 1vw;
-                color: #0C48EA;
-                font-family: Poppins;
+
+        h2 {
+            background-color: #202C45;
+            color: #fff;
+            padding: 1vw;
+        }
+        marquee{
+            height: 90vh;
+        }
+
+        .notification {
+            background-color: #f7f7f7;
+            padding: 1vw;
+            border-top: 1px solid #202C45;
+            border-bottom: 1px solid #202C45;
+
+            a {
+                display: flex;
+                align-items: center;
+
+                .content {
+                    margin-left: 1vw;
+                    color: #0C48EA;
+                    font-family: Poppins;
+                }
             }
         }
-       }
     }
 
     @media screen and (max-width:"480px") {
         flex-direction: column;
+        margin-top: 10vw;
 
         .message {
             width: unset;
 
             h1,
             p {
-                font-size: 2rem;
-
+                display: inline;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
             }
 
             h3 {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
                 padding-top: 1rem;
             }
 
             h4 {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 padding: 1rem 0;
             }
 
             button {
-                padding: .6vw .8vw;
-                font-size: 1.3rem;
+                padding: 2vw;
+                font-size: .8rem;
                 margin: 1rem 0;
             }
         }
@@ -139,13 +148,15 @@ $text: #646262;
                 padding: 1rem 0;
 
                 img {
-                    width: unset;
+                    width: 85vw;
                 }
 
                 div {
+                    width: 90vw;
+
                     h2 {
                         padding: .5rem 0;
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                     }
 
                     p {
@@ -155,16 +166,26 @@ $text: #646262;
                 }
             }
         }
-        .notification-panel{
-            h2{
-                margin: 0 1rem;
+
+        .notification-panel {
+            margin: 0vw;
+            width: 90vw;
+            margin-top: 10vw;
+            height: 50vh;
+
+            h2 {
+                margin: unset;
+                font-size: 1.2rem;
             }
-            marquee{
-                padding: 1rem;
+
+            marquee {
+                height: 45vh;
+                padding: unset;
             }
-            li{
+
+            li {
                 padding: 1rem 0;
-                font-size: 1rem;
+                font-size: .8rem;
             }
         }
 

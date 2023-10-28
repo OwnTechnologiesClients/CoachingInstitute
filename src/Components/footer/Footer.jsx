@@ -42,6 +42,9 @@ const Footer = () => {
           <Link to="#">
             <li>TEST SERIES</li>
           </Link>
+          <Link to="#">
+            <li>STUDY MATERIAL</li>
+          </Link>
         </div>
         <div className="links ">
           <h4>Useful Links</h4>
@@ -65,6 +68,10 @@ const Footer = () => {
           <div className="link">
             <img src={checkbox} alt="" />
             <Link to="/courses">Courses</Link>
+          </div>
+          <div className="link">
+            <img src={checkbox} alt="" />
+            <Link to="/refund-policy">Refund Policy</Link>
           </div>
         </div>
         <div className="box">

@@ -77,6 +77,7 @@ const StudentSignup = () => {
             }, 2000);
         }
         else {
+            console.log("=====>>>>>",result.data);
             toast.warn("Please fill all details", {
                 position: 'bottom-right',
                 autoClose: 2000,

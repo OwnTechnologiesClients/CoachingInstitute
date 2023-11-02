@@ -6,6 +6,28 @@ import rightarrow from '../../assets/icons/rightarrow.png';
 import './navbar.scss';
 
 const Navbar = () => {
+
+  const [isSticky, setSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const stickyClass = isSticky ? 'sticky' : '';
+
+
   const navigate = useNavigate();
   const location = useLocation();
   const [activeItem, setActiveItem] = useState('Home');
@@ -34,7 +56,7 @@ const Navbar = () => {
 
 
   return (
-    <nav id='navbar'>
+    <nav id='navbar' className={stickyClass}>
       <div className="menu-icon" onClick={toggleMenu}>
         <img src={hamburger} alt="" />
       </div>

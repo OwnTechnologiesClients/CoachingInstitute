@@ -1,9 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import imgSrc1 from '../../assets/bg3.png'
-import imgSrc2 from '../../assets/bg4.png'
-import imgSrc3 from '../../assets/bg5.png'
+import imgSrc1 from '../../assets/bg1.jpg'
+import imgSrc2 from '../../assets/bg2.jpg'
+// import imgSrc3 from '../../assets/bg5.png'
 import 'swiper/css'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -26,7 +26,7 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                 className="mySwiper">
                 <SwiperSlide><img src={imgSrc1} className='heroimage' alt="" /></SwiperSlide>
                 <SwiperSlide><img src={imgSrc2} className='heroimage' alt="" /></SwiperSlide>
-                <SwiperSlide><img src={imgSrc3} className='heroimage' alt="" /></SwiperSlide>
+                {/* <SwiperSlide><img src={imgSrc3} className='heroimage' alt="" /></SwiperSlide> */}
             </Swiper>
 
             <div className='detail'>

@@ -15,6 +15,7 @@ import Contact from './pages/contactus/Contact';
 import SearchUser from './pages/admin/searchUser/SearchUser';
 import FormPrint from './pages/studentZone/history/formPrint/FormPrint'
 import RefundPolicy from './Pages/refundPolicy/RefundPolicy';
+import Result from './pages/result/Result';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='/searchuser' element={<SearchUser/>} />
           <Route path='/form-print' element={<FormPrint/>} />
           <Route path='/refund-policy' element={<RefundPolicy/>} />
+          <Route path='/result' element={<Result />} />
         </Routes>
       </BrowserRouter>
 

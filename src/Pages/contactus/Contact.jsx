@@ -45,7 +45,7 @@ const Contact = () => {
         // });
 
         //sending email
-        emailjs.sendForm('service_k99s57e', 'template_licqaps', formRef.current, '7EjtnFEz-7ax6QsuK')
+        emailjs.sendForm('service_k99s57e', 'template_8pai1no', formRef.current, 'Fjsk3RoEfh9EroZ-g')
             .then((result) => {
                 console.log(result)
                 toast.success('We will contact you soon', {
@@ -147,6 +147,12 @@ const Contact = () => {
                     </form>
                     <ToastContainer closeButton={false} />
                 </div>
+            </div>
+
+            <div className="google-map-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7593345109117!2d77.18681967533229!3d28.546952675711545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d408a72ee1d%3A0x59c4a843f22c5df3!2sASAP%20Chemtime%20Institute%20-%20Best%20coaching%20for%20csir%20net%20%2C%20gate%2C%20iit%20jam%20chemistry%20in%20Delhi.!5e0!3m2!1sen!2sin!4v1698921931108!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
             </div>
 
             <WhatsappIcon />

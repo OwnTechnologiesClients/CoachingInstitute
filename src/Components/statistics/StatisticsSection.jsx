@@ -1,40 +1,55 @@
-import React from 'react'
-import './Statistics.scss'
-import smile from '../../assets/smile.png'
+import React, { useEffect, useState } from 'react';
+import './Statistics.scss';
+import smile from '../../assets/smile.png';
+
+const statisticsData = [
+  { label: 'HAPPY STUDENTS', maxcount: 2450 ,count:0},
+  { label: 'TOTAL TEACHERS', maxcount: 10 ,count:0},
+  { label: 'CERTIFICATION', maxcount: 500 ,count:0},
+  { label: 'EXAMS', maxcount: 2000 ,count:0},
+];
 
 const StatisticsSection = () => {
-    return (
-        <div className="statistics">
-            <div className="st-card">
-                <img src={smile} alt="" />
-                <div className="stats">
-                    <h1>2450+</h1>
-                    <p>HAPPY STUDENTS</p>
-                </div>
-            </div>
-            <div className="st-card">
-                <img src={smile} alt="" />
-                <div className="stats">
-                    <h1>10+</h1>
-                    <p>TOTAL TEACHERS</p>
-                </div>
-            </div>
-            <div className="st-card">
-                <img src={smile} alt="" />
-                <div className="stats">
-                    <h1>500+</h1>
-                    <p>CERTIFICATION</p>
-                </div>
-            </div>
-            <div className="st-card">
-                <img src={smile} alt="" />
-                <div className="stats">
-                    <h1>2000+</h1>
-                    <p>EXAMS</p>
-                </div>
-            </div>
-        </div>
-    )
-}
+  const [statistics, setStatistics] = useState(statisticsData);
 
-export default StatisticsSection
+  useEffect(() => {
+    const updateStatistics = () => {
+      setStatistics((prevStatistics) =>
+        prevStatistics.map((statistic) => {
+          if (statistic.count < statisticsData.find((s) => s.label === statistic.label).maxcount) {
+            return {
+              ...statistic,
+              count: statistic.count + 10, // You can adjust the increment value here
+            };
+          }
+          return statistic;
+        })
+      );
+    };
+
+    // Update statistics every .01 second (10 milliseconds)
+    const interval = setInterval(updateStatistics, 10);
+
+    // Clean up the interval on unmount
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (
+    <div className="statistics">
+      {statistics.map((statistic, index) => (
+        <div className="st-card" key={index}>
+          <img src={smile} alt="" />
+          <div className="stats">
+            <h1>{statistic.count}+</h1>
+            <p>{statistic.label}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default StatisticsSection;
+

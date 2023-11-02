@@ -3,7 +3,12 @@ $nav-bg: #24497c;
 $blue: #2D8EFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300&display=swap');
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+  }
 nav {
     display: flex;
     justify-content: space-between;
@@ -11,6 +16,8 @@ nav {
     background-color: $theme-color;
     color: #fff;
     border-bottom: 5px solid $blue;
+    
+    
 
     .menu-icon {
         display: none;

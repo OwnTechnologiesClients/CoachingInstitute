@@ -3,6 +3,19 @@ $light: #9A9696;
 $light-bg: #eee;
 $theme-color: #202C45;
 
+.google-map-location {
+    width: 93vw;
+    height: 40vw;
+    display: flex;
+    justify-content: end;
+
+    iframe {
+        margin-top: -5vw;
+        width: 53vw;
+        height: 35vw;
+    }
+}
+
 .contact-page-section {
     padding: 6vw;
     display: flex;
@@ -41,6 +54,8 @@ $theme-color: #202C45;
         }
     }
 
+
+
     .contact-form {
         padding: 2.5vw 0 2.5vw 4vw;
 
@@ -75,7 +90,8 @@ $theme-color: #202C45;
             padding: 0 2vw;
             font-size: 1.1vw;
             color: $light;
-            &:focus{
+
+            &:focus {
                 outline: none;
             }
         }
@@ -87,7 +103,7 @@ $theme-color: #202C45;
             resize: none;
         }
 
-        button{
+        button {
             border: none;
             color: #fff;
             background-color: $theme-color;
@@ -96,85 +112,104 @@ $theme-color: #202C45;
             font-size: 1vw;
         }
     }
+
     @media screen and (max-width:480px) {
-        
-           flex-direction: column;
-        
-            .contact-cards {
-                .card {
-                    width: unset;
-                    padding: 1rem;
-                    margin: 3rem 0;
-                    background-color: $light-bg;
-        
-                    img {
-                        padding-right: 1rem;
-                        width: 3rem;
-                        height: 3rem;
-                    }
-        
-                    div {
-        
-                        h2 {
-                            font-size: 1.1rem;
-                            margin-top: .3vw;
-                        }
-        
-                        p {
-                            color: $text-light;
-                            font-size: .9rem;
-                        }
-                    }
-                }
-            }
-        
-            .contact-form {
-                padding: 2.5vw 0 2.5vw 4vw;
-        
-                h2 {
-                    font-size: 1.3rem;
-                }
-        
-                p {
-                    font-size: .9rem;
-                    margin: 1rem 0;
-                }
-        
-        
-                input::-webkit-input-placeholder,
-                textarea::-webkit-input-placeholder {
-                    font-size: 1rem;
-                    color: $light;
-                }
-        
-                input,
-                textarea {
-                    margin: 1vw 0;
+
+        flex-direction: column;
+
+        .contact-cards {
+            .card {
+                width: unset;
+                padding: 1rem;
+                margin: 3rem 0;
+                background-color: $light-bg;
+
+                img {
+                    padding-right: 1rem;
+                    width: 3rem;
                     height: 3rem;
-                    padding: 0 2vw;
-                    font-size: 1rem;
-                    color: $light;
-                    &:focus{
-                        outline: none;
+                }
+
+                div {
+
+                    h2 {
+                        font-size: 1.1rem;
+                        margin-top: .3vw;
+                    }
+
+                    p {
+                        color: $text-light;
+                        font-size: .9rem;
                     }
                 }
-        
-                textarea {
-                    height: 8rem;
-                    font-size: 1rem;
-                    padding: 1vw 2vw;
-                    resize: none;
-                }
-        
-                button{
-                    border: none;
-                    color: #fff;
-                    background-color: $theme-color;
-                    width: 50%;
-                    height: 2.3rem;
-                    font-size: 1rem;
+            }
+        }
+
+        .contact-form {
+            padding: 0;
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: .9rem;
+                margin: 1rem 0;
+            }
+
+
+            input::-webkit-input-placeholder,
+            textarea::-webkit-input-placeholder {
+                font-size: 1rem;
+                color: $light;
+            }
+
+            input,
+            textarea {
+                margin: 1vw 0;
+                height: 3rem;
+                padding: 0 2vw;
+                font-size: 1rem;
+                color: $light;
+
+                &:focus {
+                    outline: none;
                 }
             }
-        
+
+            textarea {
+                height: 8rem;
+                font-size: 1rem;
+                padding: 1vw 2vw;
+                resize: none;
+            }
+
+            button {
+                border: none;
+                color: #fff;
+                background-color: $theme-color;
+                width: 50%;
+                height: 2.3rem;
+                font-size: 1rem;
+            }
+        }
+
     }
+
+
+}
+
+@media screen and (max-width:480px) {
+    .google-map-location {
+        margin-left: 8vw;
+        width: 90vw;
+        height: 60vw;
+        margin: auto;
+
+        iframe {
+            width: 85vw;
+            height: 55vw;
+        }
+    }
+
 }

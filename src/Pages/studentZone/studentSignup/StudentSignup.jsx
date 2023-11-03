@@ -77,18 +77,32 @@ const StudentSignup = () => {
             }, 2000);
         }
         else {
-            console.log("=====>>>>>",result.data);
-            toast.warn("Please fill all details", {
-                position: 'bottom-right',
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: false,
-                draggable: false,
-                progress: undefined,
-            });
+            if (result.data.message === "Registration already have been done") {
+                toast.warn("Email already exists", {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
+            }
+            else {
+                console.log("=====>>>>>", result.data);
+                toast.warn("Please fill all details", {
+                    position: 'bottom-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: false,
+                    progress: undefined,
+                });
+            }
         }
         setLoader(false)
+
     }
     useEffect(() => {
         if (localStorage.getItem('token')) {

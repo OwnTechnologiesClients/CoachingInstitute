@@ -8,6 +8,7 @@ import pdficon from '../../../assets/icons/pdf.png'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { SetCurrentUser } from '../../../redux/userSlice'
+import CourseImages from '../../../components/courseTable/courseImages.json'
 
 const History = () => {
     const [history, setHistory] = useState([])
@@ -78,7 +79,8 @@ const History = () => {
     
                     return (
                         <div key={index} className='ph-course-parent'>
-                            <img src={courseImg} alt="" />
+                            {console.log(CourseImages[coursename])}
+                            <img className='course-image' src={CourseImages[coursename]} alt="" />
                             <div className='ph-course-detail'>
                                 <h3>{coursename}</h3>
                                 <p>Type: {coursetype}</p>

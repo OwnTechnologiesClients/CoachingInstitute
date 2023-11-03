@@ -7,6 +7,7 @@ $nav-bg: #24497c;
     background-color: #2D8EFF;
     position: relative;
     display: flex;
+    
 
     h2 {
         font-size: 1.4vw;
@@ -64,6 +65,9 @@ $nav-bg: #24497c;
     margin-left: 4vw;
     margin-top: 1.5rem;
     display: flex;
+    .course-image{
+        width: 15vw;
+    }
     @media screen and (max-width:480px) {
         img{
             width: 30vw;

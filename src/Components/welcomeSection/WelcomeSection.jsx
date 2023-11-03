@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './WelcomeSection.scss'
 import ss3 from '../../assets/ss3.png'
 import ss2 from '../../assets/ss2.png'
@@ -12,7 +12,7 @@ const WelcomeSection = () => {
     const navigateTo = () => {
         navigate('/about')
     }
-
+    
     const notifications = [
         {
             url: "/courses",
@@ -111,6 +111,16 @@ const WelcomeSection = () => {
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
     ]
+
+    const [isPaused, setPaused] = useState(false);
+
+    const handleMouseOver = () => {
+        setPaused(true);
+    };
+
+    const handleMouseOut = () => {
+        setPaused(false);
+    };
     return (
         <div className="welcome-section">
             <div>
@@ -132,17 +142,18 @@ const WelcomeSection = () => {
 
                 <h2 >NEWS & UPDATES</h2>
 
-                <marquee direction="up" scrollamount="2"  >
+                <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                    <div className={`marquee ${isPaused ? 'paused' : ''}`}>
+                        {
+                            notifications.map((item, index) => {
+                                return <div className='notification' key={index}>
+                                    <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
+                                </div>
+                            })
+                        }
+                    </div>
 
-                    {
-                        notifications.map((item, index) => {
-                            return <div className='notification' key={index}>
-                                <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
-                            </div>
-                        })
-                    }
-
-                </marquee>
+                </div>
             </div>
 
         </div>

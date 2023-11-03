@@ -291,7 +291,7 @@ function Form() {
 
                 <div className='sf-register-profile-img-parent'>
                     <div className='sf-register-field'>
-                        <p className='sf-form-text'>{Reg. No}</p>
+                        <p className='sf-form-text'>Reg. No</p>
 
                         <input
                             type="text"

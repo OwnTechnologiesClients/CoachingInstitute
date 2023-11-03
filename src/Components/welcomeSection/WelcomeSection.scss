@@ -85,8 +85,33 @@ $text: #646262;
             color: #fff;
             padding: 1vw;
         }
-        marquee{
+
+        .marquee-container {
             height: 90vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .marquee {
+            animation: marquee 10s linear infinite;
+            /* Adjust the animation duration as needed */
+            position: absolute;
+            top: 0;
+        }
+
+        .paused {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: -100%;
+                /* Adjust the distance for the desired scroll speed */
+            }
         }
 
         .notification {
@@ -178,7 +203,7 @@ $text: #646262;
                 font-size: 1.2rem;
             }
 
-            marquee {
+            .marquee-container {
                 height: 45vh;
                 padding: unset;
             }

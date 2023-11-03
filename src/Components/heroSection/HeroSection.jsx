@@ -16,7 +16,7 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                 centeredSlides={true}
                 autoplay={{
                     delay: 2500,
-                    disableOnInteraction: false,
+                    pauseOnMouseEnter:true,
                 }}
                 pagination={{
                     clickable: true,

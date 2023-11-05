@@ -1,0 +1,136 @@
+$blue: #2D8EFF;
+$theme-color: #202C45;
+$light-text: #AAA8A8;
+$text: #646262;
+
+
+$blue: #2D8EFF;
+$theme-color: #202C45;
+$light-text: #AAA8A8;
+$text: #646262;
+
+.exam-section {
+    padding: 6vw;
+    background-color: #fff;
+
+    .top-heading {
+        display: flex;
+        padding-bottom: 2vw;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 400;
+            font-size: 1.7vw;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        button {
+            background: $theme-color;
+            color: #fff;
+            padding: .6vw .8vw;
+            font-size: 1vw;
+        }
+    }
+
+    .parent-cards {
+        
+
+        .fact-card {
+            display: flex;
+            width: 100%;
+            margin-top: 1vw;
+            
+
+            img {
+                width: 19vw;
+            }
+
+            div {
+                padding: 1vw;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 1.1vw;
+                    padding: .7vw 0;
+                }
+
+                p {
+                    font-size: 1vw;
+                    color: #9A9696;
+                }
+            }
+
+            button {
+                background: $theme-color;
+                color: #fff;
+                padding: .4vw .6vw;
+                font-size: .8vw;
+                margin: 1vw;
+            }
+
+            .fact-card-content{
+                margin-right: 1vw;
+                background-color: #F7F7F7;
+            }
+            
+        }
+    }
+
+
+    //---------------------- Media queries ------------------------------
+    @media screen and (max-width:"480px") {
+
+        .top-heading {
+            padding-bottom: 1rem;
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            button {
+                padding: .6vw 2vw;
+                font-size: 1rem;
+            }
+        }
+
+        .cards {
+            flex-direction: column;
+
+            .course-card {
+                width: unset;
+                margin: 1rem 0;
+
+                .price {
+                border-left: .8vw solid $blue;
+                font-size: 1rem;
+                }
+
+                img {
+                    width: 88vw;
+                }
+
+                div {
+
+                    h2 {
+                        font-size: 1.1rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        margin: 1rem 0;
+                    }
+                }
+
+                button {
+                    font-size: 1rem;
+                    padding: 1vw;
+                    margin: 1rem 1vw;
+                }
+            }
+        }
+    }
+
+}

@@ -12,6 +12,10 @@ import { Header1, Header2 } from '../../components/header/Header';
 import heroImage from '../../assets/bg4.png'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import ResultSection from '../../components/resultSection/ResultSection';
+import BenefitsSection from '../../Components/benefits/BenefitSection';
+import HowToClearExam from '../../Components/howToClearExam/HowToClearExam';
+import Mastering from '../../Components/mastering/Mastering';
+import Faq from '../../Components/faq/Faq';
 
 const Home = () => {
 
@@ -19,25 +23,37 @@ const Home = () => {
     return (
         <div className='home'>
 
-            <Header1/>
-            <Header2/>
-            
+            <Header1 />
+            <Header2 />
+
             <Navbar />
 
-            <HeroSection imgSrc={heroImage} hd1={"BEST EDUCATION"} hd2={"FOR YOUR BETTER FUTURE"}/>
+            <HeroSection imgSrc={heroImage} hd1={"BEST EDUCATION"} hd2={"FOR YOUR BETTER FUTURE"} />
 
             <RegistrationSection />
 
             <WelcomeSection />
 
+
+            <BenefitsSection />
+            
+            <HowToClearExam />
             <CourseSection />
+            <Mastering />
+            
+
+
 
             <StatisticsSection />
 
-            <ResultSection/>
+            <ResultSection />
 
             <VideoSection />
-            <WhatsappIcon/>
+
+
+            <Faq/>
+            
+            <WhatsappIcon />
             <Footer />
         </div>
     )

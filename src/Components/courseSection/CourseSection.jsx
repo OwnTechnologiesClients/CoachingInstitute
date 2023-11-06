@@ -44,7 +44,7 @@ const CourseSection = () => {
                     OUR <span className='under-bar'>COURSES</span>
                 </h1>
                 <button>
-                   <Link to='/courses'> View All</Link>
+                   <Link to='/onlinecourses'> View All</Link>
                 </button>
             </div>
             <div className="cards">

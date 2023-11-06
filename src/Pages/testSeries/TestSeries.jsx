@@ -51,11 +51,11 @@ const TestSeries = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg3}
                 hd1={"TEST SERIES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
             <div className="test-series-section">
                 <CourseLinks
                     activeLink={activeLink}

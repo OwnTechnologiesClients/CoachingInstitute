@@ -20,7 +20,7 @@ const Mastering = () => {
                     MASTERING<span className='under-bar'>  CSIR NET CHEMISTRY</span>
                 </h1>
                 {/* <button>
-                    <Link to='/courses'> View All</Link>
+                    <Link to='/onlinecourses'> View All</Link>
                 </button> */}
             </div>
             <div className="parent-cards">

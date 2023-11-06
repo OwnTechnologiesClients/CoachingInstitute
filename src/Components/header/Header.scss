@@ -63,7 +63,9 @@ $text: #646262;
 
     .logo {
         img {
-            height: 7vw;
+            height: 4vw;
+            padding: .3vw;
+            padding-top: .7vw;
         }
     }
 
@@ -72,14 +74,14 @@ $text: #646262;
 
         &>div {
             display: flex;
-            padding: 2vw;
+            padding: 1vw;
             padding-right: 1vw;
-            font-size: 1.1vw;
+            font-size: 1vw;
 
             img {
                 margin: 0 1vw;
-                width: 3.2vw;
-                height: 3.2vw;
+                width: 2.2vw;
+                height: 2.2vw;
             }
 
             .h1 {
@@ -87,7 +89,7 @@ $text: #646262;
             }
 
             .h2 {
-                padding-top: 1vw;
+                padding-top: 0.2vw;
                 color: $text;
             }
         }

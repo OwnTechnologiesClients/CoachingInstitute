@@ -5,7 +5,7 @@ export const menuItems = [
     },
     {
       title: 'Courses',
-      url: '/courses',
+      url: '/onlinecourses',
       submenu: [
         {
           title: 'Online Course',

@@ -53,11 +53,11 @@ const StudyMaterial = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg3}
                 hd1={"STUDY MATERIAL"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
             <div className="study-material-section">
                 <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick}/>
                 <div className="study-material-section-right-nav">

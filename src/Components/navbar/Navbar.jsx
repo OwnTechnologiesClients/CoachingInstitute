@@ -68,13 +68,13 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link className='courses' to="/courses" onClick={() => handleItemClick('Courses')}>
-          <div className={`menu-item ${activeItem === 'courses' ? 'active' : ''}`}>
+        <Link className='courses' to="/onlinecourses" onClick={() => handleItemClick('Courses')}>
+          <div className={`menu-item ${activeItem === 'onlinecourses' || activeItem=== 'offlinecourses' ? 'active' : ''}`}>
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="/courses">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
-                <Link to="/courses">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="/onlinecourses">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="/offlinecourses">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
             Blog
           </div>
         </Link>
-        <Link to='/courses'>
+        <Link to='/onlinecourses'>
           <div className="new-batch">
             NEW BATCH
           </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import axios from 'axios';
 import './SearchUser.scss'
 import { useDispatch } from 'react-redux';
@@ -52,6 +52,12 @@ const SearchUser = () => {
         dispatch(SetCurrentUser(item));
         navigate('/form-print')
     }
+
+    // useEffect(()=>{
+    //     if(!localStorage.getItem('adminToken')){
+    //         navigate("/")
+    //     }
+    // },[])
 
     return (
         <div className="search-user">

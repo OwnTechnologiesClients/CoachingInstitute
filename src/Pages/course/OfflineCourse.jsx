@@ -13,14 +13,26 @@ import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import courseData from './Course.json'
 import {SetActiveCourse} from '../../redux/userSlice' 
 import { useDispatch, useSelector } from 'react-redux';
+import CsirOffline from '../../components/courseDetail/offline/CsirOffline';
+import GateOffline from '../../components/courseDetail/offline/GateOffline';
+import JamOffline from '../../components/courseDetail/offline/JamOffline';
+import CuetOffline from '../../components/courseDetail/offline/CuetOffline';
+import CourseHeroSection from '../../components/courseHeroSection/CourseHeroSection';
 
-const Course = () => {
-    const [activeLink, setActiveLink] = useState('Chemical Science Coaching');
+const OfflineCourse = () => {
+    const [activeLink, setActiveLink] = useState('CSIR NET Chemical Sciences');
     const { course } = useSelector(state => state.users)
     const dispatch = useDispatch()
     const handleLinkClick = (link) => {        
             setActiveLink(link);
     };
+
+    const componentMapping = {
+        'CSIR NET Chemical Sciences': <CsirOffline />,
+        'CUET (PG) Chemistry': <CuetOffline />,
+        'GATE Chemistry': <GateOffline />,
+        'IIT JAM Chemistry': <JamOffline />,
+      };
 
     const tableFields = [
         [
@@ -63,9 +75,9 @@ const Course = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            <CourseHeroSection
                 imgSrc={bg3}
-                hd1={"OFFLINE/ONLINE COURSES"}
+                hd1={"OFFLINE COURSES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             />
 
@@ -75,11 +87,12 @@ const Course = () => {
                     handleLinkClick={handleLinkClick}
                 />
                 <div className="course-page-right-nav">
-                    <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={courseData} />
+                {componentMapping[activeLink]}
+                    
                     <div className="course-idea">
                         <h2 className='under-bar'>CoursesIdea</h2>
                         <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
-                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/>
+                        {/* <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/> */}
                     </div>
                 </div>
             </div>
@@ -90,4 +103,4 @@ const Course = () => {
     )
 }
 
-export default Course
+export default OfflineCourse

@@ -5,6 +5,7 @@ import './CoursePageList.scss';
 const CoursePageList = ({ hd1, hd2, links, activeLink, onLinkClick, url1 }) => {
 
     return (
+        
         <div className="course-list">
             <h2>
                 {hd1} <span className='under-bar'>{hd2}</span>

@@ -48,7 +48,7 @@ const HowToClearExam = () => {
     //     const dispatch = useDispatch();
     //     const navigateTo = (homeCourseHeading) => {
     //         dispatch(SetActiveCourse(homeCourseHeading))
-    //         navigate('/courses')
+    //         navigate('/onlinecourses')
     //     }
     //     return (
     //         <div className='course-card'>
@@ -72,7 +72,7 @@ const HowToClearExam = () => {
                     HOW TO CLEAR <span className='under-bar'>EXAMS</span>
                 </h1>
                 {/* <button>
-                    <Link to='/courses'> View All</Link>
+                    <Link to='/onlinecourses'> View All</Link>
                 </button> */}
             </div>
             <div className="parent-cards">

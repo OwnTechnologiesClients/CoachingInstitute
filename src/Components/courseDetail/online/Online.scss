@@ -1,0 +1,45 @@
+.online{
+    padding: 5vw;
+
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    h1{
+        font-size: 1.7vw;
+        padding: .5vw 0;
+        font-weight: normal;
+        
+    }
+    h2{
+        font-weight: normal;
+    }
+    p{
+        color: #9A9696;
+        font-size: 1.2vw;
+        padding: 1vw 0;
+    }
+    ul,ol{
+        padding: 1.5vw;
+        li{
+        color: #9A9696;
+            padding: .5vw 0;
+            font-size: 1.1vw;
+            line-height: 1.4vw;
+            h6{
+                color: #000;
+                display: inline-block;
+                font-size: 1.3vw;
+                font-weight: normal;
+            }
+
+        }
+    }
+    h5{
+        font-weight: normal;
+        display: inline-block;
+        font-size: 1.1vw;
+        color: #2D8EFF !important;
+    }
+}

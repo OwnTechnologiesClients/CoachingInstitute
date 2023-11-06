@@ -2,14 +2,17 @@ $theme-color: #202C45;
 
 .statistics {
     display: flex;
-    background-color: $theme-color;
-    justify-content: space-between;
+    background-color: #2D8EFF;
+    justify-content: space-around;
     color: #fff;
+    border-radius: 3.5vw;
     padding: 5vw 6vw;
+    margin: 0 2vw;
 
     .st-card {
-        display: flex;
-
+        text-align: center;
+border-right: 1px solid #f7f7f7;
+padding-right: 4vw;
         img {
             margin: 0 1vw;
             width: 3.5vw;

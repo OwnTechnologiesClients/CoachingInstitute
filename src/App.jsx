@@ -5,7 +5,6 @@ import Form from './pages/form/Form';
 import StudentSignup from './pages/studentZone/studentSignup/StudentSignup';
 import Login from './pages/studentZone/login/Login';
 import History from './pages/studentZone/history/History';
-import Course from './pages/course/Course';
 import TestSeries from './pages/testSeries/TestSeries';
 import StudyMaterial from './pages/studyMaterial/StudyMaterial';
 import PopularVideos from './pages/popularVideos/PopularVideos';
@@ -16,6 +15,8 @@ import SearchUser from './pages/admin/searchUser/SearchUser';
 import FormPrint from './pages/studentZone/history/formPrint/FormPrint'
 import RefundPolicy from './Pages/refundPolicy/RefundPolicy';
 import Result from './pages/result/Result';
+import OnlineCourse from './pages/course/OnlineCourse';
+import OfflineCourse from './pages/course/OfflineCourse';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/courses' element={<Course />} />
+          <Route path='/onlinecourses' element={<OnlineCourse />} />
+          <Route path='/offlinecourses' element={<OfflineCourse />} />
           <Route path='/testseries' element={<TestSeries />} />
           <Route path='/studymaterial' element={<StudyMaterial />} />
           <Route path='/videos' element={<PopularVideos />} />

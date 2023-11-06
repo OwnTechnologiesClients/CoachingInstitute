@@ -15,99 +15,99 @@ const WelcomeSection = () => {
 
     const notifications = [
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
         {
-            url: "/courses",
+            url: "/onlinecourses",
             content: "Free Spoken English or Special Discount for MP & HS Students"
         },
     ]
@@ -172,21 +172,40 @@ const WelcomeSection = () => {
 
             </div>
 
-            <div className='notification-panel'>
+            <div className="marqueess">
+                <div className='notification-panel'>
 
-                <h2 >NEWS & UPDATES</h2>
+                    <h2 >NEWS & UPDATES</h2>
 
-                <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                    <div className={`marquee ${isPaused ? 'paused' : ''}`}>
-                        {
-                            notifications.map((item, index) => {
-                                return <div className='notification' key={index}>
-                                    <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
-                                </div>
-                            })
-                        }
+                    <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                        <div className={`marquee ${isPaused ? 'paused' : ''}`}>
+                            {
+                                notifications.map((item, index) => {
+                                    return <div className='notification' key={index}>
+                                        <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
+                                    </div>
+                                })
+                            }
+                        </div>
+
                     </div>
+                </div>
+                <div className='quick-panel'>
 
+                    <h2 >QUICK LINKS</h2>
+
+                    <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                        <div className={`marquee ${isPaused ? 'paused' : ''}`}>
+                            {
+                                notifications.map((item, index) => {
+                                    return <div className='notification' key={index}>
+                                        <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
+                                    </div>
+                                })
+                            }
+                        </div>
+
+                    </div>
                 </div>
             </div>
 

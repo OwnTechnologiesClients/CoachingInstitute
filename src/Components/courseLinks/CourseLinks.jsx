@@ -29,12 +29,18 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
         }
     }
 
+    const currentURL = window.location.href;
+
+    // Split the URL by '/' and get the part after the last slash
+    const parts = currentURL.split('/');
+    const afterLastSlash = parts[parts.length - 1];
+
     const links = [
         [
-            "Chemical Science Coaching",
-            "GATE Chemistry Coaching",
-            "UPSC Chemistry Coaching",
-            "CSIR-NET/JRF"
+            "CSIR NET Chemical Sciences",
+            "CUET (PG) Chemistry",
+            "GATE Chemistry",
+            "IIT JAM Chemistry"
         ],
         [
             "Chemical Science Study Material",
@@ -55,7 +61,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                 links={links[0]}
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
-                url1={'/courses'}
+                url1={afterLastSlash === 'onlinecourses' || afterLastSlash === 'offlinecourses' ? `/${afterLastSlash}` : "/onlinecourses"}
             />
             <CoursePageList
                 hd1={"Study"}

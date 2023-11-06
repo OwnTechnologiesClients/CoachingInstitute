@@ -6,20 +6,6 @@ $light-text: #989696;
 
 .course-page {
 
-    .detail {
-        left: 6vw;
-        right: unset;
-
-        h2 {
-            position: absolute;
-            right: 0;
-        }
-
-        p {
-            display: none;
-        }
-    }
-
     .course-page-section {
         display: flex;
         padding: 0 3vw;

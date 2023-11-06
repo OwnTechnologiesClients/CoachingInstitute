@@ -48,7 +48,7 @@ const BenefitsSection = () => {
     //     const dispatch = useDispatch();
     //     const navigateTo = (homeCourseHeading) => {
     //         dispatch(SetActiveCourse(homeCourseHeading))
-    //         navigate('/courses')
+    //         navigate('/onlinecourses')
     //     }
     //     return (
     //         <div className='course-card'>
@@ -72,7 +72,7 @@ const BenefitsSection = () => {
                     WHY <span className='under-bar'>CHEMISTRY</span>
                 </h1>
                 {/* <button>
-                    <Link to='/courses'> View All</Link>
+                    <Link to='/onlinecourses'> View All</Link>
                 </button> */}
             </div>
             <div className="parent-cards">

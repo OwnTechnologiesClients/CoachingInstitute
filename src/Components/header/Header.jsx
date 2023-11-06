@@ -13,7 +13,7 @@ const Header1 = () => {
     return (
         <div className="top-bar">
             <div className='top-links'>
-                <span><Link to='/courses'>Popular Courses &nbsp;&nbsp;| </Link></span>
+                <span><Link to='/onlinecourses'>Popular Courses &nbsp;&nbsp;| </Link></span>
                 <span><Link to='/contact'>Help Desk &nbsp;&nbsp;| </Link></span>
                 <span><Link to={`${localStorage.getItem('token')?'/history':"/student-login"}`} >Login</Link></span>
             </div>

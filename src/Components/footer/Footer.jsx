@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/courses">Courses</Link>
+            <Link to="/onlinecourses">Courses</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
@@ -84,7 +84,7 @@ const Footer = () => {
       </div>
       <div className='bottom-footer' >
         <div className='bottom'>
-          <li><Link to='/courses'>Popular Courses |</Link></li>
+          <li><Link to='/onlinecourses'>Popular Courses |</Link></li>
           <li><Link to='/contact'>Help Desk |</Link></li>
           <li><Link to='/student-login'>Login</Link></li>
         </div>

@@ -5,18 +5,18 @@ $theme-color: #202C45;
     background-color: #2D8EFF;
     justify-content: space-around;
     color: #fff;
-    border-radius: 3.5vw;
-    padding: 5vw 6vw;
+    border-radius: 1.5vw;
+    padding: 3.5vw 5vw;
     margin: 0 2vw;
 
     .st-card {
         text-align: center;
-border-right: 1px solid #f7f7f7;
-padding-right: 4vw;
+        border-right: 1px solid #ccc;
+        padding-right: 6vw;
+
         img {
-            margin: 0 1vw;
-            width: 3.5vw;
-            height: 3.5vw;
+            width: 4vw;
+            height: 4vw;
         }
 
         .stats {
@@ -24,8 +24,9 @@ padding-right: 4vw;
 
             h1 {
                 font-weight: 700;
-                font-size: 1.7vw;
-                padding-bottom: 5px;
+                font-size: 2.5vw;
+                padding-bottom: 0.5vw;
+                margin-top: 1vw;
             }
 
             p {

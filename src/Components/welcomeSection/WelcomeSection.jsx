@@ -3,6 +3,9 @@ import './WelcomeSection.scss'
 import ss3 from '../../assets/ss3.png'
 import ss2 from '../../assets/ss2.png'
 import ss1 from '../../assets/ss1.jpg'
+import ss4 from '../../assets/ss4.jpg'
+import ss5 from '../../assets/ss5.jpg'
+import ss6 from '../../assets/ss6.jpg'
 import { WelcomeCard } from '../cards/Cards';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -134,18 +137,18 @@ const WelcomeSection = () => {
                     <br></br>
 
 
-                    <h5>Our Commitment to Your Success</h5>
+                    <strong>Our Commitment to Your Success</strong><br></br>
                     <p1>At ASAP Institute (formerly CHEMTIME), our mission is to empower students like you with the knowledge and skills needed to excel in the competitive world of chemistry entrance exams. We understand that every student is unique, and that's why we offer a variety of coaching options to cater to your specific needs and preferences.</p1>
 
                     <br></br>
                     <br></br>
-                    <h5>Course Information</h5>
+                    <strong>Course Information</strong><br></br>
                     <p1>ASAP Institute (Formerly CHEMTIME) offers a variety of courses designed to prepare students for chemistry-related entrance exams. Whether you are aiming to excel in CSIR NET Chemical Sciences, GATE Chemistry, IIT JAM, TIFR Chemistry, or other PhD entrances in Chemistry, we provide the ideal courses to meet your needs. Our courses are available in both online (live and recorded) and offline modes.</p1>
                     <br></br>
                     <button onClick={navigateTo}>View Details</button>
                     <br></br>
                     <br></br>
-                    <h5>Elaboration on Course Features</h5>
+                    <strong>Elaboration on Course Features</strong><br></br>
                     <p1>At ASAP Institute (formerly CHEMTIME), we take immense pride in our courses that are meticulously designed to offer students a comprehensive and holistic preparation for various chemistry-related entrance exams. Our courses not only focus on academic excellence but also cater to the individual needs of our diverse student community.</p1>
 
                     <div className="cards">
@@ -155,13 +158,13 @@ const WelcomeSection = () => {
                     </div>
 
 
-                    <h5>Online Platform Benefits</h5>
+                    <strong>Online Platform Benefits</strong><br></br>
                     <p1>Our online platform is designed to offer students a flexible and interactive learning experience that maximizes their success in chemistry entrance exams. Here are some of the key benefits</p1>
 
                     <div className="cards">
-                        <WelcomeCard imgSrc={ss2} title="FLEXIBILITY" description="With our online platform, you have the freedom to choose your learning schedule. Access our live classes or recorded sessions at your convenience, allowing you to maintain a balance between your study and other commitments." />
-                        <WelcomeCard imgSrc={ss3} title="ACCESS TO RECORDING" description="Never miss a class. Our online platform gives you access to recorded classes, ensuring that you can revisit lessons whenever you need to reinforce your understanding of specific topics." />
-                        <WelcomeCard imgSrc={ss1} title="INTRACTIVE ELEMENTS" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
+                        <WelcomeCard imgSrc={ss4} title="FLEXIBILITY" description="With our online platform, you have the freedom to choose your learning schedule. Access our live classes or recorded sessions at your convenience, allowing you to maintain a balance between your study and other commitments." />
+                        <WelcomeCard imgSrc={ss5} title="ACCESS TO RECORDING" description="Never miss a class. Our online platform gives you access to recorded classes, ensuring that you can revisit lessons whenever you need to reinforce your understanding of specific topics." />
+                        <WelcomeCard imgSrc={ss6} title="INTRACTIVE ELEMENTS" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
                     </div>
                 </div>
 
@@ -195,11 +198,11 @@ const WelcomeSection = () => {
                     <h2 >QUICK LINKS</h2>
 
                     <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                        <div className={`marquee ${isPaused ? 'paused' : ''}`}>
+                        <div>
                             {
                                 notifications.map((item, index) => {
                                     return <div className='notification' key={index}>
-                                        <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
+                                        <Link to={item.url}> <div>➠</div> <div className='content'>{item.content}</div></Link>
                                     </div>
                                 })
                             }

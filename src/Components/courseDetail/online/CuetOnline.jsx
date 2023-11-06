@@ -4,12 +4,12 @@ import courseImage from '../../../assets/courseDetail.png'
 const CuetOnline = () => {
     return (
         <div className='online'>
-            <img src={courseImage} alt="" />
+            <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>CUET(PG) Chemistry – Your Gateway to Academic Excellence</h1>
             <p>Welcome to the CUET(PG) Chemistry Online Batch at ASAP Institute (formerly CHEMTIME). Our carefully crafted online program is designed to facilitate your journey towards academic excellence, enabling you to excel in your postgraduate chemistry studies. Whether you are a working professional, a dedicated student, or someone looking to conquer the CUET(PG) Chemistry exam, our courses are tailored to meet your unique needs.</p>
 
-            <h2>Course Features:</h2>
+            <h3>Course Features:</h3>
             <ul>
                 <li> • <h6>Comprehensive Syllabus Coverage:</h6> Our CUET(PG) Chemistry Online Batch provides in-depth coverage of the CUET(PG) Chemistry syllabus, ensuring a robust understanding of core concepts. We believe in building a solid foundation for tackling even the most challenging questions.</li>
                 <li> • <h6>Interactive Learning:</h6> Immerse yourself in an interactive learning environment with our live online classes. Engage actively with our experienced faculty and fellow students during these sessions, enhancing your grasp of complex topics.</li>
@@ -18,13 +18,13 @@ const CuetOnline = () => {
                 <li> • <h6>Flexible Batches:</h6> We offer various batch options, including a 6-month regular batch, a 1-year weekend batch with live online classes and recorded content, and recorded course options spanning 6 months, 1 year, and 2 years. This flexibility ensures that you can choose a batch that aligns with your schedule.</li>
             </ul>
 
-            <h2>Batch Details:</h2>
+            <h3>Batch Details:</h3>
             <ul>
                 <li> • <h6>CUET(PG) Chemistry (6 Months - Regular):</h6> A six-month, regular program tailored for those who prefer an intensive learning schedule.</li>
                 <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
             </ul>
 
-            <h2>Registration Procedure:</h2>
+            <h3>Registration Procedure:</h3>
             <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p>
             <ol>
                 <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
@@ -34,12 +34,12 @@ const CuetOnline = () => {
 
             <p>Join ASAP Institute's CUET(PG) Chemistry offline course to embark on your journey to get the admissions in Central Universities for pursuing postgraduation.</p>
 
-            <h2>For inquiries and assistance, please contact us at:</h2>
+            <h3>For inquiries and assistance, please contact us at:</h3>
             <ul>
                 <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
             </ul>
 
-            <h2>Frequently Asked Questions (FAQs):</h2>
+            <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li><h6>Q1: What is the duration of the CUET(PG) Chemistry Online Batch at ASAP Institute?</h6><br /><h6>A:</h6> The duration of our CUET(PG) Chemistry Online Batch varies depending on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch, both of which include live online classes with recorded content. Additionally, we provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.</li>
                 <li><h6>Q2: How can I interact with the faculty during the live online classes?</h6><br /><h6>A:</h6> We encourage active participation, interactive discussions, and doubt-solving during the live online classes. You can also reach out to our faculty members during designated hours for any additional queries or clarifications.</li>

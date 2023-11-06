@@ -63,9 +63,9 @@ const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
     }
     return (
         <div className='course-card'>
-            <div className="price">
+            {/* <div className="price">
                 ₹{price}
-            </div>
+            </div> */}
             <img src={imgSrc} alt="" />
             <div >
                 <h2 className='under-bar'>{homeCourseHeading}</h2>

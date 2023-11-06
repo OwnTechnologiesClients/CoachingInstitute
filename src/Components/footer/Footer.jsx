@@ -14,7 +14,7 @@ const Footer = () => {
     <div>
       <div className='footer'>
         <div className="detail">
-          <Link to="/" ><img src={logo} alt="" /></Link>
+          <Link to="/" ><img src={logo} alt="" /></Link><br></br><br></br><br></br>
           <div className="message">
             Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics.
           </div>

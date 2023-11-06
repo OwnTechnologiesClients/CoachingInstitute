@@ -5,6 +5,7 @@ import Navbar from '../../Components/navbar/Navbar'
 import Footer from '../../Components/footer/Footer'
 import HeroSection from '../../components/heroSection/HeroSection'
 import bg3 from '../../assets/bg3.png'
+import bg7 from '../../assets/bg7.png'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable';
@@ -76,7 +77,7 @@ const OfflineCourse = () => {
             <Navbar />
 
             <CourseHeroSection
-                imgSrc={bg3}
+                imgSrc={bg7}
                 hd1={"OFFLINE COURSES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             />

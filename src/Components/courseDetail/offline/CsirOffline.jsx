@@ -4,12 +4,12 @@ import courseImage from '../../../assets/courseDetail.png'
 const Csir = () => {
     return (
         <div className='online'>
-            <img src={courseImage} alt="" />
+            <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>CSIR NET Chemical Sciences Offline Course</h1>
             <p>Are you aspiring to excel in the CSIR NET Chemical Sciences examination? At ASAP Institute (formerly CHEMTIME), we offer a comprehensive offline coaching program designed to empower students with the knowledge and skills needed to succeed in this highly competitive exam.</p>
 
-            <h2>Course Features:</h2>
+            <h3>Course Features:</h3>
             <ul>
                 <li> • <h6>In-Depth Subject Coverage:</h6> Our offline CSIR NET Chemical Sciences course provides thorough coverage of the syllabus, ensuring that students have a deep understanding of key concepts.</li>
                 <li> • <h6>Experienced Faculty:</h6> Classes are conducted by subject-wise experienced educators who have substantial teaching experience in their respective fields. This ensures that students receive the best guidance in the industry.</li>
@@ -20,13 +20,13 @@ const Csir = () => {
                 <li> • <h6>Preparation for Multiple Exams:</h6> While our primary focus is on CSIR NET Chemical Sciences, our course also benefits those preparing for TIFR, GATE, BARC, and SET exams.</li>
             </ul>
 
-            <h2>Course Schedule:</h2>
+            <h3>Course Schedule:</h3>
             <p>Our CSIR NET Chemical Sciences offline course spans approximately five months, with classes scheduled for 4 to 6 hours daily, six days a week for Regular Batch and 6 to 8 hours on weekends and holidays for the Weekend Batch. This intensive regimen ensures that students receive the necessary instruction and practice to excel in the exam.</p>
 
-            <h2>Assessment and Feedback:</h2>
+            <h3>Assessment and Feedback:</h3>
             <p>Upon completion of the syllabus, we conduct a comprehensive test series. This is followed by detailed discussions, allowing students to understand their strengths and areas that need improvement. Regular topic-wise tests are also part of the assessment process to monitor progress continuously.</p>
 
-            <h2>Registration Procedure:</h2>
+            <h3>Registration Procedure:</h3>
             <p>To enroll in our CSIR NET Chemical Sciences offline course, you can follow these simple steps:</p>
             <ul>
                 <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
@@ -36,27 +36,27 @@ const Csir = () => {
 
             <p>Join ASAP Institute's CSIR NET Chemical Sciences offline course to embark on your journey to success in the field of chemical sciences.</p>
 
-            <h2>Contact Information:</h2>
+            <h3>Contact Information:</h3>
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
 
-            <h2>Frequently Asked Questions (FAQs):</h2>
+            <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li>
-                    <p><h6>What is the duration of the CSIR NET Chemical Sciences offline course?</h6></p>
+                    <h6>What is the duration of the CSIR NET Chemical Sciences offline course?</h6>
                     <p>The course spans approximately five months.</p>
                 </li>
                 <li>
-                    <p><h6>Who conducts the classes?</h6></p>
+                    <h6>Who conducts the classes?</h6>
                     <p>Classes are conducted by experienced educators with substantial teaching experience in the field.</p>
                 </li>
                 <li>
-                    <p><h6>What exams does this course prepare me for?</h6></p>
+                    <h6>What exams does this course prepare me for?</h6>
                     <p>In addition to CSIR NET Chemical Sciences, the course also aids in preparing for TIFR, GATE, BARC, and SET exams.</p>
                 </li>
                 <li>
-                    <p><h6>How is my performance assessed during the course?</h6></p>
+                    <h6>How is my performance assessed during the course?</h6>
                     <p>Performance is regularly assessed through topic-wise tests, mock tests, and in-depth discussions.</p>
                 </li>
             </ol>

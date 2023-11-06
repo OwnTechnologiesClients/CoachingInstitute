@@ -4,12 +4,12 @@ import courseImage from '../../../assets/courseDetail.png'
 const CuetOffline = () => {
   return (
     <div className='online'>
-              <img src={courseImage} alt="" />
+              <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
          <h1>CUET(PG) Chemistry - Paving Your Way to Academic Excellence</h1>
     <p>Welcome to ASAP Institute's CUET(PG) Chemistry coaching, where your academic aspirations find the perfect foundation. Our comprehensive CUET(PG) Chemistry program is meticulously designed to help you excel in this competitive examination. Here, we present an overview of the key features, course details, and frequently asked questions about our CUET(PG) Chemistry coaching.</p>
 
-    <h2>Course Features:</h2>
+    <h3>Course Features:</h3>
     <ul>
         <li> • <h6>Expert Faculty:</h6> At ASAP Institute, we pride ourselves on our highly experienced and dedicated faculty members. Our educators bring years of teaching expertise and subject knowledge, ensuring you receive top-notch guidance.</li>
         <li> • <h6>Thorough Syllabus Coverage:</h6> Our CUET(PG) Chemistry program delves into every aspect of the syllabus, providing an in-depth understanding of essential concepts. We believe in laying a strong foundation to tackle even the most challenging questions.</li>
@@ -20,13 +20,13 @@ const CuetOffline = () => {
         <li> • <h6>Regular Assessments:</h6> We provide regular topic-wise assessments to gauge your progress. These assessments are followed by detailed discussions to help you understand your strengths and weaknesses better.</li>
     </ul>
 
-    <h2>Batch Details:</h2>
+    <h3>Batch Details:</h3>
     <ul>
         <li> • <h6>CUET(PG) Chemistry (6 Months - Regular):</h6> A six-month, regular program tailored for those who prefer an intensive learning schedule.</li>
         <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
     </ul>
 
-    <h2>Registration Procedure:</h2>
+    <h3>Registration Procedure:</h3>
     <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p>
     <ol>
         <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
@@ -36,12 +36,12 @@ const CuetOffline = () => {
 
     <p>Join ASAP Institute's CUET(PG) Chemistry offline course to embark on your journey to get the admissions in Central Universities for pursuing postgraduation.</p>
 
-    <h2>For inquiries and assistance, please contact us at:</h2>
+    <h3>For inquiries and assistance, please contact us at:</h3>
     <ul>
         <li> • Phone: <h6>8595764714, 7011767872, 9026800325</h6></li>
     </ul>
 
-    <h2>Frequently Asked Questions (FAQs):</h2>
+    <h3>Frequently Asked Questions (FAQs):</h3>
     <ol>
         <li><h6>Q1: What is CUET(PG), and why should I consider it?</h6><br/><h6>A:</h6> CUET(PG), or Common University Entrance Test for Postgraduate programs, is a national-level entrance examination that simplifies the admission process for various postgraduate courses in central universities. It offers a streamlined and efficient way to pursue higher education.</li>
         <li><h6>Q2: What are the benefits of taking the CUET(PG) Chemistry exam?</h6><br/><h6>A:</h6> CUET(PG) provides several advantages, including reducing the complexity of the admission process for postgraduate programs, offering a common platform to apply to multiple central universities, and streamlining the examination process.</li>

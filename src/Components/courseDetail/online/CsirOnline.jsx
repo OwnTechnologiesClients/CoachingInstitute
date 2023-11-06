@@ -5,11 +5,11 @@ import courseImage from '../../../assets/courseDetail.png'
 const CsirOnline = () => {
   return (
     <div className='online'>
-      <img src={courseImage} alt="" />
+      <img src={courseImage} alt="" /><br></br><br></br><br></br>
       <h1>CSIR NET Chemical Sciences Online Batches: Your Gateway to Success</h1>
       <p>Welcome to ASAP Institute's CSIR NET Chemical Sciences Online Batches, designed to pave your way to success in the CSIR NET Chemical Sciences examination. We offer a range of meticulously designed courses to cater to your specific needs. Here are the key features and answers to your frequently asked questions about our CSIR NET Chemical Sciences Online Batches:</p>
 
-      <h2>Course Features:</h2>
+      <h3>Course Features:</h3>
       <ul>
         <li> • <h6>Expert Faculty:</h6> At ASAP Institute, we take pride in our highly experienced and dedicated faculty members who are experts in the field. They bring years of teaching expertise and in-depth subject knowledge, ensuring that you receive the best guidance.</li>
         <li> • <h6>Comprehensive Syllabus Coverage:</h6> Our courses delve into every aspect of the CSIR NET Chemical Sciences syllabus, providing an in-depth understanding of core concepts. We believe in laying a strong foundation to tackle even the most challenging questions.</li>
@@ -20,14 +20,14 @@ const CsirOnline = () => {
         <li> • <h6>Regular Assessments:</h6> We provide regular topic-wise assessments to gauge your progress. These assessments are followed by detailed discussions to help you understand your strengths and weaknesses better.</li>
       </ul>
 
-      <h2>Batch Details:</h2>
+      <h3>Batch Details:</h3>
       <ol>
         <li> • <h6>CSIR NET (Chemical Science) - 6 Months - Regular - Online Live + Recorded</h6><br />A 6-month intensive course with regular live classes and access to recorded lectures for flexible learning.</li>
         <li> • <h6>CSIR-NET (Chemical Science) - 1 Year - Weekend - Online Live + Recorded</h6><br />A 1-year course designed for weekend learning, featuring live online classes and recorded lectures for convenient studying.</li>
         <li> • <h6>CSIR-NET (Chemical Science) - 6 Months, 1 Year, and 2 Years - Recorded</h6><br />Choose from 6-month, 1-year, or 2-year durations to access recorded lectures that allow you to study at your own pace.</li>
       </ol>
 
-      <h2>Registration Procedure:</h2>
+      <h3>Registration Procedure:</h3>
       <ol>
         <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
         <li> • <h6>In-Person Registration:</h6> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
@@ -41,7 +41,7 @@ const CsirOnline = () => {
         <li> • <h6>Phone:</h6> <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
 
-      <h2>Frequently Asked Questions (FAQs):</h2>
+      <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>
         <li><h6>Q1: Why should I choose online coaching for CSIR NET Chemical Sciences?</h6><br /><h6>A:</h6> Online coaching offers flexibility and convenience. You can attend live lectures, access recorded sessions, and engage with study materials from the comfort of your home. This approach allows you to plan your preparation according to your schedule and preferences.</li>
         <li><h6>Q2: What makes ASAP Institute's CSIR NET Chemical Sciences Online Batches stand out?</h6><br /><h6>A:</h6> Our courses are designed by experts, ensuring comprehensive syllabus coverage and effective teaching methods. You'll have access to both live and recorded lectures, providing the best of both worlds. The flexibility in course durations allows you to tailor your preparation to your specific needs.</li>

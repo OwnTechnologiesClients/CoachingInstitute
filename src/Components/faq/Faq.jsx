@@ -36,19 +36,19 @@ const Faq = () => {
                     <br></br>
                     <br></br>
 
-                    <h5>Admissions Process:</h5><br></br>
+                    <strong>Admissions Process:</strong><br></br><br></br>
                     <h5>Q: How can I enroll in ASAP Institute's courses? </h5>
                     <p1>A: Enrolling in our courses is a straightforward process. You can visit our website and find the "Admissions" section, where you'll get detailed instructions on how to register for the course of your choice.</p1>
 
                     <br></br>
                     <br></br>
-                    <h5>Study Materials:</h5><br></br>
+                    <strong>Study Materials:</strong><br></br><br></br>
                     <h5>Q: Are study materials provided for all courses? </h5>
                     <p1>A: Yes, we provide meticulously crafted study materials for all our courses. These materials are designed to align with the respective exam syllabi and serve as valuable resources during your preparation.</p1>
 
                     <br></br>
                     <br></br>
-                    <h5>Class Schedules:</h5><br></br>
+                    <strong>Class Schedules:</strong><br></br><br></br>
                     <h5>Q: Can I access live classes and recorded sessions for all courses? </h5>
                     <p1>A: Yes, you have the flexibility to choose between live classes and recorded sessions for most of our courses. This allows you to adapt your learning to your own schedule and preferences.</p1>
 

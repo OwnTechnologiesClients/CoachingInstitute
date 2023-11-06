@@ -4,12 +4,12 @@ import courseImage from '../../../assets/courseDetail.png'
 const JamOnline = () => {
   return (
     <div className='online'> 
-      <img src={courseImage} alt="" />
+      <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
       <h1>IIT-JAM Chemistry Online Batch: Igniting Your Path to Excellence</h1>
       <p>Welcome to the IIT-JAM Chemistry Online Batch by ASAP Institute, a transformative voyage towards conquering the IIT-JAM Chemistry examination. Our courses are carefully crafted to cater to a diverse audience, be it a dedicated student, a working professional, or an eager learner with aspirations to excel in IIT-JAM Chemistry.</p>
 
-      <h2>Course Features:</h2>
+      <h3>Course Features:</h3>
       <ul>
         <li> • <h6>Syllabus Mastery:</h6> Our IIT-JAM Chemistry Online Batch covers the complete IIT-JAM Chemistry syllabus. We strive to equip you with a robust understanding of every topic, ensuring you're thoroughly prepared to tackle the examination.</li>
         <li> • <h6>Interactive Learning:</h6> Immerse yourself in the world of interactive learning through our live online classes. Engage actively with our experienced faculty and fellow students during these sessions, fostering a collaborative learning environment and deeper comprehension of complex subjects.</li>
@@ -18,14 +18,14 @@ const JamOnline = () => {
         <li> • <h6>Flexible Batches:</h6> Tailor your learning experience to your schedule. We offer a 6-month regular batch, a 1-year weekend batch with live online classes, and recorded content options spanning 6 months, 1 year, and 2 years. Each option accommodates your unique learning style and pace.</li>
       </ul>
 
-      <h2>Batch Details:</h2>
+      <h3>Batch Details:</h3>
       <ul>
         <li> • IIT-JAM Chemistry Online Batch (6 months - Regular)</li>
         <li> • IIT-JAM Chemistry Online Batch (1 Year - Weekend)</li>
         <li> • IIT-JAM Chemistry Online Batch (6 Months, 1 year, and 2 years Recorded)</li>
       </ul>
 
-      <h2>Registration Procedure:</h2>
+      <h3>Registration Procedure:</h3>
       <p>To enroll in our IIT JAM CHEMISTRY online course, you can follow these simple steps:</p>
       <ul>
         <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
@@ -35,12 +35,12 @@ const JamOnline = () => {
 
       <p>Let your journey to academic success begin with us.</p>
 
-      <h2>For inquiries and assistance, please contact us at:</h2>
+      <h3>For inquiries and assistance, please contact us at:</h3>
       <ul>
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
 
-      <h2>Frequently Asked Questions (FAQs):</h2>
+      <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>
         <li><h6>Q1: What is the IIT-JAM Chemistry examination, and why is it significant?</h6><br /><h6>A:</h6> The IIT-JAM Chemistry exam stands as a gateway to esteemed educational institutions. Qualifying IIT-JAM Chemistry can open doors to admissions in IITs, IISc, and IISERs, and enhance your prospects as a scientist in renowned organizations such as DRDO and BARC.</li>
         <li><h6>Q2: How do the recorded lectures enhance the learning experience?</h6><br /><h6>A:</h6> Recorded lectures offer flexibility and convenience to students, allowing them to revisit lessons and study at their own pace. This resource reinforces their understanding of complex subjects.</li>

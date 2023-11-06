@@ -4,12 +4,12 @@ import courseImage from '../../../assets/courseDetail.png'
 const GateOffline = () => {
     return (
         <div className='online'>
-            <img src={courseImage} alt="" />
+            <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>GATE Chemistry Offline Course: Fueling Your Path to Success</h1>
             <p>Welcome to the GATE Chemistry Offline Course at ASAP Institute (formerly CHEMTIME), where we are dedicated to providing you with the ultimate tools for success. Our GATE Chemistry course has been meticulously crafted to offer you a comprehensive and well-rounded learning experience. Here, we present the pivotal features and answers to some of the most commonly asked questions about our GATE Chemistry Offline Course:</p>
 
-            <h2>Course Features:</h2>
+            <h3>Course Features:</h3>
             <ul>
                 <li> • <h6>Expert Faculty:</h6> At ASAP Institute, we take immense pride in our team of highly experienced and committed educators. Our instructors bring with them years of teaching expertise and a profound understanding of the subject matter, ensuring that you receive top-notch guidance.</li>
                 <li> • <h6>Comprehensive Syllabus Coverage:</h6> Our course takes a deep dive into every facet of the GATE Chemistry syllabus, providing a comprehensive grasp of core concepts. We firmly believe in laying a robust foundation to tackle even the most intricate questions.</li>
@@ -20,13 +20,13 @@ const GateOffline = () => {
                 <li> • <h6>Regular Assessments:</h6> We provide routine topic-wise assessments to assess your progress. These assessments are followed by in-depth discussions to help you understand your strengths and areas needing improvement.</li>
             </ul>
 
-            <h2>Batch Details:</h2>
+            <h3>Batch Details:</h3>
             <ul>
                 <li> • <h6>GATE Chemistry Offline Classes (6 Months - Regular)</h6></li>
                 <li> • <h6>GATE Chemistry Offline Classes (1 Year - Weekend)</h6></li>
             </ul>
 
-            <h2>Registration Procedure:</h2>
+            <h3>Registration Procedure:</h3>
             <p>To enroll in our GATE CHEMISTRY offline course, you can follow these simple steps:</p>
             <ul>
                 <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
@@ -36,15 +36,15 @@ const GateOffline = () => {
 
             <p>Join ASAP Institute's GATE Chemistry offline course to embark on your journey to get the admissions in IITs, IISc, IISERs or become a Scientist in DRDO, BARC etc.</p>
 
-            <h2>Contact Information:</h2>
+            <h3>Contact Information:</h3>
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
 
-            <h2>Frequently Asked Questions (FAQs):</h2>
+            <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li>
-                    <p><h6>Q1: What is the GATE exam, and why is it essential for my career?</h6></p>
+                    <h6>Q1: What is the GATE exam, and why is it essential for my career?</h6>
                     <p><h6>A:</h6> The Graduate Aptitude Test in Engineering (GATE) is a nationally recognized examination that assesses the comprehensive understanding of various undergraduate subjects in engineering and science. Qualifying GATE can open doors to postgraduate programs, research opportunities, and job placements in reputed organizations.</p>
                 </li>
                 <li>
@@ -52,15 +52,15 @@ const GateOffline = () => {
                     <p><h6>A:</h6> Clearing the GATE Chemistry exam offers numerous advantages, including eligibility for higher education, research fellowships, government job placements, and scholarships.</p>
                 </li>
                 <li>
-                    <p><h6>Q3: What job opportunities await me after passing the GATE Chemistry exam?</h6></p>
+                    <h6>Q3: What job opportunities await me after passing the GATE Chemistry exam?</h6>
                     <p><h6>A:</h6> Successful GATE candidates can explore a wide range of career options, such as research fellowships, teaching positions, roles in public sector companies, and more. It's a pathway to diverse job opportunities.</p>
                 </li>
                 <li>
-                    <p><h6>Q4: How can I enroll in the GATE Chemistry Offline Course at ASAP Institute?</h6></p>
+                    <h6>Q4: How can I enroll in the GATE Chemistry Offline Course at ASAP Institute?</h6>
                     <p><h6>A:</h6> To enroll, you may enroll online or visit our New Delhi office and complete the formalities by filling a detailed application form. Don't forget to bring two passport-size photographs and a self-attested copy of an identity proof, such as an Aadhar Card or Voter ID Card.</p>
                 </li>
                 <li>
-                    <p><h6>Q5: What is the duration of the GATE Chemistry Offline Course at ASAP Institute?</h6></p>
+                    <h6>Q5: What is the duration of the GATE Chemistry Offline Course at ASAP Institute?</h6>
                     <p><h6>A:</h6> The duration of the GATE Chemistry Offline Course at ASAP Institute varies to cater to different preferences. We offer two options:
                         <ul>
                             <li><h6>GATE Chemistry Offline Classes (6 Months - Regular):</h6> This is an intensive six-month course designed for those who prefer a regular and focused learning schedule. It provides an in-depth understanding of the GATE Chemistry syllabus, making it an ideal choice for dedicated learners.</li>
@@ -69,29 +69,29 @@ const GateOffline = () => {
                     </p>
                 </li>
                 <li>
-                    <p><h6>Q6: Does the course include mock tests and practice materials?</h6></p>
+                    <h6>Q6: Does the course include mock tests and practice materials?</h6>
                     <p><h6>A:</h6> Yes, our course offers mock tests, practice questions, and quizzes to enhance your problem-solving skills and overall preparation.</p>
                 </li>
                 <li>
-                    <p><h6>Q7: How can I reach out to the faculty for doubt clarification and guidance?</h6></p>
+                    <h6>Q7: How can I reach out to the faculty for doubt clarification and guidance?</h6>
                     <p><h6>A:</h6> We encourage interactive discussions during classes, and you can also connect with our faculty members during designated hours for doubt resolution and guidance.</p>
                 </li>
                 <li>
-                    <p><h6>Additional GATE-Related FAQs:</h6></p>
-                    <ol>
+                    <p><h3>Additional GATE-Related FAQs:</h3></p>
+                    
                         <li>
-                            <p><h6>Q8: What is the significance of the GATE exam in India?</h6></p>
+                            <h6>Q8: What is the significance of the GATE exam in India?</h6>
                             <p><h6>A:</h6> GATE is a critical examination for engineering and science graduates, serving as a qualifying benchmark for higher education, prestigious jobs, and research opportunities.</p>
                         </li>
                         <li>
-                            <p><h6>Q9: Are there job prospects in the public sector after passing the GATE Chemistry exam?</h6></p>
+                            <h6>Q9: Are there job prospects in the public sector after passing the GATE Chemistry exam?</h6>
                             <p><h6>A:</h6> Absolutely. Many government organizations recruit GATE-qualified candidates for various positions, offering job stability and excellent career growth.</p>
                         </li>
                         <li>
-                            <p><h6>Q10: How can GATE help in pursuing postgraduate programs and research opportunities?</h6></p>
+                            <h6>Q10: How can GATE help in pursuing postgraduate programs and research opportunities?</h6>
                             <p><h6>A:</h6> GATE scores are accepted by numerous universities and institutions for admission to postgraduate programs, including M.Tech and Ph.D. Additionally, GATE-qualified students are often eligible for research fellowships.</p>
                         </li>
-                    </ol>
+                    
                 </li>
             </ol>
         </div>

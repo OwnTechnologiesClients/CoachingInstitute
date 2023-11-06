@@ -4,12 +4,12 @@ import courseImage from '../../../assets/courseDetail.png'
 const GateOnline = () => {
   return (
     <div className='online'>
-      <img src={courseImage} alt="" />
+      <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
       <h1>GATE Chemistry Online Batch: Your Path to Success</h1>
       <p>At ASAP Institute (formerly CHEMTIME), we understand the importance of quality education and flexible learning options. Our GATE Chemistry Online Batch offers a comprehensive and flexible approach to GATE exam preparation. Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.</p>
 
-      <h2>Course Features:</h2>
+      <h3>Course Features:</h3>
       <ul>
         <li> • <h6>In-Depth Coverage:</h6> Our GATE Chemistry Online Batch covers the complete GATE Chemistry syllabus, ensuring you have a strong foundation in every topic. We believe in providing a comprehensive understanding of core concepts.</li>
         <li> • <h6>Interactive Learning:</h6> Our live online classes provide an interactive learning environment. You can actively engage with experienced faculty and fellow students during these sessions. This approach enhances your understanding of complex topics.</li>
@@ -18,13 +18,13 @@ const GateOnline = () => {
         <li> • <h6>Flexible Batches:</h6> We offer a 6-month regular batch, a 1-year weekend batch, and recorded content options spanning 6 months, 1 year, and 2 years to cater to your scheduling preferences.</li>
       </ul>
 
-      <h2>Additional Benefits:</h2>
+      <h3>Additional Benefits:</h3>
       <ul>
         <li> • <h6>Career Opportunities:</h6> GATE Chemistry opens doors to a wide array of career opportunities. You can explore roles in research and development, academia, government organizations, and more. The GATE score is widely recognized by top companies, and qualifying candidates often receive job offers from prestigious organizations.</li>
         <li> • <h6>Higher Education:</h6> A valid GATE score is also allow for admission to master's and doctoral programs in renowned institutes in India. It paves the way for a successful academic career.</li>
       </ul>
 
-      <h2>Registration Procedure:</h2>
+      <h3>Registration Procedure:</h3>
       <p>To enroll in our GATE CHEMISTRY online course, you can follow these simple steps:</p>
       <ul>
         <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
@@ -34,12 +34,12 @@ const GateOnline = () => {
 
       <p>Enroll in ASAP Institute's GATE Chemistry online course and pave the way for admission to prestigious institutions like IITs, IISc, and IISERs. You can also unlock opportunities to become a scientist in esteemed organizations like DRDO and BARC. Your journey to success begins here.</p>
 
-      <h2>For inquiries and assistance, please contact us at:</h2>
+      <h3>For inquiries and assistance, please contact us at:</h3>
       <ul>
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
 
-      <h2>Frequently Asked Questions (FAQs):</h2>
+      <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>
         <li><h6>Q1: What is the duration of the GATE Chemistry Online Batch at ASAP Institute?</h6><br /><h6>A:</h6> The duration of our GATE Chemistry Online Batch varies based on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch for live online classes with recorded content. We also provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.</li>
         <li><h6>Q2: How can I interact with the faculty during the online classes?</h6><br /><h6>A:</h6> We encourage interactive discussions and doubt-solving during the live online classes. You can also reach out to our faculty members during designated hours for any additional queries or clarifications.</li>

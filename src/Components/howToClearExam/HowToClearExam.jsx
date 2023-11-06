@@ -14,56 +14,7 @@ const HowToClearExam = () => {
 
 
 
-    const courseCardDetails = [
-        {
-            courseImg: img1,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        },
-        {
-            courseImg: img2,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        },
-        {
-            courseImg: img3,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        },
-        {
-            courseImg: img4,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        }
-    ]
 
-
-    // const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
-
-    //     const navigate = useNavigate()
-    //     const dispatch = useDispatch();
-    //     const navigateTo = (homeCourseHeading) => {
-    //         dispatch(SetActiveCourse(homeCourseHeading))
-    //         navigate('/onlinecourses')
-    //     }
-    //     return (
-    //         <div className='course-card'>
-    //             <div className="price">
-    //                 ₹{price}
-    //             </div>
-    //             <img src={imgSrc} alt="" />
-    //             <div >
-    //                 <h2 className='under-bar'>{homeCourseHeading}</h2>
-    //                 <p>{homeCourseDetail}</p>
-    //             </div>
-    //             <button onClick={() => navigateTo(homeCourseHeading)}>VIEW DETAILS</button>
-    //         </div>
-    //     )
-    // }
 
     return (
         <div className="exam-section">

@@ -1,7 +1,50 @@
 import React from 'react'
 import courseImage from '../../../assets/courseDetail.png'
+import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 
 const GateOnline = () => {
+  let tableFields = [
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "6 Month",
+      "Regular",
+      "✔",
+      "✔",
+      399
+    ],
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "1 Year",
+      "Weekend",
+      "✔",
+      "✔",
+      2499
+    ],
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "6 Month",
+      "Recorded",
+      "✖",
+      "✔",
+      399
+    ],
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "1 Year",
+      "Recorded",
+      "✖",
+      "✔",
+      2499
+    ],
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "2 Year",
+      "Recorded",
+      "✖",
+      "✔",
+      2499
+    ]
+  ]
   return (
     <div className='online'>
       <img src={courseImage} alt="" /><br></br><br></br><br></br>
@@ -38,6 +81,8 @@ const GateOnline = () => {
       <ul>
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
+
+      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
 
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>

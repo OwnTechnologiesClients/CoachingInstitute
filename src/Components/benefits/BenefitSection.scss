@@ -36,13 +36,12 @@ $text: #646262;
     }
 
     .parent-cards {
-        
+
 
         .fact-card {
             display: flex;
-            width: 100%;
             margin-top: 1vw;
-            
+
 
             img {
                 width: 19vw;
@@ -71,12 +70,27 @@ $text: #646262;
                 margin: 1vw;
             }
 
-            .fact-card-content{
+            .fact-card-content {
+                width: 18vw;
                 margin-right: 1vw;
                 background-color: #fff;
-                box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             
+            @media screen and (max-width:480px) {
+                flex-direction: column;
+                .fact-card-content{
+                    width: 88vw;
+                    padding: 4vw;
+                    margin: .5rem 0;
+                    h2{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: .9rem;
+                    }
+                }
+            }
         }
     }
 
@@ -105,8 +119,8 @@ $text: #646262;
                 margin: 1rem 0;
 
                 .price {
-                border-left: .8vw solid $blue;
-                font-size: 1rem;
+                    border-left: .8vw solid $blue;
+                    font-size: 1rem;
                 }
 
                 img {
@@ -132,6 +146,9 @@ $text: #646262;
                 }
             }
         }
+
+        
+        
     }
 
 }

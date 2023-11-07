@@ -11,7 +11,7 @@ import CourseTable from '../../components/courseTable/CourseTable';
 import CourseLinks from '../../components/courseLinks/CourseLinks';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import courseData from './Course.json'
-import {SetActiveCourse} from '../../redux/userSlice' 
+import { SetActiveCourse } from '../../redux/userSlice'
 import { useDispatch, useSelector } from 'react-redux';
 import CsirOnline from '../../components/courseDetail/online/CsirOnline';
 import GateOnline from '../../components/courseDetail/online/GateOnline';
@@ -23,8 +23,8 @@ const OnlineCourse = () => {
     const [activeLink, setActiveLink] = useState('CSIR NET Chemical Sciences');
     const { course } = useSelector(state => state.users)
     const dispatch = useDispatch()
-    const handleLinkClick = (link) => {        
-            setActiveLink(link);
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
     };
 
     const componentMapping = {
@@ -32,7 +32,7 @@ const OnlineCourse = () => {
         'CUET (PG) Chemistry': <CuetOnline />,
         'GATE Chemistry': <GateOnline />,
         'IIT JAM Chemistry': <JamOnline />,
-      };
+    };
 
     const tableFields = [
         [
@@ -67,7 +67,7 @@ const OnlineCourse = () => {
             dispatch(SetActiveCourse(""))
         }
     }, [])
-    
+
     return (
         <div className="course-page">
 
@@ -87,13 +87,13 @@ const OnlineCourse = () => {
                     handleLinkClick={handleLinkClick}
                 />
                 <div className="course-page-right-nav">
-                {componentMapping[activeLink]}
-                    
-                    <div className="course-idea">
+                    {componentMapping[activeLink]}
+
+                    {/* <div className="course-idea">
                         <h2 className='under-bar'>CoursesIdea</h2>
-                        {/* <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/> */}
-                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/>
-                    </div>
+                        <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
+                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+                    </div> */}
                 </div>
             </div>
             <WhatsappIcon />

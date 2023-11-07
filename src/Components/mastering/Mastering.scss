@@ -72,11 +72,25 @@ $text: #646262;
             }
 
             .fact-card-content{
+                width: 100%;
                 margin-right: 1vw;
                 background-color: #F7F7F7;
                 box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
-            
+            @media screen and (max-width:480px) {
+                flex-direction: column;
+                .fact-card-content{
+                    width: 88vw;
+                    padding: 4vw;
+                    margin: .5rem 0;
+                    h2{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: .9rem;
+                    }
+                }
+            }
         }
     }
 

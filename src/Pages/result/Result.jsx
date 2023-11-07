@@ -14,60 +14,66 @@ import topper6 from "../../assets/result/Toppers Rank-07.png"
 import topper7 from "../../assets/result/Toppers Rank-07.png"
 import topper8 from "../../assets/result/Toppers Rank-08.png"
 import topper9 from "../../assets/result/Toppers Rank-09.png"
+import { Link } from 'react-router-dom'
 
 const Result = () => {
     return (
         <div className='result-page'>
 
-            <Header1/>
-            <Header2/>
-            <Navbar/>
+            <Header1 />
+            <Header2 />
+            <Navbar />
 
-            <HeroSection hd1={"RESULTS"} hd2={"FOR YOUR BETTER FUTURE"}/>
+            <HeroSection hd1={"RESULTS"} hd2={"FOR YOUR BETTER FUTURE"} />
 
 
             <div className="row">
-                    <div className="col-md-12 mainimg">
-                        <div className="col-md-3 tpmainimg">
-                            <center><img className='result-img' src={achievement} /></center><br />
-                            <h3>IIT-JAM 2019</h3>
 
+                <div className="col-md-12 mainimg">
+                    <div className="col-md-3 tpmainimg">
+                        <center><img className='result-img' src={achievement} /></center><br />
+                        <h3>IIT-JAM 2019</h3>
+                        <Link to='/result-explore' >
+                            <button className='explore-results'>Explore</button>
+                        </Link>
+                    </div>
 
+                    <div className="col-md-3 tpimages1">
+                        <div className="toppersimg">
+                            <center><img className='result-img' src={topper1} /></center><br />
+                            <p ><b>AIR-1</b></p>
+                            <p >RAVI MAURYA
+                            </p>
+                            <p >BHU</p>
                         </div>
 
-                        <div className="col-md-3 tpimages1">
-                            <div className="toppersimg">
-                                <center><img className='result-img' src={topper1} /></center><br />
-                                <p ><b>AIR-1</b></p>
-                                <p >RAVI MAURYA
-                                </p>
-                                <p >BHU</p>
-                            </div>
-
-                        </div>
-                        <div className="col-md-3 tpimages">
-                            <div className="toppersimg">
-                                <center><img className='result-img' src={topper2} /></center><br />
-                                <p ><b>AIR-3</b></p>
-                                <p >VIVEK BHARDWAJ
-                                </p>
-                                <p >Hindu College</p>
-                            </div>
-                        </div>
-                        <div className="col-md-3 tpimages">
-                            <div className="toppersimg">
-                                <center><img className='result-img' src={topper3} /></center><br />
-                                <p ><b>AIR-6</b></p>
-                                <p >BALDEEP SINGH
-                                </p>
-                                <p >Hindu College</p>
-                            </div>
+                    </div>
+                    <div className="col-md-3 tpimages">
+                        <div className="toppersimg">
+                            <center><img className='result-img' src={topper2} /></center><br />
+                            <p ><b>AIR-3</b></p>
+                            <p >VIVEK BHARDWAJ
+                            </p>
+                            <p >Hindu College</p>
                         </div>
                     </div>
-                    <div className="col-md-12 mainimg">
+                    <div className="col-md-3 tpimages">
+                        <div className="toppersimg">
+                            <center><img className='result-img' src={topper3} /></center><br />
+                            <p ><b>AIR-6</b></p>
+                            <p >BALDEEP SINGH
+                            </p>
+                            <p >Hindu College</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-12 mainimg">
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
                         <h3>IIT-JAM 2018</h3>
+                        <Link to='/result-explore' >
+                            <button className='explore-results'>Explore</button>
+                        </Link>
                     </div>
                     <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
@@ -101,6 +107,9 @@ const Result = () => {
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
                         <h3>CSIR-NET | JRF</h3>
+                        <Link to='/result-explore' >
+                            <button className='explore-results'>Explore</button>
+                        </Link>
                     </div>
                     <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
@@ -129,9 +138,9 @@ const Result = () => {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                <Footer />
+            <Footer />
         </div>
     )
 }

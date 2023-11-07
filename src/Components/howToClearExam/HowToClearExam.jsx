@@ -1,13 +1,13 @@
 import React from 'react'
 import './HowToClearExam.scss'
-import img1 from '../../assets/homepage/course/courseimage1.png'
-import img2 from '../../assets/course.png'
-import img3 from '../../assets/course.png'
-import img4 from '../../assets/course.png'
-import { CourseCard } from '../cards/Cards';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux';
+// import img1 from '../../assets/homepage/course/courseimage1.png'
+// import img2 from '../../assets/course.png'
+// import img3 from '../../assets/course.png'
+// import img4 from '../../assets/course.png'
+// import { CourseCard } from '../cards/Cards';
+// import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom'
+// import { useDispatch } from 'react-redux';
 
 
 const HowToClearExam = () => {

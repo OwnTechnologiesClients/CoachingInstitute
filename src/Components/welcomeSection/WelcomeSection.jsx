@@ -13,7 +13,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const WelcomeSection = () => {
     const navigate = useNavigate();
     const navigateTo = () => {
-        navigate('/about')
+        navigate('/onlinecourses')
     }
 
     const notifications = [
@@ -128,7 +128,7 @@ const WelcomeSection = () => {
         <div className="welcome-section">
             <div>
                 <div className="message">
-                    <h1>Welcome to ASAP Institute - Your Ultimate Destination for Excellence in</h1>
+                    <h1>Welcome to ASAP Institute - Your Ultimate Destination for Excellence in </h1>
                     <p className='under-bar'>CHEMISTRY EXAMS</p>
                     <p1>Are you a dedicated student with your sights set on conquering chemistry-related entrance exams? Whether you're searching for premier IIT JAM coaching in Delhi, particularly in areas such as Jia Sarai and Hauz Khas, or if you're seeking expert guidance for CSIR NET Chemistry in Delhi, your search ends right here at ASAP Institute (formerly CHEMTIME)</p1>
                     <p1>We specialize in delivering high-quality coaching for a diverse range of chemistry-related entrance exams, which include CSIR NET Chemical Sciences, GATE Chemistry, TIFR Chemistry, and more.</p1>

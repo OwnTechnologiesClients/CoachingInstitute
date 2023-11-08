@@ -1,0 +1,158 @@
+{
+    "2019": {
+        "IITJAM": [
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2019",
+                "IITJAM"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-03.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-04.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2019",
+                "IITJAM"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-03.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-04.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2019",
+                "IITJAM"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-03.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-04.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2019",
+                "IITJAM"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-03.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-04.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2019",
+                "IITJAM"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-03.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-04.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ]
+        ],
+        "CSIRNET": [
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2190",
+                "CSIR"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ]
+        ]
+    },
+    "2018": {
+        "IITJAM": [
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2018",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-03.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ]
+        ],
+        "CSIRNET": [
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI 2018",
+                "CSIR"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-02.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ],
+            [
+                "./src/assets/result/Toppers Rank-04.png",
+                "AIR-1",
+                "RAVI MAURYA",
+                "BHU"
+            ]
+        ]
+    }
+}

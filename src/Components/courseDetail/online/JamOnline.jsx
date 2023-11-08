@@ -1,7 +1,62 @@
 import React from 'react'
 import courseImage from '../../../assets/courseDetail.png'
+import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 
 const JamOnline = () => {
+
+  let tableFields = [
+    [
+        "IIT-JAM (Chemistry)",
+        "6 Month",
+        "Regular",
+        "✔",
+        "✔",
+        399
+    ],
+    [
+        "IIT-JAM (Chemistry)",
+        "1 Year",
+        "Weekend",
+        "✔",
+        "✔",
+        399
+    ],
+    
+    [
+        "IIT-JAM (Chemistry)",
+        "2 Year",
+        "Weekend",
+        "✔",
+        "✔",
+        399
+    ],
+    
+    [
+        "IIT-JAM + CUET(PG) (Chemistry)",
+        "6 Month",
+        "Recorded",
+        "✖",
+        "✔",
+        399
+    ],
+    [
+        "IIT-JAM + CUET(PG) (Chemistry)",
+        "1 Year",
+        "Recorded",
+        "✖",
+        "✔",
+        2499
+    ],
+    [
+        "IIT-JAM + CUET(PG) (Chemistry)",
+        "2 Year",
+        "Recorded",
+        "✖",
+        "✔",
+        2499
+    ]
+]
+
   return (
     <div className='online'> 
       <img src={courseImage} alt="" /><br></br><br></br><br></br>
@@ -39,6 +94,8 @@ const JamOnline = () => {
       <ul>
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
+      
+      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
 
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>

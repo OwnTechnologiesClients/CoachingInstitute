@@ -9,7 +9,7 @@ $text: #646262;
     display: flex;
     justify-content: space-between;
     background-color: $theme-color;
-    padding: 5vw 6vw;
+    padding: 3vw 6vw;
     color: #fff;
 
     a {
@@ -17,11 +17,15 @@ $text: #646262;
     }
 
     .detail {
+        margin-top: 1vw;
         width: 20vw;
 
         &>a {
-            margin-left: -0.5vw;
             width: 18vw;
+
+            img {
+                width: 6vw;
+            }
         }
 
         .message {
@@ -43,7 +47,6 @@ $text: #646262;
     }
 
     .courses {
-        margin-top: 1vw;
 
         h4 {
             font-family: 'Poppins';
@@ -63,7 +66,6 @@ $text: #646262;
     }
 
     .links {
-        margin-top: 1vw;
 
         h4 {
             font-family: 'Poppins';
@@ -124,8 +126,9 @@ $text: #646262;
             width: unset;
 
             &>a {
-                margin-left: -1rem;
-                width: unset;
+                img {
+                    width: 20vw;
+                }
             }
 
             .message {

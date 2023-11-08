@@ -9,8 +9,6 @@ import { Link } from 'react-router-dom';
 
 const CourseSection = () => {
 
-   
-
     const courseCardDetails = [
         {
             courseImg:img1,
@@ -20,7 +18,7 @@ const CourseSection = () => {
         },
         {
             courseImg:img2,
-            cardHeading:"CUET(PG) Chemistry",
+            cardHeading:"CUET (PG) Chemistry",
             cardDetail:"Whether you are a working professional, a dedicated student, or someone looking to conquer the CUET(PG) Chemistry exam, our courses are tailored to meet your unique needs.",
             price:299
         },
@@ -32,7 +30,7 @@ const CourseSection = () => {
         },
         {
             courseImg:img4,
-            cardHeading:"IIT-JAM Chemistry",
+            cardHeading:"IIT JAM Chemistry",
             cardDetail:"Welcome to the IIT-JAM Chemistry Online Batch by ASAP Institute, a transformative voyage towards conquering the IIT-JAM Chemistry examination.",
             price:299
         }

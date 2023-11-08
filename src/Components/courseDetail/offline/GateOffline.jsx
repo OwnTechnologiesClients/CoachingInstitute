@@ -1,7 +1,24 @@
 import React from 'react'
 import courseImage from '../../../assets/courseDetail.png'
+import CourseTable from '../../courseTable/CourseTable'
 
 const GateOffline = () => {
+
+    let tableFields = [
+        [
+            "CSIR NET + GATE (Chemical Science)",
+            "6 Month",
+            "Regular",
+            399
+        ],
+        [
+            "CSIR NET + GATE (Chemical Science)",
+            "1 Year",
+            "Weekend",
+            2499
+        ]
+    ]
+
     return (
         <div className='online'>
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
@@ -41,6 +58,8 @@ const GateOffline = () => {
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
 
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
+
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li>
@@ -78,20 +97,20 @@ const GateOffline = () => {
                 </li>
                 <li>
                     <p><h3>Additional GATE-Related FAQs:</h3></p>
-                    
-                        <li>
-                            <h6>Q8: What is the significance of the GATE exam in India?</h6>
-                            <p><h6>A:</h6> GATE is a critical examination for engineering and science graduates, serving as a qualifying benchmark for higher education, prestigious jobs, and research opportunities.</p>
-                        </li>
-                        <li>
-                            <h6>Q9: Are there job prospects in the public sector after passing the GATE Chemistry exam?</h6>
-                            <p><h6>A:</h6> Absolutely. Many government organizations recruit GATE-qualified candidates for various positions, offering job stability and excellent career growth.</p>
-                        </li>
-                        <li>
-                            <h6>Q10: How can GATE help in pursuing postgraduate programs and research opportunities?</h6>
-                            <p><h6>A:</h6> GATE scores are accepted by numerous universities and institutions for admission to postgraduate programs, including M.Tech and Ph.D. Additionally, GATE-qualified students are often eligible for research fellowships.</p>
-                        </li>
-                    
+
+                    <li>
+                        <h6>Q8: What is the significance of the GATE exam in India?</h6>
+                        <p><h6>A:</h6> GATE is a critical examination for engineering and science graduates, serving as a qualifying benchmark for higher education, prestigious jobs, and research opportunities.</p>
+                    </li>
+                    <li>
+                        <h6>Q9: Are there job prospects in the public sector after passing the GATE Chemistry exam?</h6>
+                        <p><h6>A:</h6> Absolutely. Many government organizations recruit GATE-qualified candidates for various positions, offering job stability and excellent career growth.</p>
+                    </li>
+                    <li>
+                        <h6>Q10: How can GATE help in pursuing postgraduate programs and research opportunities?</h6>
+                        <p><h6>A:</h6> GATE scores are accepted by numerous universities and institutions for admission to postgraduate programs, including M.Tech and Ph.D. Additionally, GATE-qualified students are often eligible for research fellowships.</p>
+                    </li>
+
                 </li>
             </ol>
         </div>

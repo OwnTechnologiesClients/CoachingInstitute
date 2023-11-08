@@ -4,42 +4,42 @@ import img1 from '../../assets/homepage/course/courseimage1.png'
 import img2 from '../../assets/course.png'
 import img3 from '../../assets/course.png'
 import img4 from '../../assets/course.png'
-import { CourseCard } from '../cards/Cards';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux';
+// import { CourseCard } from '../cards/Cards';
+// import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom'
+// import { useDispatch } from 'react-redux';
 
 
 const BenefitsSection = () => {
 
 
 
-    const courseCardDetails = [
-        {
-            courseImg: img1,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        },
-        {
-            courseImg: img2,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        },
-        {
-            courseImg: img3,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        },
-        {
-            courseImg: img4,
-            cardHeading: "CSIR-NET/JRF",
-            cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
-            price: 299
-        }
-    ]
+    // const courseCardDetails = [
+    //     {
+    //         courseImg: img1,
+    //         cardHeading: "CSIR-NET/JRF",
+    //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
+    //         price: 299
+    //     },
+    //     {
+    //         courseImg: img2,
+    //         cardHeading: "CSIR-NET/JRF",
+    //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
+    //         price: 299
+    //     },
+    //     {
+    //         courseImg: img3,
+    //         cardHeading: "CSIR-NET/JRF",
+    //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
+    //         price: 299
+    //     },
+    //     {
+    //         courseImg: img4,
+    //         cardHeading: "CSIR-NET/JRF",
+    //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
+    //         price: 299
+    //     }
+    // ]
 
 
     // const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {

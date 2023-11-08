@@ -1,7 +1,34 @@
 import React from 'react'
 import courseImage from '../../../assets/courseDetail.png'
+import CourseTable from '../../courseTable/CourseTable'
 
 const JamOffline = () => {
+
+    let tableFields = [
+        [
+            "IIT-JAM (Chemistry)",
+            "6 Month",
+            "Regular",
+            399
+        ],
+        [
+            "IIT-JAM (Chemistry)",
+            "1 Year",
+            "Weekend",
+            "✔",
+            "✔",
+            399
+        ],
+
+        [
+            "IIT-JAM (Chemistry)",
+            "2 Year",
+            "Weekend",
+            399
+        ]
+    ]
+
+
     return (
         <div className='online'>
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
@@ -40,6 +67,8 @@ const JamOffline = () => {
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
+
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
 
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>

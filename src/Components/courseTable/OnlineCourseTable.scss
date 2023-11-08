@@ -2,11 +2,10 @@ $btn-bg: #47AA1B;
 $text-color: #24303E;
 $blue: #2D8EFF;
 
-.course-table {
+.online-course-table {
     margin: 1.5vw 0;
     border: 1px solid #707070;
-.dashboard{
-    
+
     h1 {
         padding: 1.1vw 3vw;
         font-weight: 400;
@@ -14,29 +13,34 @@ $blue: #2D8EFF;
         color: #fff;
         background-color: $blue;
     }
-}
     .parent-row{
         display: flex;
         font-weight: 700;
-        padding: 1vw 3vw;
+        padding: 1vw 2vw;
         border-bottom: 1px solid #707070;
         span{
             font-size: 1.1vw;
 
             &:first-child{
-                width: 17vw;
+                width: 16vw;
             }
             &:nth-child(2){
-                width: 10vw;
+                width: 8vw;
             }
             &:nth-child(3){
-                width: 12vw;
+                width: 8vw;
             }
             &:nth-child(4){
-                width: 7vw;
+                width: 5vw;
             }
             &:nth-child(5){
-                width: 12vw;
+                width: 7vw;
+            }
+            &:nth-child(6){
+                width: 7vw;
+            }
+            &:nth-child(7){
+                width: 6vw;
             }
 
         }
@@ -44,7 +48,7 @@ $blue: #2D8EFF;
     .child-row{
         display: flex;
         border-bottom: 2px solid #707070;
-        padding: 1vw 3vw;
+        padding: 1vw 2vw;
         &:last-child{
             border: none;
         }
@@ -54,19 +58,26 @@ $blue: #2D8EFF;
             width: 10%;
             font-size: 1.1vw;
             &:first-child{
-                width: 17vw;
+                width: 16vw;
             }
             &:nth-child(2){
-                width: 10vw;
+                width: 8vw;
             }
             &:nth-child(3){
-                width: 12vw;
+                width: 8vw;
             }
             &:nth-child(4){
-                width: 7vw;
+                width: 5vw;
             }
             &:nth-child(5){
-                width: 12vw;
+                width: 7vw;
+                padding-left: 2vw;
+            }
+            &:nth-child(6){
+                width: 7vw;
+            }
+            &:nth-child(7){
+                width: 6vw;
             }
         }
         button{
@@ -94,22 +105,28 @@ $blue: #2D8EFF;
                 font-size: 1rem;
                 border-bottom: 1px solid #707070;
                 span{
-                    font-size: .5rem;
+                    font-size: .4rem;
         
                     &:first-child{
-                        width: 19vw;
+                        width: 21vw;
                     }
                     &:nth-child(2){
-                        width: 15vw;
-                    }
-                    &:nth-child(3){
-                        width: 20vw;
-                    }
-                    &:nth-child(4){
                         width: 12vw;
                     }
+                    &:nth-child(3){
+                        width: 13vw;
+                    }
+                    &:nth-child(4){
+                        width: 5vw;
+                    }
                     &:nth-child(5){
-                        width: 10vw;
+                        width: 9vw;
+                    }
+                    &:nth-child(6){
+                        width: 9vw;
+                    }
+                    &:nth-child(7){
+                        width: 9vw;
                     }
         
                 }
@@ -126,19 +143,25 @@ $blue: #2D8EFF;
                     width: 10%;
                     font-size: .5rem;
                     &:first-child{
-                        width: 19vw;
+                        width: 22vw;
                     }
                     &:nth-child(2){
-                        width: 15vw;
-                    }
-                    &:nth-child(3){
-                        width: 20vw;
-                    }
-                    &:nth-child(4){
                         width: 12vw;
                     }
+                    &:nth-child(3){
+                        width: 13vw;
+                    }
+                    &:nth-child(4){
+                        width: 5vw;
+                    }
                     &:nth-child(5){
-                        width: 10vw;
+                        width: 9vw;
+                    }
+                    &:nth-child(6){
+                        width: 9vw;
+                    }
+                    &:nth-child(7){
+                        width: 9vw;
                     }
                 }
                 button{

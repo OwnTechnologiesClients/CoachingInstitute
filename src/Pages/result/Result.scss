@@ -11,9 +11,10 @@
             justify-content: center;
 
             .col-md-3 {
-                &:not(:last-child){
+                &:not(:last-child) {
                     border-right: 2px solid #ffde17;
-                 }
+                }
+
                 padding: 1.5vw 5vw;
                 width: 20vw;
                 text-align: center;
@@ -21,6 +22,20 @@
                 p {
                     font-size: .9vw;
                     padding: .2vw 0;
+                }
+
+                .explore-results {
+                    width: 7vw;
+                    font-size: 1.1vw;
+                    color: #fff;
+                    background-color: #202C45;
+                    border: none;
+                    padding: .3vw;
+                    margin: .3vw;
+                    border-radius: .5vw;
+                    &:hover{
+                        filter: brightness(200%);
+                    }
                 }
 
 
@@ -42,9 +57,18 @@
 
                 .col-md-3 {
                     width: unset;
-                    &:not(:last-child){
+
+                    .explore-results{
+                        font-size: 1rem;
+                        padding: 1vw;
+                        margin: 1vw 0;
+                        width: 30vw;
+                        border-radius: 2vw;
+                    }
+                    &:not(:last-child) {
                         border-right: none;
-                     }
+                    }
+
                     p {
                         font-size: 5vw;
                         padding: .2vw 0;

@@ -17,7 +17,7 @@ $text: #646262;
     .detail {
         font-family: 'Poppins';
         position: absolute;
-        top: 17vw;
+        top: 14vw;
         left: 6vw;
         color: #fff;
 
@@ -42,5 +42,21 @@ $text: #646262;
         p {
             font-size: 1vw;
         }
+    }
+
+    @media screen and (max-width:480px) {
+        .detail{
+            h1{
+                font-size: 6vw;
+            }
+            h2{
+                font-size: 3vw;
+                width:42vw ;
+            }
+            p{
+                display: none;
+            }
+        }
+        
     }
 }  

@@ -1,7 +1,25 @@
 import React from 'react'
 import courseImage from '../../../assets/courseDetail.png'
+import CourseTable from '../../courseTable/CourseTable'
 
 const Csir = () => {
+
+    
+  let tableFields = [
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "6 Month",
+      "Regular",
+      399
+    ],
+    [
+      "CSIR NET + GATE (Chemical Science)",
+      "1 Year",
+      "Weekend",
+      2499
+    ]
+  ]
+
     return (
         <div className='online'>
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
@@ -40,6 +58,8 @@ const Csir = () => {
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
+
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
 
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>

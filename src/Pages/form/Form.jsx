@@ -15,7 +15,7 @@ function Form() {
     const [isFormSaved, setisFormSaved] = useState(false);
     const [isPayDone, setisPayDone] = useState(false);
     const { currentUser } = useSelector((state) => state.users);
-    const { coursename, courseduration, email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername, filename } = currentUser;
+    const { coursename, coursetype, courseduration, email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername, filename } = currentUser;
     console.log(currentUser)
 
     const handlePrint = (e) => {
@@ -50,7 +50,7 @@ function Form() {
         registrationnumber: regNo,
         courseduration: courseduration,
         session: "2023-24",
-        coursetype: "",
+        coursetype: coursetype,
         coursename: coursename,
         subject: "",
         studentname: studentname,
@@ -271,7 +271,7 @@ function Form() {
 
     };
 
-    
+
 
     return (
 
@@ -387,9 +387,10 @@ function Form() {
                             name='coursetype'
                             type="radio"
                             value="Demo"
-                            // Checking this radio button if the selected option is "Male"
-                            // checked={selectedOption === "Demo"}
-                            onChange={handleChange} />
+                            checked={formData.coursetype === "Demo"}
+                        // Checking this radio button if the selected option is "Male"
+                        // checked={selectedOption === "Demo"}
+                        />
                     </label>
 
 
@@ -400,8 +401,8 @@ function Form() {
                             type="radio"
                             value="Regular"
                             // Checking this radio button if the selected option is "Female"
-                            // checked={selectedOption === "Regular"}
-                            onChange={handleChange} />
+                            checked={formData.coursetype === "Regular"}
+                             />
                     </label>
 
 
@@ -412,8 +413,8 @@ function Form() {
                             type="radio"
                             value="Weekend"
                             // Checking this radio button if the selected option is "Other"
-                            // checked={selectedOption === "Weekend"}
-                            onChange={handleChange} />
+                            checked={formData.coursetype === "Weekend"}
+                            />
                     </label>
 
                     <label>
@@ -422,8 +423,8 @@ function Form() {
                             name='coursetype'
                             type="radio"
                             value="correspondance"
-                            // checked={selectedOption === "correspondance"}
-                            onChange={handleChange} />
+                            checked={formData.coursetype === "Correspondance"}
+                            />
                     </label>
 
                     <label>
@@ -432,9 +433,8 @@ function Form() {
                             name='coursetype'
                             type="radio"
                             value="Test Series"
-                            // Checking this radio button if the selected option is "Other"
-                            // checked={selectedOption === "Test Series"}
-                            onChange={handleChange} />
+                            checked={formData.coursetype === "Test Series"}
+                            />
                     </label>
 
                 </div>
@@ -463,7 +463,7 @@ function Form() {
                         type="text"
                         name='subject'
                         value={formData.subject}
-                        onChange={handleChange} required />
+                        required />
                 </div>
 
 

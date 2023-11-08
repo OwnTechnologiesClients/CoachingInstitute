@@ -17,6 +17,7 @@ import RefundPolicy from './Pages/refundPolicy/RefundPolicy';
 import Result from './pages/result/Result';
 import OnlineCourse from './pages/course/OnlineCourse';
 import OfflineCourse from './pages/course/OfflineCourse';
+import Result1 from './pages/result/ResultPages/Result1';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/form-print' element={<FormPrint/>} />
           <Route path='/refund-policy' element={<RefundPolicy/>} />
           <Route path='/result' element={<Result />} />
+          <Route path='/result-explore' element={<Result1 />} />
         </Routes>
       </BrowserRouter>
 

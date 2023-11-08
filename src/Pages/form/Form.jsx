@@ -18,6 +18,11 @@ function Form() {
     const { coursename, coursetype, courseduration, email, price, studentname, contactnumber, dateofbirth, city, state, pincode, address, fathername, filename } = currentUser;
     console.log(currentUser)
 
+    const openParenthesisIndex = coursename.indexOf("(");
+    const closeParenthesisIndex = coursename.indexOf(")");
+
+    const subjectname = coursename.slice(openParenthesisIndex + 1, closeParenthesisIndex);
+
     const handlePrint = (e) => {
         e.preventDefault();
         if (!isFormSaved) {
@@ -50,9 +55,9 @@ function Form() {
         registrationnumber: regNo,
         courseduration: courseduration,
         session: "2023-24",
-        coursetype: coursetype,
+        coursetype: coursetype || "",
         coursename: coursename,
-        subject: "",
+        subject: subjectname,
         studentname: studentname,
         dateofbirth: dateofbirth,
         category: "",
@@ -388,6 +393,7 @@ function Form() {
                             type="radio"
                             value="Demo"
                             checked={formData.coursetype === "Demo"}
+                            onChange={handleChange}
                         // Checking this radio button if the selected option is "Male"
                         // checked={selectedOption === "Demo"}
                         />
@@ -402,7 +408,8 @@ function Form() {
                             value="Regular"
                             // Checking this radio button if the selected option is "Female"
                             checked={formData.coursetype === "Regular"}
-                             />
+                            onChange={handleChange}
+                        />
                     </label>
 
 
@@ -414,7 +421,8 @@ function Form() {
                             value="Weekend"
                             // Checking this radio button if the selected option is "Other"
                             checked={formData.coursetype === "Weekend"}
-                            />
+                            onChange={handleChange}
+                        />
                     </label>
 
                     <label>
@@ -422,9 +430,10 @@ function Form() {
                         <input
                             name='coursetype'
                             type="radio"
-                            value="correspondance"
+                            value="Correspondance"
                             checked={formData.coursetype === "Correspondance"}
-                            />
+                            onChange={handleChange}
+                        />
                     </label>
 
                     <label>
@@ -434,7 +443,8 @@ function Form() {
                             type="radio"
                             value="Test Series"
                             checked={formData.coursetype === "Test Series"}
-                            />
+                            onChange={handleChange}
+                        />
                     </label>
 
                 </div>
@@ -463,6 +473,7 @@ function Form() {
                         type="text"
                         name='subject'
                         value={formData.subject}
+                        onChange={handleChange}
                         required />
                 </div>
 

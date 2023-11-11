@@ -10,40 +10,33 @@ const CsirOnline = () => {
       "CSIR NET + GATE (Chemical Science)",
       "6 Month",
       "Regular",
-      "✔",
-      "✔",
       399
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "1 Year",
       "Weekend",
-      "✔",
-      "✔",
       2499
-    ],
+    ]
+  ]
+
+  let recorded = [
     [
       "CSIR NET + GATE (Chemical Science)",
       "6 Month",
       "Recorded",
-      "✖",
-      "✔",
       399
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "1 Year",
       "Recorded",
-      "✖",
-      "✔",
       2499
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "2 Year",
       "Recorded",
-      "✖",
-      "✔",
       2499
     ]
   ]
@@ -86,6 +79,7 @@ const CsirOnline = () => {
       </ul>
 
       <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+      <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
 
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>

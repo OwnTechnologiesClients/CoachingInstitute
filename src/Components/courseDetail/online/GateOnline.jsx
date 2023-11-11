@@ -8,40 +8,33 @@ const GateOnline = () => {
       "CSIR NET + GATE (Chemical Science)",
       "6 Month",
       "Regular",
-      "✔",
-      "✔",
       399
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "1 Year",
       "Weekend",
-      "✔",
-      "✔",
       2499
     ],
+  ]
+
+  let recorded = [
     [
       "CSIR NET + GATE (Chemical Science)",
       "6 Month",
       "Recorded",
-      "✖",
-      "✔",
       399
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "1 Year",
       "Recorded",
-      "✖",
-      "✔",
       2499
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "2 Year",
       "Recorded",
-      "✖",
-      "✔",
       2499
     ]
   ]
@@ -83,7 +76,7 @@ const GateOnline = () => {
       </ul>
 
       <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-
+      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>
         <li><h6>Q1: What is the duration of the GATE Chemistry Online Batch at ASAP Institute?</h6><br /><h6>A:</h6> The duration of our GATE Chemistry Online Batch varies based on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch for live online classes with recorded content. We also provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.</li>

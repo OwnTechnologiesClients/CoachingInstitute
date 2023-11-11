@@ -1,3 +1,7 @@
 {
-    "NET Chemical Science":"./src/assets/courseImages/courseimage1.png"
+    "NET Chemical Science":"./src/assets/courseImages/courseimage1.png",
+    "CSIR NET + GATE (Chemical Science)":"./src/assets/courseImages/courseimage1.png",
+    "CUET(PG) (Chemistry)":"./src/assets/courseImages/courseimage2.png",
+    "IIT-JAM + CUET(PG) (Chemistry)":"./src/assets/courseImages/courseimage4.png",
+    "IIT-JAM (Chemistry)":"./src/assets/courseImages/courseimage1.png"
 }

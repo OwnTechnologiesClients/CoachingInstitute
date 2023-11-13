@@ -6,59 +6,49 @@ const JamOnline = () => {
 
   let tableFields = [
     [
-        "IIT-JAM (Chemistry)",
-        "6 Month",
-        "Regular",
-        "✔",
-        "✔",
-        399
+      "IIT-JAM (Chemistry)",
+      "6 Month",
+      "Regular",
+      399
     ],
     [
-        "IIT-JAM (Chemistry)",
-        "1 Year",
-        "Weekend",
-        "✔",
-        "✔",
-        399
+      "IIT-JAM (Chemistry)",
+      "1 Year",
+      "Weekend",
+      399
     ],
-    
+
     [
-        "IIT-JAM (Chemistry)",
-        "2 Year",
-        "Weekend",
-        "✔",
-        "✔",
-        399
+      "IIT-JAM (Chemistry)",
+      "2 Year",
+      "Weekend",
+      399
     ],
-    
+  ]
+
+  let recorded = [
     [
-        "IIT-JAM + CUET(PG) (Chemistry)",
-        "6 Month",
-        "Recorded",
-        "✖",
-        "✔",
-        399
+      "IIT-JAM + CUET(PG) (Chemistry)",
+      "6 Month",
+      "Recorded",
+      399
     ],
     [
-        "IIT-JAM + CUET(PG) (Chemistry)",
-        "1 Year",
-        "Recorded",
-        "✖",
-        "✔",
-        2499
+      "IIT-JAM + CUET(PG) (Chemistry)",
+      "1 Year",
+      "Recorded",
+      2499
     ],
     [
-        "IIT-JAM + CUET(PG) (Chemistry)",
-        "2 Year",
-        "Recorded",
-        "✖",
-        "✔",
-        2499
+      "IIT-JAM + CUET(PG) (Chemistry)",
+      "2 Year",
+      "Recorded",
+      2499
     ]
-]
+  ]
 
   return (
-    <div className='online'> 
+    <div className='online'>
       <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
       <h1>IIT-JAM Chemistry Online Batch: Igniting Your Path to Excellence</h1>
@@ -94,8 +84,9 @@ const JamOnline = () => {
       <ul>
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
-      
+
       <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
 
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>

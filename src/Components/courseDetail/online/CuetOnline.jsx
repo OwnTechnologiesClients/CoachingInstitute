@@ -9,32 +9,27 @@ const CuetOnline = () => {
             "CUET(PG) (Chemistry)",
             "6 Month",
             "Regular",
-            "✔",
-            "✔",
             399
         ],
+    ]
+
+    let recorded = [
         [
             "IIT-JAM + CUET(PG) (Chemistry)",
             "6 Month",
             "Recorded",
-            "✖",
-            "✔",
             399
         ],
         [
             "IIT-JAM + CUET(PG) (Chemistry)",
             "1 Year",
             "Recorded",
-            "✖",
-            "✔",
             2499
         ],
         [
             "IIT-JAM + CUET(PG) (Chemistry)",
             "2 Year",
             "Recorded",
-            "✖",
-            "✔",
             2499
         ]
     ]
@@ -75,7 +70,7 @@ const CuetOnline = () => {
                 <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
             </ul>
             <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-
+            <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li><h6>Q1: What is the duration of the CUET(PG) Chemistry Online Batch at ASAP Institute?</h6><br /><h6>A:</h6> The duration of our CUET(PG) Chemistry Online Batch varies depending on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch, both of which include live online classes with recorded content. Additionally, we provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.</li>

@@ -9,7 +9,7 @@ const CuetOffline = () => {
             "CUET(PG) (Chemistry)",
             "6 Month",
             "Regular",
-            399
+            12000
         ]
     ]
 

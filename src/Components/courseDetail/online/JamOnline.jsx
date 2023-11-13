@@ -9,20 +9,20 @@ const JamOnline = () => {
       "IIT-JAM (Chemistry)",
       "6 Month",
       "Regular",
-      399
+      12000
     ],
     [
       "IIT-JAM (Chemistry)",
       "1 Year",
       "Weekend",
-      399
+      12000
     ],
 
     [
       "IIT-JAM (Chemistry)",
       "2 Year",
       "Weekend",
-      399
+      15000
     ],
   ]
 
@@ -31,19 +31,19 @@ const JamOnline = () => {
       "IIT-JAM + CUET(PG) (Chemistry)",
       "6 Month",
       "Recorded",
-      399
+      2499
     ],
     [
       "IIT-JAM + CUET(PG) (Chemistry)",
       "1 Year",
       "Recorded",
-      2499
+      3999
     ],
     [
       "IIT-JAM + CUET(PG) (Chemistry)",
       "2 Year",
       "Recorded",
-      2499
+      4999
     ]
   ]
 

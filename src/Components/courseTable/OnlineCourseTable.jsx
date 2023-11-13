@@ -53,15 +53,13 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
     
 
     return (
-        <div className='online-course-table'>
+        <div className='course-table'>
             <div className="dashboard">
                 <h1>{mode}</h1>
                 <div className="parent-row">
                     <span>Course</span>
                     <span>Duration</span>
                     <span>Batch Type</span>
-                    <span>Live</span>
-                    <span>Recorded</span>
                     <span>Price</span>
                     <span>Registration</span>
                 </div>
@@ -72,9 +70,7 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
                                 <span>{item[0]}</span>
                                 <span>{item[1]}</span>
                                 <span>{item[2]}</span>
-                                <span> {item[3]}</span>
-                                <span> {item[4]}</span>
-                                <span>₹ {item[5]}</span>
+                                <span>₹ {item[3]}</span>
                                 <button onClick={() => handleEnroll(item)}>Enroll Now</button>
                             </div>
                         )

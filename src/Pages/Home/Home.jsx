@@ -34,11 +34,11 @@ const Home = () => {
 
             <WelcomeSection />
 
-
+            <CourseSection />
             <BenefitsSection />
             
             <HowToClearExam />
-            <CourseSection />
+            
             <Mastering />
             
 

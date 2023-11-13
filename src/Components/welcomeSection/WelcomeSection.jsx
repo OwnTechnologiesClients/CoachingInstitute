@@ -16,103 +16,52 @@ const WelcomeSection = () => {
         navigate('/onlinecourses')
     }
 
+    const newsAndUpdates = [
+        {
+            url: "/onlinecourses",
+            content: "Unlock the secrets of success in CSIR NET + GATE (Chemical Science) with our affordable recorded online courses – quality education, pocket-friendly prices!"
+        },
+        {
+            url: "/onlinecourses",
+            content: "Buy year of online CSIR NET + GATE (Chemical Science) preparation at a pocket-friendly price and propel your scientific career forward!"
+        },
+        {
+            url: "/onlinecourses",
+            content: "Supercharge your chemistry preparation for IIT-JAM + CUET(PG) at an incredibly affordable price! 🚀📚"
+        },
+        {
+            url: "/studymaterial",
+            content: "Elevate your preparation with our comprehensive Chemical Science Study Material – your key to mastering the subject. 📚🔬"
+        },
+        {
+            url: "/testseries",
+            content: "Supercharge your preparation with our Test Series – the key to mastering your exams and achieving success. 🚀📝"
+        },
+       
+    ]
+
     const notifications = [
         {
             url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
+            content: "Unlock academic excellence and register for the best online CSIR+GATE classes"
         },
         {
             url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
+            content: "Register for CUET(PG) Chemistry – Elevate your academic journey with a gateway to excellence in postgraduate studies."
         },
         {
             url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
+            content: "Register for GATE Chemistry Online Batch: Your Path to Success in mastering the intricacies of chemistry and acing the GATE exam!"
         },
         {
             url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
+            content: "Register for IIT-JAM Chemistry Online Batch: Ignite your path to excellence and conquer the complexities with expert guidance!"
         },
         {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
+            url: "/offlinecourses",
+            content: "Unlock success in CSIR NET Chemical Sciences with our comprehensive Offline Course – Register now for expert guidance and personalized preparation!"
         },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Free Spoken English or Special Discount for MP & HS Students"
-        },
+       
     ]
 
     const [isPaused, setPaused] = useState(false);
@@ -183,7 +132,7 @@ const WelcomeSection = () => {
                     <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                         <div className={`marquee ${isPaused ? 'paused' : ''}`}>
                             {
-                                notifications.map((item, index) => {
+                                newsAndUpdates.map((item, index) => {
                                     return <div className='notification' key={index}>
                                         <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
                                     </div>

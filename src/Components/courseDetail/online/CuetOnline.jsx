@@ -9,7 +9,7 @@ const CuetOnline = () => {
             "CUET(PG) (Chemistry)",
             "6 Month",
             "Regular",
-            399
+            8000
         ],
     ]
 
@@ -18,19 +18,19 @@ const CuetOnline = () => {
             "IIT-JAM + CUET(PG) (Chemistry)",
             "6 Month",
             "Recorded",
-            399
+            2499
         ],
         [
             "IIT-JAM + CUET(PG) (Chemistry)",
             "1 Year",
             "Recorded",
-            2499
+            3999
         ],
         [
             "IIT-JAM + CUET(PG) (Chemistry)",
             "2 Year",
             "Recorded",
-            2499
+            4999
         ]
     ]
     return (

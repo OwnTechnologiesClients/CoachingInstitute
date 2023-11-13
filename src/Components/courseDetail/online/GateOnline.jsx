@@ -8,13 +8,13 @@ const GateOnline = () => {
       "CSIR NET + GATE (Chemical Science)",
       "6 Month",
       "Regular",
-      399
+      15000
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "1 Year",
       "Weekend",
-      2499
+      20000
     ],
   ]
 
@@ -23,19 +23,19 @@ const GateOnline = () => {
       "CSIR NET + GATE (Chemical Science)",
       "6 Month",
       "Recorded",
-      399
+      4999
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "1 Year",
       "Recorded",
-      2499
+      8499
     ],
     [
       "CSIR NET + GATE (Chemical Science)",
       "2 Year",
       "Recorded",
-      2499
+      10999
     ]
   ]
   return (

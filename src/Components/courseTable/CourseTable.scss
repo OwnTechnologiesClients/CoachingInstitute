@@ -36,7 +36,7 @@ $blue: #2D8EFF;
                 width: 7vw;
             }
             &:nth-child(5){
-                width: 12vw;
+                width: 10vw;
             }
 
         }
@@ -66,13 +66,14 @@ $blue: #2D8EFF;
                 width: 7vw;
             }
             &:nth-child(5){
-                width: 12vw;
+                width: 10vw;
             }
         }
         button{
             padding: .4vw;
             border: none;
             font-size: .9vw;
+            height: 2vw;
 
             background-color: $btn-bg;
             color: #fff;

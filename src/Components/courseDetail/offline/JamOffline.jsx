@@ -9,22 +9,20 @@ const JamOffline = () => {
             "IIT-JAM (Chemistry)",
             "6 Month",
             "Regular",
-            399
+            25000
         ],
         [
             "IIT-JAM (Chemistry)",
             "1 Year",
             "Weekend",
-            "✔",
-            "✔",
-            399
+            25000
         ],
 
         [
             "IIT-JAM (Chemistry)",
             "2 Year",
             "Weekend",
-            399
+            30000
         ]
     ]
 

@@ -93,7 +93,7 @@ const PopularVideos = () => {
 
                 <div className="main-video-section">
                     <h2 className='under-bar'>{activePlaylist}</h2>
-                    <iframe height="690" src={`https://www.youtube.com/embed/videoseries?si=Z02FiG3_6G0HTb2M&amp;list=${activePlaylistLink}`} title="YouTube video player" frameborder="0" ></iframe>
+                    <iframe height="690" src={`https://www.youtube.com/embed/videoseries?si=Z02FiG3_6G0HTb2M&amp;list=${activePlaylistLink}`} title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen showinfo={1}></iframe>
                 </div>
             </div>
 

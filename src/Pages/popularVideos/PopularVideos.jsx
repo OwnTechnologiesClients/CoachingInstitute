@@ -24,19 +24,16 @@ const PopularVideos = () => {
     let playlists = [
         {
             name: "Chemical Science",
-            image: "playlist/p1.png",
             numberofvideos: 5,
             playlistLink: "https://www.youtube.com/playlist?list=PL2EYCqZ7oXvLKiyVMg6AaWFNYVkmmOEZj"
         },
         {
             name: "Atomic Science",
-            image: "playlist/p2.png",
             numberofvideos: 25,
             playlistLink: "https://www.youtube.com/playlist?list=PL2EYCqZ7oXvLlQZbB8xVJh0mwomAiJeGF"
         },
         {
             name: "Physical Science",
-            image: "playlist/p3.png",
             numberofvideos: 15,
             playlistLink: "https://www.youtube.com/playlist?list=PL2EYCqZ7oXvLKiyVMg6AaWFNYVkmmOEZj"
         },

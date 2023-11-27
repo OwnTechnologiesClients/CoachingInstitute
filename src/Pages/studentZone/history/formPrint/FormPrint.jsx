@@ -80,8 +80,8 @@ function FormPrint() {
                         <input
                             name='courseduration'
                             type="radio"
-                            value="6 Month"
-                            checked={currentUser.courseduration === "6 Month"}
+                            value="6 Months"
+                            checked={currentUser.courseduration === "6 Months"}
                         />
                     </label>
 

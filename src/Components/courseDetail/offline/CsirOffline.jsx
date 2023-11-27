@@ -4,21 +4,21 @@ import CourseTable from '../../courseTable/CourseTable'
 
 const Csir = () => {
 
-    
-  let tableFields = [
-    [
-      "CSIR NET + GATE (Chemical Science)",
-      "6 Month",
-      "Regular",
-      29000
-    ],
-    [
-      "CSIR NET + GATE (Chemical Science)",
-      "1 Year",
-      "Weekend",
-      35000
+
+    let tableFields = [
+        [
+            "CSIR NET + GATE (Chemical Science)",
+            "6 Months",
+            "Regular",
+            29000
+        ],
+        [
+            "CSIR NET + GATE (Chemical Science)",
+            "1 Year",
+            "Weekend",
+            35000
+        ]
     ]
-  ]
 
     return (
         <div className='online'>
@@ -44,6 +44,12 @@ const Csir = () => {
             <h3>Assessment and Feedback:</h3>
             <p>Upon completion of the syllabus, we conduct a comprehensive test series. This is followed by detailed discussions, allowing students to understand their strengths and areas that need improvement. Regular topic-wise tests are also part of the assessment process to monitor progress continuously.</p>
 
+
+
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
+            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
+
             <h3>Registration Procedure:</h3>
             <p>To enroll in our CSIR NET Chemical Sciences offline course, you can follow these simple steps:</p>
             <ul>
@@ -58,8 +64,6 @@ const Csir = () => {
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
-
-            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
 
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>

@@ -36,7 +36,7 @@ const StudyMaterial = () => {
         [
             "UPSC Chemical Science",
             "45 minutes",
-            "6 Month",
+            "6 Months",
             699
         ],
         [

@@ -6,8 +6,8 @@ const CuetOffline = () => {
 
     let tableFields = [
         [
-            "CUET(PG) (Chemistry)",
-            "6 Month",
+            "CUET",
+            "6 Months",
             "Regular",
             12000
         ]
@@ -37,6 +37,11 @@ const CuetOffline = () => {
                 <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
             </ul>
 
+           
+
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
+            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
             <h3>Registration Procedure:</h3>
             <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p>
             <ol>
@@ -51,8 +56,6 @@ const CuetOffline = () => {
             <ul>
                 <li> • Phone: <h6>8595764714, 7011767872, 9026800325</h6></li>
             </ul>
-
-            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
 
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>

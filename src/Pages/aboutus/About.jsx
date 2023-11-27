@@ -16,15 +16,15 @@ const About = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg5}
                 hd1={"ABOUT US"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
 
-            <WelcomeSection />
+            {/* <WelcomeSection /> */}
 
-            <div className="who-we-are">
+            <div className="who-we-are"><br></br><br></br>
                 <h2 className='under-bar'><span>WHO</span> WE ARE</h2>
                 <div className="description">
                     <p>Welcome to ASAP Chemtime, a premier educational institute that provides high-quality coaching classes for competitive exams in Chemistry and Mathematics. Our institute is committed to providing the best education to students and helping them achieve their goals.</p><br />

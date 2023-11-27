@@ -21,7 +21,7 @@ import CuetOffline from '../../components/courseDetail/offline/CuetOffline';
 import CourseHeroSection from '../../components/courseHeroSection/CourseHeroSection';
 
 const OfflineCourse = () => {
-    const [activeLink, setActiveLink] = useState('CSIR NET Chemical Sciences');
+    const [activeLink, setActiveLink] = useState('CSIR-NET Chemical Sciences');
     const { course } = useSelector(state => state.users)
     const dispatch = useDispatch()
     const handleLinkClick = (link) => {        
@@ -29,10 +29,11 @@ const OfflineCourse = () => {
     };
 
     const componentMapping = {
-        'CSIR NET Chemical Sciences': <CsirOffline />,
-        'CUET (PG) Chemistry': <CuetOffline />,
+        'CSIR-NET Chemical Sciences': <CsirOffline />,
         'GATE Chemistry': <GateOffline />,
-        'IIT JAM Chemistry': <JamOffline />,
+        'IIT-JAM Chemistry': <JamOffline />,
+        'CUET (PG) Chemistry': <CuetOffline />,
+        
       };
 
     useEffect(() => {

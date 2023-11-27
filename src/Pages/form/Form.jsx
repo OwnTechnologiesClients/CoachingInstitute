@@ -330,7 +330,7 @@ function Form() {
                             name='courseduration'
                             type="radio"
                             value="6 Month"
-                            checked={formData.courseduration === "6 Month"}
+                            checked={formData.courseduration === "6 Months"}
                         />
                     </label>
 

@@ -6,20 +6,20 @@ const JamOffline = () => {
 
     let tableFields = [
         [
-            "IIT-JAM (Chemistry)",
-            "6 Month",
+            "IIT-JAM",
+            "6 Months",
             "Regular",
             25000
         ],
         [
-            "IIT-JAM (Chemistry)",
+            "IIT-JAM",
             "1 Year",
             "Weekend",
             25000
         ],
 
         [
-            "IIT-JAM (Chemistry)",
+            "IIT-JAM",
             "2 Year",
             "Weekend",
             30000
@@ -51,6 +51,11 @@ const JamOffline = () => {
                 <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
             </ul>
 
+
+
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
+            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
             <h3>Registration Procedure:</h3>
             <p>To enroll in our CUET(PG) Chemistry offline course, you can follow these simple steps:</p>
             <ul>
@@ -65,9 +70,6 @@ const JamOffline = () => {
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
-
-            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
-
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li>

@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="detail">
           <Link to="/" ><img src={logo} alt="" /></Link><br></br><br></br>
           <div className="message">
-            Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics.
+            At ASAP Institute (formerly CHEMTIME), our mission is to empower students like you with the knowledge and skills needed to excel in the competitive world of chemistry entrance exams. We understand that every student is unique, and that's why we offer a variety of coaching options to cater to your specific needs and preferences.
           </div>
           <div className="footer-icons">
             <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'><img src={fbicon} width={"25vw"} alt="" /></a>
@@ -89,8 +89,8 @@ const Footer = () => {
           <li><Link to='/student-login'>Login</Link></li>
         </div>
         <div className='rights'>
-          <p style={{marginLeft:"-6rem"}}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.com/" target='_blank'>OwnTechnologies</a></p>
-        </div>  
+          <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.com/" target='_blank'>OwnTechnologies</a></p>
+        </div>
         <div>
           <a href="#navbar"><img src={down} alt="" /></a>
         </div>

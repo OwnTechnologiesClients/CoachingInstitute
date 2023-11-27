@@ -37,10 +37,10 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
 
     const links = [
         [
-            "CSIR NET Chemical Sciences",
-            "CUET (PG) Chemistry",
+            "CSIR-NET Chemical Sciences",
             "GATE Chemistry",
-            "IIT JAM Chemistry"
+            "IIT-JAM Chemistry",
+            "CUET (PG) Chemistry"
         ],
         [
             "Chemical Science Study Material",
@@ -86,31 +86,31 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                 <h2>Opening <span className='under-bar'>Hours</span></h2>
                 <div className="timings">
                     <span>Monday :</span>
-                    <span>6:00 am - 8:00 pm</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
                 <div className="timings">
                     <span>Tuesday :</span>
-                    <span>6:00 am - 8:00 pm</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
                 <div className="timings">
                     <span>Wednesday :</span>
-                    <span>6:00 am - 8:00 pm</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
                 <div className="timings">
                     <span>Thursday :</span>
-                    <span>6:00 am - 8:00 pm</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
                 <div className="timings">
                     <span>Friday :</span>
-                    <span>6:00 am - 8:00 pm</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
                 <div className="timings">
                     <span>Saturday :</span>
-                    <span>6:00 am - 8:00 pm</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
                 <div className="timings">
                     <span>Sunday :</span>
-                    <span style={{ width: "50%" }}>Closed</span>
+                    <span>9:00 am - 8:00 pm</span>
                 </div>
 
             </div>

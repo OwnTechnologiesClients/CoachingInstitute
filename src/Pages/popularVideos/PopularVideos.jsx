@@ -63,11 +63,11 @@ const PopularVideos = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg5}
                 hd1={"POPULAR VIDEOS"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
 
             <div className="popular-videos-section">
                 <h2 className='under-bar'><span>POPULAR</span> VIDEOS</h2>

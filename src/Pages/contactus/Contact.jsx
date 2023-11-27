@@ -104,11 +104,11 @@ const Contact = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg5}
                 hd1={"CONTACT US"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
 
             <div className="contact-page-section">
                 <div className="contact-cards">

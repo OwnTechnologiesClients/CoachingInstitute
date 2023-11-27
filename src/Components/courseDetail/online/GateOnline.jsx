@@ -5,13 +5,13 @@ import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 const GateOnline = () => {
   let tableFields = [
     [
-      "CSIR NET + GATE (Chemical Science)",
-      "6 Month",
+      "GATE",
+      "6 Months",
       "Regular",
       15000
     ],
     [
-      "CSIR NET + GATE (Chemical Science)",
+      "GATE",
       "1 Year",
       "Weekend",
       20000
@@ -20,19 +20,19 @@ const GateOnline = () => {
 
   let recorded = [
     [
-      "CSIR NET + GATE (Chemical Science)",
-      "6 Month",
+      "GATE",
+      "6 Months",
       "Recorded",
       4999
     ],
     [
-      "CSIR NET + GATE (Chemical Science)",
+      "GATE",
       "1 Year",
       "Recorded",
       8499
     ],
     [
-      "CSIR NET + GATE (Chemical Science)",
+      "GATE",
       "2 Year",
       "Recorded",
       10999
@@ -60,6 +60,12 @@ const GateOnline = () => {
         <li> • <h6>Higher Education:</h6> A valid GATE score is also allow for admission to master's and doctoral programs in renowned institutes in India. It paves the way for a successful academic career.</li>
       </ul>
 
+     
+
+      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+      <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
       <h3>Registration Procedure:</h3>
       <p>To enroll in our GATE CHEMISTRY online course, you can follow these simple steps:</p>
       <ul>
@@ -75,8 +81,6 @@ const GateOnline = () => {
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
 
-      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>
         <li><h6>Q1: What is the duration of the GATE Chemistry Online Batch at ASAP Institute?</h6><br /><h6>A:</h6> The duration of our GATE Chemistry Online Batch varies based on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch for live online classes with recorded content. We also provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.</li>

@@ -6,13 +6,13 @@ const GateOffline = () => {
 
     let tableFields = [
         [
-            "CSIR NET + GATE (Chemical Science)",
-            "6 Month",
+            "GATE",
+            "6 Months",
             "Regular",
             29000
         ],
         [
-            "CSIR NET + GATE (Chemical Science)",
+            "GATE",
             "1 Year",
             "Weekend",
             35000
@@ -43,6 +43,11 @@ const GateOffline = () => {
                 <li> • <h6>GATE Chemistry Offline Classes (1 Year - Weekend)</h6></li>
             </ul>
 
+           
+
+            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
+            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
             <h3>Registration Procedure:</h3>
             <p>To enroll in our GATE CHEMISTRY offline course, you can follow these simple steps:</p>
             <ul>
@@ -57,8 +62,6 @@ const GateOffline = () => {
             <ul>
                 <li> • <h6>Phone:</h6> 8595764714, 7011767872, 9026800325</li>
             </ul>
-
-            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
 
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>

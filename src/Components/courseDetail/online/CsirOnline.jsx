@@ -7,13 +7,13 @@ const CsirOnline = () => {
 
   let tableFields = [
     [
-      "CSIR NET + GATE (Chemical Science)",
-      "6 Month",
+      "CSIR NET (Chemical Science)",
+      "6 Months",
       "Regular",
-      15000
+      17700
     ],
     [
-      "CSIR NET + GATE (Chemical Science)",
+      "CSIR NET (Chemical Science)",
       "1 Year",
       "Weekend",
       20000
@@ -22,19 +22,19 @@ const CsirOnline = () => {
 
   let recorded = [
     [
-      "CSIR NET + GATE (Chemical Science)",
-      "6 Month",
+      "CSIR NET (Chemical Science)",
+      "6 Months",
       "Recorded",
       4999
     ],
     [
-      "CSIR NET + GATE (Chemical Science)",
+      "CSIR NET (Chemical Science)",
       "1 Year",
       "Recorded",
       8499
     ],
     [
-      "CSIR NET + GATE (Chemical Science)",
+      "CSIR NET (Chemical Science)",
       "2 Year",
       "Recorded",
       10999
@@ -51,7 +51,7 @@ const CsirOnline = () => {
         <li> • <h6>Expert Faculty:</h6> At ASAP Institute, we take pride in our highly experienced and dedicated faculty members who are experts in the field. They bring years of teaching expertise and in-depth subject knowledge, ensuring that you receive the best guidance.</li>
         <li> • <h6>Comprehensive Syllabus Coverage:</h6> Our courses delve into every aspect of the CSIR NET Chemical Sciences syllabus, providing an in-depth understanding of core concepts. We believe in laying a strong foundation to tackle even the most challenging questions.</li>
         <li> • <h6>Effective Teaching Methods:</h6> We employ various teaching techniques, including live lectures, problem-solving sessions, and interactive discussions to make learning engaging and effective. Our courses are designed to offer you a real classroom-like experience from the comfort of your home.</li>
-        <li> • <h6>Multiple Batch Options:</h6> Choose the course duration that suits your needs. We offer 6-month, 1-year, and 2-year course options to accommodate your preparation plan.</li>
+        <li> • <h6>Multiple Batch Options:</h6> Choose the course duration that suits your needs. We offer 6-months, 1-year, and 2-year course options to accommodate your preparation plan.</li>
         <li> • <h6>Access to Recorded Lectures:</h6> Don't worry if you miss a live session; all our online classes are recorded for your convenience. You can revisit the lectures at your own pace, ensuring that you grasp all the essential concepts.</li>
         <li> • <h6>Quality Study Materials:</h6> Our study materials are curated to facilitate better comprehension of complex topics. We provide you with essential resources to support your online learning.</li>
         <li> • <h6>Regular Assessments:</h6> We provide regular topic-wise assessments to gauge your progress. These assessments are followed by detailed discussions to help you understand your strengths and weaknesses better.</li>
@@ -59,10 +59,16 @@ const CsirOnline = () => {
 
       <h3>Batch Details:</h3>
       <ol>
-        <li> • <h6>CSIR NET (Chemical Science) - 6 Months - Regular - Online Live + Recorded</h6><br />A 6-month intensive course with regular live classes and access to recorded lectures for flexible learning.</li>
+        <li> • <h6>CSIR NET (Chemical Science) - 6 Months - Regular - Online Live + Recorded</h6><br />A 6-months intensive course with regular live classes and access to recorded lectures for flexible learning.</li>
         <li> • <h6>CSIR-NET (Chemical Science) - 1 Year - Weekend - Online Live + Recorded</h6><br />A 1-year course designed for weekend learning, featuring live online classes and recorded lectures for convenient studying.</li>
-        <li> • <h6>CSIR-NET (Chemical Science) - 6 Months, 1 Year, and 2 Years - Recorded</h6><br />Choose from 6-month, 1-year, or 2-year durations to access recorded lectures that allow you to study at your own pace.</li>
+        <li> • <h6>CSIR-NET (Chemical Science) - 6 Months, 1 Year, and 2 Years - Recorded</h6><br />Choose from 6-months, 1-year, or 2-year durations to access recorded lectures that allow you to study at your own pace.</li>
       </ol>
+
+     
+
+      <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+      <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+      <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
       <h3>Registration Procedure:</h3>
       <ol>
@@ -78,16 +84,13 @@ const CsirOnline = () => {
         <li> • <h6>Phone:</h6> <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
 
-      <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-      <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
-
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>
         <li><h6>Q1: Why should I choose online coaching for CSIR NET Chemical Sciences?</h6><br /><h6>A:</h6> Online coaching offers flexibility and convenience. You can attend live lectures, access recorded sessions, and engage with study materials from the comfort of your home. This approach allows you to plan your preparation according to your schedule and preferences.</li>
         <li><h6>Q2: What makes ASAP Institute's CSIR NET Chemical Sciences Online Batches stand out?</h6><br /><h6>A:</h6> Our courses are designed by experts, ensuring comprehensive syllabus coverage and effective teaching methods. You'll have access to both live and recorded lectures, providing the best of both worlds. The flexibility in course durations allows you to tailor your preparation to your specific needs.</li>
         <li><h6>Q3: Are there mock tests and practice materials included in the CSIR NET Chemical Sciences Online Batches?</h6><br /><h6>A:</h6> Yes, we offer a variety of mock tests, practice questions, and quizzes to help you assess your progress and sharpen your problem-solving skills. These resources are vital for your overall preparation.</li>
         <li><h6>Q4: What are the benefits of earning the CSIR NET Chemical Sciences qualification?</h6><br /><h6>A:</h6> Qualifying for the CSIR NET Chemical Sciences examination opens doors to numerous opportunities in research, academics, and the chemical industry. It is an essential step towards your academic and career growth.</li>
-        <li><h6>Q5: How do the different batch durations work, and which one should I choose?</h6><br /><h6>A:</h6> You can choose from 6-month, 1-year, or 2-year durations based on your preparation needs. The live and recorded options provide flexibility for your learning pace and schedule.</li>
+        <li><h6>Q5: How do the different batch durations work, and which one should I choose?</h6><br /><h6>A:</h6> You can choose from 6-months, 1-year, or 2-year durations based on your preparation needs. The live and recorded options provide flexibility for your learning pace and schedule.</li>
         <li><h6>Q6: Can I access the recorded lectures at any time, or do they have a specific schedule?</h6><br /><h6>A:</h6> The recorded lectures are available for your convenience. You can access them at any time that suits your schedule, allowing you to study at your own pace.</li>
         <li><h6>Q7: How do I interact with faculty and fellow students in the online classes?</h6><br /><h6>A:</h6> During live sessions, you can interact with the faculty and your peers through chat and discussion forums. This engagement helps clarify doubts, share insights, and enhance your learning experience.</li>
         <li><h6>Q8: What are the system requirements for attending online classes and accessing recorded lectures?</h6><br /><h6>A:</h6> To attend online classes and access recorded lectures, you need a computer or mobile device with an internet connection. We recommend a stable internet connection and modern web browsers for the best experience.</li>

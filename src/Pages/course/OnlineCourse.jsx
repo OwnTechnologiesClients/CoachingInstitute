@@ -20,7 +20,7 @@ import CuetOnline from '../../components/courseDetail/online/CuetOnline';
 import CourseHeroSection from '../../components/courseHeroSection/CourseHeroSection';
 
 const OnlineCourse = () => {
-    const [activeLink, setActiveLink] = useState('CSIR NET Chemical Sciences');
+    const [activeLink, setActiveLink] = useState('CSIR-NET Chemical Sciences');
     const { course } = useSelector(state => state.users)
     const dispatch = useDispatch()
     const handleLinkClick = (link) => {
@@ -28,10 +28,11 @@ const OnlineCourse = () => {
     };
 
     const componentMapping = {
-        'CSIR NET Chemical Sciences': <CsirOnline />,
-        'CUET (PG) Chemistry': <CuetOnline />,
+        'CSIR-NET Chemical Sciences': <CsirOnline />,
         'GATE Chemistry': <GateOnline />,
-        'IIT JAM Chemistry': <JamOnline />,
+        'IIT-JAM Chemistry': <JamOnline />,
+        'CUET (PG) Chemistry': <CuetOnline />,
+        
     };
 
     const tableFields = [
@@ -50,7 +51,7 @@ const OnlineCourse = () => {
         [
             "UPSC Chemical Science",
             "45 minutes",
-            "6 Month",
+            "6 Months",
             699
         ],
         [

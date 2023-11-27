@@ -6,8 +6,8 @@ const CuetOnline = () => {
 
     let tableFields = [
         [
-            "CUET(PG) (Chemistry)",
-            "6 Month",
+            "CUET",
+            "6 Months",
             "Regular",
             8000
         ],
@@ -15,19 +15,19 @@ const CuetOnline = () => {
 
     let recorded = [
         [
-            "IIT-JAM + CUET(PG) (Chemistry)",
-            "6 Month",
+            "CUET",
+            "6 Months",
             "Recorded",
             2499
         ],
         [
-            "IIT-JAM + CUET(PG) (Chemistry)",
+            "CUET",
             "1 Year",
             "Recorded",
             3999
         ],
         [
-            "IIT-JAM + CUET(PG) (Chemistry)",
+            "CUET",
             "2 Year",
             "Recorded",
             4999
@@ -55,6 +55,11 @@ const CuetOnline = () => {
                 <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
             </ul>
 
+
+            <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+            <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
             <h3>Registration Procedure:</h3>
             <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p>
             <ol>
@@ -69,8 +74,7 @@ const CuetOnline = () => {
             <ul>
                 <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
             </ul>
-            <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-            <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li><h6>Q1: What is the duration of the CUET(PG) Chemistry Online Batch at ASAP Institute?</h6><br /><h6>A:</h6> The duration of our CUET(PG) Chemistry Online Batch varies depending on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch, both of which include live online classes with recorded content. Additionally, we provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.</li>

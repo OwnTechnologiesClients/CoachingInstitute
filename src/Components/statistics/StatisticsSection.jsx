@@ -3,10 +3,11 @@ import './Statistics.scss';
 import smile from '../../assets/smile.png';
 
 const statisticsData = [
-  { label: 'HAPPY STUDENTS', maxcount: 2450 ,count:0},
-  { label: 'TOTAL TEACHERS', maxcount: 10 ,count:0},
-  { label: 'CERTIFICATION', maxcount: 500 ,count:0},
-  { label: 'EXAMS', maxcount: 2000 ,count:0},
+  { label: 'HAPPY STUDENTS', maxcount: 2000 ,count:0},
+  { label: 'NET QUALIFIED', maxcount: 200 ,count:0},
+  { label: 'GATE QUALIFIED', maxcount: 1500 ,count:0},
+  { label: 'IIT JAM QUALIFIED', maxcount: 100 ,count:0},
+  { label: 'TIFR QUALIFIED', maxcount: 20 ,count:0},
 ];
 
 const StatisticsSection = () => {

@@ -12,7 +12,7 @@ const CourseSection = () => {
     const courseCardDetails = [
         {
             courseImg:img1,
-            cardHeading:"CSIR NET Chemical Sciences",
+            cardHeading:"CSIR-NET Chemical Sciences",
             cardDetail:"Welcome to ASAP Institute's CSIR NET Chemical Sciences Online Batches, designed to pave your way to success in the CSIR NET Chemical Sciences examination.",
             price:299
         },
@@ -30,7 +30,7 @@ const CourseSection = () => {
         },
         {
             courseImg:img4,
-            cardHeading:"IIT JAM Chemistry",
+            cardHeading:"IIT-JAM Chemistry",
             cardDetail:"Welcome to the IIT-JAM Chemistry Online Batch by ASAP Institute, a transformative voyage towards conquering the IIT-JAM Chemistry examination.",
             price:299
         }

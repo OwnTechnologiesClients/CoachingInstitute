@@ -18,50 +18,74 @@ const WelcomeSection = () => {
 
     const newsAndUpdates = [
         {
-            url: "/onlinecourses",
-            content: "Unlock the secrets of success in CSIR NET + GATE (Chemical Science) with our affordable recorded online courses – quality education, pocket-friendly prices!"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Buy year of online CSIR NET + GATE (Chemical Science) preparation at a pocket-friendly price and propel your scientific career forward!"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Supercharge your chemistry preparation for IIT-JAM + CUET(PG) at an incredibly affordable price! 🚀📚"
-        },
-        {
-            url: "/studymaterial",
-            content: "Elevate your preparation with our comprehensive Chemical Science Study Material – your key to mastering the subject. 📚🔬"
+            url: "/testseries",
+            content: "Test Series for CSIR NET Dec 2023 is now live. Sharpen your skills and boost your preparation by joining now!            "
         },
         {
             url: "/testseries",
-            content: "Supercharge your preparation with our Test Series – the key to mastering your exams and achieving success. 🚀📝"
+            content: "Test Series for GATE 2024 is live. Don't miss this opportunity to practice and enhance your exam readiness. Join now!            "
+        },
+        {
+            url: "/testseries",
+            content: "Test Series for IIT JAM 2024 is now available. Enroll today to assess your preparation and improve your performance!"
+        },
+        {
+            url: "/offlinecourses",
+            content: "CSIR NET June 2024 Offline Batch is set to commence on January 5, 2023. Register now for in-person classes and personalized guidance."
+        },
+        {
+            url: "/onlinecourses",
+            content: "CSIR NET June 2024 Online Batch starts on January 5, 2023. Secure your place for online learning with our experienced faculty."
+        },
+        {
+            url: "/offlinecourses",
+            content: "GATE 2025 Offline Batch begins on February 18, 2023. Register early to reserve your spot for comprehensive offline coaching."
+        },
+        {
+            url: "/onlinecourses",
+            content: "GATE 2025 Online Batch also starts on February 18, 2023. Join our online classes for flexible and effective exam preparation."
+        },
+        {
+            url: "/offlinecourse",
+            content: "IIT JAM 2025 Offline Batch is scheduled to begin on February 18, 2023. Registration is open for in-person coaching sessions."
+        },
+        {
+            url: "/onlinecourses",
+            content: "IIT JAM 2025 Online Batch starts on February 18, 2023. Register now for our online classes and access quality education from the comfort of your home."
         },
        
     ]
 
     const notifications = [
         {
-            url: "/onlinecourses",
-            content: "Unlock academic excellence and register for the best online CSIR+GATE classes"
+            url: "/testseries",
+            content: "Test Series"
+        },
+        {
+            url: "/studymaterial",
+            content: "Study material"
         },
         {
             url: "/onlinecourses",
-            content: "Register for CUET(PG) Chemistry – Elevate your academic journey with a gateway to excellence in postgraduate studies."
+            content: "New Batches"
         },
         {
-            url: "/onlinecourses",
-            content: "Register for GATE Chemistry Online Batch: Your Path to Success in mastering the intricacies of chemistry and acing the GATE exam!"
-        },
-        {
-            url: "/onlinecourses",
-            content: "Register for IIT-JAM Chemistry Online Batch: Ignite your path to excellence and conquer the complexities with expert guidance!"
+            url: "/student-login",
+            content: "Student Login"
         },
         {
             url: "/offlinecourses",
-            content: "Unlock success in CSIR NET Chemical Sciences with our comprehensive Offline Course – Register now for expert guidance and personalized preparation!"
+            content: "Results"
         },
-       
+        {
+            url: "https://blog.chemtime.co.in/",
+            content: "Blogs"
+        },
+        {
+            url: "/videos",
+            content: "Popular Videos"
+        },
+        
     ]
 
     const [isPaused, setPaused] = useState(false);
@@ -103,7 +127,7 @@ const WelcomeSection = () => {
                     <div className="cards">
                         <WelcomeCard imgSrc={ss2} title="TEACHING METHOD" description="Our experienced faculty, comprised of renowned scientists and professors, employ a unique teaching approach that emphasizes understanding chemistry in its purest form. Through live and recorded classes, they make complex concepts easy to grasp, ensuring that you gain a strong foundation." />
                         <WelcomeCard imgSrc={ss3} title="STUDY MATERIAL" description="We provide students with meticulously crafted study materials that are aligned with the exam syllabus. These materials are designed to solidify your understanding of key concepts and serve as valuable resources throughout your preparation journey." />
-                        <WelcomeCard imgSrc={ss1} title="UNIQUE TEACHING" description="What sets ASAP Institute apart is our commitment to ensuring that all topics are comprehensively covered and delivered on schedule. This approach guarantees that you receive a well-rounded education and are well-prepared to tackle even the most challenging questions on your exams." />
+                        <WelcomeCard imgSrc={ss1} title="TIMELY SYLLABUS COVER" description="What sets ASAP Institute apart is our commitment to ensuring that all topics are comprehensively covered and delivered on schedule. This approach guarantees that you receive a well-rounded education and are well-prepared to tackle even the most challenging questions on your exams." />
                     </div>
 
 
@@ -113,7 +137,7 @@ const WelcomeSection = () => {
                     <div className="cards">
                         <WelcomeCard imgSrc={ss4} title="FLEXIBILITY" description="With our online platform, you have the freedom to choose your learning schedule. Access our live classes or recorded sessions at your convenience, allowing you to maintain a balance between your study and other commitments." />
                         <WelcomeCard imgSrc={ss5} title="ACCESS TO RECORDING" description="Never miss a class. Our online platform gives you access to recorded classes, ensuring that you can revisit lessons whenever you need to reinforce your understanding of specific topics." />
-                        <WelcomeCard imgSrc={ss6} title="INTRACTIVE ELEMENTS" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
+                        <WelcomeCard imgSrc={ss6} title="INTERACTIVE CLASSES" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
                     </div>
                 </div>
 
@@ -127,7 +151,7 @@ const WelcomeSection = () => {
             <div className="marqueess">
                 <div className='notification-panel'>
 
-                    <h2 >NEWS & UPDATES</h2>
+                    <h2 >NOTICE</h2>
 
                     <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                         <div className={`marquee ${isPaused ? 'paused' : ''}`}>
@@ -146,7 +170,7 @@ const WelcomeSection = () => {
 
                     <h2 >QUICK LINKS</h2>
 
-                    <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                    <div className="quick-link-marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                         <div>
                             {
                                 notifications.map((item, index) => {

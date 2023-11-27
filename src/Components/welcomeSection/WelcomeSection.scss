@@ -101,6 +101,11 @@ $text: #646262;
             position: relative;
             overflow: hidden;
         }
+        .quick-link-marquee-container {
+            height: 54vh;
+            position: relative;
+            overflow: hidden;
+        }
 
         .marquee {
             animation: marquee 10s reverse infinite;
@@ -159,6 +164,11 @@ $text: #646262;
 
         .marquee-container {
             height: 90vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .quick-link-marquee-container {
+            height: 54vh;
             position: relative;
             overflow: hidden;
         }
@@ -283,6 +293,11 @@ $text: #646262;
             .marquee-container {
                 height: 45vh;
                 padding: unset;
+            }
+            .quick-link-marquee-container {
+                height: 54vh;
+                position: relative;
+                overflow: hidden;
             }
 
             li {

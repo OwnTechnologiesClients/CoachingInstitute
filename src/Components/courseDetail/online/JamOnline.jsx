@@ -6,20 +6,20 @@ const JamOnline = () => {
 
   let tableFields = [
     [
-      "IIT-JAM (Chemistry)",
-      "6 Month",
+      "IIT-JAM",
+      "6 Months",
       "Regular",
       12000
     ],
     [
-      "IIT-JAM (Chemistry)",
+      "IIT-JAM",
       "1 Year",
       "Weekend",
       12000
     ],
 
     [
-      "IIT-JAM (Chemistry)",
+      "IIT-JAM",
       "2 Year",
       "Weekend",
       15000
@@ -28,19 +28,19 @@ const JamOnline = () => {
 
   let recorded = [
     [
-      "IIT-JAM + CUET(PG) (Chemistry)",
-      "6 Month",
+      "IIT-JAM",
+      "6 Months",
       "Recorded",
       2499
     ],
     [
-      "IIT-JAM + CUET(PG) (Chemistry)",
+      "IIT-JAM",
       "1 Year",
       "Recorded",
       3999
     ],
     [
-      "IIT-JAM + CUET(PG) (Chemistry)",
+      "IIT-JAM",
       "2 Year",
       "Recorded",
       4999
@@ -70,6 +70,11 @@ const JamOnline = () => {
         <li> • IIT-JAM Chemistry Online Batch (6 Months, 1 year, and 2 years Recorded)</li>
       </ul>
 
+     
+      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+      <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+
       <h3>Registration Procedure:</h3>
       <p>To enroll in our IIT JAM CHEMISTRY online course, you can follow these simple steps:</p>
       <ul>
@@ -84,9 +89,6 @@ const JamOnline = () => {
       <ul>
         <li> • Phone: <h5>8595764714, 7011767872, 9026800325</h5></li>
       </ul>
-
-      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
 
       <h3>Frequently Asked Questions (FAQs):</h3>
       <ol>

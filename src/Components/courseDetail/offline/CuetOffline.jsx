@@ -1,5 +1,5 @@
 import React from 'react'
-import courseImage from '../../../assets/courseDetail.png'
+import courseImage from '../../../assets/cuet-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
 
 const CuetOffline = () => {

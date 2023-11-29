@@ -1,5 +1,5 @@
 import React from 'react'
-import courseImage from '../../../assets/courseDetail.png'
+import courseImage from '../../../assets/csir-net-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
 
 const Csir = () => {
@@ -68,19 +68,19 @@ const Csir = () => {
             <h3>Frequently Asked Questions (FAQs):</h3>
             <ol>
                 <li>
-                    <h6>What is the duration of the CSIR NET Chemical Sciences offline course?</h6>
+                    <h6>1. What is the duration of the CSIR NET Chemical Sciences offline course?</h6>
                     <p>The course spans approximately five months.</p>
                 </li>
                 <li>
-                    <h6>Who conducts the classes?</h6>
+                    <h6>2. Who conducts the classes?</h6>
                     <p>Classes are conducted by experienced educators with substantial teaching experience in the field.</p>
                 </li>
                 <li>
-                    <h6>What exams does this course prepare me for?</h6>
+                    <h6>3. What exams does this course prepare me for?</h6>
                     <p>In addition to CSIR NET Chemical Sciences, the course also aids in preparing for TIFR, GATE, BARC, and SET exams.</p>
                 </li>
                 <li>
-                    <h6>How is my performance assessed during the course?</h6>
+                    <h6>4. How is my performance assessed during the course?</h6>
                     <p>Performance is regularly assessed through topic-wise tests, mock tests, and in-depth discussions.</p>
                 </li>
             </ol>

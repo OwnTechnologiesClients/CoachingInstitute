@@ -5,7 +5,8 @@ import HeroSection from '../../components/heroSection/HeroSection'
 import bg3 from '../../assets/bg3.png'
 import CourseLinks from '../../components/courseLinks/CourseLinks'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
-import courseDetailImg from '../../assets/courseDetail.png'
+import courseDetailImg from '../../assets/study-material.jpg'
+import courseDetailBanner from '../../assets/study-material.jpg'
 import CourseTable from '../../components/courseTable/CourseTable'
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
@@ -16,7 +17,7 @@ const StudyMaterial = () => {
     const [activeLink, setActiveLink] = useState('Chemical Science Study Material');
 
     const handleLinkClick = (link) => {
-        
+
         setActiveLink(link);
     };
 
@@ -59,21 +60,21 @@ const StudyMaterial = () => {
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
             <div className="study-material-section">
-                <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick}/>
+                <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick} />
                 <div className="study-material-section-right-nav">
-                    <CourseDetail  imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData}/>
+                    <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData} />
 
                     <div className="course-idea">
                         <h2 className='under-bar'>CourseIdea</h2>
-                        <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
-                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/>
+                        <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
+                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
                     </div>
 
                 </div>
 
             </div>
-            <WhatsappIcon/>
-            <Footer/>
+            <WhatsappIcon />
+            <Footer />
         </div>
     )
 }

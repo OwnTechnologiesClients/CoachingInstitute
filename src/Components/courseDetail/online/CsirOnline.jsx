@@ -1,6 +1,6 @@
 import React from 'react'
 import './Online.scss'
-import courseImage from '../../../assets/courseDetail.png'
+import courseImage from '../../../assets/csir-net-online.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 
 const CsirOnline = () => {

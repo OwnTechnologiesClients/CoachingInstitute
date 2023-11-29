@@ -1,5 +1,5 @@
 import React from 'react'
-import courseImage from '../../../assets/courseDetail.png'
+import courseImage from '../../../assets/gate-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 
 const GateOnline = () => {

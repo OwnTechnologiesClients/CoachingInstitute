@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom'
 import './Footer.scss'
 
 const Footer = () => {
+  const handleTelephoneClick = () => {
+    const phoneNumber = 'tel:+918595764714'; 
+    window.location.href = phoneNumber;
+  };
   return (
     <div>
       <div className='footer'>
@@ -74,9 +78,9 @@ const Footer = () => {
             <Link to="/refund-policy">Refund Policy</Link>
           </div>
         </div>
-        <div className="box">
-          <img src={call} alt="" />
-          <div>
+        <div className="box" >
+          <img src={call} alt="" onClick={handleTelephoneClick}/>
+          <div onClick={handleTelephoneClick}>
             <p className='h1'>For More Details</p>
             <p className='h2'>+91 8595764714 <br></br>+91 7011767872</p>
           </div>

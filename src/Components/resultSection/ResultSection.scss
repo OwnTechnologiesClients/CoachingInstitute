@@ -1,11 +1,11 @@
 .result-row {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     .col-md-3 {
-        padding: 1.5vw 5vw;
-        width: 20vw;
+        padding: 2vw 0;
+        width: 15vw;
         text-align: center;
 
         p {
@@ -14,7 +14,7 @@
         }
 
         .result-img {
-            width: 8vw
+            width: 13vw
         }
     }
 

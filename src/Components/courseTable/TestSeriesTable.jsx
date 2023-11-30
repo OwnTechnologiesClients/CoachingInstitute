@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import './OnlineCourseTable.scss'
+import './CourseTable.scss'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux";
 import axios from 'axios';
 import { SetCurrentUser } from "../../redux/userSlice";
+import pdfIcon from '../../assets/icons/pdf.png'
 import Loader from '../loaderSpinner/Loader'
 
-const OnlineCourseTable = ({ mode ,tableFields}) => {
+const TestSeriesTable = ({ mode, tableFields }) => {
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
@@ -16,7 +17,7 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
         if (!localStorage.getItem('token')) {
             navigate('/student-login')
         }
-        setIsLoading(true)
+        setIsLoading(true);
         const response = await
             axios({
                 method: 'get',
@@ -26,13 +27,12 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
                 }
             });
         console.log(response.data.data);
-        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername,myfilename } = response.data.data;
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername, myfilename } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
-        courseData['courseduration'] = courseItem[1];
-        courseData['coursetype'] = courseItem[2];
-        courseData['price'] = courseItem[5];
+        courseData['courseduration'] = courseItem[2];
+        courseData['price'] = courseItem[3];
 
         if (localStorage.getItem('token')) {
             courseData['studentname'] = studentname;
@@ -52,7 +52,7 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
             navigate('/student-login')
         }
     }
-    
+
 
     return (
         <div className='course-table'>
@@ -62,8 +62,8 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
                 <h1>{mode}</h1>
                 <div className="parent-row">
                     <span>Course</span>
-                    <span>Duration</span>
-                    <span>Batch Type</span>
+                    <span>Information</span>
+                    <span>Course Duration</span>
                     <span>Price</span>
                     <span>Registration</span>
                 </div>
@@ -72,7 +72,7 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
                         return (
                             <div className="child-row" key={index}>
                                 <span>{item[0]}</span>
-                                <span>{item[1]}</span>
+                                <span ><a download={item[1]}><img src={pdfIcon} alt="" /></a></span>
                                 <span>{item[2]}</span>
                                 <span>₹ {item[3]}</span>
                                 <button onClick={() => handleEnroll(item)}>Enroll Now</button>
@@ -86,4 +86,4 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
     )
 }
 
-export default OnlineCourseTable
+export default TestSeriesTable

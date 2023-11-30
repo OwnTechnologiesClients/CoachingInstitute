@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CourseTable.scss'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux";
 import axios from 'axios';
 import { SetCurrentUser } from "../../redux/userSlice";
+import Loader from '../loaderSpinner/Loader'
 
-const CourseTable = ({ mode ,tableFields}) => {
+const CourseTable = ({ mode, tableFields }) => {
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
+    const [isLoading, setIsLoading] = useState(false)
 
     const handleEnroll = async (courseItem) => {
         if (!localStorage.getItem('token')) {
             navigate('/student-login')
         }
-
+        setIsLoading(true);
         const response = await
             axios({
                 method: 'get',
@@ -24,7 +26,7 @@ const CourseTable = ({ mode ,tableFields}) => {
                 }
             });
         console.log(response.data.data);
-        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername,myfilename } = response.data.data;
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername, myfilename } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
@@ -49,10 +51,11 @@ const CourseTable = ({ mode ,tableFields}) => {
             navigate('/student-login')
         }
     }
-    
+
 
     return (
         <div className='course-table'>
+            {isLoading ? <Loader /> : ""}
             <div className="dashboard">
                 <h1>{mode}</h1>
                 <div className="parent-row">

@@ -10,6 +10,32 @@ import { WelcomeCard } from '../cards/Cards';
 import { Link, useNavigate } from 'react-router-dom';
 
 
+const WelcomeSubSection = ()=>{
+    return (
+        <div>
+            <strong>Elaboration on Course Features</strong><br></br>
+                    <p1>At ASAP Institute (formerly CHEMTIME), we take immense pride in our courses that are meticulously designed to offer students a comprehensive and holistic preparation for various chemistry-related entrance exams. Our courses not only focus on academic excellence but also cater to the individual needs of our diverse student community.</p1>
+
+                    <div className="cards">
+                        <WelcomeCard imgSrc={ss2} title="TEACHING METHOD" description="Our experienced faculty, comprised of renowned scientists and professors, employ a unique teaching approach that emphasizes understanding chemistry in its purest form. Through live and recorded classes, they make complex concepts easy to grasp, ensuring that you gain a strong foundation." />
+                        <WelcomeCard imgSrc={ss3} title="STUDY MATERIAL" description="We provide students with meticulously crafted study materials that are aligned with the exam syllabus. These materials are designed to solidify your understanding of key concepts and serve as valuable resources throughout your preparation journey." />
+                        <WelcomeCard imgSrc={ss1} title="TIMELY SYLLABUS COVER" description="What sets ASAP Institute apart is our commitment to ensuring that all topics are comprehensively covered and delivered on schedule. This approach guarantees that you receive a well-rounded education and are well-prepared to tackle even the most challenging questions on your exams." />
+                    </div>
+
+
+                    <strong>Online Platform Benefits</strong><br></br>
+                    <p1>Our online platform is designed to offer students a flexible and interactive learning experience that maximizes their success in chemistry entrance exams. Here are some of the key benefits</p1>
+
+                    <div className="cards">
+                        <WelcomeCard imgSrc={ss4} title="FLEXIBILITY" description="With our online platform, you have the freedom to choose your learning schedule. Access our live classes or recorded sessions at your convenience, allowing you to maintain a balance between your study and other commitments." />
+                        <WelcomeCard imgSrc={ss5} title="ACCESS TO RECORDING" description="Never miss a class. Our online platform gives you access to recorded classes, ensuring that you can revisit lessons whenever you need to reinforce your understanding of specific topics." />
+                        <WelcomeCard imgSrc={ss6} title="INTERACTIVE CLASSES" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
+                    </div>
+        </div>
+    )
+}
+
+
 const WelcomeSection = () => {
     const navigate = useNavigate();
     const navigateTo = () => {
@@ -121,24 +147,7 @@ const WelcomeSection = () => {
                     <button onClick={navigateTo}>View Details</button>
                     <br></br>
                     <br></br>
-                    <strong>Elaboration on Course Features</strong><br></br>
-                    <p1>At ASAP Institute (formerly CHEMTIME), we take immense pride in our courses that are meticulously designed to offer students a comprehensive and holistic preparation for various chemistry-related entrance exams. Our courses not only focus on academic excellence but also cater to the individual needs of our diverse student community.</p1>
-
-                    <div className="cards">
-                        <WelcomeCard imgSrc={ss2} title="TEACHING METHOD" description="Our experienced faculty, comprised of renowned scientists and professors, employ a unique teaching approach that emphasizes understanding chemistry in its purest form. Through live and recorded classes, they make complex concepts easy to grasp, ensuring that you gain a strong foundation." />
-                        <WelcomeCard imgSrc={ss3} title="STUDY MATERIAL" description="We provide students with meticulously crafted study materials that are aligned with the exam syllabus. These materials are designed to solidify your understanding of key concepts and serve as valuable resources throughout your preparation journey." />
-                        <WelcomeCard imgSrc={ss1} title="TIMELY SYLLABUS COVER" description="What sets ASAP Institute apart is our commitment to ensuring that all topics are comprehensively covered and delivered on schedule. This approach guarantees that you receive a well-rounded education and are well-prepared to tackle even the most challenging questions on your exams." />
-                    </div>
-
-
-                    <strong>Online Platform Benefits</strong><br></br>
-                    <p1>Our online platform is designed to offer students a flexible and interactive learning experience that maximizes their success in chemistry entrance exams. Here are some of the key benefits</p1>
-
-                    <div className="cards">
-                        <WelcomeCard imgSrc={ss4} title="FLEXIBILITY" description="With our online platform, you have the freedom to choose your learning schedule. Access our live classes or recorded sessions at your convenience, allowing you to maintain a balance between your study and other commitments." />
-                        <WelcomeCard imgSrc={ss5} title="ACCESS TO RECORDING" description="Never miss a class. Our online platform gives you access to recorded classes, ensuring that you can revisit lessons whenever you need to reinforce your understanding of specific topics." />
-                        <WelcomeCard imgSrc={ss6} title="INTERACTIVE CLASSES" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
-                    </div>
+                    
                 </div>
 
 
@@ -166,7 +175,7 @@ const WelcomeSection = () => {
 
                     </div>
                 </div>
-                <div className='quick-panel'>
+                {/* <div className='quick-panel'>
 
                     <h2 >QUICK LINKS</h2>
 
@@ -182,7 +191,7 @@ const WelcomeSection = () => {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>

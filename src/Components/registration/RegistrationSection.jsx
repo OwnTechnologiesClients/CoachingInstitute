@@ -3,9 +3,11 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Registration.scss'
+import Loader from '../loaderSpinner/Loader'
 
 const RegistrationSection = () => {
     const [inputType, setInputType] = useState('text');
+    // const [isLoading, setIsLoading] = useState(true)
 
     const email = useRef();
     const course = useRef();
@@ -25,16 +27,9 @@ const RegistrationSection = () => {
     //Function to handle and send details to backend
     const handleSubmit = async (e) => {
         e.preventDefault();
-        toast.success('Registration successfully!', {
-            position: 'bottom-right',
-            autoClose: 2000, // 3 seconds
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+
         try {
+            // setIsLoading(true)
 
             const response = await
                 axios({
@@ -52,21 +47,34 @@ const RegistrationSection = () => {
                 });
             console.log(response);
             form.current.reset();
-            
+
         } catch (error) {
             console.error('Error sending data:', error);
             // Handle error, maybe show an error message to the user
         }
+        // setIsLoading(false)
+        toast.success('Registration successfully!', {
+            position: 'bottom-right',
+            autoClose: 2000, // 3 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
     }
     return (
         <div className="registration">
+            {/* {isLoading ? <Loader /> : ""} */}
             <h1>Get A Free <span>Registration</span>! </h1>
             <form onSubmit={handleSubmit} ref={form}>
                 <input ref={email} type="email" name="email" id="email" placeholder='Enter Email' />
                 <select ref={course} name="course" id="course">
                     <option value="Select" disabled selected>Select Course</option>
-                    <option value="course1">course1</option>
-                    <option value="course2">course2</option>
+                    <option value="CSIR-NET Chemical Sciences">CSIR-NET Chemical Sciences</option>
+                    <option value="GATE Chemistry">GATE Chemistry</option>
+                    <option value="IIT-JAM Chemistry">IIT-JAM Chemistry</option>
+                    <option value="CUET (PG) Chemistry">CUET (PG) Chemistry</option>
                 </select>
                 <input ref={number} type="number" name="phone" id="phone" placeholder='Phone Number' />
                 <input ref={dateofbirth} name="dob" id="dob"
@@ -76,7 +84,7 @@ const RegistrationSection = () => {
                     onBlur={handleBlur} />
                 <button type="submit" id='submit'>Submit Now</button>
             </form>
-            <ToastContainer closeButton={false}/>
+            <ToastContainer closeButton={false} />
         </div>
     )
 }

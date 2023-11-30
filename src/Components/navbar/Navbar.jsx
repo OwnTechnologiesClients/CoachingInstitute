@@ -120,7 +120,7 @@ const Navbar = () => {
             Blog
           </div>
         </Link>
-        <Link to='/onlinecourses'>
+        <Link to='/new-batch'>
           <div className="new-batch">
             NEW BATCH
           </div>

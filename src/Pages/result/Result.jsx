@@ -5,6 +5,9 @@ import Navbar from '../../Components/navbar/Navbar'
 import HeroSection from '../../components/heroSection/HeroSection'
 import Footer from '../../components/footer/Footer'
 import achievement from "../../assets/result/achievement-1293132__340.png"
+import gateToppers from '../../assets/result/gatetoppers.jpg'
+import iitjamToppers from '../../assets/result/iitjamtoppers.jpg'
+import csirToppers from '../../assets/result/csirtoppers.jpg'
 import topper1 from "../../assets/result/Toppers Rank-02.png"
 import topper2 from "../../assets/result/Toppers Rank-03.png"
 import topper3 from "../../assets/result/Toppers Rank-04.png"
@@ -32,13 +35,13 @@ const Result = () => {
                 <div className="col-md-12 mainimg">
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
-                        <h3>IIT-JAM 2019</h3>
+                        <h3>GATE</h3>
                         <Link to='/result-explore' >
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>
 
-                    <div className="col-md-3 tpimages1">
+                    {/* <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
                             <center><img className='result-img' src={topper1} /></center><br />
                             <p ><b>AIR-1</b></p>
@@ -65,17 +68,19 @@ const Result = () => {
                             </p>
                             <p >Hindu College</p>
                         </div>
-                    </div>
+                    </div> */}
+                    <img src={gateToppers} alt="" />
                 </div>
                 <div className="col-md-12 mainimg">
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
-                        <h3>IIT-JAM 2018</h3>
+                        <h3>IIT-JAM </h3>
                         <Link to='/result-explore' >
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>
-                    <div className="col-md-3 tpimages1">
+                    <img src={iitjamToppers} alt="" />
+                    {/* <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
                             <center><img className='result-img' src={topper4} /></center><br />
                             <p ><b>AIR-1</b></p>
@@ -101,7 +106,7 @@ const Result = () => {
                             </p>
                             <p >St. Stephen College</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="col-md-12 mainimg1">
                     <div className="col-md-3 tpmainimg">
@@ -111,7 +116,7 @@ const Result = () => {
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>
-                    <div className="col-md-3 tpimages1">
+                    {/* <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
                             <center><img className='result-img' src={topper7} /></center><br />
                             <p ><b>AIR-3</b></p>
@@ -136,7 +141,9 @@ const Result = () => {
                             <p >ARJU</p>
                             <p >NET (Dec.2016)</p>
                         </div>
-                    </div>
+                    </div> */}
+                    <img src={csirToppers} alt="" />
+
                 </div>
             </div>
 

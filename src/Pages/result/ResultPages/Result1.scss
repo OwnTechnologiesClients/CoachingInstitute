@@ -1,6 +1,12 @@
 .result-explore {
     .result-page-section {
         padding: 3vw 6vw;
+        margin: auto;
+        width: 100%;
+
+        &>img {
+            width: 100%;
+        }
 
         .filter {
             display: flex;
@@ -66,19 +72,20 @@
                 }
             }
 
-            
+
             .result-cards {
                 .result-badges {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+
                     .badge {
                         padding: 1vw;
-                        
+
                         img {
                             width: 20vw;
                             padding: 1vw 0;
                         }
-                        
+
                         p {
                             padding: .2vw 0;
                         }

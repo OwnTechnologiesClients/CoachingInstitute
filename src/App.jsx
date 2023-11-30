@@ -18,6 +18,7 @@ import Result from './pages/result/Result';
 import OnlineCourse from './pages/course/OnlineCourse';
 import OfflineCourse from './pages/course/OfflineCourse';
 import Result1 from './pages/result/ResultPages/Result1';
+import NewBatch from './pages/newBatch/NewBatch';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/videos' element={<PopularVideos />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/new-batch' element={<NewBatch />} />
           <Route path='/form' element={<Form />} />
           <Route path='/student-login' element={<Login />} />
           <Route path='/student-signup' element={<StudentSignup />} />

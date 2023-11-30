@@ -26,14 +26,18 @@ const Header1 = () => {
     )
 }
 const Header2 = () => {
+    const handleTelephoneClick = () => {
+        const phoneNumber = 'tel:+918595764714'; 
+        window.location.href = phoneNumber;
+      };
     return (
         <div className="top-contact">
             <div className="logo">
                 <Link to="/" ><img src={logo} alt="" /></Link>
             </div>
-            <div className="contact">
+            <div className="contact" onClick={handleTelephoneClick}>
                 <div className="call">
-                    <a href="9999888777"><img src={phoneIcon} alt="" /></a>
+                    <a href="tel:+918595764714"><img src={phoneIcon} alt="" /></a>
                     <div>
                         <p className='h1'>CALL US TODAY</p>
                         <p className='h2'>+91 8595764714 / 7011767872</p>

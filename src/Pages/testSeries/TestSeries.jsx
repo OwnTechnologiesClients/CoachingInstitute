@@ -1,49 +1,169 @@
 import React, { useState } from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
-import HeroSection from '../../components/heroSection/HeroSection'
-import bg3 from '../../assets/bg3.png'
 import './TestSeries.scss';
 import CourseLinks from '../../components/courseLinks/CourseLinks'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
-import CourseTable from '../../components/courseTable/CourseTable'
+import TestSeriesTable from '../../components/courseTable/TestSeriesTable'
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import testSeriesData from './TestSeriesData.json'
 const TestSeries = () => {
-    const [activeLink, setActiveLink] = useState('Chemical Science Test Series');
+    const [activeLink, setActiveLink] = useState('CSIR NET (Chemical Sciences)');
 
     const handleLinkClick = (link) => {
 
         setActiveLink(link);
     };
-    const tableFields = [
-        [
-            "NET Chemical Science",
-            "45 minutes",
-            "1 Year",
-            399
+
+    const modeOfTable = {
+        "CSIR NET (Chemical Sciences)":"Test Series for Dec 2023",
+            "GATE (Chemistry)":"Test Series for GATE 2024",
+            "IIT-JAM (Chemistry)":"Test Series for IIT-JAM 2024",
+            "BARC (Chemistry)":"Test Series for BARC",
+            "TIFR (Chemistry)":"Test Series for TIFR",
+    }
+
+    const tableFields = {
+        "CSIR NET (Chemical Sciences)": [
+            [
+                "Inorganic Chemistry + Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                499
+            ],
+            [
+                "Organic Chemistry + Full Length Tests",
+                "d.pdf",
+                "2 Years",
+                499
+            ],
+            [
+                "Physical Chemistry + Full Length Tests",
+                "d.pdf",
+                "6 Months",
+                499
+            ],
+            [
+                "General Aptitude + Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                399
+            ],
+            [
+                "Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                299
+            ],
+            [
+                "CSIR NET Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                1499
+            ],
+            [
+                "CSIR NET & GATE Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                2499
+            ],
         ],
-        [
-            "Gate Chemical Science",
-            "45 minutes",
-            "2 Years",
-            2499
+        "GATE (Chemistry)": [
+            [
+                "Inorganic Chemistry + Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                499
+            ],
+            [
+                "Organic Chemistry + Full Length Tests",
+                "d.pdf",
+                "2 Years",
+                499
+            ],
+            [
+                "Physical Chemistry + Full Length Tests",
+                "d.pdf",
+                "6 Months",
+                499
+            ],
+            [
+                "General Aptitude + Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                399
+            ],
+            [
+                "Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                299
+            ],
+            [
+                "GATE Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                1499
+            ],
+            [
+                "CSIR NET & GATE Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                2499
+            ],
         ],
-        [
-            "UPSC Chemical Science",
-            "45 minutes",
-            "6 Months",
-            699
+        "IIT-JAM (Chemistry)": [
+            [
+                "Inorganic Chemistry + Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                399
+            ],
+            [
+                "Organic Chemistry + Full Length Tests",
+                "d.pdf",
+                "2 Years",
+                399
+            ],
+            [
+                "Physical Chemistry + Full Length Tests",
+                "d.pdf",
+                "6 Months",
+                399
+            ],
+            [
+                "Full Length Tests",
+                "d.pdf",
+                "1 Year",
+                199
+            ],
+            [
+                "IIT JAM Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                499
+            ],
         ],
-        [
-            "SSC Chemical Science",
-            "45 minutes",
-            "1 Year",
-            999
+        "BARC (Chemistry)": [
+            [
+                "BARC Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                1099
+            ]
         ],
-    ]
+        "TIFR (Chemistry)": [
+            [
+                "TIDR Complete Test Series",
+                "d.pdf",
+                "1 Year",
+                499
+            ]
+        ],
+    }
+
     return (
         <div className='test-series-page'>
 
@@ -69,8 +189,7 @@ const TestSeries = () => {
 
                     <div className="course-idea">
                         <h2 className='under-bar'>CourseIdea</h2>
-                        <CourseTable mode={"Offline Dashboard"} tableFields={tableFields}/>
-                        <CourseTable mode={"Online Dashboard"} tableFields={tableFields}/>
+                        <TestSeriesTable mode={modeOfTable[activeLink]} tableFields={tableFields[activeLink]} />
                     </div>
 
                 </div>

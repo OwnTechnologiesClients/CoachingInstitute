@@ -43,16 +43,20 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
             "CUET (PG) Chemistry"
         ],
         [
-            "Chemical Science Study Material",
-            "GATE Chemistry Study Material",
-            "UPSC Chemistry Study Material"
+            "CSIR NET (Chemical Sciences) ",
+            "GATE (Chemistry) ",
+            "IIT-JAM (Chemistry) ",
+            "CUET(PG)"
         ],
         [
-            "Chemical Science Test Series",
-            "GATE Chemistry Test Series",
-            "UPSC Chemistry Test Series"
+            "CSIR NET (Chemical Sciences)",
+            "GATE (Chemistry)",
+            "IIT-JAM (Chemistry)",
+            "BARC (Chemistry)",
+            "TIFR (Chemistry)"
         ]
     ]
+    
     return (
         <div className="course-page-left-nav">
             <CoursePageList

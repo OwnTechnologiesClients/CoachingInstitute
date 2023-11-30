@@ -3,6 +3,7 @@ import { Header1, Header2 } from '../../../components/header/Header'
 import Navbar from '../../../components/navbar/Navbar'
 import Footer from '../../../components/footer/Footer'
 import results from './Result.json'
+import allResult from "../../../assets/result/allresult.jpg"
 import './Result1.scss'
 
 const Result1 = () => {
@@ -28,7 +29,9 @@ const Result1 = () => {
             <Navbar />
             <div className="result-page-section">
 
-                <div className="filter">
+                <img src={allResult} alt="" />
+
+                {/* <div className="filter">
                     <h2>Explore Our Prestigious Students</h2>
 
                     <div>
@@ -59,7 +62,7 @@ const Result1 = () => {
 
 
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <Footer/>

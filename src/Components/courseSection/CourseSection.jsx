@@ -1,9 +1,9 @@
 import React from 'react'
 import './CourseSection.scss'
-import img1 from '../../assets/homepage/course/courseimage1.png'
-import img2 from '../../assets/homepage/course/courseimage2.png'
-import img3 from '../../assets/homepage/course/courseimage3.png'
-import img4 from '../../assets/homepage/course/courseimage4.png'
+import img1 from '../../assets/homepage/course/c1.jpg'
+import img2 from '../../assets/homepage/course/c2.jpg'
+import img3 from '../../assets/homepage/course/c3.jpg'
+import img4 from '../../assets/homepage/course/c4.jpg'
 import { CourseCard} from '../cards/Cards';
 import { Link } from 'react-router-dom';
 

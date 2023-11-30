@@ -67,7 +67,7 @@ const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
                 ₹{price}
             </div> */}
             <img src={imgSrc} alt="" />
-            <div >
+            <div className='parent-box' >
                 <h2 className='under-bar'>{homeCourseHeading}</h2>
                 <p>{homeCourseDetail}</p>
             </div>

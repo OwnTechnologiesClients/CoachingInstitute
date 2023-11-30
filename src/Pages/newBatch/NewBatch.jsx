@@ -210,8 +210,8 @@ const NewBatch = () => {
 
 
                     <div className="course-idea">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ducimus blanditiis assumenda iste aliquid sapiente deleniti soluta in ratione officiis odit deserunt quaerat repellendus quasi aut repudiandae totam accusamus, reprehenderit possimus. Aliquam, dolorem!</p>
-                        <h2 className='under-bar'>New Batch</h2>
+                        {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ducimus blanditiis assumenda iste aliquid sapiente deleniti soluta in ratione officiis odit deserunt quaerat repellendus quasi aut repudiandae totam accusamus, reprehenderit possimus. Aliquam, dolorem!</p>
+                        <h2 className='under-bar'>New Batch</h2> */}
                         <CourseTable mode={'Online Dashboard'} tableFields={tableFields.online}/>
                         <CourseTable mode={'Offline Dashboard'} tableFields={tableFields.offline}/>
                         <CourseTable mode={'Recorded Dashboard'} tableFields={tableFields.recorded} />

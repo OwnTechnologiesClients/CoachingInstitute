@@ -1,8 +1,14 @@
+.parent-box{
+    text-align: justify;
+}
+
 .video-card {
     iframe {
         width: 25vw;
         height: 15vw;
     }
+
+
 
     @media screen and (max-width:600px) {
         iframe {

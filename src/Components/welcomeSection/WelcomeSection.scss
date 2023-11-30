@@ -10,6 +10,8 @@ $text: #646262;
 
     .message {
         width: 55vw;
+        text-align: justify;
+
 
         h1 {
             font-weight: 400;
@@ -43,6 +45,8 @@ $text: #646262;
             font-weight: 400;
             font-size: 1vw;
             color: #9A9696;
+            text-align: justify;
+            text-align-last: right;
 
         }
 
@@ -144,7 +148,7 @@ $text: #646262;
                     margin-left: 1vw;
                     color: #0C48EA;
                     font-family: Poppins;
-                    text-align: start;
+                    text-align: justify;
 
                 }
             }

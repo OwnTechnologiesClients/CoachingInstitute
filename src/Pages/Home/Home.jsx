@@ -5,7 +5,7 @@ import Footer from '../../Components/footer/Footer';
 import HeroSection from '../../components/heroSection/HeroSection';
 import RegistrationSection from '../../components/registration/RegistrationSection';
 import CourseSection from '../../components/courseSection/CourseSection';
-import WelcomeSection from '../../components/welcomeSection/WelcomeSection';
+import WelcomeSection, { WelcomeSubSection } from '../../components/welcomeSection/WelcomeSection';
 import VideoSection from '../../components/videoSection/VideoSection'
 import StatisticsSection from '../../components/statistics/StatisticsSection';
 import { Header1, Header2 } from '../../components/header/Header';
@@ -36,6 +36,7 @@ const Home = () => {
 
             <CourseSection />
             
+            <WelcomeSubSection/>
             <ChemistryEducationChoices />
             
             <CsirNetPreparation />

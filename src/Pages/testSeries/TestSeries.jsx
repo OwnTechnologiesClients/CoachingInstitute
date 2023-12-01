@@ -3,12 +3,12 @@ import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import './TestSeries.scss';
 import CourseLinks from '../../components/courseLinks/CourseLinks'
-import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import TestSeriesTable from '../../components/courseTable/TestSeriesTable'
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import testSeriesData from './TestSeriesData.json'
+import TestSeriesCourseDetail from '../../components/courseDetail/TestSeriesCourseDetail';
 const TestSeries = () => {
     const [activeLink, setActiveLink] = useState('CSIR NET (Chemical Sciences)');
 
@@ -182,7 +182,7 @@ const TestSeries = () => {
                     handleLinkClick={handleLinkClick}
                 />
                 <div className="test-series-section-right-nav">
-                    <CourseDetail
+                    <TestSeriesCourseDetail
                         imgSrc={courseDetailImg}
                         heading1={activeLink}
                         detailData={testSeriesData} />
@@ -190,6 +190,7 @@ const TestSeries = () => {
                     <div className="course-idea">
                         <h2 className='under-bar'>CourseIdea</h2>
                         <TestSeriesTable mode={modeOfTable[activeLink]} tableFields={tableFields[activeLink]} />
+                        <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
                     </div>
 
                 </div>

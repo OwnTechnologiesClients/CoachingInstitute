@@ -30,7 +30,7 @@ export const WelcomeSubSection = () => {
             content: "Study material"
         },
         {
-            url: "/onlinecourses",
+            url: "/new-batch",
             content: "New Batches"
         },
         {

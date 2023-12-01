@@ -72,7 +72,7 @@ const TestSeriesTable = ({ mode, tableFields }) => {
                         return (
                             <div className="child-row" key={index}>
                                 <span>{item[0]}</span>
-                                <span ><a download={item[1]}><img src={pdfIcon} alt="" /></a></span>
+                                <span ><a href={item[1]} download><img src={pdfIcon} alt="" /></a></span>
                                 <span>{item[2]}</span>
                                 <span>₹ {item[3]}</span>
                                 <button onClick={() => handleEnroll(item)}>Enroll Now</button>

@@ -57,20 +57,24 @@
 
     @media screen and (max-width:480px) {
         .result-page-section {
-            .filter {
-                flex-direction: column;
-
-                h2 {
-                    font-size: 1rem;
-                }
-
-                select {
-                    width: 30vw;
-                    font-size: 1rem;
-                    margin: 3vw 0;
-                    margin-right: 3vw;
-                }
+            
+            &>img{
+                width: 100%;
             }
+            // .filter {
+            //     flex-direction: column;
+
+            //     h2 {
+            //         font-size: 1rem;
+            //     }
+
+            //     select {
+            //         width: 30vw;
+            //         font-size: 1rem;
+            //         margin: 3vw 0;
+            //         margin-right: 3vw;
+            //     }
+            // }
 
 
             .result-cards {

@@ -201,15 +201,15 @@ const NewBatch = () => {
                 hd1={"TEST SERIES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
-            <div className="test-series-section">
-                {/* <CourseLinks
+            <div className="test-series-section" style={{justifyContent:"center"}}>
+                {/* <CourseLinks 
                     activeLink={activeLink}
                     handleLinkClick={handleLinkClick}
                 /> */}
                 <div className="test-series-section-right-nav">
 
 
-                    <div className="course-idea">
+                    <div className="course-idea" >
                         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ducimus blanditiis assumenda iste aliquid sapiente deleniti soluta in ratione officiis odit deserunt quaerat repellendus quasi aut repudiandae totam accusamus, reprehenderit possimus. Aliquam, dolorem!</p>
                         <h2 className='under-bar'>New Batch</h2> */}
                         <CourseTable mode={'Online Dashboard'} tableFields={tableFields.online}/>

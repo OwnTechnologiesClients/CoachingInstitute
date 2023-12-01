@@ -11,19 +11,19 @@ const CourseSection = () => {
 
     const courseCardDetails = [
         {
-            courseImg:img1,
+            courseImg:img2,
             cardHeading:"CSIR-NET Chemical Sciences",
             cardDetail:"Welcome to ASAP Institute's CSIR NET Chemical Sciences Online Batches, designed to pave your way to success in the CSIR NET Chemical Sciences examination.",
             price:299
         },
         {
-            courseImg:img2,
+            courseImg:img3,
             cardHeading:"CUET (PG) Chemistry",
             cardDetail:"Whether you are a working professional, a dedicated student, or someone looking to conquer the CUET(PG) Chemistry exam, our courses are tailored to meet your unique needs.",
             price:299
         },
         {
-            courseImg:img3,
+            courseImg:img1,
             cardHeading:"GATE Chemistry",
             cardDetail:"Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.",
             price:299

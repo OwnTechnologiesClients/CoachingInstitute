@@ -5,9 +5,9 @@ import HeroSection from '../../components/heroSection/HeroSection'
 import bg5 from '../../assets/bg5.png'
 import './RefundPolicy.scss';
 import Footer from '../../components/footer/Footer'
-import WelcomeSection from '../../components/welcomeSection/WelcomeSection'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import achievement from "../../assets/result/achievement-1293132__340.png"
+import WelcomeSection from '../../components/welcomeSection/WelcomeSection'
 import topper1 from "../../assets/result/Toppers Rank-02.png"
 import topper2 from "../../assets/result/Toppers Rank-03.png"
 import topper3 from "../../assets/result/Toppers Rank-04.png"
@@ -17,6 +17,10 @@ import topper6 from "../../assets/result/Toppers Rank-07.png"
 import topper7 from "../../assets/result/Toppers Rank-07.png"
 import topper8 from "../../assets/result/Toppers Rank-08.png"
 import topper9 from "../../assets/result/Toppers Rank-09.png"
+import gateToppers from '../../assets/result/gatetoppers.jpg'
+import iitjamToppers from '../../assets/result/iitjamtoppers.jpg'
+import csirToppers from '../../assets/result/csirtoppers.jpg'
+import { Link } from 'react-router-dom'
 const RefundPolicy = () => {
     return (
         <div className='study-material-page'>
@@ -40,53 +44,60 @@ const RefundPolicy = () => {
                 <p>2. Fee paid against seat booking ( Classroom or Online program) are non-transferable.</p><br></br>
                 <p>3. In case of excess fee payment, refund stands within 10 working days of receiving such complain.</p><br></br>
                 <p>4. No Fee Refund Policy is available for Postal/Distance Learning/Booklet/Study Materials/Online Test Series/Pen-Drive Video lectures course.</p><br></br>
-                <p>5. In case you feel that the service/product details provided to you are not as per your expectations, you must bring it to the notice of our administrator Email : hr@chemacademy.co.in Phone : +91-9136597244</p><br></br>
+                <p>5. In case you feel that the service/product details provided to you are not as per your expectations, you must bring it to the notice of our administrator <br /> &nbsp;&nbsp;&nbsp; Email : hr@chemacademy.co.in Phone : +91-9136597244</p><br></br>
 
 
                 <div className="row">
+
                     <div className="col-md-12 mainimg">
                         <div className="col-md-3 tpmainimg">
                             <center><img className='result-img' src={achievement} /></center><br />
-                            <h3>IIT-JAM 2019</h3>
-
-
+                            <h3>GATE</h3>
+                            <Link to='/result-explore' >
+                                <button className='explore-results'>Explore</button>
+                            </Link>
                         </div>
 
-                        <div className="col-md-3 tpimages1">
-                            <div className="toppersimg">
-                                <center><img className='result-img' src={topper1} /></center><br />
-                                <p ><b>AIR-1</b></p>
-                                <p >RAVI MAURYA
-                                </p>
-                                <p >BHU</p>
-                            </div>
+                        {/* <div className="col-md-3 tpimages1">
+                        <div className="toppersimg">
+                            <center><img className='result-img' src={topper1} /></center><br />
+                            <p ><b>AIR-1</b></p>
+                            <p >RAVI MAURYA
+                            </p>
+                            <p >BHU</p>
+                        </div>
 
+                    </div>
+                    <div className="col-md-3 tpimages">
+                        <div className="toppersimg">
+                            <center><img className='result-img' src={topper2} /></center><br />
+                            <p ><b>AIR-3</b></p>
+                            <p >VIVEK BHARDWAJ
+                            </p>
+                            <p >Hindu College</p>
                         </div>
-                        <div className="col-md-3 tpimages">
-                            <div className="toppersimg">
-                                <center><img className='result-img' src={topper2} /></center><br />
-                                <p ><b>AIR-3</b></p>
-                                <p >VIVEK BHARDWAJ
-                                </p>
-                                <p >Hindu College</p>
-                            </div>
+                    </div>
+                    <div className="col-md-3 tpimages">
+                        <div className="toppersimg">
+                            <center><img className='result-img' src={topper3} /></center><br />
+                            <p ><b>AIR-6</b></p>
+                            <p >BALDEEP SINGH
+                            </p>
+                            <p >Hindu College</p>
                         </div>
-                        <div className="col-md-3 tpimages">
-                            <div className="toppersimg">
-                                <center><img className='result-img' src={topper3} /></center><br />
-                                <p ><b>AIR-6</b></p>
-                                <p >BALDEEP SINGH
-                                </p>
-                                <p >Hindu College</p>
-                            </div>
-                        </div>
+                    </div> */}
+                        <img src={gateToppers} alt="" />
                     </div>
                     <div className="col-md-12 mainimg">
-                    <div className="col-md-3 tpmainimg">
-                        <center><img className='result-img' src={achievement} /></center><br />
-                        <h3>IIT-JAM 2018</h3>
-                    </div>
-                    <div className="col-md-3 tpimages1">
+                        <div className="col-md-3 tpmainimg">
+                            <center><img className='result-img' src={achievement} /></center><br />
+                            <h3>IIT-JAM </h3>
+                            <Link to='/result-explore' >
+                                <button className='explore-results'>Explore</button>
+                            </Link>
+                        </div>
+                        <img src={iitjamToppers} alt="" />
+                        {/* <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
                             <center><img className='result-img' src={topper4} /></center><br />
                             <p ><b>AIR-1</b></p>
@@ -112,14 +123,17 @@ const RefundPolicy = () => {
                             </p>
                             <p >St. Stephen College</p>
                         </div>
+                    </div> */}
                     </div>
-                </div>
-                <div className="col-md-12 mainimg1">
-                    <div className="col-md-3 tpmainimg">
-                        <center><img className='result-img' src={achievement} /></center><br />
-                        <h3>CSIR-NET | JRF</h3>
-                    </div>
-                    <div className="col-md-3 tpimages1">
+                    <div className="col-md-12 mainimg1">
+                        <div className="col-md-3 tpmainimg">
+                            <center><img className='result-img' src={achievement} /></center><br />
+                            <h3>CSIR-NET | JRF</h3>
+                            <Link to='/result-explore' >
+                                <button className='explore-results'>Explore</button>
+                            </Link>
+                        </div>
+                        {/* <div className="col-md-3 tpimages1">
                         <div className="toppersimg">
                             <center><img className='result-img' src={topper7} /></center><br />
                             <p ><b>AIR-3</b></p>
@@ -144,8 +158,10 @@ const RefundPolicy = () => {
                             <p >ARJU</p>
                             <p >NET (Dec.2016)</p>
                         </div>
+                    </div> */}
+                        <img src={csirToppers} alt="" />
+
                     </div>
-                </div>
                 </div>
             </div>
 

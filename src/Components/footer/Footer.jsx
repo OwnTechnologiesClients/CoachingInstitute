@@ -96,7 +96,7 @@ const Footer = () => {
           <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.com/" target='_blank'>OwnTechnologies</a></p>
         </div>
         <div>
-          <a href="#navbar"><img src={down} alt="" /></a>
+          <a onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}><img src={down} alt="" /></a>
         </div>
       </div>
     </div>

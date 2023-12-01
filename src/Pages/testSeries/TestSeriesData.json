@@ -1,52 +1,77 @@
 {
   "CSIR NET (Chemical Sciences)": {
     "image": "testseries/courseDetail.jpeg",
-    "courseLines": [
-      "ChemTime offers Csir Net Chemical Science Test Series. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
-      "Csir-Net Chemical Science Test Series will also help you with TIFR, GATE, and SET exams.",
-      "Classes are taken by Subject-wise highly Experienced Educators, having long-time teaching experience in their respective fields. This course is specially designed under the time management method to provide maximum information in a limited time period.",
-      "There will be approximately 4 to 5 hours of classes daily for 6 days a Week for around Five Months.",
-      "The assessment of performance is done on a regular basis through Topic-wise Tests which are followed by discussion."
-    ]
+    "coursedHeading": [
+      "Our CSIR-NET Chemistry Test Series is meticulously crafted to align with the CSIR-NET exam pattern, question structures, and key focus areas. This tailored approach enhances your readiness for success in the CSIR-NET examination.",
+      "By choosing ASAP Institute's CSIR-NET Chemical Sciences Test Series, you're not just practicing; you're investing in a strategic and personalized roadmap to success. Join us in this endeavor to elevate your preparation, boost your confidence, and maximize your potential for success in the CSIR-NET examination."
+    ],
+    "courseLines": {
+      "1. Comprehensive Syllabus Coverage": "Our test series comprehensively covers the vast CSIR-NET Chemical Sciences syllabus, ensuring you are well-versed in every crucial topic.",
+      "2. Strategically Designed Mock Tests": "With a total of 58 tests, including 3 mock tests, our series offers a structured approach to mimic the actual exam environment. This strategic design aids in enhancing your time-management skills and overall exam temperament.",
+      "3. Subject-Wise Expertise": "Dive deep into each subject—Inorganic Chemistry, Organic Chemistry, Physical Chemistry, and General Aptitude—with our specialized tests crafted by subject-matter experts.",
+      "4. Performance Insights": "Receive detailed performance analyses, pinpointing your strengths and highlighting areas that demand further attention. This insight empowers you to refine your preparation strategy effectively.",
+      "5. Optimal Learning Schedule": "Our thoughtfully scheduled tests allow you to focus on specific subjects and topics, ensuring a balanced and thorough preparation approach.",
+      "6. Flexibility in Practice": "Access our tests online, providing you the flexibility to practice and evaluate your progress at your own pace and convenience."
+    }
   },
   "GATE (Chemistry)": {
     "image": "testseries/courseDetail.jpeg",
-    "courseLines": [
-      "ChemTime offers Csir GATE Science Test Series. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
-      "Csir-Net Chemical Science Test Series will also help you with TIFR, GATE, and SET exams.",
-      "Classes are taken by Subject-wise highly Experienced Educators, having long-time teaching experience in their respective fields. This course is specially designed under the time management method to provide maximum information in a limited time period.",
-      "There will be approximately 4 to 5 hours of classes daily for 6 days a Week for around Five Months.",
-      "The assessment of performance is done on a regular basis through Topic-wise Tests which are followed by discussion."
-    ]
+    "coursedHeading": [
+      "Our GATE Chemistry Test Series is crafted with the GATE perspective in mind, aligning with the specific exam patterns, question structures, and emphasis areas. This tailored approach enhances your preparation for success in the GATE examination.",
+      " By choosing ASAP Institute's GATE Chemistry Test Series, you are not merely practicing; you are investing in a targeted and personalized approach to unlock excellence in GATE Chemistry. Join us in this transformative journey to amplify your preparation, boost your confidence, and maximize your potential for success in the GATE examination."
+    ],
+    "courseLines": {
+      "1. In-Depth Syllabus Mastery": "Our test series provides comprehensive coverage of the GATE Chemistry syllabus, ensuring you build a strong foundation in every critical area.",
+      "2. Strategically Aligned Mock Tests": "Elevate your exam-readiness with our series of 58 tests, strategically designed, including 3 mock tests. These simulated tests mirror the actual GATE environment, refining your time-management skills and overall exam temperament.",
+      "3. Subject-Centric Expertise": "Immerse yourself in each subject—Physical Chemistry, Organic Chemistry, and Inorganic Chemistry—through specialized tests crafted by subject-matter experts.",
+      "4. Performance Analysis": "Receive detailed performance insights, identifying your strengths and pinpointing areas that warrant further attention. This analytical feedback empowers you to recalibrate your preparation strategy effectively.",
+      "5. Optimal Test Schedule": "Our thoughtfully scheduled tests enable you to focus on specific subjects and topics, ensuring a balanced and comprehensive preparation approach.",
+      "6. Flexibility in Practice": "Access our tests online, providing you the flexibility to practice and evaluate your progress at your own pace and convenience."
+    }
   },
   "IIT-JAM (Chemistry)": {
     "image": "testseries/courseDetail.jpeg",
-    "courseLines": [
-      "ChemTime offers Csir UPSC Science Test Series. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
-      "Csir-Net Chemical Science Test Series will also help you with TIFR, GATE, and SET exams.",
-      "Classes are taken by Subject-wise highly Experienced Educators, having long-time teaching experience in their respective fields. This course is specially designed under the time management method to provide maximum information in a limited time period.",
-      "There will be approximately 4 to 5 hours of classes daily for 6 days a Week for around Five Months.",
-      "The assessment of performance is done on a regular basis through Topic-wise Tests which are followed by discussion."
-    ]
-  },
-  "BARC (Chemistry)": {
-    "image": "testseries/courseDetail.jpeg",
-    "courseLines": [
-      "ChemTime offers BARC (Chemistry) Test Series. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
-      "Csir-Net Chemical Science Test Series will also help you with TIFR, GATE, and SET exams.",
-      "Classes are taken by Subject-wise highly Experienced Educators, having long-time teaching experience in their respective fields. This course is specially designed under the time management method to provide maximum information in a limited time period.",
-      "There will be approximately 4 to 5 hours of classes daily for 6 days a Week for around Five Months.",
-      "The assessment of performance is done on a regular basis through Topic-wise Tests which are followed by discussion."
-    ]
+    "coursedHeading": [
+      "Our IIT JAM Chemistry Test Series is meticulously crafted to align with the IIT JAM exam pattern, question structures, and key focus areas. This tailored approach enhances your readiness for success in the IIT JAM examination.",
+      "By choosing ASAP Institute's IIT JAM Chemistry Test Series, you are not just practicing; you are investing in a targeted and personalized approach to unlock excellence in IIT JAM Chemistry. Join us on this transformative journey to amplify your preparation, boost your confidence, and maximize your potential for success in the IIT JAM examination."
+    ],
+    "courseLines": {
+      "1. Thorough Syllabus Coverage": "Our test series offers a comprehensive exploration of the IIT JAM Chemistry syllabus, ensuring you grasp every essential concept with depth and clarity.",
+      "2. Strategically Designed Mock Tests": "With a series of 58 tests, including 3 mock tests, our program provides a strategic simulation of the actual IIT JAM environment. Enhance your time-management skills and build confidence with every test.",
+      "3. Subject-Specific Expertise": "Immerse yourself in each subject—Physical Chemistry, Organic Chemistry, and Inorganic Chemistry—through specialized tests crafted by subject-matter experts.",
+      "4. Detailed Performance Analysis": "Receive in-depth performance insights, identifying your strengths and areas that need improvement. This analytical feedback empowers you to refine your study strategy effectively.",
+      "5. Optimal Test Schedule": "Our tests are scheduled thoughtfully, allowing you to focus on specific subjects and topics at different stages of your preparation for a well-rounded approach.",
+      "6. Flexibility in Practice": "Access our tests online, providing you the flexibility to practice and evaluate your progress at your own pace and convenience."
+    }
   },
   "TIFR (Chemistry)": {
     "image": "testseries/courseDetail.jpeg",
-    "courseLines": [
-      "ChemTime offers TIFR (Chemistry) Test Series. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
-      "Csir-Net Chemical Science Test Series will also help you with TIFR, GATE, and SET exams.",
-      "Classes are taken by Subject-wise highly Experienced Educators, having long-time teaching experience in their respective fields. This course is specially designed under the time management method to provide maximum information in a limited time period.",
-      "There will be approximately 4 to 5 hours of classes daily for 6 days a Week for around Five Months.",
-      "The assessment of performance is done on a regular basis through Topic-wise Tests which are followed by discussion."
-    ]
+    "coursedHeading": [
+      "Our test series is designed to align seamlessly with the TIFR Chemistry exam pattern, question structures, and key emphasis areas. This tailored approach enhances your readiness for success in the TIFR Chemistry examination.",
+      "By choosing ASAP Institute's TIFR Chemistry Test Series, you are investing in a targeted and personalized approach to unlock excellence in TIFR Chemistry. Join us on this transformative journey to amplify your preparation, boost your confidence, and maximize your potential for success in the TIFR Chemistry entrance examination."
+    ],
+    "courseLines": {
+      "1. Comprehensive Syllabus Coverage": "Our test series spans the entire TIFR Chemistry syllabus, ensuring that you are well-versed in every topic and concept that could appear in the exam.",
+      "2. Specialized Subject Tests": "Immerse yourself in subject-specific tests designed by experts in the field. We offer a focused approach to each aspect of TIFR Chemistry, ensuring a deep understanding of the subject matter.",
+      "3. Realistic Exam Simulation": "With a series of meticulously designed mock tests, experience the TIFR exam environment before the actual day. Enhance your time-management skills and build confidence with each simulation.",
+      "4. Detailed Performance Analysis": "Receive comprehensive feedback on your performance. Identify your strengths and weaknesses, allowing you to fine-tune your preparation strategy for optimal results.",
+      "5. Strategic Test Schedule": "Our tests are strategically scheduled, enabling you to focus on specific subjects and topics at different stages of your preparation. This ensures a well-rounded and systematic approach.",
+      "6. Flexibile Practice": "Access our tests online, providing you the flexibility to practice and evaluate your progress at your own pace and convenience."
+    }
+  },
+  "BARC (Chemistry)": {
+    "image": "testseries/courseDetail.jpeg",
+    "coursedHeading": [
+      "Our test series is meticulously designed to align with the BARC OCES Recruitment exam pattern, question formats, and emphasis areas. This tailored approach enhances your readiness for success in the BARC OCES Recruitment test.",
+      "By choosing ASAP Institute's BARC OCES Recruitment Test Series, you are investing in a focused and personalized approach to excel in the BARC OCES Recruitment exam. Join us on this transformative journey to elevate your preparation and secure success in the BARC OCES Recruitment test."
+    ],
+    "courseLines": {
+      "1. In-Depth Syllabus Coverage": "Our test series encompasses the entire BARC OCES Recruitment exam syllabus, ensuring that you are thoroughly prepared for every section and topic.",
+      "2. Subject-Specific Tests": "Immerse yourself in subject-specific tests meticulously crafted by experts. These tests provide a targeted approach to each subject, allowing you to master key concepts.",
+      "3. Real Exam Environment": "Experience the real exam environment with our thoughtfully designed mock tests. Simulate exam conditions to enhance your time-management skills and build confidence.",
+      "4. Detailed Performance Analysis": "Receive detailed insights into your performance with comprehensive feedback. Identify areas of strength and areas that need improvement, enabling you to fine-tune your preparation strategy.",
+      "5. Strategically Scheduled Tests": "Our test series follows a strategic schedule, allowing you to focus on specific subjects and topics at different stages of your preparation. This approach ensures a well-rounded and systematic readiness.",
+      "6. Flexibility in Practice": "Access our tests online, providing you the flexibility to practice and evaluate your progress at your own pace and convenience."
+    }
   }
 }

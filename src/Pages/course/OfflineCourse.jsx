@@ -3,7 +3,7 @@ import './Course.scss';
 import { Header1, Header2 } from '../../components/header/Header'
 import Navbar from '../../Components/navbar/Navbar'
 import Footer from '../../Components/footer/Footer'
-import bg7 from '../../assets/bg7.png'
+import bg7 from '../../assets/bg11.png'
 // import HeroSection from '../../components/heroSection/HeroSection'
 // import bg3 from '../../assets/bg3.png'
 // import CourseDetail from '../../components/courseDetail/CourseDetail'

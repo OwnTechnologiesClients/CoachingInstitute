@@ -4,7 +4,7 @@ import { Header1, Header2 } from '../../components/header/Header'
 import Navbar from '../../Components/navbar/Navbar'
 import Footer from '../../Components/footer/Footer'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg3 from '../../assets/bg3.png'
+import bg3 from '../../assets/bg12.png'
 import CourseDetail from '../../components/courseDetail/CourseDetail'
 import courseDetailImg from '../../assets/courseDetail.png'
 import CourseTable from '../../components/courseTable/CourseTable';

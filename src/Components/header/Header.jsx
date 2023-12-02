@@ -48,7 +48,7 @@ const Header2 = () => {
                     <img src={clockIcon} alt="" />
                     <div>
                         <p className='h1'>WE ARE OPEN</p>
-                        <p className='h2'>Mon-Fri 8:00AM-10:00PM</p>
+                        <p className='h2'>Mon-Sun 9:00AM - 8:00PM</p>
                     </div>
                 </div>
             </div>

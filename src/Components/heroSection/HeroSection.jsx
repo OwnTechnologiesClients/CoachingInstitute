@@ -44,12 +44,12 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                 onClick={toggleAutoplay} // Toggle autoplay on click
                 onMouseLeave={startAutoplay}
             >
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <img src={imgSrc1} className="heroimage" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
+                </SwiperSlide> */}
+                {/* <SwiperSlide>
                     <img src={imgSrc2} className="heroimage" alt="" />
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide>
                     <img src={imgSrc3} className="heroimage" alt="" />
                 </SwiperSlide>

@@ -97,21 +97,22 @@ $text: #646262;
     }
 
     @media screen and (max-width:"480px") {
-        flex-direction: column;
-        text-align: center;
+        text-align: end;
 
         .logo {
+            margin: auto 0;
             img {
-                height: 5rem;
+                height: 4rem;
             }
         }
 
         .contact {
-            align-items: center;
+
+            align-items: end;
             flex-direction: column;
 
             &>div {
-                font-size: .8rem;
+                font-size: .6rem;
                 .h2{
                     color: #202C45;
                 }
@@ -127,7 +128,6 @@ $text: #646262;
                     margin-left: -8vw;
                 }
                 img{
-                    margin-right: 8vw;
                 }
             }
         }

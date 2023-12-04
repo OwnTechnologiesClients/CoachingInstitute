@@ -9,9 +9,12 @@ import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { SetCurrentUser } from '../../../redux/userSlice'
 import CourseImages from '../../../components/courseTable/courseImages.json'
+import Loader from '../../../components/loaderSpinner/Loader'
 
 const History = () => {
     const [history, setHistory] = useState([])
+    const [isLoading, setisLoading] = useState(false)
+
     const dispatch = useDispatch();
     const navigate = useNavigate()
 
@@ -21,13 +24,13 @@ const History = () => {
         dispatch(SetCurrentUser(item));
         navigate('/form-print')
     }
-    const handleLogout = ()=>{
+    const handleLogout = () => {
         window.localStorage.clear();
         navigate('/student-login');
     }
 
     const getData = async () => {
-
+        setisLoading(true);
         const response = await
             axios({
                 method: 'get',
@@ -47,12 +50,12 @@ const History = () => {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
-
-        setHistory(Data.data.data)
+            setHistory(Data.data.data)
+            setisLoading(false)
     }
 
     useEffect(() => {
-        if(!localStorage.getItem('token')){
+        if (!localStorage.getItem('token')) {
             navigate('/student-login')
         }
         getData();
@@ -60,7 +63,7 @@ const History = () => {
 
 
     return (
-        <div>
+        <div className='history-page'>
 
             <Header1 />
             <Header2 />
@@ -68,15 +71,15 @@ const History = () => {
             <div className='ph-appbar'>
                 <h2>Purchased History</h2>
                 <div>
-                <Link to="/onlinecourses"><button >Enroll Course</button></Link>
-                <button onClick={handleLogout}>Logout</button>
+                    <Link to="/onlinecourses"><button >Enroll Course</button></Link>
+                    <button onClick={handleLogout}>Logout</button>
                 </div>
             </div>
 
-            {
-                history.length===0?<h2 className='no-course-message'>You have not purchased any course</h2>: (history.map((item, index) => {
+            {isLoading ? <Loader /> : (
+                history.length === 0 ? <h2 className='no-course-message'>You have not purchased any course</h2> : (history.map((item, index) => {
                     const { coursename, date, coursetype, price, modeofpayment } = item;
-    
+
                     return (
                         <div key={index} className='ph-course-parent'>
                             {console.log(CourseImages[coursename])}
@@ -93,7 +96,7 @@ const History = () => {
                             </div>
                         </div>
                     )
-                }))
+                })))
             }
 
         </div>

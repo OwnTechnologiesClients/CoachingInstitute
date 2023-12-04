@@ -1,9 +1,11 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import imgSrc1 from '../../assets/bg1.jpg'
 import imgSrc2 from '../../assets/bg2.jpg'
 import imgSrc3 from '../../assets/bg8.jpg'
+import imgSrc6 from '../../assets/bg9.jpg'
+import imgSrc7 from '../../assets/bg10.jpg'
 import imgSrc4 from '../../assets/bg9.jpeg'
 import imgSrc5 from '../../assets/bg10.jpeg'
 // import imgSrc3 from '../../assets/bg5.png'
@@ -50,15 +52,32 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                 {/* <SwiperSlide>
                     <img src={imgSrc2} className="heroimage" alt="" />
                 </SwiperSlide> */}
-                <SwiperSlide>
-                    <img src={imgSrc3} className="heroimage" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={imgSrc4} className="heroimage" alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={imgSrc5} className="heroimage" alt="" />
-                </SwiperSlide>
+                {console.log(window.innerWidth)}
+                {
+                    window.innerWidth > 600 ? (
+                        <>
+                            <SwiperSlide>
+                                <img src={imgSrc3} className="heroimage" alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={imgSrc4} className="heroimage" alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={imgSrc5} className="heroimage" alt="" />
+                            </SwiperSlide>
+                        </>
+                    ) : (
+                        <>
+                            <SwiperSlide>
+                                <img src={imgSrc6} className="heroimage" alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={imgSrc7} className="heroimage" alt="" />
+                            </SwiperSlide>
+                        </>
+                    )
+                }
+
             </Swiper>
 
             <div className="detail">

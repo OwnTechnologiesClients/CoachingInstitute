@@ -17,12 +17,6 @@ const CourseSection = () => {
             price:299
         },
         {
-            courseImg:img3,
-            cardHeading:"CUET (PG) Chemistry",
-            cardDetail:"Whether you are a working professional, a dedicated student, or someone looking to conquer the CUET(PG) Chemistry exam, our courses are tailored to meet your unique needs.",
-            price:299
-        },
-        {
             courseImg:img1,
             cardHeading:"GATE Chemistry",
             cardDetail:"Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.",
@@ -33,7 +27,15 @@ const CourseSection = () => {
             cardHeading:"IIT-JAM Chemistry",
             cardDetail:"Welcome to the IIT-JAM Chemistry Online Batch by ASAP Institute, a transformative voyage towards conquering the IIT-JAM Chemistry examination.",
             price:299
-        }
+        },
+        {
+            courseImg:img3,
+            cardHeading:"CUET (PG) Chemistry",
+            cardDetail:"Whether you are a working professional, a dedicated student, or someone looking to conquer the CUET(PG) Chemistry exam, our courses are tailored to meet your unique needs.",
+            price:299
+        },
+        
+        
     ]
     return (
         <div className="course-section">

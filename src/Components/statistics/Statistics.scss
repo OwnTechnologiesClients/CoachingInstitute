@@ -1,0 +1,69 @@
+$theme-color: #202C45;
+
+.statistics {
+    display: flex;
+    background-color: #2D8EFF;
+    justify-content: space-around;
+    color: #fff;
+    border-radius: 1.5vw;
+    padding: 3.5vw 5vw;
+    margin: 0 2vw;
+
+    .st-card {
+        text-align: center;
+        
+        padding-right: 3vw;
+
+        img {
+            width: 4vw;
+            height: 4vw;
+        }
+
+        .stats {
+            font-family: 'Poppins';
+
+            h1 {
+                font-weight: 700;
+                font-size: 2.5vw;
+                padding-bottom: 0.5vw;
+                margin-top: 1vw;
+            }
+
+            p {
+                font-weight: 400;
+                letter-spacing: .7px;
+                font-size: 1.1vw;
+            }
+        }
+    }
+
+    @media screen and (max-width:"480px") {
+        flex-direction: column;
+        padding: 5vw 6vw;
+        padding-left: 20vw;
+
+        .st-card {
+            display: flex;
+            margin: 1rem 0;
+            text-align: unset;
+
+            img {
+                margin-right: 1rem;
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .stats {
+                h1 {
+                    font-size: 1.3rem;
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+    }
+}

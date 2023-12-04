@@ -1,0 +1,236 @@
+$blue: #2D8EFF;
+$theme-color: #202C45;
+$light-text: #AAA8A8;
+$text: #646262;
+
+
+.faq-section {
+    padding: 4vw 6vw;
+    display: flex;
+
+    .message {
+        width: 80%;
+
+        h1 {
+            font-weight: 400;
+            font-size: 1.6vw;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.6vw;
+            color: $blue;
+            padding: .7vw 0;
+            // border-bottom: 2px solid $blue;
+        }
+
+        h3 {
+            padding: 1vw 0;
+            font-weight: 400;
+            color: #9A9696;
+            font-size: 1.2vw;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 1.15vw;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 1.2vw;
+        }
+        p1{
+            font-weight: 400;
+            font-size: 1vw;
+            color: #9A9696;
+
+        }
+
+        button {
+            background: $theme-color;
+            color: #fff;
+            padding: .6vw .8vw;
+            font-size: 1vw;
+            margin-top: 2vw;
+        }
+
+    }
+
+    .cards {
+        width: 60vw;
+        margin: 2vw auto;
+        display: flex;
+        justify-content: space-between;
+
+        .welcome-card {
+            width: 18vw;
+
+            img {
+                width: 18vw;
+            }
+
+            div {
+                h2 {
+                    font-weight: 400;
+                    padding: 1vw 0;
+                    font-size: 1.3vw;
+                }
+
+                p {
+                    color: #9A9696;
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+
+    .notification-panel {
+        width: 25vw;
+        margin-left: 10vw;
+        text-align: center;
+        border: 2px solid #707070;
+
+        h2 {
+            background-color: #202C45;
+            color: #fff;
+            padding: 1vw;
+        }
+
+        .marquee-container {
+            height: 90vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .marquee {
+            animation: marquee 10s linear infinite;
+            /* Adjust the animation duration as needed */
+            position: absolute;
+            top: 0;
+        }
+
+        .paused {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: -100%;
+                /* Adjust the distance for the desired scroll speed */
+            }
+        }
+
+        .notification {
+            background-color: #f7f7f7;
+            padding: 1vw;
+            border-top: 1px solid #202C45;
+            border-bottom: 1px solid #202C45;
+
+            a {
+                display: flex;
+                align-items: center;
+
+                .content {
+                    margin-left: 1vw;
+                    color: #0C48EA;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:"480px") {
+        flex-direction: column;
+        margin-top: 10vw;
+
+        .message {
+            width: unset;
+
+            h1,
+            p {
+                display: inline;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+            p1{
+                font-size: 1rem;
+                line-height: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.05rem;
+                padding-top: 1rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+                padding: 1rem 0;
+            }
+            h5{
+                font-size: 1rem;
+                line-height: 1.3rem;
+            }
+
+            button {
+                padding: 2vw;
+                font-size: .8rem;
+                margin: 1rem 0;
+            }
+        }
+
+        .cards {
+            width: unset;
+            margin: 0 auto;
+            flex-direction: column;
+
+            .welcome-card {
+                padding: 1rem 0;
+
+                img {
+                    width: 85vw;
+                }
+
+                div {
+                    width: 90vw;
+
+                    h2 {
+                        padding: .5rem 0;
+                        font-size: 1.1rem;
+                    }
+
+                    p {
+                        color: #9A9696;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .notification-panel {
+            margin: 0vw;
+            width: 90vw;
+            margin-top: 10vw;
+            height: 50vh;
+
+            h2 {
+                margin: unset;
+                font-size: 1.2rem;
+            }
+
+            .marquee-container {
+                height: 45vh;
+                padding: unset;
+            }
+
+            li {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+        }
+
+    }
+}

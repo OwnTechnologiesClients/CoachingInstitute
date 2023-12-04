@@ -1,0 +1,117 @@
+$blue: #2D8EFF;
+$light-bg: #eee;
+
+.popular-videos-section {
+    padding: 6vw;
+
+    h2 {
+        span {
+            color: $blue;
+        }
+
+        font-weight: 400;
+        font-size: 1.7vw;
+        color: #363345;
+        padding: 1vw 0;
+    }
+
+    .video-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .video-card {
+            margin: 1vw 0;
+        }
+    }
+    .playlist-cards{
+        margin: 2vw 0;
+        display: flex;
+        justify-content: space-between;
+        .card{
+            cursor: pointer;
+            position: relative;
+            h1{
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                color: #fff;
+                z-index: 3;
+                font-size: 3vw;
+            }
+            iframe{
+                filter: brightness(0.4);
+                position: relative;
+                z-index: -1;
+            }
+            h3{
+                text-align: center;
+                font-weight: normal;
+                margin: .4vw 0;
+            }
+        }
+    }
+    .main-video-section{
+        margin: 4vw 0;
+        iframe{
+            width: 87vw;
+        }
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .popular-videos-section {
+        h2 {
+            font-size: 1.1rem;
+        }
+        .playlist-cards{
+            margin: 2vw 0;
+            flex-direction: column;
+            .card{
+                margin: 1rem 0;
+                h1{
+                    top: 40%;
+                    left: 25%;
+                    color: #fff;
+                    z-index: 3;
+                    font-size: 1.7rem;
+                }
+                iframe{
+                    width: 86vw;
+                }
+                h3{
+                    text-align: center;
+                    font-weight: normal;
+                    margin: .4vw 0;
+                    font-size: 1.4rem;
+                }
+            }
+            
+        }
+        .main-video-section{
+            margin: 4vw 0;
+            h2{
+                margin: 2rem 0;
+            }
+            iframe{
+                width: 87vw;
+                height: 50vw;
+            }
+        }
+    }
+
+    .study-material-page {
+
+        .detail {
+            width: 70vw;
+
+            h1 {
+                width: unset;
+                font-size: 1.7rem;
+                text-align: start;
+            }
+        }
+
+    }
+}

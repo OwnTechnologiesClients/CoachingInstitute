@@ -1,0 +1,163 @@
+import React, { useState } from 'react'
+import Navbar from '../../Components/navbar/Navbar'
+import { Header1, Header2 } from '../../components/header/Header'
+import HeroSection from '../../components/heroSection/HeroSection'
+import bg3 from '../../assets/bg3.png'
+import CourseLinks from '../../components/courseLinks/CourseLinks'
+import CourseDetail from '../../components/courseDetail/CourseDetail'
+import courseDetailImg from '../../assets/study-material.jpg'
+import courseDetailBanner from '../../assets/study-material.jpg'
+import CourseTable from '../../components/courseTable/CourseTable'
+import Footer from '../../components/footer/Footer'
+import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
+import './StudyMaterial.scss';
+import studyMaterialData from './Studymaterial.json'
+
+const StudyMaterial = () => {
+    const [activeLink, setActiveLink] = useState('CSIR NET (Chemical Sciences) ');
+
+    const handleLinkClick = (link) => {
+
+        setActiveLink(link);
+    };
+
+    const tableFields =
+    {
+        "CSIR NET (Chemical Sciences) ": [
+            [
+                "Lakshya- Subtopic wise PYQ Booklets",
+                "45 minutes",
+                "1 Year",
+                1100
+            ],
+            [
+                "Abhyas-  Assignments and Practice Booklets",
+                "45 minutes",
+                "2 Years",
+                1100
+            ],
+            [
+                "Abhyaas- Theories Booklets",
+                "45 minutes",
+                "6 Months",
+                6000
+            ],
+            [
+                "Combined",
+                "45 minutes",
+                "1 Year",
+                7500
+            ],
+        ],
+        "GATE (Chemistry) ": [
+            [
+                "Lakshya- Subtopic wise PYQ Booklets",
+                "45 minutes",
+                "1 Year",
+                1100
+            ],
+            [
+                "Abhyas-  Assignments and Practice Booklets",
+                "45 minutes",
+                "2 Years",
+                1100
+            ],
+            [
+                "Abhyaas- Theories Booklets",
+                "45 minutes",
+                "6 Months",
+                6000
+            ],
+            [
+                "Combined",
+                "45 minutes",
+                "1 Year",
+                7500
+            ],
+        ],
+        "IIT-JAM (Chemistry) ": [
+            [
+                "Lakshya- Topicwise PYQ Booklets",
+                "45 minutes",
+                "1 Year",
+                250
+            ],
+            [
+                "Abhyas-  Assignments and Practice Booklets",
+                "45 minutes",
+                "2 Years",
+                1100
+            ],
+            [
+                "Abhyaas- Theories Booklets",
+                "45 minutes",
+                "6 Months",
+                4500
+            ],
+            [
+                "Combined",
+                "45 minutes",
+                "1 Year",
+                5000
+            ],
+        ],
+        "CUET(PG)": [
+            [
+                "Lakshya- Topicwise PYQ Booklets",
+                "45 minutes",
+                "1 Year",
+                250
+            ],
+            [
+                "Abhyas-  Assignments and Practice Booklets",
+                "45 minutes",
+                "2 Years",
+                1100
+            ],
+            [
+                "Abhyaas- Theories Booklets",
+                "45 minutes",
+                "6 Months",
+                4500
+            ],
+            [
+                "Combined",
+                "45 minutes",
+                "1 Year",
+                5000
+            ],
+        ],
+    }
+
+    return (
+        <div className='study-material-page'>
+
+            <Header1 />
+            <Header2 />
+            <Navbar />
+
+            {/* <HeroSection
+                imgSrc={bg3}
+                hd1={"STUDY MATERIAL"}
+                hd2={"FOR YOUR BETTER FUTURE"}
+            /> */}
+            <div className="study-material-section">
+                <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick} />
+                <div className="study-material-section-right-nav">
+                    <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData} />
+
+                    <div className="course-idea">
+                        <h2 className='under-bar'>CourseIdea</h2>
+                        <CourseTable mode={"DASHBOARD"} tableFields={tableFields[activeLink]} />
+                    </div>
+
+                </div>
+
+            </div>
+            <WhatsappIcon />
+            <Footer />
+        </div>
+    )
+}
+
+export default StudyMaterial

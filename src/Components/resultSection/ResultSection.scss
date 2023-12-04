@@ -1,0 +1,41 @@
+.result-row {
+
+    display: flex;
+    justify-content: space-between;
+
+    .col-md-3 {
+        padding: 2vw 0;
+        width: 15vw;
+        text-align: center;
+
+        p {
+            font-size: .9vw;
+            padding: .2vw 0;
+        }
+
+        .result-img {
+            width: 13vw
+        }
+    }
+
+    margin-bottom: -5vw;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+        width: 90vw;
+
+        .col-md-3{
+            width: 90vw;
+            padding: 5vw;
+            p {
+                font-size: 5vw;
+                padding: .2vw 0;
+            }
+    
+            .result-img {
+                width: 50vw
+            }
+        }
+
+    }
+}

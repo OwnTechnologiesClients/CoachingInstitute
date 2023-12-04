@@ -1,0 +1,154 @@
+$nav-bg: #24497c;
+
+.ph-appbar {
+    width: 100%;
+    height: 4vw;
+    border-top: 4px;
+    background-color: #2D8EFF;
+    position: relative;
+    display: flex;
+    
+
+    h2 {
+        font-size: 1.4vw;
+        color: white;
+        font-family: Arial;
+        font-weight: 400;
+        position: absolute;
+        top: 30%;
+        margin-left: 2vw;
+    }
+    div{
+        display: flex;
+        position: absolute;
+        right: 1vw;
+    }
+
+    button {
+        background-color: $nav-bg;
+        padding: .6vw 1.3vw;
+        margin: 0.7vw .5vw;
+        border-radius: 3.8rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: #fff;
+        
+        border: none;
+    }
+
+    @media screen and (max-width:480px) {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        h2{
+        font-size: 1rem;
+            top: unset;
+        }
+        button{
+            font-size: .7rem;
+            padding: .2rem .5rem;
+        }
+    }
+}
+
+
+.no-course-message{
+    padding: 4rem;
+    @media screen and (max-width:480px) {
+        font-size: 1rem;
+    }
+}
+
+.ph-course-parent {
+    margin-left: 4vw;
+    margin-top: 1.5rem;
+    display: flex;
+    .course-image{
+        width: 15vw;
+    }
+    @media screen and (max-width:480px) {
+        img{
+            width: 30vw;
+        }
+        .pdfLogo img{
+            width: 30px;
+        }
+        .ph-course-detail {
+        
+            h3 {
+                font-size: 1rem;
+            }
+        
+            p {
+                font-size: .8rem;
+                margin-top: 0.6vw;
+                color: #8C9099;
+                font-family: Arial;
+                font-weight: 400;
+                margin-left: 2vw;
+            }
+        
+            p2 {
+                font-size: 1.2vw;
+                color: #8C9099;
+                font-family: Arial;
+                font-weight: 700;
+                margin-left: 2vw;
+                margin-top: 1vw;
+            }
+        
+            .ph-course-name {
+                margin-top: 1vw;
+            }            
+        }
+    }
+}
+
+.ph-course-detail {
+    position: relative;
+
+    h3 {
+        font-size: 1.4vw;
+        color: black;
+        font-family: Arial;
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+
+    p {
+        font-size: 1.1vw;
+        margin-top: 0.7vw;
+        color: #8C9099;
+        font-family: Arial;
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+
+    p2 {
+        font-size: 1.2vw;
+        color: #8C9099;
+        font-family: Arial;
+        font-weight: 700;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+
+    .ph-course-name {
+        margin-top: 1vw;
+    }
+
+    
+}
+
+.pdfLogo {
+    display: flex;
+    align-items: center;
+}
+
+.pdfLogo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+

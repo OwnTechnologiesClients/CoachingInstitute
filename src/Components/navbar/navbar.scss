@@ -1,0 +1,178 @@
+$theme-color: #202C45;
+$nav-bg: #24497c;
+$blue: #2D8EFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300&display=swap');
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vw;
+    background-color: $theme-color;
+    color: #fff;
+    border-bottom: 5px solid $blue;
+    
+    
+
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+
+
+
+        a {
+            .menu-item {
+                background-color: $nav-bg;
+                padding: .6vw 1.1vw;
+                margin: 0.7vw .5vw;
+                border-radius: 3.8rem;
+                display: flex;
+                align-items: center;
+                font-size: 1.1vw;
+                font-weight: 400;
+            }
+
+
+            &:hover .menu-item {
+
+                background: #fff !important;
+                color: #202C45;
+
+            }
+        }
+    }
+
+    .courses {
+        &:hover .dropdown-content {
+            display: block;
+        }
+    }
+
+    .active {
+        background: #fff !important;
+        color: #202C45;
+    }
+
+    .dropdown {
+        position: relative;
+
+        .dropdown-label {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 2.1vw;
+            left: -6.35vw;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            min-width: 15vw;
+
+            a {
+                color: #333;
+                padding: 12px;
+                display: block;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+
+
+    }
+
+    .new-batch {
+        margin-left: 3vw;
+        padding: 1.15vw;
+        background: $blue;
+        font-size: 1.1vw;
+        font-family: 'Poppins';
+    }
+
+    @media screen and (max-width:"480px") {
+
+        padding: 1vw 6vw;
+        flex-direction: column;
+
+        .menu-icon {
+            display: block;
+        }
+
+        .menu {
+            flex-direction: column;
+            display: none;
+
+            &.open {
+                display: flex;
+            }
+
+            a {
+                margin: .2rem 0;
+                
+                .menu-item {
+                    border-radius: 1rem;
+
+                    padding: .7rem 1.2rem;
+                    font-size: 1.1rem;
+                }
+
+            }
+        }
+
+        .courses {
+            padding-bottom: 5.5rem;
+        }
+
+        .dropdown {
+            position: relative;
+            z-index: 1000;
+
+            .dropdown-content {
+                border-radius: 1rem;
+                display: block;
+                position: absolute;
+                top: 1.6rem;
+                left: -6.2rem;
+                background-color: #fff;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                min-width: 87vw;
+
+                a {
+                    color: #333;
+                    padding: .5rem 1rem;
+                    display: flex;
+
+
+                    &:hover {
+                        background-color: #f9f9f9;
+                    }
+                }
+            }
+
+
+        }
+
+        .new-batch {
+            padding: 1rem;
+            background: $blue;
+            font-size: 1.1rem;
+            font-family: 'Poppins';
+            margin-left: 0;
+
+        }
+
+
+    }
+}

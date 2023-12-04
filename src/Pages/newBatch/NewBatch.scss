@@ -1,0 +1,211 @@
+.new-batch-page {
+
+    @media screen and (min-width:768px) {
+        .parent-row {
+            width: 58.5vw;
+
+        }
+
+        .child-row {
+            width: 58.5vw;
+
+            span {
+                &:first-child {
+                    width: 16vw;
+                }
+
+                &:nth-child(2) {
+                    width: 9.5vw;
+                }
+
+                &:nth-child(3) {
+                    width: 11vw;
+                }
+
+                &:nth-child(4) {
+                    width: 7vw;
+                }
+
+                &:nth-child(5) {
+                    width: 7vw;
+                    padding-left: 2vw;
+                }
+
+                &:nth-child(6) {
+                    width: 7vw;
+                }
+
+                &:nth-child(7) {
+                    width: 6vw;
+                }
+            }
+        }
+    }
+
+    .marqueess {
+        .notification-panel {
+            margin-top: 2.5vw;
+            width: 25vw;
+            text-align: center;
+            border: 2px solid #707070;
+
+            h2 {
+                background-color: #202C45;
+                color: #fff;
+                padding: 1vw;
+            }
+
+            .marquee-container {
+                height: 90vh;
+                // height: 90vw;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .quick-link-marquee-container {
+                height: 90vh;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .marquee {
+                animation: marquee 10s reverse infinite;
+                /* Adjust the animation duration as needed */
+                position: absolute;
+                top: 0;
+            }
+
+            .paused {
+                animation-play-state: paused;
+            }
+
+            @keyframes marquee {
+                0% {
+                    top: 0;
+                }
+
+                100% {
+                    top: -100%;
+                    /* Adjust the distance for the desired scroll speed */
+                }
+            }
+
+            .notification {
+                background-color: #f7f7f7;
+                padding: 1vw;
+                border-top: 1px solid #202C45;
+                border-bottom: 1px solid #202C45;
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    .content {
+                        margin-left: 1vw;
+                        color: #0C48EA;
+                        font-family: Poppins;
+                        text-align: justify;
+
+
+                    }
+                }
+            }
+        }
+
+        .quick-panel {
+            width: 100%;
+            margin-top: 2vw;
+            height: 29.2vw;
+            text-align: center;
+            border: 2px solid #707070;
+
+            h2 {
+                background-color: #202C45;
+                color: #fff;
+                padding: 0.6vw;
+            }
+
+            .marquee-container {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .quick-link-marquee-container {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .marquee {
+                animation: marquee 10s reverse infinite;
+                /* Adjust the animation duration as needed */
+                position: absolute;
+                top: 0;
+            }
+
+            .paused {
+                animation-play-state: paused;
+            }
+
+            @keyframes marquee {
+                0% {
+                    top: 0;
+                }
+
+                100% {
+                    top: -100%;
+                    /* Adjust the distance for the desired scroll speed */
+                }
+            }
+
+            .notification {
+                background-color: #f7f7f7;
+                padding: 1vw;
+                border-top: 1px solid #202C45;
+                border-bottom: 1px solid #202C45;
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    .content {
+                        margin-left: 1vw;
+                        color: #0C48EA;
+                        font-family: Poppins;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:480px) {
+
+            .notification-panel,
+            .quick-panel {
+                margin: 10vw 2.5vw;
+                width: 89vw;
+                min-height: 31.5vh;
+
+                h2 {
+                    margin: unset;
+                    font-size: 1.2rem;
+                }
+
+                .marquee-container {
+                    height: 45vh;
+                    padding: unset;
+                }
+
+                .quick-link-marquee-container {
+                    height: 54vh;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                li {
+                    padding: 1rem 0;
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

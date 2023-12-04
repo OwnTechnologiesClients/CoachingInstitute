@@ -97,12 +97,12 @@ $text: #646262;
     }
 
     @media screen and (max-width:"480px") {
-        flex-direction: column;
         text-align: center;
 
         .logo {
+            margin: auto 0;
             img {
-                height: 5rem;
+                height: 4rem;
             }
         }
 
@@ -127,7 +127,7 @@ $text: #646262;
                     margin-left: -8vw;
                 }
                 img{
-                    margin-right: 8vw;
+                    margin-right: 10vw;
                 }
             }
         }

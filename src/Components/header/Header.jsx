@@ -15,7 +15,7 @@ const Header1 = () => {
             <div className='top-links'>
                 <span><Link to='/onlinecourses'>Popular Courses &nbsp;&nbsp;| </Link></span>
                 <span><Link to='/contact'>Help Desk &nbsp;&nbsp;| </Link></span>
-                <span><Link to={`${localStorage.getItem('token')?'/history':"/student-login"}`} >Login</Link></span>
+                <span><Link to={`${localStorage.getItem('token') ? '/history' : "/student-login"}`} >Login</Link></span>
             </div>
             <div className="top-icons">
                 <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'><img src={fbicon} width={"17vw"} alt="" /></a>
@@ -27,9 +27,9 @@ const Header1 = () => {
 }
 const Header2 = () => {
     const handleTelephoneClick = () => {
-        const phoneNumber = 'tel:+918595764714'; 
+        const phoneNumber = 'tel:+918595764714';
         window.location.href = phoneNumber;
-      };
+    };
     return (
         <div className="top-contact">
             <div className="logo">
@@ -40,7 +40,7 @@ const Header2 = () => {
                     <a href="tel:+918595764714"><img src={phoneIcon} alt="" /></a>
                     <div>
                         <p className='h1'>CALL US TODAY</p>
-                        <p className='h2'>+91 8595764714 / 7011767872</p>
+                        <p className='h2'>+91 8595764714 / {window.innerWidth < 600 ? <br /> : ''} 7011767872</p>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@ const Header2 = () => {
                     <img src={clockIcon} alt="" />
                     <div>
                         <p className='h1'>WE ARE OPEN</p>
-                        <p className='h2'>Mon-Sun 9:00AM - 8:00PM</p>
+                        <p className='h2'>Mon - Sun {window.innerWidth < 600 ? <br /> : ''} 9:00AM - 8:00PM</p>
                     </div>
                 </div>
             </div>

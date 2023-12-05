@@ -221,6 +221,19 @@ function Form() {
   const handlePayment = async (e) => {
     e.preventDefault();
 
+    if (!isFormSaved) {
+      toast.warn("Please Save Form First", {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+      });
+      return;
+    }
+
     let iData = {
       registrationNo: regNo,
       contact: contactnumber,

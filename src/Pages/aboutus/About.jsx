@@ -31,17 +31,17 @@ const About = () => {
                     <p>Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics. We aim to provide high-quality education that empowers students to achieve their full potential and build successful careers in their chosen fields.</p><br />
                     <p>Our mission at ASAP Chemtime is to provide a comprehensive and personalized learning experience to students who aspire to crack competitive exams in Chemistry and Mathematics. We offer coaching classes, study material, and test series for exams such as:</p><br />
 
-                    <p>— GATE (Graduate Aptitude Test in Engineering)</p>
-                    <p>— CSIR-NET (Council of Scientific and Industrial Research — National Eligibility Test)</p>
-                    <p>— JRF (Junior Research Fellowship)</p>
-                    <p>— IIT-JAM (Indian Institutes of Technology Joint Admission Test for MSc)</p>
-                    <p>—CUET-PG (Central University Entrance Test for Post Graduation)</p>
-                    <p>—TIFR (Tata Institute of Fundamental Research)</p>
-                    <p>—BARC (Bhabha Atomic Research Centre)</p>
-                    <p>—UPSC (Union Public Service Commission)</p>
-                    <p>—GSI (Geological Survey of India)</p>
-                    <p>—State PSC (Public Service Commission)</p>
-                    <p>—State SET (State Eligibility Test)</p><br />
+                    <p>• GATE (Graduate Aptitude Test in Engineering)</p>
+                    <p>• CSIR-NET (Council of Scientific and Industrial Research — National Eligibility Test)</p>
+                    <p>• JRF (Junior Research Fellowship)</p>
+                    <p>• IIT-JAM (Indian Institutes of Technology Joint Admission Test for MSc)</p>
+                    <p>• CUET-PG (Central University Entrance Test for Post Graduation)</p>
+                    <p>• TIFR (Tata Institute of Fundamental Research)</p>
+                    <p>• BARC (Bhabha Atomic Research Centre)</p>
+                    <p>• UPSC (Union Public Service Commission)</p>
+                    <p>• GSI (Geological Survey of India)</p>
+                    <p>• State PSC (Public Service Commission)</p>
+                    <p>• State SET (State Eligibility Test)</p><br />
 
                     <p>At ASAP Chemtime, we believe in creating a student-centric learning environment where students can learn at their own pace and receive individual attention from experienced faculty members. We are committed to providing the best education, rigorous practice sessions, and excellent study material to help students succeed in these exams.</p><br />
 

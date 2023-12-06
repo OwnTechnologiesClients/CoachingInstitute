@@ -42,26 +42,17 @@ function Form() {
 
     setisPayDone(true);
 
-    localStorage.clear();
+    // localStorage.clear();
+    localStorage.removeItem("pFromData");
+    localStorage.removeItem("pData");
+    
 
     // console.log(result.data)
 
-    setTimeout(() => {
-      navigate("/history");
-    }, 2000);
+    // setTimeout(() => {
+    //   navigate("/history");
+    // }, 2000);
   };
-
-  useEffect(() => {
-    if (!isPayment && currentUser === "") {
-      navigate("/");
-    }
-    if (isPayment) {
-      let storedDataString = localStorage.getItem("pData");
-      let storedData = JSON.parse(storedDataString);
-
-      finalCall(storedData);
-    }
-  }, []);
 
   const [isFormSaved, setisFormSaved] = useState(false);
   const [isPayDone, setisPayDone] = useState(false);
@@ -82,7 +73,7 @@ function Form() {
     fathername,
     filename,
   } = currentUser;
-  console.log(currentUser);
+  
 
   const openParenthesisIndex = coursename?.indexOf("(");
   const closeParenthesisIndex = coursename?.indexOf(")");
@@ -218,6 +209,27 @@ function Form() {
     }
   };
 
+  const handlePaymen = async (x) => {
+    // e.preventDefault();
+    try {
+      const response = await axios({
+        method: "post",
+        url: "http://localhost:5000/api/v1/phonepe/payment",
+        data: { name: "vipul",
+        amount: x,
+        number: "7015129103",
+        MUID: "MUID" + Date.now(),
+        transactionId: "T" + Date.now(), },
+      });
+      // console.log(response.data.url);
+      if (response.data.url) {
+        window.location.href = response.data.url;
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   const handlePayment = async (e) => {
     e.preventDefault();
 
@@ -243,7 +255,12 @@ function Form() {
 
     localStorage.setItem("pData", iDataString);
 
-    navigate("/payment", { state: { totalCost: +price } });
+    let iFormData = JSON.stringify(formData);
+
+    localStorage.setItem("pFromData", iFormData);
+
+    // navigate("/payment", { state: { totalCost: +price } });
+    handlePaymen(+price);
 
     // if (!isFormSaved) {
     //   toast.warn("Please Save Form First", {
@@ -351,6 +368,31 @@ function Form() {
     // });
   };
 
+  useEffect(() => {
+    console.log(isPayment);
+    console.log(!localStorage.getItem("pData"));
+    if (!isPayment && currentUser === "") {
+      navigate("/");
+    }
+    if (isPayment && localStorage.getItem("pData")) {
+      let storedDataString = localStorage.getItem("pData");
+      let storedData = JSON.parse(storedDataString);
+
+      let storedFromData = localStorage.getItem("pFromData");
+      let formStoredData = JSON.parse(storedFromData);
+
+      setFormData((prevData) => ({
+        ...prevData,
+        ...formStoredData,
+      }));
+
+      finalCall(storedData);
+    }
+    if(isPayment && !localStorage.getItem("pData")) {
+      navigate("/history");
+    }
+  }, []);
+
   return (
     <form className="form-pay">
       <div className="sf-header-parent">
@@ -397,6 +439,7 @@ function Form() {
               type="radio"
               value="6 Month"
               checked={formData?.courseduration === "6 Months"}
+              readOnly
             />
           </label>
 
@@ -407,6 +450,7 @@ function Form() {
               type="radio"
               value="1 Year"
               checked={formData?.courseduration === "1 Year"}
+              readOnly
             />
           </label>
 
@@ -417,6 +461,7 @@ function Form() {
               type="radio"
               value="2 Years"
               checked={formData?.courseduration === "2 Years"}
+              readOnly
             />
           </label>
         </div>

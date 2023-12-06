@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import courseImg from '../../../assets/course-img.png'
 import pdficon from '../../../assets/icons/pdf.png'
 import {Header1,Header2} from '../../../components/header/Header'
-import Navbar from '../../../components/navbar/Navbar'
+import Navbar from '../../../Components/navbar/Navbar'
 
 const SearchUser = () => {
 

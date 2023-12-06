@@ -25,7 +25,7 @@ const TestSeriesTable = ({ mode, tableFields }) => {
         authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     });
-    if(!response.data.success) {
+    if (!response.data.success) {
       localStorage.removeItem("token");
       navigate("/student-login");
     }

@@ -4,7 +4,7 @@ import './Admin.scss';
 import { Link, useNavigate } from "react-router-dom"
 import { Header1, Header2 } from '../../components/header/Header';
 import Navbar from '../../Components/navbar/Navbar';
-import Footer from '../../Components/footer/Footer';
+import Footer from '../../components/footer/Footer';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';

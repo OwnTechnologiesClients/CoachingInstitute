@@ -22,35 +22,38 @@ import NewBatch from "./pages/newBatch/NewBatch";
 import Phonepe from "./Pages/payment/phonepe";
 import Success from "./Pages/payment/success";
 import Failure from "./Pages/payment/failure";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/onlinecourses" element={<OnlineCourse />} />
-          <Route path="/offlinecourses" element={<OfflineCourse />} />
-          <Route path="/testseries" element={<TestSeries />} />
-          <Route path="/studymaterial" element={<StudyMaterial />} />
-          <Route path="/videos" element={<PopularVideos />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/new-batch" element={<NewBatch />} />
-          <Route path="/form" element={<Form />} />
-          <Route path="/student-login" element={<Login />} />
-          <Route path="/student-signup" element={<StudentSignup />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/searchuser" element={<SearchUser />} />
-          <Route path="/form-print" element={<FormPrint />} />
-          <Route path="/refund-policy" element={<RefundPolicy />} />
-          <Route path="/result" element={<Result />} />
-          <Route path="/result-explore" element={<Result1 />} />
-          <Route path='/payment' element={<Phonepe />} />
-          <Route path='/success' element={<Success />} />
-          <Route path='/failure' element={<Failure />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/onlinecourses" element={<OnlineCourse />} />
+            <Route path="/offlinecourses" element={<OfflineCourse />} />
+            <Route path="/testseries" element={<TestSeries />} />
+            <Route path="/studymaterial" element={<StudyMaterial />} />
+            <Route path="/videos" element={<PopularVideos />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/new-batch" element={<NewBatch />} />
+            <Route path="/form" element={<Form />} />
+            <Route path="/student-login" element={<Login />} />
+            <Route path="/student-signup" element={<StudentSignup />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/searchuser" element={<SearchUser />} />
+            <Route path="/form-print" element={<FormPrint />} />
+            <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/result" element={<Result />} />
+            <Route path="/result-explore" element={<Result1 />} />
+            <Route path="/payment" element={<Phonepe />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="/failure" element={<Failure />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   );

@@ -5,7 +5,7 @@ import './TestSeries.scss';
 import CourseLinks from '../../components/courseLinks/CourseLinks'
 import courseDetailImg from '../../assets/courseDetail.png'
 import TestSeriesTable from '../../components/courseTable/TestSeriesTable'
-import Footer from '../../components/footer/Footer'
+import Footer from '../../Components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import testSeriesData from './TestSeriesData.json'
 import TestSeriesCourseDetail from '../../components/courseDetail/TestSeriesCourseDetail';

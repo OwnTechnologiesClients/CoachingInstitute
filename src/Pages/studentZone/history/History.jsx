@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./History.scss"
 import courseImg from '../../../assets/course-img.png'
 import { Header1, Header2 } from '../../../components/header/Header'
-import Navbar from '../../../components/navbar/Navbar'
+import Navbar from '../../../Components/navbar/Navbar'
 import axios from 'axios'
 import pdficon from '../../../assets/icons/pdf.png'
 import { useDispatch } from 'react-redux'
@@ -30,11 +30,11 @@ const History = () => {
     }
 
     const getData = async () => {
-        setisLoading(true);
+
         const response = await
             axios({
                 method: 'get',
-                url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
+                url: 'http://localhost:5000/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -44,7 +44,7 @@ const History = () => {
         const Data = await
             axios({
                 method: 'post',
-                url: 'https://chemtime-backend.onrender.com/api/student/get-history-data',
+                url: 'http://localhost:5000/api/student/get-history-data',
                 data: response.data.data,
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
@@ -82,7 +82,6 @@ const History = () => {
 
                     return (
                         <div key={index} className='ph-course-parent'>
-                            {console.log(CourseImages[coursename])}
                             <img className='course-image' src={CourseImages[coursename]} alt="" />
                             <div className='ph-course-detail'>
                                 <h3>{coursename}</h3>

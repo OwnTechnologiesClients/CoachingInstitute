@@ -20,7 +20,7 @@ const CourseTable = ({ mode, tableFields }) => {
         const response = await
             axios({
                 method: 'get',
-                url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
+                url: 'http://localhost:5000/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }

@@ -20,19 +20,23 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
         const response = await
             axios({
                 method: 'get',
-                url: 'https://chemtime-backend.onrender.com/api/student/get-current-user',
+                url: 'http://localhost:5000/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
-        console.log(response.data.data);
+        // console.log(response.data.data);
+        if (!response.data.success) {
+            localStorage.removeItem("token");
+            navigate("/student-login");
+          }
         const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername,myfilename } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
         courseData['courseduration'] = courseItem[1];
         courseData['coursetype'] = courseItem[2];
-        courseData['price'] = courseItem[5];
+        courseData['price'] = courseItem[3];
 
         if (localStorage.getItem('token')) {
             courseData['studentname'] = studentname;
@@ -46,7 +50,8 @@ const OnlineCourseTable = ({ mode ,tableFields}) => {
             courseData['fathername'] = fathername;
             courseData['filename'] = myfilename;
             dispatch(SetCurrentUser(courseData));
-            navigate('/form')
+            // navigate('/form')
+            navigate("/form", { state: { currentUser: courseData} });
         }
         else {
             navigate('/student-login')

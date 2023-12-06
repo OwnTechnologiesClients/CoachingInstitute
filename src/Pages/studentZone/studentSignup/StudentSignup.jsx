@@ -48,7 +48,7 @@ const StudentSignup = () => {
         formData.append("address", address);
         console.log(formData)
         const result = await axios.post(
-            "https://chemtime-backend.onrender.com/api/student/register",
+            "http://localhost:5000/api/student/register",
             formData,
             {
                 headers: { "Content-Type": "multipart/form-data" }

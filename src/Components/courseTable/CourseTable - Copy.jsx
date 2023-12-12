@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import axios from 'axios';
 import { SetCurrentUser } from "../../redux/userSlice";
 
-const CourseTable = ({ mode ,tableFields}) => {
+const CourseTable = ({ mode, tableFields }) => {
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
@@ -18,13 +18,13 @@ const CourseTable = ({ mode ,tableFields}) => {
         const response = await
             axios({
                 method: 'get',
-                url: 'http://localhost:5000/api/student/get-current-user',
+                url: 'http://localhost:9000/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
             });
         console.log(response.data.data);
-        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername,myfilename } = response.data.data;
+        const { studentname, contactnumber, dateofbirth, email, city, state, pincode, address, fathername, myfilename } = response.data.data;
 
         const courseData = {}
         courseData['coursename'] = courseItem[0];
@@ -49,7 +49,7 @@ const CourseTable = ({ mode ,tableFields}) => {
             navigate('/student-login')
         }
     }
-    
+
 
     return (
         <div className='course-table'>

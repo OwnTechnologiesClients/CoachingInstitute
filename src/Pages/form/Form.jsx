@@ -22,7 +22,7 @@ function Form() {
   const finalCall = async (xxx) => {
     const result = await axios({
       method: "post",
-      url: "http://localhost:5000/api/student/get-registration-form",
+      url: "http://localhost:9000/api/student/get-registration-form",
       data: {
         registrationNo: xxx.registrationNo,
         contact: xxx.contact,
@@ -45,7 +45,7 @@ function Form() {
     // localStorage.clear();
     localStorage.removeItem("pFromData");
     localStorage.removeItem("pData");
-    
+
 
     // console.log(result.data)
 
@@ -73,7 +73,7 @@ function Form() {
     fathername,
     filename,
   } = currentUser;
-  
+
 
   const openParenthesisIndex = coursename?.indexOf("(");
   const closeParenthesisIndex = coursename?.indexOf(")");
@@ -174,7 +174,7 @@ function Form() {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/student/registration-form",
+        url: "http://localhost:9000/api/student/registration-form",
 
         data: formData,
         headers: {
@@ -214,12 +214,14 @@ function Form() {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/v1/phonepe/payment",
-        data: { name: "vipul",
-        amount: x,
-        number: "7015129103",
-        MUID: "MUID" + Date.now(),
-        transactionId: "T" + Date.now(), },
+        url: "http://localhost:9000/api/v1/phonepe/payment",
+        data: {
+          name: "vipul",
+          amount: x,
+          number: "7015129103",
+          MUID: "MUID" + Date.now(),
+          transactionId: "T" + Date.now(),
+        },
       });
       // console.log(response.data.url);
       if (response.data.url) {
@@ -276,7 +278,7 @@ function Form() {
     // }
     // const response = await axios({
     //   method: "post",
-    //   url: "http://localhost:5000/api/payment/createOrder",
+    //   url: "http://localhost:9000/api/payment/createOrder",
     //   data: {
     //     amount: price * 100,
     //     currency: "INR",
@@ -304,7 +306,7 @@ function Form() {
     //     console.log(response);
     //     const res = await axios({
     //       method: "post",
-    //       url: "http://localhost:5000/api/payment/verifyOrder",
+    //       url: "http://localhost:9000/api/payment/verifyOrder",
     //       data: {
     //         order_id: response.razorpay_order_id,
     //         payment_id: response.razorpay_payment_id,
@@ -319,7 +321,7 @@ function Form() {
     //     if (res.data.success) {
     //       const result = await axios({
     //         method: "post",
-    //         url: "http://localhost:5000/api/student/get-registration-form",
+    //         url: "http://localhost:9000/api/student/get-registration-form",
     //         data: {
     //           registrationNo: regNo,
     //           contact: contactnumber,
@@ -388,7 +390,7 @@ function Form() {
 
       finalCall(storedData);
     }
-    if(isPayment && !localStorage.getItem("pData")) {
+    if (isPayment && !localStorage.getItem("pData")) {
       navigate("/history");
     }
   }, []);
@@ -422,7 +424,7 @@ function Form() {
             />
           </div>
           <div className="form-profilepic">
-            <img src={`http://localhost:5000/public/${filename}`} />
+            <img src={`http://localhost:9000/public/${filename}`} />
           </div>
         </div>
       </div>
@@ -491,8 +493,8 @@ function Form() {
               value="Demo"
               checked={formData?.coursetype === "Demo"}
               onChange={handleChange}
-              // Checking this radio button if the selected option is "Male"
-              // checked={selectedOption === "Demo"}
+            // Checking this radio button if the selected option is "Male"
+            // checked={selectedOption === "Demo"}
             />
           </label>
 

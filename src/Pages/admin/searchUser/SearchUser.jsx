@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import courseImg from '../../../assets/course-img.png'
 import pdficon from '../../../assets/icons/pdf.png'
-import {Header1,Header2} from '../../../components/header/Header'
+import { Header1, Header2 } from '../../../components/header/Header'
 import Navbar from '../../../Components/navbar/Navbar'
 
 const SearchUser = () => {
@@ -32,7 +32,7 @@ const SearchUser = () => {
         const response = await
             axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/admin/get-adminpage-details',
+                url: 'http://localhost:9000/api/admin/get-adminpage-details',
                 data: {
                     contactnumber: CN,
                     registrationnumber: RN
@@ -61,9 +61,9 @@ const SearchUser = () => {
 
     return (
         <div className="search-user">
-            <Header1/>
-            <Header2/>
-            <Navbar/>
+            <Header1 />
+            <Header2 />
+            <Navbar />
             <div className='ph-appbar'>
                 <h2>Check Student Form</h2>
             </div>

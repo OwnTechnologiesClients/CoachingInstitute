@@ -23,7 +23,7 @@ const Admin = () => {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'http://localhost:5000/api/admin/get-details',
+                    url: 'http://localhost:9000/api/admin/get-details',
                     data: {
                         email: userId,
                         password: password
@@ -62,7 +62,7 @@ const Admin = () => {
         }
 
     }
-    
+
     return (
         <div>
             <Header1 />

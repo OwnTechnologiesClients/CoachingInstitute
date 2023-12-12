@@ -10,7 +10,7 @@ const Phonepe = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const totalCost = location?.state?.totalCost || 0;
-  
+
 
   const [loading2, setLoading2] = useState(false);
   const [formData, setFormData] = useState({
@@ -39,7 +39,7 @@ const Phonepe = () => {
       setLoading2(true);
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/v1/phonepe/payment",
+        url: "http://localhost:9000/api/v1/phonepe/payment",
         data: { ...data },
       });
       setLoading2(false);
@@ -53,7 +53,7 @@ const Phonepe = () => {
   };
 
   useEffect(() => {
-    if(totalCost === 0) {
+    if (totalCost === 0) {
       navigate("/");
     }
     else {

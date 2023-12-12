@@ -13,16 +13,16 @@ function FormPrint() {
         e.preventDefault();
         print();
     }
-    
-    const getImage = async ()=>{
+
+    const getImage = async () => {
         const response = await
-        axios({
-            method: 'get',
-            url: 'http://localhost:5000/api/student/get-current-user',
-            headers: {
-                authorization: `Bearer ${localStorage.getItem("token")}`
-            }
-        });
+            axios({
+                method: 'get',
+                url: 'http://localhost:9000/api/student/get-current-user',
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem("token")}`
+                }
+            });
         setImageFileName(response.data.data.myfilename)
     }
 
@@ -56,7 +56,7 @@ function FormPrint() {
                         />
                     </div>
                     <div className='form-profilepic'>
-                        <img src={`http://localhost:5000/public/${imagefilename}`}  />
+                        <img src={`http://localhost:9000/public/${imagefilename}`} />
                     </div>
 
                 </div>

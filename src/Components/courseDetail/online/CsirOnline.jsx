@@ -17,6 +17,12 @@ const CsirOnline = () => {
       "1 Year",
       "Weekend",
       20000
+    ],
+    [
+      "CSIR NET (Chemical Science)",
+      "1 Year",
+      "Regular",
+      20000
     ]
   ]
 

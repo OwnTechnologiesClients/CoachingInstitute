@@ -78,6 +78,12 @@ const NewBatch = () => {
                 20000
             ],
             [
+                "CSIR NET (Chemical Science)",
+                "1 Year",
+                "Regular",
+                20000
+            ],
+            [
                 "CUET",
                 "6 Months",
                 "Regular",
@@ -87,12 +93,18 @@ const NewBatch = () => {
                 "GATE",
                 "6 Months",
                 "Regular",
-                15000
+                17700
             ],
             [
                 "GATE",
                 "1 Year",
                 "Weekend",
+                20000
+            ],
+            [
+                "GATE",
+                "1 Year",
+                "Regular",
                 20000
             ],
             [

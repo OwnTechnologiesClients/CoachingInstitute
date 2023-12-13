@@ -37,17 +37,24 @@ const Home = () => {
             <CourseSection />
             
             <WelcomeSubSection/>
+
+            <ResultSection />
+
+            <StatisticsSection />
+
+            <VideoSection />
+
             <ChemistryEducationChoices />
             
             <CsirNetPreparation />
             
             <IITJamAndGateCoaching />
             
-            <StatisticsSection />
+            
 
-            <ResultSection />
+            
 
-            <VideoSection />
+            
 
             <Faq/>
             

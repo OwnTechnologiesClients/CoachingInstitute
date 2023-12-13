@@ -67,11 +67,11 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/student-login">Students</Link>
+            <Link to="/terms-condition">Terms & Condition</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/onlinecourses">Courses</Link>
+            <Link to="/privacy-policy">Privacy & Policy</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />

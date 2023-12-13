@@ -15,7 +15,7 @@ const ResultSection = () => {
     }
 
     return (
-        <div className="videos-section" style={{backgroundColor:"#fff"}}>
+        <div className="result-section">
 
             <div className='top-heading'>
                 <h1>

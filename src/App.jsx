@@ -23,6 +23,8 @@ import Phonepe from "./Pages/payment/phonepe";
 import Success from "./Pages/payment/success";
 import Failure from "./Pages/payment/failure";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
+import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
+import TermCondition from "./Pages/termCondition/TermCondition";
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
             <Route path="/searchuser" element={<SearchUser />} />
             <Route path="/form-print" element={<FormPrint />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-condition" element={<TermCondition />} />
             <Route path="/result" element={<Result />} />
             <Route path="/result-explore" element={<Result1 />} />
             <Route path="/payment" element={<Phonepe />} />

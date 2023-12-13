@@ -18,6 +18,7 @@ const VideoSection = () => {
     ]
 
     return (
+        
         <div className="videos-section">
             
             <div className='top-heading'>

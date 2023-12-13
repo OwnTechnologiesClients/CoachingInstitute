@@ -1,7 +1,41 @@
+$blue: #2D8EFF;
+$theme-color: #202C45;
+$light-text: #AAA8A8;
+$text: #646262;
+
+.result-section{
+    padding: 6vw;
+    padding-bottom: 8vw;
+    margin-bottom: 4vw;
+
+    .top-heading {
+        display: flex;
+        padding-bottom: 2vw;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 400;
+            font-size: 1.7vw;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        button {
+            background: $theme-color;
+            color: #fff;
+            padding: .6vw .8vw;
+            font-size: 1vw;
+        }
+    }
+}
+
 .result-row {
 
     display: flex;
     justify-content: space-between;
+
 
     .col-md-3 {
         padding: 2vw 0;

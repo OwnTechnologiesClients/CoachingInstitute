@@ -8,12 +8,18 @@ const GateOnline = () => {
       "GATE",
       "6 Months",
       "Regular",
-      15000
+      17700
     ],
     [
       "GATE",
       "1 Year",
       "Weekend",
+      20000
+    ],
+    [
+      "GATE",
+      "1 Year",
+      "Regular",
       20000
     ],
   ]

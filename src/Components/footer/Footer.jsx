@@ -59,11 +59,11 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/videos">Videos</Link>
+            <Link to="/blog">Blog</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/blog">Blog</Link>
+            <Link to="/shipping-policy">Shipping Policy</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
@@ -77,6 +77,7 @@ const Footer = () => {
             <img src={checkbox} alt="" />
             <Link to="/refund-policy">Refund Policy</Link>
           </div>
+          
         </div>
         <div className="box" >
           <img src={call} alt="" onClick={handleTelephoneClick}/>

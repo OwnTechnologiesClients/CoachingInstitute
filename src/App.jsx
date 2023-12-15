@@ -25,6 +25,7 @@ import Failure from "./Pages/payment/failure";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
 import TermCondition from "./Pages/termCondition/TermCondition";
+import ShippingPolicy from "./Pages/shippingPolicy/ShippingPolicy";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
             <Route path="/searchuser" element={<SearchUser />} />
             <Route path="/form-print" element={<FormPrint />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/shipping-policy" element={<ShippingPolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-condition" element={<TermCondition />} />
             <Route path="/result" element={<Result />} />

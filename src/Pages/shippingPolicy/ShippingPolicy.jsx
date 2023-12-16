@@ -154,7 +154,7 @@ const ShippingPolicy = () => {
                 <h3>11. Customer Support:</h3>
                 <ul>
                     <li>
-                        <p>• For any shipping-related inquiries or assistance, please contact our customer support team at <a href="https://chemtime.co.in/" rel="external nofollow noopener" target="_blank">https://chemtime.co.in/</a> or +918595764714.</p>
+                        <p>• For any shipping-related inquiries or assistance, please contact our customer support team at asapchemtime@gmail.com or +918595764714.</p>
                     </li>
                     <li>
                         <p>• Our team aims to respond to customer queries within 48 hours.</p>

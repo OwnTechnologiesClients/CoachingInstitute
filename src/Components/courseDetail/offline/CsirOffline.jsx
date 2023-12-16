@@ -10,7 +10,7 @@ const Csir = () => {
             "CSIR NET + GATE (Chemical Science)",
             "6 Months",
             "Regular",
-            29000
+            29500
         ],
         [
             "CSIR NET + GATE (Chemical Science)",

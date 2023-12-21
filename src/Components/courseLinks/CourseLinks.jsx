@@ -86,7 +86,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
 
             />
 
-            <div className="opening-hours-list">
+            {/* <div className="opening-hours-list">
                 <h2>Opening <span className='under-bar'>Hours</span></h2>
                 <div className="timings">
                     <span>Monday :</span>
@@ -117,7 +117,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                     <span>9:00 am - 8:00 pm</span>
                 </div>
 
-            </div>
+            </div> */}
 
             <div className="contact-form">
                 <h2>Quick <span className='under-bar'>Contact</span></h2>

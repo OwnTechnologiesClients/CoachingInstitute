@@ -64,9 +64,16 @@ $light-text: #989696;
         }
     }
 
+   
+
     @media screen and (max-width:"480px") {
         order: 3;
         padding: 3vw;
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        transform: translateX(-100vw);
+        transition: transform 1s ease;
 
         h2 {
             margin-top: 2vw;
@@ -106,4 +113,25 @@ $light-text: #989696;
         }
 
     }
+}
+
+.open-links {
+    position: fixed;
+    background-color: #376ad7;
+    padding: 2vw 4vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 4vw 4vw 0;
+    top: 40vh;
+    right: -24vw;
+    width: 24vw;
+    img{
+        width: 1rem;
+        margin: 0 1vw;
+    }
+}
+.links-opened{
+    transform: translate(-5vw);
 }

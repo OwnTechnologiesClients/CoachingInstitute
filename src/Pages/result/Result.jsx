@@ -36,7 +36,7 @@ const Result = () => {
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
                         <h3>GATE</h3>
-                        <Link to='/result-explore' >
+                        <Link to='/result-explore/gate' >
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>
@@ -75,7 +75,7 @@ const Result = () => {
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
                         <h3>IIT-JAM </h3>
-                        <Link to='/result-explore' >
+                        <Link to='/result-explore/iit-jam' >
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>
@@ -112,7 +112,7 @@ const Result = () => {
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
                         <h3>CSIR-NET | JRF</h3>
-                        <Link to='/result-explore' >
+                        <Link to='/result-explore/csir-net' >
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>

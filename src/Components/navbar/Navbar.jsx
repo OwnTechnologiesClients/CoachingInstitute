@@ -98,6 +98,21 @@ const Navbar = () => {
           </div>
         </Link>
 
+        <Link className='courses top-course-nav' to="/iit-jam" onClick={() => handleItemClick('iit-jam')}>
+          <div className={`menu-item ${activeItem === 'iit-jam' || activeItem=== 'gate'|| activeItem=== 'csir-net-jrf' ? 'active' : ''}`}>
+            Top Courses <img src={darrow} alt="" />
+            <div className="dropdown">
+              <div className="dropdown-content">
+                <Link to="/csir-net-jrf">CSIR <img style={{ paddingLeft: "1vw",float:"right" }} src={rightarrow} /> </Link>
+                <hr />
+                <Link to="/iit-jam">IIT JAM <img style={{ paddingLeft: "1vw",float:"right" }} src={rightarrow} /> </Link>
+                <hr />
+                <Link to="/gate">Gate Chemistry <img style={{ paddingLeft: "1vw",float:"right" }} src={rightarrow} /> </Link>
+              </div>
+            </div>
+          </div>
+        </Link>
+
         <Link to="/contact" onClick={() => handleItemClick('contact')}>
           <div className={`menu-item ${activeItem === 'contact' ? 'active' : ''}`}>
             Contact Us

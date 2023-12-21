@@ -45,7 +45,7 @@ const Contact = () => {
         // });
 
         //sending email
-        emailjs.sendForm('service_k99s57e', 'template_8pai1no', formRef.current, 'Fjsk3RoEfh9EroZ-g')
+        emailjs.sendForm('service_89es95f', 'template_9s6e5ki', formRef.current, 'VPawiZbhu5LiJfU63')
             .then((result) => {
                 console.log(result)
                 toast.success('We will contact you soon', {

@@ -19,7 +19,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
             progress: undefined,
         });
         if (form !== null) {
-            emailjs.sendForm('service_k99s57e', 'template_2a0tus6', form.current, '7EjtnFEz-7ax6QsuK')
+            emailjs.sendForm('service_89es95f', 'template_15vr48a', form.current, 'VPawiZbhu5LiJfU63')
                 .then((result) => {
                     console.log(result)
                 }, (error) => {

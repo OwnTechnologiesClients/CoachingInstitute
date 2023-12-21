@@ -8,8 +8,8 @@ import Navbar from "../../../components/navbar/Navbar";
 import Footer from "../../../components/footer/Footer";
 // import results from "./Result.json";
 //assets
-import gate from "../../../assets/result/allresult.jpg";
-import iitjam from "../../../assets/result/allresult.jpg";
+import gate from "../../../assets/result/gate.jpg";
+import iitjam from "../../../assets/result/iitjam.jpg";
 import csir from "../../../assets/result/allresult.jpg";
 
 const Result1 = () => {

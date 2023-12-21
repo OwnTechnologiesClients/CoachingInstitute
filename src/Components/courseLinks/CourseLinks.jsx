@@ -1,11 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import CoursePageList from '../../components/coursePageList/CoursePageList';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './CourseLinks.scss';
+import ham from '../../assets/icons/right-arrow-white.png'
 
-const CourseLinks = ({ activeLink, handleLinkClick }) => {
+const CourseLinks = ({ activeLink, handleLinkClick,coursesOpened,handleLinksOpen }) => {
     const form = useRef();
     const handleMessage = (e) => {
         e.preventDefault(); // prevents the page from reloading when you hit “Send”
@@ -58,7 +59,8 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
     ]
     
     return (
-        <div className="course-page-left-nav">
+        <div className={`course-page-left-nav ${coursesOpened ? "links-opened" : "" }`} >
+             {window.innerWidth < 600 ? <div className="open-links" onClick={()=>handleLinksOpen()}> Courses <img src={ham} alt="" /></div> : ""}
             <CoursePageList
                 hd1={"Courses"}
                 hd2={"List"}
@@ -66,6 +68,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
                 url1={afterLastSlash === 'onlinecourses' || afterLastSlash === 'offlinecourses' ? `/${afterLastSlash}` : "/onlinecourses"}
+                handleLinksOpen={handleLinksOpen}
             />
             <CoursePageList
                 hd1={"Study"}
@@ -74,6 +77,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
                 url1={'/studymaterial'}
+                handleLinksOpen={handleLinksOpen}
 
             />
             <CoursePageList
@@ -83,6 +87,7 @@ const CourseLinks = ({ activeLink, handleLinkClick }) => {
                 activeLink={activeLink}
                 onLinkClick={handleLinkClick}
                 url1={'/testseries'}
+                handleLinksOpen={handleLinksOpen}
 
             />
 

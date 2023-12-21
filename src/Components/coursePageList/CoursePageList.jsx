@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './CoursePageList.scss';
 
-const CoursePageList = ({ hd1, hd2, links, activeLink, onLinkClick, url1 }) => {
+const CoursePageList = ({ hd1, hd2, links, activeLink, onLinkClick, url1,handleLinksOpen }) => {
 
     return (
         
@@ -13,7 +13,10 @@ const CoursePageList = ({ hd1, hd2, links, activeLink, onLinkClick, url1 }) => {
             <div className="course-links">
 
                 {links.map((item, index) => {
-                    return <Link key={index} to={url1} onClick={() => onLinkClick(item)}>
+                    return <Link key={index} to={url1} onClick={() => {
+                        onLinkClick(item)
+                        handleLinksOpen()
+                    }}>
                         <div className={`course-link ${activeLink === item ? 'active' : ''}`}>
                             {item}
                         </div>

@@ -3,14 +3,14 @@ import './Course.scss';
 import { Header1, Header2 } from '../../components/header/Header'
 import Navbar from '../../Components/navbar/Navbar'
 import Footer from '../../Components/footer/Footer'
-import HeroSection from '../../components/heroSection/HeroSection'
 import bg3 from '../../assets/bg12.png'
-import CourseDetail from '../../components/courseDetail/CourseDetail'
-import courseDetailImg from '../../assets/courseDetail.png'
-import CourseTable from '../../components/courseTable/CourseTable';
+// import HeroSection from '../../components/heroSection/HeroSection'
+// import CourseDetail from '../../components/courseDetail/CourseDetail'
+// import courseDetailImg from '../../assets/courseDetail.png'
+// import CourseTable from '../../components/courseTable/CourseTable';
+// import courseData from './Course.json'
 import CourseLinks from '../../components/courseLinks/CourseLinks';
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
-import courseData from './Course.json'
 import { SetActiveCourse } from '../../redux/userSlice'
 import { useDispatch, useSelector } from 'react-redux';
 import CsirOnline from '../../components/courseDetail/online/CsirOnline';
@@ -20,11 +20,15 @@ import CuetOnline from '../../components/courseDetail/online/CuetOnline';
 import CourseHeroSection from '../../components/courseHeroSection/CourseHeroSection';
 
 const OnlineCourse = () => {
+    const [coursesOpened,setCoursesOpened] = useState(false);
     const [activeLink, setActiveLink] = useState('CSIR-NET Chemical Sciences');
     const { course } = useSelector(state => state.users)
     const dispatch = useDispatch()
     const handleLinkClick = (link) => {
         setActiveLink(link);
+    };
+    const handleLinksOpen = () => {
+        setCoursesOpened(!coursesOpened)
     };
 
     const componentMapping = {
@@ -85,7 +89,9 @@ const OnlineCourse = () => {
             <div className="course-page-section">
                 <CourseLinks
                     activeLink={activeLink}
+                    coursesOpened={coursesOpened}
                     handleLinkClick={handleLinkClick}
+                    handleLinksOpen={handleLinksOpen}
                 />
                 <div className="course-page-right-nav">
                     {componentMapping[activeLink]}

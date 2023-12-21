@@ -4,6 +4,7 @@ import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
+import CourseLinks from '../../components/courseLinks/CourseLinks'
 import courseImg from "../../assets/bg3.png";
 
 const TopCourseCsir = () => {
@@ -14,7 +15,9 @@ const TopCourseCsir = () => {
 
       <Navbar />
 
-      <div className="top-courses-container">
+      <div className="container-123">
+        <CourseLinks/>
+        <div className="top-courses-container">
         <img src={courseImg} alt="" />
 
         <header>
@@ -112,6 +115,7 @@ const TopCourseCsir = () => {
             achieve your goals in the field of Chemistry.
           </p>
         </section>
+      </div>
       </div>
 
       <WhatsappIcon />

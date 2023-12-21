@@ -1,13 +1,16 @@
 .top-courses {
-
+.container-123{
+    display: flex;
+    padding: 3vw;
+}
     .top-courses-container {
-        padding: 6.5vw;
         font-size: 1.4vw;
         color: #9A9696;
         text-align: justify;
+        width: 65vw;
 
         img {
-            width: 86vw;
+            width: 65vw;
         }
 
         h2 {

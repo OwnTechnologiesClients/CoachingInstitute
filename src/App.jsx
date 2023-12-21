@@ -26,6 +26,10 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
 import TermCondition from "./Pages/termCondition/TermCondition";
 import ShippingPolicy from "./Pages/shippingPolicy/ShippingPolicy";
+import TopCourses from "./pages/topCourses/TopCourses";
+import TopCourseIitJam from "./pages/topCourses/TopCourseIitJam";
+import TopCourseCsir from "./pages/topCourses/TopCourseCsir";
+import TopCourseGate from "./pages/topCourses/TopCourseGate";
 
 function App() {
   return (
@@ -43,11 +47,17 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/new-batch" element={<NewBatch />} />
             <Route path="/form" element={<Form />} />
+            <Route path="/iit-jam" element={<TopCourseIitJam />} />
+            <Route path="/csir-net-jrf" element={<TopCourseCsir />} />
+            <Route path="/gate" element={<TopCourseGate />} />
+
+
+            <Route path="/admin" element={<Admin />} />
             <Route path="/student-login" element={<Login />} />
             <Route path="/student-signup" element={<StudentSignup />} />
             <Route path="/history" element={<History />} />
-            <Route path="/admin" element={<Admin />} />
             <Route path="/searchuser" element={<SearchUser />} />
+
             <Route path="/form-print" element={<FormPrint />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
             <Route path="/shipping-policy" element={<ShippingPolicy />} />

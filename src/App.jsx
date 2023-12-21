@@ -54,7 +54,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-condition" element={<TermCondition />} />
             <Route path="/result" element={<Result />} />
-            <Route path="/result-explore" element={<Result1 />} />
+            <Route path="/result-explore/:course" element={<Result1 />} />
             <Route path="/payment" element={<Phonepe />} />
             <Route path="/success" element={<Success />} />
             <Route path="/failure" element={<Failure />} />

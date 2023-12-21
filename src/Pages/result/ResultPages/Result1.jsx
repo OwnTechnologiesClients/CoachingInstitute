@@ -1,37 +1,64 @@
-import React, { useState } from 'react'
-import { Header1, Header2 } from '../../../components/header/Header'
-import Navbar from '../../../components/navbar/Navbar'
-import Footer from '../../../components/footer/Footer'
-import results from './Result.json'
-import allResult from "../../../assets/result/allresult.jpg"
-import './Result1.scss'
+import React, { useEffect, useState } from "react";
+import "./Result1.scss";
+//libraries
+import { useNavigate, useParams } from "react-router-dom";
+//components
+import { Header1, Header2 } from "../../../components/header/Header";
+import Navbar from "../../../components/navbar/Navbar";
+import Footer from "../../../components/footer/Footer";
+// import results from "./Result.json";
+//assets
+import gate from "../../../assets/result/allresult.jpg";
+import iitjam from "../../../assets/result/allresult.jpg";
+import csir from "../../../assets/result/allresult.jpg";
 
 const Result1 = () => {
+  const { course } = useParams();
+  const navigate = useNavigate()
 
-    const [filterOption, setFilterOption] = useState({
-        year: '2019',
-        course: 'IITJAM',
-    });
+  const [resultImage, setResultImage] = useState();
+  useEffect(() => {
+    // Use a switch statement for multiple courses
+    switch (course) {
+      case "gate":
+        setResultImage(gate);
+        break;
+      case "iit-jam":
+        setResultImage(iitjam);
+        break;
+      case "csir-net":
+        setResultImage(csir);
+        break;
+      default:
+        setResultImage(null);
+        break;
+    }
+  }, [course]);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFilterOption({
-            ...filterOption,
-            [name]: value,
-        });
-    };
+//   const [filterOption, setFilterOption] = useState({
+//     year: "2019",
+//     course: "IITJAM",
+//   });
 
-    
-    return (
-        <div className='result-explore'>
-            <Header1 />
-            <Header2 />
-            <Navbar />
-            <div className="result-page-section">
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFilterOption({
+//       ...filterOption,
+//       [name]: value,
+//     });
+//   };
 
-                <img src={allResult} alt="" />
+  return (
+    <div className="result-explore">
+      <Header1 />
+      <Header2 />
+      <Navbar />
+      <div className="result-page-section">
+        
 
-                {/* <div className="filter">
+        {resultImage? <img src={resultImage} alt="" /> : navigate('/result')}
+
+        {/* <div className="filter">
                     <h2>Explore Our Prestigious Students</h2>
 
                     <div>
@@ -63,11 +90,11 @@ const Result1 = () => {
 
                     </div>
                 </div> */}
-            </div>
+      </div>
 
-            <Footer/>
-        </div>
-    )
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default Result1
+export default Result1;

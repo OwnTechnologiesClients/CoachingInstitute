@@ -60,7 +60,7 @@ const CourseLinks = ({ activeLink, handleLinkClick,coursesOpened,handleLinksOpen
     
     return (
         <div className={`course-page-left-nav ${coursesOpened ? "links-opened" : "" }`} >
-             {window.innerWidth < 600 ? <div className="open-links" onClick={()=>handleLinksOpen()}> Courses <img src={ham} alt="" /></div> : ""}
+             {window.innerWidth < 600 ? <div className="open-links" onClick={()=>handleLinksOpen()}>Courses <img src={ham} alt="" /></div> : ""}
             <CoursePageList
                 hd1={"Courses"}
                 hd2={"List"}

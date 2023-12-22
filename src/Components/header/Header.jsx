@@ -60,11 +60,11 @@ const Header2 = () => {
           <img src={logo} alt="" />
         </Link>
       </div>
-      <div className="contact" onClick={handleTelephoneClick}>
+      <div className="contact-header-2" onClick={handleTelephoneClick}>
         <div className="img">
           <img src={phoneIcon} alt="" />
         </div>
-        <div className="detail">
+        <div className="detail-header-2">
           <h2>8595764714</h2>
           <h4>Call To Question</h4>
         </div>

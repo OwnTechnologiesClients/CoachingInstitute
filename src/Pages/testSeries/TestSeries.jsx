@@ -11,7 +11,10 @@ import testSeriesData from './TestSeriesData.json'
 import TestSeriesCourseDetail from '../../components/courseDetail/TestSeriesCourseDetail';
 const TestSeries = () => {
     const [activeLink, setActiveLink] = useState('CSIR NET (Chemical Sciences)');
-
+    const [coursesOpened,setCoursesOpened] = useState(false);
+    const handleLinksOpen = () => {
+        setCoursesOpened(!coursesOpened)
+    };
     const handleLinkClick = (link) => {
 
         setActiveLink(link);
@@ -179,7 +182,9 @@ const TestSeries = () => {
             <div className="test-series-section">
                 <CourseLinks
                     activeLink={activeLink}
+                    coursesOpened={coursesOpened}
                     handleLinkClick={handleLinkClick}
+                    handleLinksOpen={handleLinksOpen}
                 />
                 <div className="test-series-section-right-nav">
                     <TestSeriesCourseDetail

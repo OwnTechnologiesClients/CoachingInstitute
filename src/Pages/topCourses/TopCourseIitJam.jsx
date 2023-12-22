@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./TopCourses.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
@@ -8,6 +8,15 @@ import CourseLinks from "../../components/courseLinks/CourseLinks";
 import courseImg from "../../assets/bg3.png";
 
 const TopCourseIitJam = () => {
+  const [activeLink, setActiveLink] = useState("CSIR NET (Chemical Sciences)");
+  const [coursesOpened, setCoursesOpened] = useState(false);
+  const handleLinksOpen = () => {
+    setCoursesOpened(!coursesOpened);
+  };
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
     <div className="top-courses">
       <Header1 />
@@ -16,7 +25,12 @@ const TopCourseIitJam = () => {
       <Navbar />
 
       <div className="container-123">
-        <CourseLinks />
+        <CourseLinks
+          activeLink={activeLink}
+          coursesOpened={coursesOpened}
+          handleLinkClick={handleLinkClick}
+          handleLinksOpen={handleLinksOpen}
+        />
         <div className="top-courses-container">
           <img src={courseImg} alt="" />
           <header>

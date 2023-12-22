@@ -1,9 +1,11 @@
 .top-courses {
-.container-123{
-    display: flex;
-    padding: 3vw;
-}
+    .container-123 {
+        display: flex;
+    }
+
     .top-courses-container {
+
+        padding: 3vw;
         font-size: 1.4vw;
         color: #9A9696;
         text-align: justify;
@@ -28,20 +30,35 @@
         b {
             color: #000;
         }
-        li{
+
+        li {
             padding: .5vw 0;
         }
+
         @media screen and (max-width:600px) {
             font-size: 3.5vw;
-            
-            h3{
+            width: 95vw;
+
+            img {
+                width: 90vw;
+            }
+
+            h3 {
                 font-weight: normal;
                 font-size: 4vw;
             }
-            h2{
+
+            h2 {
                 font-weight: normal;
                 font-size: 5vw;
             }
+
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .container-123 {
+            padding: 2vw;
         }
     }
 }

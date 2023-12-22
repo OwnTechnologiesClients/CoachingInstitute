@@ -15,12 +15,15 @@ import studyMaterialData from './Studymaterial.json'
 
 const StudyMaterial = () => {
     const [activeLink, setActiveLink] = useState('CSIR NET (Chemical Sciences) ');
+    const [coursesOpened,setCoursesOpened] = useState(false);
 
     const handleLinkClick = (link) => {
 
         setActiveLink(link);
     };
-
+    const handleLinksOpen = () => {
+        setCoursesOpened(!coursesOpened)
+    };
     const tableFields =
     {
         "CSIR NET (Chemical Sciences) ": [
@@ -142,7 +145,12 @@ const StudyMaterial = () => {
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
             <div className="study-material-section">
-                <CourseLinks activeLink={activeLink} handleLinkClick={handleLinkClick} />
+                <CourseLinks 
+                activeLink={activeLink} 
+                coursesOpened={coursesOpened}
+                handleLinkClick={handleLinkClick}
+                handleLinksOpen={handleLinksOpen}
+                />
                 <div className="study-material-section-right-nav">
                     <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData} />
 

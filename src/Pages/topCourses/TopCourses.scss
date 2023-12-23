@@ -3,6 +3,9 @@
         display: flex;
     }
 
+    .introduction.p{
+        font-size: 0.5vw;
+    }
     .top-courses-container {
 
         padding: 3vw;
@@ -16,7 +19,7 @@
         }
 
         h2 {
-            font-size: 2vw;
+            font-size: 1.5vw;
             margin: 1vw 0;
             color: #000;
         }
@@ -26,12 +29,16 @@
             color: #000;
             margin: 1vw 0;
         }
+        strong{
+            color: #000;
+        }
 
         b {
             color: #000;
         }
 
         li {
+            color: rgb(103, 103, 103);
             padding: .5vw 0;
         }
 

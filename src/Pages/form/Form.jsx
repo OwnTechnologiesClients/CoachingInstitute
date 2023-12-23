@@ -22,7 +22,7 @@ function Form() {
   const finalCall = async (xxx) => {
     const result = await axios({
       method: "post",
-      url: "http://localhost:9000/api/student/get-registration-form",
+      url: "http://localhost:5000/api/student/get-registration-form",
       data: {
         registrationNo: xxx.registrationNo,
         contact: xxx.contact,
@@ -45,7 +45,6 @@ function Form() {
     // localStorage.clear();
     localStorage.removeItem("pFromData");
     localStorage.removeItem("pData");
-
 
     // console.log(result.data)
 
@@ -73,7 +72,6 @@ function Form() {
     fathername,
     filename,
   } = currentUser;
-
 
   const openParenthesisIndex = coursename?.indexOf("(");
   const closeParenthesisIndex = coursename?.indexOf(")");
@@ -174,7 +172,7 @@ function Form() {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:9000/api/student/registration-form",
+        url: "http://localhost:5000/api/student/registration-form",
 
         data: formData,
         headers: {
@@ -214,7 +212,7 @@ function Form() {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:9000/api/v1/phonepe/payment",
+        url: "http://localhost:5000/api/v1/phonepe/payment",
         data: {
           name: "vipul",
           amount: x,
@@ -235,35 +233,6 @@ function Form() {
   const handlePayment = async (e) => {
     e.preventDefault();
 
-    if (!isFormSaved) {
-      toast.warn("Please Save Form First", {
-        position: "bottom-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: false,
-        draggable: false,
-        progress: undefined,
-      });
-      return;
-    }
-
-    let iData = {
-      registrationNo: regNo,
-      contact: contactnumber,
-    };
-
-    let iDataString = JSON.stringify(iData);
-
-    localStorage.setItem("pData", iDataString);
-
-    let iFormData = JSON.stringify(formData);
-
-    localStorage.setItem("pFromData", iFormData);
-
-    // navigate("/payment", { state: { totalCost: +price } });
-    handlePaymen(+price);
-
     // if (!isFormSaved) {
     //   toast.warn("Please Save Form First", {
     //     position: "bottom-right",
@@ -276,98 +245,129 @@ function Form() {
     //   });
     //   return;
     // }
-    // const response = await axios({
-    //   method: "post",
-    //   url: "http://localhost:9000/api/payment/createOrder",
-    //   data: {
-    //     amount: price * 100,
-    //     currency: "INR",
-    //     receipt: "abcd",
-    //     notes: {
-    //       description: "best course",
-    //       language: "DSA",
-    //       access: "lifetime",
-    //     },
-    //   },
-    //   headers: {
-    //     authorization: `Bearer ${localStorage.getItem("token")}`,
-    //   },
-    // });
-    // // console.log(response)
-    // const options = {
-    //   key: "rzp_test_XIQpLJB0JJOCKa",
-    //   // key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
-    //   amount: response.data.amount,
-    //   currency: "INR",
-    //   name: "ChemTime",
-    //   description: coursename,
-    //   order_id: response.data.id,
-    //   handler: async function (response) {
-    //     console.log(response);
-    //     const res = await axios({
-    //       method: "post",
-    //       url: "http://localhost:9000/api/payment/verifyOrder",
-    //       data: {
-    //         order_id: response.razorpay_order_id,
-    //         payment_id: response.razorpay_payment_id,
-    //       },
-    //       headers: {
-    //         xrazorpaysignature: response.razorpay_signature,
-    //       },
-    //     });
 
-    //     // console.log(res);
-
-    //     if (res.data.success) {
-    //       const result = await axios({
-    //         method: "post",
-    //         url: "http://localhost:9000/api/student/get-registration-form",
-    //         data: {
-    //           registrationNo: regNo,
-    //           contact: contactnumber,
-    //           payment: true,
-    //         },
-    //       });
-    //       toast.success("Payment Successful", {
-    //         position: "bottom-right",
-    //         autoClose: 2000,
-    //         hideProgressBar: false,
-    //         closeOnClick: false,
-    //         pauseOnHover: false,
-    //         draggable: false,
-    //         progress: undefined,
-    //       });
-
-    //       setisPayDone(true);
-
-    //       // console.log(result.data)
-
-    //       // setTimeout(() => {
-    //       //     navigate('/history');
-    //       // }, 2000);
-    //     }
-    //   },
-    //   prefill: {
-    //     name: "ChemTime",
-    //     email: "youremail@example.com",
-    //     contact: "9999999999",
-    //   },
-    //   notes: {
-    //     address: "Razorpay Corporate Office",
-    //   },
-    //   theme: {
-    //     color: "#3399cc",
-    //   },
+    // let iData = {
+    //   registrationNo: regNo,
+    //   contact: contactnumber,
     // };
-    // var pay = new Razorpay(options);
-    // pay.open();
 
-    // // console.log(pay);
+    // let iDataString = JSON.stringify(iData);
 
-    // razorpayObject.on("payment.failed", function (response) {
-    //   // console.log(response);
-    //   alert("This step of Payment Failed");
-    // });
+    // localStorage.setItem("pData", iDataString);
+
+    // let iFormData = JSON.stringify(formData);
+
+    // localStorage.setItem("pFromData", iFormData);
+
+    // // navigate("/payment", { state: { totalCost: +price } });
+    // handlePaymen(+price);
+
+    //----------------------------------------------------------------------
+
+    if (!isFormSaved) {
+      toast.warn("Please Save Form First", {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+      });
+      return;
+    }
+    const response = await axios({
+      method: "post",
+      url: "http://localhost:5000/api/payment/createOrder",
+      data: {
+        amount: price * 100,
+        currency: "INR",
+        receipt: "abcd",
+        notes: {
+          description: "best course",
+          language: "DSA",
+          access: "lifetime",
+        },
+      },
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("token")}`,
+      },
+    });
+    // console.log(response)
+    const options = {
+      key: "rzp_live_q4KW9y4BBurkJz",
+      // key_secret:"VTKjL1ldgDB6F1ir9kE5AdFw",
+      amount: response.data.amount,
+      currency: "INR",
+      name: "ChemTime",
+      description: coursename,
+      order_id: response.data.id,
+      handler: async function (response) {
+        console.log(response);
+        const res = await axios({
+          method: "post",
+          url: "http://localhost:5000/api/payment/verifyOrder",
+          data: {
+            order_id: response.razorpay_order_id,
+            payment_id: response.razorpay_payment_id,
+          },
+          headers: {
+            xrazorpaysignature: response.razorpay_signature,
+          },
+        });
+
+        // console.log(res);
+
+        if (res.data.success) {
+          const result = await axios({
+            method: "post",
+            url: "http://localhost:5000/api/student/get-registration-form",
+            data: {
+              registrationNo: regNo,
+              contact: contactnumber,
+              payment: true,
+            },
+          });
+          toast.success("Payment Successful", {
+            position: "bottom-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+          });
+
+          setisPayDone(true);
+
+          // console.log(result.data)
+
+          // setTimeout(() => {
+          //     navigate('/history');
+          // }, 2000);
+        }
+      },
+      prefill: {
+        name: "ChemTime",
+        email: "youremail@example.com",
+        contact: "9999999999",
+      },
+      notes: {
+        address: "Razorpay Corporate Office",
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+    var pay = new Razorpay(options);
+    pay.open();
+
+    // console.log(pay);
+
+    razorpayObject.on("payment.failed", function (response) {
+      // console.log(response);
+      alert("This step of Payment Failed");
+    });
   };
 
   useEffect(() => {
@@ -424,7 +424,7 @@ function Form() {
             />
           </div>
           <div className="form-profilepic">
-            <img src={`http://localhost:9000/public/${filename}`} />
+            <img src={`http://localhost:5000/public/${filename}`} />
           </div>
         </div>
       </div>
@@ -493,8 +493,8 @@ function Form() {
               value="Demo"
               checked={formData?.coursetype === "Demo"}
               onChange={handleChange}
-            // Checking this radio button if the selected option is "Male"
-            // checked={selectedOption === "Demo"}
+              // Checking this radio button if the selected option is "Male"
+              // checked={selectedOption === "Demo"}
             />
           </label>
 

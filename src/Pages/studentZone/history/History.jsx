@@ -34,7 +34,7 @@ const History = () => {
         const response = await
             axios({
                 method: 'get',
-                url: 'http://localhost:9000/api/student/get-current-user',
+                url: 'http://localhost:5000/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -44,7 +44,7 @@ const History = () => {
         const Data = await
             axios({
                 method: 'post',
-                url: 'http://localhost:9000/api/student/get-history-data',
+                url: 'http://localhost:5000/api/student/get-history-data',
                 data: response.data.data,
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`

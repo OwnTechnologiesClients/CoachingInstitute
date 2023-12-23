@@ -39,7 +39,7 @@ const Phonepe = () => {
       setLoading2(true);
       const response = await axios({
         method: "post",
-        url: "http://localhost:9000/api/v1/phonepe/payment",
+        url: "http://localhost:5000/api/v1/phonepe/payment",
         data: { ...data },
       });
       setLoading2(false);

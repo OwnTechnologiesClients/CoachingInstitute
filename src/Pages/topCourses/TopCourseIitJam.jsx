@@ -8,7 +8,7 @@ import CourseLinks from "../../components/courseLinks/CourseLinks";
 import courseImg from "../../assets/bg3.png";
 
 const TopCourseIitJam = () => {
-  const [activeLink, setActiveLink] = useState("CSIR NET (Chemical Sciences)");
+  const [activeLink, setActiveLink] = useState("");
   const [coursesOpened, setCoursesOpened] = useState(false);
   const handleLinksOpen = () => {
     setCoursesOpened(!coursesOpened);

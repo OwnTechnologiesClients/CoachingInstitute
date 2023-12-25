@@ -7,11 +7,17 @@ import './About.scss';
 import Footer from '../../components/footer/Footer'
 import WelcomeSection from '../../components/welcomeSection/WelcomeSection'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
+import { Helmet } from "react-helmet";
+
 
 const About = () => {
     return (
         <div className='study-material-page'>
-
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>About Us</title>
+                <meta name="description" content="Description content" />
+            </Helmet>
             <Header1 />
             <Header2 />
             <Navbar />

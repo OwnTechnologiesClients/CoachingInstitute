@@ -3,19 +3,35 @@
         display: flex;
     }
 
-    .introduction.p{
+    .introduction.p {
         font-size: 0.5vw;
     }
+
     .top-courses-container {
 
-        padding: 3vw;
-        font-size: 1.4vw;
+        padding: 5.5vw;
+        font-size: 1.2vw;
         color: #9A9696;
         text-align: justify;
-        width: 65vw;
+        width: 100%;
 
         img {
-            width: 65vw;
+            width: inherit;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 1.5vw 0;
+
+            .badge {
+                background-color: #202C45;
+                color: #fff;
+                padding: .6vw 1.5vw;
+                border-radius: 1.5vw;
+                cursor: pointer;
+            }
         }
 
         h2 {
@@ -29,7 +45,8 @@
             color: #000;
             margin: 1vw 0;
         }
-        strong{
+
+        strong {
             color: #000;
         }
 

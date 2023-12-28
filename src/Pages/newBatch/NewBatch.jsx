@@ -216,39 +216,39 @@ const NewBatch = () => {
 
     const newsAndUpdates = [
         {
-            url: "/testseries",
+            url: "/testseries/csir-net",
             content: "Test Series for CSIR NET Dec 2023 is now live. Sharpen your skills and boost your preparation by joining now!            "
         },
         {
-            url: "/testseries",
+            url: "/testseries/gate",
             content: "Test Series for GATE 2024 is live. Don't miss this opportunity to practice and enhance your exam readiness. Join now!            "
         },
         {
-            url: "/testseries",
+            url: "/testseries/iit-jam",
             content: "Test Series for IIT JAM 2024 is now available. Enroll today to assess your preparation and improve your performance!"
         },
         {
-            url: "/offlinecourses",
+            url: "/offlinecourses/csir-net",
             content: "CSIR NET June 2024 Offline Batch is set to commence on January 5, 2023. Register now for in-person classes and personalized guidance."
         },
         {
-            url: "/onlinecourses",
+            url: "/onlinecourses/csir-net",
             content: "CSIR NET June 2024 Online Batch starts on January 5, 2023. Secure your place for online learning with our experienced faculty."
         },
         {
-            url: "/offlinecourses",
+            url: "/offlinecourses/gate",
             content: "GATE 2025 Offline Batch begins on February 18, 2023. Register early to reserve your spot for comprehensive offline coaching."
         },
         {
-            url: "/onlinecourses",
+            url: "/onlinecourses/gate",
             content: "GATE 2025 Online Batch also starts on February 18, 2023. Join our online classes for flexible and effective exam preparation."
         },
         {
-            url: "/offlinecourse",
+            url: "/offlinecourses/iit-jam",
             content: "IIT JAM 2025 Offline Batch is scheduled to begin on February 18, 2023. Registration is open for in-person coaching sessions."
         },
         {
-            url: "/onlinecourses",
+            url: "/onlinecourses/iit-jam",
             content: "IIT JAM 2025 Online Batch starts on February 18, 2023. Register now for our online classes and access quality education from the comfort of your home."
         },
 
@@ -272,7 +272,7 @@ const NewBatch = () => {
             content: "Student Login"
         },
         {
-            url: "/offlinecourses",
+            url: "/result",
             content: "Results"
         },
         {

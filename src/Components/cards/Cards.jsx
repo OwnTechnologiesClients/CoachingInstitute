@@ -59,7 +59,7 @@ const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
     const dispatch = useDispatch();
     const navigateTo = (homeCourseHeading) => {
         dispatch(SetActiveCourse(homeCourseHeading))
-        navigate('/onlinecourses')
+        navigate('/onlinecourses/csir-net')
     }
     return (
         <div className='course-card'>

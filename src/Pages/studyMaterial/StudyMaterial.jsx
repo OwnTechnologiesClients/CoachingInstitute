@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
@@ -12,9 +12,13 @@ import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import './StudyMaterial.scss';
 import studyMaterialData from './Studymaterial.json'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const StudyMaterial = () => {
-    const [activeLink, setActiveLink] = useState('CSIR NET (Chemical Sciences) ');
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const [activeLink, setActiveLink] = useState("CSIR-NET Chemical Sciences");
+    const [activeUrl, setActiveUrl] = useState("");
     const [coursesOpened,setCoursesOpened] = useState(false);
 
     const handleLinkClick = (link) => {
@@ -26,7 +30,7 @@ const StudyMaterial = () => {
     };
     const tableFields =
     {
-        "CSIR NET (Chemical Sciences) ": [
+        "CSIR-NET Chemical Sciences": [
             [
                 "Lakshya- Subtopic wise PYQ Booklets",
                 "45 minutes",
@@ -52,7 +56,7 @@ const StudyMaterial = () => {
                 7500
             ],
         ],
-        "GATE (Chemistry) ": [
+        "GATE Chemistry": [
             [
                 "Lakshya- Subtopic wise PYQ Booklets",
                 "45 minutes",
@@ -78,7 +82,7 @@ const StudyMaterial = () => {
                 7500
             ],
         ],
-        "IIT-JAM (Chemistry) ": [
+        "IIT-JAM Chemistry": [
             [
                 "Lakshya- Topicwise PYQ Booklets",
                 "45 minutes",
@@ -104,7 +108,7 @@ const StudyMaterial = () => {
                 5000
             ],
         ],
-        "CUET(PG)": [
+        "CUET (PG) Chemistry": [
             [
                 "Lakshya- Topicwise PYQ Booklets",
                 "45 minutes",
@@ -131,7 +135,23 @@ const StudyMaterial = () => {
             ],
         ],
     }
-
+    useEffect(() => {
+        if (id === "csir-net") {
+          setActiveUrl("/studymaterial/CSIR-NET Chemical Sciences");
+          setActiveLink("CSIR-NET Chemical Sciences");
+        } else if (id === "gate") {
+          setActiveUrl("/studymaterial/GATE Chemistry");
+          setActiveLink("GATE Chemistry");
+        } else if (id === "iit-jam") {
+          setActiveUrl("/studymaterial/IIT-JAM Chemistry");
+          setActiveLink("IIT-JAM Chemistry");
+        } else if (id === "cuet") {
+          setActiveUrl("/studymaterial/CUET (PG) Chemistry");
+          setActiveLink("CUET (PG) Chemistry");
+        } else {
+          navigate("/");
+        }
+      }, [id]);
     return (
         <div className='study-material-page'>
 
@@ -146,7 +166,7 @@ const StudyMaterial = () => {
             /> */}
             <div className="study-material-section">
                 <CourseLinks 
-                activeLink={activeLink} 
+                activeLink={activeUrl} 
                 coursesOpened={coursesOpened}
                 handleLinkClick={handleLinkClick}
                 handleLinksOpen={handleLinksOpen}

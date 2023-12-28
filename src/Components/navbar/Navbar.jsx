@@ -4,10 +4,14 @@ import darrow from '../../assets/down-arrow.png';
 import hamburger from '../../assets/icons/hamburger.png';
 import rightarrow from '../../assets/icons/rightarrow.png';
 import './navbar.scss';
+import { SetIsClOpen } from '../../redux/userSlice';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const Navbar = () => {
 
   const [isSticky, setSticky] = useState(false);
+  const dispatch = useDispatch()
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 200) {
@@ -54,11 +58,17 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const isClOpen = useSelector(state=>state.users.isClOpen);
+
+  const handleClopen = ()=>{
+    dispatch(SetIsClOpen(!isClOpen))
+  }
 
   return (
     <nav id='navbar' className={stickyClass}>
-      <div className="menu-icon" onClick={toggleMenu}>
-        <img src={hamburger} alt="" />
+      <div className="menu-icon" >
+        <img src={hamburger} onClick={toggleMenu} alt="" />
+        <div onClick={handleClopen}  > All Courses</div>
       </div>
       <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
 
@@ -68,25 +78,25 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link className='courses' to="/onlinecourses" onClick={() => handleItemClick('Courses')}>
+        <Link className='courses' to="/onlinecourses/csir-net" onClick={() => handleItemClick('Courses')}>
           <div className={`menu-item ${activeItem === 'onlinecourses' || activeItem=== 'offlinecourses' ? 'active' : ''}`}>
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="/onlinecourses">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
-                <Link to="/offlinecourses">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="/onlinecourses/csir-net">Online Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
+                <Link to="/offlinecourses/csir-net">Offline Courses <img style={{ paddingLeft: "1vw" }} src={rightarrow} /> </Link>
               </div>
             </div>
           </div>
         </Link>
 
-        <Link to="/testseries" onClick={() => handleItemClick('testseries')}>
+        <Link to="/testseries/csir-net" onClick={() => handleItemClick('testseries')}>
           <div className={`menu-item ${activeItem === 'testseries' ? 'active' : ''}`}>
             Test Series
           </div>
         </Link>
 
-        <Link to="/studymaterial" onClick={() => handleItemClick('studymaterial')}>
+        <Link to="/studymaterial/csir-net" onClick={() => handleItemClick('studymaterial')}>
           <div className={`menu-item ${activeItem === 'studymaterial' ? 'active' : ''}`}>
             Study Material
           </div>

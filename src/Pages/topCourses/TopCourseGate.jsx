@@ -6,6 +6,7 @@ import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
 import courseImg from "../../assets/bg3.png";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
+import { Link } from "react-router-dom";
 
 const TopCourseGate = () => {
   const [activeLink, setActiveLink] = useState('');
@@ -17,6 +18,25 @@ const TopCourseGate = () => {
 
         setActiveLink(link);
     };
+
+    const badges = [
+      {
+        linkName:"GATE ONLINE",
+        link:"/onlinecourses/gate"
+      },
+      {
+        linkName:"GATE OFFLINE",
+        link:"/offlinecourses/gate"
+      },
+      {
+        linkName:"GATE TEST SERIES",
+        link:"/testseries/gate"
+      },
+      {
+        linkName:"GATE STUDY MATERIAL",
+        link:"/studymaterial/gate"
+      },
+    ]
 
   return (
     <div className="top-courses">
@@ -34,6 +54,13 @@ const TopCourseGate = () => {
         />
         <div className="top-courses-container">
           <img src={courseImg} alt="" />
+
+          <div className="badges">
+            {badges.map((item,index)=>{
+              return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
+            })}
+          </div>
+
           <header>
             <h2>
               GATE Chemistry Coaching at ASAP Institute: Your Path to Success

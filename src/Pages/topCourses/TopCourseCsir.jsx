@@ -6,6 +6,7 @@ import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import courseImg from "../../assets/bg3.png";
+import { Link } from "react-router-dom";
 
 const TopCourseCsir = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -16,6 +17,25 @@ const TopCourseCsir = () => {
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+
+  const badges = [
+    {
+      linkName:"CSIR ONLINE",
+      link:"/onlinecourses/csir-net"
+    },
+    {
+      linkName:"CSIR OFFLINE",
+      link:"/offlinecourses/csir-net"
+    },
+    {
+      linkName:"CSIR TEST SERIES",
+      link:"/testseries/csir-net"
+    },
+    {
+      linkName:"CSIR STUDY MATERIAL",
+      link:"/studymaterial/csir-net"
+    },
+  ]
 
   return (
     <div className="top-courses">
@@ -33,6 +53,12 @@ const TopCourseCsir = () => {
         />
         <div className="top-courses-container">
           <img src={courseImg} alt="" />
+
+          <div className="badges">
+            {badges.map((item,index)=>{
+              return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
+            })}
+          </div>
 
           <header>
             <h2>CSIR-NET/JRF Coaching at ASAP Institute (formerly CHEMTIME)</h2>

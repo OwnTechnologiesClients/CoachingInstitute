@@ -6,16 +6,21 @@ $text: #646262;
 .registration {
     margin-top: -.5vw;
     background: $theme-color;
+    position: relative;
     padding: 2vw 6vw;
+    height: 100%;
 
-    // .loader-spinner{
-    //     position: absolute;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100%;
-    //     background-color: rgba($color: #fff, $alpha: 0.5);
-    // }
+    .loader-spinner{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        align-items: center;
+        width: 100vw;
+        height: inherit;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+    }
     h1 {
         color: #fff;
         font-weight: 400;

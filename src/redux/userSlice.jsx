@@ -5,7 +5,9 @@ const userSlice = createSlice({
     initialState: {
         currentUser: null,
         history:{},
-        course:null
+        course:null,
+        isClOpen:false
+        
     },
     reducers: {
         SetCurrentUser(state, action) {
@@ -16,9 +18,12 @@ const userSlice = createSlice({
         },
         SetActiveCourse(state,action){
             state.course = action.payload;
+        },
+        SetIsClOpen(state,action){
+            state.isClOpen = action.payload;
         }
     }
 })
 
-export const {SetCurrentUser,SetHistory,SetActiveCourse} = userSlice.actions;
+export const {SetCurrentUser,SetHistory,SetActiveCourse,SetIsClOpen} = userSlice.actions;
 export default userSlice.reducer;

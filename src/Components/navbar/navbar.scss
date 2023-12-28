@@ -3,12 +3,14 @@ $nav-bg: #24497c;
 $blue: #2D8EFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Poppins:wght@300&display=swap');
+
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%; 
+    width: 100%;
     z-index: 1000;
-  }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -16,8 +18,8 @@ nav {
     background-color: $theme-color;
     color: #fff;
     border-bottom: 5px solid $blue;
-    
-    
+
+
 
     .menu-icon {
         display: none;
@@ -56,7 +58,7 @@ nav {
         }
     }
 
-   
+
 
     .active {
         background: #fff !important;
@@ -94,8 +96,9 @@ nav {
 
 
     }
-    .top-course-nav{
-        .dropdown-content{
+
+    .top-course-nav {
+        .dropdown-content {
             left: -8vw;
         }
     }
@@ -114,7 +117,9 @@ nav {
         flex-direction: column;
 
         .menu-icon {
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .menu {
@@ -127,7 +132,7 @@ nav {
 
             a {
                 margin: .2rem 0;
-                
+
                 .menu-item {
                     border-radius: 1rem;
 
@@ -142,7 +147,7 @@ nav {
             padding-bottom: 5.5rem;
         }
 
-       
+
         .dropdown {
             position: relative;
             z-index: 1000;
@@ -171,12 +176,15 @@ nav {
 
 
         }
-        .top-course-nav{
+
+        .top-course-nav {
             padding-bottom: 9rem;
-            .dropdown-content{
+
+            .dropdown-content {
                 left: -8.3rem;
             }
-         }
+        }
+
         .new-batch {
             padding: 1rem;
             background: $blue;

@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
       <div className='bottom-footer' >
         <div className='bottom'>
-          <li><Link to='/onlinecourses'>Popular Courses |</Link></li>
+          <li><Link to='/onlinecourses/csir-net'>Popular Courses |</Link></li>
           <li><Link to='/contact'>Help Desk |</Link></li>
           <li><Link to='/student-login'>Login</Link></li>
         </div>

@@ -63,6 +63,21 @@
             font-size: 3.5vw;
             width: 95vw;
 
+            .badges {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 1rem auto;
+                
+                .badge {
+                    text-align: center;
+                    margin: 2vw 0;
+                    padding: .5rem;
+                    border-radius: 4vw;
+                    cursor: pointer;
+                }
+            }
+
             img {
                 width: 90vw;
             }

@@ -71,7 +71,7 @@ const History = () => {
             <div className='ph-appbar'>
                 <h2>Purchased History</h2>
                 <div>
-                    <Link to="/onlinecourses"><button >Enroll Course</button></Link>
+                    <Link to="/onlinecourses/csir-net"><button >Enroll Course</button></Link>
                     <button onClick={handleLogout}>Logout</button>
                 </div>
             </div>

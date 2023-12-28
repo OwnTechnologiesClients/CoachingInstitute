@@ -6,6 +6,7 @@ import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import courseImg from "../../assets/bg3.png";
+import { Link } from "react-router-dom";
 
 const TopCourseIitJam = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -16,6 +17,25 @@ const TopCourseIitJam = () => {
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+
+  const badges = [
+    {
+      linkName:"IIT-JAM ONLINE",
+      link:"/onlinecourses/iit-jam"
+    },
+    {
+      linkName:"IIT-JAM OFFLINE",
+      link:"/offlinecourses/iit-jam"
+    },
+    {
+      linkName:"IIT-JAM TEST SERIES",
+      link:"/testseries/iit-jam"
+    },
+    {
+      linkName:"IIT-JAM STUDY MATERIAL",
+      link:"/studymaterial/iit-jam"
+    },
+  ]
 
   return (
     <div className="top-courses">
@@ -33,6 +53,13 @@ const TopCourseIitJam = () => {
         />
         <div className="top-courses-container">
           <img src={courseImg} alt="" />
+
+          <div className="badges">
+            {badges.map((item,index)=>{
+              return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
+            })}
+          </div>
+
           <header>
             <h2>
               Best IIT-JAM Chemistry Coaching in Jia Sarai, Delhi - ASAP

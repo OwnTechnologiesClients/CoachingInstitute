@@ -9,11 +9,11 @@ export const menuItems = [
       submenu: [
         {
           title: 'Online Course',
-          url: 'onlinecourse',
+          url: 'onlinecourses',
         },
         {
           title: 'Online Course',
-          url: 'onlinecourse',
+          url: 'onlinecourses',
         },
       ],
     },

@@ -38,10 +38,10 @@ function App() {
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/onlinecourses" element={<OnlineCourse />} />
-            <Route path="/offlinecourses" element={<OfflineCourse />} />
-            <Route path="/testseries" element={<TestSeries />} />
-            <Route path="/studymaterial" element={<StudyMaterial />} />
+            <Route path="/onlinecourses/:id" element={<OnlineCourse />} />
+            <Route path="/offlinecourses/:id" element={<OfflineCourse />} />
+            <Route path="/testseries/:id" element={<TestSeries />} />
+            <Route path="/studymaterial/:id" element={<StudyMaterial />} />
             <Route path="/videos" element={<PopularVideos />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

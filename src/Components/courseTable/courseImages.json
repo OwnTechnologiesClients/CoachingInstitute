@@ -1,7 +1,7 @@
 {
-    "NET Chemical Science":"courseImages/courseimage1.png",
-    "CSIR NET + GATE (Chemical Science)":"courseImages/courseimage1.png",
-    "CUET(PG) (Chemistry)":"courseImages/courseimage2.png",
-    "IIT-JAM + CUET(PG) (Chemistry)":"courseImages/courseimage4.png",
-    "IIT-JAM (Chemistry)":"courseImages/courseimage1.png"
+    "NET Chemical Science":"/courseImages/courseimage1.png",
+    "CSIR NET + GATE (Chemical Science)":"/courseImages/courseimage1.png",
+    "CUET(PG) (Chemistry)":"/courseImages/courseimage2.png",
+    "IIT-JAM + CUET(PG) (Chemistry)":"/courseImages/courseimage4.png",
+    "IIT-JAM (Chemistry)":"/courseImages/courseimage1.png"
 }

@@ -37,18 +37,18 @@ const RegistrationSection = () => {
       dateofbirth.current.value
     ) {
       try {
-        const response = await axios({
-          method: "post",
-          url: "https://backend-k.onrender.com/api/student/free-registration",
-          data: {
-            email: email.current.value,
-            coursename: course.current.value,
-            phonenumber: number.current.value,
-            dateofbirth: dateofbirth.current.value,
-          },
-          headers: {},
-        });
-        console.log(response);
+        // const response = await axios({
+        //   method: "post",
+        //   url: "https://backend-k.onrender.com/api/student/free-registration",
+        //   data: {
+        //     email: email.current.value,
+        //     coursename: course.current.value,
+        //     phonenumber: number.current.value,
+        //     dateofbirth: dateofbirth.current.value,
+        //   },
+        //   headers: {},
+        // });
+        // console.log(response);
 
         const tempparamas = {
           email:email.current.value ,

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./CoursePageList.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { SetIsClOpen } from "../../redux/userSlice";
 
 const CoursePageList = ({
   hd1,
@@ -11,26 +13,28 @@ const CoursePageList = ({
   url1,
   handleLinksOpen,
 }) => {
-  const [currentUrl, setCurrentUrl] = useState("");
+  const dispatch = useDispatch();
+  const isClOpen = useSelector((state) => state.users.isClOpen);
+
   const navigate = useNavigate();
   const handleCourseName = (id) => {
     if (id === "CSIR-NET Chemical Sciences") {
-      setCurrentUrl(id);
+      dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/csir-net`);
     } else if (id === "GATE Chemistry") {
-      setCurrentUrl(id);
+      dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/gate`);
     } else if (id === "IIT-JAM Chemistry") {
-      setCurrentUrl(id);
+      dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/iit-jam`);
     } else if (id === "CUET (PG) Chemistry") {
-      setCurrentUrl(id);
+      dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/cuet`);
     } else if (id === "BARC (Chemistry)") {
-      setCurrentUrl(id);
+      dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/barc`);
     } else if (id === "TIFR (Chemistry)") {
-      setCurrentUrl(id);
+      dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/tifr`);
     } else {
       navigate("/");
@@ -80,15 +84,29 @@ const StudyPageList = ({
   url1,
   handleLinksOpen,
 }) => {
+  const dispatch = useDispatch();
+  const isClOpen = useSelector((state) => state.users.isClOpen);
   const navigate = useNavigate();
   const handleCourseName = (id) => {
-    if (id === "CSIR-NET Chemical Sciences") navigate(`${url1}/csir-net`);
-    else if (id === "GATE Chemistry") navigate(`${url1}/gate`);
-    else if (id === "IIT-JAM Chemistry") navigate(`${url1}/iit-jam`);
-    else if (id === "CUET (PG) Chemistry") navigate(`${url1}/cuet`);
-    else if (id === "BARC (Chemistry)") navigate(`${url1}/barc`);
-    else if (id === "TIFR (Chemistry)") navigate(`${url1}/tifr`);
-    else {
+    if (id === "CSIR-NET Chemical Sciences") {
+      navigate(`${url1}/csir-net`);
+      dispatch(SetIsClOpen(!isClOpen));
+    } else if (id === "GATE Chemistry") {
+      navigate(`${url1}/gate`);
+      dispatch(SetIsClOpen(!isClOpen));
+    } else if (id === "IIT-JAM Chemistry") {
+      navigate(`${url1}/iit-jam`);
+      dispatch(SetIsClOpen(!isClOpen));
+    } else if (id === "CUET (PG) Chemistry") {
+      navigate(`${url1}/cuet`);
+      dispatch(SetIsClOpen(!isClOpen));
+    } else if (id === "BARC (Chemistry)") {
+      navigate(`${url1}/barc`);
+      dispatch(SetIsClOpen(!isClOpen));
+    } else if (id === "TIFR (Chemistry)") {
+      navigate(`${url1}/tifr`);
+      dispatch(SetIsClOpen(!isClOpen));
+    } else {
       navigate("/");
     }
   };
@@ -124,6 +142,7 @@ const StudyPageList = ({
     </div>
   );
 };
+
 const TestPageList = ({
   hd1,
   hd2,
@@ -133,15 +152,30 @@ const TestPageList = ({
   url1,
   handleLinksOpen,
 }) => {
+  const dispatch = useDispatch();
+  const isClOpen = useSelector((state) => state.users.isClOpen);
+
   const navigate = useNavigate();
   const handleCourseName = (id) => {
-    if (id === "CSIR-NET Chemical Sciences") navigate(`${url1}/csir-net`);
-    else if (id === "GATE Chemistry") navigate(`${url1}/gate`);
-    else if (id === "IIT-JAM Chemistry") navigate(`${url1}/iit-jam`);
-    else if (id === "CUET (PG) Chemistry") navigate(`${url1}/cuet`);
-    else if (id === "BARC (Chemistry)") navigate(`${url1}/barc`);
-    else if (id === "TIFR (Chemistry)") navigate(`${url1}/tifr`);
-    else {
+    if (id === "CSIR-NET Chemical Sciences") {
+      dispatch(SetIsClOpen(!isClOpen));
+      navigate(`${url1}/csir-net`);
+    } else if (id === "GATE Chemistry") {
+      dispatch(SetIsClOpen(!isClOpen));
+      navigate(`${url1}/gate`);
+    } else if (id === "IIT-JAM Chemistry") {
+      dispatch(SetIsClOpen(!isClOpen));
+      navigate(`${url1}/iit-jam`);
+    } else if (id === "CUET (PG) Chemistry") {
+      dispatch(SetIsClOpen(!isClOpen));
+      navigate(`${url1}/cuet`);
+    } else if (id === "BARC (Chemistry)") {
+      dispatch(SetIsClOpen(!isClOpen));
+      navigate(`${url1}/barc`);
+    } else if (id === "TIFR (Chemistry)") {
+      dispatch(SetIsClOpen(!isClOpen));
+      navigate(`${url1}/tifr`);
+    } else {
       navigate("/");
     }
   };

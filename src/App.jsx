@@ -30,6 +30,7 @@ import TopCourses from "./pages/topCourses/TopCourses";
 import TopCourseIitJam from "./pages/topCourses/TopCourseIitJam";
 import TopCourseCsir from "./pages/topCourses/TopCourseCsir";
 import TopCourseGate from "./pages/topCourses/TopCourseGate";
+import Scholarship from "./pages/scholarship/Scholarship";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/iit-jam" element={<TopCourseIitJam />} />
             <Route path="/csir-net-jrf" element={<TopCourseCsir />} />
             <Route path="/gate" element={<TopCourseGate />} />
+            <Route path="/scholarship" element={<Scholarship />} />
 
 
             <Route path="/admin" element={<Admin />} />

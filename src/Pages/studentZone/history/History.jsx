@@ -34,7 +34,7 @@ const History = () => {
         const response = await
             axios({
                 method: 'get',
-                url: 'http://localhost:5000/api/student/get-current-user',
+                url: 'https://chemtime-backend-0duz.onrender.com/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -44,7 +44,7 @@ const History = () => {
         const Data = await
             axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/student/get-history-data',
+                url: 'https://chemtime-backend-0duz.onrender.com/api/student/get-history-data',
                 data: response.data.data,
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`

@@ -120,6 +120,7 @@ const RegistrationSection = () => {
           <option value="GATE Chemistry">GATE Chemistry</option>
           <option value="IIT-JAM Chemistry">IIT-JAM Chemistry</option>
           <option value="CUET (PG) Chemistry">CUET (PG) Chemistry</option>
+          <option value="Scholarship Program">Scholarship Program</option>
         </select>
         <input
           ref={number}

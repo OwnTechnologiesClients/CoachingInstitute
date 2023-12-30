@@ -32,7 +32,7 @@ const SearchUser = () => {
         const response = await
             axios({
                 method: 'post',
-                url: 'http://localhost:5000/api/admin/get-adminpage-details',
+                url: 'https://chemtime-backend-0duz.onrender.com/api/admin/get-adminpage-details',
                 data: {
                     contactnumber: CN,
                     registrationnumber: RN

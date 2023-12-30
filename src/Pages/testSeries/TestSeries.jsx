@@ -24,7 +24,7 @@ const TestSeries = () => {
   };
 
   const modeOfTable = {
-    "CSIR-NET Chemical Sciences": "Test Series for Dec 2023",
+    "CSIR-NET Chemical Sciences": "Test Series",
     "GATE Chemistry": "Test Series for GATE 2024",
     "IIT-JAM Chemistry": "Test Series for IIT-JAM 2024",
     "BARC (Chemistry)": "Test Series for BARC",

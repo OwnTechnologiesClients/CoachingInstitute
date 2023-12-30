@@ -26,7 +26,7 @@ const Login = () => {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'http://localhost:5000/api/student/login',
+                    url: 'https://chemtime-backend-0duz.onrender.com/api/student/login',
                     data: {
                         email: userId,
                         dateofbirth: password

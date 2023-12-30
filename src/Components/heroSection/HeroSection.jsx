@@ -39,11 +39,13 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                 pagination={{
                     clickable: true,
                 }}
+                disableOnInteraction={true}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
                 onClick={toggleAutoplay} // Toggle autoplay on click
                 onMouseLeave={startAutoplay}
+            
             >
                 {/* <SwiperSlide>
                     <img src={imgSrc1} className="heroimage" alt="" />

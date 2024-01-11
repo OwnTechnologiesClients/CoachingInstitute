@@ -7,6 +7,8 @@ import Footer from "../../Components/footer/Footer";
 import courseImg from "../../assets/bg3.png";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 
 const TopCourseGate = () => {
   const [activeLink, setActiveLink] = useState('');
@@ -40,6 +42,13 @@ const TopCourseGate = () => {
 
   return (
     <div className="top-courses">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Best GATE Chemistry Coaching in Delhi, India - ASAP Institute</title>
+        <meta name="description" content="Join the best GATE Chemistry coaching in Delhi at ASAP Institute Expert faculty, comprehensive study material, and personalized guidance for success in GATE Chemistry exam." />
+        <meta name="keywords"content="Best GATE Chemistry Coaching in Delhi, GATE Chemistry Coaching, GATE Chemistry Preparation in Delhi, GATE Chemistry Coaching Institutes in Delhi, Online Coaching for GATE Chemistry"/>
+      </Helmet>
+
       <Header1 />
       <Header2 />
 

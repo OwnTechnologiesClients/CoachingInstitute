@@ -1,6 +1,8 @@
 import React from 'react'
 import courseImage from '../../../assets/cuet-online.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
+import { Helmet } from "react-helmet";
+
 
 const CuetOnline = () => {
 
@@ -35,6 +37,13 @@ const CuetOnline = () => {
     ]
     return (
         <div className='online'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Enroll in CUET(PG) Chemistry Online Batch - ASAP Institute</title>
+                <meta name="description" content="Achieve academic excellence with ASAP Institute's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
+                <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
+            </Helmet>
+
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>CUET(PG) Chemistry – Your Gateway to Academic Excellence</h1>

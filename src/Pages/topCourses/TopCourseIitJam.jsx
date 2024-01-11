@@ -7,6 +7,8 @@ import Footer from "../../Components/footer/Footer";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import courseImg from "../../assets/bg3.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 
 const TopCourseIitJam = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -39,6 +41,13 @@ const TopCourseIitJam = () => {
 
   return (
     <div className="top-courses">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Top IIT-JAM Chemistry Coaching in Delhi, India - ASAP Institute</title>
+        <meta name="description" content="Discover unparalleled IIT-JAM Chemistry coaching in Delhi at ASAP Institute our expert faculty, comprehensive study materials, and strategic approach empowers students for success in the IIT-JAM Chemistry exam." />
+        <meta name="keywords"content="IIT-JAM Chemistry Coaching, Best IIT-JAM Chemistry Coaching in Delhi, IIT-JAM Chemistry Classes, Top Coaching Institutes for IIT-JAM Chemistry, Coaching Centers for IIT-JAM Chemistry, IIT-JAM Chemistry Preparation in Delhi."/>
+      </Helmet>
+
       <Header1 />
       <Header2 />
 

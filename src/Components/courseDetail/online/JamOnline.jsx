@@ -1,6 +1,7 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
+import { Helmet } from "react-helmet";
 
 const JamOnline = () => {
 
@@ -49,6 +50,14 @@ const JamOnline = () => {
 
   return (
     <div className='online'>
+
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>IIT-JAM Chemistry Online Coaching Delhi - Enroll for Academic Success</title>
+        <meta name="description" content="Join ASAP Institute's IIT-JAM Chemistry Online Batch. Comprehensive syllabus coverage, interactive learning, and flexible options. Enroll today for excellence!" />
+        <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
+      </Helmet>
+
       <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
       <h1>IIT-JAM Chemistry Online Batch: Igniting Your Path to Excellence</h1>
@@ -70,7 +79,7 @@ const JamOnline = () => {
         <li> • IIT-JAM Chemistry Online Batch (6 Months, 1 year, and 2 years Recorded)</li>
       </ul>
 
-     
+
       <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
       <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>

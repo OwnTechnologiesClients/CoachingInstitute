@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./TopCourses.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
@@ -7,6 +7,8 @@ import Footer from "../../Components/footer/Footer";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import courseImg from "../../assets/bg3.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 
 const TopCourseCsir = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -20,25 +22,33 @@ const TopCourseCsir = () => {
 
   const badges = [
     {
-      linkName:"CSIR ONLINE",
-      link:"/onlinecourses/csir-net"
+      linkName: "CSIR ONLINE",
+      link: "/onlinecourses/csir-net"
     },
     {
-      linkName:"CSIR OFFLINE",
-      link:"/offlinecourses/csir-net"
+      linkName: "CSIR OFFLINE",
+      link: "/offlinecourses/csir-net"
     },
     {
-      linkName:"CSIR TEST SERIES",
-      link:"/testseries/csir-net"
+      linkName: "CSIR TEST SERIES",
+      link: "/testseries/csir-net"
     },
     {
-      linkName:"CSIR STUDY MATERIAL",
-      link:"/studymaterial/csir-net"
+      linkName: "CSIR STUDY MATERIAL",
+      link: "/studymaterial/csir-net"
     },
   ]
 
   return (
     <div className="top-courses">
+
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>CSIR NET JRF Coaching for Chemical Sciences: ASAP Institute</title>
+        <meta name="description" content="CSIR NET JRF Chemistry exam confidently with ASAP Institute top-rated coaching in Delhi. Join a community of successful aspirants benefiting from expert guidance and comprehensive study resources. Your journey to research excellence starts here." />
+        <meta name="keywords"content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching"/>
+      </Helmet>
+
       <Header1 />
       <Header2 />
 
@@ -55,7 +65,7 @@ const TopCourseCsir = () => {
           <img src={courseImg} alt="" />
 
           <div className="badges">
-            {badges.map((item,index)=>{
+            {badges.map((item, index) => {
               return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
             })}
           </div>

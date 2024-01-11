@@ -1,6 +1,7 @@
 import React from 'react'
 import courseImage from '../../../assets/gate-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
+import { Helmet } from "react-helmet";
 
 const GateOnline = () => {
   let tableFields = [
@@ -46,6 +47,13 @@ const GateOnline = () => {
   ]
   return (
     <div className='online'>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>GATE Chemistry Online Courses in Delhi - Enroll Now with ASAP</title>
+        <meta name="description" content="Join ASAP Institute's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
+        <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
+      </Helmet>
+
       <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
       <h1>GATE Chemistry Online Batch: Your Path to Success</h1>

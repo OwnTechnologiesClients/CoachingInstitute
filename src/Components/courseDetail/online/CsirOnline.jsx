@@ -2,6 +2,8 @@ import React from 'react'
 import './Online.scss'
 import courseImage from '../../../assets/csir-net-online.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
+import { Helmet } from "react-helmet";
+
 
 const CsirOnline = () => {
 
@@ -47,7 +49,16 @@ const CsirOnline = () => {
     ]
   ]
   return (
+
     <div className='online'>
+
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>ASAP Institute: CSIR NET Chemical Sciences Online Courses</title>
+        <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+        <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
+      </Helmet>
+
       <img src={courseImage} alt="" /><br></br><br></br><br></br>
       <h1>CSIR NET Chemical Sciences Online Batches: Your Gateway to Success</h1>
       <p>Welcome to ASAP Institute's CSIR NET Chemical Sciences Online Batches, designed to pave your way to success in the CSIR NET Chemical Sciences examination. We offer a range of meticulously designed courses to cater to your specific needs. Here are the key features and answers to your frequently asked questions about our CSIR NET Chemical Sciences Online Batches:</p>
@@ -70,7 +81,7 @@ const CsirOnline = () => {
         <li> • <h6>CSIR-NET (Chemical Science) - 6 Months, 1 Year, and 2 Years - Recorded</h6><br />Choose from 6-months, 1-year, or 2-year durations to access recorded lectures that allow you to study at your own pace.</li>
       </ol>
 
-     
+
 
       <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
       <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />

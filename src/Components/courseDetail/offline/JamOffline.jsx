@@ -1,6 +1,8 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
+import { Helmet } from "react-helmet";
+
 
 const JamOffline = () => {
 
@@ -29,6 +31,12 @@ const JamOffline = () => {
 
     return (
         <div className='online'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Offline Coaching for IIT JAM Chemistry Program in Delhi - ASAP Institute</title>
+                <meta name="description" content="Fuel your success with ASAP Institute's IIT JAM Chemistry program. Expert instructors, comprehensive syllabus coverage, and flexible batches. Enroll now!" />
+                <meta name="keywords" content="IIT JAM Chemistry coaching Delhi, Offline coaching for IIT JAM Chemistry in Delhi, Best coaching institute for IIT JAM Chemistry, Top IIT JAM Chemistry coaching centers in Delhi, Classroom coaching for IIT JAM Chemistry, IIT JAM Chemistry coaching classes Delhi" />
+            </Helmet>
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>IIT JAM Chemistry: Fueling Your Path to Success</h1>

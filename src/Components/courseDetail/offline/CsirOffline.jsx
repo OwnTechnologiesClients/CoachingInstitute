@@ -1,6 +1,7 @@
 import React from 'react'
 import courseImage from '../../../assets/csir-net-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
+import { Helmet } from "react-helmet";
 
 const Csir = () => {
 
@@ -22,6 +23,13 @@ const Csir = () => {
 
     return (
         <div className='online'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>CSIR NET Chemical Sciences Offline Coaching Delhi: ASAP Institute</title>
+                <meta name="description" content="Excel in CSIR NET Chemical Sciences with our offline coaching. Experienced faculty, comprehensive coverage, and rigorous assessments for success." />
+                <meta name="keywords" content="CSIR NET Chemical Sciences coaching Delhi, Offline coaching for CSIR NET Chemical Sciences in Delhi,Best coaching institute for CSIR NET Chemical Sciences,Top CSIR NET Chemical Sciences coaching centers in Delhi, Classroom coaching for CSIR NET Chemical Sciences" />
+            </Helmet>
+
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>CSIR NET Chemical Sciences Offline Course</h1>

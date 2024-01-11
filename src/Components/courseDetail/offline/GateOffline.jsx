@@ -1,6 +1,8 @@
 import React from 'react'
 import courseImage from '../../../assets/gate-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
+import { Helmet } from "react-helmet";
+
 
 const GateOffline = () => {
 
@@ -21,6 +23,12 @@ const GateOffline = () => {
 
     return (
         <div className='online'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Best GATE Chemistry Offline Coaching Delhi - ASAP Institute</title>
+                <meta name="description" content="Achieve success with ASAP Institute's GATE Chemistry Offline Course. Expert faculty, comprehensive syllabus, and flexible batches. Enroll for a bright future!" />
+                <meta name="keywords" content="GATE Chemistry coaching Delhi, Offline coaching for GATE Chemistry in Delhi, Best coaching institute for GATE Chemistry, Top GATE Chemistry coaching centers in Delhi, Classroom coaching for GATE Chemistry, GATE Chemistry coaching classes Delhi, Coaching for GATE Chemistry offline" />
+            </Helmet>
             <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>GATE Chemistry Offline Course: Fueling Your Path to Success</h1>
@@ -43,7 +51,7 @@ const GateOffline = () => {
                 <li> • <h6>GATE Chemistry Offline Classes (1 Year - Weekend)</h6></li>
             </ul>
 
-           
+
 
             <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>

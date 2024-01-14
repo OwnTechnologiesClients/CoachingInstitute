@@ -18,21 +18,21 @@ const CoursePageList = ({
 
   const navigate = useNavigate();
   const handleCourseName = (id) => {
-    if (id === "CSIR-NET Chemical Sciences") {
+    if (id === "Flutter Online") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/csir-net`);
-    } else if (id === "GATE Chemistry") {
+    } else if (id === "ReactJS Online") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/gate`);
-    } else if (id === "IIT-JAM Chemistry") {
+    } else if (id === "NextJs Online") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/iit-jam`);
-    } else if (id === "CUET (PG) Chemistry") {
+    } else if (id === "NodeJs Online") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/cuet`);
-    } else if (id === "BARC (Chemistry)") {
+    } else if (id === "MERN Stack Online") {
       dispatch(SetIsClOpen(!isClOpen));
-      navigate(`${url1}/barc`);
+      navigate(`${url1}/mern-stack`);
     } else if (id === "TIFR (Chemistry)") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/tifr`);
@@ -157,7 +157,7 @@ const TestPageList = ({
 
   const navigate = useNavigate();
   const handleCourseName = (id) => {
-    if (id === "CSIR-NET Chemical Sciences") {
+    if (id === "Flutter Online") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/csir-net`);
     } else if (id === "GATE Chemistry") {

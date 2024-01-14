@@ -1,72 +1,100 @@
-.online{
+.online {
     padding: 5vw;
 
-    img{
+    img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
-    h1{
+
+    h1 {
         font-size: 1.7vw;
         padding: .5vw 0;
-        font-weight: normal;
-        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
-    h2{
+
+    h2 {
         font-weight: normal;
+        font-family: "poppins";
+
+
     }
-    p{
-        color: #605e5e;
+
+    h3 {
         font-size: 1.2vw;
-        padding: 1vw 0;
+        font-family: "poppins-semibold";
+
+
     }
-    ul,ol{
-        padding: 1.5vw;
-        li{
+
+    p {
         color: #605e5e;
+        font-size: 1.1vw;
+        padding: 1vw 0;
+        
+         font-family: "poppins";
+        // font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul,
+    ol {
+        padding: 1.5vw;
+
+        li {
+            color: #605e5e;
             padding: .5vw 0;
             font-size: 1.1vw;
             line-height: 1.4vw;
-            h6{
+            font-family: "poppins";
+
+
+            h6 {
                 color: #000;
                 display: inline-block;
-                font-size: 1.3vw;
-                font-weight: normal;
+                font-size: 1.1vw;
+                font-family: "poppins";
             }
 
         }
     }
-    h5{
+
+    h5 {
         font-weight: normal;
         display: inline-block;
         font-size: 1.1vw;
         color: #2D8EFF !important;
+        font-family: "poppins-semibold";
     }
 
     @media screen and (max-width:480px) {
-        
-            h1{
-                font-size: 1.1rem;
-                
-            }
-           
-            p{
+
+        h1 {
+            font-size: 1.1rem;
+
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        ul,
+        ol {
+            li {
                 font-size: 1rem;
-            }
-            ul,ol{
-                li{
+                line-height: 1.2rem;
+
+                h6 {
                     font-size: 1rem;
-                    line-height: 1.2rem;
-                    h6{
-                        font-size: 1rem;
-                    }
-        
                 }
+
             }
-            h5{
-                font-size: 1.1rem;
-            }
-        
-        
+        }
+
+        h5 {
+            font-size: 1.1rem;
+        }
+
+
     }
 }

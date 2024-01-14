@@ -107,10 +107,9 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link
+        {/* <Link
           to="/testseries/csir-net"
-          onClick={() => handleItemClick("testseries")}
-        >
+          onClick={() => handleItemClick("testseries")}>
           <div
             className={`menu-item ${
               activeItem === "testseries" ? "active" : ""
@@ -118,12 +117,11 @@ const Navbar = () => {
           >
             Test Series
           </div>
-        </Link>
+        </Link> */}
 
-        <Link
+        {/* <Link
           to="/studymaterial/csir-net"
-          onClick={() => handleItemClick("studymaterial")}
-        >
+          onClick={() => handleItemClick("studymaterial")}>
           <div
             className={`menu-item ${
               activeItem === "studymaterial" ? "active" : ""
@@ -131,7 +129,7 @@ const Navbar = () => {
           >
             Study Material
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/videos" onClick={() => handleItemClick("videos")}>
           <div
@@ -141,7 +139,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link
+        {/* <Link
           className="courses top-course-nav"
           to="/iit-jam"
           onClick={() => handleItemClick("iit-jam")}
@@ -184,7 +182,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/contact" onClick={() => handleItemClick("contact")}>
           <div

@@ -29,14 +29,14 @@ export const menuItems = [
       title: 'About Us',
       url: '/about',
     },
-    {
-      title: 'Test Series',
-      url: '/testseries',
-    },
-    {
-      title: 'Study Material',
-      url: '/studymaterial',
-    },
+    // {
+    //   title: 'Test Series',
+    //   url: '/testseries',
+    // },
+    // {
+    //   title: 'Study Material',
+    //   url: '/studymaterial',
+    // },
     {
       title: 'Student Login',
       url: '/studentlogin',

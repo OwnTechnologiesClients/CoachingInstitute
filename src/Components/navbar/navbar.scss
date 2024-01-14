@@ -34,7 +34,7 @@ nav {
             .menu-item {
                 background-color: $nav-bg;
                 padding: .6vw 1.1vw;
-                margin: 0.7vw 0.1vw;
+                margin: 0.7vw 0.5vw;
                 border-radius: 3.8rem;
                 display: flex;
                 align-items: center;
@@ -104,7 +104,7 @@ nav {
     }
 
     .new-batch {
-        margin-left: 3vw;
+        margin-left: 25vw;
         padding: 1.15vw;
         background: $blue;
         font-size: 1.1vw;

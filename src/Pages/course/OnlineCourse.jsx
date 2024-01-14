@@ -13,18 +13,19 @@ import CourseLinks from "../../components/courseLinks/CourseLinks";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import { SetActiveCourse } from "../../redux/userSlice";
 import { useDispatch, useSelector } from "react-redux";
-import CsirOnline from "../../components/courseDetail/online/CsirOnline";
-import GateOnline from "../../components/courseDetail/online/GateOnline";
-import JamOnline from "../../components/courseDetail/online/JamOnline";
-import CuetOnline from "../../components/courseDetail/online/CuetOnline";
+import FlutterOnline from "../../Components/courseDetail/online/FlutterOnline";
+import ReactJsOnline from "../../Components/courseDetail/online/ReactJsOnline";
+import NextJsOnline from "../../Components/courseDetail/online/NextJsOnline";
+import NodeJsOnline from "../../Components/courseDetail/online/NodeJsOnline";
 import CourseHeroSection from "../../components/courseHeroSection/CourseHeroSection";
 import { useNavigate, useParams } from "react-router-dom";
+import MernStackOnline from "../../Components/courseDetail/online/MernStackOnline";
 
 const OnlineCourse = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [coursesOpened, setCoursesOpened] = useState(false);
-  const [activeLink, setActiveLink] = useState("onlinecourses/CSIR-NET Chemical Sciences");
+  const [activeLink, setActiveLink] = useState("onlinecourses/Flutter Online");
   const { course } = useSelector((state) => state.users);
   const dispatch = useDispatch();
   const handleLinkClick = (link) => {
@@ -35,20 +36,22 @@ const OnlineCourse = () => {
   };
 
   useEffect(() => {
-    if (id === "csir-net") setActiveLink("/onlinecourses/CSIR-NET Chemical Sciences");
-    else if (id === "gate") setActiveLink("/onlinecourses/GATE Chemistry");
-    else if (id === "iit-jam") setActiveLink("/onlinecourses/IIT-JAM Chemistry");
-    else if (id === "cuet") setActiveLink("/onlinecourses/CUET (PG) Chemistry");
+    if (id === "csir-net") setActiveLink("/onlinecourses/Flutter Online");
+    else if (id === "gate") setActiveLink("/onlinecourses/ReactJS Online");
+    else if (id === "iit-jam") setActiveLink("/onlinecourses/NextJs Online");
+    else if (id === "cuet") setActiveLink("/onlinecourses/NodeJs Online");
+    else if (id === "mern-stack") setActiveLink("/onlinecourses/MERN Stack Online");
     else {
       navigate("/");
     }
-  },[id]);
+  }, [id]);
 
   const componentMapping = {
-    "/onlinecourses/CSIR-NET Chemical Sciences": <CsirOnline />,
-    "/onlinecourses/GATE Chemistry": <GateOnline />,
-    "/onlinecourses/IIT-JAM Chemistry": <JamOnline />,
-    "/onlinecourses/CUET (PG) Chemistry": <CuetOnline />,
+    "/onlinecourses/Flutter Online": <FlutterOnline />,
+    "/onlinecourses/ReactJS Online": <ReactJsOnline />,
+    "/onlinecourses/NextJs Online": <NextJsOnline />,
+    "/onlinecourses/NodeJs Online": <NodeJsOnline />,
+    "/onlinecourses/MERN Stack Online": <MernStackOnline />,
   };
 
   const tableFields = [
@@ -71,11 +74,11 @@ const OnlineCourse = () => {
       <Header2 />
       <Navbar />
 
-      <CourseHeroSection
+      {/* <CourseHeroSection
         imgSrc={bg3}
         hd1={"ONLINE COURSES"}
         hd2={"FOR YOUR BETTER FUTURE"}
-      />
+      /> */}
 
       <div className="course-page-section">
         <CourseLinks

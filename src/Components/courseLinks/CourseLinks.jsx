@@ -58,10 +58,11 @@ const CourseLinks = ({
 
   const links = [
     [
-      "CSIR-NET Chemical Sciences",
-      "GATE Chemistry",
-      "IIT-JAM Chemistry",
-      "CUET (PG) Chemistry",
+      "Flutter Online",
+      "ReactJS Online",
+      "NextJs Online",
+      "NodeJs Online",
+      "MERN Stack Online",
     ],
     [
       "CSIR-NET Chemical Sciences",
@@ -105,7 +106,7 @@ const CourseLinks = ({
         }
         handleLinksOpen={handleLinksOpen}
       />
-      <StudyPageList
+      {/* <StudyPageList
         hd1={"Study"}
         hd2={"Material"}
         links={links[1]}
@@ -113,8 +114,8 @@ const CourseLinks = ({
         onLinkClick={handleLinkClick}
         url1={"/studymaterial"}
         handleLinksOpen={handleLinksOpen}
-      />
-      <TestPageList
+      /> */}
+      {/* <TestPageList
         hd1={"Test"}
         hd2={"Series"}
         links={links[2]}
@@ -122,7 +123,7 @@ const CourseLinks = ({
         onLinkClick={handleLinkClick}
         url1={"/testseries"}
         handleLinksOpen={handleLinksOpen}
-      />
+      /> */}
 
       {/* <div className="opening-hours-list">
                 <h2>Opening <span className='under-bar'>Hours</span></h2>

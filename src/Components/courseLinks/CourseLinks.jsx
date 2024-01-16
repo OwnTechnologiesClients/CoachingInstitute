@@ -58,11 +58,11 @@ const CourseLinks = ({
 
   const links = [
     [
-      "Flutter Online",
-      "ReactJS Online",
-      "NextJs Online",
-      "NodeJs Online",
-      "MERN Stack Online",
+      "Flutter",
+      "ReactJS",
+      "NextJs",
+      "NodeJs",
+      "MERN Stack",
     ],
     [
       "CSIR-NET Chemical Sciences",

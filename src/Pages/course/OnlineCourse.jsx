@@ -25,7 +25,7 @@ const OnlineCourse = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [coursesOpened, setCoursesOpened] = useState(false);
-  const [activeLink, setActiveLink] = useState("onlinecourses/Flutter Online");
+  const [activeLink, setActiveLink] = useState("onlinecourses/Flutter");
   const { course } = useSelector((state) => state.users);
   const dispatch = useDispatch();
   const handleLinkClick = (link) => {
@@ -36,22 +36,22 @@ const OnlineCourse = () => {
   };
 
   useEffect(() => {
-    if (id === "csir-net") setActiveLink("/onlinecourses/Flutter Online");
-    else if (id === "gate") setActiveLink("/onlinecourses/ReactJS Online");
-    else if (id === "iit-jam") setActiveLink("/onlinecourses/NextJs Online");
-    else if (id === "cuet") setActiveLink("/onlinecourses/NodeJs Online");
-    else if (id === "mern-stack") setActiveLink("/onlinecourses/MERN Stack Online");
+    if (id === "csir-net") setActiveLink("/onlinecourses/Flutter");
+    else if (id === "gate") setActiveLink("/onlinecourses/ReactJS");
+    else if (id === "iit-jam") setActiveLink("/onlinecourses/NextJs");
+    else if (id === "cuet") setActiveLink("/onlinecourses/NodeJs");
+    else if (id === "mern-stack") setActiveLink("/onlinecourses/MERN Stack");
     else {
       navigate("/");
     }
   }, [id]);
 
   const componentMapping = {
-    "/onlinecourses/Flutter Online": <FlutterOnline />,
-    "/onlinecourses/ReactJS Online": <ReactJsOnline />,
-    "/onlinecourses/NextJs Online": <NextJsOnline />,
-    "/onlinecourses/NodeJs Online": <NodeJsOnline />,
-    "/onlinecourses/MERN Stack Online": <MernStackOnline />,
+    "/onlinecourses/Flutter": <FlutterOnline />,
+    "/onlinecourses/ReactJS": <ReactJsOnline />,
+    "/onlinecourses/NextJs": <NextJsOnline />,
+    "/onlinecourses/NodeJs": <NodeJsOnline />,
+    "/onlinecourses/MERN Stack": <MernStackOnline />,
   };
 
   const tableFields = [

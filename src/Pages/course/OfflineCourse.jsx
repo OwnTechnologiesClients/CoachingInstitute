@@ -14,18 +14,20 @@ import CourseLinks from "../../components/courseLinks/CourseLinks";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import { SetActiveCourse } from "../../redux/userSlice";
 import { useDispatch, useSelector } from "react-redux";
-import CsirOffline from "../../components/courseDetail/offline/CsirOffline";
-import GateOffline from "../../components/courseDetail/offline/GateOffline";
-import JamOffline from "../../components/courseDetail/offline/JamOffline";
-import CuetOffline from "../../components/courseDetail/offline/CuetOffline";
+import FlutterOffline from "../../components/courseDetail/offline/FlutterOffline";
+import ReactJsOffline from "../../components/courseDetail/offline/ReactJsOffline";
+import NextJsOffline from "../../Components/courseDetail/offline/NextJsOffline";
+import NodeJsOffline from "../../Components/courseDetail/offline/NodeJsOffline";
 import CourseHeroSection from "../../components/courseHeroSection/CourseHeroSection";
 import { useNavigate, useParams } from "react-router-dom";
+import MernStackOffline from "../../Components/courseDetail/offline/MernStackOffline";
+// import NextJsOffline from "../../Components/courseDetail/offline/NextJsOffline";
 
 const OfflineCourse = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [coursesOpened, setCoursesOpened] = useState(false);
-  const [activeLink, setActiveLink] = useState("/offlinecourses/CSIR-NET Chemical Sciences");
+  const [activeLink, setActiveLink] = useState("/offlinecourses/Flutter");
   const { course } = useSelector((state) => state.users);
   const dispatch = useDispatch();
   const handleLinkClick = (link) => {
@@ -33,20 +35,24 @@ const OfflineCourse = () => {
   };
 
   useEffect(() => {
-    if (id === "csir-net") setActiveLink("/offlinecourses/CSIR-NET Chemical Sciences");
-    else if (id === "gate") setActiveLink("/offlinecourses/GATE Chemistry");
-    else if (id === "iit-jam") setActiveLink("/offlinecourses/IIT-JAM Chemistry");
-    else if (id === "cuet") setActiveLink("/offlinecourses/CUET (PG) Chemistry");
+    if (id === "csir-net") setActiveLink("/offlinecourses/Flutter");
+    else if (id === "gate") setActiveLink("/offlinecourses/ReactJS");
+    else if (id === "iit-jam") setActiveLink("/offlinecourses/NextJs");
+    else if (id === "cuet") setActiveLink("/offlinecourses/NodeJs");
+    else if (id === "mern-stack") setActiveLink("/offlinecourses/MERN Stack");
+
     else {
       navigate("/");
     }
   },[id]);
 
   const componentMapping = {
-    "/offlinecourses/CSIR-NET Chemical Sciences": <CsirOffline />,
-    "/offlinecourses/GATE Chemistry": <GateOffline />,
-    "/offlinecourses/IIT-JAM Chemistry": <JamOffline />,
-    "/offlinecourses/CUET (PG) Chemistry": <CuetOffline />,
+    "/offlinecourses/Flutter": <FlutterOffline />,
+    "/offlinecourses/ReactJS": <ReactJsOffline />,
+    "/offlinecourses/NextJs": <NextJsOffline />,
+    "/offlinecourses/NodeJs": <NodeJsOffline />,
+    "/offlinecourses/MERN Stack": <MernStackOffline />,
+
   };
   const handleLinksOpen = () => {
     setCoursesOpened(!coursesOpened);
@@ -64,11 +70,11 @@ const OfflineCourse = () => {
       <Header2 />
       <Navbar />
 
-      <CourseHeroSection
+      {/* <CourseHeroSection
         imgSrc={bg7}
         hd1={"OFFLINE COURSES"}
         hd2={"FOR YOUR BETTER FUTURE"}
-      />
+      /> */}
 
       <div className="course-page-section">
         {console.log(activeLink)}

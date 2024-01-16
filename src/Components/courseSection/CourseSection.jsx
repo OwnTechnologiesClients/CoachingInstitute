@@ -12,13 +12,13 @@ const CourseSection = () => {
     const courseCardDetails = [
         {
             courseImg: img2,
-            cardHeading: "Flutter Online",
+            cardHeading: "Flutter",
             cardDetail: "Welcome to ASAP Institute's CSIR NET Chemical Sciences Online Batches, designed to pave your way to success in the CSIR NET Chemical Sciences examination.",
             price: 299
         },
         {
             courseImg: img1,
-            cardHeading: "ReactJS Online",
+            cardHeading: "ReactJS",
             cardDetail: "Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.",
             price: 299
         },

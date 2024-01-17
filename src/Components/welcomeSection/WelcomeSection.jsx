@@ -56,22 +56,22 @@ export const WelcomeSubSection = () => {
             <div>
                 <div className="message">
                     <strong>Elaboration on Course Features</strong><br></br>
-                    <p1>At ASAP Institute (formerly CHEMTIME), we take immense pride in our courses that are meticulously designed to offer students a comprehensive and holistic preparation for various chemistry-related entrance exams. Our courses not only focus on academic excellence but also cater to the individual needs of our diverse student community.</p1>
+                    <p1>ASAP Institute prides itself on offering a cutting-edge learning experience with a range of features designed to empower and prepare students for success in the ever-evolving tech landscape. Here's an elaboration on our key course features:</p1>
 
                     <div className="cards">
-                        <WelcomeCard imgSrc={ss2} title="TEACHING METHOD" description="Our experienced faculty, comprised of renowned scientists and professors, employ a unique teaching approach that emphasizes understanding chemistry in its purest form. Through live and recorded classes, they make complex concepts easy to grasp, ensuring that you gain a strong foundation." />
-                        <WelcomeCard imgSrc={ss3} title="STUDY MATERIAL" description="We provide students with meticulously crafted study materials that are aligned with the exam syllabus. These materials are designed to solidify your understanding of key concepts and serve as valuable resources throughout your preparation journey." />
-                        <WelcomeCard imgSrc={ss1} title="TIMELY SYLLABUS COVER" description="What sets ASAP Institute apart is our commitment to ensuring that all topics are comprehensively covered and delivered on schedule. This approach guarantees that you receive a well-rounded education and are well-prepared to tackle even the most challenging questions on your exams." />
+                        <WelcomeCard imgSrc={ss2} title="EXPERT INSTRUCTORS" description="Learn from seasoned industry professionals with extensive real-world experience. Benefit from their insights, practical knowledge, and guidance throughout the course." />
+                        <WelcomeCard imgSrc={ss3} title="HANDS-ON PROJECTS" description="Translate theoretical knowledge into practical skills with hands-on projects. Build a robust portfolio showcasing your ability to apply concepts to real-world scenarios." />
+                        <WelcomeCard imgSrc={ss1} title="FLEXIBLE LEARNING" description="Life can be busy; that's why we offer flexible learning options, including online courses and part-time schedules." />
                     </div>
 
 
-                    <strong>Online Platform Benefits</strong><br></br>
-                    <p1>Our online platform is designed to offer students a flexible and interactive learning experience that maximizes their success in chemistry entrance exams. Here are some of the key benefits</p1>
+                    <strong>Why we are best as technology institute</strong><br></br>
+                    <p1>At our technology institute, we go beyond education – we cultivate an environment that nurtures innovation, fosters collaboration, and prepares you for a successful and fulfilling career in the dynamic world of technology.</p1>
 
                     <div className="cards">
-                        <WelcomeCard imgSrc={ss4} title="FLEXIBILITY" description="With our online platform, you have the freedom to choose your learning schedule. Access our live classes or recorded sessions at your convenience, allowing you to maintain a balance between your study and other commitments." />
-                        <WelcomeCard imgSrc={ss5} title="ACCESS TO RECORDING" description="Never miss a class. Our online platform gives you access to recorded classes, ensuring that you can revisit lessons whenever you need to reinforce your understanding of specific topics." />
-                        <WelcomeCard imgSrc={ss6} title="INTERACTIVE CLASSES" description="We believe that learning should be engaging. Our online platform incorporates interactive elements, such as quizzes and discussions, to keep students actively involved in their studies and to assess their progress." />
+                        <WelcomeCard imgSrc={ss4} title="GURANTEED INTERNSHIP" description="Our internship program is unmatched. We have direct partnerships with innovative companies and fast-growing startups across industries. Through our connections, we are able to place students into meaningful intern roles where they gain valuable on-the-job experience." />
+                        <WelcomeCard imgSrc={ss5} title="PERSONALIZED ATTENTION" description="Enjoy a personalized learning experience with smaller class sizes and individualized attention from instructors. Receive tailored feedback to ensure your understanding and progress throughout the program." />
+                        <WelcomeCard imgSrc={ss6} title="CUTTING-EDGE CURRICULUM" description="Our curriculum is meticulously designed to encompass the latest trends and advancements in technology. Stay ahead of the curve with a syllabus that reflects the ever-evolving industry landscape." />
                     </div>
                 </div>
             </div>
@@ -158,22 +158,22 @@ const WelcomeSection = () => {
         <div className="welcome-section">
             <div>
                 <div className="message">
-                    <h1>Welcome to ASAP Institute - Your Ultimate Destination for Excellence in </h1>
-                    <p className='under-bar'>CHEMISTRY EXAMS</p>
-                    <p1>Are you a dedicated student with your sights set on conquering chemistry-related entrance exams? Whether you're searching for premier IIT JAM coaching in Delhi, particularly in areas such as Jia Sarai and Hauz Khas, or if you're seeking expert guidance for CSIR NET Chemistry in Delhi, your search ends right here at ASAP Institute (formerly CHEMTIME)</p1>
-                    <p1>We specialize in delivering high-quality coaching for a diverse range of chemistry-related entrance exams, which include CSIR NET Chemical Sciences, GATE Chemistry, TIFR Chemistry, and more.</p1>
+                    <h1>Welcome to ASAP Institute: Your Top-Ranked Destination for Expert Coaching in App Development & Web Development! Unlock Your Full Potential with Our </h1>
+                    <p className='under-bar'>COMPREHENSIVE PROGRAMS</p>
+                    <p1>Elevate your career with ASAP Institute! Gain expertise in app and web development through our industry-focused coaching. Our comprehensive programs include a unique opportunity: a 3-month internship with top-grade companies and startups. Learn from seasoned professionals, work on hands-on projects, and build a stellar portfolio. Our flexible learning options and dedicated career guidance ensure you're job-ready. Join ASAP Institute to not only master development skills but also secure valuable real-world experience. Shape your future with a blend of cutting-edge education and hands-on internships. Explore the possibilities at ASAP Institute – where careers take flight!</p1>
+                    {/* <p1>We specialize in delivering high-quality coaching for a diverse range of chemistry-related entrance exams, which include CSIR NET Chemical Sciences, GATE Chemistry, TIFR Chemistry, and more.</p1> */}
 
                     <br></br>
                     <br></br>
 
 
-                    <strong>Our Commitment to Your Success</strong><br></br>
-                    <p1>At ASAP Institute (formerly CHEMTIME), our mission is to empower students like you with the knowledge and skills needed to excel in the competitive world of chemistry entrance exams. We understand that every student is unique, and that's why we offer a variety of coaching options to cater to your specific needs and preferences.</p1>
+                    <strong>Master the Future with ASAP Institute: Premier Coaching for App Development & Web Development Excellence</strong><br></br>
+                    <p1>Our commitment to your success is unwavering. We prioritize your growth and achievement in every facet of our engagement. From tailored solutions to continuous support, we invest in your journey towards success. Our dedicated team ensures personalized attention, fostering an environment where your goals are not just met but exceeded. Join us in realizing your full potential - where commitment meets accomplishment. Your success is our priority at ASAP Institute.</p1>
 
                     <br></br>
                     <br></br>
                     <strong>Course Information</strong><br></br>
-                    <p1>ASAP Institute (Formerly CHEMTIME) offers a variety of courses designed to prepare students for chemistry-related entrance exams. Whether you are aiming to excel in CSIR NET Chemical Sciences, GATE Chemistry, IIT JAM, TIFR Chemistry, or other PhD entrances in Chemistry, we provide the ideal courses to meet your needs. Our courses are available in both online (live and recorded) and offline modes.</p1>
+                    <p1>Dive into the Future of Tech with ASAP Institute's Affordable Courses! Explore App Development using Flutter, Web Development with React.js and Next.js, and Backend Development with Node.js and MERN Stack. Our pocket-friendly programs ensure quality education with a unique 3-month internship opportunity. Master the latest technologies and gain hands-on experience at an unbeatable price. Elevate your skills, build a robust portfolio, and launch your career in just a few months. Join ASAP Institute for a transformative journey where low cost meets high value. Unleash your potential in the dynamic realms of app and web development!</p1>
                     <br></br>
                     <button onClick={navigateTo}>View Details</button>
                     <br></br>

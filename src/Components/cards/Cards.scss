@@ -1,6 +1,24 @@
-.parent-box{
+.parent-box {
+    height: 19vw;
+    
     // text-align: justify;
 }
+
+.course-card {
+    margin: 0.6vw;
+
+    // height: 40vw;
+    // width: 2vw;
+    
+    img {
+        
+        border: solid 2px transparent;
+        border-color: black;
+    }
+
+    
+}
+
 
 .video-card {
     iframe {

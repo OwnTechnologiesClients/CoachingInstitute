@@ -13,9 +13,10 @@ import heroImage from '../../assets/bg4.png'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import ResultSection from '../../components/resultSection/ResultSection';
 import Faq from '../../Components/faq/Faq';
-import ChemistryEducationChoices from '../../Components/chemistryEducationChoices/ChemistryEducationChoices';
-import CsirNetPreparation from '../../Components/csirNetPreparation/CsirNetPreparation';
-import IITJamAndGateCoaching from '../../Components/iiTJamAndGateCoaching/IITJamAndGateCoaching';
+import WhyChooseReact from '../../Components/whyChooseReact/WhyChooseReact';
+import WhyChooseFlutter from '../../Components/whyChooseFlutter/WhyChooseFlutter';
+import WhyChooseBackend from '../../Components/whyChooseBackend/WhyChooseBackend';
+import WhyChooseMern from '../../Components/whyChooseMern/WhyChooseMern';
 
 const Home = () => {
 
@@ -44,18 +45,15 @@ const Home = () => {
 
             {/* <VideoSection /> */}
 
-            <ChemistryEducationChoices />
+            <WhyChooseReact />
             
-            <CsirNetPreparation />
+            <WhyChooseFlutter />
             
-            <IITJamAndGateCoaching />
-            
-            
+            <WhyChooseBackend />
 
+            <WhyChooseMern/>
             
-
-            
-
+        
             <Faq/>
             
             <WhatsappIcon />

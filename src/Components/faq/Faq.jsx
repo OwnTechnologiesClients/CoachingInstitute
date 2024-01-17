@@ -20,10 +20,8 @@ const Faq = () => {
             <div>
                 <div className="message">
 
-                    <h1>Welcome to Excellence in Chemistry Education</h1><br></br>
-                    <p1>At ASAP Institute, we invite you to explore the world of chemistry through our comprehensive coaching programs. We understand that chemistry is more than just a subject; it's the key to unlocking scientific advancements and innovation.<br></br><br></br>
-                        Your journey to excellence begins here. Contact us today to embark on your chemistry exam preparation with ASAP Institute.
-                    </p1>
+                    <h1>Welcome to Excellence Technology Coaching Institute</h1><br></br>
+                    <p1>Where Innovation Meets Education! At our institute, we are committed to providing a transformative learning experience in the dynamic realm of technology. Get ready to embark on a journey of skill enhancement, innovation, and success. Let's unlock your full potential together! </p1>
                     <div className='top-heading'>
                         <br></br>
                         
@@ -36,23 +34,31 @@ const Faq = () => {
                     <br></br>
                     <br></br>
 
-                    <strong>Admissions Process:</strong><br></br><br></br>
-                    <h5>Q: How can I enroll in ASAP Institute's courses? </h5>
-                    <p1>A: Enrolling in our courses is a straightforward process. You can visit our website and find the "Admissions" section, where you'll get detailed instructions on how to register for the course of your choice.</p1>
+                    {/* <strong>Admissions Process:</strong><br></br><br></br> */}
+                    <h5>Q: What are the steps to sign up for classes at ASAP Institute?</h5>
+                    <p1>A: To enroll in ASAP Institute's courses, visit our website, choose your desired program, and complete the online application form. Submit any required documentation, review terms, and process payment. Upon confirmation, access learning resources and engage in an enriching educational experience. Welcome to ASAP Institute!</p1>
 
                     <br></br>
                     <br></br>
-                    <strong>Study Materials:</strong><br></br><br></br>
-                    <h5>Q: Are study materials provided for all courses? </h5>
-                    <p1>A: Yes, we provide meticulously crafted study materials for all our courses. These materials are designed to align with the respective exam syllabi and serve as valuable resources during your preparation.</p1>
+
+                    <h5>Q: Does completing the course certificate guarantee that I will receive a 3-month internship?</h5>
+                    <p1>A: Once you complete your program at ASAP Institute, you will have the opportunity to participate in a 3-month internship.</p1>
 
                     <br></br>
                     <br></br>
-                    <strong>Class Schedules:</strong><br></br><br></br>
-                    <h5>Q: Can I access live classes and recorded sessions for all courses? </h5>
-                    <p1>A: Yes, you have the flexibility to choose between live classes and recorded sessions for most of our courses. This allows you to adapt your learning to your own schedule and preferences.</p1>
+                    <h5>Q: Am I receiving compensation for my internship, or is it an unpaid position?</h5>
+                    <p1>A: You will get paid for your internship at the rate that is standard for the industry.</p1>
 
                     <br></br>
+                    <br></br>
+
+                    <h5>Q: Will I be awarded a certificate upon finishing the course, in addition to an internship certificate?</h5>
+                    <p1>A: Upon completing the course, you will receive a certificate of completion. Additionally, after finishing the entire internship program, you will be given an internship certificate as well.</p1>
+
+                    <br></br>
+                    <br></br>
+
+                    
 
 
                 </div>

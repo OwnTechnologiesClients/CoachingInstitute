@@ -25,9 +25,12 @@ $text: #646262;
         color: #fff;
         font-weight: 400;
         font-size: 2vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         span {
             color: $blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
     }
 
@@ -52,6 +55,8 @@ $text: #646262;
         padding: .7vw 1vw;
         height: 3vw;
         outline: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
 
     button,
@@ -62,6 +67,8 @@ $text: #646262;
         width: 15vw;
         height: 3vw;
         background-color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
     
 
@@ -79,10 +86,14 @@ $text: #646262;
         padding: 1.5rem;
         h1 {
             font-size: 1.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         form {
             flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         button,

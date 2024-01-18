@@ -50,7 +50,7 @@ const ReactJsOffline = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>GATE Chemistry Online Courses in Delhi - Enroll Now with ASAP</title>
-                <meta name="description" content="Join ASAP Institute's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
+                <meta name="description" content="Join TECH FEVER's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
                 <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
             </Helmet>
 
@@ -96,11 +96,11 @@ const ReactJsOffline = () => {
             {/* <p>To enroll in our GATE CHEMISTRY online course, you can follow these simple steps:</p> */}
             <ul>
                 <li> • <h6>Offline Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
-                {/* <li> • <h6>In-Person Registration:</h6> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
+                {/* <li> • <h6>In-Person Registration:</h6> You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
         <li> • <h6>Fee Payment:</h6> Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of " <h5>ASAP CHEM TIME PVT. LTD.</h5> " in the account number: <h5>50200066588261</h5> Use NEFT/IFSC: <h5>HDFC0000032</h5> and the branch is located in <h5>SDA, New Delhi.</h5></li> */}
             </ul>
 
-            {/* <p>Enroll in ASAP Institute's GATE Chemistry online course and pave the way for admission to prestigious institutions like IITs, IISc, and IISERs. You can also unlock opportunities to become a scientist in esteemed organizations like DRDO and BARC. Your journey to success begins here.</p> */}
+            {/* <p>Enroll in TECH FEVER's GATE Chemistry online course and pave the way for admission to prestigious institutions like IITs, IISc, and IISERs. You can also unlock opportunities to become a scientist in esteemed organizations like DRDO and BARC. Your journey to success begins here.</p> */}
 
             <h3>For inquiries and assistance, please contact us at:</h3>
             <ul>

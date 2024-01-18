@@ -14,6 +14,7 @@ $text: #646262;
 
     a {
         cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .detail {
@@ -29,7 +30,7 @@ $text: #646262;
         }
 
         .message {
-            font-family: 'Poppins';
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             line-height: 1.5vw;
             font-size: 1.1vw;
         }
@@ -48,31 +49,37 @@ $text: #646262;
 
     .courses {
         margin-top: 7.5vw;
+
         h4 {
-            font-family: 'Poppins';
             font-weight: 700;
             margin: 1vw 0;
             letter-spacing: .1vw;
             font-size: 1.3vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         li {
             font-family: 'Poppins';
             font-size: 1.1vw;
             padding: .6vw 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
 
     }
 
     .links {
-margin-top: 7.5vw;
+        margin-top: 7.5vw;
+
         h4 {
-            font-family: 'Poppins';
             font-weight: 700;
             margin: 1vw 0;
             letter-spacing: .1vw;
             font-size: 1.3vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         img {
@@ -82,7 +89,7 @@ margin-top: 7.5vw;
         }
 
         a {
-            font-family: 'Poppins';
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             line-height: 2.6rem;
             font-size: 1.2vw;
         }
@@ -112,14 +119,18 @@ margin-top: 7.5vw;
         .h1 {
             margin-bottom: .5vw;
             font-size: 1.1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         .h2 {
             font-size: 1.3vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
     }
 
-    
+
 
     @media screen and (max-width:"480px") {
 
@@ -226,10 +237,12 @@ margin-top: 7.5vw;
     .bottom {
         display: flex;
         align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         li {
             margin: 0 .3vw;
             font-size: 1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
     }
 
@@ -244,6 +257,7 @@ margin-top: 7.5vw;
     .rights {
         a {
             color: $blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
     }
 

@@ -51,8 +51,8 @@ const NodeJsOffline = () => {
         <div className='online'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Enroll in CUET(PG) Chemistry Online Batch - ASAP Institute</title>
-                <meta name="description" content="Achieve academic excellence with ASAP Institute's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
+                <title>Enroll in CUET(PG) Chemistry Online Batch - TECH FEVER</title>
+                <meta name="description" content="Achieve academic excellence with TECH FEVER's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
                 <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
             </Helmet>
 
@@ -96,11 +96,11 @@ const NodeJsOffline = () => {
             {/* <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p> */}
             <ol>
                 <li> • <h6>Offline Registration:</h6> Click on the "Enroll Now" link provided on our website to register offline.</li>
-                {/* <li> • <h6>In-Person Registration:</h6> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
+                {/* <li> • <h6>In-Person Registration:</h6> You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
                 <li> • <h6>Fee Payment:</h6> Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of " <h5>ASAP CHEM TIME PVT. LTD.</h5> " in the account number: <h5>50200066588261</h5> Use NEFT/IFSC: <h5>HDFC0000032</h5> and the branch is located in <h5>SDA, New Delhi.</h5></li> */}
             </ol>
 
-            {/* <p>Join ASAP Institute's CUET(PG) Chemistry offline course to embark on your journey to get the admissions in Central Universities for pursuing postgraduation.</p> */}
+            {/* <p>Join TECH FEVER's CUET(PG) Chemistry offline course to embark on your journey to get the admissions in Central Universities for pursuing postgraduation.</p> */}
 
             <h3>For inquiries and assistance, please contact us at:</h3>
             <ul>

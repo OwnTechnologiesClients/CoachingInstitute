@@ -11,6 +11,11 @@ import topper7 from "../../assets/result/airtel.png"
 import topper8 from "../../assets/result/hitachi.png"
 import topper9 from "../../assets/result/microsoft.png"
 import topper10 from "../../assets/result/ibm.png"
+import topper11 from "../../assets/result/goldman.png"
+import topper12 from "../../assets/result/isro.png"
+import topper13 from "../../assets/result/jpmorgan.png"
+import topper14 from "../../assets/result/mercedes-benz.png"
+import topper15 from "../../assets/result/netapp.png"
 
 const ResultSection = () => {
     const navigate = useNavigate();
@@ -88,6 +93,38 @@ const ResultSection = () => {
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
                         <center><img className='result-img' src={topper10} /></center><br />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div className="result-row">
+
+                <div className="col-md-3 tpimages1">
+                    <div className="toppersimg">
+                        <center><img className='result-img' src={topper11} /></center><br />
+                    </div>
+
+                </div>
+                <div className="col-md-3 tpimages">
+                    <div className="toppersimg">
+                        <center><img className='result-img' src={topper12} /></center><br />
+                    </div>
+                </div>
+                <div className="col-md-3 tpimages">
+                    <div className="toppersimg">
+                        <center><img className='result-img' src={topper13} /></center><br />
+                    </div>
+                </div>
+                <div className="col-md-3 tpimages">
+                    <div className="toppersimg">
+                        <center><img className='result-img' src={topper14} /></center><br />
+                    </div>
+                </div>
+                <div className="col-md-3 tpimages">
+                    <div className="toppersimg">
+                        <center><img className='result-img' src={topper15} /></center><br />
                     </div>
                 </div>
 

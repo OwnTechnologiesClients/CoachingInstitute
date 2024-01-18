@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./TopCourses.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
@@ -22,20 +22,20 @@ const TopCourseIitJam = () => {
 
   const badges = [
     {
-      linkName:"IIT-JAM ONLINE",
-      link:"/onlinecourses/iit-jam"
+      linkName: "IIT-JAM ONLINE",
+      link: "/onlinecourses/iit-jam"
     },
     {
-      linkName:"IIT-JAM OFFLINE",
-      link:"/offlinecourses/iit-jam"
+      linkName: "IIT-JAM OFFLINE",
+      link: "/offlinecourses/iit-jam"
     },
     {
-      linkName:"IIT-JAM TEST SERIES",
-      link:"/testseries/iit-jam"
+      linkName: "IIT-JAM TEST SERIES",
+      link: "/testseries/iit-jam"
     },
     {
-      linkName:"IIT-JAM STUDY MATERIAL",
-      link:"/studymaterial/iit-jam"
+      linkName: "IIT-JAM STUDY MATERIAL",
+      link: "/studymaterial/iit-jam"
     },
   ]
 
@@ -43,9 +43,9 @@ const TopCourseIitJam = () => {
     <div className="top-courses">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Top IIT-JAM Chemistry Coaching in Delhi, India - ASAP Institute</title>
-        <meta name="description" content="Discover unparalleled IIT-JAM Chemistry coaching in Delhi at ASAP Institute our expert faculty, comprehensive study materials, and strategic approach empowers students for success in the IIT-JAM Chemistry exam." />
-        <meta name="keywords"content="IIT-JAM Chemistry Coaching, Best IIT-JAM Chemistry Coaching in Delhi, IIT-JAM Chemistry Classes, Top Coaching Institutes for IIT-JAM Chemistry, Coaching Centers for IIT-JAM Chemistry, IIT-JAM Chemistry Preparation in Delhi."/>
+        <title>Top IIT-JAM Chemistry Coaching in Delhi, India - TECH FEVER</title>
+        <meta name="description" content="Discover unparalleled IIT-JAM Chemistry coaching in Delhi at TECH FEVER our expert faculty, comprehensive study materials, and strategic approach empowers students for success in the IIT-JAM Chemistry exam." />
+        <meta name="keywords" content="IIT-JAM Chemistry Coaching, Best IIT-JAM Chemistry Coaching in Delhi, IIT-JAM Chemistry Classes, Top Coaching Institutes for IIT-JAM Chemistry, Coaching Centers for IIT-JAM Chemistry, IIT-JAM Chemistry Preparation in Delhi." />
       </Helmet>
 
       <Header1 />
@@ -64,7 +64,7 @@ const TopCourseIitJam = () => {
           <img src={courseImg} alt="" />
 
           <div className="badges">
-            {badges.map((item,index)=>{
+            {badges.map((item, index) => {
               return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
             })}
           </div>
@@ -78,7 +78,7 @@ const TopCourseIitJam = () => {
 
           <section id="introduction">
             <p>
-              Welcome to ASAP Institute, your trusted partner for mastering the
+              Welcome to TECH FEVER, your trusted partner for mastering the
               Joint Admission Test for M.Sc. (IIT-JAM) Chemistry. With over 5
               years of experience as CHEMTIME, we take pride in being the top
               IIT-JAM coaching institute in Jia Sarai, Delhi.
@@ -86,7 +86,7 @@ const TopCourseIitJam = () => {
           </section>
 
           <section id="why-asap">
-            <h3>Why Choose ASAP Institute for IIT-JAM Chemistry Coaching?</h3>
+            <h3>Why Choose TECH FEVER for IIT-JAM Chemistry Coaching?</h3>
             <ul>
               <li>
                 <strong>Best Coaching in India:</strong> Recognized as the
@@ -133,7 +133,7 @@ const TopCourseIitJam = () => {
           </section>
 
           <section id="coaching-products">
-            <h3>Coaching Products at ASAP Institute:</h3>
+            <h3>Coaching Products at TECH FEVER:</h3>
             <ol>
               <li>
                 <strong>Offline Coaching:</strong> Join our regular or weekend
@@ -176,7 +176,7 @@ const TopCourseIitJam = () => {
           <section id="iit-jam-chemistry">
             <h3>IIT-JAM Chemistry - Your Gateway to Postgraduate Success:</h3>
             <p>
-              ASAP Institute, formerly CHEMTIME, invites you to embark on your
+              TECH FEVER, formerly CHEMTIME, invites you to embark on your
               IIT-JAM Chemistry preparation journey with confidence and
               determination. Join us, and let's achieve success together!
             </p>

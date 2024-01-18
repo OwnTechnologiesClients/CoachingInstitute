@@ -31,7 +31,7 @@ const Course1 = ({ courseName = "GATE" }) => {
                         </div>
                         <div className="points">
                             <h4>• In-Person Registration</h4>
-                            <span>You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</span>
+                            <span>You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</span>
                         </div>
                         <div className="points">
                             <h4>• Fee Payment</h4>

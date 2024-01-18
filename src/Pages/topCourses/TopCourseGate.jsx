@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./TopCourses.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
@@ -12,41 +12,41 @@ import { Helmet } from "react-helmet";
 
 const TopCourseGate = () => {
   const [activeLink, setActiveLink] = useState('');
-    const [coursesOpened,setCoursesOpened] = useState(false);
-    const handleLinksOpen = () => {
-        setCoursesOpened(!coursesOpened)
-    };
-    const handleLinkClick = (link) => {
+  const [coursesOpened, setCoursesOpened] = useState(false);
+  const handleLinksOpen = () => {
+    setCoursesOpened(!coursesOpened)
+  };
+  const handleLinkClick = (link) => {
 
-        setActiveLink(link);
-    };
+    setActiveLink(link);
+  };
 
-    const badges = [
-      {
-        linkName:"GATE ONLINE",
-        link:"/onlinecourses/gate"
-      },
-      {
-        linkName:"GATE OFFLINE",
-        link:"/offlinecourses/gate"
-      },
-      {
-        linkName:"GATE TEST SERIES",
-        link:"/testseries/gate"
-      },
-      {
-        linkName:"GATE STUDY MATERIAL",
-        link:"/studymaterial/gate"
-      },
-    ]
+  const badges = [
+    {
+      linkName: "GATE ONLINE",
+      link: "/onlinecourses/gate"
+    },
+    {
+      linkName: "GATE OFFLINE",
+      link: "/offlinecourses/gate"
+    },
+    {
+      linkName: "GATE TEST SERIES",
+      link: "/testseries/gate"
+    },
+    {
+      linkName: "GATE STUDY MATERIAL",
+      link: "/studymaterial/gate"
+    },
+  ]
 
   return (
     <div className="top-courses">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Best GATE Chemistry Coaching in Delhi, India - ASAP Institute</title>
-        <meta name="description" content="Join the best GATE Chemistry coaching in Delhi at ASAP Institute Expert faculty, comprehensive study material, and personalized guidance for success in GATE Chemistry exam." />
-        <meta name="keywords"content="Best GATE Chemistry Coaching in Delhi, GATE Chemistry Coaching, GATE Chemistry Preparation in Delhi, GATE Chemistry Coaching Institutes in Delhi, Online Coaching for GATE Chemistry"/>
+        <title>Best GATE Chemistry Coaching in Delhi, India - TECH FEVER</title>
+        <meta name="description" content="Join the best GATE Chemistry coaching in Delhi at TECH FEVER Expert faculty, comprehensive study material, and personalized guidance for success in GATE Chemistry exam." />
+        <meta name="keywords" content="Best GATE Chemistry Coaching in Delhi, GATE Chemistry Coaching, GATE Chemistry Preparation in Delhi, GATE Chemistry Coaching Institutes in Delhi, Online Coaching for GATE Chemistry" />
       </Helmet>
 
       <Header1 />
@@ -65,20 +65,20 @@ const TopCourseGate = () => {
           <img src={courseImg} alt="" />
 
           <div className="badges">
-            {badges.map((item,index)=>{
+            {badges.map((item, index) => {
               return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
             })}
           </div>
 
           <header>
             <h2>
-              GATE Chemistry Coaching at ASAP Institute: Your Path to Success
+              GATE Chemistry Coaching at TECH FEVER: Your Path to Success
             </h2>
           </header>
 
           <section id="introduction">
             <p>
-              Welcome to ASAP Institute, your trusted destination for GATE
+              Welcome to TECH FEVER, your trusted destination for GATE
               Chemistry coaching. With over 5+ years of experience as CHEMTIME,
               we have consistently delivered excellence in GATE exam
               preparation. Explore our GATE Chemistry coaching program designed
@@ -87,7 +87,7 @@ const TopCourseGate = () => {
           </section>
 
           <section id="why-asap">
-            <h3>Why Choose ASAP Institute for GATE Chemistry Coaching?</h3>
+            <h3>Why Choose TECH FEVER for GATE Chemistry Coaching?</h3>
             <ul>
               <li>
                 <strong>Comprehensive Syllabus Coverage:</strong> Our coaching
@@ -134,7 +134,7 @@ const TopCourseGate = () => {
           </section>
 
           <section id="deliverables">
-            <h3>Coaching Deliverables at ASAP Institute:</h3>
+            <h3>Coaching Deliverables at TECH FEVER:</h3>
             <ol>
               <li>
                 <strong>Offline Coaching:</strong> Join our regular or weekend
@@ -178,7 +178,7 @@ const TopCourseGate = () => {
           <section id="elevate-aspirations">
             <h3>GATE Chemistry - Elevate Your Academic Aspirations:</h3>
             <p>
-              ASAP Institute, formerly CHEMTIME, invites you to embark on your
+              TECH FEVER, formerly CHEMTIME, invites you to embark on your
               GATE Chemistry preparation journey. Join us and pave your way to
               success in the GATE exam.
             </p>

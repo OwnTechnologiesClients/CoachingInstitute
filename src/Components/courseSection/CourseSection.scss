@@ -21,9 +21,11 @@ $text: #646262;
         h1 {
             font-weight: 400;
             font-size: 1.7vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
             span {
                 color: $blue;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
         }
 
@@ -32,6 +34,7 @@ $text: #646262;
             color: #fff;
             padding: .6vw .8vw;
             font-size: 1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
     }
 
@@ -54,6 +57,7 @@ $text: #646262;
                 padding: 5px 9px;
                 border-left: .3vw solid $blue;
                 font-size: 1.1vw;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
             img {
@@ -65,13 +69,15 @@ $text: #646262;
 
                 h2 {
                     font-weight: 400;
-                    font-size: 1.3vw;
+                    font-size: 1.1vw;
                     padding: .7vw 0;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
 
                 p {
-                    font-size: 1.1vw;
+                    font-size: 1vw;
                     color: #605e5e;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
             }
 
@@ -81,6 +87,7 @@ $text: #646262;
                 padding: .4vw .6vw;
                 font-size: .8vw;
                 margin: 1vw;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
         }
     }
@@ -93,12 +100,15 @@ $text: #646262;
 
             h1 {
                 font-size: 1.2rem;
+
             }
 
             button {
                 padding: .6vw 2vw;
                 font-size: 1rem;
+                
             }
+
         }
 
         .cards {
@@ -109,8 +119,8 @@ $text: #646262;
                 margin: 1rem 0;
 
                 .price {
-                border-left: .8vw solid $blue;
-                font-size: 1rem;
+                    border-left: .8vw solid $blue;
+                    font-size: 1rem;
                 }
 
                 img {
@@ -133,6 +143,7 @@ $text: #646262;
                     font-size: 1rem;
                     padding: 1vw;
                     margin: 1rem 1vw;
+                    
                 }
             }
         }

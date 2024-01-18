@@ -44,9 +44,9 @@ const TopCourseCsir = () => {
 
       <Helmet>
         <meta charSet="utf-8" />
-        <title>CSIR NET JRF Coaching for Chemical Sciences: ASAP Institute</title>
-        <meta name="description" content="CSIR NET JRF Chemistry exam confidently with ASAP Institute top-rated coaching in Delhi. Join a community of successful aspirants benefiting from expert guidance and comprehensive study resources. Your journey to research excellence starts here." />
-        <meta name="keywords"content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching"/>
+        <title>CSIR NET JRF Coaching for Chemical Sciences: TECH FEVER</title>
+        <meta name="description" content="CSIR NET JRF Chemistry exam confidently with TECH FEVER top-rated coaching in Delhi. Join a community of successful aspirants benefiting from expert guidance and comprehensive study resources. Your journey to research excellence starts here." />
+        <meta name="keywords" content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching" />
       </Helmet>
 
       <Header1 />
@@ -71,12 +71,12 @@ const TopCourseCsir = () => {
           </div>
 
           <header>
-            <h2>CSIR-NET/JRF Coaching at ASAP Institute (formerly CHEMTIME)</h2>
+            <h2>CSIR-NET/JRF Coaching at TECH FEVER (formerly CHEMTIME)</h2>
           </header>
 
           <section id="introduction">
             <p>
-              Welcome to ASAP Institute, your ultimate destination for excelling
+              Welcome to TECH FEVER, your ultimate destination for excelling
               in the CSIR-NET/JRF examination. With a legacy of over 5 years as
               CHEMTIME, we bring unparalleled expertise to coach and guide
               aspiring candidates for competitive exams in Chemistry. Our
@@ -86,7 +86,7 @@ const TopCourseCsir = () => {
           </section>
 
           <section id="why-asap">
-            <h3>Why Choose ASAP Institute for CSIR-NET/JRF Coaching?</h3>
+            <h3>Why Choose TECH FEVER for CSIR-NET/JRF Coaching?</h3>
             <ul>
               <li>
                 <strong>Experienced Faculty:</strong> Our dedicated team of
@@ -130,7 +130,7 @@ const TopCourseCsir = () => {
           </section>
 
           <section id="deliverables">
-            <h3>CSIR-NET/JRF Coaching Deliverables at ASAP Institute:</h3>
+            <h3>CSIR-NET/JRF Coaching Deliverables at TECH FEVER:</h3>
             <ol>
               <li>
                 <strong>Offline Coaching:</strong> Attend classes at our center
@@ -160,7 +160,7 @@ const TopCourseCsir = () => {
 
           <section id="enrollment">
             <p>
-              Enroll with ASAP Institute to embark on your journey to success in
+              Enroll with TECH FEVER to embark on your journey to success in
               CSIR-NET/JRF. Our commitment is to empower your dreams and help
               you achieve your goals in the field of Chemistry.
             </p>

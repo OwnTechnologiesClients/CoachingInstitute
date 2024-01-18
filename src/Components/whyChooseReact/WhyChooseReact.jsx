@@ -92,7 +92,7 @@ const WhyChooseReact = () => {
                     </div>
                     <div className='fact-card-content'>
                         <h2>React Native for Cross-Platform Development:</h2>
-                        <p>The CSIR NET exam is highly competitive, and a well-structured coaching program can make all the difference. At ASAP Institute, we offer both online and offline coaching, allowing you to choose the mode that suits you best.</p>
+                        <p>The CSIR NET exam is highly competitive, and a well-structured coaching program can make all the difference. At TECH FEVER, we offer both online and offline coaching, allowing you to choose the mode that suits you best.</p>
                     </div>
 
                     <div className='fact-card-content'>

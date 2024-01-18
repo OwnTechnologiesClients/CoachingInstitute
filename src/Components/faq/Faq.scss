@@ -16,6 +16,7 @@ $text: #646262;
         h1 {
             font-weight: 400;
             font-size: 1.6vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         p {
@@ -23,6 +24,7 @@ $text: #646262;
             font-size: 1.6vw;
             color: $blue;
             padding: .7vw 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             // border-bottom: 2px solid $blue;
         }
 
@@ -31,20 +33,24 @@ $text: #646262;
             font-weight: 400;
             color: #605e5e;
             font-size: 1.2vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         h4 {
             font-weight: 400;
             font-size: 1.15vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         h5{
             font-weight: 400;
             font-size: 1.2vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         p1{
             font-weight: 400;
             font-size: 1vw;
             color: #605e5e;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         }
 
@@ -54,6 +60,7 @@ $text: #646262;
             padding: .6vw .8vw;
             font-size: 1vw;
             margin-top: 2vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
     }
@@ -76,11 +83,13 @@ $text: #646262;
                     font-weight: 400;
                     padding: 1vw 0;
                     font-size: 1.3vw;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
 
                 p {
                     color: #9A9696;
                     font-size: 1vw;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
             }
         }
@@ -96,6 +105,7 @@ $text: #646262;
             background-color: #202C45;
             color: #fff;
             padding: 1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         .marquee-container {
@@ -135,6 +145,7 @@ $text: #646262;
             a {
                 display: flex;
                 align-items: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
 
                 .content {
                     margin-left: 1vw;

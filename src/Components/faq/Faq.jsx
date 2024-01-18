@@ -24,25 +24,25 @@ const Faq = () => {
                     <p1>Where Innovation Meets Education! At our institute, we are committed to providing a transformative learning experience in the dynamic realm of technology. Get ready to embark on a journey of skill enhancement, innovation, and success. Let's unlock your full potential together! </p1>
                     <div className='top-heading'>
                         <br></br>
-                        
+
                         <h1>
                             Frequently Asked Questions <span className='under-bar'>(FAQs)</span>
                         </h1>
 
                     </div>
-                    
+
                     <br></br>
                     <br></br>
 
                     {/* <strong>Admissions Process:</strong><br></br><br></br> */}
-                    <h5>Q: What are the steps to sign up for classes at ASAP Institute?</h5>
-                    <p1>A: To enroll in ASAP Institute's courses, visit our website, choose your desired program, and complete the online application form. Submit any required documentation, review terms, and process payment. Upon confirmation, access learning resources and engage in an enriching educational experience. Welcome to ASAP Institute!</p1>
+                    <h5>Q: What are the steps to sign up for classes at TECH FEVER?</h5>
+                    <p1>A: To enroll in TECH FEVER's courses, visit our website, choose your desired program, and complete the online application form. Submit any required documentation, review terms, and process payment. Upon confirmation, access learning resources and engage in an enriching educational experience. Welcome to TECH FEVER!</p1>
 
                     <br></br>
                     <br></br>
 
                     <h5>Q: Does completing the course certificate guarantee that I will receive a 3-month internship?</h5>
-                    <p1>A: Once you complete your program at ASAP Institute, you will have the opportunity to participate in a 3-month internship.</p1>
+                    <p1>A: Once you complete your program at TECH FEVER, you will have the opportunity to participate in a 3-month internship.</p1>
 
                     <br></br>
                     <br></br>
@@ -58,7 +58,7 @@ const Faq = () => {
                     <br></br>
                     <br></br>
 
-                    
+
 
 
                 </div>

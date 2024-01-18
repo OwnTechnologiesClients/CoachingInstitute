@@ -51,8 +51,8 @@ const MernStackOffline = () => {
         <div className='online'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Enroll in CUET(PG) Chemistry Online Batch - ASAP Institute</title>
-                <meta name="description" content="Achieve academic excellence with ASAP Institute's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
+                <title>Enroll in CUET(PG) Chemistry Online Batch - TECH FEVER</title>
+                <meta name="description" content="Achieve academic excellence with TECH FEVER's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
                 <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
             </Helmet>
 
@@ -69,7 +69,7 @@ const MernStackOffline = () => {
                 <li> • <h6>MongoDB : </h6>The leading NoSQL database. You will learn how to design schemas, query data, build aggregations and use Mongoose ODM.</li>
                 <li> • <h6>Express : </h6>The popular web framework for Node.js. You will build robust backend APIs and connect MongoDB to your Node applications.</li>
                 <li> • <h6>Deployment : </h6>We will show you how to deploy your MERN stack applications to the cloud using services like Heroku, AWS and Netlify.</li>
-                
+
             </ul>
 
             <p>Our course includes video tutorials, interactive coding exercises, mentor support and real-world projects that will give you hands-on experience with the MERN stack.</p>
@@ -97,12 +97,12 @@ const MernStackOffline = () => {
                 <li> • <h6>Personal mentorship and career guidance from industry experts</h6></li>
                 <li> • <h6>Small batch sizes for individual attention</h6></li>
                 <li> • <h6>Affordable pricing</h6></li>
-                
+
             </ul>
 
             <p>With over 100+ graduates placed in top companies, this is India's highest rated MERN stack course.</p>
             <p>Enroll now and get certified in the most in-demand web stack! Launch your career as a MERN stack developer with guaranteed internship and job assistance.</p>
-            
+
 
             <CourseTable mode={"Offline Dashboard With Internship"} tableFields={tableFields} />
             <CourseTable mode={"Offline Dashboard Without Internship"} tableFields={recorded} />
@@ -112,11 +112,11 @@ const MernStackOffline = () => {
             {/* <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p> */}
             <ol>
                 <li> • <h6>Offline Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
-                {/* <li> • <h6>In-Person Registration:</h6> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
+                {/* <li> • <h6>In-Person Registration:</h6> You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
                 <li> • <h6>Fee Payment:</h6> Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of " <h5>ASAP CHEM TIME PVT. LTD.</h5> " in the account number: <h5>50200066588261</h5> Use NEFT/IFSC: <h5>HDFC0000032</h5> and the branch is located in <h5>SDA, New Delhi.</h5></li> */}
             </ol>
 
-            {/* <p>Join ASAP Institute's CUET(PG) Chemistry offline course to embark on your journey to get the admissions in Central Universities for pursuing postgraduation.</p> */}
+            {/* <p>Join TECH FEVER's CUET(PG) Chemistry offline course to embark on your journey to get the admissions in Central Universities for pursuing postgraduation.</p> */}
 
             <h3>For inquiries and assistance, please contact us at:</h3>
             <ul>

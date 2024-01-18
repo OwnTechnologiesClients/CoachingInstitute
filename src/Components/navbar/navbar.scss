@@ -38,8 +38,9 @@ nav {
                 border-radius: 3.8rem;
                 display: flex;
                 align-items: center;
-                font-size: 1.1vw;
+                font-size: 1vw;
                 font-weight: 400;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
 
@@ -105,10 +106,10 @@ nav {
 
     .new-batch {
         margin-left: 25vw;
-        padding: 1.15vw;
+        padding: 1.23vw;
         background: $blue;
-        font-size: 1.1vw;
-        font-family: 'Poppins';
+        font-size: 1.2vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     @media screen and (max-width:"480px") {

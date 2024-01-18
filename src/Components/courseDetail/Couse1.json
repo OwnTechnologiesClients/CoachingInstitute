@@ -1,9 +1,7 @@
 {
   "GATE Chemistry Coaching": {
     "Heading": "GATE Chemistry Online Batch: Your Path to Success",
-
-    "content": "At ASAP Institute (formerly CHEMTIME), we understand the importance of quality education and flexible learning options. Our GATE Chemistry Online Batch offers a comprehensive and flexible approach to GATE exam preparation. Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.",
-
+    "content": "At TECH FEVER (formerly CHEMTIME), we understand the importance of quality education and flexible learning options. Our GATE Chemistry Online Batch offers a comprehensive and flexible approach to GATE exam preparation. Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.",
     "points": {
       "In-Depth Coverage": "Our GATE Chemistry Online Batch covers the complete GATE Chemistry syllabus, ensuring you have a strong foundation in every topic. We believe in providing a comprehensive understanding of core concepts.",
       "Interactive Learning": "Our live online classes provide an interactive learning environment. You can actively engage with experienced faculty and fellow students during these sessions. This approach enhances your understanding of complex topics.",
@@ -13,16 +11,13 @@
       "Career Opportunities": "GATE Chemistry opens doors to a wide array of career opportunities. You can explore roles in research and development, academia, government organizations, and more. The GATE score is widely recognized by top companies, and qualifying candidates often receive job offers from prestigious organizations.",
       "Higher Education": "A valid GATE score is also allow for admission to master's and doctoral programs in renowned institutes in India. It paves the way for a successful academic career."
     },
-
     "benefits": {
       "Career Opportunities": "GATE Chemistry opens doors to a wide array of career opportunities. You can explore roles in research and development, academia, government organizations, and more. The GATE score is widely recognized by top companies, and qualifying candidates often receive job offers from prestigious organizations.",
       "Higher Education": "A valid GATE score is also allow for admission to master's and doctoral programs in renowned institutes in India. It paves the way for a successful academic career."
     },
-
-    "featureFooter": "Enroll in ASAP Institute's GATE Chemistry online course and pave the way for admission to prestigious institutions like IITs, IISc, and IISERs. You can also unlock opportunities to become a scientist in esteemed organizations like DRDO and BARC. Your journey to success begins here.",
-
+    "featureFooter": "Enroll in TECH FEVER's GATE Chemistry online course and pave the way for admission to prestigious institutions like IITs, IISc, and IISERs. You can also unlock opportunities to become a scientist in esteemed organizations like DRDO and BARC. Your journey to success begins here.",
     "faq": {
-      "Q1: What is the duration of the GATE Chemistry Online Batch at ASAP Institute?": "The duration of our GATE Chemistry Online Batch varies based on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch for live online classes with recorded content. We also provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.",
+      "Q1: What is the duration of the GATE Chemistry Online Batch at TECH FEVER?": "The duration of our GATE Chemistry Online Batch varies based on your choice of batch. We offer a 6-month regular batch and a 1-year weekend batch for live online classes with recorded content. We also provide recorded course options spanning 6 months, 1 year, and 2 years for self-paced learning.",
       "Q2: How can I interact with the faculty during the online classes?": "We encourage interactive discussions and doubt-solving during the live online classes. You can also reach out to our faculty members during designated hours for any additional queries or clarifications.",
       "Q3: Are the recorded lectures available to access at any time?": "Yes, for the GATE Chemistry Online Batch with recorded content (6 months, 1 year, and 2 years), you can access the recorded lectures at your convenience. This flexible option allows you to learn at your own pace.",
       "Q4: What is the advantage of the weekend batch for working professionals and students?": "Our 1-year weekend batch is tailored to accommodate the schedules of working professionals and students. It offers the opportunity to attend live online classes during weekends, providing flexibility without compromising on the quality of education.",
@@ -33,8 +28,8 @@
   },
   {
     "CSIR NET Chemical Sciences Offline Course": {
-        "heading":"CSIR NET Chemical Sciences Offline Course",
-      "content":"Are you aspiring to excel in the CSIR NET Chemical Sciences examination? At ASAP Institute (formerly CHEMTIME), we offer a comprehensive offline coaching program designed to empower students with the knowledge and skills needed to succeed in this highly competitive exam." ,
+      "heading": "CSIR NET Chemical Sciences Offline Course",
+      "content": "Are you aspiring to excel in the CSIR NET Chemical Sciences examination? At TECH FEVER (formerly CHEMTIME), we offer a comprehensive offline coaching program designed to empower students with the knowledge and skills needed to succeed in this highly competitive exam.",
       "Course Features": {
         "In-Depth Subject Coverage": "Our offline CSIR NET Chemical Sciences course provides thorough coverage of the syllabus, ensuring that students have a deep understanding of key concepts.",
         "Experienced Faculty": "Classes are conducted by subject-wise experienced educators who have substantial teaching experience in their respective fields. This ensures that students receive the best guidance in the industry.",
@@ -53,11 +48,11 @@
       "Registration Procedure": {
         "To Enroll in our CSIR NET Chemical Sciences offline course, you can follow these simple steps": {
           "Online Registration": "Click on the \"Enroll Now\" link provided on our website to register online.",
-          "In-Person Registration": "You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).",
+          "In-Person Registration": "You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).",
           "Fee Payment": "Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of \"ASAP CHEM TIME PVT. LTD.\" in the account number: 50200066588261 Use NEFT/IFSC: HDFC0000032 and the branch is located in SDA, New Delhi."
         }
       },
-      "Join ASAP Institute's CSIR NET Chemical Sciences offline course to embark on your journey to success in the field of chemical sciences.": {},
+      "Join TECH FEVER's CSIR NET Chemical Sciences offline course to embark on your journey to success in the field of chemical sciences.": {},
       "For inquiries and assistance, please contact us at": {
         "Phone": "8595764714, 7011767872, 9026800325"
       },
@@ -68,7 +63,6 @@
         "How is my performance assessed during the course?": "Performance is regularly assessed through topic-wise tests, mock tests, and in-depth discussions."
       }
     }
-}
   }
-  
+}
 }

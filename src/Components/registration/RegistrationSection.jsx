@@ -114,13 +114,14 @@ const RegistrationSection = () => {
           <option value="" disabled selected>
             Select Course
           </option>
-          <option value="CSIR-NET Chemical Sciences">
+          {/* <option value="CSIR-NET Chemical Sciences">
             CSIR-NET Chemical Sciences
-          </option>
-          <option value="GATE Chemistry">GATE Chemistry</option>
-          <option value="IIT-JAM Chemistry">IIT-JAM Chemistry</option>
-          <option value="CUET (PG) Chemistry">CUET (PG) Chemistry</option>
-          <option value="Scholarship Program">Scholarship Program</option>
+          </option> */}
+          <option value="Flutter Development">Flutter Development</option>
+          <option value="ReactJs Development">ReactJs Development</option>
+          <option value="NextJs Development">NextJs Development</option>
+          <option value="NodeJs Development">NodeJs Development</option>
+          <option value="MERN Stack Development">MERN Stack Development</option>
         </select>
         <input
           ref={number}

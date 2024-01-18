@@ -65,7 +65,7 @@ const Header2 = () => {
           <img src={phoneIcon} alt="" />
         </div>
         <div className="detail-header-2">
-          <h2>8595764714</h2>
+          <h2>9910765616</h2>
           <h4>Call To Question</h4>
         </div>
 

@@ -16,9 +16,11 @@ $text: #646262;
         h1 {
             font-weight: 400;
             font-size: 1.7vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
             span {
                 color: $blue;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
         }
 
@@ -27,6 +29,7 @@ $text: #646262;
             color: #fff;
             padding: .6vw .8vw;
             font-size: 1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
     }
 }

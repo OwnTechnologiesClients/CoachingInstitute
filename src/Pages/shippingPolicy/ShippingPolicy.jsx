@@ -28,9 +28,9 @@ const ShippingPolicy = () => {
             <div className='refund-policy-section'>
 
                 <br></br><br></br>
-                <h1>Shipping Policy for ASAP Institute</h1><br></br>
+                <h1>Shipping Policy for TECH FEVER</h1><br></br>
                 <p>Last updated: December 16, 2023</p>
-                <p>Thank you for choosing ASAP Institute for your coaching materials. We are committed to ensuring a smooth and efficient delivery process for your purchased materials. Please read the following shipping policy carefully to understand how we handle the shipping of coaching materials.</p><br></br><br></br>
+                <p>Thank you for choosing TECH FEVER for your coaching materials. We are committed to ensuring a smooth and efficient delivery process for your purchased materials. Please read the following shipping policy carefully to understand how we handle the shipping of coaching materials.</p><br></br><br></br>
 
 
                 <h3>1. Processing Time:</h3>
@@ -162,7 +162,7 @@ const ShippingPolicy = () => {
 
                 </ul><br></br>
 
-                <p>Thank you for choosing ASAP Institute. We appreciate your understanding of our delivery processes, and we are committed to providing quality coaching materials for your educational journey throughout India.</p>
+                <p>Thank you for choosing TECH FEVER. We appreciate your understanding of our delivery processes, and we are committed to providing quality coaching materials for your educational journey throughout India.</p>
 
 
                 <br></br> <br></br>

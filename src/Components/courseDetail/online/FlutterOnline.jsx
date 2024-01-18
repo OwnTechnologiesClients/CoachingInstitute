@@ -54,7 +54,7 @@ const FlutterOnline = () => {
 
       <Helmet>
         <meta charSet="utf-8" />
-        <title>ASAP Institute: CSIR NET Chemical Sciences Online Courses</title>
+        <title>TECH FEVER: CSIR NET Chemical Sciences Online Courses</title>
         <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
         <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
       </Helmet>
@@ -76,15 +76,15 @@ const FlutterOnline = () => {
         <li> • <h6>Firebase integration : </h6> Connect your Flutter apps to Firebase</li>
         <li> • <h6>Native functionality : </h6> Access platform-specific features</li>
         <li> • <h6>And much more!</h6></li>
-       
+
       </ul>
 
       <p>Upon completing the course, you get a course completion certificate to showcase your new skills. You will also get an opportunity to intern with us for 3 months and gain valuable work experience.</p>
       <p>This is a unique opportunity to learn Flutter from the best and kickstart your career as a Flutter developer. Enroll now and get started with India's best Flutter course today!</p>
-      
+
       <p>Enroll now and get flat 50% OFF on our online Flutter course. Limited seats available!</p>
-      
-      
+
+
       {/* <h3>Batch Details:</h3>
       <ol>
         <li> • <h6>CSIR NET (Chemical Science) - 6 Months - Regular - Online Live + Recorded</h6><br />A 6-months intensive course with regular live classes and access to recorded lectures for flexible learning.</li>
@@ -101,11 +101,11 @@ const FlutterOnline = () => {
       <h3>Registration Procedure:</h3>
       <ol>
         <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
-        {/* <li> • <h6>In-Person Registration:</h6> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
+        {/* <li> • <h6>In-Person Registration:</h6> You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
         <li> • <h6>Fee Payment:</h6> Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of " <h5>ASAP CHEM TIME PVT. LTD.</h5> " in the account number: <h5>50200066588261</h5> Use NEFT/IFSC: <h5>HDFC0000032</h5> and the branch is located in <h5>SDA, New Delhi.</h5></li> */}
       </ol>
 
-      {/* <p>Join ASAP Institute's CSIR NET Chemical Sciences online course to embark on your journey to success in the field of chemical sciences.</p> */}
+      {/* <p>Join TECH FEVER's CSIR NET Chemical Sciences online course to embark on your journey to success in the field of chemical sciences.</p> */}
 
       <h3>For inquiries and assistance, please contact us at:</h3>
       <ul>
@@ -124,7 +124,7 @@ const FlutterOnline = () => {
         <li><h6>Q8: Can I ask questions and seek help during the course?</h6><br /><h6>A:</h6> Yes, we encourage active participation. You can ask questions, seek clarification, and interact with both instructors and fellow learners through dedicated forums or discussion platforms.</li><br></br>
         <li><h6>Q9: Is there any certification upon completing the Flutter Development Course?</h6><br /><h6>A:</h6> Yes, upon successful completion of the course, you will receive a certificate, validating your skills in Flutter mobile app development.</li><br></br>
         <li><h6>Q10: Is there internship upon completing the Flutter Development Course?</h6><br /><h6>A:</h6> Yes, upon successful completion of the course, you will receive a certificate, and start internship on real world projects in Flutter mobile app development.</li>
-        
+
       </ol>
 
       <p>We're here to support you on your journey to success in the Flutter Development Course. If you have any more questions or need further assistance, please feel free to reach out to our team.</p>

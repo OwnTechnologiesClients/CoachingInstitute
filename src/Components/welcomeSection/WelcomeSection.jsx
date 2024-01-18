@@ -56,7 +56,7 @@ export const WelcomeSubSection = () => {
             <div>
                 <div className="message">
                     <strong>Elaboration on Course Features</strong><br></br>
-                    <p1>ASAP Institute prides itself on offering a cutting-edge learning experience with a range of features designed to empower and prepare students for success in the ever-evolving tech landscape. Here's an elaboration on our key course features:</p1>
+                    <p1>TECH FEVER prides itself on offering a cutting-edge learning experience with a range of features designed to empower and prepare students for success in the ever-evolving tech landscape. Here's an elaboration on our key course features:</p1>
 
                     <div className="cards">
                         <WelcomeCard imgSrc={ss2} title="EXPERT INSTRUCTORS" description="Learn from seasoned industry professionals with extensive real-world experience. Benefit from their insights, practical knowledge, and guidance throughout the course." />
@@ -158,22 +158,22 @@ const WelcomeSection = () => {
         <div className="welcome-section">
             <div>
                 <div className="message">
-                    <h1>Welcome to ASAP Institute: Your Top-Ranked Destination for Expert Coaching in App Development & Web Development! Unlock Your Full Potential with Our </h1>
+                    <h1>Welcome to TECH FEVER: Your Top-Ranked Destination for Expert Coaching in App Development & Web Development! Unlock Your Full Potential with Our </h1>
                     <p className='under-bar'>COMPREHENSIVE PROGRAMS</p>
-                    <p1>Elevate your career with ASAP Institute! Gain expertise in app and web development through our industry-focused coaching. Our comprehensive programs include a unique opportunity: a 3-month internship with top-grade companies and startups. Learn from seasoned professionals, work on hands-on projects, and build a stellar portfolio. Our flexible learning options and dedicated career guidance ensure you're job-ready. Join ASAP Institute to not only master development skills but also secure valuable real-world experience. Shape your future with a blend of cutting-edge education and hands-on internships. Explore the possibilities at ASAP Institute – where careers take flight!</p1>
+                    <p1>Elevate your career with TECH FEVER! Gain expertise in app and web development through our industry-focused coaching. Our comprehensive programs include a unique opportunity: a 3-month internship with top-grade companies and startups. Learn from seasoned professionals, work on hands-on projects, and build a stellar portfolio. Our flexible learning options and dedicated career guidance ensure you're job-ready. Join TECH FEVER to not only master development skills but also secure valuable real-world experience. Shape your future with a blend of cutting-edge education and hands-on internships. Explore the possibilities at TECH FEVER – where careers take flight!</p1>
                     {/* <p1>We specialize in delivering high-quality coaching for a diverse range of chemistry-related entrance exams, which include CSIR NET Chemical Sciences, GATE Chemistry, TIFR Chemistry, and more.</p1> */}
 
                     <br></br>
                     <br></br>
 
 
-                    <strong>Master the Future with ASAP Institute: Premier Coaching for App Development & Web Development Excellence</strong><br></br>
-                    <p1>Our commitment to your success is unwavering. We prioritize your growth and achievement in every facet of our engagement. From tailored solutions to continuous support, we invest in your journey towards success. Our dedicated team ensures personalized attention, fostering an environment where your goals are not just met but exceeded. Join us in realizing your full potential - where commitment meets accomplishment. Your success is our priority at ASAP Institute.</p1>
+                    <strong>Master the Future with TECH FEVER: Premier Coaching for App Development & Web Development Excellence</strong><br></br>
+                    <p1>Our commitment to your success is unwavering. We prioritize your growth and achievement in every facet of our engagement. From tailored solutions to continuous support, we invest in your journey towards success. Our dedicated team ensures personalized attention, fostering an environment where your goals are not just met but exceeded. Join us in realizing your full potential - where commitment meets accomplishment. Your success is our priority at TECH FEVER.</p1>
 
                     <br></br>
                     <br></br>
                     <strong>Course Information</strong><br></br>
-                    <p1>Dive into the Future of Tech with ASAP Institute's Affordable Courses! Explore App Development using Flutter, Web Development with React.js and Next.js, and Backend Development with Node.js and MERN Stack. Our pocket-friendly programs ensure quality education with a unique 3-month internship opportunity. Master the latest technologies and gain hands-on experience at an unbeatable price. Elevate your skills, build a robust portfolio, and launch your career in just a few months. Join ASAP Institute for a transformative journey where low cost meets high value. Unleash your potential in the dynamic realms of app and web development!</p1>
+                    <p1>Dive into the Future of Tech with TECH FEVER's Affordable Courses! Explore App Development using Flutter, Web Development with React.js and Next.js, and Backend Development with Node.js and MERN Stack. Our pocket-friendly programs ensure quality education with a unique 3-month internship opportunity. Master the latest technologies and gain hands-on experience at an unbeatable price. Elevate your skills, build a robust portfolio, and launch your career in just a few months. Join TECH FEVER for a transformative journey where low cost meets high value. Unleash your potential in the dynamic realms of app and web development!</p1>
                     <br></br>
                     <button onClick={navigateTo}>View Details</button>
                     <br></br>

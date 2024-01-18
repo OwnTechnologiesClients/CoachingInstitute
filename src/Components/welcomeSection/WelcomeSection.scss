@@ -23,6 +23,7 @@ $text: #646262;
             font-size: 1.6vw;
             color: $blue;
             padding: .7vw 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             // border-bottom: 2px solid $blue;
         }
 
@@ -31,15 +32,18 @@ $text: #646262;
             font-weight: 400;
             color: #605e5e;
             font-size: 1.2vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         h4 {
             font-weight: 400;
             font-size: 1.15vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         h5{
             font-weight: 400;
             font-size: 1.2vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         p1{
             font-weight: 400;
@@ -47,6 +51,13 @@ $text: #646262;
             color: #605e5e;
             text-align: justify;
             text-align-last: right;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+
+        }
+        strong{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
 
         }
 

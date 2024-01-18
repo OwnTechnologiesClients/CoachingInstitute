@@ -53,7 +53,7 @@ const NextJsOnline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>IIT-JAM Chemistry Online Coaching Delhi - Enroll for Academic Success</title>
-        <meta name="description" content="Join ASAP Institute's IIT-JAM Chemistry Online Batch. Comprehensive syllabus coverage, interactive learning, and flexible options. Enroll today for excellence!" />
+        <meta name="description" content="Join TECH FEVER's IIT-JAM Chemistry Online Batch. Comprehensive syllabus coverage, interactive learning, and flexible options. Enroll today for excellence!" />
         <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
       </Helmet>
 
@@ -69,7 +69,7 @@ const NextJsOnline = () => {
         <li> • <h6>How to build server-side rendered React apps for improved SEO and performance.</h6></li>
         <li> • <h6>Advanced topics like data fetching, caching, internationalization, and deployment.</h6></li>
         <li> • <h6>Real-world projects to build your own blog, e-commerce store, and dashboard app from scratch.</h6></li>
-        
+
       </ul>
 
       <p>Upon completing the course, you will receive a certificate of completion and a guaranteed 3-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
@@ -92,7 +92,7 @@ const NextJsOnline = () => {
       {/* <p>To enroll in our IIT JAM CHEMISTRY online course, you can follow these simple steps:</p> */}
       <ul>
         <li> • <h6>Online Registration:</h6> Click on the "Enroll Now" link provided on our website to register online.</li>
-        {/* <li> • <h6>In-Person Registration:</h6> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
+        {/* <li> • <h6>In-Person Registration:</h6> You may also visit the TECH FEVER office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
         <li> • <h6>Fee Payment:</h6> Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of " <h5>ASAP CHEM TIME PVT. LTD.</h5> " in the account number: <h5>50200066588261</h5> Use NEFT/IFSC: <h5>HDFC0000032</h5> and the branch is located in <h5>SDA, New Delhi.</h5></li> */}
       </ul>
 

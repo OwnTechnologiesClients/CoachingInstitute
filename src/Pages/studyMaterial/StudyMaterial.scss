@@ -9,7 +9,7 @@ $light-text: #989696;
         left: 6vw;
         right: unset;
 
-        h1{
+        h1 {
             width: 43vw;
             text-align: end;
         }
@@ -24,7 +24,7 @@ $light-text: #989696;
         }
     }
 
-    .study-material-section{
+    .study-material-section {
         display: flex;
         padding: 0 3vw;
 
@@ -39,18 +39,20 @@ $light-text: #989696;
             font-size: 1.7vw;
         }
     }
+
     @media screen and (max-width:480px) {
-        
-            .study-material-section{
-                flex-direction: column;
-        
+
+        .study-material-section {
+            flex-direction: column;
+
+        }
+
+        .course-idea {
+            h2 {
+                font-size: 1.2rem;
+                margin: 1rem 0;
             }
-            .course-idea{
-                h2{
-                    font-size: 1.2rem;
-                    margin: 1rem 0;
-                }
-            }
-        
+        }
+
     }
 }

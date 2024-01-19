@@ -37,7 +37,7 @@ const About = () => {
                     {/* <p>Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics. We aim to provide high-quality education that empowers students to achieve their full potential and build successful careers in their chosen fields.</p><br />
                     <p>Our mission at ASAP Chemtime is to provide a comprehensive and personalized learning experience to students who aspire to crack competitive exams in Chemistry and Mathematics. We offer coaching classes, study material, and test series for exams such as:</p><br /> */}
 
-                    <h3>What you'll learn:</h3>
+                    <h3>Why you choose us:</h3>
                     <ul>
                         <li> • <h6>Premier Technology Coaching: </h6> TECH FEVER stands as India's best technology coaching center, offering specialized courses in mobile application, frontend, backend, and MERN stack development.</li>
                         <li> • <h6>3-Month Internship Guarantee: </h6> Elevate your skills with our unique 3-month internship guarantee, ensuring practical experience for a seamless transition into the professional sphere.</li>

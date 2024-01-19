@@ -176,29 +176,29 @@
 
 @media screen and (max-width:480px) {
     .student-login-section {
-    
+
         .student-login-square {
             width: 90vw;
             height: 60vw;
             margin-bottom: 8vw;
             margin-top: 8vw;
         }
-    
+
         .student-login-square-header {
             height: 2rem;
         }
-    
+
         .student-login-square-header h2 {
             font-size: 1.2rem;
             font-weight: 400;
             top: unset;
         }
-    
+
         .student-login-card-parent p {
             font-size: 1rem;
             width: 20vw;
         }
-    
+
         .student-login-userid-section input[type=text],
         .student-login-userid-section input[type=date] {
             width: 40vw;
@@ -206,19 +206,19 @@
             margin-top: 3vw;
             margin-left: 4rem;
         }
-    
+
         .student-login-userid-section input,
         .student-login-userid-section input::placeholder {
             font-size: 0.8rem;
         }
-    
+
         .login-button {
             margin-bottom: 4vw;
             margin-top: 3vw;
             justify-content: center;
             display: flex;
         }
-    
+
         .login-button button {
             width: 20vw;
             font-size: 0.9rem;
@@ -227,12 +227,12 @@
             margin-top: 7vw;
         }
 
-    
+
         .already-member .signupnow {
             font-size: 0.8rem;
             width: 50vw;
             font-weight: 400;
         }
     }
-    
+
 }

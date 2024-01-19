@@ -59,10 +59,13 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                         <>
                             <SwiperSlide>
                                 <img src={imgSrc1} className="heroimage" alt="" />
-                            </SwiperSlide>
+                            </SwiperSlide>  
                             <SwiperSlide>
                                 <img src={imgSrc2} className="heroimage" alt="" />
                             </SwiperSlide>
+                            {/* <SwiperSlide>
+                                <img src={imgSrc2} className="heroimage" alt="" />
+                            </SwiperSlide> */}
                             {/* <SwiperSlide>
                                 <img src={imgSrc5} className="heroimage" alt="" />
                             </SwiperSlide> */}

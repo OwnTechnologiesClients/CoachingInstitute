@@ -34,19 +34,20 @@ $blue: #2D8EFF;
             color: #9A9696;
         }
     }
-    h5{
+
+    h5 {
         display: inline-block;
         color: $blue;
     }
 
-    .faq-container{
-        .faq{
+    .faq-container {
+        .faq {
             padding: 1vw;
-            .faq-qn{
-                h4{
 
-                }
-                span{
+            .faq-qn {
+                h4 {}
+
+                span {
                     display: inline-block;
                     padding: 1vw;
                     font-size: 1.1vw;

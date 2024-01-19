@@ -23,74 +23,92 @@ $blue: #2D8EFF;
         color: #fff;
         background-color: $blue;
     }
-    .parent-row{
+
+    .parent-row {
         display: flex;
         font-weight: 700;
         padding: 1vw 2vw;
         border-bottom: 1px solid #707070;
-        span{
+
+        span {
             font-size: 1.1vw;
 
-            &:first-child{
+            &:first-child {
                 width: 10vw;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 width: 8vw;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 width: 8vw;
             }
-            &:nth-child(4){
+
+            &:nth-child(4) {
                 width: 5vw;
             }
-            &:nth-child(5){
+
+            &:nth-child(5) {
                 width: 7vw;
             }
-            &:nth-child(6){
+
+            &:nth-child(6) {
                 width: 7vw;
             }
-            &:nth-child(7){
+
+            &:nth-child(7) {
                 width: 6vw;
             }
 
         }
     }
-    .child-row{
+
+    .child-row {
         display: flex;
         border-bottom: 2px solid #707070;
         padding: 1vw 2vw;
-        &:last-child{
+
+        &:last-child {
             border: none;
         }
-        
-        span{
+
+        span {
             margin: auto 0;
             width: 10%;
             font-size: 1.1vw;
-            &:first-child{
+
+            &:first-child {
                 width: 16vw;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 width: 8vw;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 width: 8vw;
             }
-            &:nth-child(4){
+
+            &:nth-child(4) {
                 width: 5vw;
             }
-            &:nth-child(5){
+
+            &:nth-child(5) {
                 width: 7vw;
                 padding-left: 2vw;
             }
-            &:nth-child(6){
+
+            &:nth-child(6) {
                 width: 7vw;
             }
-            &:nth-child(7){
+
+            &:nth-child(7) {
                 width: 6vw;
             }
         }
-        button{
+
+        button {
             padding: .4vw;
             border: none;
             font-size: .9vw;
@@ -104,84 +122,102 @@ $blue: #2D8EFF;
     color: $text-color;
 
     @media screen and (max-width:"480px") {
-            margin: 1.5vw 0;
-        
-            h1 {
-                padding: .4rem .5rem;
-                font-size: 1rem;
+        margin: 1.5vw 0;
+
+        h1 {
+            padding: .4rem .5rem;
+            font-size: 1rem;
+        }
+
+        .parent-row {
+            padding: .3rem .5rem;
+            font-size: 1rem;
+            border-bottom: 1px solid #707070;
+
+            span {
+                font-size: .4rem;
+
+                &:first-child {
+                    width: 21vw;
+                }
+
+                &:nth-child(2) {
+                    width: 12vw;
+                }
+
+                &:nth-child(3) {
+                    width: 13vw;
+                }
+
+                &:nth-child(4) {
+                    width: 5vw;
+                }
+
+                &:nth-child(5) {
+                    width: 9vw;
+                }
+
+                &:nth-child(6) {
+                    width: 9vw;
+                }
+
+                &:nth-child(7) {
+                    width: 9vw;
+                }
+
             }
-            .parent-row{
-                padding: .3rem .5rem;
-                font-size: 1rem;
-                border-bottom: 1px solid #707070;
-                span{
-                    font-size: .4rem;
-        
-                    &:first-child{
-                        width: 21vw;
-                    }
-                    &:nth-child(2){
-                        width: 12vw;
-                    }
-                    &:nth-child(3){
-                        width: 13vw;
-                    }
-                    &:nth-child(4){
-                        width: 5vw;
-                    }
-                    &:nth-child(5){
-                        width: 9vw;
-                    }
-                    &:nth-child(6){
-                        width: 9vw;
-                    }
-                    &:nth-child(7){
-                        width: 9vw;
-                    }
-        
+        }
+
+        .child-row {
+            display: flex;
+            border-bottom: 2px solid #707070;
+            padding: 1vw 3vw;
+
+            &:last-child {
+                border: none;
+            }
+
+            span {
+                width: 10%;
+                font-size: .5rem;
+
+                &:first-child {
+                    width: 22vw;
+                }
+
+                &:nth-child(2) {
+                    width: 12vw;
+                }
+
+                &:nth-child(3) {
+                    width: 13vw;
+                }
+
+                &:nth-child(4) {
+                    width: 5vw;
+                }
+
+                &:nth-child(5) {
+                    width: 9vw;
+                }
+
+                &:nth-child(6) {
+                    width: 9vw;
+                }
+
+                &:nth-child(7) {
+                    width: 9vw;
                 }
             }
-            .child-row{
-                display: flex;
-                border-bottom: 2px solid #707070;
-                padding: 1vw 3vw;
-                &:last-child{
-                    border: none;
-                }
-                
-                span{
-                    width: 10%;
-                    font-size: .5rem;
-                    &:first-child{
-                        width: 22vw;
-                    }
-                    &:nth-child(2){
-                        width: 12vw;
-                    }
-                    &:nth-child(3){
-                        width: 13vw;
-                    }
-                    &:nth-child(4){
-                        width: 5vw;
-                    }
-                    &:nth-child(5){
-                        width: 9vw;
-                    }
-                    &:nth-child(6){
-                        width: 9vw;
-                    }
-                    &:nth-child(7){
-                        width: 9vw;
-                    }
-                }
-                button{
-                    font-size: .4rem;
-                    height: .9rem;
-                    margin: auto 0;
-                    width: 2.5rem;
-                }
+
+            button {
+                font-size: .4rem;
+                height: .9rem;
+                margin: auto 0;
+                width: 2.5rem;
             }
-        
-        
+        }
+
+
     }
-}   
+}

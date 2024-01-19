@@ -10,7 +10,7 @@ $text: #646262;
     padding: 2vw 6vw;
     height: 100%;
 
-    .loader-spinner{
+    .loader-spinner {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -21,6 +21,7 @@ $text: #646262;
         height: inherit;
         background-color: rgba($color: #fff, $alpha: 0.8);
     }
+
     h1 {
         color: #fff;
         font-weight: 400;
@@ -42,7 +43,8 @@ $text: #646262;
 
     }
 
-    input[type=date],input[type=date]:focus{
+    input[type=date],
+    input[type=date]:focus {
         width: 15vw;
         height: unset;
         padding-left: unset;
@@ -70,12 +72,13 @@ $text: #646262;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     }
-    
+
 
     button {
         outline: none;
         border: none;
         border-left: .3vw solid $blue;
+
         &:hover {
             cursor: pointer;
         }
@@ -84,6 +87,7 @@ $text: #646262;
     @media screen and (max-width:480px) {
         margin: -5px 0;
         padding: 1.5rem;
+
         h1 {
             font-size: 1.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,7 +109,8 @@ $text: #646262;
             height: 2.7rem;
             margin: 2vw 0;
         }
-        #submit{
+
+        #submit {
             border-left: 5px solid #2D8EFF;
         }
     }

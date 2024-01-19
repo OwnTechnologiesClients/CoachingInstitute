@@ -51,21 +51,21 @@ const RegistrationSection = () => {
         // console.log(response);
 
         const tempparamas = {
-          email:email.current.value ,
-          course: course.current.value ,
-          phone: number.current.value ,
+          email: email.current.value,
+          course: course.current.value,
+          phone: number.current.value,
           dob: dateofbirth.current.value
         }
         emailjs
           .send(
-            "service_89es95f",
-            "template_15vr48a",
+            "service_btx55dr",
+            "template_z1hzrtd",
             tempparamas,
-            "VPawiZbhu5LiJfU63"
+            "WTEU9A4CSUpnUocZJ"
           )
           .then(
             (result) => {
-              console.log(result)
+              console.log("====<<>>>",result)
             },
             (error) => {
               console.log("emailerrpor", error);

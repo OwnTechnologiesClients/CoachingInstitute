@@ -40,24 +40,27 @@ $text: #646262;
             font-size: 1.15vw;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        h5{
+
+        h5 {
             font-weight: 400;
             font-size: 1.2vw;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        p1{
+
+        p1 {
             font-weight: 400;
             font-size: 1vw;
             color: #605e5e;
             text-align: justify;
             text-align-last: right;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            
+
 
         }
-        strong{
+
+        strong {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            
+
 
         }
 
@@ -117,6 +120,7 @@ $text: #646262;
             position: relative;
             overflow: hidden;
         }
+
         .quick-link-marquee-container {
             height: 54vh;
             position: relative;
@@ -160,12 +164,13 @@ $text: #646262;
                     color: #0C48EA;
                     font-family: Poppins;
                     text-align: justify;
-                    
+
 
                 }
             }
         }
     }
+
     .quick-panel {
         width: 90%;
         height: 30vw;
@@ -183,6 +188,7 @@ $text: #646262;
             position: relative;
             overflow: hidden;
         }
+
         .quick-link-marquee-container {
             position: relative;
             overflow: hidden;
@@ -244,7 +250,7 @@ $text: #646262;
                 line-height: 1.4rem;
             }
 
-            p1{
+            p1 {
                 font-size: 1rem;
                 line-height: 1.3rem;
             }
@@ -294,7 +300,8 @@ $text: #646262;
             }
         }
 
-        .notification-panel , .quick-panel{
+        .notification-panel,
+        .quick-panel {
             margin: 0vw;
             width: 87vw;
             margin-top: 10vw;
@@ -309,6 +316,7 @@ $text: #646262;
                 height: 45vh;
                 padding: unset;
             }
+
             .quick-link-marquee-container {
                 height: 54vh;
                 position: relative;

@@ -3,35 +3,40 @@ $theme-color: #202C45;
 
 .app {
 
-    .theme-bg{
+    .theme-bg {
         background-color: $theme-color;
     }
 
     .top-links {
         background-color: $blue;
+
         @media screen and (max-width:"540px") {
             font-size: .8rem;
         }
     }
 
-    .nav-link{
-        background-color: #24497c;        
+    .nav-link {
+        background-color: #24497c;
     }
-    .nav-link:hover{
+
+    .nav-link:hover {
         background-color: #fff;
         color: #000 !important;
     }
-    .dropdown-menu li a:hover{
-        background:rgb(225, 225, 225);
+
+    .dropdown-menu li a:hover {
+        background: rgb(225, 225, 225);
         color: #000;
     }
-    .new-batch{
+
+    .new-batch {
         background: $blue !important;
-        a{
+
+        a {
             background-color: $blue ;
         }
     }
-    
+
 
 
     .contact {
@@ -128,24 +133,30 @@ $theme-color: #202C45;
             width: 15rem;
         }
     }
-    .blue{
+
+    .blue {
         color: $blue;
     }
-    .blue-bg{
+
+    .blue-bg {
         background: $blue;
     }
-    .blue-border{
+
+    .blue-border {
         border-color: $blue !important;
     }
-    .statistics{
-        div{
+
+    .statistics {
+        div {
             transform: scale(1.1);
-            svg{
+
+            svg {
                 transform: scale(1.2);
             }
         }
     }
-    .footer-color{
+
+    .footer-color {
         background-color: #243C58;
     }
 }

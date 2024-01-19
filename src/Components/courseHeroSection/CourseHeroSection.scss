@@ -45,18 +45,20 @@ $text: #646262;
     }
 
     @media screen and (max-width:480px) {
-        .detail{
-            h1{
+        .detail {
+            h1 {
                 font-size: 6vw;
             }
-            h2{
+
+            h2 {
                 font-size: 3vw;
-                width:42vw ;
+                width: 42vw;
             }
-            p{
+
+            p {
                 display: none;
             }
         }
-        
+
     }
-}  
+}

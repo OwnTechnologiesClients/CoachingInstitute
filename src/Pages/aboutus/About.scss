@@ -2,29 +2,63 @@ $text-color: #707070;
 $blue: #2D8EFF;
 
 .who-we-are {
-    padding:0 6vw;
+    padding: 0 6vw;
+
     h2 {
-        span{
+        span {
             color: $blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
+
         font-weight: 400;
         font-size: 1.7vw;
         color: #363345;
         padding: 1vw 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
-    .description{
+
+    .description {
         padding: 1vw 0;
         color: $text-color;
         font-size: 1.2vw;
         line-height: 1.4vw;
         padding-bottom: 6vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
+
+    ul,
+    ol {
+        padding: 1.5vw;
+
+        li {
+            color: #605e5e;
+            padding: .5vw 0;
+            font-size: 1.1vw;
+            line-height: 1.4vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+            h6 {
+                color: #000;
+                display: inline-block;
+                font-size: 1.1vw;
+                font-weight: 500;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        }
+    }
+
     @media screen and (max-width:480px) {
-        h2{
+        h2 {
             font-size: 1.2rem;
             padding: 1rem 0;
         }
-        .description{
+
+        .description {
             font-size: .9rem;
             line-height: 1.2rem;
         }

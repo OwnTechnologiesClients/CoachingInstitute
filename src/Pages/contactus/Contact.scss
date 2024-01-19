@@ -4,14 +4,14 @@ $light-bg: #eee;
 $theme-color: #202C45;
 
 .google-map-location {
-    width: 93vw;
+    width: 100vw;
     height: 40vw;
     display: flex;
-    justify-content: end;
+    
 
     iframe {
-        margin-top: -5vw;
-        width: 53vw;
+        margin-top: -2vw;
+        width: 100vw;
         height: 35vw;
     }
 }
@@ -44,11 +44,13 @@ $theme-color: #202C45;
                     font-weight: 700;
                     font-size: 1.2vw;
                     margin-top: .3vw;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
 
                 p {
                     color: $text-light;
                     font-size: 1.1vw;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif
                 }
             }
         }
@@ -62,17 +64,20 @@ $theme-color: #202C45;
         h2 {
             font-weight: 400;
             font-size: 1.7vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         p {
             color: $light;
             font-size: 1.1vw;
             margin: 1vw 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         .form-fields {
             display: flex;
             flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         input::-webkit-input-placeholder,
@@ -90,6 +95,7 @@ $theme-color: #202C45;
             padding: 0 2vw;
             font-size: 1.1vw;
             color: $light;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
             &:focus {
                 outline: none;
@@ -101,6 +107,7 @@ $theme-color: #202C45;
             font-size: 1.1vw;
             padding: 1vw 2vw;
             resize: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         button {
@@ -110,6 +117,7 @@ $theme-color: #202C45;
             width: 10vw;
             height: 2.3vw;
             font-size: 1vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
     }
 

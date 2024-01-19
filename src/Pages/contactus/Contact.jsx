@@ -116,21 +116,21 @@ const Contact = () => {
                         <img src={locationIcon} alt="" />
                         <div>
                             <h2>OUR OFFICE LOCATION</h2>
-                            <p>28 B/7/1, Lalitaksh Singh Lakra Marg, Jia Sarai, Hauz Khas, New Delhi, Delhi 110016</p>
+                            <p>C-717, JVTS Garden, Chhatarpur, New Delhi - 110074</p>
                         </div>
                     </div>
                     <div className="card">
                         <img src={callIcon} alt="" />
                         <div>
                             <h2>OUR CONTACT NUMBER</h2>
-                            <p>+91 8595764714 / 7011767872</p>
+                            <p>+91 9910765616 / 9650636804</p>
                         </div>
                     </div>
                     <div className="card">
                         <img src={mailIcon} alt="" />
                         <div>
                             <h2>OUR CONTACT EMAIL</h2>
-                            <p>chemtimeinstitute@gmail.com</p>
+                            <p>support@techfever.in</p>
                         </div>
                     </div>
                 </div>
@@ -150,8 +150,7 @@ const Contact = () => {
             </div>
 
             <div className="google-map-location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7593345109117!2d77.18681967533229!3d28.546952675711545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d408a72ee1d%3A0x59c4a843f22c5df3!2sASAP%20Chemtime%20Institute%20-%20Best%20coaching%20for%20csir%20net%20%2C%20gate%2C%20iit%20jam%20chemistry%20in%20Delhi.!5e0!3m2!1sen!2sin!4v1698921931108!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1753.313057479983!2d77.17881539999999!3d28.4908044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1e30e0609cdd%3A0x2802f48ee2c21eb6!2sJVTS%20Garden%2C%20Block%20C%2C%20Chhatarpur%20Extension%2C%20Chhatarpur%2C%20New%20Delhi%2C%20Delhi%20110074!5e0!3m2!1sen!2sin!4v1705645462856!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
 

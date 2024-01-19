@@ -33,27 +33,29 @@ const About = () => {
             <div className="who-we-are"><br></br><br></br>
                 <h2 className='under-bar'><span>WHO</span> WE ARE</h2>
                 <div className="description">
-                    <p>Welcome to ASAP Chemtime, a premier educational institute that provides high-quality coaching classes for competitive exams in Chemistry and Mathematics. Our institute is committed to providing the best education to students and helping them achieve their goals.</p><br />
-                    <p>Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics. We aim to provide high-quality education that empowers students to achieve their full potential and build successful careers in their chosen fields.</p><br />
-                    <p>Our mission at ASAP Chemtime is to provide a comprehensive and personalized learning experience to students who aspire to crack competitive exams in Chemistry and Mathematics. We offer coaching classes, study material, and test series for exams such as:</p><br />
+                    <p>Discover excellence at TECH FEVER, India's premier technology coaching center. We specialize in mobile application, frontend, backend, and MERN stack development. With a unique 3-month internship guarantee, our commitment extends to your success. Experience a risk-free journey with our 100% refund policy if not satisfied with our coaching and internship promise. </p><br />
+                    {/* <p>Our vision at ASAP Chemtime is to be the most trusted and respected educational institute for competitive exams in Chemistry and Mathematics. We aim to provide high-quality education that empowers students to achieve their full potential and build successful careers in their chosen fields.</p><br />
+                    <p>Our mission at ASAP Chemtime is to provide a comprehensive and personalized learning experience to students who aspire to crack competitive exams in Chemistry and Mathematics. We offer coaching classes, study material, and test series for exams such as:</p><br /> */}
 
-                    <p>• GATE (Graduate Aptitude Test in Engineering)</p>
-                    <p>• CSIR-NET (Council of Scientific and Industrial Research — National Eligibility Test)</p>
-                    <p>• JRF (Junior Research Fellowship)</p>
-                    <p>• IIT-JAM (Indian Institutes of Technology Joint Admission Test for MSc)</p>
-                    <p>• CUET-PG (Central University Entrance Test for Post Graduation)</p>
-                    <p>• TIFR (Tata Institute of Fundamental Research)</p>
-                    <p>• BARC (Bhabha Atomic Research Centre)</p>
-                    <p>• UPSC (Union Public Service Commission)</p>
-                    <p>• GSI (Geological Survey of India)</p>
-                    <p>• State PSC (Public Service Commission)</p>
-                    <p>• State SET (State Eligibility Test)</p><br />
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li> • <h6>Premier Technology Coaching: </h6> TECH FEVER stands as India's best technology coaching center, offering specialized courses in mobile application, frontend, backend, and MERN stack development.</li>
+                        <li> • <h6>3-Month Internship Guarantee: </h6> Elevate your skills with our unique 3-month internship guarantee, ensuring practical experience for a seamless transition into the professional sphere.</li>
+                        <li> • <h6>Comprehensive Development Courses: </h6> Master the intricacies of mobile application, frontend, backend, and MERN stack development through our comprehensive and industry-focused courses.</li>
+                        <li> • <h6>Expert Instructors: </h6> Learn from seasoned professionals and experts in the field, ensuring a top-notch education and practical insights into real-world scenarios.</li>
+                        <li> • <h6>Risk-Free Learning Experience: </h6> Experience a risk-free journey with TECH FEVER. We back our coaching and internship promise with a 100% refund policy if you're not completely satisfied.</li>
+                        <li> • <h6>Transformative Learning Environment: </h6> Immerse yourself in a dynamic learning environment that fosters innovation, collaboration, and continuous growth.</li>
+                        <li> • <h6>Career-Ready Skills: </h6> Acquire the skills needed to excel in today's tech landscape, ensuring you're well-prepared for a successful and fulfilling career.</li>
+                        <li> • <h6>Industry-Aligned Curriculum: </h6> Our courses feature a curriculum aligned with industry demands, ensuring relevance and keeping you ahead of the curve.</li>
+                        <li> • <h6>Personalized Support: </h6> Benefit from personalized support and guidance from our dedicated team, ensuring your success throughout the learning journey.</li>
+                        <li> • <h6>Join TECH FEVER Today: </h6> Transform your aspirations into reality. Join TECH FEVER, the epitome of technology education in India, and embark on a journey of skill enhancement and career excellence.
 
-                    <p>At ASAP Chemtime, we believe in creating a student-centric learning environment where students can learn at their own pace and receive individual attention from experienced faculty members. We are committed to providing the best education, rigorous practice sessions, and excellent study material to help students succeed in these exams.</p><br />
+                        </li>
+                        <li> • <h6>And much more!</h6></li>
 
-                    <p>Our motto at ASAP Chemtime is “Empowering your dreams.” We believe that every student has the potential to achieve great things, and we are committed to empowering them with the knowledge and skills required to turn their dreams into reality.</p><br />
+                    </ul>
 
-                    <p>Join us at ASAP Chemtime and take the first step towards a successful career in Chemistry and Mathematics. We are committed to helping you achieve your goals and empowering your dreams.</p>
+                    {/* <p>Join us at ASAP Chemtime and take the first step towards a successful career in Chemistry and Mathematics. We are committed to helping you achieve your goals and empowering your dreams.</p> */}
                 </div>
             </div>
             <WhatsappIcon />

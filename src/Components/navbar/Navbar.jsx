@@ -131,13 +131,13 @@ const Navbar = () => {
           </div>
         </Link> */}
 
-        <Link to="/videos" onClick={() => handleItemClick("videos")}>
+        {/* <Link to="/videos" onClick={() => handleItemClick("videos")}>
           <div
             className={`menu-item ${activeItem === "videos" ? "active" : ""}`}
           >
             Videos
           </div>
-        </Link>
+        </Link> */}
 
         {/* <Link
           className="courses top-course-nav"

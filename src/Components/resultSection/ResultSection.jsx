@@ -29,7 +29,7 @@ const ResultSection = () => {
 
             <div className='top-heading'>
                 <h1>
-                A large number of students attained their desired <span className='under-bar'>career at</span>
+                    A large number of students attained their desired <span className='under-bar'>career at</span>
                 </h1>
                 {/* <button onClick={navigateTo}>
                     View All

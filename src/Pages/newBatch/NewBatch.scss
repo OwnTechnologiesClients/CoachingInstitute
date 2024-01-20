@@ -56,7 +56,7 @@
             }
 
             .marquee-container {
-                height: 90vh;
+                height: 65vh;
                 // height: 90vw;
                 position: relative;
                 overflow: hidden;
@@ -69,7 +69,7 @@
             }
 
             .marquee {
-                animation: marquee 10s reverse infinite;
+                // animation: marquee 7s reverse infinite;
                 /* Adjust the animation duration as needed */
                 position: absolute;
                 top: 0;
@@ -115,7 +115,7 @@
         .quick-panel {
             width: 100%;
             margin-top: 2vw;
-            height: 29.2vw;
+            height: 41.4vw;
             text-align: center;
             border: 2px solid #707070;
 

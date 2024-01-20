@@ -9,7 +9,7 @@ import WelcomeSection, { WelcomeSubSection } from '../../components/welcomeSecti
 import VideoSection from '../../components/videoSection/VideoSection'
 import StatisticsSection from '../../components/statistics/StatisticsSection';
 import { Header1, Header2 } from '../../components/header/Header';
-import heroImage from '../../assets/bg4.png'
+import heroImage from '../../assets/bg4.jpg'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon';
 import ResultSection from '../../components/resultSection/ResultSection';
 import Faq from '../../Components/faq/Faq';

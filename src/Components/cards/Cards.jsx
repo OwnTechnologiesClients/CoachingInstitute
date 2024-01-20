@@ -72,7 +72,6 @@ const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail,url }) 
                 <p>{homeCourseDetail}</p>
             </div>
             <button onClick={() => {
-                console.log("====>>>><<<<   ",url );
                 navigate(url)
             }}>VIEW DETAILS</button>
         </div>

@@ -4,7 +4,7 @@ import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
-import courseImg from "../../assets/bg3.png";
+import courseImg from "../../assets/bg3.jpg";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";

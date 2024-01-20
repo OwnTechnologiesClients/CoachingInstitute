@@ -16,9 +16,9 @@ const Header1 = () => {
           <Link to="/onlinecourses/flutter">Popular Courses &nbsp;&nbsp;| </Link>
         </span>
         <span>
-          <Link to="/contact">Help Desk &nbsp;&nbsp;| </Link>
+          <Link to="/contact">Help Desk</Link>
         </span>
-        <span>
+        {/* <span>
           <Link
             to={`${
               localStorage.getItem("token") ? "/history" : "/student-login"
@@ -26,7 +26,7 @@ const Header1 = () => {
           >
             Login
           </Link>
-        </span>
+        </span> */}
       </div>
       <div className="top-icons">
         <a

@@ -5,13 +5,13 @@ import yticon from '../../assets/icons/youtube.png'
 import igicon from '../../assets/icons/igfigmaicon.png'
 import checkbox from '../../assets/icons/checkbox.png'
 import down from '../../assets/icons/down.png'
-import call from '../../assets/call.png'
+import call from '../../assets/icons/call-blue.png'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 
 const Footer = () => {
   const handleTelephoneClick = () => {
-    const phoneNumber = 'tel:+918595764714';
+    const phoneNumber = 'tel:+919910765616';
     window.location.href = phoneNumber;
   };
   return (
@@ -31,22 +31,27 @@ const Footer = () => {
         </div>
         <div className="courses">
           <h4>Courses</h4>
-          <Link to="#">
+          <Link to="/onlinecourses/flutter">
             <li>Flutter Development</li>
           </Link>
-          <Link to="#">
+          <Link to="/onlinecourses/reactjs">
             <li>ReactJs Development</li>
           </Link>
-          <Link to="#">
+          <Link to="/onlinecourses/nextjs">
             <li>NextJs Development</li>
           </Link>
-          <Link to="#">
+          <Link to="/onlinecourses/nodejs">
             <li>NodeJs Development</li>
           </Link>
-          <Link to="#">
+          <Link to="/onlinecourses/mern-stack">
             <li>MERN Stack Development</li>
           </Link>
-
+          <Link to="/offlinecourses/flutter">
+            <li>Offline Courses</li>
+          </Link>
+          <Link to="/onlinecourses/flutter">
+            <li>Internship Courses</li>
+          </Link>
         </div>
         <div className="links ">
           <h4>Useful Links</h4>
@@ -88,11 +93,11 @@ const Footer = () => {
       <div className='bottom-footer' >
         <div className='bottom'>
           <li><Link to='/onlinecourses/flutter'>Popular Courses |</Link></li>
-          <li><Link to='/contact'>Help Desk |</Link></li>
-          <li><Link to='/student-login'>Login</Link></li>
+          <li><Link to='/contact'>Help Desk</Link></li>
+          {/* <li><Link to='/student-login'>Login</Link></li> */}
         </div>
         <div className='rights'>
-          <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.com/" target='_blank'>OwnTechnologies</a></p>
+          <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by TechFever</p>
         </div>
         <div className='smooth-up'>
           <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><img src={down} alt="" /></a>

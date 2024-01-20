@@ -20,7 +20,7 @@ const Faq = () => {
             <div>
                 <div className="message">
 
-                    <h1>Welcome to Excellence Technology Coaching Institute</h1><br></br>
+                    <h1>Welcome to TECH FEVER Coaching Institute</h1><br></br>
                     <p1>Where Innovation Meets Education! At our institute, we are committed to providing a transformative learning experience in the dynamic realm of technology. Get ready to embark on a journey of skill enhancement, innovation, and success. Let's unlock your full potential together! </p1>
                     <div className='top-heading'>
                         <br></br>

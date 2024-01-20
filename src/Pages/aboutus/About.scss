@@ -40,7 +40,6 @@ $blue: #2D8EFF;
             color: #605e5e;
             padding: .5vw 0;
             font-size: 1.1vw;
-            line-height: 1.4vw;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
@@ -64,6 +63,27 @@ $blue: #2D8EFF;
         .description {
             font-size: .9rem;
             line-height: 1.2rem;
+        }
+
+        ul {
+            padding: 1.5vw;
+    
+            li {
+                color: #605e5e;
+                padding: 1vw 0;
+                font-size: 3.5vw;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+                h6 {
+                    color: #000;
+                    display: inline-block;
+                    font-size: 3.5vw;
+                    font-weight: 500;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+    
+            }
         }
     }
 }

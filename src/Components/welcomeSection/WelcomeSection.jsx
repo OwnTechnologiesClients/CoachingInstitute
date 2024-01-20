@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './WelcomeSection.scss'
-import ss3 from '../../assets/welcome/ss6.jpg'
-import ss2 from '../../assets/welcome/ss3.jpg'
-import ss1 from '../../assets/welcome/ss2.jpg'
-import ss4 from '../../assets/welcome/ss5.jpg'
-import ss5 from '../../assets/welcome/ss4.jpg'
-import ss6 from '../../assets/welcome/ss1.jpg'
+import ss3 from '../../assets/welcome/flexible-learning.jpg'
+import ss2 from '../../assets/welcome/hands-on-projects.jpg'
+import ss1 from '../../assets/welcome/expert-instructors.jpg'
+import ss4 from '../../assets/welcome/guranteed-internship.jpg'
+import ss5 from '../../assets/welcome/personalized-attention.jpg'
+import ss6 from '../../assets/welcome/cutting-edge-curriculum.jpg'
 import { WelcomeCard } from '../cards/Cards';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -71,9 +71,9 @@ export const WelcomeSubSection = () => {
                     <p1>TECH FEVER prides itself on offering a cutting-edge learning experience with a range of features designed to empower and prepare students for success in the ever-evolving tech landscape. Here's an elaboration on our key course features:</p1>
 
                     <div className="cards">
-                        <WelcomeCard imgSrc={ss2} title="EXPERT INSTRUCTORS" description="Learn from seasoned industry professionals with extensive real-world experience. Benefit from their insights, practical knowledge, and guidance throughout the course." />
-                        <WelcomeCard imgSrc={ss3} title="HANDS-ON PROJECTS" description="Translate theoretical knowledge into practical skills with hands-on projects. Build a robust portfolio showcasing your ability to apply concepts to real-world scenarios." />
-                        <WelcomeCard imgSrc={ss1} title="FLEXIBLE LEARNING" description="Life can be busy; that's why we offer flexible learning options, including online courses and part-time schedules." />
+                        <WelcomeCard imgSrc={ss1} title="EXPERT INSTRUCTORS" description="Learn from seasoned industry professionals with extensive real-world experience. Benefit from their insights, practical knowledge, and guidance throughout the course." />
+                        <WelcomeCard imgSrc={ss2} title="HANDS-ON PROJECTS" description="Translate theoretical knowledge into practical skills with hands-on projects. Build a robust portfolio showcasing your ability to apply concepts to real-world scenarios." />
+                        <WelcomeCard imgSrc={ss3} title="FLEXIBLE LEARNING" description="Life can be busy; that's why we offer flexible learning options, including online courses and part-time schedules." />
                     </div>
 
 

@@ -36,9 +36,9 @@ const OfflineCourse = () => {
 
   useEffect(() => {
     if (id === "flutter") setActiveLink("/offlinecourses/Flutter");
-    else if (id === "gate") setActiveLink("/offlinecourses/ReactJS");
-    else if (id === "iit-jam") setActiveLink("/offlinecourses/NextJs");
-    else if (id === "cuet") setActiveLink("/offlinecourses/NodeJs");
+    else if (id === "reactjs") setActiveLink("/offlinecourses/ReactJS");
+    else if (id === "nextjs") setActiveLink("/offlinecourses/NextJs");
+    else if (id === "nodejs") setActiveLink("/offlinecourses/NodeJs");
     else if (id === "mern-stack") setActiveLink("/offlinecourses/MERN Stack");
 
     else {

@@ -15,116 +15,186 @@ const NewBatch = () => {
     const tableFields = {
         "offline": [
             [
-                "CSIR NET + GATE (Chemical Science)",
-                "6 Months",
-                "Regular",
-                29000
-            ],
-            [
-                "CSIR NET + GATE (Chemical Science)",
-                "1 Year",
-                "Weekend",
-                35000
-            ],
-            [
-                "CUET",
-                "6 Months",
-                "Regular",
-                12000
-            ],
-            [
-                "GATE",
-                "6 Months",
-                "Regular",
-                29000
-            ],
-            [
-                "GATE",
-                "1 Year",
-                "Weekend",
-                35000
-            ],
-            [
-                "IIT-JAM",
-                "6 Months",
-                "Regular",
+                "Flutter Trainee",
+                "2 Months",
+                "3 Days in Week",
                 25000
             ],
             [
-                "IIT-JAM",
-                "1 Year",
-                "Weekend",
+                "Flutter Hustler",
+                "4 Months",
+                "3 Days in Week",
+                35000
+            ],
+            [
+                "Flutter Expert",
+                "6 Months",
+                "3 Days in Week",
+                45000
+            ],
+            [
+                "ReactJS Trainee",
+                "2 Months",
+                "3 days in week",
                 25000
             ],
-
             [
-                "IIT-JAM",
-                "2 Year",
-                "Weekend",
-                30000
+                "ReactJS Hustler",
+                "4 Months",
+                "3 days in week",
+                35000
+            ],
+            [
+                "ReactJS Expert",
+                "6 Months",
+                "3 days in week",
+                45000
+            ],
+            [
+                "NextJS Trainee",
+                "2 Months",
+                "3 days in week",
+                25000
+            ],
+            [
+                "NextJS Hustler",
+                "4 Months",
+                "3 days in week",
+                35000
+            ],
+            [
+                "NextJS Expert",
+                "6 Months",
+                "3 days in week",
+                45000
+            ],
+            [
+                "NodeJS Trainee",
+                "2 Months",
+                "3 Days in Week",
+                25000
+            ],
+            [
+                "NodeJS Hustler",
+                "4 Months",
+                "3 Days in Week",
+                35000
+            ],
+            [
+                "NodeJS Expert",
+                "6 Months",
+                "3 Days in Week",
+                45000
+            ],
+            [
+                "MERN Stack Trainee",
+                "2 Months",
+                "3 Days in Week",
+                25000
+            ],
+            [
+                "MERN Stack Hustler",
+                "4 Months",
+                "3 Days in Week",
+                35000
+            ],
+            [
+                "MERN Stack Expert",
+                "6 Months",
+                "3 Days in Week",
+                45000
             ]
         ],
         "online": [
             [
-                "CSIR NET (Chemical Science)",
+                "Flutter Trainee",
+                "2 Months",
+                "3 Days in Week",
+                25000
+            ],
+            [
+                "Flutter Hustler",
+                "4 Months",
+                "3 Days in Week",
+                35000
+            ],
+            [
+                "Flutter Expert",
                 "6 Months",
-                "Regular",
-                17700
+                "3 Days in Week",
+                45000
             ],
             [
-                "CSIR NET (Chemical Science)",
-                "1 Year",
-                "Weekend",
-                20000
+                "ReactJS Trainee",
+                "2 Months",
+                "3 days in week",
+                25000
             ],
             [
-                "CSIR NET (Chemical Science)",
-                "1 Year",
-                "Regular",
-                20000
+                "ReactJS Hustler",
+                "4 Months",
+                "3 days in week",
+                35000
             ],
             [
-                "CUET",
+                "ReactJS Expert",
                 "6 Months",
-                "Regular",
-                8000
+                "3 days in week",
+                45000
             ],
             [
-                "GATE",
+                "NextJS Trainee",
+                "2 Months",
+                "3 days in week",
+                25000
+            ],
+            [
+                "NextJS Hustler",
+                "4 Months",
+                "3 days in week",
+                35000
+            ],
+            [
+                "NextJS Expert",
                 "6 Months",
-                "Regular",
-                17700
+                "3 days in week",
+                45000
             ],
             [
-                "GATE",
-                "1 Year",
-                "Weekend",
-                20000
+                "NodeJS Trainee",
+                "2 Months",
+                "3 Days in Week",
+                25000
             ],
             [
-                "GATE",
-                "1 Year",
-                "Regular",
-                20000
+                "NodeJS Hustler",
+                "4 Months",
+                "3 Days in Week",
+                35000
             ],
             [
-                "IIT-JAM",
+                "NodeJS Expert",
                 "6 Months",
-                "Regular",
-                12000
+                "3 Days in Week",
+                45000
             ],
             [
-                "IIT-JAM",
-                "1 Year",
-                "Weekend",
-                12000
+                "MERN Stack Trainee",
+                "2 Months",
+                "3 Days in Week",
+                25000
             ],
-
             [
-                "IIT-JAM",
-                "2 Year",
-                "Weekend",
-                15000
+                "MERN Stack Hustler",
+                "4 Months",
+                "3 Days in Week",
+                35000
+            ],
+            [
+                "MERN Stack Expert",
+                "6 Months",
+                "3 Days in Week",
+                45000
             ],
         ],
         "recorded": [
@@ -216,72 +286,70 @@ const NewBatch = () => {
 
     const newsAndUpdates = [
         {
-            url: "/testseries/flutter",
-            content: "Test Series for CSIR NET Dec 2023 is now live. Sharpen your skills and boost your preparation by joining now!            "
+            url: "/onlinecourses/flutter",
+            content: "Exclusive Offer! Register for Our Flutter Development Course at Just 9000/-"
         },
         {
-            url: "/testseries/gate",
-            content: "Test Series for GATE 2024 is live. Don't miss this opportunity to practice and enhance your exam readiness. Join now!            "
-        },
-        {
-            url: "/testseries/iit-jam",
-            content: "Test Series for IIT JAM 2024 is now available. Enroll today to assess your preparation and improve your performance!"
-        },
-        {
-            url: "/offlinecourses/flutter",
-            content: "CSIR NET June 2024 Offline Batch is set to commence on January 5, 2023. Register now for in-person classes and personalized guidance."
+            url: "/onlinecourses/reactjs",
+            content: "Limited-Time Offer: Enroll in Our React Development Course for Only 9000/-"
         },
         {
             url: "/onlinecourses/flutter",
-            content: "CSIR NET June 2024 Online Batch starts on January 5, 2023. Secure your place for online learning with our experienced faculty."
+            content: "Special Notice: Register for Flutter Development Course and Receive 3 Months of Extra Internship!"
         },
         {
-            url: "/offlinecourses/gate",
-            content: "GATE 2025 Offline Batch begins on February 18, 2023. Register early to reserve your spot for comprehensive offline coaching."
+            url: "/onlinecourses/mern-stack",
+            content: "Limited-Time Offer: Enroll in Our MERN Stack Development Course and Receive a 3-Month Paid Internship!"
         },
         {
-            url: "/onlinecourses/gate",
-            content: "GATE 2025 Online Batch also starts on February 18, 2023. Join our online classes for flexible and effective exam preparation."
+            url: "/onlinecourses/nodejs",
+            content: "Exclusive Offer: Enroll in Our Offline Backend Development Course and Unlock a 3-Month Paid Internship!"
         },
-        {
-            url: "/offlinecourses/iit-jam",
-            content: "IIT JAM 2025 Offline Batch is scheduled to begin on February 18, 2023. Registration is open for in-person coaching sessions."
-        },
-        {
-            url: "/onlinecourses/iit-jam",
-            content: "IIT JAM 2025 Online Batch starts on February 18, 2023. Register now for our online classes and access quality education from the comfort of your home."
-        },
+
 
     ]
 
+
     const notifications = [
         {
-            url: "/testseries",
-            content: "Test Series"
+            url: "/onlinecourses/flutter",
+            content: "Flutter Online Course"
         },
         {
-            url: "/studymaterial",
-            content: "Study material"
+            url: "/onlinecourses/reactjs",
+            content: "ReactJs Online Course"
         },
         {
-            url: "/new-batch",
-            content: "New Batches"
+            url: "/onlinecourses/nextjs",
+            content: "NextJs Online Course"
         },
         {
-            url: "/student-login",
-            content: "Student Login"
+            url: "/onlinecourses/nodejs",
+            content: "NodeJs Online Course"
         },
         {
-            url: "/result",
-            content: "Results"
+            url: "/onlinecourses/mern-stack",
+            content: "MERN Stack Online Course"
         },
         {
-            url: "https://blog.chemtime.co.in/",
-            content: "Blogs"
+            url: "onlinecourses/flutter",
+            content: "All Internship Courses"
+        },
+        {
+            url: "/offlinecourses/flutter",
+            content: "All Offline Courses"
+        },
+        {
+            url: "/onlinecourses/flutter",
+            content: "All Online Courses"
+        },
+        {
+            url: "/onlinecourses/flutter",
+            content: "All Low-Cost Courses"
         },
         {
             url: "/videos",
-            content: "Popular Videos"
+            content: "Blogs"
         },
 
     ]
@@ -310,7 +378,7 @@ const NewBatch = () => {
                         <h2 className='under-bar'>New Batch</h2> */}
                         <CourseTable mode={'Online Dashboard'} tableFields={tableFields.online} />
                         <CourseTable mode={'Offline Dashboard'} tableFields={tableFields.offline} />
-                        <CourseTable mode={'Recorded Dashboard'} tableFields={tableFields.recorded} />
+                        {/* <CourseTable mode={'Recorded Dashboard'} tableFields={tableFields.recorded} /> */}
                     </div>
 
                 </div>

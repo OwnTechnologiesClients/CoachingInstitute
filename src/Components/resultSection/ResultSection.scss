@@ -57,23 +57,49 @@ $text: #646262;
 
     margin-bottom: -5vw;
 
-    @media screen and (max-width:480px) {
-        flex-direction: column;
-        width: 90vw;
 
-        .col-md-3 {
-            width: 90vw;
-            padding: 5vw;
+}
 
-            p {
+@media screen and (max-width:480px) {
+
+    .result-section {
+
+        .top-heading {
+            width: 100%;
+
+            h1 {
+                font-weight: 400;
                 font-size: 5vw;
-                padding: .2vw 0;
-            }
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-            .result-img {
-                width: 50vw
+                span {
+                    color: $blue;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
             }
         }
 
+
+
+        .result-row {
+            flex-direction: column;
+
+
+
+            .col-md-3 {
+                width: 90vw;
+                padding: 5vw;
+
+                p {
+                    font-size: 5vw;
+                    padding: .2vw 0;
+                }
+
+                .result-img {
+                    width: 40vw
+                }
+            }
+        }
     }
+
 }

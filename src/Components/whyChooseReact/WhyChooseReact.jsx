@@ -14,25 +14,25 @@ const WhyChooseReact = () => {
     // const courseCardDetails = [
     //     {
     //         courseImg: img1,
-    //         cardHeading: "CSIR-NET/JRF",
+    //         cardHeading: "flutter/JRF",
     //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
     //         price: 299
     //     },
     //     {
     //         courseImg: img2,
-    //         cardHeading: "CSIR-NET/JRF",
+    //         cardHeading: "flutter/JRF",
     //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
     //         price: 299
     //     },
     //     {
     //         courseImg: img3,
-    //         cardHeading: "CSIR-NET/JRF",
+    //         cardHeading: "flutter/JRF",
     //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
     //         price: 299
     //     },
     //     {
     //         courseImg: img4,
-    //         cardHeading: "CSIR-NET/JRF",
+    //         cardHeading: "flutter/JRF",
     //         cardDetail: "We care for children, protect their welfare, and prepare them for the future. We care for children, protect their welfare, and prepare them for the future",
     //         price: 299
     //     }

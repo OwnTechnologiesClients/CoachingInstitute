@@ -22,32 +22,44 @@ export const WelcomeSubSection = () => {
     };
     const notifications = [
         {
-            url: "/testseries/csir-net",
-            content: "Test Series"
+            url: "/onlinecourses/flutter",
+            content: "Flutter Online Course"
         },
         {
-            url: "/studymaterial/csir-net",
-            content: "Study material"
+            url: "/onlinecourses/reactjs",
+            content: "ReactJs Online Course"
         },
         {
-            url: "/new-batch",
-            content: "New Batches"
+            url: "/onlinecourses/nextjs",
+            content: "NextJs Online Course"
         },
         {
-            url: "/student-login",
-            content: "Student Login"
+            url: "/onlinecourses/nodejs",
+            content: "NodeJs Online Course"
         },
         {
-            url: "/result",
-            content: "Results"
+            url: "/onlinecourses/mern-stack",
+            content: "MERN Stack Online Course"
         },
         {
-            url: "https://blog.chemtime.co.in/",
-            content: "Blogs"
+            url: "onlinecourses/flutter",
+            content: "All Internship Courses"
+        },
+        {
+            url: "/offlinecourses/flutter",
+            content: "All Offline Courses"
+        },
+        {
+            url: "/onlinecourses/flutter",
+            content: "All Online Courses"
+        },
+        {
+            url: "/onlinecourses/flutter",
+            content: "All Low-Cost Courses"
         },
         {
             url: "/videos",
-            content: "Popular Videos"
+            content: "Blogs"
         },
 
     ]
@@ -100,46 +112,31 @@ export const WelcomeSubSection = () => {
 const WelcomeSection = () => {
     const navigate = useNavigate();
     const navigateTo = () => {
-        navigate('/onlinecourses/csir-net')
+        navigate('/onlinecourses/flutter')
     }
 
     const newsAndUpdates = [
         {
-            url: "/testseries/csir-net",
-            content: "Test Series for CSIR NET Dec 2023 is now live. Sharpen your skills and boost your preparation by joining now!            "
+            url: "/onlinecourses/flutter",
+            content: "Exclusive Offer! Register for Our Flutter Development Course at Just 9000/-"
         },
         {
-            url: "/testseries/gate",
-            content: "Test Series for GATE 2024 is live. Don't miss this opportunity to practice and enhance your exam readiness. Join now!            "
+            url: "/onlinecourses/reactjs",
+            content: "Limited-Time Offer: Enroll in Our React Development Course for Only 9000/-"
         },
         {
-            url: "/testseries/iit-jam",
-            content: "Test Series for IIT JAM 2024 is now available. Enroll today to assess your preparation and improve your performance!"
+            url: "/onlinecourses/flutter",
+            content: "Special Notice: Register for Flutter Development Course and Receive 3 Months of Extra Internship!"
         },
         {
-            url: "/offlinecourses/csir-net",
-            content: "CSIR NET June 2024 Offline Batch is set to commence on January 5, 2023. Register now for in-person classes and personalized guidance."
+            url: "/onlinecourses/mern-stack",
+            content: "Limited-Time Offer: Enroll in Our MERN Stack Development Course and Receive a 3-Month Paid Internship!"
         },
         {
-            url: "/onlinecourses/csir-net",
-            content: "CSIR NET June 2024 Online Batch starts on January 5, 2023. Secure your place for online learning with our experienced faculty."
+            url: "/onlinecourses/nodejs",
+            content: "Exclusive Offer: Enroll in Our Offline Backend Development Course and Unlock a 3-Month Paid Internship!"
         },
-        {
-            url: "/offlinecourses/gate",
-            content: "GATE 2025 Offline Batch begins on February 18, 2023. Register early to reserve your spot for comprehensive offline coaching."
-        },
-        {
-            url: "/onlinecourses/gate",
-            content: "GATE 2025 Online Batch also starts on February 18, 2023. Join our online classes for flexible and effective exam preparation."
-        },
-        {
-            url: "/offlinecourses/iit-jam",
-            content: "IIT JAM 2025 Offline Batch is scheduled to begin on February 18, 2023. Registration is open for in-person coaching sessions."
-        },
-        {
-            url: "/onlinecourses/iit-jam",
-            content: "IIT JAM 2025 Online Batch starts on February 18, 2023. Register now for our online classes and access quality education from the comfort of your home."
-        },
+
 
     ]
 

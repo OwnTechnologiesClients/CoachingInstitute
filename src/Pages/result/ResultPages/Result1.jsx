@@ -26,7 +26,7 @@ const Result1 = () => {
       case "iit-jam":
         setResultImage(iitjam);
         break;
-      case "csir-net":
+      case "flutter":
         setResultImage(csir);
         break;
       default:
@@ -35,18 +35,18 @@ const Result1 = () => {
     }
   }, [course]);
 
-//   const [filterOption, setFilterOption] = useState({
-//     year: "2019",
-//     course: "IITJAM",
-//   });
+  //   const [filterOption, setFilterOption] = useState({
+  //     year: "2019",
+  //     course: "IITJAM",
+  //   });
 
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFilterOption({
-//       ...filterOption,
-//       [name]: value,
-//     });
-//   };
+  //   const handleChange = (e) => {
+  //     const { name, value } = e.target;
+  //     setFilterOption({
+  //       ...filterOption,
+  //       [name]: value,
+  //     });
+  //   };
 
   return (
     <div className="result-explore">
@@ -54,9 +54,9 @@ const Result1 = () => {
       <Header2 />
       <Navbar />
       <div className="result-page-section">
-        
 
-        {resultImage? <img src={resultImage} alt="" /> : navigate('/result')}
+
+        {resultImage ? <img src={resultImage} alt="" /> : navigate('/result')}
 
         {/* <div className="filter">
                     <h2>Explore Our Prestigious Students</h2>

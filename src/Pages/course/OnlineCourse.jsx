@@ -36,10 +36,10 @@ const OnlineCourse = () => {
   };
 
   useEffect(() => {
-    if (id === "csir-net") setActiveLink("/onlinecourses/Flutter");
-    else if (id === "gate") setActiveLink("/onlinecourses/ReactJS");
-    else if (id === "iit-jam") setActiveLink("/onlinecourses/NextJs");
-    else if (id === "cuet") setActiveLink("/onlinecourses/NodeJs");
+    if (id === "flutter") setActiveLink("/onlinecourses/Flutter");
+    else if (id === "reactjs") setActiveLink("/onlinecourses/ReactJS");
+    else if (id === "nextjs") setActiveLink("/onlinecourses/NextJs");
+    else if (id === "nodejs") setActiveLink("/onlinecourses/NodeJs");
     else if (id === "mern-stack") setActiveLink("/onlinecourses/MERN Stack");
     else {
       navigate("/");

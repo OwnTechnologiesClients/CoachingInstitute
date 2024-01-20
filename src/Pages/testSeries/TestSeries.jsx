@@ -13,7 +13,7 @@ import { useNavigate, useParams } from "react-router-dom";
 const TestSeries = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [activeLink, setActiveLink] = useState("CSIR-NET Chemical Sciences");
+  const [activeLink, setActiveLink] = useState("flutter Chemical Sciences");
   const [activeUrl, setActiveUrl] = useState("");
   const [coursesOpened, setCoursesOpened] = useState(false);
   const handleLinksOpen = () => {
@@ -24,7 +24,7 @@ const TestSeries = () => {
   };
 
   const modeOfTable = {
-    "CSIR-NET Chemical Sciences": "Test Series",
+    "flutter Chemical Sciences": "Test Series",
     "GATE Chemistry": "Test Series for GATE 2024",
     "IIT-JAM Chemistry": "Test Series for IIT-JAM 2024",
     "BARC (Chemistry)": "Test Series for BARC",
@@ -32,7 +32,7 @@ const TestSeries = () => {
   };
 
   const tableFields = {
-    "CSIR-NET Chemical Sciences": [
+    "flutter Chemical Sciences": [
       ["Inorganic Chemistry + Full Length Tests", "d.pdf", "1 Year", 499],
       ["Organic Chemistry + Full Length Tests", "d.pdf", "2 Years", 499],
       ["Physical Chemistry + Full Length Tests", "d.pdf", "6 Months", 499],
@@ -64,9 +64,9 @@ const TestSeries = () => {
   };
 
   useEffect(() => {
-    if (id === "csir-net") {
-      setActiveUrl("/testseries/CSIR-NET Chemical Sciences");
-      setActiveLink("CSIR-NET Chemical Sciences");
+    if (id === "flutter") {
+      setActiveUrl("/testseries/flutter Chemical Sciences");
+      setActiveLink("flutter Chemical Sciences");
     } else if (id === "gate") {
       setActiveUrl("/testseries/GATE Chemistry");
       setActiveLink("GATE Chemistry");
@@ -95,7 +95,7 @@ const TestSeries = () => {
                 hd1={"TEST SERIES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
-      <div className="test-series-section"> 
+      <div className="test-series-section">
         <CourseLinks
           activeLink={activeUrl}
           coursesOpened={coursesOpened}

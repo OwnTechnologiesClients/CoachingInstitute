@@ -65,13 +65,13 @@ const CourseLinks = ({
       "MERN Stack",
     ],
     [
-      "CSIR-NET Chemical Sciences",
+      "flutter Chemical Sciences",
       "GATE Chemistry",
       "IIT-JAM Chemistry",
       "CUET (PG) Chemistry",
     ],
     [
-      "CSIR-NET Chemical Sciences",
+      "flutter Chemical Sciences",
       "GATE Chemistry",
       "IIT-JAM Chemistry",
       "BARC (Chemistry)",

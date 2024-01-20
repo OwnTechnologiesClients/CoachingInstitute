@@ -23,19 +23,19 @@ const TopCourseCsir = () => {
   const badges = [
     {
       linkName: "CSIR ONLINE",
-      link: "/onlinecourses/csir-net"
+      link: "/onlinecourses/flutter"
     },
     {
       linkName: "CSIR OFFLINE",
-      link: "/offlinecourses/csir-net"
+      link: "/offlinecourses/flutter"
     },
     {
       linkName: "CSIR TEST SERIES",
-      link: "/testseries/csir-net"
+      link: "/testseries/flutter"
     },
     {
       linkName: "CSIR STUDY MATERIAL",
-      link: "/studymaterial/csir-net"
+      link: "/studymaterial/flutter"
     },
   ]
 
@@ -71,22 +71,22 @@ const TopCourseCsir = () => {
           </div>
 
           <header>
-            <h2>CSIR-NET/JRF Coaching at TECH FEVER (formerly CHEMTIME)</h2>
+            <h2>flutter/JRF Coaching at TECH FEVER (formerly CHEMTIME)</h2>
           </header>
 
           <section id="introduction">
             <p>
               Welcome to TECH FEVER, your ultimate destination for excelling
-              in the CSIR-NET/JRF examination. With a legacy of over 5 years as
+              in the flutter/JRF examination. With a legacy of over 5 years as
               CHEMTIME, we bring unparalleled expertise to coach and guide
               aspiring candidates for competitive exams in Chemistry. Our
-              CSIR-NET/JRF coaching program is meticulously designed to empower
+              flutter/JRF coaching program is meticulously designed to empower
               students and provide them with a solid foundation for success.
             </p>
           </section>
 
           <section id="why-asap">
-            <h3>Why Choose TECH FEVER for CSIR-NET/JRF Coaching?</h3>
+            <h3>Why Choose TECH FEVER for flutter/JRF Coaching?</h3>
             <ul>
               <li>
                 <strong>Experienced Faculty:</strong> Our dedicated team of
@@ -97,7 +97,7 @@ const TopCourseCsir = () => {
               </li>
               <li>
                 <strong>Comprehensive Syllabus Coverage:</strong> We delve into
-                every aspect of the CSIR-NET/JRF syllabus, ensuring an in-depth
+                every aspect of the flutter/JRF syllabus, ensuring an in-depth
                 understanding of core concepts.
               </li>
               <li>
@@ -107,7 +107,7 @@ const TopCourseCsir = () => {
                 process engaging and effective.
               </li>
               <li>
-                <strong>Regular Practice:</strong> Success in CSIR-NET/JRF
+                <strong>Regular Practice:</strong> Success in flutter/JRF
                 requires consistent practice. Our program includes a wide range
                 of practice materials, including mock tests and a comprehensive
                 test series, to help you sharpen your problem-solving skills and
@@ -130,7 +130,7 @@ const TopCourseCsir = () => {
           </section>
 
           <section id="deliverables">
-            <h3>CSIR-NET/JRF Coaching Deliverables at TECH FEVER:</h3>
+            <h3>flutter/JRF Coaching Deliverables at TECH FEVER:</h3>
             <ol>
               <li>
                 <strong>Offline Coaching:</strong> Attend classes at our center
@@ -153,7 +153,7 @@ const TopCourseCsir = () => {
               <li>
                 <strong>Test Series:</strong> Practice extensively with our
                 comprehensive test series, preparing yourself thoroughly for the
-                CSIR-NET/JRF examination.
+                flutter/JRF examination.
               </li>
             </ol>
           </section>
@@ -161,7 +161,7 @@ const TopCourseCsir = () => {
           <section id="enrollment">
             <p>
               Enroll with TECH FEVER to embark on your journey to success in
-              CSIR-NET/JRF. Our commitment is to empower your dreams and help
+              flutter/JRF. Our commitment is to empower your dreams and help
               you achieve your goals in the field of Chemistry.
             </p>
           </section>

@@ -111,8 +111,8 @@ const Result = () => {
                 <div className="col-md-12 mainimg1">
                     <div className="col-md-3 tpmainimg">
                         <center><img className='result-img' src={achievement} /></center><br />
-                        <h3>CSIR-NET | JRF</h3>
-                        <Link to='/result-explore/csir-net' >
+                        <h3>flutter | JRF</h3>
+                        <Link to='/result-explore/flutter' >
                             <button className='explore-results'>Explore</button>
                         </Link>
                     </div>

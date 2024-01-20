@@ -35,7 +35,7 @@ const OfflineCourse = () => {
   };
 
   useEffect(() => {
-    if (id === "csir-net") setActiveLink("/offlinecourses/Flutter");
+    if (id === "flutter") setActiveLink("/offlinecourses/Flutter");
     else if (id === "gate") setActiveLink("/offlinecourses/ReactJS");
     else if (id === "iit-jam") setActiveLink("/offlinecourses/NextJs");
     else if (id === "cuet") setActiveLink("/offlinecourses/NodeJs");
@@ -44,7 +44,7 @@ const OfflineCourse = () => {
     else {
       navigate("/");
     }
-  },[id]);
+  }, [id]);
 
   const componentMapping = {
     "/offlinecourses/Flutter": <FlutterOffline />,

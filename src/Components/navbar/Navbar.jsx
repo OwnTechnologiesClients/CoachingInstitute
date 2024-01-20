@@ -81,24 +81,23 @@ const Navbar = () => {
 
         <Link
           className="courses"
-          to="/onlinecourses/csir-net"
+          to="/onlinecourses/flutter"
           onClick={() => handleItemClick("Courses")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "onlinecourses" || activeItem === "offlinecourses"
+            className={`menu-item ${activeItem === "onlinecourses" || activeItem === "offlinecourses"
                 ? "active"
                 : ""
-            }`}
+              }`}
           >
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="/onlinecourses/csir-net">
+                <Link to="/onlinecourses/flutter">
                   Online Courses{" "}
                   <img style={{ paddingLeft: "1vw" }} src={rightarrow} />{" "}
                 </Link>
-                <Link to="/offlinecourses/csir-net">
+                <Link to="/offlinecourses/flutter">
                   Offline Courses{" "}
                   <img style={{ paddingLeft: "1vw" }} src={rightarrow} />{" "}
                 </Link>
@@ -108,7 +107,7 @@ const Navbar = () => {
         </Link>
 
         {/* <Link
-          to="/testseries/csir-net"
+          to="/testseries/flutter"
           onClick={() => handleItemClick("testseries")}>
           <div
             className={`menu-item ${
@@ -120,7 +119,7 @@ const Navbar = () => {
         </Link> */}
 
         {/* <Link
-          to="/studymaterial/csir-net"
+          to="/studymaterial/flutter"
           onClick={() => handleItemClick("studymaterial")}>
           <div
             className={`menu-item ${
@@ -148,7 +147,7 @@ const Navbar = () => {
             className={`menu-item ${
               activeItem === "iit-jam" ||
               activeItem === "gate" ||
-              activeItem === "csir-net-jrf"
+              activeItem === "flutter-jrf"
                 ? "active"
                 : ""
             }`}
@@ -156,7 +155,7 @@ const Navbar = () => {
             Top Courses <img src={darrow} alt="" />
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="/csir-net-jrf">
+                <Link to="/flutter-jrf">
                   CSIR{" "}
                   <img
                     style={{ paddingLeft: "1vw", float: "right" }}
@@ -201,15 +200,13 @@ const Navbar = () => {
         </Link>
 
         <Link
-          to={`${
-            localStorage.getItem("token") ? "/history" : "/student-login"
-          }`}
+          to={`${localStorage.getItem("token") ? "/history" : "/student-login"
+            }`}
           onClick={() => handleItemClick("Student Login")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "student-login" ? "active" : ""
-            }`}
+            className={`menu-item ${activeItem === "student-login" ? "active" : ""
+              }`}
           >
             Student Login
           </div>

@@ -20,16 +20,16 @@ const CoursePageList = ({
   const handleCourseName = (id) => {
     if (id === "Flutter") {
       dispatch(SetIsClOpen(!isClOpen));
-      navigate(`${url1}/csir-net`);
+      navigate(`${url1}/flutter`);
     } else if (id === "ReactJS") {
       dispatch(SetIsClOpen(!isClOpen));
-      navigate(`${url1}/gate`);
+      navigate(`${url1}/reactjs`);
     } else if (id === "NextJs") {
       dispatch(SetIsClOpen(!isClOpen));
-      navigate(`${url1}/iit-jam`);
+      navigate(`${url1}/nextjs`);
     } else if (id === "NodeJs") {
       dispatch(SetIsClOpen(!isClOpen));
-      navigate(`${url1}/cuet`);
+      navigate(`${url1}/nodejs`);
     } else if (id === "MERN Stack") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/mern-stack`);
@@ -88,8 +88,8 @@ const StudyPageList = ({
   const isClOpen = useSelector((state) => state.users.isClOpen);
   const navigate = useNavigate();
   const handleCourseName = (id) => {
-    if (id === "CSIR-NET Chemical Sciences") {
-      navigate(`${url1}/csir-net`);
+    if (id === "flutter Chemical Sciences") {
+      navigate(`${url1}/flutter`);
       dispatch(SetIsClOpen(!isClOpen));
     } else if (id === "GATE Chemistry") {
       navigate(`${url1}/gate`);
@@ -159,7 +159,7 @@ const TestPageList = ({
   const handleCourseName = (id) => {
     if (id === "Flutter") {
       dispatch(SetIsClOpen(!isClOpen));
-      navigate(`${url1}/csir-net`);
+      navigate(`${url1}/flutter`);
     } else if (id === "ReactJs") {
       dispatch(SetIsClOpen(!isClOpen));
       navigate(`${url1}/gate`);

@@ -216,7 +216,7 @@ const NewBatch = () => {
 
     const newsAndUpdates = [
         {
-            url: "/testseries/csir-net",
+            url: "/testseries/flutter",
             content: "Test Series for CSIR NET Dec 2023 is now live. Sharpen your skills and boost your preparation by joining now!            "
         },
         {
@@ -228,11 +228,11 @@ const NewBatch = () => {
             content: "Test Series for IIT JAM 2024 is now available. Enroll today to assess your preparation and improve your performance!"
         },
         {
-            url: "/offlinecourses/csir-net",
+            url: "/offlinecourses/flutter",
             content: "CSIR NET June 2024 Offline Batch is set to commence on January 5, 2023. Register now for in-person classes and personalized guidance."
         },
         {
-            url: "/onlinecourses/csir-net",
+            url: "/onlinecourses/flutter",
             content: "CSIR NET June 2024 Online Batch starts on January 5, 2023. Secure your place for online learning with our experienced faculty."
         },
         {

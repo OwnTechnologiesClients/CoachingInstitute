@@ -53,14 +53,14 @@ const WelcomeCard = ({ imgSrc, title, description }) => {
         </div>
     )
 }
-const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
+const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail,url }) => {
 
     const navigate = useNavigate()
     const dispatch = useDispatch();
-    const navigateTo = (homeCourseHeading) => {
-        dispatch(SetActiveCourse(homeCourseHeading))
-        navigate('/onlinecourses/csir-net')
-    }
+    // const navigateTo = (homeCourseHeading) => {
+    //     dispatch(SetActiveCourse(homeCourseHeading))
+    //     navigate(SetActiveCourse(homeCourseHeading))
+    // }
     return (
         <div className='course-card'>
             {/* <div className="price">
@@ -71,7 +71,10 @@ const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail }) => {
                 <h2 className='under-bar'>{homeCourseHeading}</h2>
                 <p>{homeCourseDetail}</p>
             </div>
-            <button onClick={() => navigateTo(homeCourseHeading)}>VIEW DETAILS</button>
+            <button onClick={() => {
+                console.log("====>>>><<<<   ",url );
+                navigate(url)
+            }}>VIEW DETAILS</button>
         </div>
     )
 }

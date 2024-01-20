@@ -114,8 +114,8 @@ const RegistrationSection = () => {
           <option value="" disabled selected>
             Select Course
           </option>
-          {/* <option value="CSIR-NET Chemical Sciences">
-            CSIR-NET Chemical Sciences
+          {/* <option value="flutter Chemical Sciences">
+            flutter Chemical Sciences
           </option> */}
           <option value="Flutter Development">Flutter Development</option>
           <option value="ReactJs Development">ReactJs Development</option>

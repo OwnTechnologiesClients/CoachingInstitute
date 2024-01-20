@@ -17,9 +17,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 const StudyMaterial = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [activeLink, setActiveLink] = useState("CSIR-NET Chemical Sciences");
+    const [activeLink, setActiveLink] = useState("flutter Chemical Sciences");
     const [activeUrl, setActiveUrl] = useState("");
-    const [coursesOpened,setCoursesOpened] = useState(false);
+    const [coursesOpened, setCoursesOpened] = useState(false);
 
     const handleLinkClick = (link) => {
 
@@ -30,7 +30,7 @@ const StudyMaterial = () => {
     };
     const tableFields =
     {
-        "CSIR-NET Chemical Sciences": [
+        "flutter Chemical Sciences": [
             [
                 "Lakshya- Subtopic wise PYQ Booklets",
                 "45 minutes",
@@ -136,22 +136,22 @@ const StudyMaterial = () => {
         ],
     }
     useEffect(() => {
-        if (id === "csir-net") {
-          setActiveUrl("/studymaterial/CSIR-NET Chemical Sciences");
-          setActiveLink("CSIR-NET Chemical Sciences");
+        if (id === "flutter") {
+            setActiveUrl("/studymaterial/flutter Chemical Sciences");
+            setActiveLink("flutter Chemical Sciences");
         } else if (id === "gate") {
-          setActiveUrl("/studymaterial/GATE Chemistry");
-          setActiveLink("GATE Chemistry");
+            setActiveUrl("/studymaterial/GATE Chemistry");
+            setActiveLink("GATE Chemistry");
         } else if (id === "iit-jam") {
-          setActiveUrl("/studymaterial/IIT-JAM Chemistry");
-          setActiveLink("IIT-JAM Chemistry");
+            setActiveUrl("/studymaterial/IIT-JAM Chemistry");
+            setActiveLink("IIT-JAM Chemistry");
         } else if (id === "cuet") {
-          setActiveUrl("/studymaterial/CUET (PG) Chemistry");
-          setActiveLink("CUET (PG) Chemistry");
+            setActiveUrl("/studymaterial/CUET (PG) Chemistry");
+            setActiveLink("CUET (PG) Chemistry");
         } else {
-          navigate("/");
+            navigate("/");
         }
-      }, [id]);
+    }, [id]);
     return (
         <div className='study-material-page'>
 
@@ -165,11 +165,11 @@ const StudyMaterial = () => {
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
             <div className="study-material-section">
-                <CourseLinks 
-                activeLink={activeUrl} 
-                coursesOpened={coursesOpened}
-                handleLinkClick={handleLinkClick}
-                handleLinksOpen={handleLinksOpen}
+                <CourseLinks
+                    activeLink={activeUrl}
+                    coursesOpened={coursesOpened}
+                    handleLinkClick={handleLinkClick}
+                    handleLinksOpen={handleLinksOpen}
                 />
                 <div className="study-material-section-right-nav">
                     <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData} />

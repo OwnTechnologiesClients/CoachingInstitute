@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="detail">
           <Link to="/" ><img src={logo} alt="" /></Link><br></br><br></br>
           <div className="message">
-          Embrace innovation with TECH FEVER, the best technology coaching center in India. Elevate your skills with cutting-edge courses, expert instructors, and hands-on projects. Join a dynamic learning environment, backed by a proven track record of success. Fuel your tech aspirations at TECH FEVER and shape your future in the digital world!
+            Embrace innovation with TECH FEVER, the best technology coaching center in India. Elevate your skills with cutting-edge courses, expert instructors, and hands-on projects. Join a dynamic learning environment, backed by a proven track record of success. Fuel your tech aspirations at TECH FEVER and shape your future in the digital world!
           </div>
           <div className="footer-icons">
             <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'><img src={fbicon} width={"25vw"} alt="" /></a>
@@ -46,7 +46,7 @@ const Footer = () => {
           <Link to="#">
             <li>MERN Stack Development</li>
           </Link>
-          
+
         </div>
         <div className="links ">
           <h4>Useful Links</h4>
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
       <div className='bottom-footer' >
         <div className='bottom'>
-          <li><Link to='/onlinecourses/csir-net'>Popular Courses |</Link></li>
+          <li><Link to='/onlinecourses/flutter'>Popular Courses |</Link></li>
           <li><Link to='/contact'>Help Desk |</Link></li>
           <li><Link to='/student-login'>Login</Link></li>
         </div>

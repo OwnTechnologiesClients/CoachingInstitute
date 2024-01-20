@@ -49,7 +49,7 @@ function App() {
             <Route path="/new-batch" element={<NewBatch />} />
             <Route path="/form" element={<Form />} />
             <Route path="/iit-jam" element={<TopCourseIitJam />} />
-            <Route path="/csir-net-jrf" element={<TopCourseCsir />} />
+            <Route path="/flutter-jrf" element={<TopCourseCsir />} />
             <Route path="/gate" element={<TopCourseGate />} />
             <Route path="/scholarship" element={<Scholarship />} />
 

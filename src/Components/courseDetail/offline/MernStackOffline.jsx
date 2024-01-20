@@ -1,5 +1,5 @@
 import React from 'react'
-import mernStackImage from '../../../assets/mern-stack-online.jpg'
+import mernStackImage from '../../../assets/mern-stack-offline.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
 

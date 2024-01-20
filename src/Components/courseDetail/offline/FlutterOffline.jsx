@@ -1,5 +1,5 @@
 import React from 'react'
-import courseImage from '../../../assets/flutter-online.png'
+import courseImage from '../../../assets/flutter-offline.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
 

@@ -44,7 +44,7 @@ const TermCondition = () => {
                         <p><strong>Country</strong> refers to: Delhi,  India</p>
                     </li>
                     <li>
-                        <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Chemtime, 28 B/7/1, Lalitaksh Singh Lakra Marg, Jia Sarai, Hauz Khas, New Delhi, Delhi 110016.</p>
+                        <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to TechFever, 28 B/7/1, Lalitaksh Singh Lakra Marg, Jia Sarai, Hauz Khas, New Delhi, Delhi 110016.</p>
                     </li>
                     <li>
                         <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
@@ -59,7 +59,7 @@ const TermCondition = () => {
                         <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
                     </li>
                     <li>
-                        <p><strong>Website</strong> refers to Chemtime, accessible from <a href="https://chemtime.co.in/" rel="external nofollow noopener" target="_blank">https://chemtime.co.in/</a></p>
+                        <p><strong>Website</strong> refers to TechFever, accessible from <a href="https://TechFever.co.in/" rel="external nofollow noopener" target="_blank">https://TechFever.co.in/</a></p>
                     </li>
                     <li>
                         <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -109,13 +109,13 @@ const TermCondition = () => {
                 <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
                 <ul>
                     <li>
-                        <p>By email: asapchemtime@gmail.com</p>
+                        <p>By email: support@techfever.in</p>
                     </li>
                     <li>
-                        <p>By visiting this page on our website: <a href="chemtime.co.in" rel="external nofollow noopener" target="_blank">chemtime.co.in</a></p>
+                        <p>By visiting this page on our website: <a href="techfever.in" rel="external nofollow noopener" target="_blank">techfever.in</a></p>
                     </li>
                     <li>
-                        <p>By phone number: 8595764714</p>
+                        <p>By phone number: 9910765616 / 9650636804</p>
                     </li>
                 </ul>
 

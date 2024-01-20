@@ -32,19 +32,19 @@ const Footer = () => {
         <div className="courses">
           <h4>Courses</h4>
           <Link to="/onlinecourses/flutter">
-            <li>Flutter Development</li>
+            <li>Mobile App Development</li>
           </Link>
           <Link to="/onlinecourses/reactjs">
-            <li>ReactJs Development</li>
+            <li>Frontend Development</li>
           </Link>
-          <Link to="/onlinecourses/nextjs">
+          {/* <Link to="/onlinecourses/nextjs">
             <li>NextJs Development</li>
-          </Link>
+          </Link> */}
           <Link to="/onlinecourses/nodejs">
-            <li>NodeJs Development</li>
+            <li>Backend Development</li>
           </Link>
           <Link to="/onlinecourses/mern-stack">
-            <li>MERN Stack Development</li>
+            <li>FullStack Development</li>
           </Link>
           <Link to="/offlinecourses/flutter">
             <li>Offline Courses</li>
@@ -64,10 +64,10 @@ const Footer = () => {
             <img src={checkbox} alt="" />
             <Link to="/blog">Blog</Link>
           </div>
-          <div className="link">
+          {/* <div className="link">
             <img src={checkbox} alt="" />
             <Link to="/shipping-policy">Shipping Policy</Link>
-          </div>
+          </div> */}
           <div className="link">
             <img src={checkbox} alt="" />
             <Link to="/terms-condition">Terms & Condition</Link>

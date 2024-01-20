@@ -1,5 +1,5 @@
 import React from 'react'
-import reactjsImage from '../../../assets/reactjs-online.jpg'
+import reactjsImage from '../../../assets/reactjs-offline.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
 

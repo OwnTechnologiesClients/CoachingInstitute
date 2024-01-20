@@ -7,16 +7,6 @@ import './RefundPolicy.scss';
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import achievement from "../../assets/result/achievement-1293132__340.png"
-import WelcomeSection from '../../components/welcomeSection/WelcomeSection'
-import topper1 from "../../assets/result/Toppers Rank-02.png"
-import topper2 from "../../assets/result/Toppers Rank-03.png"
-import topper3 from "../../assets/result/Toppers Rank-04.png"
-import topper4 from "../../assets/result/Toppers Rank-05.png"
-import topper5 from "../../assets/result/Toppers Rank-06.png"
-import topper6 from "../../assets/result/Toppers Rank-07.png"
-import topper7 from "../../assets/result/Toppers Rank-07.png"
-import topper8 from "../../assets/result/Toppers Rank-08.png"
-import topper9 from "../../assets/result/Toppers Rank-09.png"
 import gateToppers from '../../assets/result/gatetoppers.jpg'
 import iitjamToppers from '../../assets/result/iitjamtoppers.jpg'
 import csirToppers from '../../assets/result/csirtoppers.jpg'
@@ -38,131 +28,44 @@ const RefundPolicy = () => {
             <div className='refund-policy-section'>
 
                 <br></br><br></br>
-                <h1>Return and Refund Policy</h1><br></br>
-                <p>The Chemtime Academy works in a transparent manner. Our refund policy ensures that all the refunds are processed in a fair manner. In case, where a student expresses his intention of not attending the institute, and withdrawing his admission, he/she will have to visit the branch/ centre in person and submit his/her application in writing stating the reason for seeking a refund. The date of submission of written application for refund at the branch/ centre will be considered for the purpose of calculation of the refund amount.</p><br></br>
-                <p>1. No Fee Refund Policy for seat booking into Classroom coaching program & Online class program.</p><br></br>
-                <p>2. Fee paid against seat booking ( Classroom or Online program) are non-transferable.</p><br></br>
-                <p>3. In case of excess fee payment, refund stands within 10 working days of receiving such complain.</p><br></br>
-                <p>4. No Fee Refund Policy is available for Postal/Distance Learning/Booklet/Study Materials/Online Test Series/Pen-Drive Video lectures course.</p><br></br>
-                <p>5. In case you feel that the service/product details provided to you are not as per your expectations, you must bring it to the notice of our administrator <br /> &nbsp;&nbsp;&nbsp; Email : hr@chemacademy.co.in Phone : +91-9136597244</p><br></br>
+                <h1>Refund Policy for TechFever.in</h1><br></br>
+                <p>At TechFever.in, we understand that circumstances may arise that could prevent students from attending our classes. We aim to be transparent and fair in our refund policy to ensure the best experience for all participants. Please read the following refund policy carefully:</p><br></br>
+                <h3>1. Eligibility for Refund:</h3><br></br>
+                <p>• If a student is unable to attend our classes due to unforeseen circumstances, they may be eligible for a refund.</p><br></br>
+                <p>• To be eligible, students must notify us of their inability to attend within the first two weeks of the course start date.</p><br></br>
+
+                <h3>2. Non-Refundable Situations:</h3><br></br>
+                <p>• After the initial two-week period, refunds will not be granted for any reason, including but not limited to changes in personal circumstances, work commitments, or other unforeseen events.</p><br></br>
+
+                <h3>3. Refund Amount:</h3><br></br>
+                <p>• If eligible for a refund, the student will receive a 100% refund of the course fee.</p><br></br>
+                <p>• Refunds will be processed within 30 days of receiving the refund request.</p><br></br>
 
 
-                <div className="row">
+                <h3>4. How to Request a Refund:</h3><br></br>
+                <p>• To request a refund, students must submit a written notice explaining the circumstances preventing attendance.</p><br></br>
+                <p>• The request should be sent to support@techfever.in with the subject line "Refund Request - [StudentName]."</p><br></br>
 
-                    <div className="col-md-12 mainimg">
-                        <div className="col-md-3 tpmainimg">
-                            <center><img className='result-img' src={achievement} /></center><br />
-                            <h3>GATE</h3>
-                            <Link to='/result-explore' >
-                                <button className='explore-results'>Explore</button>
-                            </Link>
-                        </div>
 
-                        {/* <div className="col-md-3 tpimages1">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper1} /></center><br />
-                            <p ><b>AIR-1</b></p>
-                            <p >RAVI MAURYA
-                            </p>
-                            <p >BHU</p>
-                        </div>
+                <h3>5. Documentation Requirement:</h3><br></br>
+                <p>• Depending on the circumstances, supporting documentation (e.g., medical certificates, legal documents) may be required to process the refund request.</p><br></br>
 
-                    </div>
-                    <div className="col-md-3 tpimages">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper2} /></center><br />
-                            <p ><b>AIR-3</b></p>
-                            <p >VIVEK BHARDWAJ
-                            </p>
-                            <p >Hindu College</p>
-                        </div>
-                    </div>
-                    <div className="col-md-3 tpimages">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper3} /></center><br />
-                            <p ><b>AIR-6</b></p>
-                            <p >BALDEEP SINGH
-                            </p>
-                            <p >Hindu College</p>
-                        </div>
-                    </div> */}
-                        <img src={gateToppers} alt="" />
-                    </div>
-                    <div className="col-md-12 mainimg">
-                        <div className="col-md-3 tpmainimg">
-                            <center><img className='result-img' src={achievement} /></center><br />
-                            <h3>IIT-JAM </h3>
-                            <Link to='/result-explore' >
-                                <button className='explore-results'>Explore</button>
-                            </Link>
-                        </div>
-                        <img src={iitjamToppers} alt="" />
-                        {/* <div className="col-md-3 tpimages1">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper4} /></center><br />
-                            <p ><b>AIR-1</b></p>
-                            <p >AMARDEEP KUMAR
-                            </p>
-                            <p >Kirorimal College</p>
-                        </div>
-                    </div>
-                    <div className="col-md-3 tpimages">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper5} /></center><br />
-                            <p ><b>AIR-2</b></p>
-                            <p >AOSHEEN ANAND
-                            </p>
-                            <p >Daulatram College</p>
-                        </div>
-                    </div>
-                    <div className="col-md-3 tpimages">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper6} /></center><br />
-                            <p ><b>AIR-3</b></p>
-                            <p >ROHAN GUPTA
-                            </p>
-                            <p >St. Stephen College</p>
-                        </div>
-                    </div> */}
-                    </div>
-                    <div className="col-md-12 mainimg1">
-                        <div className="col-md-3 tpmainimg">
-                            <center><img className='result-img' src={achievement} /></center><br />
-                            <h3>flutter | JRF</h3>
-                            <Link to='/result-explore' >
-                                <button className='explore-results'>Explore</button>
-                            </Link>
-                        </div>
-                        {/* <div className="col-md-3 tpimages1">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper7} /></center><br />
-                            <p ><b>AIR-3</b></p>
-                            <p >ROHAN GUPTA
-                            </p>
-                            <p >JRF (Jun.2019)</p>
-                        </div>
-                    </div>
-                    <div className="col-md-3 tpimages">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper8} /></center><br />
-                            <p ><b>AIR-5</b></p>
-                            <p >SAHIL JAIN
-                            </p>
-                            <p >JRF (Dec.2016)</p>
-                        </div>
-                    </div>
-                    <div className="col-md-3 tpimages">
-                        <div className="toppersimg">
-                            <center><img className='result-img' src={topper9} /></center><br />
-                            <p ><b>AIR-5</b></p>
-                            <p >ARJU</p>
-                            <p >NET (Dec.2016)</p>
-                        </div>
-                    </div> */}
-                        <img src={csirToppers} alt="" />
+                <h3>6. Refund Processing:</h3><br></br>
+                <p>• Once the refund request is received, it will be reviewed by our team.</p><br></br>
+                <p>• If approved, the refund will be processed using the original payment method."</p><br></br>
 
-                    </div>
-                </div>
+                <h3>7. Contact Information:</h3><br></br>
+                <p>• For any questions or concerns regarding the refund policy, please contact our support team at support@techfever.in or 9910765616.</p><br></br>
+
+
+                <p><b>Note:</b> TechFever.in reserves the right to make exceptions to this policy in extenuating circumstances. All decisions regarding refunds are at the discretion of TechFever.in management.</p><br></br>
+                <p>By enrolling in our courses, students acknowledge and agree to abide by the terms outlined in this refund policy.
+
+</p><br></br>
+
+
+
+
             </div>
 
 

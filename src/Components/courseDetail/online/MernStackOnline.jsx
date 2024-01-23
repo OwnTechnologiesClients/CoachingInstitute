@@ -9,42 +9,42 @@ const MernStackOnline = () => {
     let tableFields = [
         [
             "MERN Stack Trainee",
-            "2 Months",
+            "4 Months",
             "3 Days in Week",
-            25000
+            29990
         ],
         [
             "MERN Stack Hustler",
-            "4 Months",
+            "6 Months",
             "3 Days in Week",
-            35000
+            39900
         ],
         [
             "MERN Stack Expert",
-            "6 Months",
+            "8 Months",
             "3 Days in Week",
-            45000
+            49900
         ]
     ]
 
     let recorded = [
         [
             "MERN Stack Trainee",
-            "2 Months",
+            "4 Months",
             "3 Days in Week",
-            9000
+            13990
         ],
         [
             "MERN Stack Hustler",
-            "4 Months",
+            "6 Months",
             "3 Days in Week",
-            14000
+            19990
         ],
         [
             "MERN Stack Expert",
-            "6 Months",
+            "8 Months",
             "3 Days in Week",
-            18000
+            23990
         ]
     ]
     return (

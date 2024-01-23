@@ -5,8 +5,10 @@ import imgSrc1 from '../../assets/bg1.jpg'
 import imgSrc2 from '../../assets/bg2.jpg'
 import imgSrc3 from '../../assets/bg3.jpg'
 import imgSrc4 from '../../assets/bg4.jpg'
-import imgSrc6 from '../../assets/mb-hero-1.jpg'
-import imgSrc7 from '../../assets/mb-hero-2.jpg'
+import imgSrc6 from '../../assets/flutter-banner-mobile.jpg'
+import imgSrc7 from '../../assets/frontend-banner-mobile.jpg'
+import imgSrc8 from '../../assets/backend-banner-mobile.jpg'
+import imgSrc9 from '../../assets/mern-banner-mobile.jpg'
 // import imgSrc3 from '../../assets/bg5.png'
 import 'swiper/css'
 import 'swiper/css/pagination';
@@ -77,6 +79,12 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img src={imgSrc7} className="heroimage" alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={imgSrc8} className="heroimage" alt="" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={imgSrc9} className="heroimage" alt="" />
                             </SwiperSlide>
                         </>
                     )

@@ -10,42 +10,42 @@ const FlutterOnline = () => {
   let tableFields = [
     [
       "Flutter Trainee",
-      "2 Months",
+      "3 Months",
       "3 Days in Week",
-      25000
+      24990
     ],
     [
       "Flutter Hustler",
-      "4 Months",
+      "5 Months",
       "3 Days in Week",
-      35000
+      34990
     ],
     [
       "Flutter Expert",
-      "6 Months",
+      "7 Months",
       "3 Days in Week",
-      45000
+      44990
     ]
   ]
 
   let recorded = [
     [
       "Flutter Trainee",
-      "2 Months",
+      "3 Months",
       "3 Days in Week",
-      9000
+      8990
     ],
     [
       "Flutter Hustler",
-      "4 Months",
+      "5 Months",
       "3 Days in Week",
-      14000
+      13990
     ],
     [
       "Flutter Expert",
-      "6 Months",
+      "7 Months",
       "3 Days in Week",
-      18000
+      17990
     ]
   ]
   return (

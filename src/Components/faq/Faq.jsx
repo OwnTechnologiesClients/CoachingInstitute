@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import './Faq.scss'
-import ss3 from '../../assets/ss3.png'
-import ss2 from '../../assets/ss2.png'
-import ss1 from '../../assets/ss1.jpg'
 import { WelcomeCard } from '../cards/Cards';
 import { Link, useNavigate } from 'react-router-dom';
 

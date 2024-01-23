@@ -7,42 +7,42 @@ const ReactJsOnline = () => {
   let tableFields = [
     [
       "ReactJS Trainee",
-      "2 Months",
+      "3 Months",
       "3 days in week",
-      25000
+      24990
     ],
     [
       "ReactJS Hustler",
-      "4 Months",
+      "5 Months",
       "3 days in week",
-      35000
+      34990
     ],
     [
       "ReactJS Expert",
-      "6 Months",
+      "7 Months",
       "3 days in week",
-      45000
+      44990
     ],
   ]
 
   let recorded = [
     [
       "ReactJS Trainee",
-      "2 Months",
+      "3 Months",
       "3 days in week",
-      9000
+      8990
     ],
     [
       "ReactJS Hustler",
-      "4 Months",
+      "5 Months",
       "3 days in week",
-      14000
+      13990
     ],
     [
       "ReactJS Expert",
-      "6 Months",
+      "7 Months",
       "3 days in week",
-      18000
+      17990
     ]
   ]
   return (

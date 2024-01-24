@@ -1,7 +1,8 @@
 import React from "react";
 import fbicon from "../../assets/icons/facebook.png";
 import yticon from "../../assets/icons/youtube.png";
-import igicon from "../../assets/icons/igfigmaicon.png";
+import linkedinicon from "../../assets/icons/linkedin.png";
+import igicon from "../../assets/icons/instagram.png";
 import logo from "../../assets/logo.png";
 import phoneIcon from "../../assets/icons/newcall.png";
 import clockIcon from "../../assets/clockIcon.png";
@@ -30,16 +31,20 @@ const Header1 = () => {
       </div>
       <div className="top-icons">
         <a
-          href="https://www.facebook.com/chmtime?mibextid=ZbWKwL"
+          href=""
           target="_blank"
         >
           <img src={fbicon} width={"17vw"} alt="" />
         </a>
-        <a href="https://www.youtube.com/@ASAPCHEMTIME" target="_blank">
+        {/* <a href="https://www.youtube.com/@ASAPCHEMTIME" target="_blank">
           <img src={yticon} width={"17vw"} alt="" />
+        </a> */}
+        <a href="https://www.linkedin.com/company/99327442/admin/feed/posts/" target="_blank">
+          <img src={linkedinicon} width={"17vw"} alt="" />
         </a>
+
         <a
-          href="https://www.instagram.com/asapchemtime?igshid=YmMyMTA2M2Y%3D"
+          href="https://www.instagram.com/techfever_official/"
           target="_blank"
         >
           <img src={igicon} width={"17vw"} alt="" />

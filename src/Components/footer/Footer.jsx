@@ -2,7 +2,8 @@ import React from 'react'
 import logo from '../../assets/logo-white.png'
 import fbicon from '../../assets/icons/facebook.png'
 import yticon from '../../assets/icons/youtube.png'
-import igicon from '../../assets/icons/igfigmaicon.png'
+import igicon from '../../assets/icons/instagram.png'
+import linkedinicon from "../../assets/icons/linkedin.png";
 import checkbox from '../../assets/icons/checkbox.png'
 import down from '../../assets/icons/down.png'
 import call from '../../assets/icons/call-blue.png'
@@ -23,9 +24,9 @@ const Footer = () => {
             Embrace innovation with TECH FEVER, the best technology coaching center in India. Elevate your skills with cutting-edge courses, expert instructors, and hands-on projects. Join a dynamic learning environment, backed by a proven track record of success. Fuel your tech aspirations at TECH FEVER and shape your future in the digital world!
           </div>
           <div className="footer-icons">
-            <a href="https://www.facebook.com/chmtime?mibextid=ZbWKwL" target='_blank'><img src={fbicon} width={"25vw"} alt="" /></a>
-            <a href="https://www.youtube.com/@ASAPCHEMTIME" target='_blank'><img src={yticon} width={"25vw"} alt="" /></a>
-            <a href="https://www.instagram.com/asapchemtime?igshid=YmMyMTA2M2Y%3D" target='_blank'><img src={igicon} width={"25vw"} alt="" /></a>
+            <a href="" target='_blank'><img src={fbicon} width={"25vw"} alt="" /></a>
+            <a href="https://www.linkedin.com/company/99327442/admin/feed/posts/" target='_blank'><img src={linkedinicon} width={"25vw"} alt="" /></a>
+            <a href="https://www.instagram.com/techfever_official/" target='_blank'><img src={igicon} width={"25vw"} alt="" /></a>
 
           </div>
         </div>
@@ -62,7 +63,7 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/blog">Blog</Link>
+            <Link to="https://blog.techfever.in/">Blog</Link>
           </div>
           {/* <div className="link">
             <img src={checkbox} alt="" />

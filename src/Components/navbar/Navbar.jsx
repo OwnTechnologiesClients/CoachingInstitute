@@ -212,7 +212,7 @@ const Navbar = () => {
           </div>
         </Link> */}
         <Link
-          to="https://blog.chemtime.co.in/"
+          to="https://blog.techfever.in/"
           onClick={() => handleItemClick("blog")}
         >
           <div className={`menu-item ${activeItem === "blog" ? "active" : ""}`}>

@@ -349,7 +349,7 @@ const NewBatch = () => {
             content: "All Low-Cost Courses"
         },
         {
-            url: "/videos",
+            url: "https://blog.techfever.in/",
             content: "Blogs"
         },
 

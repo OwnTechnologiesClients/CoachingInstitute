@@ -53,9 +53,9 @@ const FlutterOffline = () => {
 
       <Helmet>
         <meta charSet="utf-8" />
-        <title>TECH FEVER: CSIR NET Chemical Sciences Online Courses</title>
-        <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
-        <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
+        <title>Best Offline Mobile App Development Course in Delhi: TechFever</title>
+        <meta name="description" content="Looking for the best and cheapest offline mobile app development course in Delhi? Join TechFever for a 3-month internship and 100% refund guarantee!" />
+        <meta name="keywords" content="best, cheapest, offline, mobile app development, course, Delhi, TechFever, internship, 100% refund guarantee." />
       </Helmet>
 
       <img src={courseImage} alt="" /><br></br><br></br><br></br>

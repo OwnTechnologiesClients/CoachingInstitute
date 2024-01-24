@@ -51,9 +51,9 @@ const NodeJsOffline = () => {
         <div className='online'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Enroll in CUET(PG) Chemistry Online Batch - TECH FEVER</title>
-                <meta name="description" content="Achieve academic excellence with TECH FEVER's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
-                <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
+                <title>Best Offline NodeJS Development Course in Delhi | TechFever</title>
+                <meta name="description" content="Join TechFever for the best and cheapest offline NodeJS development course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee!" />
+                <meta name="keywords" content="best, cheapest, offline, NodeJS Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 
             <img src={nodejsImage} alt="" /><br></br><br></br><br></br>

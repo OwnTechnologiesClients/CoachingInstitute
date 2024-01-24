@@ -49,9 +49,9 @@ const ReactJsOffline = () => {
         <div className='online'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>GATE Chemistry Online Courses in Delhi - Enroll Now with ASAP</title>
-                <meta name="description" content="Join TECH FEVER's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
-                <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
+                <title>The Best Offline ReactJS Development Course in Delhi: TechFever</title>
+                <meta name="description" content="Join TechFever for the best and cheapest offline ReactJS Development course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee!" />
+                <meta name="keywords" content="best, cheapest, offline, ReactJS Development, course, Delhi, TechFever, internship, best, cheapest, offline, ReactJS Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 
             <img src={reactjsImage} alt="" /><br></br><br></br><br></br>

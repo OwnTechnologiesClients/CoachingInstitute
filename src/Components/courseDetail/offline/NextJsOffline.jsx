@@ -52,9 +52,9 @@ const NextJsOffline = () => {
 
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>IIT-JAM Chemistry Online Coaching Delhi - Enroll for Academic Success</title>
-                <meta name="description" content="Join TECH FEVER's IIT-JAM Chemistry Online Batch. Comprehensive syllabus coverage, interactive learning, and flexible options. Enroll today for excellence!" />
-                <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
+                <title>Best Offline NextJS Development Course in Delhi | TechFever</title>
+                <meta name="description" content="Join TechFever for the best and cheapest offline NextJS Development course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee!" />
+                <meta name="keywords" content="best, cheapest, offline, NextJs Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 
             <img src={nextjsImage} alt="" /><br></br><br></br><br></br>

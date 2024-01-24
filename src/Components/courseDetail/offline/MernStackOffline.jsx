@@ -1,6 +1,6 @@
 import React from 'react'
 import mernStackImage from '../../../assets/mern-stack-offline.jpg'
-import CourseTable from '../../courseTable/OnlineCourseTable'
+import CourseTable from '../../courseTable/OfflineCourseTable'
 import { Helmet } from "react-helmet";
 
 
@@ -9,42 +9,42 @@ const MernStackOffline = () => {
     let tableFields = [
         [
             "MERN Stack Trainee",
-            "2 Months",
+            "4 Months",
             "3 Days in Week",
-            25000
+            34990
         ],
         [
             "MERN Stack Hustler",
-            "4 Months",
+            "6 Months",
             "3 Days in Week",
-            35000
+            44990
         ],
         [
             "MERN Stack Expert",
-            "6 Months",
+            "8 Months",
             "3 Days in Week",
-            45000
+            54990
         ]
     ]
 
     let recorded = [
         [
             "MERN Stack Trainee",
-            "2 Months",
+            "4 Months",
             "3 Days in Week",
-            9000
+            17990
         ],
         [
             "MERN Stack Hustler",
-            "4 Months",
+            "6 Months",
             "3 Days in Week",
-            14000
+            23990
         ],
         [
             "MERN Stack Expert",
-            "6 Months",
+            "8 Months",
             "3 Days in Week",
-            18000
+            27990
         ]
     ]
     return (

@@ -92,7 +92,7 @@ const WhyChooseReact = () => {
                     </div>
                     <div className='fact-card-content'>
                         <h2>React Native for Cross-Platform Development:</h2>
-                        <p>The CSIR NET exam is highly competitive, and a well-structured coaching program can make all the difference. At TECH FEVER, we offer both online and offline coaching, allowing you to choose the mode that suits you best.</p>
+                        <p>React Native: Elevate your app development with cross-platform efficiency. Utilizing JavaScript and React, it delivers a single-codebase solution for seamless iOS and Android applications, saving time and costs.</p>
                     </div>
 
                     <div className='fact-card-content'>

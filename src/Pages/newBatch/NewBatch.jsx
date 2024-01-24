@@ -7,6 +7,7 @@ import TestSeriesTable from '../../components/courseTable/TestSeriesTable'
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import CourseTable from '../../components/courseTable/CourseTable';
+import OnlineCourseTable from '../../Components/courseTable/NewBatchOnlineCourseTable';
 import { Link, useNavigate } from 'react-router-dom';
 import './NewBatch.scss'
 
@@ -16,185 +17,185 @@ const NewBatch = () => {
         "offline": [
             [
                 "Flutter Trainee",
-                "2 Months",
+                "3 Months",
                 "3 Days in Week",
-                25000
+                29990
             ],
             [
                 "Flutter Hustler",
-                "4 Months",
+                "5 Months",
                 "3 Days in Week",
-                35000
+                39990
             ],
             [
                 "Flutter Expert",
-                "6 Months",
+                "7 Months",
                 "3 Days in Week",
-                45000
+                49990
             ],
             [
                 "ReactJS Trainee",
-                "2 Months",
+                "3 Months",
                 "3 days in week",
-                25000
+                29990
             ],
             [
                 "ReactJS Hustler",
-                "4 Months",
+                "5 Months",
                 "3 days in week",
-                35000
+                39990
             ],
             [
                 "ReactJS Expert",
-                "6 Months",
+                "7 Months",
                 "3 days in week",
-                45000
+                49990
             ],
             [
                 "NextJS Trainee",
-                "2 Months",
+                "3 Months",
                 "3 days in week",
-                25000
+                29990
             ],
             [
                 "NextJS Hustler",
-                "4 Months",
+                "5 Months",
                 "3 days in week",
-                35000
+                39990
             ],
             [
                 "NextJS Expert",
-                "6 Months",
+                "7 Months",
                 "3 days in week",
-                45000
+                49990
             ],
             [
                 "NodeJS Trainee",
-                "2 Months",
+                "3 Months",
                 "3 Days in Week",
-                25000
+                29990
             ],
             [
                 "NodeJS Hustler",
-                "4 Months",
+                "5 Months",
                 "3 Days in Week",
-                35000
+                39990
             ],
             [
                 "NodeJS Expert",
-                "6 Months",
+                "7 Months",
                 "3 Days in Week",
-                45000
+                49990
             ],
             [
                 "MERN Stack Trainee",
-                "2 Months",
+                "4 Months",
                 "3 Days in Week",
-                25000
+                34990
             ],
             [
                 "MERN Stack Hustler",
-                "4 Months",
+                "6 Months",
                 "3 Days in Week",
-                35000
+                44990
             ],
             [
                 "MERN Stack Expert",
-                "6 Months",
+                "8 Months",
                 "3 Days in Week",
-                45000
+                54990
             ]
         ],
         "online": [
             [
                 "Flutter Trainee",
-                "2 Months",
+                "3 Months",
                 "3 Days in Week",
-                25000
+                24990
             ],
             [
                 "Flutter Hustler",
-                "4 Months",
+                "5 Months",
                 "3 Days in Week",
-                35000
+                34990
             ],
             [
                 "Flutter Expert",
-                "6 Months",
+                "7 Months",
                 "3 Days in Week",
-                45000
+                44990
             ],
             [
                 "ReactJS Trainee",
-                "2 Months",
+                "3 Months",
                 "3 days in week",
-                25000
+                24990
             ],
             [
                 "ReactJS Hustler",
-                "4 Months",
+                "5 Months",
                 "3 days in week",
-                35000
+                34990
             ],
             [
                 "ReactJS Expert",
-                "6 Months",
+                "7 Months",
                 "3 days in week",
-                45000
+                44990
             ],
             [
                 "NextJS Trainee",
-                "2 Months",
+                "3 Months",
                 "3 days in week",
-                25000
+                24990
             ],
             [
                 "NextJS Hustler",
-                "4 Months",
+                "5 Months",
                 "3 days in week",
-                35000
+                34990
             ],
             [
                 "NextJS Expert",
-                "6 Months",
+                "7 Months",
                 "3 days in week",
-                45000
+                44990
             ],
             [
                 "NodeJS Trainee",
-                "2 Months",
+                "3 Months",
                 "3 Days in Week",
-                25000
+                24990
             ],
             [
                 "NodeJS Hustler",
-                "4 Months",
+                "5 Months",
                 "3 Days in Week",
-                35000
+                34990
             ],
             [
                 "NodeJS Expert",
-                "6 Months",
+                "7 Months",
                 "3 Days in Week",
-                45000
+                44990
             ],
             [
                 "MERN Stack Trainee",
-                "2 Months",
+                "4 Months",
                 "3 Days in Week",
-                25000
+                29990
             ],
             [
                 "MERN Stack Hustler",
-                "4 Months",
+                "6 Months",
                 "3 Days in Week",
-                35000
+                39900
             ],
             [
                 "MERN Stack Expert",
-                "6 Months",
+                "8 Months",
                 "3 Days in Week",
-                45000
+                49900
             ],
         ],
         "recorded": [
@@ -376,7 +377,7 @@ const NewBatch = () => {
                     <div className="course-idea" >
                         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ducimus blanditiis assumenda iste aliquid sapiente deleniti soluta in ratione officiis odit deserunt quaerat repellendus quasi aut repudiandae totam accusamus, reprehenderit possimus. Aliquam, dolorem!</p>
                         <h2 className='under-bar'>New Batch</h2> */}
-                        <CourseTable mode={'Online Dashboard'} tableFields={tableFields.online} />
+                        <OnlineCourseTable mode={'Online Dashboard'} tableFields={tableFields.online} />
                         <CourseTable mode={'Offline Dashboard'} tableFields={tableFields.offline} />
                         {/* <CourseTable mode={'Recorded Dashboard'} tableFields={tableFields.recorded} /> */}
                     </div>

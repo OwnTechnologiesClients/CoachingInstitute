@@ -1,6 +1,6 @@
 import React from 'react'
 import nodejsImage from '../../../assets/nodejs-offline.jpg'
-import CourseTable from '../../courseTable/OnlineCourseTable'
+import CourseTable from '../../courseTable/OfflineCourseTable'
 import { Helmet } from "react-helmet";
 
 
@@ -9,42 +9,42 @@ const NodeJsOffline = () => {
     let tableFields = [
         [
             "NodeJS Trainee",
-            "2 Months",
+            "3 Months",
             "3 Days in Week",
-            25000
+            29990
         ],
         [
             "NodeJS Hustler",
-            "4 Months",
+            "5 Months",
             "3 Days in Week",
-            35000
+            39990
         ],
         [
             "NodeJS Expert",
-            "6 Months",
+            "7 Months",
             "3 Days in Week",
-            45000
+            49990
         ]
     ]
 
     let recorded = [
         [
             "NodeJS Trainee",
-            "2 Months",
+            "3 Months",
             "3 Days in Week",
-            9000
+            14990
         ],
         [
             "NodeJS Hustler",
-            "4 Months",
+            "5 Months",
             "3 Days in Week",
-            14000
+            19990
         ],
         [
             "NodeJS Expert",
-            "6 Months",
+            "7 Months",
             "3 Days in Week",
-            18000
+            23990
         ]
     ]
     return (

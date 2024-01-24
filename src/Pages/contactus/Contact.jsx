@@ -13,8 +13,11 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
+import { Helmet } from "react-helmet";
+
 
 const Contact = () => {
+
     // const form = useRef();
     const formRef = useRef();
 
@@ -99,6 +102,12 @@ const Contact = () => {
     }
     return (
         <div className='study-material-page'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact Us | Get in Touch with TechFever Today</title>
+                <meta name="description" content="Have questions or inquiries? Contact TechFever today and get prompt assistance. We are here to help you with your tech needs. Reach out to us now!" />
+                <meta name="keywords" content="contact us, TechFever, inquiry, assistance, tech needs, support, customer service, reach out, questions, prompt response" />
+            </Helmet>
 
             <Header1 />
             <Header2 />

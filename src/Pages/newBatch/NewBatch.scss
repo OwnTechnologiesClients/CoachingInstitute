@@ -179,11 +179,23 @@
 
         @media screen and (max-width:480px) {
 
-            .notification-panel,
+            .notification-panel {
+                margin: 10vw 2.5vw;
+                width: 89vw;
+
+                .marquee-container {
+                    height: 54vh;
+                    // height: 90vw;
+                    position: relative;
+                    overflow: hidden;
+                }
+            }
+
             .quick-panel {
                 margin: 10vw 2.5vw;
                 width: 89vw;
-                min-height: 31.5vh;
+                min-height: 55vh;
+
 
                 h2 {
                     margin: unset;

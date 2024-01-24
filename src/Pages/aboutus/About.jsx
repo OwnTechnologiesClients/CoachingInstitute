@@ -15,9 +15,11 @@ const About = () => {
         <div className='study-material-page'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>About Us</title>
-                <meta name="description" content="Description content" />
+                <title>Best Tech Academy in Delhi | TechFever - Learn and Master the Latest Technologies</title>
+                <meta name="description" content="Join TechFever, the best and cheapest tech academy in Delhi offering offline and online courses. Get a guaranteed 3-month internship and 100% refund guarantee. Enroll now and advance your tech career." />
+                <meta name="keywords" content="tech academy, cheapest tech academy Delhi, offline courses Delhi, online courses Delhi, 3-month internship, 100% refund guarantee, advance tech career" />
             </Helmet>
+            
             <Header1 />
             <Header2 />
             <Navbar />

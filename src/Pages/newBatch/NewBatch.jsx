@@ -9,6 +9,7 @@ import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import CourseTable from '../../components/courseTable/CourseTable';
 import OnlineCourseTable from '../../Components/courseTable/NewBatchOnlineCourseTable';
 import { Link, useNavigate } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import './NewBatch.scss'
 
 const NewBatch = () => {
@@ -356,6 +357,12 @@ const NewBatch = () => {
     ]
     return (
         <div className='test-series-page new-batch-page'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Best Affordable Online and Offline Courses by TechFever</title>
+                <meta name="description" content="Level up your career with TechFever's affordable online and offline courses. Choose from a variety of options to acquire in-demand skills. Enroll now!" />
+                <meta name="keywords" content="TechFever, best courses, affordable courses, online courses, offline courses, career growth, skills training, in-demand skills, enroll now" />
+            </Helmet>
 
             <Header1 />
             <Header2 />

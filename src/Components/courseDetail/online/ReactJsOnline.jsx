@@ -49,9 +49,9 @@ const ReactJsOnline = () => {
     <div className='online'>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>GATE Chemistry Online Courses in Delhi - Enroll Now with ASAP</title>
-        <meta name="description" content="Join TECH FEVER's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
-        <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
+        <title>Enroll in the Top ReactJS Development Course in Delhi: TechFever</title>
+        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 3-month internship and 100% refund guarantee. Enroll now!" />
+        <meta name="keywords" content="reactjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, techfever" />
       </Helmet>
 
       <img src={reactjsImage} alt="" /><br></br><br></br><br></br>

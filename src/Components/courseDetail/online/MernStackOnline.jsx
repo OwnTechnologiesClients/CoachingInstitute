@@ -51,9 +51,9 @@ const MernStackOnline = () => {
         <div className='online'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Enroll in CUET(PG) Chemistry Online Batch - TECH FEVER</title>
-                <meta name="description" content="Achieve academic excellence with TECH FEVER's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
-                <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
+                <title>The Best Fullstack Development Course in Delhi: TechFever</title>
+                <meta name="description" content="Join TechFever for the best and cheapest fullstack development course in Delhi. Get a guaranteed 3 months internship with 100% refund guarantee!" />
+                <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
             </Helmet>
 
             <img src={mernStackImage} alt="" /><br></br><br></br><br></br>

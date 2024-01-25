@@ -12,16 +12,12 @@ import './WhyChooseFlutter.scss'
 
 const WhyChooseFlutter = () => {
 
-
-
-
-
     return (
         <div className="exam-section">
             <div className='top-heading'>
-                <h1>
+                <h2>
                     WHY DID YOU CHOOSE FLUTTER  FOR MOBILE <span className='under-bar'> APP DEVELOPMENT?</span>
-                </h1>
+                </h2>
                 {/* <button>
                     <Link to='/onlinecourses'> View All</Link>
                 </button> */}

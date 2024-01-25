@@ -13,9 +13,9 @@ const WhyChooseMern = () => {
     return (
         <div className="fact-section">
             <div className='top-heading'>
-                <h1>
+                <h2>
                     WHY DO YOU CHOOSE <span className='under-bar'>MERN STACK  DEVELOPMENT?</span>
-                </h1>
+                </h2>
                 {/* <button>
                     <Link to='/onlinecourses'> View All</Link>
                 </button> */}

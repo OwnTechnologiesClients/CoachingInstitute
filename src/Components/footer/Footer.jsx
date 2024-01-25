@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="box" >
           <img src={call} alt="" onClick={handleTelephoneClick} />
           <div onClick={handleTelephoneClick}>
-            <p className='h1'>For More Details</p>
+            <p className='forMoreDetail'>For More Details</p>
             <p className='h2'>+91 9910765616 <br></br>+91 9650636804</p>
           </div>
         </div>

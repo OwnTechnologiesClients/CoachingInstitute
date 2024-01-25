@@ -99,9 +99,9 @@ const RegistrationSection = () => {
   return (
     <div className="registration">
       {isLoading ? <Loader /> : ""}
-      <h1>
+      <p>
         Get A Free <span>Registration</span>!{" "}
-      </h1>
+      </p>
       <form onSubmit={handleSubmit} ref={form}>
         <input
           ref={email}

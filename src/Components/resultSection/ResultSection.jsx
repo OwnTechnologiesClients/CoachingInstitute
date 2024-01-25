@@ -28,9 +28,9 @@ const ResultSection = () => {
         <div className="result-section">
 
             <div className='top-heading'>
-                <h1>
+                <p>
                     A large number of students attained their desired <span className='under-bar'>career at</span>
-                </h1>
+                </p>
                 {/* <button onClick={navigateTo}>
                     View All
                 </button> */}

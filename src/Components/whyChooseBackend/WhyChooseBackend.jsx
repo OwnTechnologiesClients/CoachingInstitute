@@ -16,9 +16,9 @@ const WhyChooseBackend = () => {
     return (
         <div className="mastering-section">
             <div className='top-heading'>
-                <h1>
+                <h2>
                     WHY DO YOU CHOOSE NODEJS AND MONGODB FOR <span className='under-bar'> BACKEND DEVELOPMENT?</span>
-                </h1>
+                </h2>
                 {/* <button>
                     <Link to='/onlinecourses'> View All</Link>
                 </button> */}

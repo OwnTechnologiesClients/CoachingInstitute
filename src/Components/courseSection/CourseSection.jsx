@@ -55,9 +55,9 @@ const CourseSection = () => {
 
         <div className="course-section">
             <div className='top-heading'>
-                <h1>
+                <p>
                     OUR <span className='under-bar'>COURSES</span>
-                </h1>
+                </p>
                 <button onClick={() => navigate('/onlinecourses/flutter')}>
                     <Link to='/onlinecourses/flutter'> View All</Link>
                 </button>

@@ -43,7 +43,7 @@ const StatisticsSection = () => {
         <div className="st-card" key={index}>
           <img src={smile} alt="" />
           <div className="stats">
-            <h1>{statistic.count}+</h1>
+            <bold>{statistic.count}+</bold>
             <p>{statistic.label}</p>
           </div>
         </div>

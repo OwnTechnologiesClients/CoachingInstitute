@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Faq.scss'
+
 import { WelcomeCard } from '../cards/Cards';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -17,14 +18,14 @@ const Faq = () => {
             <div>
                 <div className="message">
 
-                    <h1>Welcome to TECH FEVER Coaching Institute</h1><br></br>
+                    <h2>Welcome to TECH FEVER Coaching Institute</h2><br></br>
                     <p1>Where Innovation Meets Education! At our institute, we are committed to providing a transformative learning experience in the dynamic realm of technology. Get ready to embark on a journey of skill enhancement, innovation, and success. Let's unlock your full potential together! </p1>
                     <div className='top-heading'>
                         <br></br>
 
-                        <h1>
+                        <h2>
                             Frequently Asked Questions <span className='under-bar'>(FAQs)</span>
-                        </h1>
+                        </h2>
 
                     </div>
 

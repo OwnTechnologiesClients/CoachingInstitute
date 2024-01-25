@@ -155,7 +155,7 @@ const WelcomeSection = () => {
         <div className="welcome-section">
             <div>
                 <div className="message">
-                    <h1>Welcome to TECH FEVER: Your Top-Ranked Destination for Expert Coaching in App Development & Web Development! Unlock Your Full Potential with Our </h1>
+                    <h1>Welcome to TECHFEVER: Your Top-Ranked Destination for Expert Coaching in App Development & Web Development! Unlock Your Full Potential with Our </h1>
                     <p className='under-bar'>COMPREHENSIVE PROGRAMS</p>
                     <p1>Elevate your career with TECH FEVER! Gain expertise in app and web development through our industry-focused coaching. Our comprehensive programs include a unique opportunity: a 3-month internship with top-grade companies and startups. Learn from seasoned professionals, work on hands-on projects, and build a stellar portfolio. Our flexible learning options and dedicated career guidance ensure you're job-ready. Join TECH FEVER to not only master development skills but also secure valuable real-world experience. Shape your future with a blend of cutting-edge education and hands-on internships. Explore the possibilities at TECH FEVER – where careers take flight!</p1>
                     {/* <p1>We specialize in delivering high-quality coaching for a diverse range of chemistry-related entrance exams, which include CSIR NET Chemical Sciences, GATE Chemistry, TIFR Chemistry, and more.</p1> */}

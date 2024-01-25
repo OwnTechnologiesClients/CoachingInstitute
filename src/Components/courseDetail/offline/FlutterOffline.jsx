@@ -54,7 +54,7 @@ const FlutterOffline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Best Offline Mobile App Development Course in Delhi: TechFever</title>
-        <meta name="description" content="Looking for the best and cheapest offline mobile app development course in Delhi? Join TechFever for a 3-month internship and 100% refund guarantee!" />
+        <meta name="description" content="Looking for the best and cheapest offline mobile app development course in Delhi? Join TechFever for a 3-month internship and 100% refund guarantee" />
         <meta name="keywords" content="best, cheapest, offline, mobile app development, course, Delhi, TechFever, internship, 100% refund guarantee." />
       </Helmet>
 

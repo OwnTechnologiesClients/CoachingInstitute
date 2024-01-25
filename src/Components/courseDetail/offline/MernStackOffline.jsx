@@ -52,7 +52,7 @@ const MernStackOffline = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Best Offline Fullstack Development Course in Delhi | TechFever </title>
-                <meta name="description" content="Join TechFever for the best and cheapest offline Fullstack course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee! Enroll Now." />
+                <meta name="description" content="Join TechFever for the best and cheapest offline Fullstack course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee Enroll Now." />
                 <meta name="keywords" content="best, cheapest, offline, Fullstack Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 

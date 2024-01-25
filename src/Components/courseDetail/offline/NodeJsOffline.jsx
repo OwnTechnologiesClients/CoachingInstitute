@@ -52,7 +52,7 @@ const NodeJsOffline = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Best Offline NodeJS Development Course in Delhi | TechFever</title>
-                <meta name="description" content="Join TechFever for the best and cheapest offline NodeJS development course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee!" />
+                <meta name="description" content="Join TechFever for the best and cheapest offline NodeJS development course in Delhi. Get a 3-month guaranteed internship and 100% refund guarantee" />
                 <meta name="keywords" content="best, cheapest, offline, NodeJS Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 

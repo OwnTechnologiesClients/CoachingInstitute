@@ -50,7 +50,7 @@ const ReactJsOnline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Enroll in the Top ReactJS Development Course in Delhi: TechFever</title>
-        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 3-month internship and 100% refund guarantee. Enroll now!" />
+        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 3-month internship and 100% refund guarantee. Enroll now" />
         <meta name="keywords" content="reactjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, techfever" />
       </Helmet>
 

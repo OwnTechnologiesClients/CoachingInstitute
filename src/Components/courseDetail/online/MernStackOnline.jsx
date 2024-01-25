@@ -52,7 +52,7 @@ const MernStackOnline = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>The Best Fullstack Development Course in Delhi: TechFever</title>
-                <meta name="description" content="Join TechFever for the best and cheapest fullstack development course in Delhi. Get a guaranteed 3 months internship with 100% refund guarantee!" />
+                <meta name="description" content="Join TechFever for the best and cheapest fullstack development course in Delhi. Get a guaranteed 3 months internship with 100% refund guarantee" />
                 <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
             </Helmet>
 

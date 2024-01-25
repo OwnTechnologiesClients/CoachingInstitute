@@ -55,7 +55,7 @@ const FlutterOnline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>The Best Mobile App Development Course in Delhi: TechFever</title>
-        <meta name="description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 3 months internship and 100% refund guarantee. Enroll now!"/>
+        <meta name="description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 3 months internship and 100% refund guarantee. Enroll now"/>
         <meta name="keywords" content="mobile app development course, Delhi, best, cheapest, internship, guaranteed, 3 months, refund guarantee, TechFever"/>
       </Helmet>
 

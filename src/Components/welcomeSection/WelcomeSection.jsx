@@ -71,9 +71,9 @@ export const WelcomeSubSection = () => {
                     <p1>TECH FEVER prides itself on offering a cutting-edge learning experience with a range of features designed to empower and prepare students for success in the ever-evolving tech landscape. Here's an elaboration on our key course features:</p1>
 
                     <div className="cards">
-                        <WelcomeCard imgSrc={ss1} title="EXPERT INSTRUCTORS" description="Learn from seasoned industry professionals with extensive real-world experience. Benefit from their insights, practical knowledge, and guidance throughout the course." />
-                        <WelcomeCard imgSrc={ss2} title="HANDS-ON PROJECTS" description="Translate theoretical knowledge into practical skills with hands-on projects. Build a robust portfolio showcasing your ability to apply concepts to real-world scenarios." />
-                        <WelcomeCard imgSrc={ss3} title="FLEXIBLE LEARNING" description="Life can be busy; that's why we offer flexible learning options, including online courses and part-time schedules." />
+                        <WelcomeCard imgSrc={ss1} title="EXPERT INSTRUCTORS" description="Learn from seasoned industry professionals with extensive real-world experience. Benefit from their insights, practical knowledge, and guidance throughout the course." alttag="expert instructor image" caption="showing expert instructor image in TechFever"/>
+                        <WelcomeCard imgSrc={ss2} title="HANDS-ON PROJECTS" description="Translate theoretical knowledge into practical skills with hands-on projects. Build a robust portfolio showcasing your ability to apply concepts to real-world scenarios." alttag="hands on project image" caption="showing hands on project image in TechFever"/>
+                        <WelcomeCard imgSrc={ss3} title="FLEXIBLE LEARNING" description="Life can be busy; that's why we offer flexible learning options, including online courses and part-time schedules." alttag="flexible learning image" caption="showing flexible learning image in TechFever"/>
                     </div>
 
 
@@ -81,9 +81,9 @@ export const WelcomeSubSection = () => {
                     <p1>At our technology institute, we go beyond education – we cultivate an environment that nurtures innovation, fosters collaboration, and prepares you for a successful and fulfilling career in the dynamic world of technology.</p1>
 
                     <div className="cards">
-                        <WelcomeCard imgSrc={ss4} title="GURANTEED INTERNSHIP" description="Our internship program is unmatched. We have direct partnerships with innovative companies and fast-growing startups across industries. Through our connections, we are able to place students into meaningful intern roles where they gain valuable on-the-job experience." />
-                        <WelcomeCard imgSrc={ss5} title="PERSONALIZED ATTENTION" description="Enjoy a personalized learning experience with smaller class sizes and individualized attention from instructors. Receive tailored feedback to ensure your understanding and progress throughout the program." />
-                        <WelcomeCard imgSrc={ss6} title="CUTTING-EDGE CURRICULUM" description="Our curriculum is meticulously designed to encompass the latest trends and advancements in technology. Stay ahead of the curve with a syllabus that reflects the ever-evolving industry landscape." />
+                        <WelcomeCard imgSrc={ss4} title="GURANTEED INTERNSHIP" description="Our internship program is unmatched. We have direct partnerships with innovative companies and fast-growing startups across industries. Through our connections, we are able to place students into meaningful intern roles where they gain valuable on-the-job experience." alttag="guranteed internship image" caption="showing image for guranteed internship in TechFever" />
+                        <WelcomeCard imgSrc={ss5} title="PERSONALIZED ATTENTION" description="Enjoy a personalized learning experience with smaller class sizes and individualized attention from instructors. Receive tailored feedback to ensure your understanding and progress throughout the program." alttag="personalized attention image" caption="showing image for personalized attention in TechFever"/>
+                        <WelcomeCard imgSrc={ss6} title="CUTTING-EDGE CURRICULUM" description="Our curriculum is meticulously designed to encompass the latest trends and advancements in technology. Stay ahead of the curve with a syllabus that reflects the ever-evolving industry landscape." alttag="cutting edge curriculum image" caption="showing image for cutting edge curriculum in TechFever"/>
                     </div>
                 </div>
             </div>

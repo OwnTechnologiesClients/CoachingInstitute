@@ -54,7 +54,7 @@ const ReactJsOffline = () => {
                 <meta name="keywords" content="best, cheapest, offline, ReactJS Development, course, Delhi, TechFever, internship, best, cheapest, offline, ReactJS Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 
-            <img src={reactjsImage} alt="" /><br></br><br></br><br></br>
+            <img src={reactjsImage} alt="ReactJS offline course" caption="Showing TechFever reactjs offline course image" /><br></br><br></br><br></br>
 
             <h1>India's Best Reactjs Offline Course With Certificate & 3-month Internship</h1>
             <p>Are you looking to learn Reactjs and launch your career as a front-end developer?</p>

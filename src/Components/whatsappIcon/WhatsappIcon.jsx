@@ -8,7 +8,7 @@ const WhatsappIcon = () => {
         href="https://wa.me/+919910765616?text="
         target="_blank"
       ><img
-          src={waicon} alt=""
+          src={waicon} alt="whatsapp icon" caption="showing whatsapp icon to click for contact"
         />
       </a>
     </div>

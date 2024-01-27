@@ -56,7 +56,7 @@ const NodeJsOnline = () => {
                 <meta name="keywords" content="nodejs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, TechFever" />
             </Helmet>
 
-            <img src={nodejsImage} alt="" /><br></br><br></br><br></br>
+            <img src={nodejsImage} alt="NodeJS online course" caption="Showing TechFever NodeJS online course image" /><br></br><br></br><br></br>
 
             <h1>Introducing The Ultimate Node.js Online Course With Certificate & 3-Month Internship</h1>
             <p>Want to become a Node.js expert and land a high-paying job as a full-stack JavaScript developer? Look no further than our comprehensive Node.js online course.</p>

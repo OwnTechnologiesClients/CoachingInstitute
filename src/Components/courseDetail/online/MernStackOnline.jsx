@@ -56,7 +56,7 @@ const MernStackOnline = () => {
                 <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
             </Helmet>
 
-            <img src={mernStackImage} alt="" /><br></br><br></br><br></br>
+            <img src={mernStackImage} alt="MERN-stack online course" caption="Showing TechFever MERN-stack online course image" /><br></br><br></br><br></br>
 
             <h1>India’s Best MERN Stack Online Course With Certificate & 3-month Internship</h1>
             <p>Do you want to master the MERN stack and become a full-stack web developer? Look no further - this is India’s best MERN stack course with a guaranteed 3-month internship and course completion certificate.</p>

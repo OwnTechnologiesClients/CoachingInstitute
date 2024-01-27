@@ -57,7 +57,7 @@ const NextJsOffline = () => {
                 <meta name="keywords" content="best, cheapest, offline, NextJs Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 
-            <img src={nextjsImage} alt="" /><br></br><br></br><br></br>
+            <img src={nextjsImage} alt="NextJS offline course" caption="Showing TechFever NextJS offline course image" /><br></br><br></br><br></br>
 
             <h1>India's Best Nextjs Offline Course With Certificate & 3-month Internship</h1>
             <p>Are you looking to master Nextjs and become a world-class frontend developer? We have the perfect course for you - India's Best Nextjs Offline Course. </p>

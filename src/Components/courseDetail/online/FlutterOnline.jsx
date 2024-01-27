@@ -59,7 +59,7 @@ const FlutterOnline = () => {
         <meta name="keywords" content="mobile app development course, Delhi, best, cheapest, internship, guaranteed, 3 months, refund guarantee, TechFever"/>
       </Helmet>
 
-      <img src={courseImage} alt="" /><br></br><br></br><br></br>
+      <img src={courseImage} alt="flutter online course" caption="Showing TechFever flutter online course image" /><br></br><br></br><br></br>
       <h1>India’s Best Flutter Online Course With Certificate & 3-month Internship</h1>
       <p>Are you looking to master Flutter app development and land a high-paying job as a Flutter developer? We offer India's best Flutter online course with certification and a 3-month internship opportunity.</p>
       <p>Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. Flutter is trending and in high demand, with over 200,000+ Flutter apps on the Play Store. Learning Flutter can open you up to many career opportunities as a Flutter developer.

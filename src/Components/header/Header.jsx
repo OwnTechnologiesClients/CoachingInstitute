@@ -34,20 +34,20 @@ const Header1 = () => {
           href=""
           target="_blank"
         >
-          <img src={fbicon} width={"17vw"} alt="" />
+          <img src={fbicon} width={"17vw"} alt="facebook" caption="facebook icon" />
         </a>
         {/* <a href="https://www.youtube.com/@ASAPCHEMTIME" target="_blank">
           <img src={yticon} width={"17vw"} alt="" />
         </a> */}
         <a href="https://www.linkedin.com/company/99327442/admin/feed/posts/" target="_blank">
-          <img src={linkedinicon} width={"17vw"} alt="" />
+          <img src={linkedinicon} width={"17vw"} alt="linkedin" caption="linkedin icon"/>
         </a>
 
         <a
           href="https://www.instagram.com/techfever_official/"
           target="_blank"
         >
-          <img src={igicon} width={"17vw"} alt="" />
+          <img src={igicon} width={"17vw"} alt="instagram" caption="instagram icon" />
         </a>
       </div>
     </div>
@@ -62,12 +62,12 @@ const Header2 = () => {
     <div className="top-contact">
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" caption="TechFever Logo" />
         </Link>
       </div>
       <div className="contact-header-2" onClick={handleTelephoneClick}>
         <div className="img">
-          <img src={phoneIcon} alt="" />
+          <img src={phoneIcon} alt="call" caption="dialing call icon"/>
         </div>
         <div className="detail-header-2">
           <h2>9910765616</h2>

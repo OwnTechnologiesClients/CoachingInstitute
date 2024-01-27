@@ -122,21 +122,21 @@ const Contact = () => {
             <div className="contact-page-section">
                 <div className="contact-cards">
                     <div className="card">
-                        <img src={locationIcon} alt="" />
+                        <img src={locationIcon} alt="location" caption="location icon" />
                         <div>
                             <h2>OUR OFFICE LOCATION</h2>
                             <p>C-717, JVTS Garden, Chhatarpur, New Delhi - 110074</p>
                         </div>
                     </div>
                     <div className="card">
-                        <img src={callIcon} alt="" />
+                        <img src={callIcon} alt="call" caption="call icon"/>
                         <div>
                             <h2>OUR CONTACT NUMBER</h2>
                             <p>+91 9910765616 / 9650636804</p>
                         </div>
                     </div>
                     <div className="card">
-                        <img src={mailIcon} alt="" />
+                        <img src={mailIcon} alt="mail" caption="mail icon" />
                         <div>
                             <h2>OUR CONTACT EMAIL</h2>
                             <p>support@techfever.in</p>

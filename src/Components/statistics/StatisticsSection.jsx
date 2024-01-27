@@ -41,7 +41,7 @@ const StatisticsSection = () => {
     <div className="statistics">
       {statistics.map((statistic, index) => (
         <div className="st-card" key={index}>
-          <img src={smile} alt="" />
+          <img src={smile} alt="smile face" caption="showing result with smile face icon" />
           <div className="stats">
             <bold>{statistic.count}+</bold>
             <p>{statistic.label}</p>

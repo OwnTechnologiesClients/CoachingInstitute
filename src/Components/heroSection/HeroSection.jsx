@@ -60,31 +60,31 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     window.innerWidth > 600 ? (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc1} className="heroimage" alt="" />
+                                <img src={imgSrc1} className="heroimage" alt="flutter course banner" caption="flutter course banner image" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc2} className="heroimage" alt="" />
+                                <img src={imgSrc2} className="heroimage" alt="frontend development banner" caption="frontend development course banner image"  />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc3} className="heroimage" alt="" />
+                                <img src={imgSrc3} className="heroimage" alt="backend development banner" caption="backend development course banner image" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc4} className="heroimage" alt="" />
+                                <img src={imgSrc4} className="heroimage" alt="MERN stack development banner" caption="MERN development course banner image" />
                             </SwiperSlide>
                         </>
                     ) : (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc6} className="heroimage" alt="" />
+                                <img src={imgSrc6} className="heroimage" alt="flutter mobile version banner" caption="flutter development course banner image for mobile version website" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc7} className="heroimage" alt="" />
+                                <img src={imgSrc7} className="heroimage" alt="frontend mobile version banner" caption="frontend development course banner image for mobile version website"  />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc8} className="heroimage" alt="" />
+                                <img src={imgSrc8} className="heroimage" alt="backend mobile version banner" caption="backend development course banner image for mobile version website" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc9} className="heroimage" alt="" />
+                                <img src={imgSrc9} className="heroimage" alt="mern-stack mobile version banner" caption="mern-stack development course banner image for mobile version website" />
                             </SwiperSlide>
                         </>
                     )

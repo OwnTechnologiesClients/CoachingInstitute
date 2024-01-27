@@ -57,7 +57,7 @@ const NextJsOnline = () => {
         <meta name="keywords" content="nextjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, TechFever" />
       </Helmet>
 
-      <img src={nextjsImage} alt="" /><br></br><br></br><br></br>
+      <img src={nextjsImage} alt="NextJS online course" caption="Showing TechFever NextJS online course image" /><br></br><br></br><br></br>
 
       <h1>India's Best Nextjs Online Course With Certificate & 3-month Internship</h1>
       <p>Are you looking to master Nextjs and become a world-class frontend developer? We have the perfect course for you - India's Best Nextjs Online Course. </p>

@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <nav id="navbar" className={stickyClass}>
       <div className="menu-icon">
-        <img src={hamburger} onClick={toggleMenu} alt="" />
+        <img src={hamburger} onClick={toggleMenu} alt="menu" caption="menu icon for mobile version"/>
         {!["Home", "videos", "contact", "about"].includes(activeItem) ? (
           <div onClick={handleClopen}> All Courses</div>
         ) : (
@@ -90,16 +90,16 @@ const Navbar = () => {
                 : ""
               }`}
           >
-            Courses <img src={darrow} alt="" />
+            Courses <img src={darrow} alt="down arrow" caption="down arrow to show sub menu" />
             <div className="dropdown">
               <div className="dropdown-content">
                 <Link to="/onlinecourses/flutter">
                   Online Courses{" "}
-                  <img style={{ paddingLeft: "1vw" }} src={rightarrow} />{" "}
+                  <img style={{ paddingLeft: "1vw" }} src={rightarrow} alt="right arrow" caption="right arrow to show for next screen"/>{" "}
                 </Link>
                 <Link to="/offlinecourses/flutter">
                   Offline Courses{" "}
-                  <img style={{ paddingLeft: "1vw" }} src={rightarrow} />{" "}
+                  <img style={{ paddingLeft: "1vw" }} src={rightarrow} alt="right arrow" caption="right arrow to show for next screen" />{" "}
                 </Link>
               </div>
             </div>

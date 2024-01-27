@@ -56,7 +56,7 @@ const NodeJsOffline = () => {
                 <meta name="keywords" content="best, cheapest, offline, NodeJS Development, course, Delhi, TechFever, internship, 100% refund guarantee" />
             </Helmet>
 
-            <img src={nodejsImage} alt="" /><br></br><br></br><br></br>
+            <img src={nodejsImage} alt="NodeJS offline course" caption="Showing TechFever nodejs offline course image" /><br></br><br></br><br></br>
 
             <h1>Introducing The Ultimate Node.js Offline Course With Certificate & 3-Month Internship</h1>
             <p>Want to become a Node.js expert and land a high-paying job as a full-stack JavaScript developer? Look no further than our comprehensive Node.js online course.</p>

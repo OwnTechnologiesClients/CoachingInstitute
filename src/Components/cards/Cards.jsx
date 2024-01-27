@@ -6,7 +6,7 @@ import queryString from 'query-string';
 import { useDispatch } from 'react-redux';
 import { SetActiveCourse } from '../../redux/userSlice'
 
-const WelcomeCard = ({ imgSrc, title, description }) => {
+const WelcomeCard = ({ imgSrc, title, description, alttag, caption }) => {
 
     // function extractVideoId(url) {
     //     // Regular expression to match YouTube video ID in various URL formats
@@ -45,7 +45,7 @@ const WelcomeCard = ({ imgSrc, title, description }) => {
 
     return (
         <div className='welcome-card'>
-            <img src={imgSrc} alt="" />
+            <img src={imgSrc} alt={alttag} caption={caption} />
             <div >
                 <h2 className='under-bar'>{title}</h2>
                 <p>{description}</p>
@@ -53,7 +53,7 @@ const WelcomeCard = ({ imgSrc, title, description }) => {
         </div>
     )
 }
-const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail,url }) => {
+const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail, url }) => {
 
     const navigate = useNavigate()
     const dispatch = useDispatch();

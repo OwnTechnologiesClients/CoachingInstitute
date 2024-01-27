@@ -1,21 +1,21 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './ResultSection.scss'
-import topper1 from "../../assets/result/amazon.png"
-import topper2 from "../../assets/result/google.png"
-import topper3 from "../../assets/result/paypal.png"
-import topper4 from "../../assets/result/salesforce.png"
-import topper5 from "../../assets/result/samsung.png"
-import topper6 from "../../assets/result/deloitee.png"
-import topper7 from "../../assets/result/airtel.png"
-import topper8 from "../../assets/result/hitachi.png"
-import topper9 from "../../assets/result/microsoft.png"
-import topper10 from "../../assets/result/ibm.png"
-import topper11 from "../../assets/result/goldman.png"
-import topper12 from "../../assets/result/isro.png"
-import topper13 from "../../assets/result/jpmorgan.png"
-import topper14 from "../../assets/result/mercedes-benz.png"
-import topper15 from "../../assets/result/netapp.png"
+import amazonImg from "../../assets/result/amazon.png"
+import googleImg from "../../assets/result/google.png"
+import paypalImg from "../../assets/result/paypal.png"
+import salesforceImg from "../../assets/result/salesforce.png"
+import samsungImg from "../../assets/result/samsung.png"
+import deloiteeImg from "../../assets/result/deloitee.png"
+import airtelImg from "../../assets/result/airtel.png"
+import hitachiImg from "../../assets/result/hitachi.png"
+import microsoftImg from "../../assets/result/microsoft.png"
+import ibmImg from "../../assets/result/ibm.png"
+import goldmanImg from "../../assets/result/goldman.png"
+import isroImg from "../../assets/result/isro.png"
+import jpmorganImg from "../../assets/result/jpmorgan.png"
+import mercedesBenzImg from "../../assets/result/mercedes-benz.png"
+import netapp from "../../assets/result/netapp.png"
 
 const ResultSection = () => {
     const navigate = useNavigate();
@@ -40,28 +40,28 @@ const ResultSection = () => {
 
                 <div className="col-md-3 tpimages1">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper1} /></center><br />
+                        <center><img className='result-img' src={amazonImg} alt="amazon logo" caption="amazon logo to show techfever company placement" /></center><br />
                     </div>
 
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper2} /></center><br />
+                        <center><img className='result-img' src={googleImg} alt="google logo" caption="google logo to show techfever company placement" /></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper3} /></center><br />
+                        <center><img className='result-img' src={paypalImg} alt="paypal logo" caption="paypal logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper4} /></center><br />
+                        <center><img className='result-img' src={salesforceImg} alt="salesforce logo" caption="salesforce logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper5} /></center><br />
+                        <center><img className='result-img' src={samsungImg} alt="samsung logo" caption="samsung logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
 
@@ -71,28 +71,28 @@ const ResultSection = () => {
 
                 <div className="col-md-3 tpimages1">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper6} /></center><br />
+                        <center><img className='result-img' src={deloiteeImg} alt="deloitee logo" caption="deloitee logo to show techfever company placement"/></center><br />
                     </div>
 
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper7} /></center><br />
+                        <center><img className='result-img' src={airtelImg} alt="airtel logo" caption="airtel logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper8} /></center><br />
+                        <center><img className='result-img' src={hitachiImg} alt="hitachi logo" caption="hitachi logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper9} /></center><br />
+                        <center><img className='result-img' src={microsoftImg} alt="microsoft logo" caption="microsoft logo to show techfever company placement" /></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper10} /></center><br />
+                        <center><img className='result-img' src={ibmImg} alt="ibm logo" caption="ibm logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
 
@@ -103,28 +103,28 @@ const ResultSection = () => {
 
                 <div className="col-md-3 tpimages1">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper11} /></center><br />
+                        <center><img className='result-img' src={goldmanImg} alt="goldman logo" caption="goldman logo to show techfever company placement" /></center><br />
                     </div>
 
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper12} /></center><br />
+                        <center><img className='result-img' src={isroImg} alt="isro logo" caption="isro logo to show techfever company placement" /></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper13} /></center><br />
+                        <center><img className='result-img' src={jpmorganImg} alt="jpmorgan logo" caption="jpmorgan logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper14} /></center><br />
+                        <center><img className='result-img' src={mercedesBenzImg} alt="mercedes benz logo" caption="mercedes benz logo to show techfever company placement"/></center><br />
                     </div>
                 </div>
                 <div className="col-md-3 tpimages">
                     <div className="toppersimg">
-                        <center><img className='result-img' src={topper15} /></center><br />
+                        <center><img className='result-img' src={netapp} alt="netapp logo" caption="netapp logo to show techfever company placement" /></center><br />
                     </div>
                 </div>
 

@@ -19,14 +19,14 @@ const Footer = () => {
     <div>
       <div className='footer'>
         <div className="detail">
-          <Link to="/" ><img src={logo} alt="" /></Link><br></br><br></br>
+          <Link to="/" ><img src={logo} alt="TechFever Logo" caption="TechFever Logo"  /></Link><br></br><br></br>
           <div className="message">
             Embrace innovation with TECH FEVER, the best technology coaching center in India. Elevate your skills with cutting-edge courses, expert instructors, and hands-on projects. Join a dynamic learning environment, backed by a proven track record of success. Fuel your tech aspirations at TECH FEVER and shape your future in the digital world!
           </div>
           <div className="footer-icons">
-            <a href="" target='_blank'><img src={fbicon} width={"25vw"} alt="" /></a>
-            <a href="https://www.linkedin.com/company/99327442/admin/feed/posts/" target='_blank'><img src={linkedinicon} width={"25vw"} alt="" /></a>
-            <a href="https://www.instagram.com/techfever_official/" target='_blank'><img src={igicon} width={"25vw"} alt="" /></a>
+            <a href="" target='_blank'><img src={fbicon} width={"25vw"} alt="facebook" caption="Facebook icon" /></a>
+            <a href="https://www.linkedin.com/company/99327442/admin/feed/posts/" target='_blank'><img src={linkedinicon} width={"25vw"} alt="Linkedin" caption="Linkedin icon" /></a>
+            <a href="https://www.instagram.com/techfever_official/" target='_blank'><img src={igicon} width={"25vw"} alt="instagram" caption="Instagram icon" /></a>
 
           </div>
         </div>
@@ -58,11 +58,11 @@ const Footer = () => {
           <h4>Useful Links</h4>
 
           <div className="link">
-            <img src={checkbox} alt="" />
+            <img src={checkbox} alt="Checkbox" caption="Checkbox icon" />
             <Link to="/about">About us</Link>
           </div>
           <div className="link">
-            <img src={checkbox} alt="" />
+            <img src={checkbox} alt="Checkbox" caption="Checkbox icon" />
             <Link to="https://blog.techfever.in/">Blog</Link>
           </div>
           {/* <div className="link">
@@ -70,21 +70,21 @@ const Footer = () => {
             <Link to="/shipping-policy">Shipping Policy</Link>
           </div> */}
           <div className="link">
-            <img src={checkbox} alt="" />
+            <img src={checkbox} alt="Checkbox" caption="Checkbox icon" />
             <Link to="/terms-condition">Terms & Condition</Link>
           </div>
           <div className="link">
-            <img src={checkbox} alt="" />
+            <img src={checkbox} alt="Checkbox" caption="Checkbox icon" />
             <Link to="/privacy-policy">Privacy & Policy</Link>
           </div>
           <div className="link">
-            <img src={checkbox} alt="" />
+            <img src={checkbox} alt="Checkbox" caption="Checkbox icon" />
             <Link to="/refund-policy">Refund Policy</Link>
           </div>
 
         </div>
         <div className="box" >
-          <img src={call} alt="" onClick={handleTelephoneClick} />
+          <img src={call} alt="Call" caption="Call icon" onClick={handleTelephoneClick} />
           <div onClick={handleTelephoneClick}>
             <p className='forMoreDetail'>For More Details</p>
             <p className='h2'>+91 9910765616 <br></br>+91 9650636804</p>
@@ -101,7 +101,7 @@ const Footer = () => {
           <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by TechFever</p>
         </div>
         <div className='smooth-up'>
-          <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><img src={down} alt="" /></a>
+          <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><img src={down} alt="Up-Arrow" caption="Up-Arrow icon to go on top" /></a>
         </div>
       </div>
     </div>

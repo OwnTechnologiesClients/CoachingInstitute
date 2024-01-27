@@ -54,7 +54,7 @@ const ReactJsOnline = () => {
         <meta name="keywords" content="reactjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, techfever" />
       </Helmet>
 
-      <img src={reactjsImage} alt="" /><br></br><br></br><br></br>
+      <img src={reactjsImage} alt="ReactJS online course" caption="Showing TechFever ReactJS online course image" /><br></br><br></br><br></br>
 
       <h1>India's Best Reactjs Online Course With Certificate & 3-month Internship</h1>
       <p>Are you looking to learn Reactjs and launch your career as a front-end developer?</p>

@@ -3,7 +3,6 @@ import Navbar from "../../Components/navbar/Navbar";
 import { Header1, Header2 } from "../../components/header/Header";
 import "./TestSeries.scss";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
-import courseDetailImg from "../../assets/courseDetail.png";
 import TestSeriesTable from "../../components/courseTable/TestSeriesTable";
 import Footer from "../../Components/footer/Footer";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";

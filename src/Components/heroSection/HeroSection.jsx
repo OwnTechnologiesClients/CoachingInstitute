@@ -9,7 +9,6 @@ import imgSrc6 from '../../assets/flutter-banner-mobile.jpg'
 import imgSrc7 from '../../assets/frontend-banner-mobile.jpg'
 import imgSrc8 from '../../assets/backend-banner-mobile.jpg'
 import imgSrc9 from '../../assets/mern-banner-mobile.jpg'
-// import imgSrc3 from '../../assets/bg5.png'
 import 'swiper/css'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

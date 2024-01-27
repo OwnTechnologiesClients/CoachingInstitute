@@ -2,14 +2,9 @@ import React from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg5 from '../../assets/bg5.png'
 import './PrivacyPolicy.scss';
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
-import achievement from "../../assets/result/achievement-1293132__340.png"
-import gateToppers from '../../assets/result/gatetoppers.jpg'
-import iitjamToppers from '../../assets/result/iitjamtoppers.jpg'
-import csirToppers from '../../assets/result/csirtoppers.jpg'
 import { Link } from 'react-router-dom'
 const PrivacyPolicy = () => {
     return (
@@ -19,11 +14,11 @@ const PrivacyPolicy = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg5}
                 hd1={"REFUND POLICY"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
 
             <div className='refund-policy-section'>
 

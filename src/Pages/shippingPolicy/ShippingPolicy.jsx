@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg5 from '../../assets/bg5.png'
 import './ShippingPolicy.scss';
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'

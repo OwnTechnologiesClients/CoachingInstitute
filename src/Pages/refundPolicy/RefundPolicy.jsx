@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg5 from '../../assets/bg5.png'
 import './RefundPolicy.scss';
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
@@ -19,11 +18,11 @@ const RefundPolicy = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg5}
                 hd1={"REFUND POLICY"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
 
             <div className='refund-policy-section'>
 

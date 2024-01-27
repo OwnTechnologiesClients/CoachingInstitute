@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./History.scss"
-import courseImg from '../../../assets/course-img.png'
 import { Header1, Header2 } from '../../../components/header/Header'
 import Navbar from '../../../Components/navbar/Navbar'
 import axios from 'axios'

@@ -3,7 +3,6 @@ import axios from 'axios';
 import './SearchUser.scss'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import courseImg from '../../../assets/course-img.png'
 import pdficon from '../../../assets/icons/pdf.png'
 import { Header1, Header2 } from '../../../components/header/Header'
 import Navbar from '../../../Components/navbar/Navbar'

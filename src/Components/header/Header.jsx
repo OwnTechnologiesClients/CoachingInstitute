@@ -55,7 +55,7 @@ const Header1 = () => {
 };
 const Header2 = () => {
   const handleTelephoneClick = () => {
-    const phoneNumber = "tel:+918595764714";
+    const phoneNumber = "tel:+919910765616";
     window.location.href = phoneNumber;
   };
   return (

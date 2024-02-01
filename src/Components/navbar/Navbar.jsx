@@ -212,8 +212,8 @@ const Navbar = () => {
           </div>
         </Link> */}
         <Link
-          to="https://blog.techfever.in/"
-          onClick={() => handleItemClick("blog")}
+          to="https://www.linkedin.com/company/techfever/posts/?feedView=articles&viewAsMember=true" target = "_blank" 
+          onClick={() => {handleItemClick("blog"),target = "_blank" } }
         >
           <div className={`menu-item ${activeItem === "blog" ? "active" : ""}`}>
             Blog

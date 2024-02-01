@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="Checkbox" caption="Checkbox icon" />
-            <Link to="https://blog.techfever.in/">Blog</Link>
+            <Link to="https://www.linkedin.com/company/techfever/posts/?feedView=articles&viewAsMember=true" target='_blank'>Blog</Link>
           </div>
           {/* <div className="link">
             <img src={checkbox} alt="" />

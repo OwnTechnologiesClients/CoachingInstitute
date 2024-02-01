@@ -58,7 +58,7 @@ export const WelcomeSubSection = () => {
             content: "All Low-Cost Courses"
         },
         {
-            url: "https://blog.techfever.in/",
+            url: "https://www.linkedin.com/company/techfever/posts/?feedView=articles&viewAsMember=true",
             content: "Blogs"
         },
 

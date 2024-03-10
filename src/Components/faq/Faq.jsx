@@ -51,7 +51,7 @@ const Faq = () => {
                     <br></br>
 
                     <h5>Q: Will I be awarded a certificate upon finishing the course, in addition to an internship certificate?</h5>
-                    <p1>A: Upon completing the course, you will receive a certificate of completion. Additionally, after finishing the entire internship program, you will be given an internship certificate as well.</p1>
+                    <p1>A: Upon completing the course, you will receive a Certificate of Course Completion. Additionally, after finishing the entire internship program, you will be given an internship certificate as well.</p1>
 
                     <br></br>
                     <br></br>

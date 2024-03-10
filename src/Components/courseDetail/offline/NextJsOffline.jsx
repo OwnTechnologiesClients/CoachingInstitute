@@ -72,7 +72,7 @@ const NextJsOffline = () => {
 
             </ul>
 
-            <p>Upon completing the course, you will receive a certificate of completion and a guaranteed 3-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
+            <p>Upon completing the course, you will receive a Certificate of Course Completion and a guaranteed 3-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
             <p>This is a unique opportunity to learn Nextjs from industry experts through offline sessions. The course curriculum is constantly updated to keep up with the latest updates in the React ecosystem. </p>
             <p>Don't miss out on India's Best Nextjs Offline Course and the chance to land a high-paying job as a Nextjs developer. Enroll now!</p>
 

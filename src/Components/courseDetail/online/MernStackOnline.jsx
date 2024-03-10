@@ -2,6 +2,7 @@ import React from 'react'
 import mernStackImage from '../../../assets/mern-stack-online.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
+import MernTabs from '../../mernPricing/tabs/MernTabs';
 
 
 const MernStackOnline = () => {
@@ -52,6 +53,8 @@ const MernStackOnline = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>The Best Fullstack Development Course in Delhi: TechFever</title>
+                <link rel="canonical" href="https://techfever.in/onlinecourses/mern-stack" />
+
                 <meta name="description" content="Join TechFever for the best and cheapest fullstack development course in Delhi. Get a guaranteed 3 months internship with 100% refund guarantee" />
                 <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
             </Helmet>
@@ -103,9 +106,10 @@ const MernStackOnline = () => {
             <p>With over 100+ graduates placed in top companies, this is India's highest rated MERN stack course.</p>
             <p>Enroll now and get certified in the most in-demand web stack! Launch your career as a MERN stack developer with guaranteed internship and job assistance.</p>
 
+            <MernTabs />
 
-            <CourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
-            <CourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} />
+            {/* <CourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
+            <CourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} /> */}
             {/* <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br> */}
 
             <h3>Registration Procedure:</h3>

@@ -2,6 +2,7 @@ import React from 'react'
 import nodejsImage from '../../../assets/nodejs-online.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
+import NodeTabs from '../../nodePricing/tabs/NodeTabs';
 
 
 const NodeJsOnline = () => {
@@ -87,9 +88,10 @@ const NodeJsOnline = () => {
             <p>So don't wait any longer! Enroll now in our Node.js online course and get certified, land an internship, and start your journey to becoming a Node.js master.</p>
             <p>This is the fastest path to a lucrative career in one of today's most in-demand web development skills. Click below to get started!</p>
 
+            <NodeTabs />
 
-            <CourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
-            <CourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} />
+            {/* <CourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
+            <CourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} /> */}
             {/* <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br> */}
 
             <h3>Registration Procedure:</h3>

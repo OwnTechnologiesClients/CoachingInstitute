@@ -2,6 +2,7 @@ import React from 'react'
 import nextjsImage from '../../../assets/nextjs-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
+import NextTabs from '../../nextPricing/tabs/NextTabs';
 
 const NextJsOnline = () => {
 
@@ -72,7 +73,7 @@ const NextJsOnline = () => {
 
       </ul>
 
-      <p>Upon completing the course, you will receive a certificate of completion and a guaranteed 3-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
+      <p>Upon completing the course, you will receive a Certificate of Course Completion and a guaranteed 3-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
       <p>This is a unique opportunity to learn Nextjs from industry experts through online sessions. The course curriculum is constantly updated to keep up with the latest updates in the React ecosystem. </p>
       <p>Don't miss out on India's Best Nextjs Online & Offline Course and the chance to land a high-paying job as a Nextjs developer. Enroll now!</p>
 
@@ -83,9 +84,10 @@ const NextJsOnline = () => {
         <li> • IIT-JAM Chemistry Online Batch (6 Months, 1 year, and 2 years Recorded)</li>
       </ul> */}
 
+      <NextTabs />
 
-      <OnlineCourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
-      <OnlineCourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} />
+      {/* <OnlineCourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
+      <OnlineCourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} /> */}
       {/* <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br> */}
 
       <h3>Registration Procedure:</h3>

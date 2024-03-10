@@ -76,7 +76,7 @@ const ReactJsOffline = () => {
 
             <h3>Upon completing the course, you get:</h3>
             <ul>
-                <li> • <h6>A certificate of completion from us to showcase your new skills</h6></li>
+                <li> • <h6>A Certificate of Course Completion from us to showcase your new skills</h6></li>
                 <li> • <h6>3 months of guaranteed internship at a tech startup</h6></li>
                 <li> • <h6>Lifetime access to course materials and updates</h6></li>
                 <li> • <h6>Exclusive job referrals and career coaching</h6></li>

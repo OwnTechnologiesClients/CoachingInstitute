@@ -2,6 +2,7 @@ import React from 'react'
 import reactjsImage from '../../../assets/reactjs-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
+import ReactTabs from '../../reactPricing/tabs/ReactTabs';
 
 const ReactJsOnline = () => {
   let tableFields = [
@@ -49,8 +50,10 @@ const ReactJsOnline = () => {
     <div className='online'>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Enroll in the Top ReactJS Development Course in Delhi: TechFever</title>
-        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 3-month internship and 100% refund guarantee. Enroll now" />
+        <title>Enroll in the Top ReactJS Development Course in Delhi: TechFever </title>
+        <link rel="canonical" href="https://techfever.in/onlinecourses/reactjs" />
+
+        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 3-month internship and 100% refund guarantee. Enroll now" data-rh="true" />
         <meta name="keywords" content="reactjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, techfever" />
       </Helmet>
 
@@ -76,7 +79,7 @@ const ReactJsOnline = () => {
 
       <h3>Upon completing the course, you get:</h3>
       <ul>
-        <li> • <h6>A certificate of completion from us to showcase your new skills</h6></li>
+        <li> • <h6>A Certificate of Course Completion from us to showcase your new skills</h6></li>
         <li> • <h6>3 months of guaranteed internship at a tech startup</h6></li>
         <li> • <h6>Lifetime access to course materials and updates</h6></li>
         <li> • <h6>Exclusive job referrals and career coaching</h6></li>
@@ -87,9 +90,10 @@ const ReactJsOnline = () => {
       <p>Don't miss out on this opportunity to become a Reactjs expert and land an amazing job. Enroll today in India's best Reactjs course and fast track your career as a front-end developer!</p>
 
 
+      <ReactTabs />
 
-      <OnlineCourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
-      <OnlineCourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} />
+      {/* <OnlineCourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
+      <OnlineCourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} /> */}
       {/* <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br> */}
 
       <h3>Registration Procedure:</h3>

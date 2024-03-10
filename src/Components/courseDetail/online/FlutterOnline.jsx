@@ -3,6 +3,7 @@ import './Online.scss'
 import courseImage from '../../../assets/flutter-online.png'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
+import FlutterTabs from '../../flutter/tabs/FlutterTabs';
 
 
 const FlutterOnline = () => {
@@ -55,8 +56,8 @@ const FlutterOnline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>The Best Mobile App Development Course in Delhi: TechFever</title>
-        <meta name="description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 3 months internship and 100% refund guarantee. Enroll now"/>
-        <meta name="keywords" content="mobile app development course, Delhi, best, cheapest, internship, guaranteed, 3 months, refund guarantee, TechFever"/>
+        <meta name="description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 3 months internship and 100% refund guarantee. Enroll now" />
+        <meta name="keywords" content="mobile app development course, Delhi, best, cheapest, internship, guaranteed, 3 months, refund guarantee, TechFever" />
       </Helmet>
 
       <img src={courseImage} alt="flutter online course" caption="Showing TechFever flutter online course image" /><br></br><br></br><br></br>
@@ -93,9 +94,11 @@ const FlutterOnline = () => {
       </ol> */}
 
 
+      <FlutterTabs />
 
-      <CourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} />
-      <CourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} /><br></br><br></br>
+
+      {/* <CourseTable mode={"Online Dashboard With Internship"} tableFields={tableFields} /> */}
+      {/* <CourseTable mode={"Online Dashboard Without Internship"} tableFields={recorded} /><br></br><br></br> */}
       {/* <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br> */}
 
       <h3>Registration Procedure:</h3>

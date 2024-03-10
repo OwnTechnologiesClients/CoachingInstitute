@@ -1,11 +1,11 @@
 import React from 'react'
 import "./SixMonthPrice.scss";
 
-// import BronzeSection from '../flutter/bronze/BronzeSection'
-import BronzeSection from '../../flutter/bronze/BronzeSection'
-import SilverSection from '../../flutter/silver/SilverSection';
-import GoldSection from '../../flutter/gold/GoldSection';
-// import PlatinumSection from '../../flutter/platinum/PlatinumSection';
+// import BronzeSection from '../nextPricing/bronze/BronzeSection'
+import BronzeSection from '../../nextPricing/bronze/BronzeSection'
+import SilverSection from '../../nextPricing/silver/SilverSection';
+import GoldSection from '../../nextPricing/gold/GoldSection';
+// import PlatinumSection from '../../nextPricing/platinum/PlatinumSection';
 
 const SixMonthPrice = () => {
     return (

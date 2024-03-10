@@ -15,7 +15,7 @@ const GoldOneYearSection = () => {
     <main className="flutter-gold-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">GOLD 1 Year</h3>
+          <h3 className="text-head">GOLD 6 Months</h3>
         </section>
 
         <section className="col-section">

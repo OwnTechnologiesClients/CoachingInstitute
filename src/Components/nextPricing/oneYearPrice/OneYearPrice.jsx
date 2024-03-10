@@ -1,14 +1,14 @@
 import React from 'react'
 import "./OneYearPrice.scss";
 
-import BronzeSection from '../../flutter/bronze/BronzeSection'
-import BronzeOneYearSection from '../../flutter/bronze/oneYear/BronzeOneYearSection'
-import SilverSection from '../../flutter/silver/SilverSection';
-import GoldSection from '../../flutter/gold/GoldSection';
+import BronzeSection from '../../nextPricing/bronze/BronzeSection'
+import BronzeOneYearSection from '../../nextPricing/bronze/oneYear/BronzeOneYearSection'
+import SilverSection from '../../nextPricing/silver/SilverSection';
+import GoldSection from '../../nextPricing/gold/GoldSection';
 
-import SilverOneYearSection from '../../flutter/silver/oneYear/SilverOneYearSection';
-import GoldOneYearSection from '../../flutter/gold/oneYear/GoldOneYearSection';
-// import PlatinumOneYearSection from '../../flutter/platinum/oneYear/PlatinumOneYearSection';
+import SilverOneYearSection from '../../nextPricing/silver/oneYear/SilverOneYearSection';
+import GoldOneYearSection from '../../nextPricing/gold/oneYear/GoldOneYearSection';
+// import PlatinumOneYearSection from '../../nextPricing/platinum/oneYear/PlatinumOneYearSection';
 
 const OneYearPrice = () => {
     return (

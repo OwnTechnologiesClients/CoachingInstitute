@@ -15,13 +15,13 @@ const SilverOneYearSection = () => {
     <main className="flutter-silver-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">SILVER 6 Months</h3>
+          <h3 className="text-head">GOLD 4 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
             <span className="right-value">₹ 3,749 / Month</span>
-            <span className="left-value">₹ 5,949</span>
+            <span className="left-value">₹ 7,749</span>
           </div>
 
           <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">

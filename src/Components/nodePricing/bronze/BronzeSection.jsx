@@ -12,16 +12,16 @@ const BronzeSection = () => {
   };
 
   return (
-    <main className="price-container">
+    <main className="node-price-container">
       <div className="price-template">
-        <section className="head-section">
-          <h3 className="text-head">BRONZE 6 Months</h3>
+      <section className="head-section">
+          <h3 className="text-head">BRONZE 2 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 4,999</span>
-            <span className="left-value">₹ 12,095</span>
+            <span className="right-value">₹ 1,125 / Month</span>
+            <span className="left-value">₹ 3,125</span>
           </div>
 
           <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">
@@ -29,152 +29,125 @@ const BronzeSection = () => {
               Enroll Now
             </div>
           </Link>
-          <div className="pricing">
-            <span className="pri">FEATURES</span>
-            <span className="pri">PRICING</span>
+
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Live Classes</p>
+            </div>
+            {/* <p className="inr">₹ 6999</p> */}
+          </div>
+          <div className="live">
+            <div className="img-text">
+              <img src={Cross} alt="" />
+              <p>2 Months Internship </p>
+            </div>
+            {/* <p className="inr">₹ 6999</p> */}
           </div>
 
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Pre Recorded Lectures</p>
+              <p>Certificate of Course Completion</p>
             </div>
-            <p className="inr">₹ 6999</p>
           </div>
           <div className="live">
             <div className="img-text">
               <img src={Cross} alt="" />
-              <p>Live Sessions</p>
+              <p>Internship Certificate </p>
             </div>
-            <p>₹ 9999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
-              <img src={Cross} alt="" />
-              <p>Recording of Live Sessions</p>
-            </div>
-            <p>₹ 7999</p>
+            {/* <p className="inr">₹ 6999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Teacher Handouts</p>
+              <p>Amazon, Airbnb & multiple projects </p>
             </div>
-            <p className="inr">₹ 999</p>
+            {/* <p className="inr">₹ 6999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>
-                3000+ Questions <br />
-                Practice Books Soft Copy
-              </p>
+              <p>Industry standard curriculum by expert</p>
             </div>
-            <p className="inr">₹ 1999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
-              <img src={Cross} alt="" />
-              <p>
-                3000+ Questions <br />
-                Practice Books hard Copy
-              </p>
-            </div>
-            <p>₹ 2999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
-              <img src={Cross} alt="" />
-              <p>Subtopicwise Tests</p>
-            </div>
-            <p>₹ 499</p>
+            {/* <p>₹ 9999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Unitwise Tests</p>
+              <p>1:1 live doubt support (Unlimited)</p>
             </div>
-            <p className="inr">
-              ₹ 499 Per <br /> 39*1 Tests
-            </p>
+            {/* <p>₹ 7999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Final Mock Test</p>
+              <p>Live Doubt Class</p>
             </div>
-            <p className="inr">₹ 499</p>
+            {/* <p className="inr">₹ 999</p> */}
           </div>
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Dedicated relationship manager		</p>
+            </div>
+            {/* <p className="inr">₹ 1999</p> */}
+          </div>
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Cancel anytime in first 14 days, full refundable.</p>
+            </div>
+            {/* <p className="inr">₹ 499</p> */}
+          </div>
+
           {showAll && (
             <>
-              <div className="live">
+              <div className="tags">
                 <div className="img-text">
-                  <img src={Cross} alt="" />
+                  <img src={Tick} alt="" />
                   <p>
-                    Previous Year <br />
-                    Questions Tests
+                    Dedicated, focused, personalised placement assistance.
                   </p>
                 </div>
-                <p>₹ 499</p>
+                {/* <p>₹ 2999</p> */}
+              </div>
+              <div className="tags">
+                <div className="img-text">
+                  <img src={Tick} alt="" />
+                  <p>Peer Interaction and network building</p>
+                </div>
+                {/* <p>₹ 499</p> */}
+              </div>
+              <div className="tags">
+                <div className="img-text">
+                  <img src={Tick} alt="" />
+                  <p>1:1 Domain Expert Sessions</p>
+                </div>
+                {/* <p className="inr">
+              ₹ 499 Per <br /> 39*1 Tests
+            </p> */}
+              </div>
+
+              <div className="tags">
+                <div className="img-text">
+                  <img src={Tick} alt="" />
+                  <p>
+                    Real Life and Industry Grade Projects
+                  </p>
+                </div>
+                {/* <p>₹ 499</p> */}
               </div>
               <div className="tags">
                 <div className="img-text">
                   <img src={Tick} alt="" />
                   <p>
-                    Subtopicwise <br />
-                    PYQs Books Soft Copy
+                    LIVE sessions on how to get a job, resume, freelance, open source & more
                   </p>
                 </div>
-                <p className="inr">₹ 600</p>
+                {/* <p className="inr">₹ 600</p> */}
               </div>
-              <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>
-                    Subtopicwise <br />
-                    PYQs Books hard Copy
-                  </p>
-                </div>
-                <p>₹ 1100</p>
-              </div>
-              <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>Theory Booklets</p>
-                </div>
-                <p>₹ 6000</p>
-              </div>
-              <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>
-                    30 Days Crash <br />
-                    Course & Test Series
-                  </p>
-                </div>
-                <p>₹ 1100</p>
-              </div>
-              <div className="tags">
-                <div className="img-text">
-                  <img src={Tick} alt="" />
-                  <p>General Aptitude </p>
-                </div>
-                <p className="inr">₹ 999</p>
-              </div>
-              <div className="tags">
-                <div className="img-text">
-                  <img src={Tick} alt="" />
-                  <p>24x7 Doubt Resolution</p>
-                </div>
-                <p className="inr">Priceless</p>
-              </div>
-              <div className="tags">
-                <div className="img-text">
-                  <img src={Tick} alt="" />
-                  <p>Price (Inc. GST)</p>
-                </div>
-                <p className="inr">18%</p>
-              </div>
+
             </>
           )}
           <div className="btns">

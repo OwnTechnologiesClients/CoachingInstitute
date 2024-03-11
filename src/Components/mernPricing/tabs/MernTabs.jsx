@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import OneYearPrice from "../../flutter/oneYearPrice/OneYearPrice";
+import OneYearPrice from "../../mernPricing/oneYearPrice/OneYearPrice";
 // import SixMonthPrice from "../sixMonthPrice/SixMonthPrice";
-import SixMonthPrice from "../../flutter/sixMonthPrice/SixMonthPrice";
+import SixMonthPrice from "../../mernPricing/sixMonthPrice/SixMonthPrice";
 import "./MernTabs.scss";
 
 

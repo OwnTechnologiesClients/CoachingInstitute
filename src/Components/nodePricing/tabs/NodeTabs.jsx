@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import OneYearPrice from "../../flutter/oneYearPrice/OneYearPrice";
+import OneYearPrice from "../../nodePricing/oneYearPrice/OneYearPrice";
 // import SixMonthPrice from "../sixMonthPrice/SixMonthPrice";
-import SixMonthPrice from "../../flutter/sixMonthPrice/SixMonthPrice";
+import SixMonthPrice from "../../nodePricing/sixMonthPrice/SixMonthPrice";
 import "./NodeTabs.scss";
 
 

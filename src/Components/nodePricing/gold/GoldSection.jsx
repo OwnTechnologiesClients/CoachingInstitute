@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../gold/GoldSection.scss";
+import "./GoldSection.scss";
 import Tick from "../../../assets/icons/gold-tick.png";
 import Cross from "../../../assets/icons/gold-cross.png";
 import { Link } from 'react-router-dom';
@@ -14,7 +14,8 @@ const GoldSection = () => {
 
   return (
     <main className="node-gold-price-container">
-       <section className="head-section">
+      <div className="price-template">
+        <section className="head-section">
           <h3 className="text-head">GOLD 6 Months</h3>
         </section>
 
@@ -24,7 +25,7 @@ const GoldSection = () => {
             <span className="left-value">₹ 6,625</span>
           </div>
 
-          <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">
+          <Link to='https://rzp.io/l/kpPmZOT' target="_blank">
             <div className="button-data">
               Enroll Now
             </div>
@@ -157,7 +158,9 @@ const GoldSection = () => {
             </button>
           </div>
         </section>
-    </main>
+      </div>
+
+    </main >
   );
 };
 

@@ -56,8 +56,23 @@ const FlutterOnline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>The Best Mobile App Development Course in Delhi: TechFever</title>
-        <meta name="description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 3 months internship and 100% refund guarantee. Enroll now" />
+        <meta name="description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 2 months internship and 100% refund guarantee. Enroll now" />
         <meta name="keywords" content="mobile app development course, Delhi, best, cheapest, internship, guaranteed, 3 months, refund guarantee, TechFever" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="https://techfever.in/onlinecourses/flutter" />
+
+        <meta property="og:title" content="The Best Mobile App Development Course in Delhi: TechFever" />
+        <meta property="og:description" content="Join TechFever, the best and cheapest mobile app development course in Delhi. Get 2 months internship and 100% refund guarantee. Enroll now" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://techfever.in/onlinecourses/flutter" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="TechFever" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1788" />
+        <meta property="og:image:height" content="838" />
       </Helmet>
 
       <img src={courseImage} alt="flutter online course" caption="Showing TechFever flutter online course image" /><br></br><br></br><br></br>

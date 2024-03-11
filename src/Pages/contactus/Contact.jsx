@@ -106,6 +106,22 @@ const Contact = () => {
                 <title>Contact Us | Get in Touch with TechFever Today</title>
                 <meta name="description" content="Have questions or inquiries? Contact TechFever today and get prompt assistance. We are here to help you with your tech needs. Reach out to us now" />
                 <meta name="keywords" content="contact us, TechFever, inquiry, assistance, tech needs, support, customer service, reach out, questions, prompt response" />
+
+        
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+                <link rel="canonical" href="https://techfever.in/contact" />
+
+                <meta property="og:title" content="Contact Us | Get in Touch with TechFever Today" />
+                <meta property="og:description" content="Have questions or inquiries? Contact TechFever today and get prompt assistance. We are here to help you with your tech needs. Reach out to us now" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://techfever.in/contact" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="TechFever" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1788" />
+                <meta property="og:image:height" content="838" />
             </Helmet>
 
             <Header1 />
@@ -128,7 +144,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={callIcon} alt="call" caption="call icon"/>
+                        <img src={callIcon} alt="call" caption="call icon" />
                         <div>
                             <h2>OUR CONTACT NUMBER</h2>
                             <p>+91 9910765616 / 9650636804</p>

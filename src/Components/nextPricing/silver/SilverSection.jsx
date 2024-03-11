@@ -13,7 +13,7 @@ const SilverSection = () => {
   };
 
   return (
-    <main className="silver-price-container">
+    <main className="next-silver-price-container">
 
       <div className="price-template">
         <section className="head-section">

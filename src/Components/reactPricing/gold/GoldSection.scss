@@ -1,4 +1,4 @@
-.gold-price-container {
+.react-gold-price-container {
   font-family: "Poppins";
 
   .price-template {
@@ -177,7 +177,7 @@
 }
 
 @media screen and (max-width: "480px") {
-  .gold-price-container {
+  .react-gold-price-container {
     margin-bottom: 5vw;
     margin-top: 3vw;
 
@@ -190,7 +190,7 @@
         .text-head {
           padding: 11px 0px;
           text-align: center;
-          font-size: 5vw;
+          font-size: 4vw;
         }
       }
 
@@ -220,17 +220,17 @@
           padding: 8px 0px;
 
           .right-value {
-            font-size: 6vw;
+            font-size: 5vw;
           }
 
           .left-value {
-            font-size: 6vw;
+            font-size: 5vw;
 
             &::before {
-              width: 35vw;
+              width: 23vw;
               position: absolute;
               top: 50%;
-              left: -6vw;
+              left: -3vw;
               height: 2px;
               background-color: black;
               transform: translateY(-50%);
@@ -244,7 +244,7 @@
           padding: 2px 0px;
 
           .pri {
-            font-size: 4vw;
+            font-size: 3vw;
           }
         }
 
@@ -262,12 +262,12 @@
             }
 
             p {
-              font-size: 4vw;
+              font-size: 3vw;
             }
           }
 
           p {
-            font-size: 4vw;
+            font-size: 3vw;
           }
         }
 

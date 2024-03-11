@@ -350,7 +350,7 @@ const NewBatch = () => {
             content: "All Low-Cost Courses"
         },
         {
-            url: "https://www.linkedin.com/company/techfever/posts/?feedView=articles&viewAsMember=true", 
+            url: "https://www.linkedin.com/company/techfever/posts/?feedView=articles&viewAsMember=true",
             content: "Blogs"
         },
 
@@ -362,6 +362,22 @@ const NewBatch = () => {
                 <title>Best Affordable Online and Offline Courses by TechFever</title>
                 <meta name="description" content="Level up your career with TechFever's affordable online and offline courses. Choose from a variety of options to acquire in-demand skills. Enroll now!" />
                 <meta name="keywords" content="TechFever, best courses, affordable courses, online courses, offline courses, career growth, skills training, in-demand skills, enroll now" />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+                <link rel="canonical" href="https://techfever.in/new-batch" />
+
+                <meta property="og:title" content="Best Affordable Online and Offline Courses by TechFever" />
+                <meta property="og:description" content="Level up your career with TechFever's affordable online and offline courses. Choose from a variety of options to acquire in-demand skills. Enroll now!" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://techfever.in/new-batch" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="TechFever" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1788" />
+                <meta property="og:image:height" content="838" />
+
             </Helmet>
 
             <Header1 />

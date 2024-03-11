@@ -19,7 +19,7 @@ const Footer = () => {
     <div>
       <div className='footer'>
         <div className="detail">
-          <Link to="/" ><img src={logo} alt="TechFever Logo" caption="TechFever Logo"  /></Link><br></br><br></br>
+          <Link to="/" ><img src={logo} alt="TechFever Logo" caption="TechFever Logo" /></Link><br></br><br></br>
           <div className="message">
             Embrace innovation with TECH FEVER, the best technology coaching center in India. Elevate your skills with cutting-edge courses, expert instructors, and hands-on projects. Join a dynamic learning environment, backed by a proven track record of success. Fuel your tech aspirations at TECH FEVER and shape your future in the digital world!
           </div>

@@ -43,11 +43,11 @@ function App() {
             {/* <Route path="/offlinecourses/:id" element={<OfflineCourse />} /> */}
             {/* <Route path="/testseries/:id" element={<TestSeries />} /> */}
             {/* <Route path="/studymaterial/:id" element={<StudyMaterial />} /> */}
-            <Route path="/videos" element={<PopularVideos />} />
+            {/* <Route path="/videos" element={<PopularVideos />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/new-batch" element={<NewBatch />} />
-            <Route path="/form" element={<Form />} />
+            {/* <Route path="/form" element={<Form />} /> */}
             {/* <Route path="/iit-jam" element={<TopCourseIitJam />} />
             <Route path="/flutter-jrf" element={<TopCourseCsir />} />
             <Route path="/gate" element={<TopCourseGate />} />
@@ -62,7 +62,7 @@ function App() {
 
             {/* <Route path="/form-print" element={<FormPrint />} /> */}
             <Route path="/refund-policy" element={<RefundPolicy />} />
-            <Route path="/shipping-policy" element={<ShippingPolicy />} />
+            {/* <Route path="/shipping-policy" element={<ShippingPolicy />} /> */}
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-condition" element={<TermCondition />} />
             {/* <Route path="/result" element={<Result />} /> */}

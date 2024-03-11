@@ -13,7 +13,7 @@ const GoldSection = () => {
   };
 
   return (
-    <main className="gold-price-container">
+    <main className="react-gold-price-container">
       <div className="price-template">
       <section className="head-section">
           <h3 className="text-head">GOLD 6 Months</h3>

@@ -51,10 +51,24 @@ const ReactJsOnline = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Enroll in the Top ReactJS Development Course in Delhi: TechFever </title>
+
+        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 2-month internship and 100% refund guarantee. Enroll now" data-rh="true" />
+        <meta name="keywords" content="reactjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, techfever" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://techfever.in/onlinecourses/reactjs" />
 
-        <meta name="description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 3-month internship and 100% refund guarantee. Enroll now" data-rh="true" />
-        <meta name="keywords" content="reactjs development course, Delhi, best, cheapest, guaranteed 3 months internship, 100% refund guarantee, techfever" />
+        <meta property="og:title" content="Enroll in the Top ReactJS Development Course in Delhi: TechFever " />
+        <meta property="og:description" content="TechFever offers the best and cheapest ReactJS development course in Delhi with a 2-month internship and 100% refund guarantee. Enroll now" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://techfever.in/onlinecourses/reactjs" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="TechFever" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1788" />
+        <meta property="og:image:height" content="838" />
       </Helmet>
 
       <img src={reactjsImage} alt="ReactJS online course" caption="Showing TechFever ReactJS online course image" /><br></br><br></br><br></br>

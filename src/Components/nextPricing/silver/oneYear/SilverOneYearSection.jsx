@@ -12,7 +12,7 @@ const SilverOneYearSection = () => {
   };
 
   return (
-    <main className="silver-price-container">
+    <main className="next-silver-price-container">
       <div className="price-template">
         <section className="head-section">
           <h3 className="text-head">SILVER 4 Months</h3>

@@ -15,10 +15,25 @@ const About = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Best Tech Academy in Delhi | TechFever - Learn and Master the Latest Technologies</title>
-                <meta name="description" content="Join TechFever, the best and cheapest tech academy in Delhi offering offline and online courses. Get a guaranteed 3-month internship and 100% refund guarantee. Enroll now and advance your tech career." />
+                <meta name="description" content="Join TechFever, the best and affordable tech academy in Delhi offering offline and online courses. Get a guaranteed 2-month internship and 100% refund guarantee. Enroll now and advance your tech career." />
                 <meta name="keywords" content="tech academy, cheapest tech academy Delhi, offline courses Delhi, online courses Delhi, 3-month internship, 100% refund guarantee, advance tech career" />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+                <link rel="canonical" href="https://techfever.in/about" />
+
+                <meta property="og:title" content="Best Tech Academy in Delhi | TechFever - Learn and Master the Latest Technologies" />
+                <meta property="og:description" content="Join TechFever, the best and affordable tech academy in Delhi offering offline and online courses. Get a guaranteed 2-month internship and 100% refund guarantee. Enroll now and advance your tech career." />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://techfever.in/about" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="TechFever" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1788" />
+                <meta property="og:image:height" content="838" />
             </Helmet>
-            
+
             <Header1 />
             <Header2 />
             <Navbar />

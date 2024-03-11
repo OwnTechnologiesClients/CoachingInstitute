@@ -10,9 +10,34 @@ import gateToppers from '../../assets/result/gatetoppers.jpg'
 import iitjamToppers from '../../assets/result/iitjamtoppers.jpg'
 import csirToppers from '../../assets/result/csirtoppers.jpg'
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
+
 const RefundPolicy = () => {
     return (
         <div className='study-material-page'>
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Rufund Policy: TechFever</title>
+
+                <meta name="description" content="Join TechFever for the best and affordable tech course in Delhi. Get a guaranteed 2 months internship with 100% refund guarantee" />
+                <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+                <link rel="canonical" href="https://techfever.in/refund-policy" />
+
+                <meta property="og:title" content="Rufund Policy: TechFever" />
+                <meta property="og:description" content="Join TechFever for the best and affordable tech course in Delhi. Get a guaranteed 2 months internship with 100% refund guarantee" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://techfever.in/refund-policy" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="TechFever" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1788" />
+                <meta property="og:image:height" content="838" />
+            </Helmet>
 
             <Header1 />
             <Header2 />
@@ -60,7 +85,7 @@ const RefundPolicy = () => {
                 <p><b>Note:</b> TechFever.in reserves the right to make exceptions to this policy in extenuating circumstances. All decisions regarding refunds are at the discretion of TechFever.in management.</p><br></br>
                 <p>By enrolling in our courses, students acknowledge and agree to abide by the terms outlined in this refund policy.
 
-</p><br></br>
+                </p><br></br>
 
 
 

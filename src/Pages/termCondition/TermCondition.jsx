@@ -10,9 +10,34 @@ import gateToppers from '../../assets/result/gatetoppers.jpg'
 import iitjamToppers from '../../assets/result/iitjamtoppers.jpg'
 import csirToppers from '../../assets/result/csirtoppers.jpg'
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
+
 const TermCondition = () => {
     return (
         <div className='study-material-page'>
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Terms & Conditions: TechFever</title>
+
+                <meta name="description" content="Join TechFever for the best and affordable tech course in Delhi. Get a guaranteed 2 months internship with 100% refund guarantee" />
+                <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+                <link rel="canonical" href="https://techfever.in/terms-condition" />
+
+                <meta property="og:title" content="Terms & Conditions: TechFever" />
+                <meta property="og:description" content="Join TechFever for the best and affordable tech course in Delhi. Get a guaranteed 2 months internship with 100% refund guarantee" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://techfever.in/terms-condition" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="TechFever" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1788" />
+                <meta property="og:image:height" content="838" />
+            </Helmet>
 
             <Header1 />
             <Header2 />

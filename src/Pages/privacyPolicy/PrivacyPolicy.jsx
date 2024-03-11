@@ -6,9 +6,35 @@ import './PrivacyPolicy.scss';
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
+
+
 const PrivacyPolicy = () => {
     return (
         <div className='study-material-page'>
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Privacy Policy: TechFever</title>
+
+                <meta name="description" content="Join TechFever for the best and affordable tech course in Delhi. Get a guaranteed 2 months internship with 100% refund guarantee" />
+                <meta name="keywords" content="fullstack development course, Delhi, best, cheapest, guaranteed, 3 months internship, 100% refund guarantee, TechFever" />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+                <link rel="canonical" href="https://techfever.in/privacy-policy" />
+
+                <meta property="og:title" content="Privacy Policy: TechFever" />
+                <meta property="og:description" content="Join TechFever for the best and affordable tech course in Delhi. Get a guaranteed 2 months internship with 100% refund guarantee" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://techfever.in/privacy-policy" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="TechFever" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1788" />
+                <meta property="og:image:height" content="838" />
+            </Helmet>
 
             <Header1 />
             <Header2 />
@@ -102,7 +128,7 @@ const PrivacyPolicy = () => {
                     <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
                     <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
                 </ul>
-                
+
                 <p>We use both Session and Persistent Cookies for the purposes set out below:</p>
                 <ul>
                     <li>
@@ -214,7 +240,7 @@ const PrivacyPolicy = () => {
                     </li>
                 </ul>
 
-               <br></br> <br></br>
+                <br></br> <br></br>
             </div>
 
 

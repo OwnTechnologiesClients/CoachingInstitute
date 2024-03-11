@@ -61,8 +61,8 @@ const MernStackOnline = () => {
 
             <img src={mernStackImage} alt="MERN-stack online course" caption="Showing TechFever MERN-stack online course image" /><br></br><br></br><br></br>
 
-            <h1>India’s Best MERN Stack Online Course With Certificate & 3-month Internship</h1>
-            <p>Do you want to master the MERN stack and become a full-stack web developer? Look no further - this is India’s best MERN stack course with a guaranteed 3-month internship and course completion certificate.</p>
+            <h1>India’s Best MERN Stack Online Course With Certificate & 2-month Internship</h1>
+            <p>Do you want to master the MERN stack and become a full-stack web developer? Look no further - this is India’s best MERN stack course with a guaranteed 2-month internship and course completion certificate.</p>
             <p>The MERN stack is one of the most popular tech stacks for building robust web applications. It utilizes MongoDB, Express, React, and Node.js. This powerful combination of technologies allows you to build and deploy full-stack web applications with JavaScript.</p>
 
             <h3>Our comprehensive MERN stack course covers all aspects of this in-demand skill, from frontend to backend. You will learn:</h3>
@@ -76,7 +76,7 @@ const MernStackOnline = () => {
             </ul>
 
             <p>Our course includes video tutorials, interactive coding exercises, mentor support and real-world projects that will give you hands-on experience with the MERN stack.</p>
-            <p>Upon completing the course, you will earn a course completion certificate and be guaranteed a 3-month paid internship to gain invaluable on-the-job experience.</p>
+            <p>Upon completing the course, you will earn a course completion certificate and be guaranteed a 2-month paid internship to gain invaluable on-the-job experience.</p>
 
 
             <h3>The course curriculum covers:</h3>
@@ -95,7 +95,7 @@ const MernStackOnline = () => {
             <ul>
                 <li> • <h6>Online class options for flexible learning</h6></li>
                 <li> • <h6>Certificate upon course completion to boost your resume</h6></li>
-                <li> • <h6>3-month internship guaranteed to gain hands-on experience</h6></li>
+                <li> • <h6>2-month internship guaranteed to gain hands-on experience</h6></li>
                 <li> • <h6>Practice building real-world web apps using MongoDB, Express, React, and Node.js</h6></li>
                 <li> • <h6>Personal mentorship and career guidance from industry experts</h6></li>
                 <li> • <h6>Small batch sizes for individual attention</h6></li>

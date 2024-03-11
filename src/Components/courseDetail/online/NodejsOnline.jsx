@@ -59,7 +59,7 @@ const NodeJsOnline = () => {
 
             <img src={nodejsImage} alt="NodeJS online course" caption="Showing TechFever NodeJS online course image" /><br></br><br></br><br></br>
 
-            <h1>Introducing The Ultimate Node.js Online Course With Certificate & 3-Month Internship</h1>
+            <h1>Introducing The Ultimate Node.js Online Course With Certificate & 2-month Internship</h1>
             <p>Want to become a Node.js expert and land a high-paying job as a full-stack JavaScript developer? Look no further than our comprehensive Node.js online course.</p>
             <p>This course is designed to take you from beginner to advanced Node.js concepts. You'll learn everything from the fundamentals of Node.js to building complex real-world applications.</p>
 
@@ -79,12 +79,12 @@ const NodeJsOnline = () => {
                 <li> • <h6>Coding exercises and projects</h6></li>
                 <li> • <h6>1-on-1 mentorship</h6></li>
                 <li> • <h6>Course completion certificate</h6></li>
-                <li> • <h6>3-month internship opportunity</h6></li>
+                <li> • <h6>2-month internship opportunity</h6></li>
             </ul>
 
             <p>And much more! You'll build multiple projects to get hands-on practice and really cement your learning.</p>
             <p>The best part is the course comes with a certification of completion that you can proudly display on your resume. This certificate is recognized by top tech companies and will give you a major edge in the job market.</p>
-            <p>Plus, after completing the course you'll get guaranteed placement in a 3-month paid Node.js internship at a leading tech firm. This is the perfect way to kickstart your career and get professional experience under your belt.</p>
+            <p>Plus, after completing the course you'll get guaranteed placement in a 2-month paid Node.js internship at a leading tech firm. This is the perfect way to kickstart your career and get professional experience under your belt.</p>
             <p>So don't wait any longer! Enroll now in our Node.js online course and get certified, land an internship, and start your journey to becoming a Node.js master.</p>
             <p>This is the fastest path to a lucrative career in one of today's most in-demand web development skills. Click below to get started!</p>
 

@@ -130,11 +130,11 @@ const WelcomeSection = () => {
         },
         {
             url: "/onlinecourses/mern-stack",
-            content: "Limited-Time Offer: Enroll in Our MERN Stack Development Course and Receive a 3-Month Paid Internship!"
+            content: "Limited-Time Offer: Enroll in Our MERN Stack Development Course and Receive a 2-month Paid Internship!"
         },
         {
             url: "/onlinecourses/nodejs",
-            content: "Exclusive Offer: Enroll in Our Offline Backend Development Course and Unlock a 3-Month Paid Internship!"
+            content: "Exclusive Offer: Enroll in Our Offline Backend Development Course and Unlock a 2-month Paid Internship!"
         },
 
 
@@ -157,7 +157,7 @@ const WelcomeSection = () => {
                 <div className="message">
                     <h1>Welcome to TECHFEVER: Your Top-Ranked Destination for Expert Coaching in App Development & Web Development! Unlock Your Full Potential with Our </h1>
                     <p className='under-bar'>COMPREHENSIVE PROGRAMS</p>
-                    <p1>Elevate your career with TECH FEVER! Gain expertise in app and web development through our industry-focused coaching. Our comprehensive programs include a unique opportunity: a 3-month internship with top-grade companies and startups. Learn from seasoned professionals, work on hands-on projects, and build a stellar portfolio. Our flexible learning options and dedicated career guidance ensure you're job-ready. Join TECH FEVER to not only master development skills but also secure valuable real-world experience. Shape your future with a blend of cutting-edge education and hands-on internships. Explore the possibilities at TECH FEVER – where careers take flight!</p1>
+                    <p1>Elevate your career with TECH FEVER! Gain expertise in app and web development through our industry-focused coaching. Our comprehensive programs include a unique opportunity: a 2-month internship with top-grade companies and startups. Learn from seasoned professionals, work on hands-on projects, and build a stellar portfolio. Our flexible learning options and dedicated career guidance ensure you're job-ready. Join TECH FEVER to not only master development skills but also secure valuable real-world experience. Shape your future with a blend of cutting-edge education and hands-on internships. Explore the possibilities at TECH FEVER – where careers take flight!</p1>
                     {/* <p1>We specialize in delivering high-quality coaching for a diverse range of chemistry-related entrance exams, which include CSIR NET Chemical Sciences, GATE Chemistry, TIFR Chemistry, and more.</p1> */}
 
                     <br></br>
@@ -170,7 +170,7 @@ const WelcomeSection = () => {
                     <br></br>
                     <br></br>
                     <strong>Course Information</strong><br></br>
-                    <p1>Dive into the Future of Tech with TECH FEVER's Affordable Courses! Explore App Development using Flutter, Web Development with React.js and Next.js, and Backend Development with Node.js and MERN Stack. Our pocket-friendly programs ensure quality education with a unique 3-month internship opportunity. Master the latest technologies and gain hands-on experience at an unbeatable price. Elevate your skills, build a robust portfolio, and launch your career in just a few months. Join TECH FEVER for a transformative journey where low cost meets high value. Unleash your potential in the dynamic realms of app and web development!</p1>
+                    <p1>Dive into the Future of Tech with TECH FEVER's Affordable Courses! Explore App Development using Flutter, Web Development with React.js and Next.js, and Backend Development with Node.js and MERN Stack. Our pocket-friendly programs ensure quality education with a unique 2-month internship opportunity. Master the latest technologies and gain hands-on experience at an unbeatable price. Elevate your skills, build a robust portfolio, and launch your career in just a few months. Join TECH FEVER for a transformative journey where low cost meets high value. Unleash your potential in the dynamic realms of app and web development!</p1>
                     <br></br>
                     <button onClick={navigateTo}>View Details</button>
                     <br></br>

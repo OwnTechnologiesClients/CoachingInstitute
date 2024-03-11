@@ -60,7 +60,7 @@ const NextJsOnline = () => {
 
       <img src={nextjsImage} alt="NextJS online course" caption="Showing TechFever NextJS online course image" /><br></br><br></br><br></br>
 
-      <h1>India's Best Nextjs Online Course With Certificate & 3-month Internship</h1>
+      <h1>India's Best Nextjs Online Course With Certificate & 2-month Internship</h1>
       <p>Are you looking to master Nextjs and become a world-class frontend developer? We have the perfect course for you - India's Best Nextjs Online Course. </p>
       <p>This comprehensive course will teach you everything you need to know to build robust web applications using Nextjs, a popular React framework. Over the course of this course, </p>
 
@@ -73,7 +73,7 @@ const NextJsOnline = () => {
 
       </ul>
 
-      <p>Upon completing the course, you will receive a Certificate of Course Completion and a guaranteed 3-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
+      <p>Upon completing the course, you will receive a Certificate of Course Completion and a guaranteed 2-month internship at a leading tech company. The internship will provide invaluable real-world experience to kickstart your career as a Nextjs developer.</p>
       <p>This is a unique opportunity to learn Nextjs from industry experts through online sessions. The course curriculum is constantly updated to keep up with the latest updates in the React ecosystem. </p>
       <p>Don't miss out on India's Best Nextjs Online & Offline Course and the chance to land a high-paying job as a Nextjs developer. Enroll now!</p>
 

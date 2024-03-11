@@ -12,7 +12,7 @@ const BronzeOneYearSection = () => {
   };
 
   return (
-    <main className="react-price-container">
+    <main className="react-bronze-price-container">
      <div className="price-template">
         <section className="head-section">
           <h3 className="text-head">BRONZE 2 Months</h3>
@@ -24,7 +24,7 @@ const BronzeOneYearSection = () => {
             <span className="left-value">₹ 4,749</span>
           </div>
 
-          <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">
+          <Link to='https://rzp.io/l/jQo0ftpQeB' target="_blank">
             <div className="button-data">
               Enroll Now
             </div>

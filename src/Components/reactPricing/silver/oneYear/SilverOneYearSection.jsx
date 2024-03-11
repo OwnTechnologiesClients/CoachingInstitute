@@ -15,16 +15,16 @@ const SilverOneYearSection = () => {
     <main className="silver-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">GOLD 4 Months</h3>
+          <h3 className="text-head">SILVER 4 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 4,749 / Month</span>
+            <span className="right-value">₹ 3,749 / Month</span>
             <span className="left-value">₹ 7,749</span>
           </div>
 
-          <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">
+          <Link to='https://rzp.io/l/026Nf4gz61' target="_blank">
             <div className="button-data">
               Enroll Now
             </div>

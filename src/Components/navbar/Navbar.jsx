@@ -88,19 +88,19 @@ const Navbar = () => {
             className={`menu-item ${activeItem === "onlinecourses" || activeItem === "offlinecourses"
                 ? "active"
                 : ""
-              }`}
-          >
-            Courses <img src={darrow} alt="down arrow" caption="down arrow to show sub menu" />
+              }`}>
+            Courses 
+            {/* <img src={darrow} alt="down arrow" caption="down arrow to show sub menu" /> */}
             <div className="dropdown">
               <div className="dropdown-content">
-                <Link to="/onlinecourses/flutter">
+                {/* <Link to="/onlinecourses/flutter">
                   Online Courses{" "}
                   <img style={{ paddingLeft: "1vw" }} src={rightarrow} alt="right arrow" caption="right arrow to show for next screen"/>{" "}
-                </Link>
-                <Link to="/offlinecourses/flutter">
+                </Link> */}
+                {/* <Link to="/offlinecourses/flutter">
                   Offline Courses{" "}
                   <img style={{ paddingLeft: "1vw" }} src={rightarrow} alt="right arrow" caption="right arrow to show for next screen" />{" "}
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

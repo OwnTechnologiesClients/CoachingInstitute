@@ -40,36 +40,36 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/onlinecourses/:id" element={<OnlineCourse />} />
-            <Route path="/offlinecourses/:id" element={<OfflineCourse />} />
-            <Route path="/testseries/:id" element={<TestSeries />} />
-            <Route path="/studymaterial/:id" element={<StudyMaterial />} />
+            {/* <Route path="/offlinecourses/:id" element={<OfflineCourse />} /> */}
+            {/* <Route path="/testseries/:id" element={<TestSeries />} /> */}
+            {/* <Route path="/studymaterial/:id" element={<StudyMaterial />} /> */}
             <Route path="/videos" element={<PopularVideos />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/new-batch" element={<NewBatch />} />
             <Route path="/form" element={<Form />} />
-            <Route path="/iit-jam" element={<TopCourseIitJam />} />
+            {/* <Route path="/iit-jam" element={<TopCourseIitJam />} />
             <Route path="/flutter-jrf" element={<TopCourseCsir />} />
             <Route path="/gate" element={<TopCourseGate />} />
-            <Route path="/scholarship" element={<Scholarship />} />
+            <Route path="/scholarship" element={<Scholarship />} /> */}
 
 
-            <Route path="/admin" element={<Admin />} />
+            {/* <Route path="/admin" element={<Admin />} />
             <Route path="/student-login" element={<Login />} />
             <Route path="/student-signup" element={<StudentSignup />} />
             <Route path="/history" element={<History />} />
-            <Route path="/searchuser" element={<SearchUser />} />
+            <Route path="/searchuser" element={<SearchUser />} /> */}
 
-            <Route path="/form-print" element={<FormPrint />} />
+            {/* <Route path="/form-print" element={<FormPrint />} /> */}
             <Route path="/refund-policy" element={<RefundPolicy />} />
             <Route path="/shipping-policy" element={<ShippingPolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-condition" element={<TermCondition />} />
-            <Route path="/result" element={<Result />} />
-            <Route path="/result-explore/:course" element={<Result1 />} />
-            <Route path="/payment" element={<Phonepe />} />
+            {/* <Route path="/result" element={<Result />} /> */}
+            {/* <Route path="/result-explore/:course" element={<Result1 />} /> */}
+            {/* <Route path="/payment" element={<Phonepe />} />
             <Route path="/success" element={<Success />} />
-            <Route path="/failure" element={<Failure />} />
+            <Route path="/failure" element={<Failure />} /> */}
             <Route path="" element={<Home />} />
             <Route path="*" element={<Home />} />
             <Route element={<Home />} />
